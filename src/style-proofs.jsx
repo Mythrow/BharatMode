@@ -58,7 +58,7 @@ const Topline=({topic='SCIENCE',themeName='ivory'})=>{
       color:dark?'#B9C9C9':'#657073',letterSpacing:1.45}}>
       BIG IDEAS. REAL PROGRESS.
     </div>
-    <div style={{position:'absolute',right:165,top:91}}>
+    <div style={{position:'absolute',right:72,top:91}}>
       <TopicPill topic={topic} themeName={themeName}/>
     </div>
   </>;

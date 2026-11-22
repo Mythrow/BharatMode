@@ -3,11 +3,14 @@ import {Composition, Still} from 'remotion';
 import {BharatShort} from './short.jsx';
 import {BharatThumbnail} from './thumbnail.jsx';
 import {BharatMotionPreview} from './motion-preview.jsx';
+import {BharatMotionPreviewV2} from './motion-v2.jsx';
 import example from '../stories/param-rudra.json';
 import {BharatProofIvory,BharatProofDark,BharatProofSaffron} from './style-proofs.jsx';
 
 const FPS = 30;
 export const Root = () => <>
+  <Composition id="BharatMotionPreviewV2" component={BharatMotionPreviewV2} fps={30}
+    width={1080} height={1920} durationInFrames={480} />
   <Composition id="BharatMotionPreview" component={BharatMotionPreview} fps={30}
     width={1080} height={1920} durationInFrames={420} />
   <Still id="BharatProofIvory" component={BharatProofIvory} width={1080} height={1920} />

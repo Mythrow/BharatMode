@@ -57,7 +57,7 @@ export const BharatMotionPreview=()=>{
         :'radial-gradient(circle,#FFD2AA,transparent 70%)'
     }}/>
     <div style={{position:'absolute',left:82,top:90}}><BrandAvatar size={86}/></div>
-    <div style={{position:'absolute',right:165,top:100}}>
+    <div style={{position:'absolute',right:72,top:100}}>
       <TopicPill topic="SCIENCE" themeName={themeName}/>
     </div>
     {isHook&&<div style={{position:'absolute',left:84,right:170,top:300}}>

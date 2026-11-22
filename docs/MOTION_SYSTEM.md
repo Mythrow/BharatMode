@@ -1,6 +1,6 @@
 # Bharat Mode — Shorts Motion System v1
 
-**Status: DRAFT FOR OWNER REVIEW — 23 November 2026.** No animation rules are final until reviewed. Our logo, channel color identity and video font pairing are already approved.
+**Status: V1 HISTORICAL DRAFT; THE OWNER SELECTED A V2 DIRECTION.** See [TYPEWRITER_KARAOKE_V2.md](TYPEWRITER_KARAOKE_V2.md) for current review. No animation rules are final until reviewed. Our logo, channel color identity and video font pairing are already approved.
 
 ## First principle: chapters follow the story
 
@@ -99,3 +99,6 @@ Output: `out/bharat-motion-preview.mp4`, intentionally Git-ignored.
 5. How frequently should the badge appear? Recommendation: small avatar during the story, full badge only if an outro is used.
 
 The principles and technical parameters above remain flexible until reviewed.
+
+## V2 update
+The owner now prefers Saffron Process directional motion, typewriter-style headlines and **one-line word-follow highlighted captions** without rounded background pills. The topic tag moves further right. Prior V1 suggestions against animated word emphasis are superseded by [the V2 design](TYPEWRITER_KARAOKE_V2.md).

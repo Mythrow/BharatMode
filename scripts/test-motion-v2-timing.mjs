@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {atTime,activeWordAt,visibleWords,makeIllustrativeWords} from '../src/motion-v2-timing.js';
+const beats=[{startSec:0,endSec:5},{startSec:5,endSec:10.5},{startSec:10.5,endSec:16}];
+assert.equal(atTime(beats,0),0);
+assert.equal(atTime(beats,5),1);
+assert.equal(atTime(beats,13),2);
+assert.equal(atTime(beats,16),2);
+const words=makeIllustrativeWords('Rudra servers are deployed',5,9);
+assert.equal(words.length,4);
+assert.ok(words[0].start>=5 && words.at(-1).end<=9);
+for(let i=1;i<words.length;i++)assert.ok(words[i].start>=words[i-1].end);
+assert.equal(activeWordAt(words,4.9),-1);
+assert.equal(activeWordAt(words,words[0].start),0);
+const prior=visibleWords(words,words[2].start,2);
+assert.equal(prior.length,3);
+assert.equal(prior.at(-1).isActive,true);
+assert.ok(prior.slice(0,-1).every(w=>!w.isActive));
+console.log('V2 motion word-timing helper tests passed. Demo timings are not production speech alignment.');

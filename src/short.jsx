@@ -59,7 +59,7 @@ function Chrome({story,sceneStartSec,frame,theme}) {
   const themeName=story.visualTheme||'ivory';
   const topic=story.topic||story.category||'SCIENCE';
   return <>
-    <div style={{position:'absolute',top:105,left:78,right:165,
+    <div style={{position:'absolute',top:105,left:78,right:72,
       display:'flex',justifyContent:'space-between',alignItems:'center'}}>
       <BrandAvatar size={82}/>
       <TopicPill topic={topic} themeName={themeName}/>

@@ -30,3 +30,6 @@ Each document supports Play/Pause, Replay, speed adjustment and timeline scrubbi
 - After approval: carry selected patterns into actual Remotion sequences, verify Sora/Manrope render, add voice-synced captions, original audio masters and mobile QA.
 
 The source docs are not renders and the HTML files are only review prototypes. Actual finished MP4s and voice remain excluded from Git.
+
+## V2 preferred direction
+Following review, the owner chose directional movement, a typewriter headline, and a one-line, synchronized highlighted-word caption with no pill/card. The earlier alternatives remain as reference only; see [TYPEWRITER_KARAOKE_V2.md](TYPEWRITER_KARAOKE_V2.md).

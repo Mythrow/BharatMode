@@ -76,3 +76,6 @@ The user approved contrasting topic-only pills, no persistent source/date footer
 3. Build word/phrase-level caption timing and TTS generation.
 4. Create three **different** factual pilot Shorts, reviewing image licensing and real-world accuracy.
 5. Validate at real phone size and compare multiple videos back-to-back for repetition.
+
+## V2 caption direction
+The preferred motion uses a typewriter effect for main onscreen headlines, **one-line running spoken-word captions** that reveal words in sync with the voice, a moving active-word highlight, no caption pill/card, and a farther-right topic tag. See [TYPEWRITER_KARAOKE_V2.md](TYPEWRITER_KARAOKE_V2.md). Awaiting visual sign-off.
