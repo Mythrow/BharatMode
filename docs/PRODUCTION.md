@@ -28,7 +28,15 @@ The repo includes original authored audio masters:
 
 These assets **are committed** and therefore do not need to be generated on every machine. To rebuild them intentionally, run `npm run audio:generate` and review/commit the updated WAV files. Edit the generator, not only the WAV output, when changing the sound. Generated voice in `public/voice/` remains untracked. Sound designs are original programmatic synths; replace them with appropriately licensed music or professional compositions when moving to production, while retaining source and license details.
 
-## Add voice
+## Approved narrator — Brian (23 November 2026)
+
+The owner selected **Brian** (vidIQ voice ID `nPczCjzI2devNBz1zQrb`) for a professional, deep and reassuring English narration. **Do not enforce an Indian accent. Do not subscribe to a paid voice provider or upgrade a plan without owner authorization.** See [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and [`config/voice.json`](../config/voice.json). A real sample (~12.28 seconds) was generated through vidIQ; this is an audition, not a fully aligned production Short. Use existing renewable vidIQ credits sparingly, verifying balance before voice generation. Preserve generated audio privately, never in the public repository.
+
+The vidIQ voiceover integration supplies an MP3/audio URL and duration, **not per-word timestamps**. The next voice pipeline must import the actual finished audio and align the final approved transcript at word level; it must not approximate caption time from written text. Confirm commercial-use permissions for the audio produced through vidIQ before upload, especially monetized uploads. Rights are **not yet verified**.
+
+The existing `npm run voice` command is a **legacy OpenAI-specific generator** and will **not** synthesize the approved Brian voice. Do not represent it as the Brian production path until replaced.
+
+## Add voice (legacy experimental OpenAI workflow, not Brian)
 ```bash
 # PowerShell example:
 $env:OPENAI_API_KEY = "your-secret-key"

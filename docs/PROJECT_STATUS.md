@@ -2,14 +2,14 @@
 
 **THIS IS THE CANONICAL RESUME POINT.**
 
-Last verified: **23 November 2026**, after commit `f784346531eab047716d4c03714f17a8307ecfd0`. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
+Last verified: **23 November 2026**. Voice decision approved this date; consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
 
 ## What the project is
 **Bharat Mode** is a research-led, faceless YouTube Shorts channel highlighting verified Indian discoveries, inventions, builders, science, technology and meaningful national progress. Content should find underreported stories without sensationalizing or claiming unsupported "firsts". Voice, evidence and readable vertical animation are core to the product.
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage: visual template APPROVED; voice and full-production integration NEXT
+## Current stage: V6 visuals and Brian narrator APPROVED; production integration NEXT
 
 **Completed and approved by channel owner**
 - Channel name: **Bharat Mode**; tagline: **Big Ideas. Real Progress.**
@@ -21,28 +21,33 @@ Repository: https://github.com/Mythrow/BharatMode
 - **Progress bar perfectly centered** on 1080px canvas: 84px left + 912px bar + 84px right. A regression checker exists at `scripts/test-approved-template.mjs`.
 - Approved look: directional character-by-character headline typing **without cursor**; entrances for text, hero and diagrams; raised hero; 0.34s subtle scene dissolve; topic-only pill; flexible chapter segmentation rather than fixed five-step formula; one-line *centered* phrase-group captions with very light, content-sized translucent backing, ~0.2s word pop from 60% to slight overshoot, transient highlight on spoken word; old phrases disappear.
 - Earlier browser HTML preview variants under `previews/html/` are retained as design history. **V6 with symmetric progress** is the only current approved visual baseline.
+- **Narrator direction approved 23 November 2026:** **Brian — Deep, Resonant and Comforting**, provider **vidIQ voiceover**, voice ID `nPczCjzI2devNBz1zQrb`. The owner approved its professional sound after hearing a real generated PARAM Rudra audition sample (~12.28 seconds). **Indian accent is not required. No paid voice subscription is authorized at this stage.** See [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and [`config/voice.json`](../config/voice.json).
 
 **Not yet completed / not approved for publication**
 - The `BharatShort` production renderer in `src/short.jsx` is **still a legacy renderer**, not yet fully upgraded to approved V6 motion and per-word aligned captions. Its bar alignment has been fixed.
 - No end-to-end **voice-aligned, fully rendered, phone-tested** publishable Short has been verified.
-- Voice style/timbre, pronunciation, pacing and provider need owner review.
+- Narrator timbre/identity is approved as Brian. Full-script pronunciation, delivery consistency, word timing and sound-mix QA are pending; vidIQ-mediated commercial use rights still require verification before publication. The existing OpenAI TTS script is **not connected** to this Brian selection.
 - Word-level caption timestamps must come from real finalized narration audio (TTS word timestamps or forced alignment), not the manually estimated prototype timings.
 - Evidence/rights pipeline, upload-ready sourcing, audio ducking/loudness QA, actual YouTube crop/safe-area QA, and three distinct finished pilots are outstanding.
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Voice and narration system.**
+**NEXT TASK — Implement Brian audio ingestion and accurate word-level caption alignment without buying a voice subscription.**
 
-1. Present a small set of distinct **Indian-English, natural and credible narrator approaches** (e.g. calm editorial vs energetic informative vs warm conversational), suitable for underreported good-news Shorts.
-2. Where capabilities actually permit, provide user-reviewable **voice audio samples without asking the user to run any code locally**; be clear about sample provenance and whether real TTS audio was produced. Do not imply audio exists if not generated.
-3. After narrator choice, build voice/TTS and real word-alignment into the approved V6 Remotion story pipeline. Ensure narrator timings drive caption group boundaries and animations.
-4. Produce **one** fact-checked Short with a voice, visual evidence, brand music/SFX and the approved V6 motions. Review actual output on a phone; then create two different pilots, not repetitions of a single template.
-5. Move into the broader editorial queue/research pipeline, YouTube setup, publish packaging and measured cadence as shown in [ROADMAP.md](ROADMAP.md).
+1. Narrator selection is **done**: Brian via vidIQ voiceover, ID `nPczCjzI2devNBz1zQrb`. No Indian-accent constraint. Existing ~12.28-second generated sample confirms the audition, not full-video QA.
+2. Use existing vidIQ account credits only when explicitly warranted; no automatic plan upgrades or paid TTS subscriptions. At this checkpoint, 38 of 150 renewable credits remain, next refill 21 December 2026 IST. Voiceovers cost 28 credits per started 1,000 script characters. This balance is time-sensitive, not a permanent budget guarantee.
+3. Implement a provider-independent **final-audio ingest + word-for-word alignment** workflow. The available vidIQ voiceover tool generates MP3 audio but does not supply word-level timestamps. Align against final audio, verify exact word matches, and drive the approved V6 centered grouped captions from real timestamps.
+4. Migrate the legacy `src/short.jsx` to V6 without redesign. Integrate Brian narration, original music/SFX and loudness ducking.
+5. Confirm the **commercial-use license / relevant voice rights for vidIQ-generated Brian audio before any public/monetized upload**. A free credit allowance is not proof of commercial rights. Fact-check story claims, verify documentary visuals, render and phone-review one complete pilot, then develop two different pilots.
+6. Resume broader editorial queue, channel setup, upload packaging and cadence only after first-pilot QA.
+
+**Completed in this checkpoint:** owner approved Brian; configuration and documentation stored. **Not completed:** automated vidIQ-to-render audio transfer, forced alignment, commercial rights verification, full voiced renderer, end-to-end render or phone QA.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 
 ## Non-negotiable workflow preferences
 - **The owner does not want to run code or install tools on their device.** Deliver playable HTML/visual reviews directly in ChatGPT with download links whenever feasible.
+- **The approved narrator is Brian**, without an Indian-accent requirement. Prefer using existing renewable vidIQ credits for prototyping, **no paid voice subscription** or silent billing upgrades. Check commercial-use rights before publishing.
 - Do not make unnecessary previews after explicit visual approval; make minor fixes in source and report the change.
 - Preserve the approved badge, avatar and V6 visual baseline unless the owner explicitly requests changes.
 - Keep storyline structure flexible and topic-appropriate. No fixed chapter count, title formula or compulsory length.

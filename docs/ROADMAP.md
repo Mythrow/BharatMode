@@ -1,6 +1,6 @@
 # Bharat Mode — Launch milestones
 
-**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** review narration voice options, then implement real word-level caption sync and the approved V6 template in the full story renderer; see [issue #5](https://github.com/Mythrow/BharatMode/issues/5). The V6 visual design is approved, but publishable voiced video production remains unfinished.
+**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** narrator **Brian approved** via vidIQ (no Indian accent required; no paid voice subscription). Implement final-audio ingestion, real word-level caption alignment and the approved V6 full story renderer; see [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
 
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
@@ -13,6 +13,9 @@
 
 ## Milestone 2 — Approved visual template (COMPLETE); three polished pilot Shorts (NEXT)
 - [x] Owner approved the V6 visual/motion design with symmetrical chapter progress (84px both sides). Reusable frame in `src/approved-shorts-template.jsx`.
+- [x] Narrator identity approved: **Brian** via vidIQ voiceover, voice ID `nPczCjzI2devNBz1zQrb`; no Indian accent requirement and no paid voice subscription at present. Audition generated; voice direction documented in `docs/VOICE_DIRECTION.md` and `config/voice.json`.
+- [ ] Confirm commercial rights of the chosen vidIQ-generated audio before publication and check credit limits before any additional generations.
+- [ ] Build an audio-import plus final-audio word alignment system for Brian; the current vidIQ integration does **not** return word-level timestamps.
 - [ ] Integrate V6 movement, grouped captions and actual word-aligned narration into the general story renderer.
 - [ ] Three **distinct narratives**: an invention/how-it-works; an underreported measurable achievement; a person-led or community story.
 - At least one ivory, one charcoal and one (short) saffron-feature scene across pilots.
@@ -45,4 +48,4 @@
 - No unsupported factual claims, generated images passed off as documentary footage, or exaggerated "world first" claims.
 
 ## Immediate next production milestone
-The visual template is now approved. Next: build the **voice + precise word timing + full story renderer** pipeline, followed by one complete evidence-backed vertical Short for end-to-end audio/visual review. After the first pilot passes phone QA, create two distinctly structured pilot Shorts. Generated narration and MP4s remain outside Git.
+V6 visuals and the Brian narrator are now approved. Next: build **Brian audio ingestion + precise word timing + full V6 story renderer** without a paid voice subscription, followed by one complete evidence-backed vertical Short for end-to-end audio/visual review. After the first pilot passes phone QA, create two distinctly structured pilot Shorts. Generated narration and MP4s remain outside Git.
