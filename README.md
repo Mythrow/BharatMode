@@ -2,7 +2,7 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
-> Status: production starter / pre-launch. The color palette is **provisional** until approved. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
+> Status: production starter / pre-launch. The saffron + ivory + teal creative direction is selected; exact brand tokens remain subject to visual QA. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
 
 ## Quick start
 
@@ -11,6 +11,7 @@ Install Node.js 20+ and npm. From the repository root:
 ```bash
 npm install
 npm run validate
+npm run variety:check
 npm run studio
 npm run render:sample
 ```
@@ -18,6 +19,8 @@ npm run render:sample
 - `studio`: open the Remotion editor.
 - `render:sample`: create `out/param-rudra.mp4` (1080 × 1920, 30 fps).
 - `render:icmr`: render a second sample.
+- `thumbnail:sample`: generate a 9:16 still for eligible Shorts thumbnails or social preview.
+- `variety:check`: inspect planned publishing order for repetitive layouts, hooks, titles and topics.
 - Samples start without voice (`hasVoice: false`) so they can render after music generation. **Do not publish a silent demo.**
 - To add natural narration, set `OPENAI_API_KEY`, run `npm run voice -- stories/param-rudra.json`, then change that story's `hasVoice` to `true` and render again. Natural TTS needs a supported provider/model and paid API access; its model identifier is configurable via `OPENAI_TTS_MODEL`.
 - Original audio masters are checked in under `public/music/` and `public/sfx/`; run `npm run audio:generate` only when intentionally regenerating these files and review the changes before committing.
@@ -28,13 +31,15 @@ npm run render:sample
 
 | Location | Purpose |
 | --- | --- |
-| `src/` | Remotion components and palette tokens |
+| `src/` | Remotion components, style treatments, font loader and thumbnail composition |
 | `stories/` | Story briefs, scenes, narration, source links and claim stages |
+| `publishing/queue.json` | Planned sequence to check for repetitive creative patterns (not publication history) |
 | `scripts/` | Validation, reproducible original music/SFX generation, and optional TTS generation |
 | `docs/EDITORIAL.md` | Sourcing, fact checks, ethics and verification checklist |
 | `docs/CHANNEL_BLUEPRINT.md` | Positioning, content pillars, cadence and production plan |
 | `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
-| `docs/BRAND.md` | India-inspired saffron-led palette candidates (awaiting approval) |
+| `docs/BRAND.md` | Saffron, ivory and teal brand kit |
+| `docs/VARIETY_RULES.md` | Rotation rules for visual layouts, thumbnails, titles and storytelling |
 | `docs/SAMPLE_YOUTUBE_DESCRIPTION.md` | Publishing copy reference |
 | `.github/workflows/validate.yml` | Lightweight story validation CI |
 

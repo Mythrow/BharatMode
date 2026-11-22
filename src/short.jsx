@@ -19,7 +19,7 @@ function Chrome({story,index}) {
   return <>
     <div style={{position:'absolute',top:118,left:78,right:78,display:'flex',justifyContent:'space-between',alignItems:'center'}}>
       <div style={{display:'flex',gap:14,alignItems:'center',fontSize:31,fontWeight:850,letterSpacing:-0.8,color:B.ink}}>
-        <div style={{width:17,height:17,borderRadius:'50%',background:B.green}}/>
+        <div style={{width:17,height:17,borderRadius:'50%',background:B.primary}}/>
         BHARAT MODE
       </div>
       <span style={{fontSize:22,fontWeight:750,color:B.primary,background:B.white,borderRadius:50,padding:'13px 20px',maxWidth:330,textTransform:'uppercase'}}>{story.category}</span>
@@ -102,7 +102,7 @@ function Scene({story,scene,index}) {
         <div style={{marginTop:90}}><Heading size={102}>{scene.headline}</Heading></div>
         <div style={detailStyle}>{scene.subhead}</div>
         <div style={{marginTop:150,display:'flex',alignItems:'center',gap:24,transform:'scale('+(0.93+0.07*entered)+')',transformOrigin:'left'}}>
-          <div style={{width:65,height:65,background:B.green,borderRadius:100}}/>
+          <div style={{width:65,height:65,background:B.primary,borderRadius:100}}/>
           <div>
             <div style={{fontSize:55,fontWeight:900,letterSpacing:-2,color:B.ink}}>BHARAT MODE</div>
             <div style={{fontSize:26,color:B.primary,fontWeight:800}}>MODE: ON · {B.tagline}</div>

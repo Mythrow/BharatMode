@@ -1,58 +1,62 @@
-# Bharat Mode — brand kit (palette decision pending)
+# Bharat Mode — Brand Kit v1: Saffron + Ivory + Teal
 
-## Identity
+## Brand position
+Bharat Mode = a mindset of inventing, building, discovering and making progress in India. Signature: **MODE: ON**. Tagline: **Big Ideas. Real Progress.**
 
-**Bharat Mode** — the mindset of inventing, building, improving, discovering and moving India forward. Primary tagline: **Big Ideas. Real Progress.** Closing sonic/visual signature: **Mode: ON.**
+**Direction selected:** rich modern saffron as hero color, creamy ivory rather than clinical white, deep ocean teal as a secondary accent. Deep ink anchors contrast. No flag-stripe look. Warm, curious, editorial and credible.
 
-The brand should signal India without copying the national flag into every scene. The ideal visual DNA: warm saffron, airy ivory, intelligent navy/Ashoka-blue cues, and restrained leaf-green. Optimistic and approachable, not a political or government-news aesthetic.
+## Canonical palette (approved color direction; exact v1 hex values subject to exported-video review)
 
-## Accessibility on phone screens
-- Use rich navy for headlines/body text, not pastel orange or pale green.
-- Use pastel saffron and cream for large backgrounds/panels; use a darker saffron for small labels.
-- Reserve saffron for data highlights and progress lines; use a small deep-green dot to signal 'Mode: ON'.
-- Avoid stacking full-width saffron/white/green stripes; use thoughtful accents.
-- Design to be understood with the sound off: captions and 1–2 primary ideas per scene.
-- Mobile dimensions: 1080×1920 with ample padding and caption-safe area.
-- Current font stack: Inter → Aptos → Segoe UI → sans-serif.
+| Token | Color | Hex | Usage |
+|---|---|---|---|
+| primary | Surya Saffron | `#E8752E` | Distinctive brand orange, large accents, lines and fills |
+| saffronText | Burnt Saffron | `#A63F17` | Accessible small text and numbers on ivory |
+| ivory | Warm Ivory | `#FFF7EB` | Light background, not pure white |
+| teal | Ocean Teal | `#117A7A` | Technical diagrams, data series and supplementary accents |
+| tealSoft | Sea Mist | `#E0F0EC` | Teal supporting background |
+| ink | Deep Ink | `#183139` | Headlines and dark background |
+| peach | Apricot Tint | `#FFE3CC` | Cards and quiet shapes |
+| darkHighlight | Warm Saffron | `#F4A767` | Accessible highlight on deep ink |
 
-## Color candidates — UNAPPROVED
+Contrast guidance (WCAG approximate):
+- `#E8752E` on `#FFF7EB` is around 2.8:1: **do not use for small text**.
+- `#A63F17` on `#FFF7EB` is around 5.9:1: suitable for normal-sized labels.
+- `#117A7A` on `#FFF7EB` is around 4.8:1: suitable for normal-sized teal labels.
+- `#183139` on `#FFF7EB` is around 12.8:1: excellent for main reading text.
 
-### A. Saffron Studio — recommended, currently provisional in `src/brand.js`
-Warm, restrained and modern. Best for a science-plus-good-news Shorts brand.
+## The three background treatments
 
-| Role | Name | Hex |
-| --- | --- | --- |
-| Canvas | Warm Ivory | `#FFF8EF` |
-| Main text | Ashoka Ink | `#203A53` |
-| Primary accent / accessible labels | Deep Saffron | `#B24F21` |
-| Soft surface | Saffron Mist | `#FFE8D2` |
-| Graphic highlight | Sunlit Saffron | `#F4B475` |
-| Secondary / nature accent | Sage Mist | `#DDEBDD` |
-| Small status indicator | India Green | `#2F8067` |
-| Dark variant | Night Indigo | `#142C43` |
+- **Ivory editorial:** target ~65% of uploads. White/peach cards, dark ink headings, saffron numbers.
+- **Midnight cinematic:** target ~25%. Deep ink background with saffron and teal highlights.
+- **Saffron feature:** target ~10%. One-off milestones and striking art-direction; not for long dense paragraphs.
 
-### B. Modern Tiranga
-More overtly Indian, but use orange and green as small accents rather than symmetrical flag bars.
-- Canvas `#FFF9F2`
-- Ink `#20364F`
-- Saffron `#CA672B`
-- Peach `#F8DABF`
-- India Green `#23806B`
-- Mint `#DCEDE1`
+These are rolling creative targets, not mechanical quotas. Do not place the same `visualFamily` consecutively; theme variation alone does not create originality.
 
-### C. Saffron Midnight
-More dramatic contrast for technology and breakthroughs, less soft overall.
-- Midnight `#14283F`
-- Pale Paper `#FCF5EB`
-- Soft Saffron `#F3AF71`
-- Warm Cream `#FFE3C9`
-- Quiet Green `#87B8A0`
+## Typography: no generic sans branding
+- **Headlines and logo:** **Bricolage Grotesque**, expressive and slightly eccentric, weights 700–800.
+- **Narration captions/body/source:** **Manrope**, weights 400–700, editorial readability.
+- **Numbers:** Bricolage Grotesque bold with tabular numeral option; separate number font can be assessed after initial renders.
+- Load using `@remotion/google-fonts`; both families are OFL-licensed via Google Fonts. Do not commit font binary files.
+- Use sentence case for story headlines; limit all-caps to small labels.
 
-## Decisions pending
-1. Choose A, B or C (or specify desired modifications).
-2. Confirm logo direction, profile avatar treatment, typeface and motion behavior.
-3. Freeze palette tokens once and update `src/brand.js`, logo assets, channel banner, and all video templates.
-4. Review small-text and caption contrast in real video exports.
+## Layout and accessibility
+- Video 1080 × 1920; protect phone safe zones for YouTube overlays.
+- Headline hierarchy is strong; short text blocks, one main number per scene.
+- Captions are essential for final production (current starter still requires caption pipeline).
+- Source attribution stays visible; no implied proof from abstract diagrams.
+- Keep branded intro **under 0.5 seconds or omit entirely**; hook first.
+- Logo and signature small, not a repetitive giant end slate.
+- Use movement to explain data, not simply animate every word.
 
-## Audio signature
-Original, committed audio tracks live in `public/music/` and `public/sfx/`. Music is background-level, never dominant. The short "Mode: ON" sonic signature belongs at the end, not before a good hook. Generated narration is not stored in Git.
+## Thumbnail system
+- Five families: **stat, statement, diagram, split, portrait**.
+- 2–5 useful words, never copy the full video title or misstate the story.
+- Multiple framing choices: centered numeral, person/innovation photo (licensed), schematic, before/after (only with evidence), and typography-first.
+- Custom Shorts thumbnail uploads were announced for YPP creators on desktop in July 2026. Always make an in-video frame that also works if custom upload is not available.
+- Design separate stills via Remotion (`BharatThumbnail`); final upload selection depends on account features.
+
+## Non-repetition
+See [VARIETY_RULES.md](VARIETY_RULES.md); queue lint checks structured metadata. No simple slides/news reader formula; the story must provide original educational explanation. Review batches visually before publication.
+
+## Sound
+Original background music and SFX masters stored in Git. Synthetic narration is regenerated and excluded.

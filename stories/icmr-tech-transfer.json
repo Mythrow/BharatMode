@@ -16,7 +16,8 @@
         "headline": "Indian health research is moving beyond the lab.",
         "subhead": "A milestone worth understanding.",
         "duration": 6,
-        "narration": "A quiet milestone in Indian healthcare: more research is being licensed for practical development."
+        "narration": "A quiet milestone in Indian healthcare: more research is being licensed for practical development.",
+        "visual": "process"
       },
       {
         "kind": "metric",
@@ -72,6 +73,14 @@
         "duration": 8,
         "narration": "The bigger story is building the bridge between Indian research laboratories and practical healthcare innovation."
       }
-    ]
+    ],
+    "youtubeTitle": "100 Medical Research Deals: What They Actually Mean",
+    "topic": "health",
+    "visualTheme": "midnight",
+    "visualFamily": "explainer",
+    "hookType": "question",
+    "thumbnailStyle": "statement",
+    "thumbnailText": "BEYOND THE LAB",
+    "narrativeAngle": "reality-check"
   }
 }

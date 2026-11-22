@@ -16,7 +16,8 @@
         "headline": "The machines behind India's next discoveries.",
         "subhead": "A quieter story about computing power.",
         "duration": 6,
-        "narration": "India is quietly building computers for tomorrow's scientific discoveries."
+        "narration": "India is quietly building computers for tomorrow's scientific discoveries.",
+        "visual": "server-grid"
       },
       {
         "kind": "metric",
@@ -73,6 +74,14 @@
         "duration": 8,
         "narration": "The real story is domestic research capacity: more powerful tools for future breakthroughs."
       }
-    ]
+    ],
+    "youtubeTitle": "How India Is Building Its Own Supercomputer Hardware",
+    "topic": "science",
+    "visualTheme": "ivory",
+    "visualFamily": "data-led",
+    "hookType": "unexpected-number",
+    "thumbnailStyle": "stat",
+    "thumbnailText": "6,000 SERVERS",
+    "narrativeAngle": "how-it-works"
   }
 }

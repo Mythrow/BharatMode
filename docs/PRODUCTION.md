@@ -10,6 +10,7 @@
 ```bash
 npm install
 npm run validate
+npm run variety:check
 npm run studio
 npm run render:sample
 ```
@@ -33,6 +34,14 @@ $env:OPENAI_TTS_MODEL = "supported-tts-model"
 npm run voice -- stories/param-rudra.json
 ```
 Review every `public/voice/param-rudra/<scene>.wav` against the allocated scene length (e.g. 6–9s), edit the script or extend the scene as needed, then set `stories/param-rudra.json` field `hasVoice: true`. Run `npm run validate`, render, review. TTS costs money and available model IDs change. Never commit credentials.
+
+## Visual and title rotation
+
+Each story now carries: `visualTheme`, `visualFamily`, `hookType`, `topic`, `thumbnailStyle`, `thumbnailText`, `youtubeTitle` and `narrativeAngle`. Add the slug to `publishing/queue.json` in planned upload order. `npm run variety:check` flags repeated creative patterns. See [VARIETY_RULES.md](VARIETY_RULES.md).
+
+Custom thumbnails: run `npm run thumbnail:sample` (or `remotion still src/index.jsx BharatThumbnail out/your-thumb.png --props=stories/your-story.json`). Shorts custom uploads may be available only to eligible accounts; otherwise select a suitable in-video frame.
+
+Fonts: Remotion downloads OFL-licensed Bricolage Grotesque and Manrope via `@remotion/google-fonts` during rendering. Internet access is needed for the initial dependency/font fetch, unless a separate approved caching strategy is configured.
 
 ## New stories
 Copy a JSON file in `stories/`; set slug, date, claim stage, source URL, source context, a 5–7-scene storyboard, narration and scene durations. Run validation. Render via:
