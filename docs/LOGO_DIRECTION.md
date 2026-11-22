@@ -10,7 +10,7 @@ Use the **latest approved-in-principle BM + three-part underline** as shown in t
 - **B glyph:** Warm Ivory `#FFF7EB` on Deep Charcoal; **BHARAT wordmark:** Classic Saffron `#E8752E`.
 - **M glyph:** Classic Saffron `#E8752E`; **MODE wordmark:** Warm Ivory `#FFF7EB`, on Deep Charcoal `#0B1018`. This follows the latest supplied primary lockup, superseding the earlier color flip.
 - **Underline:** Exactly three small parallel right-slanting parallelograms; left Ocean Teal `#117A7A`, **center Warm Ivory `#FFF7EB`**, right Classic Saffron `#E8752E`.
-- **Underline proportion:** Total bar run ~75–85% of BM icon width; each bar short, similar height and shape, with modest even gaps. Center immediately beneath BM, never stretch beneath wordmark.
+- **Underline proportion:** Underline must span the entire BM silhouette, from the leftmost visible B edge to the rightmost M edge, with three equal slim, rounded slanted bars and even gaps. Center immediately beneath BM, never stretch beneath wordmark.
 - Primary dark lockup has a small BM icon followed by a discreet vertical separator and a single-line BHARAT MODE wordmark.
 - Tagline "Big Ideas. Real Progress." is optional below the wordmark, but never split BHARAT above MODE.
 - Avatar: only BM + three-segment underline in a Deep Charcoal circular field.
@@ -27,3 +27,7 @@ Compare final vector against original reference silhouettes, underline width, ga
 - SVG: [`brand/logos/bharat-mode-primary.svg`](../brand/logos/bharat-mode-primary.svg) — vector B/M silhouettes and precise short underline bars, with Sora/Manrope live SVG text for wordmark/tagline.
 - HTML: [`brand/logos/primary-preview.html`](../brand/logos/primary-preview.html) — displays that same SVG without a secondary variant.
 - Important: SVG wordmark/tagline text uses Sora and Manrope if available; browser font loading via HTML preview. The icon outlines and underline remain true vector paths.
+
+## 23 Nov SVG correction
+
+The primary dark horizontal mark now uses redrawn smooth editable B/M path geometry and a full-width underline. It contains precisely three slim parallelograms (teal, ivory, saffron), from the left B edge to the right M edge. The approved typography is a synthetic italic/slanted **Sora 800** wordmark with visible inter-word separation and **Manrope 600** tagline. No secondary lockup is produced. This remains a design proof for owner review; the rendering must still be visually approved.
