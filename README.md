@@ -46,6 +46,7 @@ npm run render:sample
 | `public/brand/` | Approved SVG badge/avatar plus original & 2560×1440 channel banner PNGs |
 | `src/brand-assets.jsx` | Reusable Remotion components rendering the approved SVG artwork |
 | `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
+| `docs/SHORTS_DESIGN_SYSTEM.md` | Stage 1 frame architecture and three design proofs to approve |
 | `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
 | `media/manifest.json` | Approved real-image / third-party-logo licensing registry (currently empty) |
 | `docs/ROADMAP.md` | Launch milestones and acceptance criteria |

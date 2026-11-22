@@ -13,9 +13,9 @@ These are starting points; verify sizes on a **real phone**, not merely desktop 
 
 | Element | Typeface | Typical size | Notes |
 | --- | --- | --- | --- |
-| Main headline | Bricolage 750–800 | 90–116px | 2–4 short lines, natural line breaks |
-| Intro hook | Bricolage 800 | 92–128px | Front-load the most surprising fact |
-| Hero numeral | Bricolage 800 | 140–210px | Do not use a numerical reveal in every video |
+| Main headline | Sora 750–800 | 90–116px | 2–4 short lines, natural line breaks |
+| Intro hook | Sora 800 | 92–128px | Front-load the most surprising fact |
+| Hero numeral | Sora 800 | 140–210px | Do not use a numerical reveal in every video |
 | Evidence label | Manrope 700 | 30–38px | Short, no overlong uppercase copy |
 | Body explanation | Manrope 600 | 42–52px | Maximum 2–3 short lines per moment |
 | Spoken captions | Manrope 700 | 42–54px | Max 2 lines, synced with voice, high-contrast backing |
