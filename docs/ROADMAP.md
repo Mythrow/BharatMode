@@ -9,8 +9,10 @@
 - [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner approved; [x] source and recommended-size export in Git with SHA verification; [ ] test YouTube mobile/desktop crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
-## Milestone 2 — Three polished pilot Shorts
-- Three **distinct narratives**: an invention/how-it-works; an underreported measurable achievement; a person-led or community story.
+## Milestone 2 — Approved visual template (COMPLETE); three polished pilot Shorts (NEXT)
+- [x] Owner approved the V6 visual/motion design with symmetrical chapter progress (84px both sides). Reusable frame in `src/approved-shorts-template.jsx`.
+- [ ] Integrate V6 movement, grouped captions and actual word-aligned narration into the general story renderer.
+- [ ] Three **distinct narratives**: an invention/how-it-works; an underreported measurable achievement; a person-led or community story.
 - At least one ivory, one charcoal and one (short) saffron-feature scene across pilots.
 - Dynamic subject-appropriate Remotion composition, captions synchronized to narration, voice generated per production run.
 - Only original/rights-cleared music and graphics; do not store voice or rendered video files in Git.
@@ -39,3 +41,6 @@
 - Keep repository source/docs/story briefs/audio masters; **exclude generated voice and video outputs**.
 - Protect API keys; no generic slideshows that simply paraphrase public news.
 - No unsupported factual claims, generated images passed off as documentary footage, or exaggerated "world first" claims.
+
+## Immediate next production milestone
+The visual template is now approved. Next: build the **voice + precise word timing + full story renderer** pipeline, followed by one complete evidence-backed vertical Short for end-to-end audio/visual review. After the first pilot passes phone QA, create two distinctly structured pilot Shorts. Generated narration and MP4s remain outside Git.

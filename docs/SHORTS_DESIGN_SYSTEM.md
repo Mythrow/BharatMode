@@ -1,6 +1,6 @@
 # Bharat Mode — Shorts design system, Stage 1: Frame architecture
 
-**Status: FRAME ARCHITECTURE APPROVED. Motion behavior is a separate proposal awaiting sign-off; see [MOTION_SYSTEM.md](MOTION_SYSTEM.md).** Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
+**Status: FRAME ARCHITECTURE AND V6 VISUAL/MOTION TEMPLATE APPROVED by owner (23 November 2026).** The canonical baseline is [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md); older V1–V5 prototype feedback in this file is historical. Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
 
 ## What comes first
 
@@ -91,3 +91,6 @@ The owner requested retained typewriter/grouped caption styling with more obviou
 
 ## V6 transition and progress update
 For V6 review, avoid elaborate diagonal wipes or large whole-scene slides. Use a short soft dissolve with very slight drift between chapters; directional component entrances remain. Chapter progress bars must be visible in all themes; set colors at the progress component level or parent, not inside unrelated scene layers. Caption colors on ivory remain graphite navy with deep saffron highlight as in V4. See [MOTION_V6.md](MOTION_V6.md).
+
+## Final design approval — 23 November 2026
+The approved baseline is [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md): cursorless directional typewriter, V4 grouped word-pop captions with centered content-sized glass backing, quiet V6 dissolve, staggered hero evidence, and **progress bar left/right 84px each** in a 1080px canvas. The user has signed off the template visuals. Full voiced Remotion exports and platform overlay checks still remain.

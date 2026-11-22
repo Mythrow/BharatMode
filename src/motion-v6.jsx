@@ -7,10 +7,9 @@
  */
 import React from 'react';
 import {AbsoluteFill,useCurrentFrame} from 'remotion';
-import {BrandAvatar} from './brand-assets.jsx';
+import {ApprovedShortsFrame} from './approved-shorts-template.jsx';
 import {BRAND as B} from './brand.js';
 import {DISPLAY_FONT,BODY_FONT} from './fonts.js';
-import {TopicPill,ChapterProgress} from './motion-system.jsx';
 import {demoWordTimings,groupWordRanges,groupedVisibleWords,clamp01} from './motion-v4-timing.js';
 import {easeOut,DEMO_BEATS,currentBeatAt,scenePoseAt,headlineCharsAt} from './motion-v6-timing.js';
 
@@ -141,21 +140,12 @@ export const BharatMotionPreviewV6=()=>{
   const sec=frame/30;
   const index=currentBeatAt(sec,DEMO_BEATS);
   const theme=STORIES[index].theme;
-  const pillBg=theme==='midnight'?B.ivory:B.charcoal;
-  const pillInk=theme==='midnight'?B.charcoal:B.ivory;
-  return <AbsoluteFill style={{overflow:'hidden',background:B.charcoal}}>
-    {STORIES.map((s,i)=><MovingScene key={s.id} scene={s} index={i} timeSec={sec}/>) }
-    <div style={{position:'absolute',inset:0,zIndex:65,pointerEvents:'none'}}>
-    <ChapterProgress chapters={DEMO_BEATS} timeSec={sec} themeName={theme}
-      bottom={250} left={84} right={165} height={13} gap={14}/>
-    </div>
-    <div style={{position:'absolute',top:89,left:86,right:72,zIndex:55,
-      display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-      <BrandAvatar size={88}/>
-      <div style={{padding:'17px 26px',borderRadius:50,background:pillBg,
-        fontFamily:BODY_FONT,fontWeight:500,fontSize:27,
-        letterSpacing:1.4,color:pillInk}}>SCIENCE</div>
-    </div>
-    <CenteredCaptions timeSec={sec} index={index} theme={theme}/>
-  </AbsoluteFill>;
+  return <ApprovedShortsFrame
+    theme={theme}
+    topic="SCIENCE"
+    chapters={DEMO_BEATS}
+    timeSec={sec}
+    caption={<CenteredCaptions timeSec={sec} index={index} theme={theme}/>}>
+    {STORIES.map((s,i)=><MovingScene key={s.id} scene={s} index={i} timeSec={sec}/>)}
+  </ApprovedShortsFrame>;
 };

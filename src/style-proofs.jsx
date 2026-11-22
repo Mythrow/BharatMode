@@ -40,7 +40,7 @@ const PROOF_CHAPTERS=[
 ];
 const ProofProgress=({timeSec,themeName='ivory'})=>(
   <ChapterProgress chapters={PROOF_CHAPTERS}
-    themeName={themeName} timeSec={timeSec} bottom={255} right={165}/>
+    themeName={themeName} timeSec={timeSec} bottom={255} right={84}/>
 );
 const Topline=({topic='SCIENCE',themeName='ivory'})=>{
   const dark=themeName==='midnight';

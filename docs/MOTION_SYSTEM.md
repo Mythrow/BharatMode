@@ -1,6 +1,6 @@
 # Bharat Mode — Shorts Motion System v1
 
-**Status: V1 HISTORICAL DRAFT; THE OWNER SELECTED A V2 DIRECTION.** See [TYPEWRITER_KARAOKE_V2.md](TYPEWRITER_KARAOKE_V2.md) for current review. No animation rules are final until reviewed. Our logo, channel color identity and video font pairing are already approved.
+**Status: V1 HISTORICAL DRAFT (superseded).** The currently **approved visual/motion baseline** is [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md). This file retains the design exploration history and should not override final V6 decisions. Our logo, channel color identity and video font pairing are already approved.
 
 ## First principle: chapters follow the story
 
@@ -111,3 +111,6 @@ V5 restores *directional movement for the entire headline block during character
 
 ## Current review: Motion V6
 The owner requested simpler premium scene transitions, visible bottom chapter bars and a light-scene caption-color check. In [Motion V6](MOTION_V6.md) the transition is now a short, subtle dissolve, the bar is repaired/visible, and previous caption colors are explicitly preserved. V5 colored streak and large scene slide should not be reused without new approval.
+
+## Finalized baseline
+As of 23 November 2026, the owner approved V6 with one last adjustment: a **symmetric centered 84px/84px** segmented progress strip. The full authoritative specification, reusable code, and remaining production QA are documented in [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md). All older text in this chronological file is archived design exploration.

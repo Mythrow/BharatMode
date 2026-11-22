@@ -8,6 +8,7 @@ import React from 'react';
 import {Easing,interpolate,spring,useCurrentFrame} from 'remotion';
 import {BRAND as B} from './brand.js';
 import {BODY_FONT} from './fonts.js';
+import {APPROVED_PROGRESS_GUTTER} from './approved-layout.js';
 
 const clamp={extrapolateLeft:'clamp',extrapolateRight:'clamp'};
 const ease=Easing.bezier(0.2,0.8,0.2,1);
@@ -43,7 +44,7 @@ export const TopicPill=({topic='SCIENCE',themeName='ivory'})=>{
  * There is no numeric chapter display; the count comes from the story metadata.
  */
 export const ChapterProgress=({
-  chapters=[],timeSec=null,themeName='ivory',bottom=258,left=84,right=165,
+  chapters=[],timeSec=null,themeName='ivory',bottom=258,left=APPROVED_PROGRESS_GUTTER,right=APPROVED_PROGRESS_GUTTER,
   height=10,gap=13
 })=>{
   const frame=useCurrentFrame();

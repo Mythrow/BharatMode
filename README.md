@@ -4,6 +4,11 @@
 
 > Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Sora and Manrope SemiBold typography confirmed; the owner's final badge and avatar SVGs are approved. Video render QA is still outstanding. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
 
+
+## Current approved Shorts visual template — 23 November 2026
+
+**Approved:** V6 quiet dissolve, directional typewriter, high-positioned hero, centered one-line grouped word-follow captions and **centered segmented chapter progress** (84px left / 84px right at 1080px). Authoritative [approved template spec](docs/APPROVED_SHORTS_TEMPLATE.md), reusable [Remotion frame](src/approved-shorts-template.jsx), [motion example](src/motion-v6.jsx) and browser [HTML example](previews/html/bharat-mode-motion-v6-mixed.html). The three HTML variants and the generic Remotion V6 scene example are in Git. Run `npm run template:check` in CI to protect alignment. **This is visual design approval, not final video publication approval:** the existing `BharatShort` story renderer is legacy and needs full V6 integration and real audio-synced captions. Rendering and phone QA are pending. There is no need for the channel owner to run code locally.
+
 ## Quick start
 
 Install Node.js 20+ and npm. From the repository root:
@@ -107,5 +112,5 @@ The latest owner feedback replaces the full-width caption band with a **lightly 
 ## Motion V5 — current review
 Following V4 feedback, the latest [V5 motion specification](docs/MOTION_V5.md) adds directional sliding to kicker and **whole headline text block while it types**, raises the hero panel by 143px, retains staggered racks and flow-line animation, introduces 0.64s overlapping slide + diagonal wipe scene transitions, and anchors compact grouped captions to the **screen center** so they never slide along with scenes. Open [mixed](previews/html/bharat-mode-motion-v5-mixed.html), [ivory](previews/html/bharat-mode-motion-v5-ivory.html) or [charcoal](previews/html/bharat-mode-motion-v5-dark.html) browser previews; no code installation required. `npm run motion:preview` now targets `BharatMotionPreviewV5`; V4 remains accessible via `npm run motion:preview:v4`. Production voice alignment and full MP4 render QA are still pending.
 
-## Motion V6 — current review
+## Motion V6 — approved visual baseline (historical review notes below)
 The V6 motion study replaces the V5 streak/large sliding scene transition with a **subtle 0.34-second dissolve and only 12–18px drift**, retaining the animated directional entrances for headlines, supporting text, hero panels and schematic racks. It repairs the progress bar (a V5 HTML CSS variable scope error) by defining its track/fill colors on the shared frame and keeping it visible above scene layers. Grouped captions remain centered with existing colors: ivory scenes graphite `#283039` with deep-saffron active word `#A63F17`, unchanged from V4/V5; charcoal and saffron scenes use ivory text. Direct [mixed](previews/html/bharat-mode-motion-v6-mixed.html), [ivory](previews/html/bharat-mode-motion-v6-ivory.html) and [dark](previews/html/bharat-mode-motion-v6-dark.html) HTML previews are browser-playable; no installation is needed. Source and QA notes: [MOTION_V6.md](docs/MOTION_V6.md). `npm run motion:preview` now targets V6; the older V5 study remains under `motion:preview:v5`. The HTML uses demo-only narration timing, and full Remotion/audio QA is still pending.

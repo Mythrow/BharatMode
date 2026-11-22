@@ -70,7 +70,7 @@ function Chrome({story,sceneStartSec,frame,theme}) {
       themeName={themeName}
       bottom={260}
       left={84}
-      right={165}
+      right={84}
     />
   </>;
 }

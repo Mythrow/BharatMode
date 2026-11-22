@@ -21,4 +21,5 @@ jobs:
       - run: node scripts/test-motion-v4-timing.mjs
       - run: node scripts/test-motion-v5-timing.mjs
       - run: node scripts/test-motion-v6-timing.mjs
+      - run: node scripts/test-approved-template.mjs
       - run: node scripts/check-channel-cover.mjs
