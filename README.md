@@ -2,6 +2,8 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
+> **START HERE / RESUME IN A NEW CHAT:** [Current Project Status](docs/PROJECT_STATUS.md) → [Roadmap](docs/ROADMAP.md) → [Approved Shorts Template](docs/APPROVED_SHORTS_TEMPLATE.md). Read the current-status page before implementing anything; it states the latest approvals, next task and blockers. A new chat must explicitly open the files rather than assume GitHub content was loaded. Coding agents should also read [AGENTS.md](AGENTS.md).
+
 > Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Sora and Manrope SemiBold typography confirmed; the owner's final badge and avatar SVGs are approved. Video render QA is still outstanding. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
 
 

@@ -1,5 +1,7 @@
 # Production guide
 
+**For a new session, read [PROJECT_STATUS.md](PROJECT_STATUS.md) first.** It is the canonical resume point; [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md) contains the locked V6 visual rules. Do not assume the legacy `BharatShort` renderer fully implements the approved motion/voice system.
+
 ## Prerequisites
 - Node.js 20+ / npm, internet access for initial dependency installation.
 - Optional supported speech TTS provider; API key set as environment variable.

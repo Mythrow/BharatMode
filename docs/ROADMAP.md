@@ -1,5 +1,7 @@
 # Bharat Mode — Launch milestones
 
+**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** review narration voice options, then implement real word-level caption sync and the approved V6 template in the full story renderer; see [issue #5](https://github.com/Mythrow/BharatMode/issues/5). The V6 visual design is approved, but publishable voiced video production remains unfinished.
+
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
 ## Milestone 1 — Brand assets (COMPLETE); actual YouTube crop review remains
