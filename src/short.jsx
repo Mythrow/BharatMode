@@ -6,6 +6,8 @@ import {
 import {BRAND as B, getTheme} from './brand.js';
 import {DISPLAY_FONT, BODY_FONT} from './fonts.js';
 import {BrandAvatar, BrandBadge} from './brand-assets.jsx';
+import {resolveStoryChapters} from './chapter-timing.js';
+import {TopicPill,ChapterProgress} from './motion-system.jsx';
 
 const easing = Easing.bezier(0.22, 1, 0.36, 1);
 const rise = (frame, delay = 0) => interpolate(
@@ -53,29 +55,23 @@ function Backdrop({theme,family}) {
     {family==='timeline' && <div style={{position:'absolute',left:44,top:300,bottom:360,width:5,background:theme.accent,opacity:.5,borderRadius:8}}/>}
   </>;
 }
-function Chrome({story,index,theme}) {
+function Chrome({story,sceneStartSec,frame,theme}) {
+  const themeName=story.visualTheme||'ivory';
+  const topic=story.topic||story.category||'SCIENCE';
   return <>
-    <div style={{position:'absolute',top:110,left:78,right:78,display:'flex',justifyContent:'space-between',alignItems:'center',gap:24}}>
+    <div style={{position:'absolute',top:105,left:78,right:165,
+      display:'flex',justifyContent:'space-between',alignItems:'center'}}>
       <BrandAvatar size={82}/>
-      <div style={{
-        fontFamily:BODY_FONT,fontWeight:750,fontSize:21,background:theme.soft,
-        borderRadius:28,padding:'14px 18px',textTransform:'uppercase',color:theme.accentText,
-        maxWidth:340
-      }}>{story.category}</div>
+      <TopicPill topic={topic} themeName={themeName}/>
     </div>
-    <div style={{position:'absolute',left:78,right:78,top:216,height:4,borderRadius:4,background:theme.soft,overflow:'hidden'}}>
-      <div style={{height:'100%',width:((index+1)/story.scenes.length*100)+'%',background:theme.accent}}/>
-    </div>
-    <div style={{
-      position:'absolute',bottom:338,left:78,right:78,display:'flex',justifyContent:'space-between',
-      gap:30,fontSize:22,color:theme.muted,fontFamily:BODY_FONT
-    }}>
-      <span>Source: {story.sourceShort}</span><span>{index+1} / {story.scenes.length}</span>
-    </div>
-    <div style={{
-      position:'absolute',bottom:296,left:78,right:78,
-      fontFamily:BODY_FONT,fontSize:21,color:theme.muted
-    }}>{story.sourceContext}</div>
+    <ChapterProgress
+      chapters={resolveStoryChapters(story)}
+      timeSec={sceneStartSec+frame/30}
+      themeName={themeName}
+      bottom={260}
+      left={84}
+      right={165}
+    />
   </>;
 }
 function VisualGraphic({scene,theme,family}) {
@@ -135,7 +131,7 @@ function Metric({scene,theme,frame,family}) {
     <div style={{fontSize:29,color:theme.muted,marginTop:37,lineHeight:1.43}}>{scene.note}</div>
   </div>;
 }
-function Scene({story,scene,index}) {
+function Scene({story,scene,index,sceneStartSec=0}) {
   const frame=useCurrentFrame();
   const {fps}=useVideoConfig();
   const entered=spring({frame,fps,config:{damping:18,stiffness:96}});
@@ -192,7 +188,7 @@ function Scene({story,scene,index}) {
         </div>
       </>}
     </div>
-    <Chrome story={story} index={index} theme={theme}/>
+    <Chrome story={story} sceneStartSec={sceneStartSec} frame={frame} theme={theme}/>
   </AbsoluteFill>;
 }
 export const BharatShort = ({story}) => {
@@ -205,7 +201,7 @@ export const BharatShort = ({story}) => {
       const durationInFrames=Math.round(scene.duration*30);
       position+=durationInFrames;
       return <Sequence key={index} from={from} durationInFrames={durationInFrames}>
-        <Scene story={story} scene={scene} index={index}/>
+        <Scene story={story} scene={scene} index={index} sceneStartSec={from/30}/>
         {['metric','impact'].includes(scene.kind)&&<Audio src={staticFile('sfx/metric-rise.wav')} volume={0.16}/>}
         {scene.kind==='close'&&<Audio src={staticFile('sfx/mode-on.wav')} volume={0.20}/>}
         {story.hasVoice&&<Audio src={staticFile('voice/'+story.slug+'/'+index+'.wav')} volume={0.95}/>}

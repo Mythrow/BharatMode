@@ -82,6 +82,28 @@
     "hookType": "unexpected-number",
     "thumbnailStyle": "stat",
     "thumbnailText": "6,000 SERVERS",
-    "narrativeAngle": "how-it-works"
+    "narrativeAngle": "how-it-works",
+    "chapters": [
+      {
+        "id": "story",
+        "title": "The overlooked story",
+        "sceneStartIndex": 0
+      },
+      {
+        "id": "deployed",
+        "title": "Hardware already deployed",
+        "sceneStartIndex": 1
+      },
+      {
+        "id": "applications",
+        "title": "What it enables",
+        "sceneStartIndex": 3
+      },
+      {
+        "id": "perspective",
+        "title": "Research capability",
+        "sceneStartIndex": 4
+      }
+    ]
   }
 }

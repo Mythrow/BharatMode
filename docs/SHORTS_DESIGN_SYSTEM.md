@@ -1,6 +1,6 @@
 # Bharat Mode — Shorts design system, Stage 1: Frame architecture
 
-**Status: FRAME ARCHITECTURE APPROVED. Three layout proof concepts prepared for review; precise visual implementation still pending sign-off.** Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
+**Status: FRAME ARCHITECTURE APPROVED. Motion behavior is a separate proposal awaiting sign-off; see [MOTION_SYSTEM.md](MOTION_SYSTEM.md).** Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
 
 ## What comes first
 
@@ -10,6 +10,8 @@ Before deciding transitions, scene templates, narration pacing, or an end-to-end
 - 1080 × 1920 (9:16), 30fps.
 - Safe zones are tentative, not official universal YouTube crop guarantees. Start with 88 px left margin, 165 px right margin, and avoid key facts below y=1570. Avoid cramped top placement and inspect actual Shorts overlays on multiple phones before freezing.
 - Editorial content usually occupies roughly x=88–915, y=240–1350; spoken captions around y=1370–1550 when present. Prefer source credits adjacent to the underlying graphic rather than hidden behind bottom controls.
+- Topic: single topic-only contrasting pill (SCIENCE, HEALTH, etc.); no numbering or /001.
+- Bottom: no source/date stamp, no INDIA/INNOVATION/IMPACT, no 01/03 text. Use flexible chapter progress segments instead.
 - Logo: use **only** `public/brand/bharat-mode-avatar.svg` via `BrandAvatar` and `public/brand/bharat-mode-badge.svg` via `BrandBadge`. Do not recreate letters in Sora, and do not redraw/recolor marks.
 - No forced branded intro. Hook must appear in the first 1–3 seconds. Badge should be secondary during the story; a short outro is optional.
 
@@ -18,7 +20,7 @@ Before deciding transitions, scene templates, narration pacing, or an end-to-end
 2. **Evidence**: one actual photo, chart, document excerpt, mechanism or map.
 3. **Meaning**: one explanatory statement or nuanced caveat.
 4. **Captions**: two short lines maximum, with coherent phrase-based timing.
-5. **Source/date**: visible but unobtrusive; fuller citation in description.
+5. **Chapter progress**: a slim, unlabeled segmented strip at the lower edge, derived from story-specific editorial chapters. Sources and publication dates appear in the YouTube description instead of an on-video footer; essential as-of qualifiers stay with claims when needed.
 
 Not all elements are always shown; remove secondary UI when it competes with evidence.
 
@@ -64,6 +66,9 @@ Not all elements are always shown; remove secondary UI when it competes with evi
 - [ ] Evidence carries source/date/claim-stage context where relevant.
 - [ ] Avoid generic cards pasted in every scene; one key visual idea per frame.
 - [ ] Approve typography scale and captions, then implement Remotion layout primitives.
+
+## Status of chosen refinements
+The user approved contrasting topic-only pills, no persistent source/date footer, no numbered footer, flexible chapter-based progress and subtle abstract backgrounds. These are reflected in the editable style proof sources and proposed motion primitives. Source URLs/dates are retained in story JSON and the video description for publication.
 
 ## Next work, after frame sign-off
 1. Build reusable visual components and responsive-safe positioning rules.

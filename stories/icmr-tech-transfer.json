@@ -82,6 +82,23 @@
     "hookType": "question",
     "thumbnailStyle": "statement",
     "thumbnailText": "BEYOND THE LAB",
-    "narrativeAngle": "reality-check"
+    "narrativeAngle": "reality-check",
+    "chapters": [
+      {
+        "id": "transfer",
+        "title": "What was licensed",
+        "sceneStartIndex": 0
+      },
+      {
+        "id": "reality",
+        "title": "What licensing actually means",
+        "sceneStartIndex": 2
+      },
+      {
+        "id": "outcome",
+        "title": "What comes next",
+        "sceneStartIndex": 4
+      }
+    ]
   }
 }

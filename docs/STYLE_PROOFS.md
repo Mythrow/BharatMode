@@ -41,3 +41,10 @@ The initial screenshots shared in conversation were produced via an offline prog
 - [ ] Refine caption placement and source label size.
 - [ ] Approve design treatments before adding motion.
 - [ ] Make reusable motion and captions responsive to content, never mass-produce interchangeable sequences.
+
+## 23 November feedback implemented in source
+- Topic label is a **contrasting pill containing only the topic** (no /001 or invented channel index).
+- Removed visible source, publication date, `INDIA / INNOVATION / IMPACT` and `01 / 03` footers.
+- Added unlabeled segmented chapter bars in the bottom area; demo chapters are editable per story and not a fixed five-step sequence.
+- Decorative abstract backgrounds kept.
+- Existing previously exported static PNG concept screenshots may **predate this edit**. Regenerate via the three `npm run styleproof:*` commands for the updated visuals. Remotion preview has not yet been verified by a successful export in this environment.

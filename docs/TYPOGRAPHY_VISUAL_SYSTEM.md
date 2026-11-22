@@ -22,6 +22,8 @@ These are starting points; verify sizes on a **real phone**, not merely desktop 
 | Source/date | Manrope 600 | 24–30px | Compact but still legible; detailed credits in description |
 | Branding bug | Custom logo | 56–88px | Tiny, secondary, not a repeated giant stamp |
 
+Persistent source/date/footer labels are removed from video frames; full citations and upload date go in YouTube descriptions and internal research. When a date qualifies a numerical claim, it can still appear in the spoken explanation or caption. Chapters are story-driven, not a fixed five-step template.
+
 Use optical rather than only numeric alignment for huge numerals. Do not use type distortion or fake condensed/stretch effects. Keep English editorial copy in sentence case, not every headline in ALL CAPS.
 
 ## Safe areas and mobile layout

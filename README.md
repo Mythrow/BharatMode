@@ -48,6 +48,9 @@ npm run render:sample
 | `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
 | `docs/SHORTS_DESIGN_SYSTEM.md` | Approved frame architecture |
 | `docs/STYLE_PROOFS.md` | Three candidate layout designs for phone review and Remotion still commands |
+| `docs/MOTION_SYSTEM.md` | V1 proposed motion rules, flexible chapter timing, captions, transitions and audio behavior |
+| `src/motion-system.jsx` | Reusable topic pill, chapter progress and motion primitives |
+| `src/motion-preview.jsx` | 14-second Remotion motion study, not ready for publishing |
 | `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
 | `media/manifest.json` | Approved real-image / third-party-logo licensing registry (currently empty) |
 | `docs/ROADMAP.md` | Launch milestones and acceptance criteria |
@@ -85,3 +88,6 @@ The owner-approved [original channel cover](public/brand/BM_Youtube_Cover.png) i
 
 ## Design proofs
 Three editable 1080×1920 Remotion stills are registered: `BharatProofIvory`, `BharatProofDark` and `BharatProofSaffron`. Run `npm run styleproof:ivory`, `npm run styleproof:dark`, `npm run styleproof:saffron`. These are review candidates; see [docs/STYLE_PROOFS.md](docs/STYLE_PROOFS.md) for content source, caveats and QA steps. Generated PNG files stay out of Git under `out/`.
+
+## Motion study (draft for approval)
+`npm run motion:preview` creates the animated 14-second `BharatMotionPreview` study in ignored `out/`. It uses true editable Remotion elements, the owner-approved avatar SVG, Sora and Manrope, contrasting topic-only pills, and per-story chapter timing. The sample captions are **not voice-synchronized**; never publish the preview. See [docs/MOTION_SYSTEM.md](docs/MOTION_SYSTEM.md).

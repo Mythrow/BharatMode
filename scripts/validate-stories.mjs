@@ -19,6 +19,16 @@ for (const file of fs.readdirSync(folder).filter(f=>f.endsWith('.json'))) {
   if (!validMeta) {console.error(file+': missing/invalid creative metadata'); failures++;}
   if (data.thumbnailStyle==='portrait' && (!data.thumbnailImage || !data.thumbnailImageLicense)) {console.error(file+': portrait thumbnail requires a rights-cleared image and license record'); failures++;}
   if (data.thumbnailStyle==='split' && !data.splitComparisonVerified) {console.error(file+': before/after split requires verification'); failures++;}
+  if (data.chapters!==undefined) {
+    const starts=data.chapters?.map(c=>c.sceneStartIndex)||[];
+    const ids=data.chapters?.map(c=>c.id)||[];
+    const valid=Array.isArray(data.chapters)&&starts.length>0&&starts[0]===0&&
+      starts.every((index,i)=>Number.isInteger(index)&&index>=0&&
+        index<data.scenes.length&&(i===0||index>starts[i-1]))&&
+      ids.every(id=>typeof id==='string'&&id.trim())&&
+      new Set(ids).size===ids.length;
+    if (!valid) {console.error(file+': invalid story-driven chapter boundaries');failures++;}
+  }
   const duration = data.scenes.reduce((n,s)=>n+Number(s.duration||0),0);
   if (duration<15 || duration>180) { console.error(file+': unsupported duration '+duration); failures++; }
   for (const [i,s] of data.scenes.entries()) {

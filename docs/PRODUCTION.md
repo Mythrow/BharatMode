@@ -66,3 +66,7 @@ Keep **all editable source, scripts, story JSON, docs, original background music
 
 ## Approved brand artwork
 Use `src/brand-assets.jsx` to render the owner-approved `public/brand/bharat-mode-badge.svg` and `public/brand/bharat-mode-avatar.svg`. These assets are stored in Git and do not require external fonts. Do **not** replace them with older generated/sketch logos. Run `npm run logo:check` before release to validate the locked SVG originals. The badge/avatar SVGs include their own author-selected color shades even though other scene visuals use `src/brand.js` palette tokens.
+
+## Motion System v1 — draft for creative review
+
+See [MOTION_SYSTEM.md](MOTION_SYSTEM.md). Run `npm run motion:preview` to produce a 14-second animated, intentionally non-publishable demo at `out/bharat-motion-preview.mp4`. The proof has no voice and sample phrases are not voice-timestamped. Source/date footers have been removed from layouts; store full source information in the YouTube description, with essential claim qualifiers narrated. The chapter bar derives from optional per-story `chapters` boundaries rather than fixed five-chapter content.

@@ -13,6 +13,7 @@ import {AbsoluteFill} from 'remotion';
 import {BrandAvatar} from './brand-assets.jsx';
 import {DISPLAY_FONT, BODY_FONT} from './fonts.js';
 import {BRAND} from './brand.js';
+import {ChapterProgress,TopicPill} from './motion-system.jsx';
 
 const C = BRAND;
 const smallCaps=(color,spacing=2)=>({
@@ -32,30 +33,17 @@ const Caption = ({lines}) => (
     }}>{line}</div>)}
   </div>
 );
-const Footer=({dark=false,step='01 / 03'})=>{
-  const ink=dark?C.ivory:C.graphite;
-  const secondary=dark?'#ABBDCA':'#59656A';
-  return <>
-    <div style={{position:'absolute',left:84,top:1578,...smallCaps(secondary,1.1)}}>
-      SOURCE: PIB / NSM
-    </div>
-    <div style={{position:'absolute',left:84,top:1621,
-      fontFamily:BODY_FONT,fontWeight:550,fontSize:23,color:secondary}}>
-      As of Sep 2026 · Reported 04 Oct 2026
-    </div>
-    <div style={{position:'absolute',left:84,right:84,top:1682,
-      height:2,background:dark?'#3B4A52':'#D8D8D3'}}/>
-    <div style={{position:'absolute',left:84,top:1704,
-      ...smallCaps(ink,1.25),fontSize:21}}>
-      INDIA / INNOVATION / IMPACT
-    </div>
-    <div style={{position:'absolute',right:84,top:1704,
-      fontFamily:BODY_FONT,fontSize:22,fontWeight:650,color:secondary}}>
-      {step}
-    </div>
-  </>;
-};
-const Topline=({topic='SCIENCE / 001',dark=false})=>{
+const PROOF_CHAPTERS=[
+  {id:'intro',startSec:0,endSec:6},
+  {id:'deployment',startSec:6,endSec:14},
+  {id:'applications',startSec:14,endSec:22}
+];
+const ProofProgress=({timeSec,themeName='ivory'})=>(
+  <ChapterProgress chapters={PROOF_CHAPTERS}
+    themeName={themeName} timeSec={timeSec} bottom={255} right={165}/>
+);
+const Topline=({topic='SCIENCE',themeName='ivory'})=>{
+  const dark=themeName==='midnight';
   const ink=dark?C.ivory:C.graphite;
   return <>
     <div style={{position:'absolute',left:82,top:84}}>
@@ -70,14 +58,9 @@ const Topline=({topic='SCIENCE / 001',dark=false})=>{
       color:dark?'#B9C9C9':'#657073',letterSpacing:1.45}}>
       BIG IDEAS. REAL PROGRESS.
     </div>
-    <div style={{
-      position:'absolute',right:82,top:91,minWidth:230,height:69,
-      borderRadius:35,padding:'0 26px',
-      background:dark?'#26373D':'#EFE7DC',display:'flex',
-      alignItems:'center',justifyContent:'center',
-      color:dark?'#FFBE91':C.saffronText,
-      fontFamily:BODY_FONT,fontSize:21,fontWeight:800,letterSpacing:1.2
-    }}>{topic}</div>
+    <div style={{position:'absolute',right:165,top:91}}>
+      <TopicPill topic={topic} themeName={themeName}/>
+    </div>
   </>;
 };
 const ServerRack=({dark=false,compact=false})=>(
@@ -138,7 +121,7 @@ export const BharatProofIvory=()=>(
         color:'#697C7C'}}>Illustrative server architecture — not actual equipment</div>
     </div>
     <Caption lines={['6,000 Rudra servers deployed','as of September 2026.']}/>
-    <Footer/>
+    <ProofProgress timeSec={3} themeName="ivory"/>
   </AbsoluteFill>
 );
 export const BharatProofDark=()=>(
@@ -146,7 +129,7 @@ export const BharatProofDark=()=>(
     <div style={{position:'absolute',width:830,height:830,borderRadius:'50%',
       right:-230,top:650,
       background:'radial-gradient(circle,#1B4648 0%,transparent 70%)',opacity:.6}}/>
-    <Topline topic="BREAKTHROUGH" dark/>
+    <Topline topic="SCIENCE" themeName="midnight"/>
     <div style={{position:'absolute',left:83,top:260,...smallCaps('#ACD4CC')}}>
       THE NUMBER THAT MATTERS
     </div>
@@ -176,7 +159,7 @@ export const BharatProofDark=()=>(
       </div>
     </div>
     <Caption lines={['This is deployed research','infrastructure — not a proposal.']}/>
-    <Footer dark step="02 / 03"/>
+    <ProofProgress timeSec={9} themeName="midnight"/>
   </AbsoluteFill>
 );
 export const BharatProofSaffron=()=>(
@@ -187,7 +170,7 @@ export const BharatProofSaffron=()=>(
     <div style={{position:'absolute',right:-120,top:-120,
       borderRadius:'50%',height:500,width:500,
       background:'#FFDDC1',opacity:.24}}/>
-    <Topline topic="HOW IT WORKS"/>
+    <Topline topic="SCIENCE" themeName="saffron"/>
     <div style={{position:'absolute',left:83,top:290,...smallCaps(C.charcoal,1.5)}}>
       FROM DESIGN TO DEPLOYMENT
     </div>
@@ -233,6 +216,6 @@ export const BharatProofSaffron=()=>(
       </div>
     </div>
     <Caption lines={['Designed by C-DAC, then','manufactured in India.']}/>
-    <Footer step="03 / 03"/>
+    <ProofProgress timeSec={20} themeName="saffron"/>
   </AbsoluteFill>
 );

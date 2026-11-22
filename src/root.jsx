@@ -2,11 +2,14 @@ import React from 'react';
 import {Composition, Still} from 'remotion';
 import {BharatShort} from './short.jsx';
 import {BharatThumbnail} from './thumbnail.jsx';
+import {BharatMotionPreview} from './motion-preview.jsx';
 import example from '../stories/param-rudra.json';
 import {BharatProofIvory,BharatProofDark,BharatProofSaffron} from './style-proofs.jsx';
 
 const FPS = 30;
 export const Root = () => <>
+  <Composition id="BharatMotionPreview" component={BharatMotionPreview} fps={30}
+    width={1080} height={1920} durationInFrames={420} />
   <Still id="BharatProofIvory" component={BharatProofIvory} width={1080} height={1920} />
   <Still id="BharatProofDark" component={BharatProofDark} width={1080} height={1920} />
   <Still id="BharatProofSaffron" component={BharatProofSaffron} width={1080} height={1920} />
