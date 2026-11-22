@@ -42,7 +42,8 @@ npm run render:sample
 | `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
 | `docs/BRAND.md` | Approved five-color brand kit and typography |
 | `docs/LOGO_DIRECTION.md` | FINAL approved owner SVG badge/avatar, exact color values and checksum policy |
-| `public/brand/` | Only approved brand badge/avatar SVGs, loaded directly by Remotion |
+| `docs/CHANNEL_BANNER.md` | Owner-approved YouTube cover metadata, Git installation and safe area review |
+| `public/brand/` | Approved badge/avatar SVGs; channel cover PNG awaiting binary upload |
 | `src/brand-assets.jsx` | Reusable Remotion components rendering the approved SVG artwork |
 | `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
 | `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
@@ -76,3 +77,6 @@ No trademark or YouTube handle availability is verified by this repo. Confirm in
 
 ## Logo sources of truth
 The only current, approved logo files are [`public/brand/bharat-mode-badge.svg`](public/brand/bharat-mode-badge.svg) and [`public/brand/bharat-mode-avatar.svg`](public/brand/bharat-mode-avatar.svg), supplied and approved by the owner. Historical experimental logo sketches have been removed from the current repository tree. Remotion uses these exact SVGs in scene branding and thumbnails. The SVG colors are slightly different from the scene UI palette; **do not recolor these final artwork files**.
+
+## Channel banner status
+The owner has approved the YouTube banner design. Its **original uploaded PNG is 2048×1152** with SHA-256 `cc732add91a1104492d06522db65871547918a482fae6166919e6c34b8a104ae`. The PNG itself is **not yet in Git**, pending binary transfer to `public/brand/BM_Youtube_Cover.png`; see [docs/CHANNEL_BANNER.md](docs/CHANNEL_BANNER.md). Once added, run `npm run cover:check`.

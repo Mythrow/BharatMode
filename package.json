@@ -14,7 +14,8 @@
     "thumbnail:sample": "remotion still src/index.jsx BharatThumbnail out/param-rudra-thumb.png --props=stories/param-rudra.json",
     "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnail out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json",
     "brand:check": "node scripts/check-brand.mjs",
-    "logo:check": "node scripts/check-logo-assets.mjs"
+    "logo:check": "node scripts/check-logo-assets.mjs",
+    "cover:check": "node scripts/check-channel-cover.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

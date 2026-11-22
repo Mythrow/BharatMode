@@ -2,11 +2,11 @@
 
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
-## Milestone 1 — Approved logo badge and avatar (COMPLETE; channel banner remains next)
+## Milestone 1 — Approved logo badge and avatar (COMPLETE); banner design approved, binary upload pending
 - [x] Owner provided final vector badge and avatar; exact source files checked into `public/brand/`.
 - [x] Vector avatar supplied in 320×320 viewBox; test actual final upload crop on YouTube.
 - [x] Sora for display and Manrope SemiBold for body/captions; brand logo uses owner-outlined SVG artwork.
-- [x] Approved icon/avatar and horizontal badge stored in repo; [ ] design channel banner and motion signature using these exact assets.
+- [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner design approved by owner; [ ] upload and verify the PNG in Git; [ ] test channel crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
 ## Milestone 2 — Three polished pilot Shorts
