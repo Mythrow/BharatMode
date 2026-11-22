@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {scenePoseAt,currentBeatAt,headlineCharsAt,DEMO_BEATS} from '../src/motion-v6-timing.js';
+assert.equal(currentBeatAt(5),1);
+assert.equal(currentBeatAt(10.5),2);
+let a=scenePoseAt(5,0),b=scenePoseAt(5,1);
+assert.ok(a.opacity>0&&b.opacity>0, 'soft crossfade must overlap');
+assert.ok(Math.abs(a.translateX)<30&&Math.abs(b.translateX)<30,'no large scene slide');
+assert.equal(scenePoseAt(3,0).opacity,1);
+assert.equal(scenePoseAt(3,1).opacity,0);
+assert.ok(headlineCharsAt('HELLO',.1).length>0);
+assert.ok(headlineCharsAt('HELLO',3).length===5);
+console.log('V6 timings pass; crossfade is restrained and headline typing remains.');

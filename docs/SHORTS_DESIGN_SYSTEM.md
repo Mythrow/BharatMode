@@ -88,3 +88,6 @@ Source of truth for the currently proposed caption rendering: [CAPTION_MOTION_V4
 
 ## V5 review: directional scene motion
 The owner requested retained typewriter/grouped caption styling with more obvious motion: **text containers move directionally even as their characters type**, hero content sits closer to the title, small caption panels remain screen-centered within symmetrical safe margins, and chapter changes use visible transitions. See [MOTION_V5.md](MOTION_V5.md). Design is pending sign-off.
+
+## V6 transition and progress update
+For V6 review, avoid elaborate diagonal wipes or large whole-scene slides. Use a short soft dissolve with very slight drift between chapters; directional component entrances remain. Chapter progress bars must be visible in all themes; set colors at the progress component level or parent, not inside unrelated scene layers. Caption colors on ivory remain graphite navy with deep saffron highlight as in V4. See [MOTION_V6.md](MOTION_V6.md).

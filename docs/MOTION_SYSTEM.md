@@ -108,3 +108,6 @@ The owner refined V2 in [CAPTION_MOTION_V3.md](CAPTION_MOTION_V3.md): **no curso
 
 ## Current draft: V5
 V5 restores *directional movement for the entire headline block during character-by-character typing* and the kicker/hero, adds an overlapping scene transition (incoming from right, outgoing left, branded diagonal streak), moves the hero higher and pins grouped captions to the screen center with 140px margins. All V4 word-pop, phrase grouping and active-word color rules remain. [Current V5 spec](MOTION_V5.md). This is a review draft rather than an approved template.
+
+## Current review: Motion V6
+The owner requested simpler premium scene transitions, visible bottom chapter bars and a light-scene caption-color check. In [Motion V6](MOTION_V6.md) the transition is now a short, subtle dissolve, the bar is repaired/visible, and previous caption colors are explicitly preserved. V5 colored streak and large scene slide should not be reused without new approval.

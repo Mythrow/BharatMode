@@ -58,3 +58,5 @@ Play/Pause/Replay/Speed/Scrub and **jump-to-transition** buttons are included in
 - `npm run motion:preview` targets V5 after this revision; V4 remains available with `npm run motion:preview:v4`.
 
 **QA:** Standalone HTML has been tested through headless Chromium using local font fallback. Caption bounding-box center stayed within 1.5px of canvas x=540 and within x=140…940 for sampled time points. Scene layer overlap and theme switches were verified. The Remotion MP4 has **not** yet been rendered with actual Google fonts or synchronized audio. It remains a draft for owner visual sign-off, not a publishable Short.
+## Superseded by simpler V6 transition
+The V5 diagonal streak and large scene-slide were rejected. V6 adopts a restrained 0.34s dissolve and restores the missing chapter-progress CSS colors in the browser preview. See [MOTION_V6.md](MOTION_V6.md). V5 remains available for historical comparison.
