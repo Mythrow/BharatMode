@@ -20,7 +20,7 @@
 - Upscaling changes pixels but **cannot restore photographic/vector detail** beyond the source; keep the original as the creative master.
 
 ## Cropping review is still needed
-YouTube displays channel banners using different crops on mobile, desktop and TV. At the original 2048 × 1152 canvas, the approximate central mobile-safe area is **1237 × 338 px**, centered near **x=405–1642, y=407–745**. The logo edges approach or extend beyond this region, meaning **some badge edges could crop on mobile** even with a correctly sized image.
+YouTube displays channel banners using different crops on mobile, desktop and TV. Official specifications: https://support.google.com/youtube/answer/10456525 At the original 2048 × 1152 canvas, the approximate central mobile-safe area is **1235 × 338 px**, centered near **x≈407–1642, y=407–745**. The logo edges approach or extend beyond this region, meaning **some badge edges could crop on mobile** even with a correctly sized image.
 
 Before final publication, inspect the device crop preview inside YouTube Studio. If essential content is clipped, create a separately approved mobile-safe re-layout using the exact authorized badge SVG. Do **not** generate a replacement/altered logo.
 
