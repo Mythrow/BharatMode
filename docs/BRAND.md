@@ -40,8 +40,8 @@ Targets for a sufficiently large run of uploads:
 Targets guide a rotation; they are not a rigid publishing quota. Story form, imagery, hook and narrative must vary independently from color. See [Variety Rules](VARIETY_RULES.md).
 
 ## Typography
-- **Bricolage Grotesque**: expressive headlines, title cards, brand wordmark, large stats.
-- **Manrope**: readable body explanation, captions, source notes.
+- **Sora**: confirmed display font for headlines, title cards, brand wordmark and large stats. The custom italic BM icon uses vector paths, not generic typed Sora glyphs.
+- **Manrope SemiBold**: confirmed reading font for explanations and captions, with lighter weights available for sources.
 - Both loaded via `@remotion/google-fonts`; font binaries should **never** be checked into this repo.
 - Prefer sentence case in narrative; do not use all-caps in entire scripts.
 
@@ -66,4 +66,4 @@ Targets guide a rotation; they are not a rigid publishing quota. Story form, ima
 - Fonts: `src/fonts.js`
 - Brand contract check: `npm run brand:check`
 
-Palette is confirmed, but **a rendered Remotion QA pass remains outstanding**. Logo and profile avatar are the next creative approval, not automatically finalized by selecting colors.
+Palette is confirmed, but **a rendered Remotion QA pass remains outstanding**. The original **BM + Underline** icon and horizontal wordmark direction is selected; final exact-shape vector work and visual QA are still outstanding.

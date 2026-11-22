@@ -1,10 +1,10 @@
 # Bharat Mode — Typography & On-screen Visual Grammar (proposed)
 
-**Status: DRAFT for owner approval before finalizing Shorts templates.** Palette confirmed; typography values and components are proposed for phone-scale QA. Existing Remotion code is an early starter and not guaranteed to implement every specification below.
+**Status: FONT FAMILIES CONFIRMED; on-screen scale remains pending render QA.** Palette confirmed; typography values and components are proposed for phone-scale QA. Existing Remotion code is an early starter and not guaranteed to implement every specification below.
 
 ## Font pairing
-- **Display / wordmark / striking numbers:** Bricolage Grotesque, 700–800. Expressive, contemporary and memorable; avoid using it for dense paragraphs.
-- **Narration captions / explanation / facts:** Manrope, 500–700. Clear, friendly and crisp.
+- **Display / wordmark / striking numbers:** Sora, 700–800. Expressive, contemporary and memorable; avoid using it for dense paragraphs.
+- **Narration captions / explanation / facts:** Manrope SemiBold (600) primarily; lighter weights only when needed. Clear, friendly and crisp.
 - **Source/date/micro labels:** Manrope, 500–700, letter spacing reserved for short uppercase labels.
 - Both available under SIL OFL; load via `@remotion/google-fonts`. Do not commit font binaries. Keep font legal notices accessible in project documentation as required by the provider's licensing terms.
 

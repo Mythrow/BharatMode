@@ -2,7 +2,7 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
-> Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Remotion visual QA remains outstanding. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
+> Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Sora and Manrope SemiBold font pairing confirmed; original BM + Underline horizontal logo direction selected; final vector master and render QA are pending. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
 
 ## Quick start
 
@@ -40,7 +40,7 @@ npm run render:sample
 | `docs/CHANNEL_BLUEPRINT.md` | Positioning, content pillars, cadence and production plan |
 | `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
 | `docs/BRAND.md` | Approved five-color brand kit and typography |
-| `docs/LOGO_DIRECTION.md` | Three preliminary logo directions; vector sketches under `brand/logo-sketches/` |
+| `docs/LOGO_DIRECTION.md` | Original BM + Underline horizontal logo direction and source-fidelity rules |
 | `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
 | `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
 | `media/manifest.json` | Approved real-image / third-party-logo licensing registry (currently empty) |

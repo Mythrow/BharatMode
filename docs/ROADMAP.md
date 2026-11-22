@@ -3,10 +3,10 @@
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
 ## Milestone 1 — Iconic visual identity (NEXT)
-- Design 2–3 logo **concepts**: typography-led wordmark, recognizable "BM" avatar, and restrained MODE: ON mark.
+- Refine the owner-selected **original BM + Underline** direction, preserving B/M silhouettes and three short teal–ivory–saffron parallelograms.
 - All variations must work at 98px circular YouTube avatar size and on both ivory and charcoal.
-- Use Bricolage Grotesque for headlines and Manrope for supporting copy (font license compliant).
-- Deliver avatar, wordmark, banner and motion-signature specification as editable source in the repository.
+- Use confirmed **Sora** for display and **Manrope SemiBold** for body/captions.
+- Deliver icon-only avatar, **horizontal BHARAT MODE** wordmark, banner and motion signature as editable source in repo.
 - **Acceptance:** user chooses one; mobile contrast and small-size recognition checked.
 
 ## Milestone 2 — Three polished pilot Shorts

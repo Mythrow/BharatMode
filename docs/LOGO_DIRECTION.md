@@ -1,42 +1,24 @@
-# Bharat Mode — logo concept brief (NOT approved)
+# Bharat Mode — Selected logo: original BM + Underline Mark
 
-**Status:** awaiting owner selection. Official colors are approved in [BRAND.md](BRAND.md); typography and logo artwork remain under review. This is exploration, not final vector master artwork.
+**Status:** The *direction* is selected; the precise custom vector master awaits visual approval.
 
-## Three concepts for comparison
+## Source fidelity
+Use **original Concept 03: BM + Underline Mark** from the user's six-concept reference image. The custom, italic/slanted original B and M shapes must be preserved and refined as vector paths. Do not substitute generic typed BM characters, forward-sweep shapes or vertical signal bars. This is NOT the Mode Switch symbol.
 
-1. **Mode Switch — recommended to explore first.** The act of switching into Bharat Mode. Animated a single time, very briefly, usually after the hook or at the close. A generic power icon is not ownable enough; the production logo needs a distinctive custom-cut notch or integration with our letterforms.
-2. **BM Monogram.** A compact two-letter device for tiny circular channel avatars. Opportunity for a custom B/M ligature and single saffron stroke.
-3. **Forward Mark.** Three upward-progressing architectural blocks / forward movement. May communicate engineering well but risks looking like a generic finance brand; use caution.
+## Lockup specification
+- **One horizontal line:** [BM icon with underline] | BHARAT MODE, where BHARAT and MODE are adjacent and share a baseline, **not stacked**.
+- **B / BHARAT:** Classic Saffron `#E8752E`.
+- **M / MODE:** Warm Ivory `#FFF7EB` on Deep Charcoal `#0B1018`. On ivory backgrounds, use Graphite Navy `#283039` for contrast.
+- **Underline:** Exactly three small parallel right-slanting parallelograms; left Ocean Teal `#117A7A`, **center Warm Ivory `#FFF7EB`**, right Classic Saffron `#E8752E`.
+- **Underline proportion:** Total bar run ~75–85% of BM icon width; each bar short, similar height and shape, with modest even gaps. Center immediately beneath BM, never stretch beneath wordmark.
+- Primary dark lockup has a small BM icon followed by a discreet vertical separator and a single-line BHARAT MODE wordmark.
+- Tagline "Big Ideas. Real Progress." is optional below the wordmark, but never split BHARAT above MODE.
+- Avatar: only BM + three-segment underline in a Deep Charcoal circular field.
 
-## Approved brand colors for concept study
+## Fonts
+- **Sora Bold/ExtraBold** — approved for display, brand wordmark, headlines, numerals.
+- **Manrope SemiBold** — approved for reading/captions/secondary information.
+- The custom emblem's original B/M letterforms must NOT be silently replaced by Sora text.
 
-- Classic Saffron `#E8752E`
-- Warm Ivory `#FFF7EB`
-- Ocean Teal `#117A7A` (minor, optional, never equal hero color)
-- Graphite Navy `#283039`
-- Deep Charcoal `#0B1018`
-
-## Sketch files (editable SVG, not production logo)
-
-- `brand/logo-sketches/mode-switch.svg`
-- `brand/logo-sketches/bm-monogram.svg`
-- `brand/logo-sketches/forward-mark.svg`
-
-These are small-size shape explorations and may not exactly match raster inspiration boards. Their purpose is to test silhouettes and design direction, not to replace custom vector art.
-
-## What a successful mark needs
-- Legible at **48px**, easily distinguishable in a circular YouTube avatar.
-- Works in one-color saffron or ivory; two-tone supported but not mandatory.
-- Has a clean dark-on-ivory and saffron-on-charcoal variant.
-- Looks good as a tiny 72px corner bug and in a 0.6–1.2s ending signature.
-- Does not resemble an official emblem, party symbol, flag, or YouTube play logo.
-- No overly detailed map outline, circuit board texture or miniature tagline.
-- Pair a custom wordmark with **Bricolage Grotesque** as a starting point; refine kerns and terminal shapes manually.
-
-## Approval sequence
-1. Owner selects logo direction and whether visual identity should be more playful or premium.
-2. Produce polished vector master (SVG) and avatar variants, then test at 48px and 98px.
-3. Apply wordmark spacing, minimum size, safe clearspace and favicon/thumbnail uses.
-4. Record approval, then wire chosen logo into Remotion and YouTube artwork.
-
-Please do not mark any logo as official until the owner selects one.
+## Acceptance criteria
+Compare final vector against original reference silhouettes, underline width, gap sizes and diagonal edges. Test at 48/98px avatar sizes, in dark/light horizontal lockups, and on a real phone before marking the logo master final.
