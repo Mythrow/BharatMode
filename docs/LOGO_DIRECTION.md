@@ -1,40 +1,40 @@
-# Bharat Mode — Selected logo: original BM + Underline Mark
+# Bharat Mode — Approved brand marks
 
-**Status:** Reference-traced SVG primary horizontal lockup available for visual sign-off. The symbol outlines were extracted from the latest supplied primary-lockup image; they remain editable vector paths. No secondary lockup is included.
+**Status: FINAL — APPROVED by the owner on 22 November 2026.**
 
-## Source fidelity
-Use the **latest approved-in-principle BM + three-part underline** as shown in the user's most recent primary-lockup reference. The user explicitly requested the primary lockup only, without a secondary light lockup. The custom, italic/slanted original B and M shapes must be preserved and refined as vector paths. Do not substitute generic typed BM characters, forward-sweep shapes or vertical signal bars. This is NOT the Mode Switch symbol.
+This document supersedes every previous BM redraw, concept board, early SVG and HTML preview. **Do not recreate the logo, change its colors, remap letters, or use the old sketches.**
 
-## Lockup specification
-- **One horizontal line:** [BM icon with underline] | BHARAT MODE, where BHARAT and MODE are adjacent and share a baseline, **not stacked**.
-- **B glyph:** Warm Ivory `#FFF7EB` on Deep Charcoal; **BHARAT wordmark:** Classic Saffron `#E8752E`.
-- **M glyph:** Classic Saffron `#E8752E`; **MODE wordmark:** Warm Ivory `#FFF7EB`, on Deep Charcoal `#0B1018`. This follows the latest supplied primary lockup, superseding the earlier color flip.
-- **Underline:** Exactly three small parallel right-slanting parallelograms; left Ocean Teal `#117A7A`, **center Warm Ivory `#FFF7EB`**, right Classic Saffron `#E8752E`.
-- **Underline proportion:** Underline must span the entire BM silhouette, from the leftmost visible B edge to the rightmost M edge, with three equal slim, rounded slanted bars and even gaps. Center immediately beneath BM, never stretch beneath wordmark.
-- Primary dark lockup has a small BM icon followed by a discreet vertical separator and a single-line BHARAT MODE wordmark.
-- Tagline "Big Ideas. Real Progress." is optional below the wordmark, but never split BHARAT above MODE.
-- Avatar: only BM + three-segment underline in a Deep Charcoal circular field.
+## Canonical artwork — exactly the two owner-supplied SVG files
 
-## Fonts
-- **Sora Bold/ExtraBold** — approved for display, brand wordmark, headlines, numerals.
-- **Manrope SemiBold** — approved for reading/captions/secondary information.
-- The custom emblem's original B/M letterforms must NOT be silently replaced by Sora text.
+| Role | Approved repository file | Dimensions / format |
+| --- | --- | --- |
+| Main badge / horizontal logo | [`public/brand/bharat-mode-badge.svg`](../public/brand/bharat-mode-badge.svg) | SVG with `viewBox="22 221 1405 369"` |
+| Channel avatar / icon | [`public/brand/bharat-mode-avatar.svg`](../public/brand/bharat-mode-avatar.svg) | SVG with `viewBox="0 0 320 320"` |
 
-## Acceptance criteria
-Compare final vector against original reference silhouettes, underline width, gap sizes and diagonal edges. Current scope is **one dark primary horizontal lockup only**; test in a browser, then at 48/98px and on a real phone before marking logo master final. No secondary lockup should be reintroduced without a new request.
+The assets use **vector paths only**, with no external fonts or linked images. Their exact silhouettes, spacing, counters, underline proportions, color fills, wordmark and tagline were supplied and finalized by the owner. These are source-of-truth files; **not generated equivalents**.
 
-## Editable implementation
-- SVG: [`brand/logos/bharat-mode-primary.svg`](../brand/logos/bharat-mode-primary.svg) — vector B/M silhouettes and precise short underline bars, with Sora/Manrope live SVG text for wordmark/tagline.
-- HTML: [`brand/logos/primary-preview.html`](../brand/logos/primary-preview.html) — displays that same SVG without a secondary variant.
-- Important: SVG wordmark/tagline text uses Sora and Manrope if available; browser font loading via HTML preview. The icon outlines and underline remain true vector paths.
+### Locked source file checksums (SHA-256)
+- `bharat-mode-badge.svg`: `03ec4a83ed34255427724c1b3f77dbe7654d5f31f99e081d570d446d8d5707b5`
+- `bharat-mode-avatar.svg`: `0a608f57cb93033a36bce5bd2a7a45bc15bfc3dd26d58478fbf7134d981f818a`
 
-## 23 Nov SVG correction
+### Actual SVG colors
+The owner-provided artwork embeds **its own specific shades**:
+- Saffron `#EE7B29`
+- Warm ivory `#FDF5EA`
+- Teal `#0A8B8C`
+- Dark background `#0C141B`
 
-The primary dark horizontal mark now uses redrawn smooth editable B/M path geometry and a full-width underline. It contains precisely three slim parallelograms (teal, ivory, saffron), from the left B edge to the right M edge. The approved typography is a synthetic italic/slanted **Sora 800** wordmark with visible inter-word separation and **Manrope 600** tagline. No secondary lockup is produced. This remains a design proof for owner review; the rendering must still be visually approved.
+These differ slightly from the separately approved **video UI color tokens** (`src/brand.js`). The logo must **not** be recolored to match UI tokens. Existing UI palette remains unchanged unless separately approved.
 
-## Corrected vector proof: source-shape review
-- Rebuilt B as a compound path with a truly transparent lower counter (`fill-rule=evenodd`) and the original open upper notch.
-- Recreated the underline using **three identical rounded slanted rectangles** (90 × 13 SVG units, 13-unit gaps) spanning the full icon from B to M.
-- Wordmark is **Sora ExtraBold (800)**, slanted -9 degrees because Sora has no native italic in the specified Remotion family; separation is a deliberate 43-unit inter-word gap.
-- The HTML preview loads Sora and Manrope from Google Fonts; SVG retains editable text and may fall back to a local font if opened without font availability. For production, convert the final approved wordmark to paths in the font-aware build environment so the standalone SVG is fully portable.
-- **This SVG is a new visual proof, not yet approved as final.**
+## Required usage
+- Use the badge for channel banners, brand sheets and understated closing frames.
+- Use the avatar in circular YouTube profile contexts, small corner branding and thumbnails.
+- In Remotion, import `BrandBadge` or `BrandAvatar` from `src/brand-assets.jsx`. They load the exact SVG files through `staticFile()`.
+- Preserve the aspect ratio, background, colors and clearspace of each asset; never stretch or crop the letterforms.
+- Do not typeset the original outlined badge wordmark in Sora: the logo is custom vector artwork. **Sora** remains the display typeface for other video content and **Manrope SemiBold** for captions/reading.
+- Keep generated voice and final video files out of Git. The logo SVG sources are explicitly approved for Git.
+
+## Change control
+Any future brand revision must use a newly approved owner-supplied master and update these files and checksums together. `npm run logo:check` verifies that approved masters have not been accidentally modified.
+
+**Avatar and badge are complete; video layout/caption components still need full render QA.**

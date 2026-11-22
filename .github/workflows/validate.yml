@@ -1,0 +1,17 @@
+name: Validate story briefs
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  stories:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/validate-stories.mjs
+      - run: node scripts/check-brand.mjs
+
+      - run: node scripts/check-logo-assets.mjs

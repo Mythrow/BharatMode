@@ -1,0 +1,26 @@
+{
+  "name": "bharat-mode",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "validate": "node scripts/validate-stories.mjs",
+    "voice": "node scripts/tts-openai.mjs",
+    "render:sample": "remotion render src/index.jsx BharatShort out/param-rudra.mp4 --props=stories/param-rudra.json --codec=h264",
+    "render:icmr": "remotion render src/index.jsx BharatShort out/icmr-tech-transfer.mp4 --props=stories/icmr-tech-transfer.json --codec=h264",
+    "audio:generate": "node scripts/make-audio.mjs",
+    "variety:check": "node scripts/check-variety.mjs",
+    "thumbnail:sample": "remotion still src/index.jsx BharatThumbnail out/param-rudra-thumb.png --props=stories/param-rudra.json",
+    "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnail out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json",
+    "brand:check": "node scripts/check-brand.mjs",
+    "logo:check": "node scripts/check-logo-assets.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "@remotion/google-fonts": "4.0.545",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.545"
+  }
+}
