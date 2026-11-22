@@ -19,7 +19,8 @@
     "styleproof:ivory": "remotion still src/index.jsx BharatProofIvory out/styleproof-ivory.png",
     "styleproof:dark": "remotion still src/index.jsx BharatProofDark out/styleproof-dark.png",
     "styleproof:saffron": "remotion still src/index.jsx BharatProofSaffron out/styleproof-saffron.png",
-    "motion:preview": "remotion render src/index.jsx BharatMotionPreview out/bharat-motion-preview.mp4 --codec=h264"
+    "motion:preview": "remotion render src/index.jsx BharatMotionPreview out/bharat-motion-preview.mp4 --codec=h264",
+    "chapters:check": "node scripts/test-chapters.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

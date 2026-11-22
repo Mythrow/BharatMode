@@ -15,4 +15,5 @@ jobs:
       - run: node scripts/check-brand.mjs
 
       - run: node scripts/check-logo-assets.mjs
+      - run: node scripts/test-chapters.mjs
       - run: node scripts/check-channel-cover.mjs
