@@ -17,7 +17,6 @@ build/
 !.env.example
 .DS_Store
 Thumbs.db
-public/music/*.wav
 public/voice/
 tmp/
 coverage/

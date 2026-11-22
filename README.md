@@ -2,7 +2,7 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
-> Status: production starter / pre-launch. The color palette is **provisional** until approved. This repo stores code, story briefs, research standards, brand guidelines and process docs. It does **not** store rendered videos.
+> Status: production starter / pre-launch. The color palette is **provisional** until approved. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
 
 ## Quick start
 
@@ -11,7 +11,6 @@ Install Node.js 20+ and npm. From the repository root:
 ```bash
 npm install
 npm run validate
-npm run music:generate
 npm run studio
 npm run render:sample
 ```
@@ -21,8 +20,9 @@ npm run render:sample
 - `render:icmr`: render a second sample.
 - Samples start without voice (`hasVoice: false`) so they can render after music generation. **Do not publish a silent demo.**
 - To add natural narration, set `OPENAI_API_KEY`, run `npm run voice -- stories/param-rudra.json`, then change that story's `hasVoice` to `true` and render again. Natural TTS needs a supported provider/model and paid API access; its model identifier is configurable via `OPENAI_TTS_MODEL`.
-- Generated voice/music assets are ignored by Git because they are reproducible or replaceable. Keep licensed masters externally and track rights in story metadata.
-- Never commit API keys, .env files, unreleased confidential material, licensed third-party footage, or rendered MP4s.
+- Original audio masters are checked in under `public/music/` and `public/sfx/`; run `npm run audio:generate` only when intentionally regenerating these files and review the changes before committing.
+- Generated narration in `public/voice/` and rendered videos in `out/` are ignored. Keep licensed third-party assets externally and track license details in story metadata.
+- Never commit API keys, .env files, confidential material, third-party footage without repository redistribution rights, rendered MP4s, or generated voice.
 
 ## Repo layout
 
@@ -30,13 +30,23 @@ npm run render:sample
 | --- | --- |
 | `src/` | Remotion components and palette tokens |
 | `stories/` | Story briefs, scenes, narration, source links and claim stages |
-| `scripts/` | Validation, music generation, and optional TTS generation |
+| `scripts/` | Validation, reproducible original music/SFX generation, and optional TTS generation |
 | `docs/EDITORIAL.md` | Sourcing, fact checks, ethics and verification checklist |
 | `docs/CHANNEL_BLUEPRINT.md` | Positioning, content pillars, cadence and production plan |
 | `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
-| `docs/BRAND.md` | Identity and candidate palettes (awaiting approval) |
+| `docs/BRAND.md` | India-inspired saffron-led palette candidates (awaiting approval) |
 | `docs/SAMPLE_YOUTUBE_DESCRIPTION.md` | Publishing copy reference |
 | `.github/workflows/validate.yml` | Lightweight story validation CI |
+
+## Audio policy
+
+| Tracked in Git | Ignored and regenerated |
+| --- | --- |
+| `public/music/ambient.wav` | `public/voice/**` |
+| `public/sfx/*.wav` | `out/**`, renders and `*.mp4`, `*.mov`, `*.webm` |
+| Audio generation and attribution documentation | Temporary media caches |
+
+Sound design: understated ambient bed; subtle metric cue; a short **Mode: ON** stinger. Audio masters may be replaced by later original or properly licensed masters, with rights documented.
 
 ## Canonical creative direction
 

@@ -124,6 +124,8 @@ export const BharatShort = ({story}) => {
       position+=durationInFrames;
       return <Sequence key={index} from={from} durationInFrames={durationInFrames}>
         <Scene story={story} scene={scene} index={index}/>
+        {['metric','impact'].includes(scene.kind) && <Audio src={staticFile('sfx/metric-rise.wav')} volume={0.16}/>}
+        {scene.kind==='close' && <Audio src={staticFile('sfx/mode-on.wav')} volume={0.20}/>}
         {story.hasVoice && <Audio src={staticFile('voice/'+story.slug+'/'+index+'.wav')} volume={0.95}/>}
       </Sequence>;
     })}

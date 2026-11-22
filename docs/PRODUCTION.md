@@ -10,11 +10,20 @@
 ```bash
 npm install
 npm run validate
-npm run music:generate
 npm run studio
 npm run render:sample
 ```
 Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish the silent starter.
+
+## Tracked music and SFX
+
+The repo includes original authored audio masters:
+
+- `public/music/ambient.wav` — 9.6-second ambient music loop, repeated quietly under narration.
+- `public/sfx/metric-rise.wav` — soft accent on statistical scenes.
+- `public/sfx/mode-on.wav` — short end-signature sound.
+
+These assets **are committed** and therefore do not need to be generated on every machine. To rebuild them intentionally, run `npm run audio:generate` and review/commit the updated WAV files. Edit the generator, not only the WAV output, when changing the sound. Generated voice in `public/voice/` remains untracked. Sound designs are original programmatic synths; replace them with appropriately licensed music or professional compositions when moving to production, while retaining source and license details.
 
 ## Add voice
 ```bash
@@ -44,4 +53,4 @@ All videos are vertical 1080×1920 at 30fps; runtime is computed from scene dura
 - Human final approval. Upload and publish manually in the starter version.
 
 ## Non-video file policy
-Keep **all editable source, scripts, story JSON, docs and reproducible music generation** in Git. Never commit generated .mp4/.mov/.webm, temporary renders, source keys, or heavy raw production footage. If adopting non-reproducible licensed audio or photos later, keep a license manifest in the repo; store the large binaries in approved external media storage.
+Keep **all editable source, scripts, story JSON, docs, original background music masters, and SFX masters** in Git. Never commit generated narration, .mp4/.mov/.webm, temporary renders, source keys, or heavy raw production footage. If adopting non-reproducible licensed audio or photos later, keep a license manifest in the repo; store the large binaries in approved external media storage.
