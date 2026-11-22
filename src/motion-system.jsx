@@ -32,7 +32,7 @@ export const TopicPill=({topic='SCIENCE',themeName='ivory'})=>{
     minHeight:62,minWidth:165,maxWidth:310,borderRadius:80,
     padding:'0 24px',background:bg,color:fg,display:'flex',
     justifyContent:'center',alignItems:'center',
-    fontFamily:BODY_FONT,fontWeight:800,fontSize:23,
+    fontFamily:BODY_FONT,fontWeight:500,fontSize:23,
     letterSpacing:1.2,whiteSpace:'nowrap'
   }}>{String(topic).toUpperCase()}</div>;
 };

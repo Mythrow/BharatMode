@@ -60,3 +60,5 @@ Each is HTML with Play/Pause/Replay/Speed/Scrub, the exact embedded approved SVG
 - Is the four-word history enough context while reading?
 - Is the lower scrim subtle enough in all three theme types?
 - Is the far-right topic pill comfortably clear of YouTube's overlay in an actual mobile crop?
+## Superseded in V3
+The owner subsequently requested removing the cursor and caption underline, restoring a semi-transparent rectangular caption backing, preserving directional animations, enlarging caption text, popping words in from 60% to 112% to 100% over ~0.2s, keeping previously spoken words full color, and using a nonbold topic tag. See [CAPTION_MOTION_V3.md](CAPTION_MOTION_V3.md) for the current review version.

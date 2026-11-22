@@ -79,3 +79,6 @@ The user approved contrasting topic-only pills, no persistent source/date footer
 
 ## V2 caption direction
 The preferred motion uses a typewriter effect for main onscreen headlines, **one-line running spoken-word captions** that reveal words in sync with the voice, a moving active-word highlight, no caption pill/card, and a farther-right topic tag. See [TYPEWRITER_KARAOKE_V2.md](TYPEWRITER_KARAOKE_V2.md). Awaiting visual sign-off.
+
+## Motion direction V3
+The current draft retains Saffron Process-style directional transitions while using typewriter headlines **without** a cursor. Caption words appear individually with a 200ms spring-like pop, one line over a dark semi-transparent rectangular strip; active spoken word changes color temporarily; no underlines or greyed previous words. Topic tag weight is 500. See [CAPTION_MOTION_V3.md](CAPTION_MOTION_V3.md). This is not final until owner reviews rendered behavior.

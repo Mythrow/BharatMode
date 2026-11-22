@@ -19,10 +19,13 @@
     "styleproof:ivory": "remotion still src/index.jsx BharatProofIvory out/styleproof-ivory.png",
     "styleproof:dark": "remotion still src/index.jsx BharatProofDark out/styleproof-dark.png",
     "styleproof:saffron": "remotion still src/index.jsx BharatProofSaffron out/styleproof-saffron.png",
-    "motion:preview": "remotion render src/index.jsx BharatMotionPreviewV2 out/bharat-motion-preview-v2.mp4 --codec=h264",
+    "motion:preview": "remotion render src/index.jsx BharatMotionPreviewV3 out/bharat-motion-preview-v3.mp4 --codec=h264",
     "chapters:check": "node scripts/test-chapters.mjs",
     "motion:preview:v1": "remotion render src/index.jsx BharatMotionPreview out/bharat-motion-preview.mp4 --codec=h264",
-    "motion:timing:check": "node scripts/test-motion-v2-timing.mjs"
+    "motion:timing:check": "node scripts/test-motion-v2-timing.mjs",
+    "motion:preview:v2": "remotion render src/index.jsx BharatMotionPreviewV2 out/bharat-motion-preview-v2.mp4 --codec=h264",
+    "motion:timing:check:v3": "node scripts/test-motion-v3-timing.mjs",
+    "motion:html:v3": "python3 scripts/build-motion-v3-html.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

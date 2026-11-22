@@ -102,3 +102,6 @@ The principles and technical parameters above remain flexible until reviewed.
 
 ## V2 update
 The owner now prefers Saffron Process directional motion, typewriter-style headlines and **one-line word-follow highlighted captions** without rounded background pills. The topic tag moves further right. Prior V1 suggestions against animated word emphasis are superseded by [the V2 design](TYPEWRITER_KARAOKE_V2.md).
+
+## Current creative direction — V3
+The owner refined V2 in [CAPTION_MOTION_V3.md](CAPTION_MOTION_V3.md): **no cursor**; preserve all directional entrances, evidence and flow motion; one-line **60px** word-follow captions over a **semi-transparent dark rectangular overlay**; **no underline**, normal brightness for previous words, active spoken word temporarily saffron; each word pops in over ~0.2 seconds from 60%, briefly overshoots to 112%, settles to 100%; topic pill uses Manrope Medium 500. V1/V2 remain historical references. Full voice alignment and output QA remain pending.

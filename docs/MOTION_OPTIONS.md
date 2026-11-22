@@ -33,3 +33,6 @@ The source docs are not renders and the HTML files are only review prototypes. A
 
 ## V2 preferred direction
 Following review, the owner chose directional movement, a typewriter headline, and a one-line, synchronized highlighted-word caption with no pill/card. The earlier alternatives remain as reference only; see [TYPEWRITER_KARAOKE_V2.md](TYPEWRITER_KARAOKE_V2.md).
+
+## Current V3 revised prototype
+The three earlier concept alternatives remain archived. The newest [V3 caption and directional motion review](CAPTION_MOTION_V3.md) removes the cursor/underline, adds word-level pop and a dark caption backing, and restores the earlier directional entrances and diagram animations. It also lightens the topic pill's font weight.
