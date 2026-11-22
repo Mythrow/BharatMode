@@ -1,17 +1,31 @@
 {
-  "status": "approved_for_development",
-  "approvedOn": "2026-11-23",
-  "provider": "vidiq",
-  "voiceName": "Brian - Deep, Resonant and Comforting",
-  "voiceId": "nPczCjzI2devNBz1zQrb",
+  "status": "audition_pending",
+  "preferredEngine": "kokoro-local",
+  "modelRepository": "hexgrad/Kokoro-82M",
+  "modelLicense": "Apache-2.0",
+  "execution": "self-hosted_or_supported_compute",
   "language": "en",
   "requireIndianAccent": false,
-  "delivery": "professional, credible, measured, warm; not sensational",
+  "targetDelivery": "professional, deep/resonant, clear, composed; inspired by the owner's preference for the Brian audition, NOT a clone",
+  "candidateVoices": [
+    "am_michael",
+    "am_fenrir",
+    "bm_george"
+  ],
+  "selectedVoice": null,
   "paidVoiceSubscriptionAllowed": false,
-  "useExistingCreditsForPrototypes": true,
-  "audioIngestStatus": "not_implemented",
+  "paidVoiceAPICallsAllowed": false,
+  "expiringCreditServicesAllowed": false,
+  "requiresPerGenerationCredits": false,
+  "requiresAvailableCompute": true,
+  "sampleGenerationStatus": "not_yet_generated",
+  "audioPipelineStatus": "not_implemented",
   "wordAlignmentStatus": "not_implemented",
-  "publicationCommercialRightsVerified": false,
-  "sampleDurationSeconds": 12.277551020408163,
-  "note": "Configuration records approved voice selection; current npm run voice is OpenAI-only and does not use this provider."
+  "providerLicensingNote": "Apache-2.0 Kokoro model; verify selected voice/dependencies and retain license notices. Usage of free hosting/runners may have limits.",
+  "previousAudition": {
+    "voice": "Brian",
+    "provider": "vidiq",
+    "voiceId": "nPczCjzI2devNBz1zQrb",
+    "decision": "style_reference_only_not_viable_under_zero_credit_cap"
+  }
 }
