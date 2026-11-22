@@ -44,3 +44,5 @@ The HTML and Remotion demo use **illustrative per-word timestamps**, with no voi
 - **Not yet done:** successful full Remotion MP4 render with approved font files; actual generated voice and forced alignment; check YouTube Shorts UI overlays on real mobile devices; editor sign-off on V3 style.
 
 This design is a **review candidate**, not a locked, approved video motion system.
+## V4 revision supersedes V3 caption backing and scrolling
+The owner requested a much more transparent caption backing **only around the visible text**, with short phrase groups that replace older ones rather than a continuous scrolling line. The font size, word pop, active-word highlight, cursorless title and directional motion remain. The new version is [CAPTION_MOTION_V4.md](CAPTION_MOTION_V4.md), awaiting visual approval.

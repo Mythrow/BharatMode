@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {demoWordTimings,groupWordRanges,groupedVisibleWords,springWordEntrance} from '../src/motion-v4-timing.js';
+const words=demoWordTimings('India is building powerful computers to support scientific research.',0,5);
+const groups=groupWordRanges(words,['India is building','powerful computers','to support scientific research.']);
+assert.deepEqual(groups.map(x=>x.end-x.start),[3,2,4]);
+assert.equal(groupedVisibleWords(words,groups,words[0].start).words.length,1);
+assert.equal(groupedVisibleWords(words,groups,words[4].start).group,1);
+assert.equal(groupedVisibleWords(words,groups,words[4].start).words.length,2);
+assert.equal(groupedVisibleWords(words,groups,words[7].start).group,2);
+assert.throws(()=>groupWordRanges(words,['India is wrong','powerful computers','to support scientific research.']));
+assert.equal(springWordEntrance(0).scale,.6);
+assert.ok(springWordEntrance(.12).scale>1);
+assert.ok(Math.abs(springWordEntrance(.2).scale-1)<.0001);
+console.log('Grouped caption timing and 0.2s pop checked. Demo timings are NOT voice alignment.');

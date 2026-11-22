@@ -82,3 +82,6 @@ The preferred motion uses a typewriter effect for main onscreen headlines, **one
 
 ## Motion direction V3
 The current draft retains Saffron Process-style directional transitions while using typewriter headlines **without** a cursor. Caption words appear individually with a 200ms spring-like pop, one line over a dark semi-transparent rectangular strip; active spoken word changes color temporarily; no underlines or greyed previous words. Topic tag weight is 500. See [CAPTION_MOTION_V3.md](CAPTION_MOTION_V3.md). This is not final until owner reviews rendered behavior.
+
+## Most recent caption design — V4
+Source of truth for the currently proposed caption rendering: [CAPTION_MOTION_V4.md](CAPTION_MOTION_V4.md). Semi-transparent compact backing follows the visible words (not an edge-to-edge strip); editorial phrase groups replace each other, with word-at-a-time entrance, full normal past-word color and only the current word highlighted. The directional motion and cursorless headline behavior are unchanged. Pending final review.

@@ -5,11 +5,14 @@ import {BharatThumbnail} from './thumbnail.jsx';
 import {BharatMotionPreview} from './motion-preview.jsx';
 import {BharatMotionPreviewV2} from './motion-v2.jsx';
 import {BharatMotionPreviewV3} from './motion-v3.jsx';
+import {BharatMotionPreviewV4} from './motion-v4.jsx';
 import example from '../stories/param-rudra.json';
 import {BharatProofIvory,BharatProofDark,BharatProofSaffron} from './style-proofs.jsx';
 
 const FPS = 30;
 export const Root = () => <>
+  <Composition id="BharatMotionPreviewV4" component={BharatMotionPreviewV4}
+    fps={30} width={1080} height={1920} durationInFrames={480}/>
   <Composition id="BharatMotionPreviewV3" component={BharatMotionPreviewV3}
     fps={30} width={1080} height={1920} durationInFrames={480}/>
   <Composition id="BharatMotionPreviewV2" component={BharatMotionPreviewV2} fps={30}
