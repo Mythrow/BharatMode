@@ -9,7 +9,7 @@ The brand should signal India without copying the national flag into every scene
 ## Accessibility on phone screens
 - Use rich navy for headlines/body text, not pastel orange or pale green.
 - Use pastel saffron and cream for large backgrounds/panels; use a darker saffron for small labels.
-- Reserve bright saffron for data highlights, progress lines and signature elements.
+- Reserve saffron for data highlights and progress lines; use a small deep-green dot to signal 'Mode: ON'.
 - Avoid stacking full-width saffron/white/green stripes; use thoughtful accents.
 - Design to be understood with the sound off: captions and 1–2 primary ideas per scene.
 - Mobile dimensions: 1080×1920 with ample padding and caption-safe area.
@@ -28,6 +28,7 @@ Warm, restrained and modern. Best for a science-plus-good-news Shorts brand.
 | Soft surface | Saffron Mist | `#FFE8D2` |
 | Graphic highlight | Sunlit Saffron | `#F4B475` |
 | Secondary / nature accent | Sage Mist | `#DDEBDD` |
+| Small status indicator | India Green | `#2F8067` |
 | Dark variant | Night Indigo | `#142C43` |
 
 ### B. Modern Tiranga

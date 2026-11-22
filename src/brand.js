@@ -13,6 +13,7 @@ export const BRAND = {
   soft: '#FFE8D2',
   warm: '#F4B475',
   sage: '#DDEBDD',
+  green: '#2F8067',
   white: '#FFFFFF',
   dark: '#142C43'
 };
