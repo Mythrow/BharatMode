@@ -40,6 +40,10 @@ npm run render:sample
 | `docs/CHANNEL_BLUEPRINT.md` | Positioning, content pillars, cadence and production plan |
 | `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
 | `docs/BRAND.md` | Approved five-color brand kit and typography |
+| `docs/LOGO_DIRECTION.md` | Three preliminary logo directions; vector sketches under `brand/logo-sketches/` |
+| `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
+| `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
+| `media/manifest.json` | Approved real-image / third-party-logo licensing registry (currently empty) |
 | `docs/ROADMAP.md` | Launch milestones and acceptance criteria |
 | `docs/VARIETY_RULES.md` | Rotation rules for visual layouts, thumbnails, titles and storytelling |
 | `docs/SAMPLE_YOUTUBE_DESCRIPTION.md` | Publishing copy reference |
