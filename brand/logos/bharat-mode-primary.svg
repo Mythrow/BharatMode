@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1448 400" width="1448" height="400" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Bharat Mode — primary horizontal lockup</title>
+  <desc id="logoDesc">Ivory italic B, saffron italic M, three short slanted teal, ivory and saffron underline blocks, divider, and the side-by-side Bharat Mode wordmark above Big Ideas. Real Progress.</desc>
+  <style>
+    .wordmark{font-family:Sora,Inter,'Arial',sans-serif;font-size:108px;font-weight:800;letter-spacing:-3px}
+    .tagline{font-family:Manrope,Inter,Arial,sans-serif;font-size:32px;font-weight:600;letter-spacing:7px}
+  </style>
+  <rect width="1448" height="400" rx="48" fill="#0B1018"/>
+  <g id="bm-icon" transform="translate(0,-170)">
+    <path id="letter-m" d="M287,263 L296,273 L302,289 L302,303 L297,318 L282,335 L290,344 L294,356 L294,370 L290,383 L293,379 L306,334 L310,336 L327,379 L331,381 L340,380 L382,338 L384,338 L385,341 L365,404 L369,408 L398,408 L402,406 L405,402 L432,304 L434,298 L436,297 L436,264 L409,263 L403,265 L348,322 L346,322 L325,266 L319,263 Z" fill="#E8752E" fill-rule="evenodd"/>
+    <path id="letter-b" d="M183,264 L179,268 L172,288 L172,292 L174,294 L242,294 L250,299 L251,308 L246,315 L240,318 L167,318 L160,323 L133,399 L133,405 L137,408 L237,408 L249,406 L261,401 L277,387 L284,371 L285,361 L283,352 L279,345 L273,339 L267,336 L266,333 L279,325 L289,311 L292,300 L292,291 L287,277 L279,269 L270,265 L259,263 Z M180,375 L187,350 L190,347 L236,347 L243,350 L247,355 L247,364 L245,368 L240,373 L234,376 Z" fill="#FFF7EB" fill-rule="evenodd"/>
+    <g id="three-part-underline">
+      <path id="underline-teal" d="M173,458 L175,460 L226,460 L230,458 L245,436 L247,428 L244,425 L193,426 L188,430 L175,450 Z" fill="#117A7A"/>
+      <path id="underline-ivory" d="M246,458 L249,460 L300,459 L304,456 L319,433 L319,428 L317,426 L267,426 L263,428 L248,450 Z" fill="#FFF7EB"/>
+      <path id="underline-saffron" d="M319,458 L321,460 L372,460 L379,455 L393,433 L393,427 L340,426 L336,428 L321,450 Z" fill="#E8752E"/>
+    </g>
+  </g>
+  <rect id="divider" x="487" y="84" width="4" height="218" rx="2" fill="#FFF7EB"/>
+  <g id="wordmark">
+    <text x="539" y="192" class="wordmark" fill="#E8752E">BHARAT</text>
+    <text x="1001" y="192" class="wordmark" fill="#FFF7EB">MODE</text>
+  </g>
+  <text id="tagline" x="543" y="257" class="tagline" fill="#FFF7EB" textLength="770" lengthAdjust="spacing">BIG IDEAS. REAL PROGRESS.</text>
+</svg>
