@@ -34,7 +34,7 @@ function Label({theme, children}) {
 function Head({theme,children,size=90}) {
   return <div style={{
     fontFamily:DISPLAY_FONT,fontSize:size,fontWeight:800,
-    lineHeight:1.08,letterSpacing:-2.6,color:theme.ink,whiteSpace:'pre-line'
+    lineHeight:1.08,letterSpacing:-2.6,color:theme.text,whiteSpace:'pre-line'
   }}>{children}</div>;
 }
 function Backdrop({theme,family}) {
@@ -56,7 +56,7 @@ function Chrome({story,index,theme}) {
   return <>
     <div style={{position:'absolute',top:110,left:78,right:78,display:'flex',justifyContent:'space-between',alignItems:'center',gap:24}}>
       <div style={{
-        display:'flex',alignItems:'center',gap:12,color:theme.ink,fontFamily:DISPLAY_FONT,
+        display:'flex',alignItems:'center',gap:12,color:theme.text,fontFamily:DISPLAY_FONT,
         fontSize:32,fontWeight:800,letterSpacing:-0.6
       }}><div style={{width:17,height:17,borderRadius:17,background:theme.accent}}/>BHARAT MODE</div>
       <div style={{
@@ -97,7 +97,7 @@ function VisualGraphic({scene,theme,family}) {
       <div style={{
         width:230,height:230,borderRadius:120,display:'flex',alignItems:'center',justifyContent:'center',
         background:i===1?theme.soft:theme.surface,border:'3px solid '+theme.border,
-        color:i===1?theme.accentText:theme.ink,fontSize:26,fontWeight:800,textAlign:'center'
+        color:i===1?theme.accentText:theme.text,fontSize:26,fontWeight:800,textAlign:'center'
       }}>{part}</div>
       {i<2&&<div style={{height:6,width:40,borderRadius:6,background:theme.teal}}/>}
     </React.Fragment>)}
@@ -106,14 +106,14 @@ function VisualGraphic({scene,theme,family}) {
   if(family==='timeline')return <div style={{marginTop:80,display:'grid',gap:30}}>
     {['PAST','TODAY','NEXT'].map((part,i)=><div key={part} style={{display:'flex',alignItems:'center',gap:20}}>
       <div style={{width:26,height:26,borderRadius:30,background:i===1?theme.accent:theme.teal}}/>
-      <Surface theme={theme} style={{flex:1,padding:28,fontWeight:800,fontSize:26,color:theme.ink}}>{part}</Surface>
+      <Surface theme={theme} style={{flex:1,padding:28,fontWeight:800,fontSize:26,color:theme.text}}>{part}</Surface>
     </div>)}
     <div style={{color:theme.muted,fontSize:22}}>Illustrative sequence — not a factual timeline</div>
   </div>;
   return <div style={{marginTop:90,position:'relative',height:365,display:'flex',alignItems:'center',justifyContent:'center'}}>
     <div style={{width:300,height:300,border:'5px solid '+theme.teal,borderRadius:'50%',opacity:.38}}/>
     <div style={{position:'absolute',width:210,height:210,border:'18px solid '+theme.accent,borderRadius:'50%',opacity:.86}}/>
-    <div style={{position:'absolute',width:90,height:90,background:theme.ink,borderRadius:'50%'}}/>
+    <div style={{position:'absolute',width:90,height:90,background:theme.text,borderRadius:'50%'}}/>
     <div style={{position:'absolute',bottom:0,fontSize:22,color:theme.muted}}>Illustrative diagram</div>
   </div>;
 }
@@ -122,13 +122,13 @@ function Metric({scene,theme,frame,family}) {
   const numberSize=scene.number>999999?115:156;
   const number=<div style={{
     fontFamily:DISPLAY_FONT,fontSize:numberSize,fontWeight:800,letterSpacing:-5,
-    color:family==='explainer'?theme.ink:theme.dataColor,lineHeight:1.1,fontVariantNumeric:'tabular-nums'
+    color:family==='explainer'?theme.text:theme.dataColor,lineHeight:1.1,fontVariantNumeric:'tabular-nums'
   }}>{fmt(animated)}{scene.suffix||''}</div>;
-  const label=<div style={{fontFamily:BODY_FONT,fontSize:39,fontWeight:800,color:theme.ink,lineHeight:1.23,marginTop:21}}>{scene.metricLabel}</div>;
+  const label=<div style={{fontFamily:BODY_FONT,fontSize:39,fontWeight:800,color:theme.text,lineHeight:1.23,marginTop:21}}>{scene.metricLabel}</div>;
   if(family==='explainer')return <div style={{marginTop:70}}>
     <div style={{background:theme.soft,padding:'48px 40px',borderRadius:46}}>{number}{label}</div>
     <div style={{fontFamily:BODY_FONT,fontSize:33,color:theme.muted,lineHeight:1.35,marginTop:36}}>{scene.subhead}</div>
-    <div style={{marginTop:65,borderLeft:'7px solid '+theme.teal,paddingLeft:28,fontSize:30,color:theme.ink,lineHeight:1.36}}>{scene.note}</div>
+    <div style={{marginTop:65,borderLeft:'7px solid '+theme.teal,paddingLeft:28,fontSize:30,color:theme.text,lineHeight:1.36}}>{scene.note}</div>
   </div>;
   return <div style={{marginTop:70}}>
     <Surface theme={theme}>{number}{label}
@@ -165,11 +165,11 @@ function Scene({story,scene,index}) {
         <div style={{display:'grid',gridTemplateColumns:'1fr',gap:24,marginTop:67}}>
           <Surface theme={theme} style={{borderLeft:'10px solid '+theme.teal}}>
             <div style={{fontSize:25,fontWeight:850,color:theme.teal,letterSpacing:1}}>{scene.leftLabel}</div>
-            <div style={{fontFamily:DISPLAY_FONT,fontSize:47,fontWeight:750,color:theme.ink,lineHeight:1.2,marginTop:18}}>{scene.leftText}</div>
+            <div style={{fontFamily:DISPLAY_FONT,fontSize:47,fontWeight:750,color:theme.text,lineHeight:1.2,marginTop:18}}>{scene.leftText}</div>
           </Surface>
           <Surface theme={theme} style={{borderLeft:'10px solid '+theme.accent}}>
             <div style={{fontSize:25,fontWeight:850,color:theme.accentText,letterSpacing:1}}>{scene.rightLabel}</div>
-            <div style={{fontFamily:DISPLAY_FONT,fontSize:46,fontWeight:750,color:theme.ink,lineHeight:1.2,marginTop:18}}>{scene.rightText}</div>
+            <div style={{fontFamily:DISPLAY_FONT,fontSize:46,fontWeight:750,color:theme.text,lineHeight:1.2,marginTop:18}}>{scene.rightText}</div>
           </Surface>
         </div>
         <div style={{fontSize:30,color:theme.muted,marginTop:42,lineHeight:1.4}}>{scene.subhead}</div>
@@ -180,7 +180,7 @@ function Scene({story,scene,index}) {
           {scene.items.map((item,i)=><div key={i} style={{opacity:reveal(frame,i*5),flex:small?'1 1 40%':'auto'}}>
             <Surface theme={theme} style={{padding:small?30:40,display:'flex',alignItems:'center',gap:18}}>
               <div style={{width:18,height:18,flexShrink:0,borderRadius:30,background:theme.accent}}/>
-              <div style={{fontSize:small?31:37,fontWeight:750,color:theme.ink,lineHeight:1.26}}>{item}</div>
+              <div style={{fontSize:small?31:37,fontWeight:750,color:theme.text,lineHeight:1.26}}>{item}</div>
             </Surface>
           </div>)}
         </div>
@@ -192,7 +192,7 @@ function Scene({story,scene,index}) {
         <div style={{marginTop:148,display:'flex',alignItems:'center',gap:23,transform:'scale('+(0.93+0.07*entered)+')',transformOrigin:'left'}}>
           <div style={{width:60,height:60,background:theme.accent,borderRadius:'50%'}}/>
           <div>
-            <div style={{fontFamily:DISPLAY_FONT,fontSize:57,fontWeight:800,color:theme.ink}}>BHARAT MODE</div>
+            <div style={{fontFamily:DISPLAY_FONT,fontSize:57,fontWeight:800,color:theme.text}}>BHARAT MODE</div>
             <div style={{fontSize:25,fontWeight:800,color:theme.accentText}}>MODE: ON · {B.tagline}</div>
           </div>
         </div>

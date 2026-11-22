@@ -11,7 +11,7 @@ export const BharatThumbnail = ({story})=>{
   const isStat=style==='stat'&&metric;
   const words=story.thumbnailText || story.title || 'BHARAT MODE';
   return <AbsoluteFill style={{
-    background:theme.bg,color:theme.ink,overflow:'hidden',
+    background:theme.bg,color:theme.text,overflow:'hidden',
     fontFamily:BODY_FONT
   }}>
     <div style={{position:'absolute',right:-270,top:350,width:750,height:750,borderRadius:750,
@@ -50,7 +50,7 @@ export const BharatThumbnail = ({story})=>{
         {[0,1].map((n)=><div key={n} style={{
           background:n===0?theme.soft:theme.surface,border:'4px solid '+theme.border,
           borderRadius:30,height:285,display:'flex',justifyContent:'center',alignItems:'center',
-          fontFamily:DISPLAY_FONT,fontSize:46,color:theme.ink,fontWeight:800
+          fontFamily:DISPLAY_FONT,fontSize:46,color:theme.text,fontWeight:800
         }}>{n===0?'BEFORE':'AFTER'}</div>)}
       </div>}
       {style==='portrait'&&story.thumbnailImage&&<div style={{

@@ -12,7 +12,8 @@
     "audio:generate": "node scripts/make-audio.mjs",
     "variety:check": "node scripts/check-variety.mjs",
     "thumbnail:sample": "remotion still src/index.jsx BharatThumbnail out/param-rudra-thumb.png --props=stories/param-rudra.json",
-    "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnail out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json"
+    "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnail out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json",
+    "brand:check": "node scripts/check-brand.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

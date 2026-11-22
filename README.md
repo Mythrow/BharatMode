@@ -2,7 +2,7 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
-> Status: production starter / pre-launch. The saffron + ivory + teal creative direction is selected; exact brand tokens remain subject to visual QA. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
+> Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Remotion visual QA remains outstanding. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
 
 ## Quick start
 
@@ -11,6 +11,7 @@ Install Node.js 20+ and npm. From the repository root:
 ```bash
 npm install
 npm run validate
+npm run brand:check
 npm run variety:check
 npm run studio
 npm run render:sample
@@ -38,7 +39,8 @@ npm run render:sample
 | `docs/EDITORIAL.md` | Sourcing, fact checks, ethics and verification checklist |
 | `docs/CHANNEL_BLUEPRINT.md` | Positioning, content pillars, cadence and production plan |
 | `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
-| `docs/BRAND.md` | Saffron, ivory and teal brand kit |
+| `docs/BRAND.md` | Approved five-color brand kit and typography |
+| `docs/ROADMAP.md` | Launch milestones and acceptance criteria |
 | `docs/VARIETY_RULES.md` | Rotation rules for visual layouts, thumbnails, titles and storytelling |
 | `docs/SAMPLE_YOUTUBE_DESCRIPTION.md` | Publishing copy reference |
 | `.github/workflows/validate.yml` | Lightweight story validation CI |

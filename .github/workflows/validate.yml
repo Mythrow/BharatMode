@@ -12,3 +12,4 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/validate-stories.mjs
+      - run: node scripts/check-brand.mjs
