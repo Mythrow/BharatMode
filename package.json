@@ -15,7 +15,10 @@
     "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnail out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json",
     "brand:check": "node scripts/check-brand.mjs",
     "logo:check": "node scripts/check-logo-assets.mjs",
-    "cover:check": "node scripts/check-channel-cover.mjs"
+    "cover:check": "node scripts/check-channel-cover.mjs",
+    "styleproof:ivory": "remotion still src/index.jsx BharatProofIvory out/styleproof-ivory.png",
+    "styleproof:dark": "remotion still src/index.jsx BharatProofDark out/styleproof-dark.png",
+    "styleproof:saffron": "remotion still src/index.jsx BharatProofSaffron out/styleproof-saffron.png"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

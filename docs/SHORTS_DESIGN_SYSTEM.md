@@ -1,6 +1,6 @@
 # Bharat Mode — Shorts design system, Stage 1: Frame architecture
 
-**Status: DRAFT FOR VISUAL APPROVAL.** Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
+**Status: FRAME ARCHITECTURE APPROVED. Three layout proof concepts prepared for review; precise visual implementation still pending sign-off.** Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
 
 ## What comes first
 
@@ -49,7 +49,7 @@ Not all elements are always shown; remove secondary UI when it competes with evi
 - Evidence: a rights-cleared portrait, before/after comparison or a clearly labeled place.
 - Feel: celebratory and human, not patriotic stock graphics.
 
-**Test requirement:** Three actual 1080×1920 mockups using the same type system, but different evidence hierarchy. Render at full size; inspect on phone, and test captions with audio off. The composition choices must differ structurally, not just by color.
+**Test requirement (prototypes available; see [STYLE_PROOFS.md](STYLE_PROOFS.md)):** Three actual 1080×1920 mockups using the same type system, but different evidence hierarchy. Render at full size; inspect on phone, and test captions with audio off. The composition choices must differ structurally, not just by color.
 
 ## Reusable interface components (later)
 - `BrandAvatar` and `BrandBadge` — exact approved SVGs.

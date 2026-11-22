@@ -3,9 +3,13 @@ import {Composition, Still} from 'remotion';
 import {BharatShort} from './short.jsx';
 import {BharatThumbnail} from './thumbnail.jsx';
 import example from '../stories/param-rudra.json';
+import {BharatProofIvory,BharatProofDark,BharatProofSaffron} from './style-proofs.jsx';
 
 const FPS = 30;
 export const Root = () => <>
+  <Still id="BharatProofIvory" component={BharatProofIvory} width={1080} height={1920} />
+  <Still id="BharatProofDark" component={BharatProofDark} width={1080} height={1920} />
+  <Still id="BharatProofSaffron" component={BharatProofSaffron} width={1080} height={1920} />
   <Composition
     id="BharatShort"
     component={BharatShort}

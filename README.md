@@ -46,7 +46,8 @@ npm run render:sample
 | `public/brand/` | Approved SVG badge/avatar plus original & 2560×1440 channel banner PNGs |
 | `src/brand-assets.jsx` | Reusable Remotion components rendering the approved SVG artwork |
 | `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
-| `docs/SHORTS_DESIGN_SYSTEM.md` | Stage 1 frame architecture and three design proofs to approve |
+| `docs/SHORTS_DESIGN_SYSTEM.md` | Approved frame architecture |
+| `docs/STYLE_PROOFS.md` | Three candidate layout designs for phone review and Remotion still commands |
 | `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
 | `media/manifest.json` | Approved real-image / third-party-logo licensing registry (currently empty) |
 | `docs/ROADMAP.md` | Launch milestones and acceptance criteria |
@@ -81,3 +82,6 @@ The only current, approved logo files are [`public/brand/bharat-mode-badge.svg`]
 
 ## Channel banner status
 The owner-approved [original channel cover](public/brand/BM_Youtube_Cover.png) is now in Git **byte-for-byte unchanged** at **2048×1152**. An optional [2560×1440 YouTube export](public/brand/BM_Youtube_Cover_2560x1440.png) is also committed. Both versions are protected by `npm run cover:check`. See [docs/CHANNEL_BANNER.md](docs/CHANNEL_BANNER.md) for exact source checksums and the pending YouTube mobile crop review.
+
+## Design proofs
+Three editable 1080×1920 Remotion stills are registered: `BharatProofIvory`, `BharatProofDark` and `BharatProofSaffron`. Run `npm run styleproof:ivory`, `npm run styleproof:dark`, `npm run styleproof:saffron`. These are review candidates; see [docs/STYLE_PROOFS.md](docs/STYLE_PROOFS.md) for content source, caveats and QA steps. Generated PNG files stay out of Git under `out/`.
