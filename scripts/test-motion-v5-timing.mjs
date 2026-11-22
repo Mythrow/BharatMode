@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {DEMO_BEATS,scenePoseAt,sceneWipeAt,headlineCharsAt,currentBeatAt} from '../src/motion-v5-timing.js';
+assert.equal(DEMO_BEATS.length,3);
+assert.equal(currentBeatAt(4.99),0);assert.equal(currentBeatAt(5),1);
+assert.equal(currentBeatAt(10.5),2);
+const oldAtTransition=scenePoseAt(4.95,0), newAtTransition=scenePoseAt(4.95,1);
+assert.ok(oldAtTransition.opacity>0 && oldAtTransition.opacity<1);
+assert.ok(newAtTransition.opacity>0 && newAtTransition.opacity<1);
+assert.ok(oldAtTransition.translateX<0,'old scene exits to left');
+assert.ok(newAtTransition.translateX>0,'new scene enters from right');
+assert.ok(sceneWipeAt(5)>0 && sceneWipeAt(5)<1);
+assert.equal(sceneWipeAt(7),-1);
+assert.equal(scenePoseAt(6,0).opacity,0);
+assert.equal(scenePoseAt(6,1).opacity,1);
+assert.equal(headlineCharsAt('HELLO',0,25),'HE');
+assert.equal(headlineCharsAt('HELLO',10,25),'HELLO');
+console.log('Motion V5 timings OK: overlapping exits/entrances, diagonal wipe, typed characters.');

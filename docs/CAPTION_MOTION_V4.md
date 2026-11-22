@@ -25,3 +25,5 @@
 ## QA remaining
 - A full Remotion MP4 render with exact Sora and Manrope fonts has not been verified here. Browser preview layout tested with an offline font fallback. Precise final caption line breaks and contrast must be verified on a phone and over real imagery.
 - Word grouping, amount of glass opacity, box corner radius and type size remain subject to owner's approval.
+## V5 motion refinements
+The grouped captions' visual behavior remains approved-in-principle, but their positioning now uses a **stationary screen-centered overlay**, independent of moving scenes. Directional headline-block entrances and a visible per-chapter scene transition are added. Hero panel moves from top y=920 to y=777, so it is closer to the title. See [MOTION_V5.md](MOTION_V5.md), pending owner review.

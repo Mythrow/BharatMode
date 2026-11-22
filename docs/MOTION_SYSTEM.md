@@ -105,3 +105,6 @@ The owner now prefers Saffron Process directional motion, typewriter-style headl
 
 ## Current creative direction — V3
 The owner refined V2 in [CAPTION_MOTION_V3.md](CAPTION_MOTION_V3.md): **no cursor**; preserve all directional entrances, evidence and flow motion; one-line **60px** word-follow captions over a **semi-transparent dark rectangular overlay**; **no underline**, normal brightness for previous words, active spoken word temporarily saffron; each word pops in over ~0.2 seconds from 60%, briefly overshoots to 112%, settles to 100%; topic pill uses Manrope Medium 500. V1/V2 remain historical references. Full voice alignment and output QA remain pending.
+
+## Current draft: V5
+V5 restores *directional movement for the entire headline block during character-by-character typing* and the kicker/hero, adds an overlapping scene transition (incoming from right, outgoing left, branded diagonal streak), moves the hero higher and pins grouped captions to the screen center with 140px margins. All V4 word-pop, phrase grouping and active-word color rules remain. [Current V5 spec](MOTION_V5.md). This is a review draft rather than an approved template.

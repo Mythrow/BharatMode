@@ -85,3 +85,6 @@ The current draft retains Saffron Process-style directional transitions while us
 
 ## Most recent caption design — V4
 Source of truth for the currently proposed caption rendering: [CAPTION_MOTION_V4.md](CAPTION_MOTION_V4.md). Semi-transparent compact backing follows the visible words (not an edge-to-edge strip); editorial phrase groups replace each other, with word-at-a-time entrance, full normal past-word color and only the current word highlighted. The directional motion and cursorless headline behavior are unchanged. Pending final review.
+
+## V5 review: directional scene motion
+The owner requested retained typewriter/grouped caption styling with more obvious motion: **text containers move directionally even as their characters type**, hero content sits closer to the title, small caption panels remain screen-centered within symmetrical safe margins, and chapter changes use visible transitions. See [MOTION_V5.md](MOTION_V5.md). Design is pending sign-off.

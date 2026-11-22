@@ -19,4 +19,5 @@ jobs:
       - run: node scripts/test-motion-v2-timing.mjs
       - run: node scripts/test-motion-v3-timing.mjs
       - run: node scripts/test-motion-v4-timing.mjs
+      - run: node scripts/test-motion-v5-timing.mjs
       - run: node scripts/check-channel-cover.mjs
