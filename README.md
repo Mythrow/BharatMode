@@ -91,3 +91,6 @@ Three editable 1080×1920 Remotion stills are registered: `BharatProofIvory`, `B
 
 ## Motion study (draft for approval)
 `npm run motion:preview` creates the animated 14-second `BharatMotionPreview` study in ignored `out/`. It uses true editable Remotion elements, the owner-approved avatar SVG, Sora and Manrope, contrasting topic-only pills, and per-story chapter timing. The sample captions are **not voice-synchronized**; never publish the preview. See [docs/MOTION_SYSTEM.md](docs/MOTION_SYSTEM.md).
+
+## Browser-based motion review
+You can review three interactive HTML motion alternatives without installing tools: [Quiet Editorial](previews/html/bharat-mode-a-quiet-editorial.html), [Cinematic Data](previews/html/bharat-mode-b-cinematic-data.html) and [Saffron Process](previews/html/bharat-mode-c-saffron-process.html). Each is standalone, with the exact approved avatar embedded, play/pause and scrubbing. See [review documentation](docs/MOTION_OPTIONS.md). These are browser concepts, not publishable Shorts; no narration/video files are committed.
