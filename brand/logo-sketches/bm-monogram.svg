@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Bharat Mode BM monogram icon concept">
-  <title>Bharat Mode — BM monogram draft</title>
-  <circle cx="512" cy="512" r="510" fill="#0B1018"/>
-  <path d="M205 252 H431 C555 252 595 392 511 459 C632 540 576 745 418 745 H205 Z
-    M307 354 V438 H420 C461 438 468 354 420 354 Z
-    M307 537 V643 H418 C477 643 480 537 418 537 Z" fill="#FFF7EB" fill-rule="evenodd"/>
-  <path d="M548 742 V270 H637 L739 438 L841 270 H916 V742 H814 V469 L743 585 H731 L652 469 V742 Z" fill="#E8752E"/>
-  <rect x="548" y="742" width="268" height="20" rx="10" fill="#117A7A"/>
-</svg>

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Bharat Mode forward mark icon concept">
-  <title>Bharat Mode — Forward Mark draft</title>
-  <circle cx="512" cy="512" r="510" fill="#0B1018"/>
-  <path d="M174 672 L306 551 L407 551 L407 756 L174 756 Z" fill="#E8752E"/>
-  <path d="M381 540 L526 395 H632 V756 H381 Z" fill="#E8752E"/>
-  <path d="M606 374 L785 205 H862 V756 H606 Z" fill="#E8752E"/>
-  <path d="M217 806 H813" stroke="#117A7A" stroke-width="30" stroke-linecap="round"/>
-</svg>

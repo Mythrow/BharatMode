@@ -31,3 +31,10 @@ Compare final vector against original reference silhouettes, underline width, ga
 ## 23 Nov SVG correction
 
 The primary dark horizontal mark now uses redrawn smooth editable B/M path geometry and a full-width underline. It contains precisely three slim parallelograms (teal, ivory, saffron), from the left B edge to the right M edge. The approved typography is a synthetic italic/slanted **Sora 800** wordmark with visible inter-word separation and **Manrope 600** tagline. No secondary lockup is produced. This remains a design proof for owner review; the rendering must still be visually approved.
+
+## Corrected vector proof: source-shape review
+- Rebuilt B as a compound path with a truly transparent lower counter (`fill-rule=evenodd`) and the original open upper notch.
+- Recreated the underline using **three identical rounded slanted rectangles** (90 × 13 SVG units, 13-unit gaps) spanning the full icon from B to M.
+- Wordmark is **Sora ExtraBold (800)**, slanted -9 degrees because Sora has no native italic in the specified Remotion family; separation is a deliberate 43-unit inter-word gap.
+- The HTML preview loads Sora and Manrope from Google Fonts; SVG retains editable text and may fall back to a local font if opened without font availability. For production, convert the final approved wordmark to paths in the font-aware build environment so the standalone SVG is fully portable.
+- **This SVG is a new visual proof, not yet approved as final.**

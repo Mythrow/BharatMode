@@ -1,24 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1448 400" role="img" aria-labelledby="title desc">
-<title id="title">Bharat Mode — primary horizontal vector logo</title>
-<desc id="desc">Custom ivory B and saffron M, three slim slanted teal, ivory and saffron underline segments spanning the full BM width, and an italic side-by-side wordmark.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1448 400" role="img" aria-labelledby="logo-title logo-desc">
+<title id="logo-title">Bharat Mode — primary horizontal logo</title>
+<desc id="logo-desc">Premium slanted ivory B with visible upper and lower negative-space openings, saffron M, three slim equal teal/ivory/saffron underline marks spanning both letters, and separated side-by-side italic Bharat Mode wordmark.</desc>
 <defs><style><![CDATA[
-.wordmark { font-family: Sora,'Lato',Arial,sans-serif; font-size:118px; font-weight:800; font-style:italic; letter-spacing:-1.5px; }
-.tagline { font-family: Manrope,'Lato',Arial,sans-serif; font-size:29px; font-weight:600; letter-spacing:8px; }
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&family=Manrope:wght@600&display=swap');
+.name {font-family:'Sora',sans-serif;font-size:99px;font-weight:800}
+.strap {font-family:'Manrope',sans-serif;font-size:29px;font-weight:600;letter-spacing:5.5px}
 ]]></style></defs>
-<rect id="dark-background" width="1448" height="400" rx="42" fill="#0B1018"/>
-<g id="bm-icon" transform="translate(74 84)">
-<path id="m-saffron" fill="#E8752E" d="M174 15 L216 15 Q221 15 224 21 L244 68 L296 19 Q300 15 307 15 L338 15 Q343 15 341 22 L305 150 Q303 157 297 157 L266 157 Q259 157 261 150 L281 83 L236 121 Q233 124 228 124 L225 124 Q220 124 218 119 L203 82 L183 128 C189 106 185 93 175 83 C190 73 197 59 197 45 C197 30 190 19 174 15 Z"/>
-<path id="b-ivory" fill="#FFF7EB" stroke="#0B1018" stroke-width="2" stroke-linejoin="round" fill-rule="evenodd" d="M77 16 L159 16 C176 16 186 26 190 39 C197 58 186 75 165 83 C179 90 185 103 181 119 C176 139 154 156 126 156 L25 156 Q20 156 22 150 L51 78 Q55 69 63 69 L136 69 C144 69 149 62 148 55 Q148 46 139 46 L69 46 Q65 46 67 40 L73 22 Q75 16 77 16 Z M85 98 L130 98 Q141 98 141 108 C141 118 133 124 125 124 L74 124 L82 103 Q84 98 85 98 Z"/>
+<rect id="background" width="1448" height="400" rx="42" fill="#0B1018"/>
+<g id="bm-mark">
+<path id="m" d="M 242 108 L 273 108 C 280 108 283 112 285 118 L 303 164 L 349 113 C 352 110 356 108 361 108 L 399 108 C 405 108 407 112 405 118 L 368 247 C 366 254 362 257 355 257 L 327 257 C 321 257 319 253 321 248 L 341 177 L 310 209 C 304 215 299 217 294 217 L 290 217 C 285 217 280 212 278 207 L 266 179 L 250 220 C 250 202 246 194 236 185 C 253 175 262 162 263 145 C 264 132 258 118 242 108 Z" fill="#E8752E"/>
+<path id="b" d="M 150 108 L 226 108 C 259 108 274 123 272 147 C 271 164 262 177 244 186 C 260 195 263 210 258 225 C 252 249 232 257 202 257 L 95 257 C 90 257 90 253 92 248 L 119 180 C 123 171 129 168 139 168 L 219 168 C 231 168 237 160 234 153 C 232 146 226 143 215 143 L 144 143 C 140 143 138 140 139 136 L 148 113 Q 149 108 150 108 Z M 151 200 L 210 200 C 219 200 224 206 222 215 C 220 224 213 227 204 227 L 140 227 L 149 204 Q 150 200 151 200 Z" fill="#FFF7EB" fill-rule="evenodd"/>
+<g id="underline" aria-label="three equal slim rounded parallelograms">
+<rect width="90" height="13" rx="4" fill="#117A7A" transform="translate(108 273) skewX(-22)"/>
+<rect width="90" height="13" rx="4" fill="#FFF7EB" transform="translate(211 273) skewX(-22)"/>
+<rect width="90" height="13" rx="4" fill="#E8752E" transform="translate(314 273) skewX(-22)"/>
 </g>
-<g id="full-width-underline">
-<path id="left-teal" fill="#117A7A" d="M113 267 L194 267 Q200 267 197 272 L185 277 Q183 281 178 281 L100 281 Q94 281 97 276 L108 272 Q110 267 113 267 Z"/>
-<path id="center-ivory" fill="#FFF7EB" d="M222 267 L303 267 Q309 267 306 272 L294 277 Q292 281 287 281 L209 281 Q203 281 206 276 L217 272 Q219 267 222 267 Z"/>
-<path id="right-saffron" fill="#E8752E" d="M331 267 L412 267 Q418 267 415 272 L403 277 Q401 281 396 281 L318 281 Q312 281 315 276 L326 272 Q328 267 331 267 Z"/>
 </g>
-<rect id="vertical-separator" x="477" y="85" width="4" height="215" rx="2" fill="#FFF7EB" opacity=".9"/>
-<g id="wordmark" fill-rule="nonzero">
-<text x="544" y="192" fill="#E8752E" class="wordmark" textLength="432" lengthAdjust="spacing">BHARAT</text>
-<text x="997" y="192" fill="#FFF7EB" class="wordmark" textLength="306" lengthAdjust="spacing">MODE</text>
+<rect x="470" y="91" width="3.5" height="212" rx="1.75" fill="#FFF7EB" opacity="0.9"/>
+<g id="brand-wordmark" transform="translate(540 201) skewX(-9)">
+<text class="name" x="0" y="0"><tspan fill="#E8752E">BHARAT</tspan><tspan dx="43" fill="#FFF7EB">MODE</tspan></text>
 </g>
-<text id="tagline" x="550" y="275" fill="#FFF7EB" class="tagline" textLength="745" lengthAdjust="spacing">BIG IDEAS. REAL PROGRESS.</text>
+<text class="strap" x="549" y="272" fill="#FFF7EB">BIG IDEAS. REAL PROGRESS.</text>
 </svg>
