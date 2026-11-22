@@ -160,6 +160,20 @@ function Scene({story,scene,index}) {
         <div style={{marginTop:60}}><Head theme={theme} size={small?77:81}>{scene.headline}</Head></div>
         <Metric scene={scene} theme={theme} frame={frame} family={family}/>
       </>}
+      {scene.kind==='comparison'&&<>
+        <div style={{marginTop:55}}><Head theme={theme} size={82}>{scene.headline}</Head></div>
+        <div style={{display:'grid',gridTemplateColumns:'1fr',gap:24,marginTop:67}}>
+          <Surface theme={theme} style={{borderLeft:'10px solid '+theme.teal}}>
+            <div style={{fontSize:25,fontWeight:850,color:theme.teal,letterSpacing:1}}>{scene.leftLabel}</div>
+            <div style={{fontFamily:DISPLAY_FONT,fontSize:47,fontWeight:750,color:theme.ink,lineHeight:1.2,marginTop:18}}>{scene.leftText}</div>
+          </Surface>
+          <Surface theme={theme} style={{borderLeft:'10px solid '+theme.accent}}>
+            <div style={{fontSize:25,fontWeight:850,color:theme.accentText,letterSpacing:1}}>{scene.rightLabel}</div>
+            <div style={{fontFamily:DISPLAY_FONT,fontSize:46,fontWeight:750,color:theme.ink,lineHeight:1.2,marginTop:18}}>{scene.rightText}</div>
+          </Surface>
+        </div>
+        <div style={{fontSize:30,color:theme.muted,marginTop:42,lineHeight:1.4}}>{scene.subhead}</div>
+      </>}
       {scene.kind==='uses'&&<>
         <div style={{marginTop:56}}><Head theme={theme} size={84}>{scene.headline}</Head></div>
         <div style={{marginTop:64,display:'flex',flexDirection:small?'row':'column',flexWrap:small?'wrap':'nowrap',gap:21}}>

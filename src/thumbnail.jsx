@@ -10,7 +10,6 @@ export const BharatThumbnail = ({story})=>{
   const metric=story.scenes?.find(s=>s.kind==='metric'||s.kind==='impact');
   const isStat=style==='stat'&&metric;
   const words=story.thumbnailText || story.title || 'BHARAT MODE';
-  const splash=style==='diagram'||style==='split';
   return <AbsoluteFill style={{
     background:theme.bg,color:theme.ink,overflow:'hidden',
     fontFamily:BODY_FONT
@@ -40,10 +39,28 @@ export const BharatThumbnail = ({story})=>{
         maxWidth:920,overflowWrap:'break-word'
       }}>{words}</div>
       <div style={{marginTop:62,width:150,height:12,background:theme.accent,borderRadius:12}}/>
-      {splash&&<div style={{marginTop:95,display:'flex',gap:35}}>
-        {[0,1,2].map((n)=><div key={n} style={{height:180,width:180,borderRadius:n===1?90:32,
-          background:n===1?theme.accent:theme.surface,border:'4px solid '+theme.border}}/>)}
+      {style==='diagram'&&<div style={{marginTop:95,display:'flex',gap:25,alignItems:'center'}}>
+        {[0,1,2].map((n)=><React.Fragment key={n}>
+          <div style={{height:190,width:190,borderRadius:99,
+            background:n===1?theme.accent:theme.surface,border:'5px solid '+theme.border}}/>
+          {n<2&&<div style={{width:30,height:8,background:theme.teal,borderRadius:5}}/>}
+        </React.Fragment>)}
       </div>}
+      {style==='split'&&<div style={{marginTop:95,display:'grid',gridTemplateColumns:'1fr 1fr',gap:28}}>
+        {[0,1].map((n)=><div key={n} style={{
+          background:n===0?theme.soft:theme.surface,border:'4px solid '+theme.border,
+          borderRadius:30,height:285,display:'flex',justifyContent:'center',alignItems:'center',
+          fontFamily:DISPLAY_FONT,fontSize:46,color:theme.ink,fontWeight:800
+        }}>{n===0?'BEFORE':'AFTER'}</div>)}
+      </div>}
+      {style==='portrait'&&story.thumbnailImage&&<div style={{
+        marginTop:70,width:630,height:490,borderRadius:36,
+        background:'url('+story.thumbnailImage+') center/cover no-repeat',
+        border:'6px solid '+theme.border
+      }}/>}
+      {style==='portrait'&&!story.thumbnailImage&&<div style={{
+        marginTop:85,fontSize:29,color:theme.muted,lineHeight:1.3
+      }}>Portrait requires a rights-cleared photo.</div>}
     </div>
     <div style={{position:'absolute',left:85,right:85,bottom:260,fontSize:30,color:theme.muted}}>
       {story.sourceShort} · {story.sourcePublished}

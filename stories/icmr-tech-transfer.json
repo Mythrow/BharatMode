@@ -25,21 +25,22 @@
         "headline": "From discovery toward products",
         "number": 100,
         "metricLabel": "technology-transfer deals",
-        "subhead": "Cumulative agreements reported by ICMR",
+        "subhead": "Including 20 announced licensing agreements at the November 2026 summit",
         "note": "Not the same as approved products",
         "duration": 8,
-        "narration": "The Indian Council of Medical Research reported one hundred cumulative technology transfer deals."
+        "narration": "ICMR reported a milestone of one hundred technology transfer deals, including twenty agreements announced at its November summit."
       },
       {
-        "kind": "metric",
-        "kicker": "AT THE SUMMIT",
-        "headline": "New licensing agreements",
-        "number": 20,
-        "metricLabel": "licenses announced",
-        "subhead": "Covering eight technologies and nine Indian companies",
-        "note": "At the November 2026 summit",
+        "kind": "comparison",
+        "kicker": "WHAT IT MEANS",
+        "headline": "A license is not a launch.",
+        "leftLabel": "WHAT HAPPENED",
+        "leftText": "Research licensed to industry",
+        "rightLabel": "WHAT'S NOT PROVEN",
+        "rightText": "An approved product already in use",
+        "subhead": "Development, testing and regulation may still be ahead.",
         "duration": 8,
-        "narration": "Twenty licensing agreements at a November summit covered eight technologies and nine Indian companies."
+        "narration": "But a licensing agreement is not the same as an approved product that patients can already use."
       },
       {
         "kind": "uses",

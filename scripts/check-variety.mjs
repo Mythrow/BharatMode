@@ -17,6 +17,7 @@ for(const slug of queue){
   const prev=records.at(-1);
   if(prev){
     if(prev.visualFamily===item.visualFamily)flag('FAIL',slug+': same visual family as prior upload');
+    if(prev.scenes.map(s=>s.kind).join('>')===item.scenes.map(s=>s.kind).join('>'))flag('FAIL',slug+': exact same storyboard structure as prior upload');
     if(prev.hookType===item.hookType)flag('WARN',slug+': same hook type as prior upload');
     if(prev.thumbnailStyle===item.thumbnailStyle)flag('WARN',slug+': same thumbnail layout as prior upload');
     if(normalize(prev.thumbnailText)===normalize(item.thumbnailText))flag('FAIL',slug+': identical thumbnail wording');
