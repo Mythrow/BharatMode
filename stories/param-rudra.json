@@ -1,0 +1,78 @@
+{
+  "story": {
+    "slug": "param-rudra",
+    "title": "India's quiet supercomputer milestone",
+    "category": "science & tech",
+    "sourceShort": "PIB / NSM",
+    "sourceContext": "Government-reported figures · as of September 2026",
+    "sourceUrl": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=160306&lang=1&reg=48",
+    "sourcePublished": "2026-10-04",
+    "claimStage": "deployed / government-reported",
+    "hasVoice": false,
+    "scenes": [
+      {
+        "kind": "hook",
+        "kicker": "THE STORY YOU MISSED",
+        "headline": "The machines behind India's next discoveries.",
+        "subhead": "A quieter story about computing power.",
+        "duration": 6,
+        "narration": "India is quietly building computers for tomorrow's scientific discoveries."
+      },
+      {
+        "kind": "metric",
+        "kicker": "ALREADY DEPLOYED",
+        "headline": "Indian-designed computing power",
+        "number": 6000,
+        "metricLabel": "Rudra servers deployed",
+        "subhead": "As of September 2026",
+        "note": "Used in PARAM Rudra supercomputing systems",
+        "duration": 8,
+        "narration": "As of September twenty twenty-six, six thousand India-designed Rudra servers had been deployed in PARAM Rudra supercomputers."
+      },
+      {
+        "kind": "metric",
+        "kicker": "STILL EXPANDING",
+        "headline": "More servers are on the way",
+        "number": 1500,
+        "metricLabel": "additional servers",
+        "subhead": "Under manufacturing as of September 2026",
+        "note": "Government briefing; not yet deployed",
+        "duration": 8,
+        "narration": "Another fifteen hundred servers were under manufacturing, according to the same government briefing."
+      },
+      {
+        "kind": "uses",
+        "kicker": "WHY IT MATTERS",
+        "headline": "What can they help scientists do?",
+        "items": [
+          "Weather & Earth science",
+          "Materials research",
+          "Genomics & drug discovery"
+        ],
+        "subhead": "Sophisticated simulations can support important scientific work.",
+        "duration": 9,
+        "narration": "Supercomputers help researchers tackle complex problems in weather, new materials, genomics and drug discovery."
+      },
+      {
+        "kind": "impact",
+        "kicker": "THE BROADER MISSION",
+        "headline": "Millions of compute jobs",
+        "number": 15000000,
+        "suffix": "+",
+        "metricLabel": "computing jobs completed",
+        "subhead": "Across the National Supercomputing Mission",
+        "note": "The figure is broader than Rudra servers alone.",
+        "duration": 9,
+        "narration": "Across the wider National Supercomputing Mission, infrastructure has executed more than fifteen million computing jobs."
+      },
+      {
+        "kind": "close",
+        "kicker": "THE TAKEAWAY",
+        "headline": "More tools for the next breakthrough.",
+        "subhead": "A stronger research foundation is the real story.",
+        "duration": 8,
+        "narration": "The real story is domestic research capacity: more powerful tools for future breakthroughs."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "bharat-mode",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "validate": "node scripts/validate-stories.mjs",
+    "music:generate": "node scripts/make-music.mjs",
+    "voice": "node scripts/tts-openai.mjs",
+    "render:sample": "remotion render src/index.jsx BharatShort out/param-rudra.mp4 --props=stories/param-rudra.json --codec=h264",
+    "render:icmr": "remotion render src/index.jsx BharatShort out/icmr-tech-transfer.mp4 --props=stories/icmr-tech-transfer.json --codec=h264"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  }
+}

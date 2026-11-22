@@ -1,0 +1,77 @@
+{
+  "story": {
+    "slug": "icmr-tech-transfer",
+    "title": "Medical research and technology transfer",
+    "category": "health innovation",
+    "sourceShort": "PIB / ICMR",
+    "sourceContext": "ICMR announcement · November 18, 2026",
+    "sourceUrl": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2337773&lang=1&reg=1",
+    "sourcePublished": "2026-11-18",
+    "claimStage": "licensing / not proof of market availability",
+    "hasVoice": false,
+    "scenes": [
+      {
+        "kind": "hook",
+        "kicker": "RESEARCH TO REALITY",
+        "headline": "Indian health research is moving beyond the lab.",
+        "subhead": "A milestone worth understanding.",
+        "duration": 6,
+        "narration": "A quiet milestone in Indian healthcare: more research is being licensed for practical development."
+      },
+      {
+        "kind": "metric",
+        "kicker": "THE MILESTONE",
+        "headline": "From discovery toward products",
+        "number": 100,
+        "metricLabel": "technology-transfer deals",
+        "subhead": "Cumulative agreements reported by ICMR",
+        "note": "Not the same as approved products",
+        "duration": 8,
+        "narration": "The Indian Council of Medical Research reported one hundred cumulative technology transfer deals."
+      },
+      {
+        "kind": "metric",
+        "kicker": "AT THE SUMMIT",
+        "headline": "New licensing agreements",
+        "number": 20,
+        "metricLabel": "licenses announced",
+        "subhead": "Covering eight technologies and nine Indian companies",
+        "note": "At the November 2026 summit",
+        "duration": 8,
+        "narration": "Twenty licensing agreements at a November summit covered eight technologies and nine Indian companies."
+      },
+      {
+        "kind": "uses",
+        "kicker": "WHAT IT MEANS",
+        "headline": "How research moves ahead",
+        "items": [
+          "Research is developed",
+          "Partners license the work",
+          "Testing and development continue"
+        ],
+        "subhead": "A license does not guarantee regulatory approval.",
+        "duration": 9,
+        "narration": "Licensing can help a company develop research into a product. That is not the same as regulatory approval or commercial success."
+      },
+      {
+        "kind": "impact",
+        "kicker": "THE RESEARCH PIPELINE",
+        "headline": "Ideas worth following",
+        "number": 17,
+        "metricLabel": "Indian technologies showcased",
+        "subhead": "At the ICMR health innovation summit",
+        "note": "Showcased does not mean commercially available.",
+        "duration": 9,
+        "narration": "Seventeen indigenous health technologies were showcased, revealing a promising development pipeline."
+      },
+      {
+        "kind": "close",
+        "kicker": "THE TAKEAWAY",
+        "headline": "The lab is only step one.",
+        "subhead": "Bridging research to real-world use matters.",
+        "duration": 8,
+        "narration": "The bigger story is building the bridge between Indian research laboratories and practical healthcare innovation."
+      }
+    ]
+  }
+}
