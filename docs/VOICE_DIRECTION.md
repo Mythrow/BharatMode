@@ -58,6 +58,12 @@ A verified, unmodified original narrator reference WAV remains available private
 
 Added `scripts/align_qwen_words.py` for a future **real acoustic WhisperX alignment** run on the finalized narration WAV. It validates exact text-word matches and timestamps and saves audio SHA-256 in the alignment metadata. `src/aligned-captions.jsx` consumes that measured alignment, preserving the approved centered V6 caption presentation; `src/aligned-caption-timing.js` rejects demo/estimated timings. Tests: 8 Python cases plus 13 JS assertions passing. **The alignment model itself has not run; the renderer has not been fully migrated.** See [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md).
 
+## Execution handoff and artifact integrity gate
+
+The current limited chat sandbox (5.8 GiB RAM, no GPU and no downloaded Qwen weights) cannot run the 1.7B Base model. The next permitted run must happen in a capable Work Mode cloud computer (see [WORK_MODE_BASE_RUNBOOK.md](WORK_MODE_BASE_RUNBOOK.md)), without paid APIs, credits or unapproved infrastructure fees.
+
+When a real new-line WAV is generated, `scripts/validate_qwen_base_output.py` checks that PCM audio is non-silent, duration/sample rate are plausible, the SHA-256 matches its output manifest and the output manifest points back to our **specific validated synthetic reference**. Eight synthetic unit tests passed. The gate **never asserts speaker identity, transcript accuracy or publication approval**; listening and optional independent offline ASR remain mandatory.
+
 ## Integration and quality gates — not yet implemented
 
 1. Review the Work Mode audition. On approval, retain it privately with its transcript and verify the Qwen3-TTS Base consistency workflow. Check full-script throughput and recurring compute access without unapproved charges.

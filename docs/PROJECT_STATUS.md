@@ -57,6 +57,9 @@ Repository: https://github.com/Mythrow/BharatMode
 
 **NEXT TASK — Execute and review Qwen3-TTS Base voice-consistency audition using the verified reference WAV.**
 
+**Execution-ready Work Mode handoff:** [WORK_MODE_BASE_RUNBOOK.md](WORK_MODE_BASE_RUNBOOK.md) contains a clear next action, private-reference retrieval instructions, official Base-model invocation, safety constraints and evidence requirements. `scripts/validate_qwen_base_output.py` checks generated audio and manifest against the original narrator reference, requires audible human QA, and **does not** claim to verify the speaker's identity. Its **eight** local standard-library test cases passed on 23 November 2026. The exact private 7.6-second WAV reference passed `scripts/qwen_reference.py` again. This session has **5.8 GiB RAM, no GPU or Qwen weights** and therefore cannot perform Base inference. **No Base voice was produced.**
+
+
 1. Original Qwen VoiceDesign reference is **verified** and tracked by hash/metadata in `config/narrator-reference.json`; the WAV itself is private and outside Git. **Final audible narrator approval and PARAM pronunciation check remain pending.**
 2. On a capable Work Mode cloud computer, use `scripts/qwen_reference.py` to verify the private WAV, then `scripts/qwen_base_voice_test.py` with official Qwen 1.7B Base weights to generate **new, different lines** using that exact reference. Review whether voice quality/identity carries over and capture timing/memory usage. Base inference is not yet verified.
 3. If the Base voice is consistent, implement repeatable narration from actual story text, phonetic pronunciation QA and **forced word-level alignment** into the locked V6 caption system. Do not treat synthetic or estimated word timestamps as real speech timing.
