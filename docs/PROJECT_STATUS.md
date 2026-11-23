@@ -11,6 +11,15 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Current stage — V6 visuals and narrator APPROVED; music audition awaiting owner choice before first voiced pilot
 
+### New MUSIC-04 lo-fi request and audition — 23 November 2026
+
+- Owner listening feedback on earlier scores: **MUSIC-01 too boring/simple**; likes MUSIC-03 rhythm and MUSIC-02 tune; wants a lo-fi beat with both traits. This is **directional feedback, not soundtrack approval**.
+- Created a 31.304-second original **MUSIC-04 Lo-Fi Motion** audition at 92 BPM: swung hip-hop drums, warm Rhodes-style harmonic progression, brighter original melodic hook and subtle tape texture. Music-only and Qwen-narrator-mixed WAV/MP3 previews delivered in chat. Original reproducible source in `scripts/generate_lofi_audition.py`, details/checksums in [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md).
+- Both 44.1 kHz stereo PCM16 WAVs passed readback, finite-sample and peak tests with no clipping; the mixed preview uses the exact owner-approved private reference. **Human listening is pending.** No soundtrack or SFX masters replaced and no V6 modifications.
+- **NEXT:** owner evaluates MUSIC-04. If it matches the desired groove, iterate to a real loopable, length-adaptable production music bed and matching minimal sonic stinger, then verify voice mixing and phone playback before locking music.
+
+
+
 ### New soundtrack selection checkpoint — 23 November 2026
 
 - **Music is NOT yet owner-approved.** The checked-in `public/music/ambient.wav` and `public/sfx/*.wav` are **starter audio placeholders**, not finalized channel music.

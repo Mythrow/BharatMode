@@ -14,7 +14,9 @@
 ## Milestone 2 — Approved visual template (COMPLETE); music identity approval (NEXT); three polished pilot Shorts
 
 - [x] Generate **three original music auditions** and 20-second narrator-mixed comparisons without paid services or third-party music samples. [Music & sonic identity decisions](MUSIC_DIRECTION.md): MUSIC-01 Quiet Momentum, MUSIC-02 Curious Discovery, MUSIC-03 Built Forward. Procedural generator committed; audio demos remain outside Git.
-- [ ] **NOW:** owner listens to the three candidate beds and chooses an approved core soundtrack direction. This approval is **separate** from already-approved V6 visuals and Qwen narrator.
+- [x] Record owner feedback: MUSIC-01 rejected as boring/simple; MUSIC-03 beat and MUSIC-02 melody preferred; new requirement is **lo-fi beats** combining both.
+- [x] Create **MUSIC-04 Lo-Fi Motion**, an original 92 BPM / 31.3-second swung beat with Rhodes melody and a Qwen-narrator-mixed audition, plus reproduction source and checksums. Both WAVs pass audio integrity checks; no paid services or samples.
+- [ ] **NOW:** owner listens to MUSIC-04 and specifies any groove/melody refinements. No soundtrack direction approved or final production bed substituted yet. This approval remains separate from the already-approved V6 visuals and Qwen narrator.
 - [ ] Arrange the selected music into complete script-length/loop-ready variants; finalize subtle transitions/`Mode: ON` identity sound and mix narrator-first. Test levels and mobile playback; only then replace starter `public/music/ambient.wav` and provisional SFX, preserving source and rights.
 
 - [x] Owner approved the V6 visual/motion design with symmetrical chapter progress (84px both sides). Reusable frame in `src/approved-shorts-template.jsx`.

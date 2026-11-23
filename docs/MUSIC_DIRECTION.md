@@ -1,5 +1,19 @@
 # Bharat Mode — Music & Sonic Identity
 
+## Latest owner direction — Lo-fi hip-hop audition MUSIC-04 (23 November 2026)
+
+The owner **rejected MUSIC-01 Quiet Momentum** as too boring/simple, **liked the beats of MUSIC-03 Built Forward** and **liked the melody/tune of MUSIC-02 Curious Discovery**, and asked for a combination using **lo-fi beats**. This is preference feedback, **not final approval** of any track.
+
+Produced **MUSIC-04 Lo-Fi Motion**: an original 92 BPM, 12-bar (31.304-second) stereo arrangement in an optimistic jazzy/chill lo-fi hip-hop style. It has a rhythmic, syncopated kick/snare pocket, swung hi-hats, warm Rhodes-style keyboard chords, a brighter recurring upper melody, subtle tape noise and a melodic bassline. The groove starts promptly; voice-mixed audition puts the **same approved synthetic Qwen reference** at ~2.25 seconds with a ducked score behind the speech. Nothing is copied from an existing artist or copyrighted song.
+
+- **Music-only WAV SHA-256:** `81a6f75030d329c67193bf16da1d07a96561543627cff200c458377d8a26972c`.
+- **Narrator-mixed WAV SHA-256:** `33bd302a9ca40d338bda98aa94347e6a5db873e774bc63c6b785d2a9f5b3cde1`; narrator source matches privately approved reference SHA `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`.
+- **Audio:** 44.1 kHz stereo, PCM16, 31.304 sec, peak music ~0.521 FS, peak mixed ~0.755 FS; no clipping. MP3 narrated/instrumental preview copies also generated for listening. Final loudness, seamless looping, edit responsiveness, sound identity and phone-speaker mix are still unapproved/unverified.
+- **Reproduce:** `python scripts/generate_lofi_audition.py`. With environment variable `BHARAT_APPROVED_REFERENCE` pointed to the exact approved private synthetic reference WAV, the generator also produces the voice comparison. `BHARAT_LOFI_OUT` changes the output directory. No voice or music-preview binaries are stored in Git.
+- **Owner decision pending:** listen to MUSIC-04 with narration and music-only. Refine groove or melody as requested. **Do not** replace `public/music/ambient.wav` or existing SFX until owner approves and full-length, narration-first final masters have been mixed and checked.
+
+
+
 **Status: THREE ORIGINAL AUDITIONS READY — NOT OWNER-APPROVED.**  
 **Date:** 23 November 2026. Music approval now precedes BM-0003's first publishable voiced V6 render.  
 **Approved and unchanged:** V6 visual design and the original Qwen3-TTS synthetic narrator.
