@@ -1,6 +1,17 @@
 # Bharat Mode — Music & Sonic Identity
 
-## MUSIC-05 — Deep Current (current audition, 23 November 2026)
+## MUSIC-06 — Selected signature background music (23 November 2026)
+
+**OWNER SELECTED:** The user's uploaded `techno-thriller-final.mp3` is now the first-choice **dark techno-thriller soundtrack**. It supersedes MUSIC-01–05, which are historical audition experiments. No further approval of alternative music concepts is needed.
+
+- The exact 54.99-second file is **saved privately** in ChatGPT Library: `BharatMode/music/techno-thriller-final.mp3`. SHA-256: `adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9`. Technical: stereo 44.1 kHz MP3 / 192 kbps, measured about −17.55 LUFS integrated and −1.29 dBTP. It's selected as music, not certified as a finished voice-mixed/video master.
+- Do **not** commit the standalone ElevenLabs-associated generated MP3 to a public repository. `public/music/ambient.wav` and existing SFX remain legacy prototypes until a licensed final edit/mix is produced. The V6 visuals and Qwen narrator are untouched.
+- **Reuse policy:** use this as the recognizable score for the first 5–10 Shorts, but take different passages/entrances and story-appropriate trims; lower music during Qwen speech, transition subtly, avoid long intros, and keep bass from masking narration on phone speakers. After initial pilots develop 2–3 consistent variations instead of creating a unique unrelated song per Short or repeating exactly the same 55-second playback forever.
+- **Rights check before YouTube:** exact generation account tier/origin is not yet documented. ElevenLabs' [current Music Terms](https://elevenlabs.io/music-terms) permit online commercial media under tier-specific conditions; Free-tier music requires attribution and the table lists Free download restrictions. Confirm the source/tier and licensing terms for this file before any monetized publication. Keep a provenance receipt and any required description credit. Selection approval is **not** independent licensing clearance.
+- **Next:** prepare a short BM-0003 L&T video mix using the approved Qwen narrator and MUSIC-06, measure actual speech intelligibility/ducking and review on phone, then finalize rights and publication QA. See [config/music.json](../config/music.json).
+
+
+## MUSIC-05 — Deep Current (superseded audition, 23 November 2026)
 
 **Latest owner feedback:** MUSIC-04's hip-hop groove was rejected. The user wants **modern techno with a deeper melody and basslines instead of high-key instruments**. MUSIC-01 remains rejected as too simple; MUSIC-02's melodic appeal and MUSIC-03's rhythmic strength informed this newer direction.
 

@@ -9,7 +9,16 @@ Last verified: **23 November 2026**. Work Mode generated and technically validat
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — V6 visuals and narrator APPROVED; music audition awaiting owner choice before first voiced pilot
+## Current stage — V6 visuals, Qwen narrator and MUSIC-06 track selected; soundtrack licensing and mixed-video QA next
+
+### MUSIC-06 signature master selected — 23 November 2026
+
+- User approved their uploaded `techno-thriller-final.mp3` for Bharat Mode. Exact original MP3 stored privately at `BharatMode/music/techno-thriller-final.mp3` in ChatGPT Library, SHA-256 `adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9`, 54.99 seconds, stereo 44.1 kHz MP3 192 kbps. Original master is **not** public Git media. Details in [config/music.json](../config/music.json) and [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md).
+- Use as the recognizable default for first ~5–10 Shorts with varied sections, levels, cuts and Qwen narration ducking. Later maintain 2–3 related textures to avoid repetitive identical soundtracks. MUSIC-01–05 are superseded; do not re-request selection.
+- **Important:** ElevenLabs Music plan/source and any required attribution are **not yet verified**. The exact upload is owner-selected for private production trials, **not yet cleared for public/monetized uploads**. Current ElevenLabs Music Terms allow online commercial use subject to tier; Free attribution may apply. Record provenance before publication.
+- The existing `public/music/ambient.wav`, original SFX and approved V6 visual template remain untouched. Next: mixed BM-0003 pilot with final voice alignment, licensed soundtrack verification and phone QA.
+
+
 
 ### Latest music audition — MUSIC-05 modern melodic techno, 23 November 2026
 

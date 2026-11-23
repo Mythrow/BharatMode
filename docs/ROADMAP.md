@@ -11,7 +11,12 @@
 - [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner approved; [x] source and recommended-size export in Git with SHA verification; [ ] test YouTube mobile/desktop crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
-## Milestone 2 — Approved visual template (COMPLETE); music identity approval (NEXT); three polished pilot Shorts
+## Milestone 2 — Approved visual template (COMPLETE); MUSIC-06 owner-selected (rights/mix pending); three polished pilot Shorts
+
+- [x] Owner selected supplied **MUSIC-06 Techno Thriller** as the signature background track. Private original MP3 is in ChatGPT Library with SHA-256 recorded in [config/music.json](../config/music.json); no public Git media upload.
+- [x] Define reuse rule: same main sound for first 5–10 videos with varied cue excerpts/edits and narration ducking; later related variants to avoid identical repeated playback.
+- [ ] **NEXT:** verify the source account/tier and commercial/attribution requirements of the ElevenLabs-associated track, then make a BM-0003 test mix and check speech/phone loudness. Owner selection ≠ YouTube rights clearance.
+
 
 - [x] Generate **three original music auditions** and 20-second narrator-mixed comparisons without paid services or third-party music samples. [Music & sonic identity decisions](MUSIC_DIRECTION.md): MUSIC-01 Quiet Momentum, MUSIC-02 Curious Discovery, MUSIC-03 Built Forward. Procedural generator committed; audio demos remain outside Git.
 - [x] Record owner feedback: MUSIC-01 rejected as boring/simple; MUSIC-03 beat and MUSIC-02 melody preferred; new requirement is **lo-fi beats** combining both.

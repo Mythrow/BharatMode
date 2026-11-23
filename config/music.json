@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "MUSIC-06",
+  "title": "Techno Thriller — Owner-selected master",
+  "ownerSelectedOn": "2026-11-23",
+  "status": "owner_selected_licensing_and_mix_verification_pending",
+  "privateAsset": "ChatGPT Library /BharatMode/music/techno-thriller-final.mp3",
+  "sha256": "adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9",
+  "durationSeconds": 54.988,
+  "sampleRateHz": 44100,
+  "channels": 2,
+  "encoding": "MP3",
+  "bitrateKbps": 192,
+  "integratedLufsMeasured": -17.55,
+  "truePeakDbtpMeasured": -1.29,
+  "source": "User-supplied audio following ElevenLabs music generation discussion; exact origin, plan and license require verification",
+  "plan": "Use as signature bed for first 5–10 Shorts, but select different passages/edit points and dynamically duck around the voice. Later create 2–3 stylistically related variants. Do not loop identically in every video.",
+  "rights": "Hold public distribution pending verification of user's ElevenLabs Music plan and required attribution. Free tier under current terms requires attribution; verify source and download eligibility.",
+  "noGitAudio": true,
+  "publicationApproved": false,
+  "visualTemplate": "V6 unchanged",
+  "voiceIdentity": "approved Qwen3 narrator unchanged"
+}
