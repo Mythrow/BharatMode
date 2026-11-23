@@ -11,6 +11,16 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Current stage: V6 visuals and Qwen3-TTS engine APPROVED; repeatable narrator reference and production integration NEXT
 
+### Attempted Qwen execution — 23 November 2026
+
+- **Implemented** Python CPU-only VoiceDesign test in `scripts/qwen-voice-design-smoke.py` and standard public-repo GitHub Actions test in `.github/workflows/qwen-voice-smoke.yml`; [commit 65d5a79](https://github.com/Mythrow/BharatMode/commit/65d5a79c15b6278e0321dddc59bfcaca56393037).
+- **Actually attempted** GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) twice. Both attempts **failed before any job step executed**; GitHub reports empty steps and unavailable job logs (`BlobNotFound`). Older repo CI runs show similar early failures. Treat this as a **remote Actions runner/execution blocker**, not proof Qwen inference fails.
+- The current ChatGPT container has ~6 GiB RAM, no GPU, no cached Qwen weights, and cannot access external model downloads. Genuine local Qwen speech generation was therefore **not** possible here.
+- **No Qwen WAV file exists yet; no narration or approved persistent voice reference has been generated.** No paid TTS calls, voice credits or infrastructure purchases were used.
+- The smoke-test script is **untested against the actual model** until runner provisioning/external compute access is resolved. Keep it as an experiment rather than asserting readiness.
+- **Next unblock:** investigate GitHub Actions run-level startup/runner/billing/policy errors and enable execution, or find a permissible GPU/CPU host with model-download access and no unapproved costs. Owner is not expected to run commands locally.
+
+
 **Completed and approved by channel owner**
 - Channel name: **Bharat Mode**; tagline: **Big Ideas. Real Progress.**
 - Brand palette: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, Deep Charcoal `#0B1018`.

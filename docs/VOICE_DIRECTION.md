@@ -31,6 +31,12 @@ The official Qwen README documents a consistent-designed-narrator path:
 3. Use `Qwen/Qwen3-TTS-12Hz-1.7B-Base`, `create_voice_clone_prompt` and `generate_voice_clone` with that original synthetic reference for **repeatable future audio**. This is a technical voice-consistency workflow, not cloning a third-party narrator.
 4. Validate actual speech, pronunciation, pace and consistency on a complete script. Regenerate/refine if necessary.
 
+## Verified execution attempt (23 November 2026)
+
+A real, CPU-only prototype was committed as [`scripts/qwen-voice-design-smoke.py`](../scripts/qwen-voice-design-smoke.py) and [`.github/workflows/qwen-voice-smoke.yml`](../.github/workflows/qwen-voice-smoke.yml). GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) failed twice **before starting any step** (steps empty, logs not available). Hence neither model downloads nor inference started, and **no sample was generated**. This is an execution infrastructure blocker; the model/inference code remains untested. GitHub Actions was not charged through any metered TTS service. No user installation is needed to view the run.
+
+The chat execution environment has no GPU, about 6 GiB RAM and no outbound model-download access. Thus no actual Qwen synthesis can run there today. Do not claim a completed narrator audition until an actual WAV exists.
+
 ## Integration and quality gates — not yet implemented
 
 1. Confirm usable remotely provisioned compute (1.7B inference is heavier than Kokoro; GPU acceleration is normally desirable) that does not add unapproved payments, paid API calls or metered voice credits.
