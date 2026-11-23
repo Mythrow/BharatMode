@@ -2,24 +2,21 @@
 
 **THIS IS THE CANONICAL RESUME POINT.**
 
-Last verified: **23 November 2026**. Qwen3-TTS engine approval recorded this date; consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
+Last verified: **23 November 2026**. Work Mode generated the PARAM Rudra Qwen3-TTS audition. Consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
 
 ## What the project is
 **Bharat Mode** is a research-led, faceless YouTube Shorts channel highlighting verified Indian discoveries, inventions, builders, science, technology and meaningful national progress. Content should find underreported stories without sensationalizing or claiming unsupported "firsts". Voice, evidence and readable vertical animation are core to the product.
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage: V6 visuals and Qwen3-TTS engine APPROVED; repeatable narrator reference and production integration NEXT
+## Current stage — V6 visuals and Qwen3-TTS engine approved; PARAM Rudra voice audition ready
 
-### Attempted Qwen execution — 23 November 2026
+### Verified Qwen3-TTS Work Mode audition — 23 November 2026
 
-- **Implemented** Python CPU-only VoiceDesign test in `scripts/qwen-voice-design-smoke.py` and standard public-repo GitHub Actions test in `.github/workflows/qwen-voice-smoke.yml`; [commit 65d5a79](https://github.com/Mythrow/BharatMode/commit/65d5a79c15b6278e0321dddc59bfcaca56393037).
-- **Actually attempted** GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) twice. Both attempts **failed before any job step executed**; GitHub reports empty steps and unavailable job logs (`BlobNotFound`). Older repo CI runs show similar early failures. Treat this as a **remote Actions runner/execution blocker**, not proof Qwen inference fails.
-- The current ChatGPT container has ~6 GiB RAM, no GPU, no cached Qwen weights, and cannot access external model downloads. Genuine local Qwen speech generation was therefore **not** possible here.
-- **No Qwen WAV file exists yet; no narration or approved persistent voice reference has been generated.** No paid TTS calls, voice credits or infrastructure purchases were used.
-- The smoke-test script is **untested against the actual model** until runner provisioning/external compute access is resolved. Keep it as an experiment rather than asserting readiness.
-- **Next unblock:** investigate GitHub Actions run-level startup/runner/billing/policy errors and enable execution, or find a permissible GPU/CPU host with model-download access and no unapproved costs. Owner is not expected to run commands locally.
-
+- Downloaded the official 1.7B VoiceDesign weights and speech tokenizer, verified their SHA-256 hashes, and ran inference from local files with Hugging Face offline mode on a CPU-only Work Mode workspace (9.7 GiB reported RAM). No paid compute, metered voice API, subscription, or voice credits were used.
+- Fed the voice prompt from [config/voice.json](../config/voice.json) and the exact PARAM Rudra audition text from [the smoke script](../scripts/qwen-voice-design-smoke.py). Verified a 7.6-second, 24 kHz mono PCM WAV. The owner can play the sample in the Work Mode conversation. The WAV is kept outside Git.
+- **Next: owner listens to the audition.** If approved, retain the original synthetic reference and exact transcript privately, then verify Qwen3-TTS 1.7B Base can reproduce that voice on new lines. This test covers one short audition. Recurring compute access, full-script throughput, pronunciation review, reference consistency, and production integration are pending.
+- Earlier GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) still records a separate runner startup failure before any step. Work Mode testing used the repository smoke script with a pinned local snapshot, a fixed seed, and staged float32 processing. The all-float32 attempt was killed under memory pressure and an INT8 sample failed the transcript check. See [VOICE_DIRECTION.md](VOICE_DIRECTION.md) for settings and timings.
 
 **Completed and approved by channel owner**
 - Channel name: **Bharat Mode**; tagline: **Big Ideas. Real Progress.**
@@ -36,21 +33,21 @@ Repository: https://github.com/Mythrow/BharatMode
 **Not yet completed / not approved for publication**
 - The `BharatShort` production renderer in `src/short.jsx` is **still a legacy renderer**, not yet fully upgraded to approved V6 motion and per-word aligned captions. Its bar alignment has been fixed.
 - No end-to-end **voice-aligned, fully rendered, phone-tested** publishable Short has been verified.
-- Owner prefers Qwen3-TTS demo sound, but **no reusable final synthetic narrator reference audio has been captured or production-tested**. Full-script pronunciation, delivery, word-level alignment and sound-mix QA are pending. The old vidIQ Brian and OpenAI TTS production paths are ineligible under the zero-credit requirement.
+- The **PARAM Rudra synthetic-voice audition is ready for owner review**. A reusable final narrator reference, full-script pronunciation and delivery, word-level alignment, and sound-mix QA are pending. The old vidIQ Brian and OpenAI TTS production paths are ineligible under the zero-credit requirement.
 - Word-level caption timestamps must come from real finalized narration audio (TTS word timestamps or forced alignment), not the manually estimated prototype timings.
 - Evidence/rights pipeline, upload-ready sourcing, audio ducking/loudness QA, actual YouTube crop/safe-area QA, and three distinct finished pilots are outstanding.
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Capture and validate a reusable Qwen3-TTS narrator reference, then build the unmetered synthesis pipeline.**
+**NEXT TASK — Review the PARAM Rudra Qwen3-TTS audition and approve the narrator or request a revised delivery.**
 
 1. **Qwen3-TTS has been approved as the preferred engine** after the owner listened to its demo and found it better than Kokoro. Use official `Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign` for original voice generation; the exact reference sample from the browser is not available to the repository. Preserve the no-paid-subscription, no-voice-credits requirement. No Indian accent required.
-2. Create/obtain and approve one original synthetic reference clip of the desired professional narrator. Qwen officially documents VoiceDesign → create_voice_clone_prompt → Base model voice generation for consistent recurring identity. Never clone Brian or another real person's voice.
-3. Validate feasible **remote compute** with no unapproved charges; 1.7B Qwen is heavier than Kokoro. The owner does not run tools locally. Free model use does not guarantee unlimited free GPU computing.
+2. On approval, preserve the original synthetic audition WAV and exact transcript privately. Verify Qwen’s VoiceDesign → create_voice_clone_prompt → Base workflow on fresh sample lines for consistent recurring identity. Never clone Brian or another real person's voice.
+3. Check Qwen3-TTS Base memory and speed, full-script throughput, and recurring access to Work Mode or another permitted host. One CPU run establishes audition feasibility on this workspace. The owner does not run tools locally.
 4. Implement Qwen synthesis, local accurate word alignment from **final audio**, and migrate `src/short.jsx` to V6 dynamic scenes/captions; mix original music/SFX with narration.
 5. Render and phone-QA one fact-checked publishable pilot; then two structurally different pilots. Commercial model/dependency licenses and rights-cleared documentary media must be checked.
 
-**Completed this checkpoint:** owner selected Qwen3-TTS engine; config/docs updated; added a CPU-only GitHub Actions smoke test to check whether a real original Qwen3 VoiceDesign sample can be generated without voice credits. The test is not evidence that CPU generation has succeeded; inspect its run/artifact separately. **Not completed:** captured reference narrator, available compute verification, actual local Qwen sample, voice generation code, forced alignment, integrated renderer, full MP4 or phone review.
+**Completed this checkpoint:** verified official model download, offline CPU inference, and a real audition WAV in Work Mode. **Pending:** owner approval of voice identity, Base consistency test, recurring compute, production synthesis, forced alignment, integrated renderer, full MP4, and phone review.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 
