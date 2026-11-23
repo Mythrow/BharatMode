@@ -1,3 +1,4 @@
+> **Latest (23 Nov 2026):** Natural Earth + Remotion maps **APPROVED**; BM-0003 **Revision 3** physically rendered *here*, not in Work. Verified 41.5s 1080×1920/30fps private MP4 with India POV → true Tamil Nadu polygon → Chennai city pin and L&T/Vyoma.AI/LTN Compute/NVIDIA identifiers. Same AAC stream checksum `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b` as V2, no narration/music changes. SHA new video `6aa5cb03e4448819dae65f04fa669fb1233c269a137d93d6bee1291f62224f9e`. [Map plan + sources](MAP_DIRECTION.md). Revision 3 remains private/unpublished and needs owner visual review and phone QA.
 # Bharat Mode — Project Status / New-Chat Handoff
 
 **THIS IS THE CANONICAL RESUME POINT.**

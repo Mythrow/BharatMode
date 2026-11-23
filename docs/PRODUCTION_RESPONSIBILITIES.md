@@ -1,3 +1,4 @@
+> **Approved map pipeline:** Natural Earth 1:10m country/state/city geographic data + reusable Remotion map component, with actual in-chat video renders (OpenCV/FFmpeg acceptable for iterative bridges). [MAP_DIRECTION.md](MAP_DIRECTION.md). Work must not generate map animations or MP4s.
 # Bharat Mode — Responsibility Boundary: AUDIO ONLY in Work, VIDEO HERE
 
 **Owner instruction (23 November 2026):** Work Mode must **only generate and validate narration/audio assets**. All image sourcing/graphics, motion, editing, music placement, composition, video encoding and MP4 rendering must be performed **in the main ChatGPT production conversation**. Never delegate video production to Work, even when a runbook or old issue says otherwise. This owner instruction overrides earlier broad production handoffs.

@@ -49,7 +49,8 @@
     "music:techno:audition": "python scripts/generate_melodic_techno_audition.py",
     "music:mix:demo": "python scripts/preview_signature_mix.py --music out/private/techno-thriller-final.mp3 --voice out/private/bharat-mode-qwen-voice-audition.wav --out out/music-mix",
     "voice:bm0003:plan": "python scripts/produce_story_audio.py --story stories/lt-chennai-ai-cluster-order.json",
-    "voice:bm0003:test": "python -m unittest discover -s scripts -p test_bm0003_production.py"
+    "voice:bm0003:test": "python -m unittest discover -s scripts -p test_bm0003_production.py",
+    "map:check": "node scripts/test-natural-earth.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

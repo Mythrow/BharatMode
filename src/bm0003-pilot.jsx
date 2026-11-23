@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill,Composition,registerRoot,useCurrentFrame} from 'remotion';
 import {ApprovedShortsFrame} from './approved-shorts-template.jsx';
+import {BM0003NaturalEarthMap} from './natural-earth-map.jsx';
 import {AlignedNarrationCaptions} from './aligned-captions.jsx';
 import {resolveStoryChapters} from './chapter-timing.js';
 import {currentBeatAt,easeOut,headlineCharsAt,scenePoseAt} from './motion-v6-timing.js';
@@ -63,7 +64,7 @@ function Pilot({story,alignments}) {
         <div style={{position:'absolute',top:364,left:83,right:165,fontFamily:DISPLAY_FONT,fontSize:88,
           fontWeight:800,lineHeight:1.14,letterSpacing:-3,opacity:enter,
           transform:`translateX(${106*(1-enter)}px)`}}>{headlineCharsAt(scene.headline,local)}</div>
-        <Evidence scene={scene} local={local}/>
+        {i===1 ? <BM0003NaturalEarthMap localTime={local} duration={scene.duration}/> : <Evidence scene={scene} local={local}/>}
       </AbsoluteFill>;
     })}
   </ApprovedShortsFrame>;

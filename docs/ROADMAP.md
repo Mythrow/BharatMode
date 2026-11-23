@@ -1,3 +1,4 @@
+> **NEW MAP APPROVAL / VIDEO CHECKPOINT (23 Nov 2026):** Natural Earth 10m + Remotion selected for repeatable cinematic map geography (India POV, Tamil Nadu states, Chennai city center). [Map specification](MAP_DIRECTION.md) · [geo data](../data/maps/naturalearth-bm0003.json) · [Remotion reusable map](../src/natural-earth-map.jsx). In this chat, Python/FFmpeg produced V3 full 41.5s MP4 (same original audio). **Owner visual review pending, not published.** Work remains AUDIO ONLY.
 # Bharat Mode — Launch milestones
 
 **BM-0003 review checkpoint:** Six Qwen Base scenes, independent ASR, real WhisperX captions, and the MUSIC-06 Option B mix are in the private 41.50-second V6 pilot. Owner phone review and publication sign-off remain open.
