@@ -2,7 +2,7 @@
 
 **BM-0003 review checkpoint:** Six Qwen Base scenes, independent ASR, real WhisperX captions, and the MUSIC-06 Option B mix are in the private 41.50-second V6 pilot. Owner phone review and publication sign-off remain open.
 
-**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** BM-0003 L&T script drafted and owner-selected paid-tier MUSIC-06 mix demo created; generate and validate actual BM-0003 Qwen Base narration, real word alignment and locked V6 review MP4. See [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
+**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Owner clarified: Work may ONLY produce Qwen WAVs, audio verification and true alignment; this ChatGPT conversation must make all videos**. See [Production Responsibilities](PRODUCTION_RESPONSIBILITIES.md). Earlier Work rendering was an error. BM-0003 CGI-enhanced 41.5-second in-chat video revision is ready for owner review, not published.  **Next active milestone:** BM-0003 L&T script drafted and owner-selected paid-tier MUSIC-06 mix demo created; generate and validate actual BM-0003 Qwen Base narration, real word alignment and locked V6 review MP4. See [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
 
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
@@ -13,7 +13,13 @@
 - [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner approved; [x] source and recommended-size export in Git with SHA verification; [ ] test YouTube mobile/desktop crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
-## Milestone 2 — V6 visuals and narrator approved; MUSIC-06 owner-selected / paid-tier sync rights reviewed; first BM-0003 voiced pilot NEXT
+## Milestone 2 — V6 visuals and narrator approved; BM-0003 animated visual revision 2 produced here, approval pending
+
+- [x] **Fix production ownership:** Work Mode **audio-only**; main chat owns visual creation, film editing and final MP4. Updated [production responsibilities](PRODUCTION_RESPONSIBILITIES.md) and Work audio runbook; do not delegate video rendering to Work again.
+- [x] Review the first BM-0003 video and identify the core weakness: repeated static evidence cards and too much typography; the owner wants significantly more compelling visual storytelling.
+- [x] **Create full in-chat revision 2** with six original animated story-specific CGI schematic hero sequences, unchanged locked V6 headline/captions/logo/centered progress and unchanged audio stream. 41.5sec 1080×1920, H.264/AAC; verified frame count and matching audio SHA-256; self-contained video HTML review in chat.
+- [ ] **NEXT:** owner reviews revision 2 for visual engagement, then iterate if needed. Confirm on actual phone, check licensing/documentation and approve final pilot before any upload. CGI illustrates the concept, **not real L&T facility footage**.
+
 
 - [x] Respond to owner audio-level feedback with **MUSIC-06 20s A/B/C louder mix test** in one privately linked self-contained HTML file with embedded playback and moving 0–100 fader meters. Reproducible generator in `scripts/generate_music06_level_comparison.py`; verified source SHAs, tested no clipping and exact regeneration.
 - [x] **OWNER APPROVED Option B, 23 November 2026:** Qwen narrator **88/100**, MUSIC-06 **55/100 between speech**, **32/100 beneath speech**, with 24ms attack / 280ms release. Reference faders frozen in [config/music.json](../config/music.json) and reused by demo mixer. No need for further mix-selection auditions; actual BM-0003 story/full video mixing and phone QA remain open.

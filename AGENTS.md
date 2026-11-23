@@ -1,6 +1,8 @@
 # Bharat Mode — Assistant / Coding Agent Instructions
 
 **Start by reading [docs/PROJECT_STATUS.md](docs/PROJECT_STATUS.md).**
+**CRITICAL OWNER CONSTRAINT:** [Production Responsibilities](docs/PRODUCTION_RESPONSIBILITIES.md): **Work Mode is AUDIO-ONLY** (Qwen WAVs, offline transcript QA, true WhisperX word alignment). **This main chat creates/edits/renders ALL VIDEO** including imagery, V6, MUSIC-06 placement, subtitles and MP4. The earlier Work-mode rendering of BM-0003 was a scope mistake and its text-heavy result was rejected. Do not repeat it or tell Work to render/encode video.
+
 Then read [docs/ROADMAP.md](docs/ROADMAP.md) and [docs/APPROVED_SHORTS_TEMPLATE.md](docs/APPROVED_SHORTS_TEMPLATE.md) *before editing any visual or production sources*.
 
 - **ALWAYS inspect [content/CONTENT_LOG.md](content/CONTENT_LOG.md) and [content/registry.json](content/registry.json) before pitching, selecting or drafting any story.** Search all stages including Published, use the unique `BM-####` ID, and obey [docs/CONTENT_PIPELINE.md](docs/CONTENT_PIPELINE.md). Never register the same news event twice; a genuine new development on the same topic must link its earlier ID and explain the difference. After any intake/edit run `npm run content:check` and `npm run content:test`.
@@ -8,7 +10,7 @@ Then read [docs/ROADMAP.md](docs/ROADMAP.md) and [docs/APPROVED_SHORTS_TEMPLATE.
 - **MUSIC-06 ACTIVE:** owner chose the private 54.99s techno-thriller MP3 and confirmed a paid ElevenLabs Music plan. Current Music Terms allow ordinary monetized YouTube audio synchronization without required paid-tier attribution; precise tier/creation receipt not independently examined. Track remains private, SHA in `config/music.json`; earlier MUSIC-01–05 are superseded. A 20s approved-reference mix demo was generated; the full BM-0003 review cut uses approved Option B and awaits phone review. Never publish stand-alone music to Git or substitute paid TTS.
 - The channel owner approved the V6 Shorts visual system on 23 November 2026, with perfectly centered segmented chapter progress (84px left and right on 1080px canvas).
 - The official logo badge and avatar SVG masters in `public/brand/` must not be redrawn or recolored.
-- **CURRENT FIRST CONTENT PILOT:** BM-0003 L&T Chennai 23 Nov new order, draft in `stories/lt-chennai-ai-cluster-order.json` and exact [Work Mode runbook](docs/WORK_MODE_BM0003_RUNBOOK.md). Six verified narration scenes and real WhisperX timings are in the private V6 review cut. Phone QA and publication sign-off remain open.
+- **CURRENT FIRST CONTENT PILOT:** BM-0003 L&T Chennai 23 Nov new order. Work already generated six verified narration scenes and real WhisperX word timings, but its first video was visually too text-heavy and its rendering task was outside scope. The main chat rendered a visually richer **revision 2** MP4 with six original CGI/animated schematic sequences and **identical original audio stream**. Review and owner sign-off pending; do not mark published. [Role boundaries](docs/PRODUCTION_RESPONSIBILITIES.md).
 - The `BharatShort` generic renderer is older than the approved motion system. Its remaining integration work is tracked in [GitHub issue #5](https://github.com/Mythrow/BharatMode/issues/5).
 - Do not assume a new chat has read GitHub or remembered every previous choice. Fetch/read the current status file first.
 - The owner prefers interactive HTML or finished artifact previews **in the chat**; do not ask the owner to run scripts on their own device.

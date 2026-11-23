@@ -9,7 +9,15 @@ Last verified: **23 November 2026**. Work Mode rendered and validated the privat
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — V6 visuals and narrator approved; paid MUSIC-06 selected; BM-0003 V6 pilot ready for private review
+## Current stage — owner requested stronger BM-0003 visuals; in-chat animated revision 2 created, owner review NEXT
+
+### Corrected Work/video boundary and new BM-0003 visual cut — 23 November 2026
+
+- Owner explicitly corrected the workflow: **Work Mode = AUDIO ONLY**, limited to offline Qwen narration/WAV exports, independent transcription QA and real word-level timing files. **Main ChatGPT chat = ALL video**: image/graphics, Remotion/V6 scenes, captions, soundtrack integration and final MP4. Old Work video-rendering instructions are wrong and must not be repeated. [Production Responsibilities](PRODUCTION_RESPONSIBILITIES.md) is canonical.
+- Owner reviewed Work's 41.50s BM-0003 cut and found its repeated text/information cards **boring and visually insufficient**, despite technical voice/mix success.
+- **Created a new full 41.50s review MP4 inside this chat** with a genuinely animated original schematic hero for each scene: 3D-perspective racks, Chennai chip/deployment visualization, contract band graphic, planned GPU grid, active-versus-planned clarification and connected compute-network finale. Audio stream is **byte-for-byte identical at codec level** to the previous cut; V6 frame/captions/brand/progress unchanged. The video SHA-256 is `6e4018988a67254b3db2273309c69dea5830c40be992489e37176b3a81448290`.
+- Technical checks: **1080×1920**, **30 fps**, **1245 frames**, **41.5 s**; H.264/AAC; original and revised audio stream hashes both `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b`. In-chat screenshots/contact sheet inspected. Private MP4 and self-contained playable HTML review delivered; **no public upload**.
+- This first visually upgraded bridge cut uses the historical Work MP4 as starting media; future Work jobs must deliver **only audio/alignments**, and the main conversation must render the base V6 video itself. Rendering source: `scripts/render_bm0003_visual_upgrade.py`. Original CGI is **illustrative**, not real site footage. **Owner feedback on revision 2 and device phone QA still pending**.
 
 ### MUSIC-06 soundtrack mix APPROVED — Option B, 23 November 2026
 
