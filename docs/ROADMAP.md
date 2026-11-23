@@ -13,6 +13,11 @@
 
 ## Milestone 2 — V6 visuals and narrator approved; MUSIC-06 owner-selected / paid-tier sync rights reviewed; first BM-0003 voiced pilot NEXT
 
+- [x] Respond to owner audio-level feedback with **MUSIC-06 20s A/B/C louder mix test** in one privately linked self-contained HTML file with embedded playback and moving 0–100 fader meters. Reproducible generator in `scripts/generate_music06_level_comparison.py`; verified source SHAs, tested no clipping and exact regeneration.
+- [ ] **Owner to audition:** B suggested music normal **55/100**, under voice **32/100**, versus original A **40/16** or strong C **66/44** (voice remains 88); approve/adjust before full story sound mix.
+
+
+
 - [x] Owner confirmed MUSIC-06 was generated on a **paid ElevenLabs Music plan**; confirmed [9 Oct 2026 Music Terms](https://elevenlabs.io/music-terms) allow ordinary commercial YouTube-video music synchronization without paid-tier attribution. Exact account tier/receipt not independently inspected.
 - [x] Actually created 20s **MUSIC-06 + approved synthetic Qwen voice** mix with automated ducking and verified source SHA checks; no clipping. Historical reference speech only, not BM-0003 narration.
 - [x] Drafted source-checked **BM-0003 six-scene story** (~48s provisional), linked research, permanent content registry, editorial queue, and separate Qwen generation plan. **Six offline production tests passed**.

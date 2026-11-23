@@ -55,7 +55,33 @@
       "activeSpeechMusicRmsDbfs": -39.9,
       "activeSpeechVoiceOverMusicRmsDb": 19.74,
       "scope": "20s technical preview using approved original voice audition (not BM-0003); independent LUFS mastering and phone audio QA pending"
+    },
+    "louderReview": {
+      "status": "three_listenable_mix_options_prepared_user_selection_pending",
+      "date": "2026-11-23",
+      "durationSeconds": 20,
+      "reviewFormat": "One self-contained HTML file with embedded playable MP3s, 0-100 simple moving volume bars. Private sandbox artifact, never upload to public Git.",
+      "original": {
+        "voice": 88,
+        "musicBetweenSpeech": 40,
+        "musicUnderSpeech": 16,
+        "voiceMinusMusicRmsDb": 19.7
+      },
+      "recommendedLouder": {
+        "voice": 88,
+        "musicBetweenSpeech": 55,
+        "musicUnderSpeech": 32,
+        "voiceMinusMusicRmsDb": 13.8
+      },
+      "strongerAlternative": {
+        "voice": 88,
+        "musicBetweenSpeech": 66,
+        "musicUnderSpeech": 44,
+        "voiceMinusMusicRmsDb": 11
+      },
+      "engineerNotes": "All 0-100 values are LINEAR mixer gain (%) relative to each separate source recording, not perceived loudness or absolute sound level. No clipping detected; demo uses original approved 7.6-second Qwen narrator sample, NOT BM-0003 narration. Music gains and ducking change according to speech-gate envelope. User requested stronger music; owner has not chosen B or C.",
+      "reproductionScript": "scripts/generate_music06_level_comparison.py"
     }
   },
-  "reviewDeliveryPreference": "Self-contained HTML page with embedded native audio players, link in conversation; no user downloads or local installs. Reusable scripts/build_audio_review_html.py; never commit HTML with private media."
+  "reviewDeliveryPreference": "Use one browser-playable self-contained HTML audio player embedded with all audition takes, ideally with understandable moving 0-100 channel fader meters instead of raw negative dB readouts. No separate MP3/WAV downloads or local installs."
 }

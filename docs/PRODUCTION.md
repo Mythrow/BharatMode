@@ -18,6 +18,27 @@ npm run render:sample
 ```
 Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish the silent starter.
 
+## Music volume control for owner review — 23 November 2026
+
+Owner requested music louder than the first mix and **readable 0–100 mixer level meters instead of negative-dB-only figures**. Reproducible `scripts/generate_music06_level_comparison.py` creates **one self-contained HTML** with three embedded 20-second A/B/C music mixes and live fader bars. Use original private input MP3 (MUSIC-06 SHA) and approved Qwen reference WAV (private SHA). Never commit the resulting HTML (it embeds private/externally licensed music). Agent commands:
+
+```sh
+python scripts/generate_music06_level_comparison.py \
+  --music /private/path/techno-thriller-final.mp3 \
+  --voice /private/path/approved-qwen-reference.wav \
+  --out out/music06-level-review
+```
+
+Audition candidates (gain levels **relative to each stem's original signal**, not subjective loudness):
+
+| Mix | Voice | Music between speech | Music during speech | Active speech voice–music RMS gap |
+| --- | --- | --- | --- | --- |
+| A / historical | 88/100 | 40/100 | 16/100 | 19.7 dB |
+| B / recommended | 88/100 | 55/100 | 32/100 | 13.8 dB |
+| C / stronger | 88/100 | 66/100 | 44/100 | 11.0 dB |
+
+The extra musical attenuation is therefore smaller in B/C (music sounds louder beneath the narrator). **None is production-locked**; owner needs to audition B/C and select or request refinement. The demos use the previous 7.6-second reference speech, not BM-0003. Peak check passed for each pre-encoding float mix. Phone/speaker and full-video loudness QA remain pending.
+
 ## Audio review UX — self-contained HTML (owner preference, 23 November 2026)
 
 For **every future music candidate, narrator audition, voice check and voice/music mix review**, present an **HTML playback preview** in the conversation instead of requiring the owner to download MP3/WAV files or install tooling. Use the generic `scripts/build_audio_review_html.py` helper to embed several review takes in **one self-contained HTML file** (native `<audio controls>`, no network or other file dependencies). Deliver a link to that generated HTML artifact in the same response, not just audio file download links.
