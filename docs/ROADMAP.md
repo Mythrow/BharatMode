@@ -16,7 +16,9 @@
 - [x] Generate **three original music auditions** and 20-second narrator-mixed comparisons without paid services or third-party music samples. [Music & sonic identity decisions](MUSIC_DIRECTION.md): MUSIC-01 Quiet Momentum, MUSIC-02 Curious Discovery, MUSIC-03 Built Forward. Procedural generator committed; audio demos remain outside Git.
 - [x] Record owner feedback: MUSIC-01 rejected as boring/simple; MUSIC-03 beat and MUSIC-02 melody preferred; new requirement is **lo-fi beats** combining both.
 - [x] Create **MUSIC-04 Lo-Fi Motion**, an original 92 BPM / 31.3-second swung beat with Rhodes melody and a Qwen-narrator-mixed audition, plus reproduction source and checksums. Both WAVs pass audio integrity checks; no paid services or samples.
-- [ ] **NOW:** owner listens to MUSIC-04 and specifies any groove/melody refinements. No soundtrack direction approved or final production bed substituted yet. This approval remains separate from the already-approved V6 visuals and Qwen narrator.
+- [x] Owner rejected MUSIC-04's hip-hop rhythm; new brief: **modern melodic techno with deep basslines and low/mid melody, not high keys**.
+- [x] Created original **MUSIC-05 Deep Current** (30.968 s, 124 BPM, F-minor four-on-the-floor, rolling bass) and a ducked comparison with the approved Qwen narrator. Both WAVs generated without paid services, clip checks passed; [music direction + source](MUSIC_DIRECTION.md).
+- [ ] **NOW:** owner listens to MUSIC-05 and requests refinements or approves it. Nothing replaces provisional production audio until final music is approved.
 - [ ] Arrange the selected music into complete script-length/loop-ready variants; finalize subtle transitions/`Mode: ON` identity sound and mix narrator-first. Test levels and mobile playback; only then replace starter `public/music/ambient.wav` and provisional SFX, preserving source and rights.
 
 - [x] Owner approved the V6 visual/motion design with symmetrical chapter progress (84px both sides). Reusable frame in `src/approved-shorts-template.jsx`.

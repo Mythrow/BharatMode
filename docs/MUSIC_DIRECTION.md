@@ -1,6 +1,19 @@
 # Bharat Mode — Music & Sonic Identity
 
-## Latest owner direction — Lo-fi hip-hop audition MUSIC-04 (23 November 2026)
+## MUSIC-05 — Deep Current (current audition, 23 November 2026)
+
+**Latest owner feedback:** MUSIC-04's hip-hop groove was rejected. The user wants **modern techno with a deeper melody and basslines instead of high-key instruments**. MUSIC-01 remains rejected as too simple; MUSIC-02's melodic appeal and MUSIC-03's rhythmic strength informed this newer direction.
+
+A newly synthesized, **original melodic-techno audition** uses a 124 BPM four-on-the-floor pulse, sustained F-minor warmth, low/mid-register analog-synth motif, rolling harmonically rich bass and restrained high-frequency percussion. **No hip-hop swing, bright piano lead or third-party samples**. Working name: MUSIC-05 Deep Current.
+
+- Length **30.968 seconds**, 44,100 Hz stereo PCM16. Music-only WAV SHA-256: `50a7ab8280198bbfbab8323aae19c1aad2dce06a0c52ff2182ec10a1cf8db9fe`, peak 0.352.
+- Mixed with approved private Qwen narrator, offset 2.75 s and ducking the music during speech. Narration-mixed WAV SHA-256: `d3a42db52ddd1970135881154082809ef28cebbbc6e7e265f3931daa05ff9e90`, peak 0.834. The narrator source was SHA-verified as `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`.
+- Two MP3 audition previews delivered in chat; previews and WAVs **not tracked in Git**. Reproducible composition source is `scripts/generate_melodic_techno_audition.py`; uses numpy/scipy/soundfile and optional private Qwen reference. Generate with `python scripts/generate_melodic_techno_audition.py`, optionally setting `BHARAT_APPROVED_REFERENCE` and `BHARAT_MUSIC05_OUTPUT`.
+- File generation, syntax, readback, duration and peak/clipping checks passed. **This is a candidate only. Owner listening, stereo/phone QA, loudness mastering, transition compatibility and seamless extended looping are NOT yet approved or tested.**
+- The older `public/music/ambient.wav` and two SFX assets remain **provisional, unchanged**; approved V6 visuals and Qwen narrator identity remain unchanged. Do not select/replace final music until owner reacts to MUSIC-05.
+
+
+## Previous owner direction — Lo-fi hip-hop MUSIC-04 (rejected after audition) (23 November 2026)
 
 The owner **rejected MUSIC-01 Quiet Momentum** as too boring/simple, **liked the beats of MUSIC-03 Built Forward** and **liked the melody/tune of MUSIC-02 Curious Discovery**, and asked for a combination using **lo-fi beats**. This is preference feedback, **not final approval** of any track.
 

@@ -45,7 +45,8 @@
     "content:add": "node scripts/content-registry.mjs add",
     "content:move": "node scripts/content-registry.mjs move",
     "music:auditions": "python scripts/generate_music_auditions.py",
-    "music:lofi:audition": "python scripts/generate_lofi_audition.py"
+    "music:lofi:audition": "python scripts/generate_lofi_audition.py",
+    "music:techno:audition": "python scripts/generate_melodic_techno_audition.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

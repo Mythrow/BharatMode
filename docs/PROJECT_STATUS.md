@@ -11,12 +11,19 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Current stage — V6 visuals and narrator APPROVED; music audition awaiting owner choice before first voiced pilot
 
-### New MUSIC-04 lo-fi request and audition — 23 November 2026
+### Latest music audition — MUSIC-05 modern melodic techno, 23 November 2026
+
+- Owner rejected the MUSIC-04 hip-hop feel and wants **modern melodic techno**, with a **deeper low/mid synth melody and prominent bassline**, not high-key keyboard notes.
+- Created **MUSIC-05 Deep Current**, an original 30.968-second, 124 BPM, four-on-the-floor F-minor techno candidate. Music-only and approved-Qwen-narrator-mixed WAVs/MP3s were generated, with stereo PCM16 WAV readback and no clipping; exact SHA hashes and code in [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md) and `scripts/generate_melodic_techno_audition.py`.
+- **Owner approval PENDING** for MUSIC-05; keep V6, approved narrator and provisional music/SFX masters unchanged. **NEXT:** owner reviews the new bass/melody/beat balance; then develop final looping score, SFX and narration-first mix.
+
+
+### Historical MUSIC-04 lo-fi audition — superseded by MUSIC-05
 
 - Owner listening feedback on earlier scores: **MUSIC-01 too boring/simple**; likes MUSIC-03 rhythm and MUSIC-02 tune; wants a lo-fi beat with both traits. This is **directional feedback, not soundtrack approval**.
 - Created a 31.304-second original **MUSIC-04 Lo-Fi Motion** audition at 92 BPM: swung hip-hop drums, warm Rhodes-style harmonic progression, brighter original melodic hook and subtle tape texture. Music-only and Qwen-narrator-mixed WAV/MP3 previews delivered in chat. Original reproducible source in `scripts/generate_lofi_audition.py`, details/checksums in [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md).
 - Both 44.1 kHz stereo PCM16 WAVs passed readback, finite-sample and peak tests with no clipping; the mixed preview uses the exact owner-approved private reference. **Human listening is pending.** No soundtrack or SFX masters replaced and no V6 modifications.
-- **NEXT:** owner evaluates MUSIC-04. If it matches the desired groove, iterate to a real loopable, length-adaptable production music bed and matching minimal sonic stinger, then verify voice mixing and phone playback before locking music.
+- **Superseded:** owner rejected the hip-hop feel and requested MUSIC-05 instead. If it matches the desired groove, iterate to a real loopable, length-adaptable production music bed and matching minimal sonic stinger, then verify voice mixing and phone playback before locking music.
 
 
 
