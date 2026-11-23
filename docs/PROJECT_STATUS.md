@@ -9,7 +9,17 @@ Last verified: **23 November 2026**. Work Mode generated and technically validat
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — V6 visual template and permanent Qwen narrator APPROVED; first full voiced pilot NEXT
+## Current stage — V6 visuals and narrator APPROVED; music audition awaiting owner choice before first voiced pilot
+
+### New soundtrack selection checkpoint — 23 November 2026
+
+- **Music is NOT yet owner-approved.** The checked-in `public/music/ambient.wav` and `public/sfx/*.wav` are **starter audio placeholders**, not finalized channel music.
+- Created three original, no-subscription procedural 20-second music candidates: `MUSIC-01 Quiet Momentum` (understated warm editorial), `MUSIC-02 Curious Discovery` (airy science-optimism), and `MUSIC-03 Built Forward` (restrained engineering momentum). Each has an instrumental-only WAV and an audition mix with the exact **approved private Qwen3 narrator**. Three narrated MP3 previews also generated for convenient listening in this chat.
+- All six WAV previews were generated and checked as stereo 24 kHz PCM16, 20 seconds, below clipping; Python generator syntax and an instrumental-only run without a private voice passed. No preview has been **human auditioned/approved** yet; no long seamless looping/music loudness phone QA or final SFX identity has been verified.
+- Composer source: [generate_music_auditions.py](../scripts/generate_music_auditions.py); editorial options and approval criteria: [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md). Preview binaries remain untracked, and **all existing production music/SFX masters and the approved V6 frame are unchanged**.
+- **NEXT:** owner listens to MUSIC-01/02/03 with narrator and chooses a core direction (or blend). Then finalize production-length theme and restrained stinger, measure actual narration ducking/phone intelligibility, and only then replace or supplement provisional tracks. Continue BM-0003 L&T story after music identity is approved.
+
+
 
 ### Permanent content ID registry launched — 23 November 2026
 

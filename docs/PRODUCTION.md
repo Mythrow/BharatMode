@@ -18,6 +18,10 @@ npm run render:sample
 ```
 Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish the silent starter.
 
+## Music status and review gate
+
+**Music has not yet been owner-approved.** The tracked music/SFX listed below are starter prototypes. Three separate 20-second original music directions with approved Qwen narrator comparisons were created for review on 23 Nov 2026. See [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md) and `scripts/generate_music_auditions.py`. Do not mistake a generated demo for the final loop or full-song mixing. The owner will select a sound direction before the first publishable BM-0003 trial; existing master audio and V6 visual code remain untouched. The demos are external, untracked review artifacts.
+
 ## Tracked music and SFX
 
 The repo includes original authored audio masters:

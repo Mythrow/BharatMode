@@ -2,6 +2,8 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
+> **MUSIC:** Original soundtrack auditions are ready for owner listening (three 20-second directions, each with a Qwen narrator comparison). See [Music & Sonic Identity](docs/MUSIC_DIRECTION.md). **No final music has been approved yet**; existing `public/music/ambient.wav` and SFX are placeholders.
+
 > **CONTENT BOARD:** [Bharat Mode Content Log](content/CONTENT_LOG.md) — every idea, active Short and published video has one permanent `BM-####` ID and its own [research sheet](content/research/). New candidates must pass the [dedupe + stage workflow](docs/CONTENT_PIPELINE.md) before scripting. Current selected daily story: **BM-0003**, L&T Chennai AI infrastructure, **In Progress** (not published).
 
 > **START HERE / RESUME IN A NEW CHAT:** [Current Project Status](docs/PROJECT_STATUS.md) → [Roadmap](docs/ROADMAP.md) → [Approved Shorts Template](docs/APPROVED_SHORTS_TEMPLATE.md). Read the current-status page before implementing anything; it states the latest approvals, next task and blockers. A new chat must explicitly open the files rather than assume GitHub content was loaded. Coding agents should also read [AGENTS.md](AGENTS.md).

@@ -11,7 +11,12 @@
 - [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner approved; [x] source and recommended-size export in Git with SHA verification; [ ] test YouTube mobile/desktop crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
-## Milestone 2 — Approved visual template (COMPLETE); three polished pilot Shorts (NEXT)
+## Milestone 2 — Approved visual template (COMPLETE); music identity approval (NEXT); three polished pilot Shorts
+
+- [x] Generate **three original music auditions** and 20-second narrator-mixed comparisons without paid services or third-party music samples. [Music & sonic identity decisions](MUSIC_DIRECTION.md): MUSIC-01 Quiet Momentum, MUSIC-02 Curious Discovery, MUSIC-03 Built Forward. Procedural generator committed; audio demos remain outside Git.
+- [ ] **NOW:** owner listens to the three candidate beds and chooses an approved core soundtrack direction. This approval is **separate** from already-approved V6 visuals and Qwen narrator.
+- [ ] Arrange the selected music into complete script-length/loop-ready variants; finalize subtle transitions/`Mode: ON` identity sound and mix narrator-first. Test levels and mobile playback; only then replace starter `public/music/ambient.wav` and provisional SFX, preserving source and rights.
+
 - [x] Owner approved the V6 visual/motion design with symmetrical chapter progress (84px both sides). Reusable frame in `src/approved-shorts-template.jsx`.
 - [x] Owner clarified non-negotiable voice constraint: **free/open-weight, offline-capable, no paid TTS subscription or expiring/renewable voice credits**. Indian accent not required; owner prefers a deep, professional Brian-like tone.
 - [x] **Qwen3-TTS selected by owner** after hearing Qwen and Kokoro demos. Use 1.7B VoiceDesign (Apache-2.0); Kokoro is the lightweight fallback, not the active choice.
