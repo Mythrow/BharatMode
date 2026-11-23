@@ -11,6 +11,15 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Current stage — V6 visual template and permanent Qwen narrator APPROVED; first full voiced pilot NEXT
 
+### Permanent content ID registry launched — 23 November 2026
+
+- **Single source of truth:** [Content Log](../content/CONTENT_LOG.md) (human-readable boards: Idea, In Progress, Published), [Canonical registry JSON](../content/registry.json), and [one research sheet per ID](../content/research/). Every candidate and completed Short retains a permanent, never-recycled `BM-####` ID. See [CONTENT_PIPELINE.md](CONTENT_PIPELINE.md).
+- **Imported existing work:** `BM-0001` PARAM Rudra (In Progress); `BM-0002` ICMR 100 tech-transfer deals (Idea, despite having an unvoiced storyboard); `BM-0003` L&T's **23 Nov 2026 new NVIDIA B300 Chennai order** (**In Progress**, owner chose to trial; **not published**); `BM-0004` IIT Madras 22 Nov sleep/autism labs (Idea).
+- Story briefs `param-rudra` and `icmr-tech-transfer` now have matching `story.contentId`; the L&T trial has [its own dated original-source research](../content/research/BM-0003.md), **no production draft or final upload yet**. Keep the legacy `publishing/queue.json` for already-written story slugs only, not as the content registry.
+- `scripts/content-registry.mjs` allocates IDs, searches all stages, enforces duplicate event/source/title and same-topic follow-up checks, validates stage transitions, and generates the content log. **Fourteen local automated tests passed**, including no deletion/reuse, duplicate intake, transition/published gates, cross-link requirements and stale-log detection. CI now checks the registry (note: unrelated GitHub Actions runner startup issues remain possible).
+- **Editorial rule:** every daily candidate is compared against **all IDs including Published**. New developments in previously covered topics need a distinct event, related ID and explicit reason. A topical or semantic overlap still requires human editorial assessment; mechanical dedupe isn't perfect.
+
+
 ### Permanent narrator approved — 23 November 2026
 
 - **Owner reviewed both WAVs and explicitly approved their similar, consistent voice.** This finalizes the identity of Bharat Mode's original Qwen3 synthetic documentary narrator; **do not ask for another A/B approval**.

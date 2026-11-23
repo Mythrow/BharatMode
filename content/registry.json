@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-23",
+  "nextSequence": 5,
+  "items": [
+    {
+      "id": "BM-0001",
+      "slug": "param-rudra",
+      "title": "PARAM Rudra: India’s supercomputing deployment",
+      "stage": "in_progress",
+      "priority": "high",
+      "category": "science",
+      "storyKey": "nsm-rudra-servers-2026-09-status",
+      "topicKey": "india-supercomputing-nsm",
+      "aliases": [
+        "PARAM Rudra",
+        "Rudra servers",
+        "National Supercomputing Mission"
+      ],
+      "eventDate": "2026-09",
+      "sourceDate": "2026-10-04",
+      "discoveredAt": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=160306&lang=1&reg=48"
+      ],
+      "researchPath": "content/research/BM-0001.md",
+      "storyPath": "stories/param-rudra.json",
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-23",
+          "from": null,
+          "to": "idea",
+          "note": "Imported existing Bharat Mode research or draft into permanent registry."
+        },
+        {
+          "at": "2026-11-23",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Existing voice and V6 pipeline pilot; script drafted but still needs live fact reconfirmation."
+        }
+      ]
+    },
+    {
+      "id": "BM-0002",
+      "slug": "icmr-tech-transfer",
+      "title": "ICMR reaches 100 technology-transfer agreements",
+      "stage": "idea",
+      "priority": "medium",
+      "category": "health",
+      "storyKey": "icmr-100-tech-transfer-deals-2026-11-summit",
+      "topicKey": "icmr-medical-technology-transfer",
+      "aliases": [
+        "ICMR",
+        "health technology licensing",
+        "100 technology transfers"
+      ],
+      "eventDate": "2026-11-17",
+      "sourceDate": "2026-11-18",
+      "discoveredAt": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2337773&lang=1&reg=1"
+      ],
+      "researchPath": "content/research/BM-0002.md",
+      "storyPath": "stories/icmr-tech-transfer.json",
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-23",
+          "from": null,
+          "to": "idea",
+          "note": "Imported existing Bharat Mode research or draft into permanent registry."
+        }
+      ]
+    },
+    {
+      "id": "BM-0003",
+      "slug": "lt-chennai-ai-cluster-order",
+      "title": "L&T expands Chennai AI infrastructure with new B300 order",
+      "stage": "in_progress",
+      "priority": "high",
+      "category": "ai-infrastructure",
+      "storyKey": "lt-chennai-ai-b300-additional-order-2026-11-23",
+      "topicKey": "lt-chennai-ai-infrastructure",
+      "aliases": [
+        "L&T",
+        "Vyoma.AI",
+        "LTN Compute",
+        "Chennai NVIDIA B300 AI Factory"
+      ],
+      "eventDate": "2026-11-23",
+      "sourceDate": "2026-11-23",
+      "discoveredAt": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "sourceUrls": [
+        "https://nsearchives.nseindia.com/corporate/PAM_23112026093338_PressRelease23112026.pdf"
+      ],
+      "researchPath": "content/research/BM-0003.md",
+      "storyPath": null,
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-23",
+          "from": null,
+          "to": "idea",
+          "note": "Imported existing Bharat Mode research or draft into permanent registry."
+        },
+        {
+          "at": "2026-11-23",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Owner selected 23 Nov 2026 story for initial new-content trial; script and production still to do."
+        }
+      ]
+    },
+    {
+      "id": "BM-0004",
+      "slug": "iitm-sleep-autism-facilities",
+      "title": "IIT Madras inaugurates sleep and autism research facilities",
+      "stage": "idea",
+      "priority": "medium",
+      "category": "health",
+      "storyKey": "iit-madras-sleep-autism-labs-2026-11-22",
+      "topicKey": "iitm-health-research-facilities",
+      "aliases": [
+        "IIT Madras",
+        "Sleep Study Facility",
+        "Autism Lab",
+        "E-cart Ambulance"
+      ],
+      "eventDate": "2026-11-22",
+      "sourceDate": "2026-11-22",
+      "discoveredAt": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2340059&lang=1&reg=1"
+      ],
+      "researchPath": "content/research/BM-0004.md",
+      "storyPath": null,
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-23",
+          "from": null,
+          "to": "idea",
+          "note": "Imported existing Bharat Mode research or draft into permanent registry."
+        }
+      ]
+    }
+  ]
+}

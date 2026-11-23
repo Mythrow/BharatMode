@@ -1,6 +1,6 @@
 # Production guide
 
-**For a new session, read [PROJECT_STATUS.md](PROJECT_STATUS.md) first.** It is the canonical resume point; [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md) contains the locked V6 visual rules. Do not assume the legacy `BharatShort` renderer fully implements the approved motion/voice system.
+**For a new session, read [PROJECT_STATUS.md](PROJECT_STATUS.md) first.** Before any story work, check the [permanent Content Log](../content/CONTENT_LOG.md) and [Content Pipeline](CONTENT_PIPELINE.md); existing story drafts have matching `story.contentId` references. It is the canonical resume point; [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md) contains the locked V6 visual rules. Do not assume the legacy `BharatShort` renderer fully implements the approved motion/voice system.
 
 ## Prerequisites
 - Node.js 20+ / npm, internet access for initial dependency installation.

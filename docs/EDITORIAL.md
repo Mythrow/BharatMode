@@ -2,6 +2,10 @@
 
 **Mission:** Find compelling, under-covered Indian progress stories. Be optimistic without becoming uncritical.
 
+## Canonical story identity and duplicate control
+
+Before registering a new Short, **search every stage** of the permanent [Bharat Mode Content Log](../content/CONTENT_LOG.md) and its [registry](../content/registry.json), including Published. Every credible, distinct candidate gets exactly one `BM-####` ID, research sheet and unique event/story key; completed videos keep the same ID forever. Use [Content Pipeline](CONTENT_PIPELINE.md) for intake, cross-linked follow-up events and status gates. Same news from a different article is **not** a new Short. A draft script must declare its `story.contentId`. Update existing content IDs instead of creating near-duplicates.
+
 ## Required per-story record
 1. Canonical primary URL, issuing institution and publication date.
 2. Actual date the event took place, plus the **as-of date** for every figure.

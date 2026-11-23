@@ -36,7 +36,14 @@
     "template:check": "node scripts/test-approved-template.mjs",
     "voice:reference:test": "python scripts/test_qwen_reference.py",
     "alignment:check": "python -m unittest discover -s scripts -p test_align_qwen_words.py && node scripts/test-aligned-caption-timing.mjs",
-    "voice:base:qa:test": "python -m unittest discover -s scripts -p 'test_validate_qwen_base_output.py'"
+    "voice:base:qa:test": "python -m unittest discover -s scripts -p 'test_validate_qwen_base_output.py'",
+    "content:check": "node scripts/content-registry.mjs check",
+    "content:test": "node scripts/test-content-registry.mjs",
+    "content:sync": "node scripts/content-registry.mjs sync",
+    "content:list": "node scripts/content-registry.mjs list",
+    "content:find": "node scripts/content-registry.mjs find",
+    "content:add": "node scripts/content-registry.mjs add",
+    "content:move": "node scripts/content-registry.mjs move"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

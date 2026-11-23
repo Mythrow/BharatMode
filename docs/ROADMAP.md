@@ -31,6 +31,12 @@
 - **Acceptance:** full renders reviewed on mobile, no claim errors, clear sources, readable captions, natural voice mix.
 
 ## Milestone 3 — Research-to-production workflow
+
+- [x] **Permanent content tracker live**: [Content Log](../content/CONTENT_LOG.md) + source registry + four linked research sheets. Unique `BM-####` IDs; strict **Idea → In Progress → Published**, never recycle or delete IDs.
+- [x] Intake and duplicate guard CLI, stage-history validation, published YouTube URL/date/owner approval gates, 14 passing local tests and CI integration. Daily discovery must search the registry before proposing another story.
+- [x] **23 Nov L&T Chennai AI/B300 additional order selected as `BM-0003` / In Progress** for trial video; factual event/source context in [BM-0003 research](../content/research/BM-0003.md).
+- [ ] Draft and source-verify BM-0003 script, then use approved Qwen narrator / locked V6. Do not imply the planned 10,000-GPU facility is fully operational or that the new contract has an exact disclosed value.
+
 - Source registry (ISRO, labs, science agencies, research papers, statistical reports, regional reporting).
 - Script and source review checklist, accurate stage labels, fact review trail.
 - Queue/editorial slate with story scores, human approval and explicit confidence.

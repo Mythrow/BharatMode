@@ -2,6 +2,8 @@
 
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
+> **CONTENT BOARD:** [Bharat Mode Content Log](content/CONTENT_LOG.md) — every idea, active Short and published video has one permanent `BM-####` ID and its own [research sheet](content/research/). New candidates must pass the [dedupe + stage workflow](docs/CONTENT_PIPELINE.md) before scripting. Current selected daily story: **BM-0003**, L&T Chennai AI infrastructure, **In Progress** (not published).
+
 > **START HERE / RESUME IN A NEW CHAT:** [Current Project Status](docs/PROJECT_STATUS.md) → [Roadmap](docs/ROADMAP.md) → [Approved Shorts Template](docs/APPROVED_SHORTS_TEMPLATE.md). Read the current-status page before implementing anything; it states the latest approvals, next task and blockers. A new chat must explicitly open the files rather than assume GitHub content was loaded. Coding agents should also read [AGENTS.md](AGENTS.md).
 
 > Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Sora and Manrope SemiBold typography confirmed; the owner's final badge and avatar SVGs are approved. Video render QA is still outstanding. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
@@ -31,7 +33,7 @@ npm run render:sample
 - `thumbnail:sample`: generate a 9:16 still for eligible Shorts thumbnails or social preview.
 - `variety:check`: inspect planned publishing order for repetitive layouts, hooks, titles and topics.
 - Samples start without voice (`hasVoice: false`) so they can render after music generation. **Do not publish a silent demo.**
-- To add natural narration, set `OPENAI_API_KEY`, run `npm run voice -- stories/param-rudra.json`, then change that story's `hasVoice` to `true` and render again. Natural TTS needs a supported provider/model and paid API access; its model identifier is configurable via `OPENAI_TTS_MODEL`.
+- **Narration policy:** the owner approved an original, consistent **Qwen3-TTS 1.7B Base** narrator in Work Mode, using a private synthetic reference; no subscriptions, expiring credits or metered TTS APIs. The old `npm run voice` path calls **legacy paid OpenAI TTS and is NOT authorized for production**. Follow [VOICE_DIRECTION.md](docs/VOICE_DIRECTION.md) and [PRODUCTION.md](docs/PRODUCTION.md) for the unfinished full-story integration.
 - Original audio masters are checked in under `public/music/` and `public/sfx/`; run `npm run audio:generate` only when intentionally regenerating these files and review the changes before committing.
 - Generated narration in `public/voice/` and rendered videos in `out/` are ignored. Keep licensed third-party assets externally and track license details in story metadata.
 - Never commit API keys, .env files, confidential material, third-party footage without repository redistribution rights, rendered MP4s, or generated voice.
@@ -41,7 +43,10 @@ npm run render:sample
 | Location | Purpose |
 | --- | --- |
 | `src/` | Remotion components, style treatments, font loader and thumbnail composition |
-| `stories/` | Story briefs, scenes, narration, source links and claim stages |
+| `content/CONTENT_LOG.md` + `content/registry.json` | Permanent three-stage content board with IDs, duplicate checks and publication history |
+| `content/research/` | One research sheet for every content ID, including dated primary sources, caveats and production notes |
+| `docs/CONTENT_PIPELINE.md` | Content intake, duplicate prevention, stage transitions and agent workflow |
+| `stories/` | Story briefs with permanent `story.contentId`, scenes, narration, source links and claim stages |
 | `publishing/queue.json` | Planned sequence to check for repetitive creative patterns (not publication history) |
 | `scripts/` | Validation, reproducible original music/SFX generation, and optional TTS generation |
 | `docs/EDITORIAL.md` | Sourcing, fact checks, ethics and verification checklist |
