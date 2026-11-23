@@ -1,43 +1,47 @@
-# Bharat Mode — Free, Unmetered Voice Direction
+# Bharat Mode — Qwen3-TTS Voice Direction
 
-**Owner requirement updated:** 23 November 2026.  
-**Status:** The *professional Brian-like delivery* is preferred, but the **Brian/vidIQ production voice was superseded** because the free-credit limit can be exhausted. **No final production voice is approved yet.**
+**Engine chosen by owner:** 23 November 2026.  
+**Status:** Qwen3-TTS approved as preferred open-weight engine after owner listening comparison; **specific reusable narrator reference is not yet saved or technically validated.**
 
-## Non-negotiable constraint
+## Approved voice decision and constraints
 
-No paid voice subscription, no paid-per-character speech API and **no limited or renewable voice-generation credits**. The selected speech model must be open-weight/open-source and runnable under our control, with no artificial character cap. Infrastructure compute is still required; do **not** promise that hosted compute is literally unlimited or permanently free.
+- **Preferred TTS engine:** Qwen3-TTS, specifically `Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign` for voice creation.
+- **Preferred voice quality:** professional, mature, deep/resonant, warm, clear and composed; confident without exaggerated broadcast hype.
+- **Language:** English. **Indian accent is not required.**
+- **No paid subscription, no usage-credit allowance, no metered speech API.** Downloadable Apache-2.0 model weights enable unlimited *model invocations* under our own computing resources; the owner does not want to run software locally. Free cloud computing **is not guaranteed** and requires separate feasibility verification.
+- Owner evaluated an online Qwen3-TTS demo and preferred its sound to Kokoro; we do **not** have a saved copy of the exact voice/timbre chosen in that demo.
+- **No voice cloning of Brian or another real-world person**. Use an original synthetic voice created via VoiceDesign.
 
-The owner **does not require an Indian accent**. Preferred audio character: professional, mature, resonant, clear, trustworthy and composed. The earlier Brian recording is a *style reference only*, not an authorized voice clone or the production provider.
+### Starting voice prompt (draft, not frozen reference)
 
-## Recommended solution: local Kokoro-82M
+> A mature male documentary narrator with a deep, warm, resonant voice. Clear international English, natural conversational rhythm, calm confidence and subtle enthusiasm. Professional and engaging without sounding theatrical, robotic or like a news announcer.
 
-- Model: [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M), with [upstream inference library](https://github.com/hexgrad/kokoro).
-- Weight/license: **Apache-2.0**; commercial use is allowed under applicable license obligations.
-- Usage: downloadable open weights, run locally/offline after setup, **no vendor credits, subscription or recurring per-script API charges**.
-- Initial professional male voice audition candidates: **`am_michael`**, **`am_fenrir`**, **`bm_george`**. These are *names of Kokoro model voice presets*, not copies of vidIQ/ElevenLabs identities with similar names.
-- Final voice preset must be selected by owner **after actual generated audio samples** using the same PARAM Rudra passage. No Kokoro sample has yet been generated or heard by the owner.
-- Confirm license notices for the selected model and bundled voice/dependencies; do not infer unrestricted redistribution rights from a demo website.
+If the owner generated a particularly good VoiceDesign sample in the browser, ask for that generated sample **only when needed to preserve the exact audible identity**. A text prompt alone does not guarantee identical timbre on every regeneration.
 
-## Computation / owner experience
+## Correct model and reference workflow
 
-- The owner does **not** want to install software or run commands on their own device.
-- Prefer a usable remote development/render environment. GitHub Actions standard hosted runners currently allow free usage for *public repositories*, but still have job, storage, fair-use, and policy constraints; confirm feasibility and do not treat this as limitless hosting. Sources: [GitHub billing](https://docs.github.com/en/actions/concepts/billing-and-usage) and [GitHub Actions limits](https://docs.github.com/en/actions/reference/limits).
-- Any infrastructure fees or runtime limitations must be identified and approved explicitly, never silently introduced.
-- Do not commit generated speech files or MP4s to the repository, and avoid exposing unreleased material in public CI logs/artifacts.
+Official sources:
+- [QwenLM/Qwen3-TTS — official repository](https://github.com/QwenLM/Qwen3-TTS)
+- [Qwen3-TTS-12Hz-1.7B-VoiceDesign — Hugging Face, Apache-2.0](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign)
+- [Qwen3-TTS-12Hz-1.7B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base)
 
-## Engineering next steps
+The official Qwen README documents a consistent-designed-narrator path:
+1. Generate and approve a **short ORIGINAL synthetic voice reference** using `generate_voice_design` from the 1.7B VoiceDesign model.
+2. Preserve the approved reference audio and exact transcript privately (outside Git); optionally record a cryptographic digest, model revision and prompt in production metadata.
+3. Use `Qwen/Qwen3-TTS-12Hz-1.7B-Base`, `create_voice_clone_prompt` and `generate_voice_clone` with that original synthetic reference for **repeatable future audio**. This is a technical voice-consistency workflow, not cloning a third-party narrator.
+4. Validate actual speech, pronunciation, pace and consistency on a complete script. Regenerate/refine if necessary.
 
-1. Generate three **actual** Kokoro narrator samples from exactly the same audition script, without a metered TTS provider, and provide listening artifacts directly in chat when possible. Record what was truly generated.
-2. Select the voice preset based on pronunciation, naturalness and a Brian-like professional tone; lock preset, model revision and speaking speed in `config/voice.json`.
-3. Implement local voice synthesis in the build pipeline, producing audio that can be regenerated without a subscription or expiring credit allowance.
-4. Derive accurate word timestamps from the **final generated audio** using a local alignment tool, not estimated timing.
-5. Update `src/short.jsx` to use the approved V6 visual frame, centered phrase captions, real narration, audio ducking and all existing source/rights gates.
-6. Render/QA one evidence-backed pilot, then two different pilots. Final publication still needs owner approval.
+## Integration and quality gates — not yet implemented
 
-## Rejected approaches / historical auditions
+1. Confirm usable remotely provisioned compute (1.7B inference is heavier than Kokoro; GPU acceleration is normally desirable) that does not add unapproved payments, paid API calls or metered voice credits.
+2. Integrate a Qwen3 voice synthesizer that reads `config/voice.json`, uses the approved reference voice, and produces untracked WAV files. The existing `npm run voice` script still invokes **OpenAI TTS** and must not be mistaken for the approved production provider.
+3. Run local forced alignment on the **actual final rendered speech**, verify words and exact timing, and drive the approved V6 screen-centered, one-line caption animations.
+4. Upgrade `src/short.jsx` to use the frozen V6 frame, measured scene timing, original music and SFX with ducking.
+5. Confirm all license notices and commercial-usage obligations for code, model, any voice reference and media assets; fact-check and phone-review a complete voiced Short. Produce two differently structured pilots after the first is approved.
+6. Do not commit generated narration or MP4s to Git. No requirement for the channel owner to install or run software.
 
-- **vidIQ Brian** (`nPczCjzI2devNBz1zQrb`): owner liked the generated professional sample (~12.28 seconds), but rejected as the production route when discovering its recurring credit limit. Do not spend additional vidIQ credits for Bharat Mode narration.
-- **vidIQ Liam, Callum**: earlier explorations, superseded.
-- Other free-tier or trial TTS APIs: **not eligible** if they cap usage or require ongoing credits.
-- Open-source model with non-commercial license: **not eligible** for planned monetized YouTube content.
-- Exact voice cloning of Brian is **not** planned or authorized.
+## Historical decisions
+
+- **Brian (vidIQ):** owner liked professional timbre; rejected as a production route because free credits can be exhausted. Preserve style preference only. No additional vidIQ narration generations.
+- **Kokoro-82M:** Apache-2.0, lighter and unmetered when self-hosted; **fallback** if Qwen cannot run acceptably on available permitted compute.
+- **Qwen3-TTS:** owner preferred its audible quality over Kokoro on 23 November 2026. **Engine is approved; actual reference audio and the production pipeline remain outstanding.**

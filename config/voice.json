@@ -1,31 +1,28 @@
 {
-  "status": "audition_pending",
-  "preferredEngine": "kokoro-local",
-  "modelRepository": "hexgrad/Kokoro-82M",
-  "modelLicense": "Apache-2.0",
-  "execution": "self-hosted_or_supported_compute",
-  "language": "en",
+  "status": "engine_approved_voice_reference_pending",
+  "approvedOn": "2026-11-23",
+  "engine": "qwen3-tts",
+  "engineExecution": "self-hosted_unmetered_model_inference",
+  "voiceDesignModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "repeatableVoiceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "license": "Apache-2.0",
+  "language": "English",
   "requireIndianAccent": false,
-  "targetDelivery": "professional, deep/resonant, clear, composed; inspired by the owner's preference for the Brian audition, NOT a clone",
-  "candidateVoices": [
-    "am_michael",
-    "am_fenrir",
-    "bm_george"
-  ],
-  "selectedVoice": null,
+  "voicePrompt": "A mature male documentary narrator with a deep, warm, resonant voice. Clear international English, natural conversational rhythm, calm confidence and subtle enthusiasm. Professional and engaging without sounding theatrical, robotic or like a news announcer.",
+  "voiceIdentityStatus": "preferred_demo_not_archived",
+  "referenceVoiceAudio": "pending_owner_approved_reference_capture",
+  "noCelebrityOrBrianVoiceCloning": true,
   "paidVoiceSubscriptionAllowed": false,
   "paidVoiceAPICallsAllowed": false,
   "expiringCreditServicesAllowed": false,
   "requiresPerGenerationCredits": false,
   "requiresAvailableCompute": true,
-  "sampleGenerationStatus": "not_yet_generated",
-  "audioPipelineStatus": "not_implemented",
+  "remoteComputeAvailability": "not_yet_verified",
+  "synthesizerStatus": "not_implemented",
   "wordAlignmentStatus": "not_implemented",
-  "providerLicensingNote": "Apache-2.0 Kokoro model; verify selected voice/dependencies and retain license notices. Usage of free hosting/runners may have limits.",
-  "previousAudition": {
-    "voice": "Brian",
-    "provider": "vidiq",
-    "voiceId": "nPczCjzI2devNBz1zQrb",
-    "decision": "style_reference_only_not_viable_under_zero_credit_cap"
+  "publicationRightsStatus": "model_license_verified_check_all_dependencies_and_publication_rights",
+  "previousPreferences": {
+    "brian": "liked professional delivery; vidIQ credit usage rejected for production",
+    "kokoro": "fallback only; superseded as preferred engine after owner listened to Qwen3 TTS"
   }
 }

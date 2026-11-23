@@ -2,14 +2,14 @@
 
 **THIS IS THE CANONICAL RESUME POINT.**
 
-Last verified: **23 November 2026**. Voice-cost requirement clarified this date; consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
+Last verified: **23 November 2026**. Qwen3-TTS engine approval recorded this date; consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
 
 ## What the project is
 **Bharat Mode** is a research-led, faceless YouTube Shorts channel highlighting verified Indian discoveries, inventions, builders, science, technology and meaningful national progress. Content should find underreported stories without sensationalizing or claiming unsupported "firsts". Voice, evidence and readable vertical animation are core to the product.
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage: V6 visuals APPROVED; unlimited-credit-free narrator audition NEXT
+## Current stage: V6 visuals and Qwen3-TTS engine APPROVED; repeatable narrator reference and production integration NEXT
 
 **Completed and approved by channel owner**
 - Channel name: **Bharat Mode**; tagline: **Big Ideas. Real Progress.**
@@ -21,32 +21,32 @@ Repository: https://github.com/Mythrow/BharatMode
 - **Progress bar perfectly centered** on 1080px canvas: 84px left + 912px bar + 84px right. A regression checker exists at `scripts/test-approved-template.mjs`.
 - Approved look: directional character-by-character headline typing **without cursor**; entrances for text, hero and diagrams; raised hero; 0.34s subtle scene dissolve; topic-only pill; flexible chapter segmentation rather than fixed five-step formula; one-line *centered* phrase-group captions with very light, content-sized translucent backing, ~0.2s word pop from 60% to slight overshoot, transient highlight on spoken word; old phrases disappear.
 - Earlier browser HTML preview variants under `previews/html/` are retained as design history. **V6 with symmetric progress** is the only current approved visual baseline.
-- **Narrator preference clarified 23 November 2026:** owner likes Brian's professional sound, but **rejects its vidIQ production route because credits can run out**. Indian accent is NOT required. **Hard requirement: free/open-weight speech generation with no provider credits, usage quota or paid subscription.** Proposed Kokoro-82M local TTS; its actual voice preset has NOT been approved. See [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and [`config/voice.json`](../config/voice.json).
+- **Narrator engine selected 23 November 2026:** owner auditioned Qwen3-TTS and prefers its audio to Kokoro. **Approved engine: self-hosted Qwen3-TTS 1.7B VoiceDesign** (Apache-2.0); **no paid TTS subscriptions, metered API charges or voice credits**, and no Indian-accent requirement. Brian is professional-tone inspiration only. **Exact reusable narrator reference audio is NOT saved yet**; Kokoro is a fallback. See [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and [`config/voice.json`](../config/voice.json).
 
 **Not yet completed / not approved for publication**
 - The `BharatShort` production renderer in `src/short.jsx` is **still a legacy renderer**, not yet fully upgraded to approved V6 motion and per-word aligned captions. Its bar alignment has been fixed.
 - No end-to-end **voice-aligned, fully rendered, phone-tested** publishable Short has been verified.
-- Narrator style preference is Brian-like professionalism, but **no final free production voice has been auditioned/selected**. Full-script pronunciation, delivery, alignment and sound-mix QA are pending. The old vidIQ Brian and OpenAI speech paths do not meet the hard no-expiring-credits requirement.
+- Owner prefers Qwen3-TTS demo sound, but **no reusable final synthetic narrator reference audio has been captured or production-tested**. Full-script pronunciation, delivery, word-level alignment and sound-mix QA are pending. The old vidIQ Brian and OpenAI TTS production paths are ineligible under the zero-credit requirement.
 - Word-level caption timestamps must come from real finalized narration audio (TTS word timestamps or forced alignment), not the manually estimated prototype timings.
 - Evidence/rights pipeline, upload-ready sourcing, audio ducking/loudness QA, actual YouTube crop/safe-area QA, and three distinct finished pilots are outstanding.
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Audition and choose an open-weight, unmetered narration voice.**
+**NEXT TASK — Capture and validate a reusable Qwen3-TTS narrator reference, then build the unmetered synthesis pipeline.**
 
-1. The owner liked **Brian**'s deep, professional sound but **rejected vidIQ credits** as a sustainable production option. Do not generate further paid/credit-limited voiceovers, including free-tier monthly resets, without a change to this requirement. No Indian accent is required.
-2. First candidate engine: **Kokoro-82M**, Apache 2.0, downloadable model. Audition voice presets `am_michael`, `am_fenrir` and `bm_george` with the same sample; **no final voice preset chosen**. Do not clone Brian. Give actual audio samples directly to owner when generated.
-3. The owner does **not** run commands locally. Find a permitted free execution route and acknowledge GitHub Actions public runner job/storage/policy limits. Voice generation must not consume expiring provider credits; computer processing remains necessary.
-4. After voice choice, implement local synth + real word timestamps from final audio, then integrate into V6 `src/short.jsx` with music/SFX mixing and factual visual evidence.
-5. Complete one fact-checked phone-reviewed pilot, followed by two structurally different Shorts; publication remains blocked until rights/audio/story QA.
+1. **Qwen3-TTS has been approved as the preferred engine** after the owner listened to its demo and found it better than Kokoro. Use official `Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign` for original voice generation; the exact reference sample from the browser is not available to the repository. Preserve the no-paid-subscription, no-voice-credits requirement. No Indian accent required.
+2. Create/obtain and approve one original synthetic reference clip of the desired professional narrator. Qwen officially documents VoiceDesign → create_voice_clone_prompt → Base model voice generation for consistent recurring identity. Never clone Brian or another real person's voice.
+3. Validate feasible **remote compute** with no unapproved charges; 1.7B Qwen is heavier than Kokoro. The owner does not run tools locally. Free model use does not guarantee unlimited free GPU computing.
+4. Implement Qwen synthesis, local accurate word alignment from **final audio**, and migrate `src/short.jsx` to V6 dynamic scenes/captions; mix original music/SFX with narration.
+5. Render and phone-QA one fact-checked publishable pilot; then two structurally different pilots. Commercial model/dependency licenses and rights-cleared documentary media must be checked.
 
-**Completed this checkpoint:** cost requirement corrected, Kokoro recommended, docs/config updated. **Not completed:** actual Kokoro speech sample, final voice selection, integration, alignment, renderer, MP4 or phone review.
+**Completed this checkpoint:** owner selected Qwen3-TTS engine; config/docs updated. **Not completed:** captured reference narrator, available compute verification, actual local Qwen sample, voice generation code, forced alignment, integrated renderer, full MP4 or phone review.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 
 ## Non-negotiable workflow preferences
 - **The owner does not want to run code or install tools on their device.** Deliver playable HTML/visual reviews directly in ChatGPT with download links whenever feasible.
-- **No approved final narrator preset yet.** Owner prefers Brian's professional tone but requires an **unmetered free speech engine**, not a credit/allowance-based free tier. No paid subscriptions, credits or silent billing upgrades; no Indian-accent requirement.
+- **Qwen3-TTS engine approved, exact narrator reference pending.** Owner prefers deep professional delivery; an Indian accent is not required. Self-host with no paid TTS subscription, credits, metered API or silent billing upgrades. Confirm free compute feasibility separately.
 - Do not make unnecessary previews after explicit visual approval; make minor fixes in source and report the change.
 - Preserve the approved badge, avatar and V6 visual baseline unless the owner explicitly requests changes.
 - Keep storyline structure flexible and topic-appropriate. No fixed chapter count, title formula or compulsory length.

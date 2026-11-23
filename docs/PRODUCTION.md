@@ -28,15 +28,15 @@ The repo includes original authored audio masters:
 
 These assets **are committed** and therefore do not need to be generated on every machine. To rebuild them intentionally, run `npm run audio:generate` and review/commit the updated WAV files. Edit the generator, not only the WAV output, when changing the sound. Generated voice in `public/voice/` remains untracked. Sound designs are original programmatic synths; replace them with appropriately licensed music or professional compositions when moving to production, while retaining source and license details.
 
-## Production voice policy — open-weight, unmetered (23 November 2026)
+## Approved TTS engine — Qwen3-TTS, open-weight (23 November 2026)
 
-The owner requires **no paid voice subscription, no expiring or renewable provider credits, and no metered TTS API**. Brian's vidIQ audio was liked for its professional tone, but that provider path is **superseded and unsuitable** for Bharat Mode production because its free credits run out. An Indian accent is not required. No final replacement voice has been auditioned or approved yet.
+The owner preferred the Qwen3-TTS online demo over Kokoro and approved Qwen3-TTS as the production **engine**, subject to establishing a consistent synthetic narrator reference. This is a separate approval from choosing a final, stable voice reference. **No exact reference clip has been saved yet**. The previous Brian recording was a professional-tone inspiration only; vidIQ's credit-bound path is rejected. No Indian accent required.
 
-Recommended first option: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M), with locally runnable Apache-2.0 model weights and no per-generation service credits. Initial voice audition candidates: `am_michael`, `am_fenrir`, `bm_george`. Follow [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and `config/voice.json`.
+Use the Apache-2.0 [Qwen3-TTS-12Hz-1.7B-VoiceDesign model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign) to design an ORIGINAL narrator and the official documented [Base model + reusable clone prompt](https://github.com/QwenLM/Qwen3-TTS) for consistent repeated production. This uses the channel's own synthetic reference, **not the Brian voice**. Details in [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and `config/voice.json`.
 
-Local inference requires compute; GitHub Actions standard runners can currently be free on public repositories but have operational and usage limits. Do not guarantee unlimited cloud resources. Owner should not have to run commands on their own device.
+**Hard cost boundary:** no paid voice subscriptions, no TTS API charges and no limited or renewable speech credits. Downloadable weights are unmetered for local inference, but compute is necessary. Qwen 1.7B is substantially heavier than Kokoro; **no free remote GPU budget has been verified**. Do not automatically buy cloud resources or ask the channel owner to run code.
 
-The next work is to generate **real** Kokoro voice samples, select a preset, integrate local TTS and word-level alignment against actual audio, then connect to V6 scene/caption rendering. No sample has been generated from Kokoro yet. Keep generated audio out of Git.
+Next implementation: capture/approve synthetic voice reference, verify permitted compute, implement local generation and real audio word alignment, then integrate V6 story/caption rendering and mix audio. `npm run voice` still invokes the old OpenAI-only experimental generator and does not represent the Qwen pipeline. Generated audio and MP4s must not be committed.
 
 ## Add voice (legacy experimental OpenAI workflow; NOT the selected free-production direction)
 ```bash
