@@ -18,6 +18,12 @@ npm run render:sample
 ```
 Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish the silent starter.
 
+## MUSIC-06 owner-approved reference mix — Option B
+
+Owner selected MUSIC-06 as the sound identity **and Option B as the reference music/voice balance** on 23 November 2026. `config/music.json.approvedMix` is authoritative: Qwen narrator **88/100**, music between spoken phrases **55/100**, music underneath voice **32/100**, envelope attack **24ms**, release **280ms**. These are **relative linear mixer fader values**, not ear-perceived percentages. **Do not use the original Option A settings (40/16) in future mixes**.
+
+`scripts/preview_signature_mix.py` now takes the approved gains from that config; it produces a *technical reference preview*, not the full story audio. During actual BM-0003 production, mix these stems at the approved baseline, listen for bass/frequency masking, check peak and mobile speech intelligibility and adjust **only if technical QA reveals a problem**, documenting the adjustment. Full-story Qwen narration, acoustic word alignment and V6 MP4 still pending. Present each next audio check as a self-contained HTML playback page.
+
 ## Music volume control for owner review — 23 November 2026
 
 Owner requested music louder than the first mix and **readable 0–100 mixer level meters instead of negative-dB-only figures**. Reproducible `scripts/generate_music06_level_comparison.py` creates **one self-contained HTML** with three embedded 20-second A/B/C music mixes and live fader bars. Use original private input MP3 (MUSIC-06 SHA) and approved Qwen reference WAV (private SHA). Never commit the resulting HTML (it embeds private/externally licensed music). Agent commands:
@@ -37,7 +43,7 @@ Audition candidates (gain levels **relative to each stem's original signal**, no
 | B / recommended | 88/100 | 55/100 | 32/100 | 13.8 dB |
 | C / stronger | 88/100 | 66/100 | 44/100 | 11.0 dB |
 
-The extra musical attenuation is therefore smaller in B/C (music sounds louder beneath the narrator). **None is production-locked**; owner needs to audition B/C and select or request refinement. The demos use the previous 7.6-second reference speech, not BM-0003. Peak check passed for each pre-encoding float mix. Phone/speaker and full-video loudness QA remain pending.
+The extra musical attenuation is therefore smaller in B/C (music sounds louder beneath the narrator). **Option B is now owner-approved** as the channel reference balance; full episode loudness and mobile-device mastering remain pending. The demos use the previous 7.6-second reference speech, not BM-0003. Peak check passed for each pre-encoding float mix. Phone/speaker and full-video loudness QA remain pending.
 
 ## Audio review UX — self-contained HTML (owner preference, 23 November 2026)
 

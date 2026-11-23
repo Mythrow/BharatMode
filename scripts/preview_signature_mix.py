@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Bharat Mode MUSIC-06 narrator-ducking *test only* (not episode audio).
+Uses the owner-approved Option B faders from config/music.json.
 
 This uses existing user-supplied/private media; does not synthesize a voice or pay APIs.
 Requires ffmpeg, numpy, scipy and soundfile. Audio previews remain outside Git.
@@ -56,6 +57,15 @@ def render(music,voice,outdir):
     for name,expected in [(music,MUSIC_SHA),(voice,VOICE_SHA)]:
         got=digest(name)
         if got!=expected:raise ValueError(f'Source SHA mismatch {name}: {got}')
+    # Standard reference balance selected by the channel owner: Option B.
+    settings=json.loads((Path(__file__).resolve().parents[1]/'config/music.json').read_text(encoding='utf-8')).get('approvedMix')
+    if not settings or settings.get('preset')!='B':
+        raise ValueError('Owner-approved MUSIC-06 mixer preset B is required')
+    v_gain=float(settings['voice'])/100.0
+    base_gain=float(settings['musicBetweenSpeech'])/100.0
+    ducked_gain=float(settings['musicDuringSpeech'])/100.0
+    if not (0 < ducked_gain <= base_gain <= 1 and 0 < v_gain <= 1):
+        raise ValueError('Approved mixer gains must satisfy 0 < ducked <= base <= 1 and 0 < voice <= 1')
     outdir.mkdir(parents=True,exist_ok=True)
     bed=mp3_stereo_float(music,DEMO_DURATION)
     speech=voice_float(voice)
@@ -63,7 +73,7 @@ def render(music,voice,outdir):
     start=round(VOICE_START*SR)
     if start+len(speech)>count:raise ValueError('Voice too long for demo')
     voice_track=np.zeros((count,2),dtype=np.float32)
-    voice_track[start:start+len(speech),:]=speech[:,None]*0.88
+    voice_track[start:start+len(speech),:]=speech[:,None]*v_gain
     # RMS activity gate over short periods. 24ms attack, 280ms release.
     activity=np.zeros(count,dtype=np.float32)
     # Keep activity during the authenticated vocal clip, not its silent tails.
@@ -74,8 +84,9 @@ def render(music,voice,outdir):
     envelope=smooth_duck(activity)
     ramp=np.minimum(1,np.arange(count,dtype=np.float32)/(SR*.36))
     fade=np.minimum(1,(count-np.arange(count,dtype=np.float32))/(SR*.8))
-    # Bed at -8 dB baseline, another ~8 dB of attenuation under narration.
-    music_gain=.40 * (1.0-.60*envelope)*ramp*np.clip(fade,0,1)
+    # Dynamically interpolate from approved normal music 55/100 to speech 32/100.
+    # The music remains audible beneath the approved 88/100 narrator level.
+    music_gain=(base_gain+(ducked_gain-base_gain)*envelope)*ramp*np.clip(fade,0,1)
     mixed=bed*music_gain[:,None]+voice_track
     peak=float(np.max(np.abs(mixed)))
     if peak>0.98:raise ValueError(f'Mix clips or has inadequate headroom: {peak}')
@@ -84,7 +95,7 @@ def render(music,voice,outdir):
     mp3=outdir/'BM-MUSIC-06-voice-mix-test.mp3'
     sf.write(wav,mixed,SR,subtype='PCM_16')
     subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(wav),'-codec:a','libmp3lame','-b:a','192k',str(mp3)],check=True)
-    summary={'status':'technical_music_voice_demo_NOT_BM0003_narration','purpose':'check selected music and approved narrator coexist before full story production','musicSha256':MUSIC_SHA,'voiceSha256':VOICE_SHA,'durationSeconds':DEMO_DURATION,'voiceStartSeconds':VOICE_START,'sampleRateHz':SR,'peakFloatBeforeEncode':peak,'ducking':'fixed -8 dB bed; additional ~8 dB sidechain speech-aware attenuation','wavSha256':digest(wav),'mp3Sha256':digest(mp3),'fullNarrationGenerated':False,'v6Rendered':False,'publicationApproved':False}
+    summary={'status':'technical_music_voice_demo_NOT_BM0003_narration','purpose':'check selected music and approved narrator coexist before full story production','musicSha256':MUSIC_SHA,'voiceSha256':VOICE_SHA,'durationSeconds':DEMO_DURATION,'voiceStartSeconds':VOICE_START,'sampleRateHz':SR,'peakFloatBeforeEncode':peak,'ducking':'owner-approved option B: voice 88/100, music 55/100 between speech and 32/100 during active speech; 24ms attack/280ms release', 'approvedMixPreset':'B', 'stemGains':{'voice':v_gain,'musicNormal':base_gain,'musicDuringSpeech':ducked_gain},'wavSha256':digest(wav),'mp3Sha256':digest(mp3),'fullNarrationGenerated':False,'v6Rendered':False,'publicationApproved':False}
     (outdir/'preview-manifest.json').write_text(json.dumps(summary,indent=2)+'\n')
     return summary
 

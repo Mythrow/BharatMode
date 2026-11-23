@@ -3,7 +3,7 @@
   "id": "MUSIC-06",
   "title": "Techno Thriller — Owner-selected master",
   "ownerSelectedOn": "2026-11-23",
-  "status": "owner_selected_paid_elevenlabs_music_ordinary_online_av_media_allowed_mix_pending",
+  "status": "owner_approved_MUSIC06_and_option_B_balance_full_episode_QA_pending",
   "privateAsset": "ChatGPT Library /BharatMode/music/techno-thriller-final.mp3",
   "sha256": "adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9",
   "durationSeconds": 54.988,
@@ -57,7 +57,7 @@
       "scope": "20s technical preview using approved original voice audition (not BM-0003); independent LUFS mastering and phone audio QA pending"
     },
     "louderReview": {
-      "status": "three_listenable_mix_options_prepared_user_selection_pending",
+      "status": "owner_chose_B_as_approved_reference_mix",
       "date": "2026-11-23",
       "durationSeconds": 20,
       "reviewFormat": "One self-contained HTML file with embedded playable MP3s, 0-100 simple moving volume bars. Private sandbox artifact, never upload to public Git.",
@@ -71,7 +71,8 @@
         "voice": 88,
         "musicBetweenSpeech": 55,
         "musicUnderSpeech": 32,
-        "voiceMinusMusicRmsDb": 13.8
+        "voiceMinusMusicRmsDb": 13.8,
+        "label": "B — OWNER APPROVED"
       },
       "strongerAlternative": {
         "voice": 88,
@@ -79,9 +80,26 @@
         "musicUnderSpeech": 44,
         "voiceMinusMusicRmsDb": 11
       },
-      "engineerNotes": "All 0-100 values are LINEAR mixer gain (%) relative to each separate source recording, not perceived loudness or absolute sound level. No clipping detected; demo uses original approved 7.6-second Qwen narrator sample, NOT BM-0003 narration. Music gains and ducking change according to speech-gate envelope. User requested stronger music; owner has not chosen B or C.",
-      "reproductionScript": "scripts/generate_music06_level_comparison.py"
+      "engineerNotes": "B owner-approved on 2026-11-23 as standard 0-100 source mixer levels: narrator 88; music normal 55, under speech 32. A and C remain historical comparisons. Source-stem gain percentage is not perceived loudness. Final BM-0003 sound/phone QA still pending.",
+      "reproductionScript": "scripts/generate_music06_level_comparison.py",
+      "ownerDecision": "B approved: voice 88 / music between speech 55 / music during speech 32; no ongoing audition decision needed"
     }
   },
-  "reviewDeliveryPreference": "Use one browser-playable self-contained HTML audio player embedded with all audition takes, ideally with understandable moving 0-100 channel fader meters instead of raw negative dB readouts. No separate MP3/WAV downloads or local installs."
+  "reviewDeliveryPreference": "Use one browser-playable self-contained HTML audio player embedded with all audition takes, ideally with understandable moving 0-100 channel fader meters instead of raw negative dB readouts. No separate MP3/WAV downloads or local installs.",
+  "approvedMix": {
+    "status": "owner_approved_2026_11_23_reference_balance_full_story_QA_pending",
+    "preset": "B",
+    "voice": 88,
+    "musicBetweenSpeech": 55,
+    "musicDuringSpeech": 32,
+    "musicDuckMultiplier": 0.5818181818181818,
+    "musicDuckingSignalReductionPct": 41.81818181818182,
+    "envelopeAttackMs": 24,
+    "envelopeReleaseMs": 280,
+    "previewVoiceMusicRmsGapDbApprox": 13.8,
+    "measurementScope": "The 20-second historical Qwen reference audition plus MUSIC-06; final BM-0003 voice and mobile/video master not evaluated",
+    "units": "0-100 = linear source-stem gain control, not subjective loudness; volume decreases in speech and rises in gaps",
+    "ownerApprovedOn": "2026-11-23",
+    "ownerWords": "yes lets go with B option"
+  }
 }

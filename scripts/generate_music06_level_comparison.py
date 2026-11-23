@@ -38,7 +38,7 @@ def rms(x):return float(np.sqrt(np.mean(np.asarray(x,dtype=np.float64)**2)))
 def db(x):return 20*np.log10(max(x,1e-12))
 settings=[
  {'id':'a','title':'A · Current mix','desc':'The existing quieter soundtrack','normal':.40,'speaking':.16},
- {'id':'b','title':'B · Music louder','desc':'Recommended: much clearer bass beneath the voice','normal':.55,'speaking':.32},
+ {'id':'b','title':'B · Owner-approved','desc':'Owner-approved soundtrack balance for Bharat Mode','normal':.55,'speaking':.32},
  {'id':'c','title':'C · Music forward','desc':'Strongest cinematic score, less room for narration','normal':.66,'speaking':.44},
 ]
 for row in settings:
@@ -86,13 +86,13 @@ audio{width:100%;min-height:50px;margin:5px 0 4px}.meter{display:grid;grid-templ
 .note{border-left:3px solid var(--teal);padding:5px 13px;margin:22px 0;background:#1430334f;color:#c9dddf;font-size:13px;line-height:1.6}.footer{color:#9cabb4;font-size:11px}
 @media(max-width:620px){.tabs{grid-template-columns:1fr}.two{grid-template-columns:1fr}.tab strong{font-size:14px}main{padding-top:22px}}
 </style></head><body><main>
-<div class="kicker">Bharat Mode / Audio Lab / MUSIC-06</div><h1>Make the soundtrack louder</h1><p>Choose a mix below and press Play. All three use the <b>same approved narrator</b>. The only difference is how prominently the techno-thriller soundtrack plays.</p>
+<div class="kicker">Bharat Mode / Audio Lab / MUSIC-06</div><h1>Approved soundtrack balance: Option B</h1><p>Choose a mix below and press Play. All three use the <b>same approved narrator</b>. The only difference is how prominently the techno-thriller soundtrack plays.</p>
 <div class="tabs" role="tablist" aria-label="Mix choices">
   <button class="tab" id="tab-a" type="button" role="tab" aria-selected="false" data-id="a"><strong>A — Original</strong><small>Quieter soundtrack</small></button>
-  <button class="tab" id="tab-b" type="button" role="tab" aria-selected="true" data-id="b"><strong>B — Louder (suggested)</strong><small>Deeper bass is more present</small></button>
+  <button class="tab" id="tab-b" type="button" role="tab" aria-selected="true" data-id="b"><strong>B — Approved</strong><small>Deeper bass is more present</small></button>
   <button class="tab" id="tab-c" type="button" role="tab" aria-selected="false" data-id="c"><strong>C — Stronger</strong><small>Music takes a larger role</small></button>
 </div>
-<section class="card"><div class="row"><h2 id="heading">B · Music louder</h2><span class="badge" id="badge">Recommended</span></div><p id="desc"></p>
+<section class="card"><div class="row"><h2 id="heading">B · Music louder</h2><span class="badge" id="badge">Approved</span></div><p id="desc"></p>
 <audio id="audio" controls preload="metadata"></audio>
 <p class="micro">The narrator enters at <b>0:02</b> and ends at around <b>0:10</b>. Listen there to judge whether the music masks words. Changing mix keeps approximately the same playback position.</p>
 </section>
@@ -101,7 +101,7 @@ audio{width:100%;min-height:50px;margin:5px 0 4px}.meter{display:grid;grid-templ
 <div class="meter"><label>Music level</label><span class="val" id="music-number">55 / 100</span><div class="track"><div class="fill" id="music-fill" style="width:55%"></div></div></div>
 <p id="duck-label" class="micro">Music automatically gets softer while the narrator speaks.</p></section>
 <section class="card"><h2>At a glance</h2><div class="two"><div class="stat"><strong id="between">55 / 100</strong><small>Music in gaps and before speech</small></div><div class="stat"><strong id="during">32 / 100</strong><small>Music while voice is active</small></div></div><p id="comment"></p></section>
-<p class="note"><b>Important:</b> This is still a 20-second mix test using the <i>original approved Qwen voice reference</i> — not the newly generated BM-0003 story narration. The test does not establish final mobile-speaker loudness. We can adopt B or C only after a listening decision.</p>
+<p class="note"><b>Important:</b> This is still a 20-second mix test using the <i>original approved Qwen voice reference</i> — not the newly generated BM-0003 story narration. The test does not establish final mobile-speaker loudness. The owner has selected B as the baseline. Final episode mixing and phone-speaker checks are still required.</p>
 <p class="footer">Bharat Mode / private review · Audio embedded in this HTML (no external media or account sign-in required) · Selected MUSIC-06 master remains stored privately.</p>
 </main>
 <script>
@@ -113,7 +113,7 @@ function select(id){
  audio.pause();preset=id;audio.src=next.url;audio.load();
  audio.addEventListener('loadedmetadata',()=>{try{audio.currentTime=Math.min(position,19.8);if(wasPlaying)audio.play().catch(()=>{})}catch{}},{once:true});
  document.getElementById('heading').textContent=next.title;document.getElementById('desc').textContent=next.desc;
- document.getElementById('badge').textContent=id==='b'?'Recommended':'Comparison';
+ document.getElementById('badge').textContent=id==='b'?'Approved':'Comparison';
  document.getElementById('between').textContent=Math.round(next.normal*100)+' / 100';document.getElementById('during').textContent=Math.round(next.speaking*100)+' / 100';
  document.getElementById('comment').textContent=id==='a'?'This is what you heard before.':id==='b'?'This raises the soundtrack while keeping speech clearly in front.':'This is deliberately more music-forward; check if it starts competing with the voice.';
  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.id===id)));

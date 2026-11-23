@@ -1,5 +1,19 @@
 # Bharat Mode — Music & Sonic Identity
 
+## MIX APPROVAL — Option B (23 November 2026)
+
+The channel owner selected **MUSIC-06** and now also **explicitly APPROVED Option B** among the three real Qwen-narrator comparison mixes. Use the same mixer setting as a standard **reference balance** for upcoming Shorts:
+
+| Stem | Relative 0–100 linear gain |
+| --- | ---: |
+| Approved Qwen narrator | **88** |
+| MUSIC-06 when narrator is quiet | **55** |
+| MUSIC-06 while narrator speaks | **32** |
+
+Voice activity smoothly ducks the music from 55 toward 32, using approximately **24ms attack** and **280ms release**. The gain reduction is **41.8% in signal amplitude** compared to the between-speech setting. The 20s reference comparison showed ~13.8 dB active-speech RMS voice/music separation. **These are relative stem gains, not human loudness percentages.** Actual episode speech, device-specific bass masking and final loudness/peak mastering still require a fresh QA pass; do not modify the approved reference by default or claim a full completed video exists.
+
+The permanent settings live in [config/music.json](../config/music.json), `approvedMix`, and the technical mixer `scripts/preview_signature_mix.py` reads that source. Earlier A and C variations remain for history only; **stop soliciting music/volume approval**. Future owner audio reviews should use a single HTML playback page with accessible 0–100 meters and private embedded audio.
+
 ## MUSIC-06 — Selected signature background music (23 November 2026)
 
 **OWNER SELECTED:** The user's uploaded `techno-thriller-final.mp3` is now the first-choice **dark techno-thriller soundtrack**. It supersedes MUSIC-01–05, which are historical audition experiments. No further approval of alternative music concepts is needed.

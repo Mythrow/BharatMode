@@ -14,7 +14,7 @@
 ## Milestone 2 — V6 visuals and narrator approved; MUSIC-06 owner-selected / paid-tier sync rights reviewed; first BM-0003 voiced pilot NEXT
 
 - [x] Respond to owner audio-level feedback with **MUSIC-06 20s A/B/C louder mix test** in one privately linked self-contained HTML file with embedded playback and moving 0–100 fader meters. Reproducible generator in `scripts/generate_music06_level_comparison.py`; verified source SHAs, tested no clipping and exact regeneration.
-- [ ] **Owner to audition:** B suggested music normal **55/100**, under voice **32/100**, versus original A **40/16** or strong C **66/44** (voice remains 88); approve/adjust before full story sound mix.
+- [x] **OWNER APPROVED Option B, 23 November 2026:** Qwen narrator **88/100**, MUSIC-06 **55/100 between speech**, **32/100 beneath speech**, with 24ms attack / 280ms release. Reference faders frozen in [config/music.json](../config/music.json) and reused by demo mixer. No need for further mix-selection auditions; actual BM-0003 story/full video mixing and phone QA remain open.
 
 
 
