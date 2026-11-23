@@ -3,7 +3,7 @@
   "id": "MUSIC-06",
   "title": "Techno Thriller — Owner-selected master",
   "ownerSelectedOn": "2026-11-23",
-  "status": "owner_selected_licensing_and_mix_verification_pending",
+  "status": "owner_selected_paid_elevenlabs_music_ordinary_online_av_media_allowed_mix_pending",
   "privateAsset": "ChatGPT Library /BharatMode/music/techno-thriller-final.mp3",
   "sha256": "adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9",
   "durationSeconds": 54.988,
@@ -19,5 +19,26 @@
   "noGitAudio": true,
   "publicationApproved": false,
   "visualTemplate": "V6 unchanged",
-  "voiceIdentity": "approved Qwen3 narrator unchanged"
+  "voiceIdentity": "approved Qwen3 narrator unchanged",
+  "generationPlanEvidence": {
+    "ownerStatement": "I used a paid plan of Eleven labs.",
+    "reportedOn": "2026-11-23",
+    "tier": "paid (exact tier not specified)",
+    "independentlyVerified": false
+  },
+  "licensedForCommercialYoutube": "paid_music_plan_reported_online_commercial_av_sync_per_ElevenLabs_2026_10_09_terms",
+  "attribution": "not_required_under_ElevenLabs_Music_Terms_2026_10_09_for_Starter_and_higher_paid_plans",
+  "rightsSource": "https://elevenlabs.io/music-terms",
+  "rightsReviewedOn": "2026-11-23",
+  "masterUse": "Owner-selected soundtrack permitted in ordinary commercial YouTube audiovisual media under paid-tier terms as reported; individual plan/receipt not independently examined. Final video still needs production QA and owner publication approval.",
+  "musicLibraryRedistribution": "prohibited without explicit permission; do not publish the standalone MP3",
+  "mixPreview": {
+    "status": "technical_voice_mix_demo_not_BM0003_story_narration",
+    "durationSeconds": 20,
+    "wavSha256": "b85325faf983696681ddae37420a0c32f7a6aee402c34671e893da120958da41",
+    "mp3Sha256": "ee8848be87e1e9e43c62ccb41ee0601323a0b1bcf2843063442a4ec8781c520b",
+    "peakBeforeEncoding": 0.8210398554801941,
+    "generatedOn": "2026-11-23",
+    "script": "scripts/preview_signature_mix.py"
+  }
 }

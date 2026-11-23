@@ -1,6 +1,7 @@
 {
-  "note": "Ordered editorial candidates ONLY. A queued item is not approved or published. Update before each production batch.",
+  "note": "Ordered editorial storyboard candidates ONLY, not publication approval/history. Canonical content IDs and stages are in content/registry.json.",
   "slugs": [
+    "lt-chennai-ai-cluster-order",
     "param-rudra",
     "icmr-tech-transfer"
   ]

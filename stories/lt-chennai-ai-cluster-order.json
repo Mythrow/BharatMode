@@ -1,0 +1,93 @@
+{
+  "story": {
+    "contentId": "BM-0003",
+    "slug": "lt-chennai-ai-cluster-order",
+    "title": "The machines behind India's next AI wave",
+    "category": "AI infrastructure / engineering",
+    "sourceShort": "L&T company filing",
+    "sourceContext": "New multi-year order announced 23 November 2026; planned 10,000 GPU cluster first announced August 2026",
+    "sourceUrl": "https://www.larsentoubro.com/pressreleases/2026/2026-11-23-larsen-toubro-secures-large-order-for-deploying-ai-cluster",
+    "sourcePublished": "2026-11-23",
+    "claimStage": "additional multi-year order announced; capacity planned, not independently confirmed fully installed",
+    "hasVoice": false,
+    "musicId": "MUSIC-06",
+    "audioProductionStatus": "script_drafted_Qwen_Base_full_audio_not_generated",
+    "scenes": [
+      {
+        "kind": "hook",
+        "kicker": "BEHIND THE AI BOOM",
+        "headline": "AI needs more than code.",
+        "subhead": "The infrastructure behind intelligent machines.",
+        "visual": "server-grid",
+        "duration": 7,
+        "narration": "AI doesn't run on code alone. Behind every powerful model is enormous computing infrastructure."
+      },
+      {
+        "kind": "uses",
+        "kicker": "23 NOVEMBER 2026",
+        "headline": "A new AI compute order",
+        "items": ["Chennai campus", "NVIDIA B300 GPUs", "Multi-year engagement"],
+        "subhead": "L&T / Vyoma.AI / LTN Compute — newly announced order",
+        "duration": 9,
+        "narration": "On November twenty-third, L and T announced another multi-year deal to deploy Nvidia B three hundred GPUs in Chennai."
+      },
+      {
+        "kind": "metric",
+        "kicker": "CONTRACT CLASSIFICATION",
+        "headline": "A large-scale commitment",
+        "number": 2500,
+        "metricLabel": "₹2,500–5,000 crore",
+        "subhead": "L&T's official Large order-value band",
+        "note": "The exact contract amount and added GPU count were not disclosed.",
+        "duration": 8,
+        "narration": "The company classifies it as a large order: between twenty-five hundred and five thousand crore rupees."
+      },
+      {
+        "kind": "metric",
+        "kicker": "THE EXISTING BIGGER PLAN",
+        "headline": "A larger AI factory vision",
+        "number": 10000,
+        "metricLabel": "GPUs in the planned cluster",
+        "subhead": "The broader project was announced in August 2026",
+        "note": "Planned capacity; not a verified number of active chips.",
+        "duration": 8,
+        "narration": "It expands a ten-thousand-GPU AI factory project that was already announced back in August."
+      },
+      {
+        "kind": "comparison",
+        "kicker": "PLAN VERSUS REALITY",
+        "headline": "A plan isn't a live GPU count.",
+        "leftLabel": "ANNOUNCED",
+        "leftText": "10,000-GPU cluster planned",
+        "rightLabel": "NOT CONFIRMED",
+        "rightText": "10,000 GPUs already running",
+        "subhead": "AI models need both advanced chips and infrastructure to train and run.",
+        "duration": 9,
+        "narration": "These machines can support AI training and inference. But ten thousand is the planned cluster, not a confirmed count of running GPUs."
+      },
+      {
+        "kind": "close",
+        "kicker": "BHARAT MODE",
+        "headline": "Building the foundation of AI.",
+        "subhead": "India's next technology chapter also needs physical computing power.",
+        "duration": 7,
+        "narration": "The real milestone? India is building more of the physical infrastructure that advanced AI needs."
+      }
+    ],
+    "youtubeTitle": "India's AI Boom Needs This Infrastructure | L&T's Chennai GPU Order",
+    "topic": "infrastructure",
+    "visualTheme": "midnight",
+    "visualFamily": "data-led",
+    "hookType": "contrast",
+    "thumbnailStyle": "stat",
+    "thumbnailText": "10,000 GPU PLAN",
+    "narrativeAngle": "event-and-context",
+    "chapters": [
+      {"id": "setup", "title": "Why computing matters", "sceneStartIndex": 0},
+      {"id": "contract", "title": "The new order", "sceneStartIndex": 1},
+      {"id": "capacity", "title": "What is planned", "sceneStartIndex": 3},
+      {"id": "reality", "title": "Plan versus deployment", "sceneStartIndex": 4},
+      {"id": "meaning", "title": "The takeaway", "sceneStartIndex": 5}
+    ]
+  }
+}

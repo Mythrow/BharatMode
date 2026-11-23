@@ -17,7 +17,7 @@ Updated: 2026-11-23 (IST) · Permanent IDs: 4 · **Never reassign or delete an I
 
 | Content ID | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|
-| **BM-0003** | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/BM-0003.md) | — | — |
+| **BM-0003** | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/BM-0003.md) | [Draft](../stories/lt-chennai-ai-cluster-order.json) | — |
 | **BM-0001** | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/BM-0001.md) | [Draft](../stories/param-rudra.json) | — |
 
 ## Published (0)
