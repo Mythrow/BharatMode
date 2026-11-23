@@ -39,6 +39,23 @@
     "mp3Sha256": "ee8848be87e1e9e43c62ccb41ee0601323a0b1bcf2843063442a4ec8781c520b",
     "peakBeforeEncoding": 0.8210398554801941,
     "generatedOn": "2026-11-23",
-    "script": "scripts/preview_signature_mix.py"
-  }
+    "script": "scripts/preview_signature_mix.py",
+    "levels": {
+      "gainVoiceLinear": 0.88,
+      "gainVoiceDb": -1.11,
+      "gainMusicNormalLinear": 0.4,
+      "gainMusicNormalDb": -7.96,
+      "gainMusicDuckedLinear": 0.16,
+      "gainMusicDuckedDb": -15.92,
+      "additionalDuckDb": -7.96,
+      "additionalDuckAmplitudeReductionPct": 60,
+      "attackTimeConstantMs": 24,
+      "releaseTimeConstantMs": 280,
+      "activeSpeechVoiceRmsDbfs": -20.17,
+      "activeSpeechMusicRmsDbfs": -39.9,
+      "activeSpeechVoiceOverMusicRmsDb": 19.74,
+      "scope": "20s technical preview using approved original voice audition (not BM-0003); independent LUFS mastering and phone audio QA pending"
+    }
+  },
+  "reviewDeliveryPreference": "Self-contained HTML page with embedded native audio players, link in conversation; no user downloads or local installs. Reusable scripts/build_audio_review_html.py; never commit HTML with private media."
 }

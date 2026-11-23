@@ -12,6 +12,8 @@ Then read [docs/ROADMAP.md](docs/ROADMAP.md) and [docs/APPROVED_SHORTS_TEMPLATE.
 - The `BharatShort` generic renderer is older than the approved motion system. Its remaining integration work is tracked in [GitHub issue #5](https://github.com/Mythrow/BharatMode/issues/5).
 - Do not assume a new chat has read GitHub or remembered every previous choice. Fetch/read the current status file first.
 - The owner prefers interactive HTML or finished artifact previews **in the chat**; do not ask the owner to run scripts on their own device.
+- **Audio review delivery preference (owner, 23 November 2026):** Do NOT send standalone downloadable MP3/WAV links as the primary audition experience. Build a **single self-contained, browser-playable HTML review page** with native audio players and embedded user-private sound bytes; link that HTML directly in the conversation. Users should be able to click Play, compare voice/music/ducked/unducked variants and not install/download media files. Use `scripts/build_audio_review_html.py` (agent-run only), keep HTML output in ignored `out/` or private artifact storage, **never commit HTML containing licensed music or private voice**. For music QA include exact fader gains and measured source-separated loudness/RMS, not ambiguous percentages.
+
 - Store source, docs, story metadata, original music and SFX in Git. Do not commit rendered video or generated narration.
 - Story-driven, flexible chapter structures; do not impose an identical five-part arc on every Short.
 - Keep source fidelity, licensing and status qualifiers explicit. The final visual template AND consistent synthetic Qwen narrator identity are approved; **full-story word-level timestamps, actual production renderer and full MP4 phone QA are not**.

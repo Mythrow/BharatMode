@@ -18,6 +18,31 @@ npm run render:sample
 ```
 Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish the silent starter.
 
+## Audio review UX — self-contained HTML (owner preference, 23 November 2026)
+
+For **every future music candidate, narrator audition, voice check and voice/music mix review**, present an **HTML playback preview** in the conversation instead of requiring the owner to download MP3/WAV files or install tooling. Use the generic `scripts/build_audio_review_html.py` helper to embed several review takes in **one self-contained HTML file** (native `<audio controls>`, no network or other file dependencies). Deliver a link to that generated HTML artifact in the same response, not just audio file download links.
+
+Example **for a coding/Work agent**, not the owner:
+```bash
+python scripts/build_audio_review_html.py \
+  --title 'Bharat Mode — audio test' \
+  --track 'Ducked mix=out/private/ducked.mp3' \
+  --track 'No ducking=out/private/unducked.mp3' \
+  --track 'Narrator only=out/private/voice.mp3' \
+  --out out/audio-test-preview.html
+```
+The resulting HTML **contains the full audio bytes encoded internally** and is private media. Do not check it into public Git, email it, or distribute it without the owner's authorization/rights check. MP3/WAV originals are still retained privately for production; the HTML is just a streamlined audition interface.
+
+**Verified MUSIC-06 reference mix levels** (from `scripts/preview_signature_mix.py`, measured using the exact existing voice/music source hashes on 23 Nov 2026):
+
+| Stem | Linear gain | Fader gain in dB | RMS during active speech in 20s preview |
+|---|---:|---:|---:|
+| Approved Qwen narrator WAV | 0.88 | −1.11 dB | −20.17 dBFS |
+| Selected MUSIC-06 without voice | 0.40 | −7.96 dB | — |
+| Selected MUSIC-06 ducked during voice | 0.16 | −15.92 dB | −39.90 dBFS |
+
+The music gain is `0.40*(1-0.60*speech_envelope)`: **up to another −7.96 dB**, reducing the music's *signal amplitude* by **60%** while actively speaking. Voice−music RMS level difference during the actively ducked portions was **19.74 dB**, but this is an overlap-window RMS metric, not a LUFS loudness standard. Envelope smoothing: **24 ms attack, 280 ms release** exponential time constants. Tested 20s file uses **original approved narrator audition** (not BM-0003 production script); listening on real phones and full-video mastering are outstanding.
+
 ## BM-0003 pilot workflow — offline voice and selected score, 23 November 2026
 
 - Owner selected **MUSIC-06** (private MP3, checksum in `config/music.json`) and confirmed a **paid ElevenLabs Music plan**. Current [Music Terms](https://elevenlabs.io/music-terms) permit commercial YouTube video synchronization without attribution on paid plans. Exact tier/receipt not independently inspected. Do not upload or redistribute stand-alone music files.

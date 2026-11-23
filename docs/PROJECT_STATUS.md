@@ -11,6 +11,14 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Current stage — V6 visuals and narrator approved; paid MUSIC-06 selected; first BM-0003 voice and V6 pilot NEXT
 
+### Audio review format + measured MUSIC-06 levels — 23 November 2026
+
+- **Owner preference for all upcoming audio checks:** present a **self-contained HTML preview with embedded playable audio** right in chat (no separate MP3/WAV downloads), allowing multiple comparison takes and simple listening; don't ask owner to run code. Generic script `scripts/build_audio_review_html.py` is committed; generated HTML embeds private bytes and must remain out of Git.
+- Verified against the exact MUSIC-06 input MP3, original approved Qwen WAV, and existing 20-second mix preview: Qwen fader `0.88` (**−1.11 dB**), music baseline `0.40` (**−7.96 dB**), full speech duck `0.16` (**−15.92 dB**), an additional **−7.96 dB / 60% amplitude reduction**. Attack ~24 ms; release ~280 ms.
+- In actively ducked portions, separated voice stem RMS **−20.17 dBFS**, music stem RMS **−39.90 dBFS**; voice−music overlap separation **19.74 dB**. These are mix-test measurements, not publication loudness targets or LUFS. HTML A/B preview generated locally with actual ducked mix, unducked counterpart, voice-only and music-only; **no BM-0003 narration yet**. Phone listening remains pending.
+
+
+
 ### BM-0003 Work Mode execution attempt — 23 November 2026
 
 - Read the production runbook and located the canonical private MUSIC-06 master by its recorded path. Work Mode became unavailable before any commands could run. The current attempt did not retrieve or rehash the audio files, load Qwen, generate scene narration, check transcripts, align with WhisperX, mix, or render a pilot. No paid compute or publishing occurred.
