@@ -1,7 +1,7 @@
 # Bharat Mode — Qwen3-TTS Voice Direction
 
 **Engine chosen by owner:** 23 November 2026.  
-**Status:** Qwen3-TTS is the approved open-weight engine. The real 7.6-second PARAM Rudra WAV is SHA-verified and retained privately as a working engineering reference. Final audible voice approval, PARAM pronunciation check, and reusable voice consistency with Qwen3-TTS Base are pending.
+**Status:** Qwen3-TTS is the approved open-weight engine. The verified 7.6 s private VoiceDesign reference conditioned a successful 8.8 s Base audition. Technical checks are complete for this pair. Final listening approval and the original `PARAM` pronunciation are open.
 
 ## Approved voice decision and constraints
 
@@ -40,7 +40,7 @@ The official Qwen README documents a consistent-designed-narrator path:
 - **Artifact:** `bharat-mode-qwen-voice-audition.wav`, 7.6 seconds, 24 kHz mono, PCM 16-bit. SHA-256 `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`. The sample is available in the Work Mode conversation for listening review and stays outside Git.
 - **Transcript check:** local Whisper Tiny English recovered all three sentences and transcribed `PARAM` phonetically as `Parum`. Review the audible delivery and pronunciation before selecting the narrator.
 - **Earlier CPU attempts:** the all-float32 process exited 137 during synthesis under memory pressure. The native bfloat16 run and an INT8 run with bfloat16 decoding were stopped after extended runtimes. An INT8 talker with float32 decoding wrote a 15.92-second WAV, but the offline transcript failed to match the script. The staged, unquantized run supplied the audition.
-- **Limits:** a single short audition on the available Work Mode CPU, with no new paid compute, paid API, subscription, or voice credits. Voice selection, recurring hosting, the 1.7B Base consistency workflow, and full-script production performance still need verification.
+- **Limits:** a single short audition on the available Work Mode CPU, with no new paid compute, paid API, subscription, or voice credits. This section covers the original VoiceDesign run. The verified Base result is recorded below.
 
 Earlier GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) failed twice before setup began. The Actions workflow itself still requires an independent runner check.
 
@@ -48,25 +48,25 @@ Earlier GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/a
 
 - Materialized the original `bharat-mode-qwen-voice-audition.wav` from the owner's private ChatGPT Library and independently verified **7.600 seconds**, **24,000 Hz**, **mono**, **16-bit PCM**, SHA-256 **`0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`**. The audio remains in private artifacts; Git stores metadata only.
 - `config/narrator-reference.json` stores the precise spoken reference text, model revision, WAV properties, source status, SHA and pronunciation warning. `scripts/qwen_reference.py` rejects tampering, invalid audio format and missing transcripts, using only Python standard library. Five synthetic tests pass, and the actual reference WAV passes verification.
-- `scripts/qwen_base_voice_test.py` implements **official Base APIs**: `create_voice_clone_prompt(ref_audio=..., ref_text=...)` and `generate_voice_clone(voice_clone_prompt=...)` on *new text*. This refers only to an original synthetic voice created for Bharat Mode, **not to third-party Brian recordings**. The script's parsing/syntax was checked; the actual Base model **has not run in this chat's 6 GiB, no-model-download environment**. Work Mode had sufficient resources for a short VoiceDesign test, but recurring Base performance has not been proven.
-- For Work Mode execution (no device setup for the owner): place the **private audition WAV** in the cloud workspace, then run `python scripts/qwen_reference.py --audio <private-ref-path>`, and when official Base weights are available run `python scripts/qwen_base_voice_test.py --reference <private-ref-path> --model <local-base-model-directory> --device cpu`. Output is `out/qwen-base/narrator-consistency.wav`, never committed. A successful run still requires hearing and transcript/voice comparison before final narrator approval.
+- [The Base runbook](WORK_MODE_BASE_RUNBOOK.md) records the successful offline Work Mode execution of `create_voice_clone_prompt` with full in-context conditioning and `generate_voice_clone` with different text. The new WAV passed the integrity gate and an exact normalized 22-word Whisper transcript check.
+- Independent SpeechBrain ECAPA-TDNN cosine similarity was 0.724 between the clips, with split-half scores of 0.638 for the reference and 0.793 for the new sample. These measurements support voice similarity on this pair. Listen to the two WAVs side by side to assess timbre, pace, pronunciation and final narrator choice.
 - Current audible QA concern: the offline transcript rendered `PARAM` as "Parum"; fix pronunciation if audible, regenerate a fresh reference and update its checksum rather than silently changing transcript metadata.
 
 ## Caption integration code checkpoint (23 November 2026)
 
-A verified, unmodified original narrator reference WAV remains available privately, and the Qwen3 Base synthesis experiment is checked into `scripts/qwen_base_voice_test.py`. **No Base-model output audio or demonstrated voice consistency yet.**
+A verified, unmodified original narrator reference WAV remains available privately, and the Qwen3 Base synthesis experiment is checked into `scripts/qwen_base_voice_test.py`. The first Base audition is available for A/B review.
 
 Added `scripts/align_qwen_words.py` for a future **real acoustic WhisperX alignment** run on the finalized narration WAV. It validates exact text-word matches and timestamps and saves audio SHA-256 in the alignment metadata. `src/aligned-captions.jsx` consumes that measured alignment, preserving the approved centered V6 caption presentation; `src/aligned-caption-timing.js` rejects demo/estimated timings. Tests: 8 Python cases plus 13 JS assertions passing. **The alignment model itself has not run; the renderer has not been fully migrated.** See [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md).
 
 ## Execution handoff and artifact integrity gate
 
-The current limited chat sandbox (5.8 GiB RAM, no GPU and no downloaded Qwen weights) cannot run the 1.7B Base model. The next permitted run must happen in a capable Work Mode cloud computer (see [WORK_MODE_BASE_RUNBOOK.md](WORK_MODE_BASE_RUNBOOK.md)), without paid APIs, credits or unapproved infrastructure fees.
+The short Base audition ran on a 9.7 GiB Work Mode CPU workspace. The checked-in staged CPU path peaked at 7.68 GiB process RSS and took 103.5 s, excluding setup and downloads. Full-script performance remains open.
 
 When a real new-line WAV is generated, `scripts/validate_qwen_base_output.py` checks that PCM audio is non-silent, duration/sample rate are plausible, the SHA-256 matches its output manifest and the output manifest points back to our **specific validated synthetic reference**. Eight synthetic unit tests passed. The gate **never asserts speaker identity, transcript accuracy or publication approval**; listening and optional independent offline ASR remain mandatory.
 
 ## Integration and quality gates — not yet implemented
 
-1. Review the Work Mode audition. On approval, retain it privately with its transcript and verify the Qwen3-TTS Base consistency workflow. Check full-script throughput and recurring compute access without unapproved charges.
+1. Review both Work Mode WAVs by ear, then lock the narrator and check full-script throughput and recurring compute access.
 2. Integrate a Qwen3 voice synthesizer that reads `config/voice.json`, uses the approved reference voice, and produces untracked WAV files. The existing `npm run voice` script still invokes **OpenAI TTS** and must not be mistaken for the approved production provider.
 3. Run local forced alignment on the **actual final rendered speech**, verify words and exact timing, and drive the approved V6 screen-centered, one-line caption animations.
 4. Upgrade `src/short.jsx` to use the frozen V6 frame, measured scene timing, original music and SFX with ducking.
@@ -77,4 +77,4 @@ When a real new-line WAV is generated, `scripts/validate_qwen_base_output.py` ch
 
 - **Brian (vidIQ):** owner liked professional timbre; rejected as a production route because free credits can be exhausted. Preserve style preference only. No additional vidIQ narration generations.
 - **Kokoro-82M:** Apache-2.0, lighter and unmetered when self-hosted; **fallback** if Qwen cannot run acceptably on available permitted compute.
-- **Qwen3-TTS:** owner preferred its audible quality over Kokoro on 23 November 2026. **Engine is approved; actual reference audio and the production pipeline remain outstanding.**
+- **Qwen3-TTS:** owner preferred its audible quality over Kokoro on 23 November 2026. The engine is approved, the engineering reference is saved privately, and the production pipeline is pending.

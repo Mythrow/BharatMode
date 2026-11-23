@@ -1,6 +1,6 @@
 # Bharat Mode — Launch milestones
 
-**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** owner approved **Qwen3-TTS** after listening comparison; review the PARAM Rudra audition generated with `Qwen3-TTS-12Hz-1.7B-VoiceDesign`, validate an approved reusable synthetic voice with Qwen3-TTS Base, then self-host the narration + word alignment + V6 renderer with no paid subscriptions or voice credits. See [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
+**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** compare the verified VoiceDesign reference and new Qwen3-TTS Base audition by ear. After narrator approval, generate full narration, verify word timing and integrate with V6. See [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
 
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
@@ -17,11 +17,10 @@
 - [x] **Qwen3-TTS selected by owner** after hearing Qwen and Kokoro demos. Use 1.7B VoiceDesign (Apache-2.0); Kokoro is the lightweight fallback, not the active choice.
 - [x] Verify official 1.7B VoiceDesign download and offline CPU inference in Work Mode without paid compute or voice credits. Generated the 7.6-second PARAM Rudra WAV with the repository audition inputs and staged float32 inference. A local transcript check recovered all three sentences, with `PARAM` spelled phonetically. The earlier GitHub Actions runner startup failure remains recorded in [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993).
 - [x] Independently verify and preserve the **private VoiceDesign WAV reference by checksum and manifest** (`config/narrator-reference.json`); match 7.6 s, 24 kHz, mono PCM16 and SHA-256. Implement `scripts/qwen_reference.py`; five unit tests pass. The WAV is not stored in Git.
-- [x] Implement the official Base-model reference reuse **experiment** (`scripts/qwen_base_voice_test.py`) for new narration lines, with no paid TTS API. Script syntax/CLI tested, **not Base inference**.
-- [ ] **Next:** execute the Base model on permitted Work Mode compute with the private reference, listen for narrator consistency and check pronunciation. Final audible approval is pending.
-- [x] Prepare the [Work Mode Qwen Base execution runbook](WORK_MODE_BASE_RUNBOOK.md) and standard-library real-generated-WAV integrity gate (`scripts/validate_qwen_base_output.py`). Eight offline tests pass; this validates metadata/audio integrity only. **Base inference and listening QA have not run here.**
-- [ ] Verify recurring compute access, Base performance, and full-script synthesis throughput. No owner-side installation is required.
-- [ ] Build self-hosted Qwen speech generation. The actual **Qwen Base voice-consistency inference** remains blocked in this non-Work chat; no new sample was generated here.
+- [x] Execute the [Qwen3-TTS 1.7B Base test](WORK_MODE_BASE_RUNBOOK.md) offline in Work Mode using the verified private VoiceDesign reference. Generated an 8.8 s PCM16 WAV. Integrity passed, offline ASR matched all 22 script words, and the reference-to-sample speaker embedding cosine was 0.724.
+- [ ] **Next:** owner compares the two clips by ear and reviews pronunciation and delivery before locking the narrator.
+- [ ] Verify recurring compute access and full-script synthesis throughput. The short Base test measured 103.5 s total and 7.68 GiB peak process RSS.
+- [ ] Build self-hosted Qwen speech generation for complete stories using the vetted reference.
 - [x] Implement the free local **WhisperX acoustic-alignment data contract** and V6 real-timestamp caption overlay, with 8 Python + 13 JS assertions passing. [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md) explains integration. This is code-level validation only, **not successful WhisperX inference**.
 - [ ] Execute genuine word alignment on an actual finalized Base-generated WAV, verify transcript/"PARAM" pronunciation and word timing, then wire the overlay into general-story production rendering.
 - [ ] Integrate V6 movement, grouped captions and actual word-aligned narration into the general story renderer.
@@ -56,4 +55,4 @@
 - No unsupported factual claims, generated images passed off as documentary footage, or exaggerated "world first" claims.
 
 ## Immediate next production milestone
-The Work Mode PARAM Rudra WAV is now verified as a provisional engineering reference (final listening approval pending). Next, **execute and review the Qwen3-TTS Base reference-consistency test**, then build unmetered self-hosted speech generation, precise word timing, and the full V6 story renderer. Review one complete evidence-backed vertical Short on a phone, then produce two distinctly structured pilots. Generated narration and MP4s stay outside Git.
+Review the verified VoiceDesign reference and Base audition by ear. After narrator approval, generate the full story WAV, check pronunciation and transcript, run actual word alignment, and integrate the approved V6 renderer. Review one complete evidence-backed Short on a phone, then produce two differently structured pilots. Generated narration and MP4s stay outside Git.

@@ -1,5 +1,5 @@
 {
-  "status": "engine_approved_voice_reference_pending",
+  "status": "base_audition_verified_owner_listening_pending",
   "approvedOn": "2026-11-23",
   "engine": "qwen3-tts",
   "engineExecution": "self-hosted_unmetered_model_inference",
@@ -17,8 +17,8 @@
   "expiringCreditServicesAllowed": false,
   "requiresPerGenerationCredits": false,
   "requiresAvailableCompute": true,
-  "remoteComputeAvailability": "one_off_Work_Mode_CPU_VoiceDesign_success_Base_not_tested",
-  "synthesizerStatus": "Base_reference_consistency_test_script_implemented_not_run",
+  "remoteComputeAvailability": "one_off_Work_Mode_CPU_VoiceDesign_and_Base_verified_recurring_access_pending",
+  "synthesizerStatus": "Base_reference_consistency_test_executed_production_integration_pending",
   "wordAlignmentStatus": "not_implemented",
   "publicationRightsStatus": "model_license_verified_check_all_dependencies_and_publication_rights",
   "previousPreferences": {
