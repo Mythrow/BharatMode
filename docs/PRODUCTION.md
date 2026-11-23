@@ -38,6 +38,12 @@ Use the Apache-2.0 [Qwen3-TTS-12Hz-1.7B-VoiceDesign model](https://huggingface.c
 
 Next implementation: use the verified private synthetic reference to test Qwen3-TTS 1.7B Base voice consistency via `scripts/qwen_base_voice_test.py`, approve the sound after listening, and verify compute. Then implement local generation and real audio word alignment, integrate V6 story/caption rendering and mix audio. The Base experiment is committed but not yet executed against the real Base model. `npm run voice` still invokes the old OpenAI-only experimental generator and does not represent the Qwen pipeline. Generated audio and MP4s must not be committed.
 
+## Word-aligned captions — engineering foundation (not finished)
+
+The production approach uses local WhisperX acoustic alignment on **final Qwen narration**; see [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md), `scripts/align_qwen_words.py`, `src/aligned-caption-timing.js`, and `src/aligned-captions.jsx`. The Python script writes an exact-word-match, checksum-linked output when the actual acoustic model supplies valid timestamps. It refuses to fabricate timings from text duration. Offline contract tests pass; WhisperX inference and end-to-end narrated rendering have **not** run.
+
+Use the new overlay only with a genuine alignment JSON and keep `src/approved-shorts-template.jsx` and owner-approved V6 layout unchanged. The legacy generic `BharatShort` renderer is still to be upgraded after successful Qwen Base identity/compute testing.
+
 ## Add voice (legacy experimental OpenAI workflow; NOT the selected free-production direction)
 ```bash
 # PowerShell example:

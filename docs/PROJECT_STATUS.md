@@ -27,6 +27,13 @@ Repository: https://github.com/Mythrow/BharatMode
 - **Next: owner listens to the audition.** If approved, retain the original synthetic reference and exact transcript privately, then verify Qwen3-TTS 1.7B Base can reproduce that voice on new lines. This test covers one short audition. Recurring compute access, full-script throughput, pronunciation review, reference consistency, and production integration are pending.
 - Earlier GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) still records a separate runner startup failure before any step. Work Mode testing used the repository smoke script with a pinned local snapshot, a fixed seed, and staged float32 processing. The all-float32 attempt was killed under memory pressure and an INT8 sample failed the transcript check. See [VOICE_DIRECTION.md](VOICE_DIRECTION.md) for settings and timings.
 
+### Caption alignment engineering checkpoint — 23 November 2026
+
+- Built `scripts/align_qwen_words.py` to use a locally installed open-source WhisperX forced aligner on **real finalized narration WAVs**, writing checksum-linked word starts and ends. It rejects missing words, invented words, overlapping/invalid times, and transcript mismatches rather than estimating word times.
+- Built `src/aligned-caption-timing.js` and `src/aligned-captions.jsx` as an **optional** centered word-synced V6 caption overlay. Group timing comes exclusively from a `final-audio-acoustic-alignment` file, never the old simulated demo timings. The approved V6 frame, layout and legacy story renderer were **not changed**.
+- **Tests actually executed here:** eight Python alignment-contract tests, thirteen JS assertions, real reference-WAV header/hash check. All passed. Tests do **not** exercise WhisperX inference or Qwen Base.
+- **Still pending:** run Qwen3-TTS Base on eligible Work Mode compute to verify voice consistency; run WhisperX on the *newly generated Base WAV*; review actual word timing, narrator pronunciation, and render with V6; human publication QA remains required. See [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md).
+
 **Completed and approved by channel owner**
 - Channel name: **Bharat Mode**; tagline: **Big Ideas. Real Progress.**
 - Brand palette: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, Deep Charcoal `#0B1018`.

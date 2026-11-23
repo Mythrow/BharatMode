@@ -20,7 +20,9 @@
 - [x] Implement the official Base-model reference reuse **experiment** (`scripts/qwen_base_voice_test.py`) for new narration lines, with no paid TTS API. Script syntax/CLI tested, **not Base inference**.
 - [ ] **Next:** execute the Base model on permitted Work Mode compute with the private reference, listen for narrator consistency and check pronunciation. Final audible approval is pending.
 - [ ] Verify recurring compute access, Base performance, and full-script synthesis throughput. No owner-side installation is required.
-- [ ] Build self-hosted Qwen speech generation + genuine final-audio word alignment; avoid paid and metered speech APIs.
+- [ ] Build self-hosted Qwen speech generation. The actual **Qwen Base voice-consistency inference** remains blocked in this non-Work chat; no new sample was generated here.
+- [x] Implement the free local **WhisperX acoustic-alignment data contract** and V6 real-timestamp caption overlay, with 8 Python + 13 JS assertions passing. [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md) explains integration. This is code-level validation only, **not successful WhisperX inference**.
+- [ ] Execute genuine word alignment on an actual finalized Base-generated WAV, verify transcript/"PARAM" pronunciation and word timing, then wire the overlay into general-story production rendering.
 - [ ] Integrate V6 movement, grouped captions and actual word-aligned narration into the general story renderer.
 - [ ] Three **distinct narratives**: an invention/how-it-works; an underreported measurable achievement; a person-led or community story.
 - At least one ivory, one charcoal and one (short) saffron-feature scene across pilots.

@@ -34,7 +34,8 @@
     "motion:preview:v5": "remotion render src/index.jsx BharatMotionPreviewV5 out/bharat-motion-preview-v5.mp4 --codec=h264",
     "motion:timing:check:v6": "node scripts/test-motion-v6-timing.mjs",
     "template:check": "node scripts/test-approved-template.mjs",
-    "voice:reference:test": "python scripts/test_qwen_reference.py"
+    "voice:reference:test": "python scripts/test_qwen_reference.py",
+    "alignment:check": "python -m unittest discover -s scripts -p test_align_qwen_words.py && node scripts/test-aligned-caption-timing.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

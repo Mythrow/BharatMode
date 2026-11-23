@@ -52,6 +52,12 @@ Earlier GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/a
 - For Work Mode execution (no device setup for the owner): place the **private audition WAV** in the cloud workspace, then run `python scripts/qwen_reference.py --audio <private-ref-path>`, and when official Base weights are available run `python scripts/qwen_base_voice_test.py --reference <private-ref-path> --model <local-base-model-directory> --device cpu`. Output is `out/qwen-base/narrator-consistency.wav`, never committed. A successful run still requires hearing and transcript/voice comparison before final narrator approval.
 - Current audible QA concern: the offline transcript rendered `PARAM` as "Parum"; fix pronunciation if audible, regenerate a fresh reference and update its checksum rather than silently changing transcript metadata.
 
+## Caption integration code checkpoint (23 November 2026)
+
+A verified, unmodified original narrator reference WAV remains available privately, and the Qwen3 Base synthesis experiment is checked into `scripts/qwen_base_voice_test.py`. **No Base-model output audio or demonstrated voice consistency yet.**
+
+Added `scripts/align_qwen_words.py` for a future **real acoustic WhisperX alignment** run on the finalized narration WAV. It validates exact text-word matches and timestamps and saves audio SHA-256 in the alignment metadata. `src/aligned-captions.jsx` consumes that measured alignment, preserving the approved centered V6 caption presentation; `src/aligned-caption-timing.js` rejects demo/estimated timings. Tests: 8 Python cases plus 13 JS assertions passing. **The alignment model itself has not run; the renderer has not been fully migrated.** See [AUDIO_ALIGNMENT.md](AUDIO_ALIGNMENT.md).
+
 ## Integration and quality gates — not yet implemented
 
 1. Review the Work Mode audition. On approval, retain it privately with its transcript and verify the Qwen3-TTS Base consistency workflow. Check full-script throughput and recurring compute access without unapproved charges.
