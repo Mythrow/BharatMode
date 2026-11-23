@@ -2,14 +2,14 @@
 
 **THIS IS THE CANONICAL RESUME POINT.**
 
-Last verified: **23 November 2026**. Work Mode generated and technically validated a Qwen3-TTS Base narrator-consistency sample. Consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
+Last verified: **23 November 2026**. Work Mode rendered and validated the private BM-0003 pilot. Consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
 
 ## What the project is
 **Bharat Mode** is a research-led, faceless YouTube Shorts channel highlighting verified Indian discoveries, inventions, builders, science, technology and meaningful national progress. Content should find underreported stories without sensationalizing or claiming unsupported "firsts". Voice, evidence and readable vertical animation are core to the product.
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — V6 visuals and narrator approved; paid MUSIC-06 selected; first BM-0003 voice and V6 pilot NEXT
+## Current stage — V6 visuals and narrator approved; paid MUSIC-06 selected; BM-0003 V6 pilot ready for private review
 
 ### MUSIC-06 soundtrack mix APPROVED — Option B, 23 November 2026
 
@@ -19,6 +19,13 @@ Repository: https://github.com/Mythrow/BharatMode
 - [config/music.json](../config/music.json) now holds `approvedMix` as the **single source of truth**; `scripts/preview_signature_mix.py` reads Option B directly so future technical review mixes do not accidentally fall back to old A. Final mobile-speaker and complete BM-0003 MP4 loudness QA still pending. **No need to re-ask for music-volume selection.**
 
 
+
+### BM-0003 private review cut — 23 November 2026
+
+- Generated and integrity-checked all six scenes with the official pinned Qwen3-TTS 1.7B Base checkpoint and the checksum-verified approved narrator. The initial CPU run was killed before synthesis. Disk-backed, unquantized float32 talker weights let the retry finish on permitted Work Mode CPU compute. Scene narration durations: 6.48, 6.8, 6.16, 5.6, 8.48, 6.32 seconds. Peak process RSS across scenes: 6.54 GiB.
+- Independently checked speech with offline Whisper Tiny English and Whisper Base English. Verified dates, names, GPU model and count, and the order-value band. Real WhisperX English alignment produced 100 checksum-linked word timings from the final scene WAVs. Owner listening and pronunciation review remain open.
+- Verified the private MUSIC-06 master hash and mixed the owner-approved Option B: voice 88, bed 55 between speech and 32 while ducked, with a 24 ms attack and 280 ms release. Measured mix peak: 0.770. The storyboard's nominal durations were replaced by the actual recordings plus scene-boundary spacing.
+- Rendered a 41.50-second, 1080×1920, 30 fps H.264/AAC private MP4 using the approved V6 frame and real-alignment caption overlay. The frozen V6 template is unchanged. SHA-256: `537d2feeac41f15516a8e0d0f99ea3332495708db0254244e14aea7ee0080b89`. The cut is ready for owner phone review and has not been published.
 
 ### Music loudness review requested — 23 November 2026
 

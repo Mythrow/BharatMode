@@ -137,7 +137,30 @@ def run() -> None:
         # Keep the checkpoint embedding table in its original precision and
         # widen only the lookup results, as in an all-float32 forward pass.
         talker.model.text_embedding = None
-        talker.float()
+        storage = os.environ.get("BM_QWEN_FLOAT32_CACHE")
+        if storage:
+            cache = Path(storage)
+            cache.mkdir(parents=True, exist_ok=True)
+            print("Preparing disk-backed float32 talker parameters", flush=True)
+            for name, parameter in talker.named_parameters():
+                if not parameter.is_floating_point() or parameter.dtype == torch.float32:
+                    continue
+                target = cache / f"{name}.f32"
+                size = parameter.numel()
+                if not target.is_file():
+                    partial = target.with_suffix(".part")
+                    dest = torch.from_file(str(partial), shared=True, size=size, dtype=torch.float32)
+                    with torch.no_grad():
+                        dest.reshape(parameter.shape).copy_(parameter)
+                    partial.replace(target)
+                dest = torch.from_file(str(target), shared=False, size=size, dtype=torch.float32)
+                parameter.data = dest.reshape(parameter.shape)
+            for module in talker.modules():
+                for name, value in module.named_buffers(recurse=False):
+                    if value.is_floating_point():
+                        setattr(module, name, value.float())
+        else:
+            talker.float()
         talker.model.text_embedding = text_embedding
         text_embedding.register_forward_hook(lambda _module, _inputs, out: out.float())
         del talker, text_embedding

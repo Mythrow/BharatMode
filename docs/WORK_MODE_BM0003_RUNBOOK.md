@@ -1,6 +1,15 @@
 # Work Mode production handoff — BM-0003 (L&T Chennai AI infrastructure)
 
-**Prepared:** 23 November 2026. **Stage:** source-checked six-scene script drafted and original MUSIC-06 voice-ducking test generated; **full Qwen narration, real alignment and V6 video not generated yet.**
+**Prepared:** 23 November 2026. **Stage:** private V6 pilot rendered and technically verified. Owner phone review remains pending.
+
+### BM-0003 private review cut — 23 November 2026
+
+- Generated and integrity-checked all six scenes with the official pinned Qwen3-TTS 1.7B Base checkpoint and the checksum-verified approved narrator. The initial CPU run was killed before synthesis. Disk-backed, unquantized float32 talker weights let the retry finish on permitted Work Mode CPU compute. Scene narration durations: 6.48, 6.8, 6.16, 5.6, 8.48, 6.32 seconds. Peak process RSS across scenes: 6.54 GiB.
+- Independently checked speech with offline Whisper Tiny English and Whisper Base English. Verified dates, names, GPU model and count, and the order-value band. Real WhisperX English alignment produced 100 checksum-linked word timings from the final scene WAVs. Owner listening and pronunciation review remain open.
+- Verified the private MUSIC-06 master hash and mixed the owner-approved Option B: voice 88, bed 55 between speech and 32 while ducked, with a 24 ms attack and 280 ms release. Measured mix peak: 0.770. The storyboard's nominal durations were replaced by the actual recordings plus scene-boundary spacing.
+- Rendered a 41.50-second, 1080×1920, 30 fps H.264/AAC private MP4 using the approved V6 frame and real-alignment caption overlay. The frozen V6 template is unchanged. SHA-256: `537d2feeac41f15516a8e0d0f99ea3332495708db0254244e14aea7ee0080b89`. The cut is ready for owner phone review and has not been published.
+
+
 
 ## Non-negotiable context
 
