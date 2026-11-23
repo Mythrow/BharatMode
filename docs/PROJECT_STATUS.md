@@ -9,22 +9,32 @@ Last verified: **23 November 2026**. Work Mode generated and technically validat
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — V6 visuals, Qwen narrator and MUSIC-06 track selected; soundtrack licensing and mixed-video QA next
+## Current stage — V6 visuals and narrator approved; paid MUSIC-06 selected; first BM-0003 voice and V6 pilot NEXT
+
+### BM-0003 — story/audio preparation completed 23 November 2026
+
+- **Owner-selected first new content:** `BM-0003`, L&T's **23 November 2026** additional Chennai NVIDIA B300 GPU order. Re-verified L&T's **23 November** release and separate **13 August** 10,000-GPU plan. [Six-scene script](../stories/lt-chennai-ai-cluster-order.json) drafted, **48 seconds provisional**, clearly distinguishes newly announced order from planned installed capacity. Linked into the permanent [content registry](../content/registry.json) and creative queue. No duplicate ID or published video.
+- **MUSIC-06 licensing:** owner confirmed **paid ElevenLabs Music plan** at generation. Official [9 October 2026 Music Terms](https://elevenlabs.io/music-terms) allow ordinary monetized YouTube audiovisual synchronization without mandatory attribution on Starter-or-higher paid tiers. Exact individual tier/generation receipt not independently inspected; do not redistribute as a standalone music library.
+- **Real preview mix created:** original private MUSIC-06 MP3 and existing approved Qwen voice reference were SHA-verified; 20-second stereo ducked music+voice preview generated, peak 0.821 before encoding, no clipping. It contains the **old approved narrator audition, NOT BM-0003 story narration**; phone and full-story mix QA pending.
+- **Offline Qwen execution plan prepared:** `scripts/produce_story_audio.py` dry-run produces six exact scene commands using the official pinned Base model. Six Python contract tests passed. The **actual** full BM-0003 WAVs and WhisperX alignment have **not run**; 5.8 GiB chat RAM is below the previously measured 7.68 GiB Qwen Base peak.
+- **NEXT:** run real scene narration/ASR/acoustic alignment on permitted free Work Mode compute; pair with MUSIC-06 and owner-approved V6 visual frame; deliver a first complete voiced MP4 for owner review. [Runbook](WORK_MODE_BM0003_RUNBOOK.md). No paid TTS credits/API/compute, no publishing without final sign-off.
+
+### Previously selected music master — MUSIC-06 (archival checkpoint)
 
 ### MUSIC-06 signature master selected — 23 November 2026
 
 - User approved their uploaded `techno-thriller-final.mp3` for Bharat Mode. Exact original MP3 stored privately at `BharatMode/music/techno-thriller-final.mp3` in ChatGPT Library, SHA-256 `adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9`, 54.99 seconds, stereo 44.1 kHz MP3 192 kbps. Original master is **not** public Git media. Details in [config/music.json](../config/music.json) and [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md).
 - Use as the recognizable default for first ~5–10 Shorts with varied sections, levels, cuts and Qwen narration ducking. Later maintain 2–3 related textures to avoid repetitive identical soundtracks. MUSIC-01–05 are superseded; do not re-request selection.
-- **Important:** ElevenLabs Music plan/source and any required attribution are **not yet verified**. The exact upload is owner-selected for private production trials, **not yet cleared for public/monetized uploads**. Current ElevenLabs Music Terms allow online commercial use subject to tier; Free attribution may apply. Record provenance before publication.
+- **Updated after this selection:** owner confirmed paid ElevenLabs Music plan; official current terms allow ordinary commercial YouTube video synchronization without attribution for paid tiers. The exact account tier/receipt was not independently inspected. Final mixed-video QA and publication permission still pending.
 - The existing `public/music/ambient.wav`, original SFX and approved V6 visual template remain untouched. Next: mixed BM-0003 pilot with final voice alignment, licensed soundtrack verification and phone QA.
 
 
 
-### Latest music audition — MUSIC-05 modern melodic techno, 23 November 2026
+### Historical/superseded audition — MUSIC-05 melodic techno, 23 November 2026
 
 - Owner rejected the MUSIC-04 hip-hop feel and wants **modern melodic techno**, with a **deeper low/mid synth melody and prominent bassline**, not high-key keyboard notes.
 - Created **MUSIC-05 Deep Current**, an original 30.968-second, 124 BPM, four-on-the-floor F-minor techno candidate. Music-only and approved-Qwen-narrator-mixed WAVs/MP3s were generated, with stereo PCM16 WAV readback and no clipping; exact SHA hashes and code in [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md) and `scripts/generate_melodic_techno_audition.py`.
-- **Owner approval PENDING** for MUSIC-05; keep V6, approved narrator and provisional music/SFX masters unchanged. **NEXT:** owner reviews the new bass/melody/beat balance; then develop final looping score, SFX and narration-first mix.
+- **Superseded:** owner subsequently chose the separate paid ElevenLabs MUSIC-06 techno-thriller recording. V6 and approved narrator remain unchanged; MUSIC-05 was not adopted.
 
 
 ### Historical MUSIC-04 lo-fi audition — superseded by MUSIC-05
@@ -38,11 +48,11 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ### New soundtrack selection checkpoint — 23 November 2026
 
-- **Music is NOT yet owner-approved.** The checked-in `public/music/ambient.wav` and `public/sfx/*.wav` are **starter audio placeholders**, not finalized channel music.
+- **Historical, pre-MUSIC-06 checkpoint:** old repository `public/music/ambient.wav` and `public/sfx/*.wav` were starter placeholders; the owner later selected MUSIC-06 as the new signature soundtrack, while production integration remains pending.
 - Created three original, no-subscription procedural 20-second music candidates: `MUSIC-01 Quiet Momentum` (understated warm editorial), `MUSIC-02 Curious Discovery` (airy science-optimism), and `MUSIC-03 Built Forward` (restrained engineering momentum). Each has an instrumental-only WAV and an audition mix with the exact **approved private Qwen3 narrator**. Three narrated MP3 previews also generated for convenient listening in this chat.
 - All six WAV previews were generated and checked as stereo 24 kHz PCM16, 20 seconds, below clipping; Python generator syntax and an instrumental-only run without a private voice passed. No preview has been **human auditioned/approved** yet; no long seamless looping/music loudness phone QA or final SFX identity has been verified.
 - Composer source: [generate_music_auditions.py](../scripts/generate_music_auditions.py); editorial options and approval criteria: [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md). Preview binaries remain untracked, and **all existing production music/SFX masters and the approved V6 frame are unchanged**.
-- **NEXT:** owner listens to MUSIC-01/02/03 with narrator and chooses a core direction (or blend). Then finalize production-length theme and restrained stinger, measure actual narration ducking/phone intelligibility, and only then replace or supplement provisional tracks. Continue BM-0003 L&T story after music identity is approved.
+- **Superseded:** owner completed music selection with MUSIC-06. No further MUSIC-01/02/03 auditions needed. Work on actual BM-0003 narration and V6 integration.
 
 
 
@@ -50,7 +60,7 @@ Repository: https://github.com/Mythrow/BharatMode
 
 - **Single source of truth:** [Content Log](../content/CONTENT_LOG.md) (human-readable boards: Idea, In Progress, Published), [Canonical registry JSON](../content/registry.json), and [one research sheet per ID](../content/research/). Every candidate and completed Short retains a permanent, never-recycled `BM-####` ID. See [CONTENT_PIPELINE.md](CONTENT_PIPELINE.md).
 - **Imported existing work:** `BM-0001` PARAM Rudra (In Progress); `BM-0002` ICMR 100 tech-transfer deals (Idea, despite having an unvoiced storyboard); `BM-0003` L&T's **23 Nov 2026 new NVIDIA B300 Chennai order** (**In Progress**, owner chose to trial; **not published**); `BM-0004` IIT Madras 22 Nov sleep/autism labs (Idea).
-- Story briefs `param-rudra` and `icmr-tech-transfer` now have matching `story.contentId`; the L&T trial has [its own dated original-source research](../content/research/BM-0003.md), **no production draft or final upload yet**. Keep the legacy `publishing/queue.json` for already-written story slugs only, not as the content registry.
+- Story briefs `param-rudra`, `icmr-tech-transfer` and now `lt-chennai-ai-cluster-order` match their permanent content IDs; the selected [BM-0003 dated research](../content/research/BM-0003.md) and 48-second provisional storyboard exist. No full Qwen story narration or video upload yet. Keep the legacy `publishing/queue.json` for already-written story slugs only, not as the content registry.
 - `scripts/content-registry.mjs` allocates IDs, searches all stages, enforces duplicate event/source/title and same-topic follow-up checks, validates stage transitions, and generates the content log. **Fourteen local automated tests passed**, including no deletion/reuse, duplicate intake, transition/published gates, cross-link requirements and stale-log detection. CI now checks the registry (note: unrelated GitHub Actions runner startup issues remain possible).
 - **Editorial rule:** every daily candidate is compared against **all IDs including Published**. New developments in previously covered topics need a distinct event, related ID and explicit reason. A topical or semantic overlap still requires human editorial assessment; mechanical dedupe isn't perfect.
 
@@ -60,7 +70,7 @@ Repository: https://github.com/Mythrow/BharatMode
 - **Owner reviewed both WAVs and explicitly approved their similar, consistent voice.** This finalizes the identity of Bharat Mode's original Qwen3 synthetic documentary narrator; **do not ask for another A/B approval**.
 - Reference SHA: `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c` (7.6s, 24 kHz mono PCM16). Exact private reference transcript and VoiceDesign model revision are frozen in `config/narrator-reference.json`. Qwen3-TTS 1.7B **Base** revision `fd4b254389122332181a7c3db7f27e918eec64e3`, new-line test SHA `c2a323ced010a718a90e03bdd365fe9b15a2d8b5ff6446ab71302cf6b0d6688b` (8.8s; 22/22 ASR words; 0.724 embedding cosine).
 - **Approved voice identity ≠ all future takes approved.** The original `PARAM` pronunciation remains unverified: offline ASR transcribed "Parum". Check proper names, all spoken words and loudness for each final story.
-- **NEXT:** use permitted Work Mode CPU to generate full, fact-reviewed PARAM Rudra narration from the approved private synthetic reference, evaluate full-script throughput and pronunciation; run actual WhisperX alignment on each finalized WAV; integrate into existing locked V6 layout and QA the first complete MP4. No paid APIs or voice credits.
+- **Active pilot is now BM-0003 L&T Chennai** using the approved voice reference; generate its full script on permitted Work Mode CPU, measure pronunciation and throughput, align real WAVs, and integrate locked V6. PARAM Rudra BM-0001 remains a separate in-progress earlier pilot, not the current daily-story production target.
 
 
 ### Verified Base narrator-consistency test — 23 November 2026

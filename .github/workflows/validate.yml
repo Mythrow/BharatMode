@@ -14,6 +14,7 @@ jobs:
       - run: node scripts/content-registry.mjs check
       - run: node scripts/test-content-registry.mjs
       - run: node scripts/validate-stories.mjs
+      - run: python3 -m unittest discover -s scripts -p test_bm0003_production.py
       - run: node scripts/check-brand.mjs
 
       - run: node scripts/check-logo-assets.mjs

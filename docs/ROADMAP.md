@@ -1,6 +1,6 @@
 # Bharat Mode — Launch milestones
 
-**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** the owner approved the Qwen3-TTS Base narrator's audible consistency on 23 November 2026; generate full PARAM Rudra narration, verify actual word timing and pronunciation, integrate with locked V6. See [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
+**Latest checkpoint and new-chat resumption:** [PROJECT_STATUS.md](PROJECT_STATUS.md) is the authoritative current-status/handoff file. **Next active milestone:** BM-0003 L&T script drafted and owner-selected paid-tier MUSIC-06 mix demo created; generate and validate actual BM-0003 Qwen Base narration, real word alignment and locked V6 review MP4. See [issue #5](https://github.com/Mythrow/BharatMode/issues/5) and [VOICE_DIRECTION.md](VOICE_DIRECTION.md). The V6 visual design is approved, but publishable voiced video production remains unfinished.
 
 **Official palette frozen:** 22 November 2026. See [BRAND.md](BRAND.md). This is the execution sequence, not a promise of unattended publishing.
 
@@ -11,11 +11,17 @@
 - [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner approved; [x] source and recommended-size export in Git with SHA verification; [ ] test YouTube mobile/desktop crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
-## Milestone 2 — Approved visual template (COMPLETE); MUSIC-06 owner-selected (rights/mix pending); three polished pilot Shorts
+## Milestone 2 — V6 visuals and narrator approved; MUSIC-06 owner-selected / paid-tier sync rights reviewed; first BM-0003 voiced pilot NEXT
+
+- [x] Owner confirmed MUSIC-06 was generated on a **paid ElevenLabs Music plan**; confirmed [9 Oct 2026 Music Terms](https://elevenlabs.io/music-terms) allow ordinary commercial YouTube-video music synchronization without paid-tier attribution. Exact account tier/receipt not independently inspected.
+- [x] Actually created 20s **MUSIC-06 + approved synthetic Qwen voice** mix with automated ducking and verified source SHA checks; no clipping. Historical reference speech only, not BM-0003 narration.
+- [x] Drafted source-checked **BM-0003 six-scene story** (~48s provisional), linked research, permanent content registry, editorial queue, and separate Qwen generation plan. **Six offline production tests passed**.
+- [ ] **NEXT:** execute genuine full BM-0003 Qwen Base narration on free Work Mode CPU, independently validate spoken words, run actual WhisperX forced alignment, integrate owner-approved V6 with licensed music and create first phone-testable MP4. [Runbook](WORK_MODE_BM0003_RUNBOOK.md).
+
 
 - [x] Owner selected supplied **MUSIC-06 Techno Thriller** as the signature background track. Private original MP3 is in ChatGPT Library with SHA-256 recorded in [config/music.json](../config/music.json); no public Git media upload.
 - [x] Define reuse rule: same main sound for first 5–10 videos with varied cue excerpts/edits and narration ducking; later related variants to avoid identical repeated playback.
-- [ ] **NEXT:** verify the source account/tier and commercial/attribution requirements of the ElevenLabs-associated track, then make a BM-0003 test mix and check speech/phone loudness. Owner selection ≠ YouTube rights clearance.
+- [x] Owner reported a paid ElevenLabs Music plan and ordinary YouTube audiovisual media rights/no paid-tier attribution were verified against current terms; 20s music-and-approved-Qwen narrator mix test generated. **Story narration, complete video and phone/rights final QA remain pending.**
 
 
 - [x] Generate **three original music auditions** and 20-second narrator-mixed comparisons without paid services or third-party music samples. [Music & sonic identity decisions](MUSIC_DIRECTION.md): MUSIC-01 Quiet Momentum, MUSIC-02 Curious Discovery, MUSIC-03 Built Forward. Procedural generator committed; audio demos remain outside Git.
@@ -23,7 +29,7 @@
 - [x] Create **MUSIC-04 Lo-Fi Motion**, an original 92 BPM / 31.3-second swung beat with Rhodes melody and a Qwen-narrator-mixed audition, plus reproduction source and checksums. Both WAVs pass audio integrity checks; no paid services or samples.
 - [x] Owner rejected MUSIC-04's hip-hop rhythm; new brief: **modern melodic techno with deep basslines and low/mid melody, not high keys**.
 - [x] Created original **MUSIC-05 Deep Current** (30.968 s, 124 BPM, F-minor four-on-the-floor, rolling bass) and a ducked comparison with the approved Qwen narrator. Both WAVs generated without paid services, clip checks passed; [music direction + source](MUSIC_DIRECTION.md).
-- [ ] **NOW:** owner listens to MUSIC-05 and requests refinements or approves it. Nothing replaces provisional production audio until final music is approved.
+- [x] **Superseded:** owner instead selected the separate MUSIC-06 dark techno-thriller master. Do not ask for another MUSIC-05 review.
 - [ ] Arrange the selected music into complete script-length/loop-ready variants; finalize subtle transitions/`Mode: ON` identity sound and mix narrator-first. Test levels and mobile playback; only then replace starter `public/music/ambient.wav` and provisional SFX, preserving source and rights.
 
 - [x] Owner approved the V6 visual/motion design with symmetrical chapter progress (84px both sides). Reusable frame in `src/approved-shorts-template.jsx`.
@@ -49,7 +55,8 @@
 - [x] **Permanent content tracker live**: [Content Log](../content/CONTENT_LOG.md) + source registry + four linked research sheets. Unique `BM-####` IDs; strict **Idea → In Progress → Published**, never recycle or delete IDs.
 - [x] Intake and duplicate guard CLI, stage-history validation, published YouTube URL/date/owner approval gates, 14 passing local tests and CI integration. Daily discovery must search the registry before proposing another story.
 - [x] **23 Nov L&T Chennai AI/B300 additional order selected as `BM-0003` / In Progress** for trial video; factual event/source context in [BM-0003 research](../content/research/BM-0003.md).
-- [ ] Draft and source-verify BM-0003 script, then use approved Qwen narrator / locked V6. Do not imply the planned 10,000-GPU facility is fully operational or that the new contract has an exact disclosed value.
+- [x] **BM-0003 storyboard drafted and sources reconfirmed**, six scenes/~48s provisional. Order's value is a **company-defined band** and 10,000 GPUs are a **previously planned cluster**, not verified live equipment. [Script](../stories/lt-chennai-ai-cluster-order.json).
+- [ ] Generate actual Qwen Base narration per scene, run independent ASR/WhisperX, add V6 word captions/music and phone-review a full Short.
 
 - Source registry (ISRO, labs, science agencies, research papers, statistical reports, regional reporting).
 - Script and source review checklist, accurate stage labels, fact review trail.
@@ -75,4 +82,4 @@
 - No unsupported factual claims, generated images passed off as documentary footage, or exaggerated "world first" claims.
 
 ## Immediate next production milestone
-The Qwen narrator is approved. Next generate full PARAM Rudra story WAV(s), check pronunciation and transcript, run actual word alignment, and integrate the approved V6 renderer. Review one complete evidence-backed Short on a phone, then produce two differently structured pilots. Generated narration and MP4s stay outside Git.
+The Qwen narrator and MUSIC-06 signature score are approved selections. First complete **BM-0003** L&T story WAVs, check words and source qualifications, run real alignment, and integrate the locked V6 renderer. PARAM Rudra remains a separate later pilot. Review one complete evidence-backed Short on a phone, then produce two differently structured pilots. Generated narration and MP4s stay outside Git.

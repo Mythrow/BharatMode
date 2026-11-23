@@ -18,9 +18,17 @@ npm run render:sample
 ```
 Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish the silent starter.
 
-## Music status and review gate
+## BM-0003 pilot workflow — offline voice and selected score, 23 November 2026
 
-**Music has not yet been owner-approved.** The tracked music/SFX listed below are starter prototypes. Three separate 20-second original music directions with approved Qwen narrator comparisons were created for review on 23 Nov 2026. See [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md) and `scripts/generate_music_auditions.py`. Do not mistake a generated demo for the final loop or full-song mixing. The owner will select a sound direction before the first publishable BM-0003 trial; existing master audio and V6 visual code remain untouched. The demos are external, untracked review artifacts.
+- Owner selected **MUSIC-06** (private MP3, checksum in `config/music.json`) and confirmed a **paid ElevenLabs Music plan**. Current [Music Terms](https://elevenlabs.io/music-terms) permit commercial YouTube video synchronization without attribution on paid plans. Exact tier/receipt not independently inspected. Do not upload or redistribute stand-alone music files.
+- First new story is [BM-0003 L&T Chennai](../content/research/BM-0003.md), source-checked six-scene script [here](../stories/lt-chennai-ai-cluster-order.json), **48 seconds provisional**, status In Progress. No actual voiced story audio and `hasVoice=false`.
+- A genuine **20-second MUSIC-06 + approved old Qwen reference** narration ducking demo has been generated using `scripts/preview_signature_mix.py`; input SHAs and peaks verified. This demo is **not the BM-0003 voice** or completed audio mastering.
+- `scripts/produce_story_audio.py` generates per-scene commands from the script, pinning the offline Base model and requiring original approved narrator reference. Six offline contract tests pass; full Qwen synthesis requires capable permitted Work Mode CPU. See [BM-0003 production runbook](WORK_MODE_BM0003_RUNBOOK.md).
+- Do not mark published or create synthetic video timestamps until real WAVs, transcript, alignment, selected music, approved V6 rendering and phone QA are complete.
+
+## Previous music audition history (archival)
+
+**Historical:** music had not been owner-approved when the early procedural demos were created. **MUSIC-06 was subsequently owner-selected.** The tracked music/SFX listed below are starter prototypes. Three separate 20-second original music directions with approved Qwen narrator comparisons were created for review on 23 Nov 2026. See [MUSIC_DIRECTION.md](MUSIC_DIRECTION.md) and `scripts/generate_music_auditions.py`. Do not mistake a generated demo for the final loop or full-song mixing. The owner will select a sound direction before the first publishable BM-0003 trial; existing master audio and V6 visual code remain untouched. The demos are external, untracked review artifacts.
 
 ## Tracked music and SFX
 
@@ -40,7 +48,7 @@ Use the Apache-2.0 [Qwen3-TTS-12Hz-1.7B-VoiceDesign model](https://huggingface.c
 
 **Hard cost boundary:** no paid voice subscriptions, no TTS API charges and no limited or renewable speech credits. Downloadable weights are unmetered for local inference, but compute is necessary. Qwen 1.7B is substantially heavier than Kokoro; **no free remote GPU budget has been verified**. Do not automatically buy cloud resources or ask the channel owner to run code.
 
-**Completed:** `scripts/qwen_base_voice_test.py` ran successfully offline in Work Mode (8.8-second WAV; 22/22 ASR words; 0.724 speaker cosine; 7.68 GiB peak RSS; 103.5 seconds warm-model test). Owner approved auditory consistency. **Next:** generate complete PARAM Rudra narration with the locked private reference, verify proper names and spoken transcript, run real word alignment on final audio, and integrate the approved V6 renderer, original SFX/music and phone QA. `npm run voice` still invokes the old OpenAI-only experimental generator and does not represent the Qwen pipeline. Generated audio and MP4s must not be committed.
+**Completed:** `scripts/qwen_base_voice_test.py` ran successfully offline in Work Mode (8.8-second WAV; 22/22 ASR words; 0.724 speaker cosine; 7.68 GiB peak RSS; 103.5 seconds warm-model test). Owner approved auditory consistency. **Next active story:** BM-0003 L&T Chennai; generate its complete Qwen narration from the same locked reference, verify named entities and numbers, run real alignment, and integrate V6 plus selected MUSIC-06. PARAM Rudra is separate earlier pilot. `npm run voice` still invokes the old OpenAI-only experimental generator and does not represent the Qwen pipeline. Generated audio and MP4s must not be committed.
 
 ## Word-aligned captions — engineering foundation (not finished)
 
