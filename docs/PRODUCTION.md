@@ -30,13 +30,13 @@ These assets **are committed** and therefore do not need to be generated on ever
 
 ## Approved TTS engine — Qwen3-TTS, open-weight (23 November 2026)
 
-The owner preferred the Qwen3-TTS online demo over Kokoro and approved Qwen3-TTS as the production **engine**, subject to establishing a consistent synthetic narrator reference. This is a separate approval from choosing a final, stable voice reference. **No exact reference clip has been saved yet**. The previous Brian recording was a professional-tone inspiration only; vidIQ's credit-bound path is rejected. No Indian accent required.
+The owner preferred the Qwen3-TTS online demo over Kokoro and approved Qwen3-TTS as the production **engine**, subject to establishing a consistent synthetic narrator reference. This is a separate approval from choosing a final, stable voice reference. **An exact 7.6-second reference WAV is available privately and SHA-verified**; it is not committed. See `config/narrator-reference.json` and `scripts/qwen_reference.py`. The previous Brian recording was a professional-tone inspiration only; vidIQ's credit-bound path is rejected. No Indian accent required.
 
 Use the Apache-2.0 [Qwen3-TTS-12Hz-1.7B-VoiceDesign model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign) to design an ORIGINAL narrator and the official documented [Base model + reusable clone prompt](https://github.com/QwenLM/Qwen3-TTS) for consistent repeated production. This uses the channel's own synthetic reference, **not the Brian voice**. Details in [VOICE_DIRECTION.md](VOICE_DIRECTION.md) and `config/voice.json`.
 
 **Hard cost boundary:** no paid voice subscriptions, no TTS API charges and no limited or renewable speech credits. Downloadable weights are unmetered for local inference, but compute is necessary. Qwen 1.7B is substantially heavier than Kokoro; **no free remote GPU budget has been verified**. Do not automatically buy cloud resources or ask the channel owner to run code.
 
-Next implementation: capture/approve synthetic voice reference, verify permitted compute, implement local generation and real audio word alignment, then integrate V6 story/caption rendering and mix audio. `npm run voice` still invokes the old OpenAI-only experimental generator and does not represent the Qwen pipeline. Generated audio and MP4s must not be committed.
+Next implementation: use the verified private synthetic reference to test Qwen3-TTS 1.7B Base voice consistency via `scripts/qwen_base_voice_test.py`, approve the sound after listening, and verify compute. Then implement local generation and real audio word alignment, integrate V6 story/caption rendering and mix audio. The Base experiment is committed but not yet executed against the real Base model. `npm run voice` still invokes the old OpenAI-only experimental generator and does not represent the Qwen pipeline. Generated audio and MP4s must not be committed.
 
 ## Add voice (legacy experimental OpenAI workflow; NOT the selected free-production direction)
 ```bash

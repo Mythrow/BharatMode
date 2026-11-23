@@ -9,20 +9,24 @@
   "language": "English",
   "requireIndianAccent": false,
   "voicePrompt": "A mature male documentary narrator with a deep, warm, resonant voice. Clear international English, natural conversational rhythm, calm confidence and subtle enthusiasm. Professional and engaging without sounding theatrical, robotic or like a news announcer.",
-  "voiceIdentityStatus": "preferred_demo_not_archived",
-  "referenceVoiceAudio": "pending_owner_approved_reference_capture",
+  "voiceIdentityStatus": "engineering_reference_verified_final_listening_approval_pending",
+  "referenceVoiceAudio": "private_Work_Mode_Library_WAV_sha256_0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
   "noCelebrityOrBrianVoiceCloning": true,
   "paidVoiceSubscriptionAllowed": false,
   "paidVoiceAPICallsAllowed": false,
   "expiringCreditServicesAllowed": false,
   "requiresPerGenerationCredits": false,
   "requiresAvailableCompute": true,
-  "remoteComputeAvailability": "not_yet_verified",
-  "synthesizerStatus": "not_implemented",
+  "remoteComputeAvailability": "one_off_Work_Mode_CPU_VoiceDesign_success_Base_not_tested",
+  "synthesizerStatus": "Base_reference_consistency_test_script_implemented_not_run",
   "wordAlignmentStatus": "not_implemented",
   "publicationRightsStatus": "model_license_verified_check_all_dependencies_and_publication_rights",
   "previousPreferences": {
     "brian": "liked professional delivery; vidIQ credit usage rejected for production",
     "kokoro": "fallback only; superseded as preferred engine after owner listened to Qwen3 TTS"
-  }
+  },
+  "referenceManifest": "config/narrator-reference.json",
+  "referenceAudioSha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
+  "referenceAuditionDurationSeconds": 7.6,
+  "publicationVoiceReview": "pending_narrator_listening_and_PARAM_pronunciation_check"
 }

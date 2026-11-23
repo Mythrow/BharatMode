@@ -11,6 +11,15 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Current stage — V6 visuals and Qwen3-TTS engine approved; PARAM Rudra voice audition ready
 
+### Verified working reference + Base test preparation — 23 November 2026
+
+- Continuing with the real 7.6-second Qwen3-TTS audition as a **provisional engineering reference**, not a claim of final narrator listening approval. The owner asked to continue development; final audible voice quality and PARAM pronunciation remain to review before publishing.
+- The original private Work Mode/Library WAV was materialized in the working environment and independently checked: **24 kHz mono PCM16, 7.600 seconds, SHA-256 `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`**, matching the Work record. The WAV remains **outside public Git**.
+- Added `config/narrator-reference.json` with exact audition transcript, model revision and checksum; `scripts/qwen_reference.py` checks the actual private file against the manifest; `scripts/qwen_base_voice_test.py` implements Qwen3-TTS Base synthetic-reference reuse via official `create_voice_clone_prompt` / `generate_voice_clone` APIs, outputting an ignored new-line WAV for comparison.
+- Verified the reference validator against the **real WAV**, and ran five synthetic unit tests (valid case and four rejection cases); `qwen_base_voice_test.py` was syntax/CLI checked but **the Base 1.7B model was not executed** in this session (no model weights or adequate available compute here).
+- **Next engineering execution:** run Qwen3-TTS Base on a suitable Work Mode cloud computer using the private reference, review voice similarity and new-line pronunciation, then proceed with real word alignment and V6 production integration. No local user setup or paid TTS provider.
+
+
 ### Verified Qwen3-TTS Work Mode audition — 23 November 2026
 
 - Downloaded the official 1.7B VoiceDesign weights and speech tokenizer, verified their SHA-256 hashes, and ran inference from local files with Hugging Face offline mode on a CPU-only Work Mode workspace (9.7 GiB reported RAM). No paid compute, metered voice API, subscription, or voice credits were used.
@@ -39,15 +48,14 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Review the PARAM Rudra Qwen3-TTS audition and approve the narrator or request a revised delivery.**
+**NEXT TASK — Execute and review Qwen3-TTS Base voice-consistency audition using the verified reference WAV.**
 
-1. **Qwen3-TTS has been approved as the preferred engine** after the owner listened to its demo and found it better than Kokoro. Use official `Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign` for original voice generation; the exact reference sample from the browser is not available to the repository. Preserve the no-paid-subscription, no-voice-credits requirement. No Indian accent required.
-2. On approval, preserve the original synthetic audition WAV and exact transcript privately. Verify Qwen’s VoiceDesign → create_voice_clone_prompt → Base workflow on fresh sample lines for consistent recurring identity. Never clone Brian or another real person's voice.
-3. Check Qwen3-TTS Base memory and speed, full-script throughput, and recurring access to Work Mode or another permitted host. One CPU run establishes audition feasibility on this workspace. The owner does not run tools locally.
-4. Implement Qwen synthesis, local accurate word alignment from **final audio**, and migrate `src/short.jsx` to V6 dynamic scenes/captions; mix original music/SFX with narration.
-5. Render and phone-QA one fact-checked publishable pilot; then two structurally different pilots. Commercial model/dependency licenses and rights-cleared documentary media must be checked.
+1. Original Qwen VoiceDesign reference is **verified** and tracked by hash/metadata in `config/narrator-reference.json`; the WAV itself is private and outside Git. **Final audible narrator approval and PARAM pronunciation check remain pending.**
+2. On a capable Work Mode cloud computer, use `scripts/qwen_reference.py` to verify the private WAV, then `scripts/qwen_base_voice_test.py` with official Qwen 1.7B Base weights to generate **new, different lines** using that exact reference. Review whether voice quality/identity carries over and capture timing/memory usage. Base inference is not yet verified.
+3. If the Base voice is consistent, implement repeatable narration from actual story text, phonetic pronunciation QA and **forced word-level alignment** into the locked V6 caption system. Do not treat synthetic or estimated word timestamps as real speech timing.
+4. Integrate with `src/short.jsx` (currently legacy), original music/SFX and phone-safe layout; fact-check and phone-review one publishable Short before two other pilots. Never use paid voice APIs, credits or unapproved computing fees.
 
-**Completed this checkpoint:** verified official model download, offline CPU inference, and a real audition WAV in Work Mode. **Pending:** owner approval of voice identity, Base consistency test, recurring compute, production synthesis, forced alignment, integrated renderer, full MP4, and phone review.
+**Completed this checkpoint:** verified the actual privately stored VoiceDesign WAV, committed immutable reference metadata, implemented SHA/audio verification and a Qwen Base generation experiment. **Verified tests:** five reference unit tests and sample/manifest match. **Not completed:** Qwen Base inference, final narrator approval, alignment, V6 story integration, MP4 or phone QA.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 

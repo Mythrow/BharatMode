@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "bharat-mode-qwen3-documentary-v1-candidate",
+  "status": "verified-engineering-reference_pending-owner-listening-approval",
+  "origin": "original-qwen3-tts-voice-design",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "modelRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "producedOn": "2026-11-23",
+  "referenceText": "India is building more of its own supercomputing infrastructure. Meet PARAM Rudra. Here's what the evidence shows.",
+  "language": "English",
+  "audio": {
+    "sampleRateHz": 24000,
+    "channels": 1,
+    "sampleWidthBytes": 2,
+    "durationSeconds": 7.6
+  },
+  "sha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
+  "ownerFinalApproval": false,
+  "pronunciationCheck": "PARAM sounded like 'Parum' to the offline transcriber; requires audible review and possibly rerecording",
+  "privacy": "The reference WAV is deliberately not committed. Retrieve the original 7.6s audition privately from the user's ChatGPT Library/Work artifact; verify SHA before use.",
+  "technicalStatus": "WAV verified against Work Mode report; Base clone test not yet run"
+}

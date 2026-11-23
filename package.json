@@ -33,7 +33,8 @@
     "motion:html:v5": "python3 scripts/build-motion-v5-html.py",
     "motion:preview:v5": "remotion render src/index.jsx BharatMotionPreviewV5 out/bharat-motion-preview-v5.mp4 --codec=h264",
     "motion:timing:check:v6": "node scripts/test-motion-v6-timing.mjs",
-    "template:check": "node scripts/test-approved-template.mjs"
+    "template:check": "node scripts/test-approved-template.mjs",
+    "voice:reference:test": "python scripts/test_qwen_reference.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

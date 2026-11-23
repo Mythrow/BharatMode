@@ -16,7 +16,9 @@
 - [x] Owner clarified non-negotiable voice constraint: **free/open-weight, offline-capable, no paid TTS subscription or expiring/renewable voice credits**. Indian accent not required; owner prefers a deep, professional Brian-like tone.
 - [x] **Qwen3-TTS selected by owner** after hearing Qwen and Kokoro demos. Use 1.7B VoiceDesign (Apache-2.0); Kokoro is the lightweight fallback, not the active choice.
 - [x] Verify official 1.7B VoiceDesign download and offline CPU inference in Work Mode without paid compute or voice credits. Generated the 7.6-second PARAM Rudra WAV with the repository audition inputs and staged float32 inference. A local transcript check recovered all three sentences, with `PARAM` spelled phonetically. The earlier GitHub Actions runner startup failure remains recorded in [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993).
-- [ ] **Next:** owner reviews the PARAM Rudra audition. On approval, retain the WAV and exact transcript privately, record provenance, and test consistent voice generation with Qwen3-TTS 1.7B Base on new lines.
+- [x] Independently verify and preserve the **private VoiceDesign WAV reference by checksum and manifest** (`config/narrator-reference.json`); match 7.6 s, 24 kHz, mono PCM16 and SHA-256. Implement `scripts/qwen_reference.py`; five unit tests pass. The WAV is not stored in Git.
+- [x] Implement the official Base-model reference reuse **experiment** (`scripts/qwen_base_voice_test.py`) for new narration lines, with no paid TTS API. Script syntax/CLI tested, **not Base inference**.
+- [ ] **Next:** execute the Base model on permitted Work Mode compute with the private reference, listen for narrator consistency and check pronunciation. Final audible approval is pending.
 - [ ] Verify recurring compute access, Base performance, and full-script synthesis throughput. No owner-side installation is required.
 - [ ] Build self-hosted Qwen speech generation + genuine final-audio word alignment; avoid paid and metered speech APIs.
 - [ ] Integrate V6 movement, grouped captions and actual word-aligned narration into the general story renderer.
@@ -51,4 +53,4 @@
 - No unsupported factual claims, generated images passed off as documentary footage, or exaggerated "world first" claims.
 
 ## Immediate next production milestone
-Review the Work Mode PARAM Rudra audition first. Once approved, validate the original voice with the Qwen3-TTS Base model and build unmetered self-hosted speech generation, precise word timing, and the full V6 story renderer. Review one complete evidence-backed vertical Short on a phone, then produce two distinctly structured pilots. Generated narration and MP4s stay outside Git.
+The Work Mode PARAM Rudra WAV is now verified as a provisional engineering reference (final listening approval pending). Next, **execute and review the Qwen3-TTS Base reference-consistency test**, then build unmetered self-hosted speech generation, precise word timing, and the full V6 story renderer. Review one complete evidence-backed vertical Short on a phone, then produce two distinctly structured pilots. Generated narration and MP4s stay outside Git.

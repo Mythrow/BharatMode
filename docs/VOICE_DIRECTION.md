@@ -1,7 +1,7 @@
 # Bharat Mode — Qwen3-TTS Voice Direction
 
 **Engine chosen by owner:** 23 November 2026.  
-**Status:** Qwen3-TTS is the approved open-weight engine. Work Mode generated a PARAM Rudra audition for owner review. Reusable voice consistency with Qwen3-TTS Base is pending.
+**Status:** Qwen3-TTS is the approved open-weight engine. The real 7.6-second PARAM Rudra WAV is SHA-verified and retained privately as a working engineering reference. Final audible voice approval, PARAM pronunciation check, and reusable voice consistency with Qwen3-TTS Base are pending.
 
 ## Approved voice decision and constraints
 
@@ -43,6 +43,14 @@ The official Qwen README documents a consistent-designed-narrator path:
 - **Limits:** a single short audition on the available Work Mode CPU, with no new paid compute, paid API, subscription, or voice credits. Voice selection, recurring hosting, the 1.7B Base consistency workflow, and full-script production performance still need verification.
 
 Earlier GitHub Actions [run 45105740993](https://github.com/Mythrow/BharatMode/actions/runs/45105740993) failed twice before setup began. The Actions workflow itself still requires an independent runner check.
+
+## Verified narrator-reference handoff (23 November 2026)
+
+- Materialized the original `bharat-mode-qwen-voice-audition.wav` from the owner's private ChatGPT Library and independently verified **7.600 seconds**, **24,000 Hz**, **mono**, **16-bit PCM**, SHA-256 **`0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`**. The audio remains in private artifacts; Git stores metadata only.
+- `config/narrator-reference.json` stores the precise spoken reference text, model revision, WAV properties, source status, SHA and pronunciation warning. `scripts/qwen_reference.py` rejects tampering, invalid audio format and missing transcripts, using only Python standard library. Five synthetic tests pass, and the actual reference WAV passes verification.
+- `scripts/qwen_base_voice_test.py` implements **official Base APIs**: `create_voice_clone_prompt(ref_audio=..., ref_text=...)` and `generate_voice_clone(voice_clone_prompt=...)` on *new text*. This refers only to an original synthetic voice created for Bharat Mode, **not to third-party Brian recordings**. The script's parsing/syntax was checked; the actual Base model **has not run in this chat's 6 GiB, no-model-download environment**. Work Mode had sufficient resources for a short VoiceDesign test, but recurring Base performance has not been proven.
+- For Work Mode execution (no device setup for the owner): place the **private audition WAV** in the cloud workspace, then run `python scripts/qwen_reference.py --audio <private-ref-path>`, and when official Base weights are available run `python scripts/qwen_base_voice_test.py --reference <private-ref-path> --model <local-base-model-directory> --device cpu`. Output is `out/qwen-base/narrator-consistency.wav`, never committed. A successful run still requires hearing and transcript/voice comparison before final narrator approval.
+- Current audible QA concern: the offline transcript rendered `PARAM` as "Parum"; fix pronunciation if audible, regenerate a fresh reference and update its checksum rather than silently changing transcript metadata.
 
 ## Integration and quality gates — not yet implemented
 
