@@ -1,0 +1,51 @@
+name: Qwen3-TTS original voice smoke test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/qwen-voice-smoke.yml
+      - scripts/qwen-voice-design-smoke.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qwen-voice-smoke
+  cancel-in-progress: true
+
+jobs:
+  voice-design-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      HF_HUB_DISABLE_PROGRESS_BARS: "1"
+      OMP_NUM_THREADS: "4"
+      TOKENIZERS_PARALLELISM: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install CPU-only Qwen3-TTS test dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --no-cache-dir torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --no-cache-dir qwen-tts soundfile numpy
+          python - <<'PYCODE'
+          import torch
+          print('torch=', torch.__version__, 'CUDA available=', torch.cuda.is_available())
+          assert not torch.cuda.is_available()
+          PYCODE
+      - name: Synthesize original short documentary audition (no paid API)
+        run: python scripts/qwen-voice-design-smoke.py
+      - name: Upload generated audio as short-lived CI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bharat-mode-qwen3-tts-voice-audition
+          path: out/qwen-voice-smoke/
+          if-no-files-found: error
+          retention-days: 1

@@ -17,6 +17,7 @@
 - [x] **Qwen3-TTS selected by owner** after hearing Qwen and Kokoro demos. Use 1.7B VoiceDesign (Apache-2.0); Kokoro is the lightweight fallback, not the active choice.
 - [ ] Capture and approve an original **reusable Qwen3 voice reference**, then lock its prompt, reference transcript, private audio location and model revision. No exact sample is yet saved; do not clone Brian.
 - [ ] Verify suitable permitted remote compute for Qwen 1.7B without introducing unapproved charges. The owner will not install or run software locally.
+- [ ] Check the results of the dedicated Qwen3-TTS VoiceDesign CPU smoke test (`.github/workflows/qwen-voice-smoke.yml`) on standard public-repo GitHub Actions. The workflow attempts a short original sample and uploads an ephemeral WAV artifact; no successful sample has been verified yet.
 - [ ] Build self-hosted Qwen speech generation + genuine final-audio word alignment; avoid paid and metered speech APIs.
 - [ ] Integrate V6 movement, grouped captions and actual word-aligned narration into the general story renderer.
 - [ ] Three **distinct narratives**: an invention/how-it-works; an underreported measurable achievement; a person-led or community story.

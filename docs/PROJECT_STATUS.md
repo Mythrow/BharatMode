@@ -40,7 +40,7 @@ Repository: https://github.com/Mythrow/BharatMode
 4. Implement Qwen synthesis, local accurate word alignment from **final audio**, and migrate `src/short.jsx` to V6 dynamic scenes/captions; mix original music/SFX with narration.
 5. Render and phone-QA one fact-checked publishable pilot; then two structurally different pilots. Commercial model/dependency licenses and rights-cleared documentary media must be checked.
 
-**Completed this checkpoint:** owner selected Qwen3-TTS engine; config/docs updated. **Not completed:** captured reference narrator, available compute verification, actual local Qwen sample, voice generation code, forced alignment, integrated renderer, full MP4 or phone review.
+**Completed this checkpoint:** owner selected Qwen3-TTS engine; config/docs updated; added a CPU-only GitHub Actions smoke test to check whether a real original Qwen3 VoiceDesign sample can be generated without voice credits. The test is not evidence that CPU generation has succeeded; inspect its run/artifact separately. **Not completed:** captured reference narrator, available compute verification, actual local Qwen sample, voice generation code, forced alignment, integrated renderer, full MP4 or phone review.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 
