@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "bharat-mode-qwen3-documentary-v1-candidate",
-  "status": "verified-engineering-reference_pending-owner-listening-approval",
+  "status": "owner_approved_original_synthetic_voice_reference",
   "origin": "original-qwen3-tts-voice-design",
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
   "modelRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
@@ -15,8 +15,11 @@
     "durationSeconds": 7.6
   },
   "sha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
-  "ownerFinalApproval": false,
+  "ownerFinalApproval": true,
   "pronunciationCheck": "PARAM sounded like 'Parum' to the offline transcriber; requires audible review and possibly rerecording",
   "privacy": "The reference WAV is deliberately not committed. Retrieve the original 7.6s audition privately from the user's ChatGPT Library/Work artifact; verify SHA before use.",
-  "technicalStatus": "WAV verified against Work Mode report; Base clone test not yet run"
+  "technicalStatus": "Private original WAV hash verified; Qwen Base new-line 8.8s speech validated (22/22 ASR words, 0.724 embedding cosine); owner approved audible consistency",
+  "ownerApprovedOn": "2026-11-23",
+  "ownerApprovalBasis": "Owner compared the original 7.6-second VoiceDesign and the new 8.8-second Base sample, and confirmed they sound similar and consistent on 2026-11-23.",
+  "productionVoiceIdentity": "Approved original synthetic voice, not real-world third-party voice cloning."
 }

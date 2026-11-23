@@ -1,7 +1,16 @@
 # Bharat Mode — Qwen3-TTS Voice Direction
 
 **Engine chosen by owner:** 23 November 2026.  
-**Status:** Qwen3-TTS is the approved open-weight engine. The verified 7.6 s private VoiceDesign reference conditioned a successful 8.8 s Base audition. Technical checks are complete for this pair. Final listening approval and the original `PARAM` pronunciation are open.
+**Status:** Qwen3-TTS is approved as the narrator engine AND the owner has approved the permanent synthetic narrator after A/B listening on 23 November 2026. Proper-name pronunciation, full-story throughput and V6 voice integration remain to verify.
+
+## Final narrator selection — owner-approved 23 November 2026
+
+Owner listened to the original 7.6-second Qwen VoiceDesign reference and the new 8.8-second Qwen Base continuation and confirmed they sound **similar and consistent**. This is approval of the channel narrator's **synthetic voice identity**; each finished story still requires word-for-word, pronunciation and sound-mix QA.
+
+- **Frozen private original reference SHA-256:** `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c`, VoiceDesign revision `5ecdb67327fd37bb2e042aab12ff7391903235d3`; exact transcript in `config/narrator-reference.json`.
+- **Production recurring voice:** `Qwen/Qwen3-TTS-12Hz-1.7B-Base` revision `fd4b254389122332181a7c3db7f27e918eec64e3`, conditioning on that original reference through the Qwen official Base prompt APIs. Audition WAV SHA `c2a323ced010a718a90e03bdd365fe9b15a2d8b5ff6446ab71302cf6b0d6688b`.
+- The model-generated speaker is not Brian or any real-world third-party voice. Do not replace the reference, publicize generated audio in Git, or introduce voice credits.
+- `PARAM` was transcribed as "Parum" in the original by offline ASR; **check the spoken name** in the actual PARAM Rudra pilot and correct it before publishing. Narrator approval doesn't preapprove every proper name.
 
 ## Approved voice decision and constraints
 
@@ -66,7 +75,7 @@ When a real new-line WAV is generated, `scripts/validate_qwen_base_output.py` ch
 
 ## Integration and quality gates — not yet implemented
 
-1. Review both Work Mode WAVs by ear, then lock the narrator and check full-script throughput and recurring compute access.
+1. **DONE:** Owner reviewed both Work Mode WAVs by ear and approved this synthetic narrator. **NEXT:** test full-story throughput, proper-name pronunciation, and recurring Work Mode compute access.
 2. Integrate a Qwen3 voice synthesizer that reads `config/voice.json`, uses the approved reference voice, and produces untracked WAV files. The existing `npm run voice` script still invokes **OpenAI TTS** and must not be mistaken for the approved production provider.
 3. Run local forced alignment on the **actual final rendered speech**, verify words and exact timing, and drive the approved V6 screen-centered, one-line caption animations.
 4. Upgrade `src/short.jsx` to use the frozen V6 frame, measured scene timing, original music and SFX with ducking.
@@ -77,4 +86,4 @@ When a real new-line WAV is generated, `scripts/validate_qwen_base_output.py` ch
 
 - **Brian (vidIQ):** owner liked professional timbre; rejected as a production route because free credits can be exhausted. Preserve style preference only. No additional vidIQ narration generations.
 - **Kokoro-82M:** Apache-2.0, lighter and unmetered when self-hosted; **fallback** if Qwen cannot run acceptably on available permitted compute.
-- **Qwen3-TTS:** owner preferred its audible quality over Kokoro on 23 November 2026. The engine is approved, the engineering reference is saved privately, and the production pipeline is pending.
+- **Qwen3-TTS:** owner preferred its audible quality over Kokoro on 23 November 2026. The engine and synthetic narrator identity are owner-approved; the private reference is SHA-locked and full-story production pipeline remains pending.

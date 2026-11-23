@@ -1,5 +1,5 @@
 {
-  "status": "base_audition_verified_owner_listening_pending",
+  "status": "narrator_approved_full_story_production_pending",
   "approvedOn": "2026-11-23",
   "engine": "qwen3-tts",
   "engineExecution": "self-hosted_unmetered_model_inference",
@@ -9,7 +9,7 @@
   "language": "English",
   "requireIndianAccent": false,
   "voicePrompt": "A mature male documentary narrator with a deep, warm, resonant voice. Clear international English, natural conversational rhythm, calm confidence and subtle enthusiasm. Professional and engaging without sounding theatrical, robotic or like a news announcer.",
-  "voiceIdentityStatus": "engineering_reference_verified_final_listening_approval_pending",
+  "voiceIdentityStatus": "owner_approved_consistent_original_synthetic_narrator",
   "referenceVoiceAudio": "private_Work_Mode_Library_WAV_sha256_0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
   "noCelebrityOrBrianVoiceCloning": true,
   "paidVoiceSubscriptionAllowed": false,
@@ -18,8 +18,8 @@
   "requiresPerGenerationCredits": false,
   "requiresAvailableCompute": true,
   "remoteComputeAvailability": "one_off_Work_Mode_CPU_VoiceDesign_and_Base_verified_recurring_access_pending",
-  "synthesizerStatus": "Base_reference_consistency_test_executed_production_integration_pending",
-  "wordAlignmentStatus": "not_implemented",
+  "synthesizerStatus": "Base_audition_executed_and_owner_approved_full_story_integration_pending",
+  "wordAlignmentStatus": "alignment_code_implemented_actual_acoustic_inference_pending",
   "publicationRightsStatus": "model_license_verified_check_all_dependencies_and_publication_rights",
   "previousPreferences": {
     "brian": "liked professional delivery; vidIQ credit usage rejected for production",
@@ -28,5 +28,20 @@
   "referenceManifest": "config/narrator-reference.json",
   "referenceAudioSha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
   "referenceAuditionDurationSeconds": 7.6,
-  "publicationVoiceReview": "pending_narrator_listening_and_PARAM_pronunciation_check"
+  "publicationVoiceReview": "narrator_identity_approved_story_specific_pronunciation_ASR_mix_QA_pending",
+  "ownerNarratorApproval": {
+    "status": "approved",
+    "date": "2026-11-23",
+    "basis": "Owner compared the original 7.6-second VoiceDesign and the new 8.8-second Base sample, and confirmed they sound similar and consistent on 2026-11-23.",
+    "scope": "voice identity only; every final story still requires pronunciation, transcript and mixing QA"
+  },
+  "repeatableVoiceModelRevision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "baseAudition": {
+    "sampleDurationSeconds": 8.8,
+    "sha256": "c2a323ced010a718a90e03bdd365fe9b15a2d8b5ff6446ab71302cf6b0d6688b",
+    "speakerEmbeddingCosine": 0.724,
+    "ownerAudioComparison": "similar and consistent",
+    "asrWords": "22/22"
+  },
+  "pronunciationStatus": "PARAM_Rudra_manual_review_required_ASR_transcribed_Parum"
 }

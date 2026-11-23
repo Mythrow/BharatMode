@@ -1,12 +1,12 @@
 # Work Mode: Qwen3-TTS Base narrator-consistency test
 
-**Stage:** successful Work Mode Base audition. Owner A/B listening pending. Last updated: 23 November 2026.
+**Stage:** successful Work Mode Base audition; owner-approved consistent narrator. Last updated: 23 November 2026. Kept for reproduction; next active milestone is full-story narration and acoustic alignment.
 
 ## Goal
 
 Generate a **real new-line WAV** using `Qwen/Qwen3-TTS-12Hz-1.7B-Base` conditioned on the channel's **original Qwen3 VoiceDesign synthetic reference**. Check whether the audible voice stays consistent, its pronunciation is intelligible, and the workflow remains usable without TTS API charges, credits, paid subscriptions, or requiring the owner to install anything.
 
-The original VoiceDesign WAV and new Base WAV were both generated in Work Mode. Use the documented CPU settings to reproduce the Base test. The earlier GitHub Actions smoke-test run failed before starting its job steps.
+The original VoiceDesign WAV and new Base WAV were both generated in Work Mode, and the owner approved their audible consistency on 23 November 2026. Use the documented CPU settings to reproduce the Base test if needed. The earlier GitHub Actions smoke-test run failed before starting its job steps.
 
 ## Inputs and guardrails
 
@@ -65,11 +65,11 @@ The original VoiceDesign WAV and new Base WAV were both generated in Work Mode. 
 - **Wall time:** model load 1.051 s, reference prompt 0.704 s, staged generation 101.761 s including 7.285 s for decoder load and decoding. Total to write the WAV was 103.5 s, excluding installation, downloads and QA. Generation took about 11.6 seconds per second of finished audio. This is one warm-cache measurement on a short passage.
 - **Output:** `narrator-consistency.wav`, 8.800 s, 24 kHz mono PCM16, SHA-256 `c2a323ced010a718a90e03bdd365fe9b15a2d8b5ff6446ab71302cf6b0d6688b`. The repository integrity gate passed against the exact private reference. Peak amplitude 0.70282, RMS 0.09242 and zero clipped samples. WAV and JSON were kept outside Git.
 - **Transcript:** local Whisper Tiny English revision `87c7102498dcde7456f24cfd30239ca606ed9063` recovered all 22 script words after normalizing punctuation and case. The reference still transcribed `PARAM` phonetically as `Parum`. The new script contains no occurrence of the name.
-- **Voice comparison:** offline SpeechBrain ECAPA-TDNN revision `0f99f2d0ebe89ac095bcc5903c4dd8f72b367286` gave cosine 0.724 on the full paired clips after resampling to 16 kHz. The split halves gave 0.638 within the reference and 0.793 within the new sample. No synthetic-voice threshold was calibrated. The score supports similarity on this pair, and audible approval is pending. Both private clips are available for review in the Work Mode conversation.
+- **Voice comparison:** offline SpeechBrain ECAPA-TDNN revision `0f99f2d0ebe89ac095bcc5903c4dd8f72b367286` gave cosine 0.724 on the full paired clips after resampling to 16 kHz. The split halves gave 0.638 within the reference and 0.793 within the new sample. No synthetic-voice threshold was calibrated. The score supports similarity on this pair; the owner subsequently approved their audible similarity and consistency. Both private clips are available for review in the Work Mode conversation.
 
 ## After Base is accepted
 
-Only after successful Base voice consistency and audio QA: generate a complete story WAV, verify the spoken transcript, run actual `scripts/align_qwen_words.py` acoustic alignment, consume its timestamps in `src/aligned-captions.jsx` under the approved V6 frame, and migrate `src/short.jsx` without altering the approved look. Then produce one complete, rights-cleared, fact-checked pilot for phone review.
+**The owner has approved Base narrator consistency.** Generate complete PARAM Rudra story WAV(s) using the approved original synthetic reference (verify private SHA). Verify real spoken words, especially `PARAM`, and full-story throughput. Run actual `scripts/align_qwen_words.py` alignment on the final WAVs, use those timestamps in `src/aligned-captions.jsx` under frozen V6, then migrate `src/short.jsx` without redesigning. Review one fact-checked, rights-cleared pilot on a phone before publication. Then produce one complete, rights-cleared, fact-checked pilot for phone review.
 
 ## Failure is an acceptable result
 

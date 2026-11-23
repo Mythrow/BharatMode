@@ -9,13 +9,21 @@ Last verified: **23 November 2026**. Work Mode generated and technically validat
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — V6 visuals approved; Base narration sample ready for A/B review
+## Current stage — V6 visual template and permanent Qwen narrator APPROVED; first full voiced pilot NEXT
+
+### Permanent narrator approved — 23 November 2026
+
+- **Owner reviewed both WAVs and explicitly approved their similar, consistent voice.** This finalizes the identity of Bharat Mode's original Qwen3 synthetic documentary narrator; **do not ask for another A/B approval**.
+- Reference SHA: `0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c` (7.6s, 24 kHz mono PCM16). Exact private reference transcript and VoiceDesign model revision are frozen in `config/narrator-reference.json`. Qwen3-TTS 1.7B **Base** revision `fd4b254389122332181a7c3db7f27e918eec64e3`, new-line test SHA `c2a323ced010a718a90e03bdd365fe9b15a2d8b5ff6446ab71302cf6b0d6688b` (8.8s; 22/22 ASR words; 0.724 embedding cosine).
+- **Approved voice identity ≠ all future takes approved.** The original `PARAM` pronunciation remains unverified: offline ASR transcribed "Parum". Check proper names, all spoken words and loudness for each final story.
+- **NEXT:** use permitted Work Mode CPU to generate full, fact-reviewed PARAM Rudra narration from the approved private synthetic reference, evaluate full-script throughput and pronunciation; run actual WhisperX alignment on each finalized WAV; integrate into existing locked V6 layout and QA the first complete MP4. No paid APIs or voice credits.
+
 
 ### Verified Base narrator-consistency test — 23 November 2026
 
 - Used the original private 7.600 s VoiceDesign WAV after re-verifying its SHA-256 and 24 kHz mono PCM16 format against [the reference manifest](../config/narrator-reference.json).
 - Ran the official Qwen3-TTS 1.7B Base checkpoint offline on four CPU threads, with staged float32 processing and the exact private reference transcript. Generated 8.8 s of new speech. The real-file integrity gate passed with no clipped samples. Offline Whisper Tiny English recovered all 22 words of the new passage.
-- Speaker-embedding cosine similarity was **0.724** between the reference and the new sample using SpeechBrain ECAPA-TDNN. The two halves of the reference scored 0.638 and the two halves of the new sample scored 0.793. This supports consistency for this pair. Owner A/B listening, final narrator choice and the original `PARAM` pronunciation remain open.
+- Speaker-embedding cosine similarity was **0.724** between the reference and the new sample using SpeechBrain ECAPA-TDNN. The two halves of the reference scored 0.638 and the two halves of the new sample scored 0.793. This supports consistency for this pair. Owner A/B listening is now **approved**, while original `PARAM` pronunciation review remains open.
 - **Measured:** 103.5 s from model loading through WAV write, including 101.8 s for the staged generation path. Peak process RSS **7.68 GiB** on a 9.7 GiB Work Mode workspace. Installation and weight downloads are excluded. No paid compute, speech APIs, subscriptions or credits.
 - The private WAV was delivered in the Work Mode conversation. Model revision, checksums, timing breakdown and the tested command are in the [Base runbook](WORK_MODE_BASE_RUNBOOK.md).
 
@@ -48,21 +56,21 @@ Repository: https://github.com/Mythrow/BharatMode
 **Not yet completed / not approved for publication**
 - The `BharatShort` production renderer in `src/short.jsx` is **still a legacy renderer**, not yet fully upgraded to approved V6 motion and per-word aligned captions. Its bar alignment has been fixed.
 - No end-to-end **voice-aligned, fully rendered, phone-tested** publishable Short has been verified.
-- The **VoiceDesign reference and Base audition are ready for A/B review**. Final narrator approval, full-script pronunciation and delivery, word-level alignment, and sound-mix QA are pending. The old vidIQ Brian and OpenAI TTS production paths are ineligible under the zero-credit requirement.
+- The **permanent narrator identity is owner-approved** following A/B listening. Full-script pronunciation and delivery, actual word-level alignment, and sound-mix QA remain pending. The old vidIQ Brian and OpenAI TTS production paths are ineligible under the zero-credit requirement.
 - Word-level caption timestamps must come from real finalized narration audio (TTS word timestamps or forced alignment), not the manually estimated prototype timings.
 - Evidence/rights pipeline, upload-ready sourcing, audio ducking/loudness QA, actual YouTube crop/safe-area QA, and three distinct finished pilots are outstanding.
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Compare the original VoiceDesign reference and the new Base audition by ear.**
+**NEXT TASK — Produce full PARAM Rudra narration with the approved Qwen3 Base narrator, verify the final speech and run real word alignment.**
 
-After voice approval, synthesize a full story WAV, verify pronunciation and transcript, then run actual WhisperX word alignment on the finalized audio. Integrate the alignment and narration into the V6 story renderer with original music/SFX. End-to-end timing, full-script throughput, recurring compute, and phone review are open.
+The narrator is approved. Synthesize full story WAV(s) from its locked private reference, verify pronunciation and transcript (including PARAM), then run actual WhisperX word alignment on finalized audio. Integrate the alignment and narration into the V6 story renderer with original music/SFX. End-to-end timing, full-script throughput, recurring compute, and phone review are open.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 
 ## Non-negotiable workflow preferences
 - **The owner does not want to run code or install tools on their device.** Deliver playable HTML/visual reviews directly in ChatGPT with download links whenever feasible.
-- **Qwen3-TTS engine approved, final narrator listening review pending.** Owner prefers deep professional delivery; an Indian accent is not required. Self-host with no paid TTS subscription, credits, metered API or silent billing upgrades. Confirm free compute feasibility separately.
+- **Qwen3-TTS narrator identity owner-approved on 23 November 2026 after A/B listening.** Owner prefers deep professional delivery; an Indian accent is not required. Self-host with no paid TTS subscription, credits, metered API or silent billing upgrades. Confirm free compute feasibility separately.
 - Do not make unnecessary previews after explicit visual approval; make minor fixes in source and report the change.
 - Preserve the approved badge, avatar and V6 visual baseline unless the owner explicitly requests changes.
 - Keep storyline structure flexible and topic-appropriate. No fixed chapter count, title formula or compulsory length.
