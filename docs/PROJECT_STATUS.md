@@ -1,3 +1,9 @@
+# Bharat Mode — Project Status / New-Chat Handoff
+
+> **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
+
+**Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**
+
 ## BM-0003 Revision 5 — 60fps review delivered (24 November 2026)
 
 - Owner approved V4's open-canvas format; V5 removes redundant labels, fixes the ascending contract-value range, separates India/Tamil Nadu label timings and positions finale labels outside their connections. Quantitative values count up with eased monotonic animation. Dates and model names remain identifiers. Essential fact qualifiers retained.
@@ -19,18 +25,17 @@
 - **Next: owner visual review, then phone QA.** Do not reopen audio or map-tool approval. No publishing.
 
 > **Latest (23 Nov 2026):** Natural Earth + Remotion maps **APPROVED**; BM-0003 **Revision 3** physically rendered *here*, not in Work. Verified 41.5s 1080×1920/30fps private MP4 with India POV → true Tamil Nadu polygon → Chennai city pin and L&T/Vyoma.AI/LTN Compute/NVIDIA identifiers. Same AAC stream checksum `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b` as V2, no narration/music changes. SHA new video `6aa5cb03e4448819dae65f04fa669fb1233c269a137d93d6bee1291f62224f9e`. [Map plan + sources](MAP_DIRECTION.md). Revision 3 remains private/unpublished and needs owner visual review and phone QA.
-# Bharat Mode — Project Status / New-Chat Handoff
 
 **THIS IS THE CANONICAL RESUME POINT.**
 
-Last verified: **23 November 2026**. Work Mode rendered and validated the private BM-0003 pilot. Consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
+Last verified: **24 November 2026**. Owner approved the main-chat-produced BM-0003 Revision 5 creative result; older checkpoints are historical. Consult Git history for the latest commit. After a task is completed, update this file *in the same commit as the task*, revise the roadmap, and note the actual GitHub commit and any incomplete checks. GitHub is authoritative; old conversation snippets and historical V1–V5 examples are not.
 
 ## What the project is
 **Bharat Mode** is a research-led, faceless YouTube Shorts channel highlighting verified Indian discoveries, inventions, builders, science, technology and meaningful national progress. Content should find underreported stories without sensationalizing or claiming unsupported "firsts". Voice, evidence and readable vertical animation are core to the product.
 
 Repository: https://github.com/Mythrow/BharatMode
 
-## Current stage — owner requested stronger BM-0003 visuals; in-chat animated revision 2 created, owner review NEXT
+## Historical production checkpoints — earlier revisions (superseded)
 
 ### Corrected Work/video boundary and new BM-0003 visual cut — 23 November 2026
 
@@ -186,14 +191,14 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Produce full PARAM Rudra narration with the approved Qwen3 Base narrator, verify the final speech and run real word alignment.**
+**NEXT TASK — Prepare BM-0003 for release without publishing.**
 
-The narrator is approved. Synthesize full story WAV(s) from its locked private reference, verify pronunciation and transcript (including PARAM), then run actual WhisperX word alignment on finalized audio. Integrate the alignment and narration into the V6 story renderer with original music/SFX. End-to-end timing, full-script throughput, recurring compute, and phone review are open.
+The approved V5 video is already complete for creative review. Confirm remaining device/phone playback, rights and factual QA; prepare source-backed title, description and thumbnail; obtain separate explicit publication approval before upload. Generalize the approved open-canvas treatment into a native-60fps all-layer video renderer starting from verified audio-only Work deliverables for future stories. PARAM Rudra remains a separate later pilot.
 
 Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer and first pilot](https://github.com/Mythrow/BharatMode/issues/5).
 
 ## Non-negotiable workflow preferences
-- **The owner does not want to run code or install tools on their device.** Deliver playable HTML/visual reviews directly in ChatGPT with download links whenever feasible.
+- **The owner does not want to run code or install tools on their device.** Always deliver a direct MP4 download link for video; HTML/Play/Open controls are not substitutes. Audio review may use verified playable HTML when supported.
 - **Qwen3-TTS narrator identity owner-approved on 23 November 2026 after A/B listening.** Owner prefers deep professional delivery; an Indian accent is not required. Self-host with no paid TTS subscription, credits, metered API or silent billing upgrades. Confirm free compute feasibility separately.
 - Do not make unnecessary previews after explicit visual approval; make minor fixes in source and report the change.
 - Preserve the approved badge, avatar and V6 visual baseline unless the owner explicitly requests changes.
@@ -206,7 +211,7 @@ Current implementation tracker: [GitHub issue #5 — voice-synced V6 renderer an
 ## Read these files in this order in a new session
 1. **This file**: `docs/PROJECT_STATUS.md` — current stage, approvals, next action.
 2. [ROADMAP.md](ROADMAP.md) — project-wide sequence and acceptance milestones.
-3. [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md) — immutable approved design baseline.
+3. [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md) and [OPEN_MOTION_DIRECTION.md](OPEN_MOTION_DIRECTION.md) — locked V6 and approved episode Revision 5 production reference.
 4. [PRODUCTION.md](PRODUCTION.md) — existing production scripts and known limitations.
 5. [BRAND.md](BRAND.md), [LOGO_DIRECTION.md](LOGO_DIRECTION.md) and relevant story files as needed.
 6. [GitHub issue #5](https://github.com/Mythrow/BharatMode/issues/5) for remaining actionable work.
@@ -222,6 +227,6 @@ Update this file and `docs/ROADMAP.md` with:
 
 ## One-message prompt to resume anywhere
 
-> Continue the Bharat Mode YouTube Shorts project from https://github.com/Mythrow/BharatMode. First read `docs/PROJECT_STATUS.md`, then `docs/ROADMAP.md` and `docs/APPROVED_SHORTS_TEMPLATE.md`. Respect the approved V6 design, do not ask me to run code locally, and carry out the next unfinished milestone. Update the GitHub status and documentation after completing work.
+> Continue the Bharat Mode YouTube Shorts project from https://github.com/Mythrow/BharatMode. First read `docs/PROJECT_STATUS.md`, then `docs/ROADMAP.md` and `docs/APPROVED_SHORTS_TEMPLATE.md`. Respect the approved V6 + BM-0003 Revision 5 open-canvas 60fps direction in `docs/OPEN_MOTION_DIRECTION.md`, keep Work audio-only, include direct MP4 downloads, do not ask me to run code locally, and carry out the next unfinished milestone. Update the GitHub status and documentation after completing work.
 
 **Important:** A new chat does **not** automatically fetch or read this GitHub file just because it exists. The prompt above explicitly points it to the authoritative repository. In the Bharat Mode ChatGPT Project, prior context may help, but check this file for the current state rather than trusting a possibly stale summary.

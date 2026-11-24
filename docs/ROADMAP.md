@@ -1,3 +1,9 @@
+# Bharat Mode — Launch milestones
+
+> **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
+
+**Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**
+
 ## BM-0003 Revision 5 — 60fps review delivered (24 November 2026)
 
 - Owner approved V4's open-canvas format; V5 removes redundant labels, fixes the ascending contract-value range, separates India/Tamil Nadu label timings and positions finale labels outside their connections. Quantitative values count up with eased monotonic animation. Dates and model names remain identifiers. Essential fact qualifiers retained.
@@ -19,7 +25,6 @@
 - **Next: owner visual review, then phone QA.** Do not reopen audio or map-tool approval. No publishing.
 
 > **NEW MAP APPROVAL / VIDEO CHECKPOINT (23 Nov 2026):** Natural Earth 10m + Remotion selected for repeatable cinematic map geography (India POV, Tamil Nadu states, Chennai city center). [Map specification](MAP_DIRECTION.md) · [geo data](../data/maps/naturalearth-bm0003.json) · [Remotion reusable map](../src/natural-earth-map.jsx). In this chat, Python/FFmpeg produced V3 full 41.5s MP4 (same original audio). **Owner visual review pending, not published.** Work remains AUDIO ONLY.
-# Bharat Mode — Launch milestones
 
 **BM-0003 review checkpoint:** Six Qwen Base scenes, independent ASR, real WhisperX captions, and the MUSIC-06 Option B mix are in the private 41.50-second V6 pilot. Owner phone review and publication sign-off remain open.
 
@@ -34,12 +39,13 @@
 - [x] Approved icon/avatar and horizontal badge stored in repo; [x] banner approved; [x] source and recommended-size export in Git with SHA verification; [ ] test YouTube mobile/desktop crop; [ ] create motion signature.
 - **Acceptance:** logo badge/avatar approved by owner; actual YouTube upload and motion graphics export still to test.
 
-## Milestone 2 — V6 visuals and narrator approved; BM-0003 animated visual revision 2 produced here, approval pending
+## Milestone 2 — Brand, narration, music and first creative pilot APPROVED
 
 - [x] **Fix production ownership:** Work Mode **audio-only**; main chat owns visual creation, film editing and final MP4. Updated [production responsibilities](PRODUCTION_RESPONSIBILITIES.md) and Work audio runbook; do not delegate video rendering to Work again.
 - [x] Review the first BM-0003 video and identify the core weakness: repeated static evidence cards and too much typography; the owner wants significantly more compelling visual storytelling.
 - [x] **Create full in-chat revision 2** with six original animated story-specific CGI schematic hero sequences, unchanged locked V6 headline/captions/logo/centered progress and unchanged audio stream. 41.5sec 1080×1920, H.264/AAC; verified frame count and matching audio SHA-256; self-contained video HTML review in chat.
-- [ ] **NEXT:** owner reviews revision 2 for visual engagement, then iterate if needed. Confirm on actual phone, check licensing/documentation and approve final pilot before any upload. CGI illustrates the concept, **not real L&T facility footage**.
+- [x] Owner reviewed and approved the actual BM-0003 Revision 5 creative result on 24 November 2026. Open-canvas 60fps direction is now the reference; no more creative re-approval needed unless a change is requested.
+- [ ] **NEXT:** complete phone/device and final rights/facts QA; prepare upload metadata and thumbnail; obtain explicit publication approval. CGI illustrates concepts, **not real L&T facility footage**.
 
 
 - [x] Respond to owner audio-level feedback with **MUSIC-06 20s A/B/C louder mix test** in one privately linked self-contained HTML file with embedded playback and moving 0–100 fader meters. Reproducible generator in `scripts/generate_music06_level_comparison.py`; verified source SHAs, tested no clipping and exact regeneration.
@@ -50,7 +56,7 @@
 - [x] Owner confirmed MUSIC-06 was generated on a **paid ElevenLabs Music plan**; confirmed [9 Oct 2026 Music Terms](https://elevenlabs.io/music-terms) allow ordinary commercial YouTube-video music synchronization without paid-tier attribution. Exact account tier/receipt not independently inspected.
 - [x] Actually created 20s **MUSIC-06 + approved synthetic Qwen voice** mix with automated ducking and verified source SHA checks; no clipping. Historical reference speech only, not BM-0003 narration.
 - [x] Drafted source-checked **BM-0003 six-scene story** (~48s provisional), linked research, permanent content registry, editorial queue, and separate Qwen generation plan. **Six offline production tests passed**.
-- [ ] **NEXT:** execute genuine full BM-0003 Qwen Base narration on free Work Mode CPU, independently validate spoken words, run actual WhisperX forced alignment, integrate owner-approved V6 with licensed music and create first phone-testable MP4. [Runbook](WORK_MODE_BM0003_RUNBOOK.md).
+- [x] Completed six BM-0003 Qwen Base narration scenes, independent ASR and real WhisperX word alignment; main chat rendered approved 41.5s V5 using MUSIC-06 Option B. [Runbook](WORK_MODE_BM0003_RUNBOOK.md).
 
 
 - [x] Owner selected supplied **MUSIC-06 Techno Thriller** as the signature background track. Private original MP3 is in ChatGPT Library with SHA-256 recorded in [config/music.json](../config/music.json); no public Git media upload.
@@ -90,7 +96,8 @@
 - [x] Intake and duplicate guard CLI, stage-history validation, published YouTube URL/date/owner approval gates, 14 passing local tests and CI integration. Daily discovery must search the registry before proposing another story.
 - [x] **23 Nov L&T Chennai AI/B300 additional order selected as `BM-0003` / In Progress** for trial video; factual event/source context in [BM-0003 research](../content/research/BM-0003.md).
 - [x] **BM-0003 storyboard drafted and sources reconfirmed**, six scenes/~48s provisional. Order's value is a **company-defined band** and 10,000 GPUs are a **previously planned cluster**, not verified live equipment. [Script](../stories/lt-chennai-ai-cluster-order.json).
-- [ ] Generate actual Qwen Base narration per scene, run independent ASR/WhisperX, add V6 word captions/music and phone-review a full Short.
+- [x] Generated actual BM-0003 scene narration, ASR, WhisperX, word captions and MUSIC-06 mix; owner approved V5.
+- [ ] Device/phone QA and explicit publishing approval.
 
 - Source registry (ISRO, labs, science agencies, research papers, statistical reports, regional reporting).
 - Script and source review checklist, accurate stage labels, fact review trail.
@@ -116,4 +123,4 @@
 - No unsupported factual claims, generated images passed off as documentary footage, or exaggerated "world first" claims.
 
 ## Immediate next production milestone
-The Qwen narrator and MUSIC-06 signature score are approved selections. First complete **BM-0003** L&T story WAVs, check words and source qualifications, run real alignment, and integrate the locked V6 renderer. PARAM Rudra remains a separate later pilot. Review one complete evidence-backed Short on a phone, then produce two differently structured pilots. Generated narration and MP4s stay outside Git.
+**BM-0003 Revision 5 creative approval is complete.** Complete pre-publication checks and package metadata/thumbnail, then seek explicit upload approval. Next generalize the audio-only Work → native 60fps main-chat renderer and produce two differently structured pilots with the approved direction. PARAM Rudra remains a separate later pilot. Generated narration and MP4s stay outside Git.

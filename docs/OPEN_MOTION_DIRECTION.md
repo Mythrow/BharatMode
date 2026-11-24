@@ -1,12 +1,39 @@
+# Bharat Mode — Approved open-canvas visual motion direction
+
+## Owner-approved production direction — 24 November 2026
+
+**APPROVED:** The owner reviewed the actual BM-0003 Revision 5 video and confirmed satisfaction with the result ("Yes this looks good im happy with the result now"). The **locked V6 visual system plus the BM-0003 Revision 5 open-canvas motion treatment** is now the reference for future Bharat Mode Shorts. "Revision 5" refers to the episode cut, not the older V5 template prototype. Earlier boxed-hero cuts and 30fps-only production defaults are superseded. Do not reopen approved creative, map, narrator or music decisions without an owner request.
+
+### Creative acceptance standard
+
+- Use the entire vertical canvas as a designed composition. No enclosing hero/evidence boxes; the compact backing behind captions is a deliberate V6 exception. Main visuals must be specific to the story and integrated into the scene.
+- Animate main elements independently with directional entrances and exits, staggered reveals, and continuous eased movement. Camera push/pan/zoom, perspective, parallax and contextual moving backgrounds support the story rather than replacing element motion. Avoid color-only background changes or decorative movement that overwhelms the subject. Preserve V6's quiet 0.34s dissolve and subtle drift.
+- Use 1080 × 1920, 9:16, **native 60fps minimum**. Evaluate animation at actual frame timestamps, use subpixel movement and antialiasing. In future render *all* layers at 60fps from source, including title/typewriter, caption pops and chapter progress, not duplicated 30fps frames.
+- Retain exact approved V6 avatar, palette, Sora/Manrope typography, topic pill, directional cursorless typewriter, centered single-line grouped word captions with real acoustic timings and compact backing, current-word-only highlight, and chapter progress with symmetric 84px gutters. Structure/chapter count and visual treatments remain story-dependent.
+- Include relevant verified organization names and rights-cleared marks; use names instead of invented logos. Maps use approved Natural Earth geographic data and animated camera moves; accurate labels and location markers, no unverified exact site pins. See [MAP_DIRECTION.md](MAP_DIRECTION.md).
+- Keep text sparse: no redundant technical labels, filler or persistent metadata. Maintain material factual qualifiers and distinguish illustrations from documentary footage. Every displayed quantitative statistic should use an eased count-up to its correct final value; dates and product identifiers are not counters. Value-range graphics read lower to higher; do not imply actual time-series growth. Check collisions between text, connectors, nodes, captions and graphic bounds during motion, not just final holds.
+- Use the approved original Qwen narrator, real word alignment and MUSIC-06 Option B (voice 88, music 55 between speech / 32 during speech; 24ms attack, 280ms release). Work is audio-only. The main conversation sources/designs visuals, edits, mixes, renders and verifies the video. No paid compute or voice credits.
+- **Delivery: always include a plain, direct MP4 download link in the conversation.** Play/Open buttons or HTML previews are not substitutes; the owner reported that they fail. Keep private MP4 in Library. Never require a downloaded HTML wrapper merely to watch video. Audio preview preference remains separate; provide a usable alternative if inline audio cannot play.
+
+### Approved reference and known technical boundary
+
+- File: `BM-0003-v5-60fps.mp4`, private ChatGPT Library `/BharatMode/`, library file ID `libfile_e0c9f9e7889c819188faa7916f611d99`.
+- Reference SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`; 41.5s, 1080×1920, 60fps, 2490 frames, 6,330,450 bytes, H.264/AAC. Previously verified full decode, zero identical adjacent decoded frames in reduced-resolution check, four count-up tests, unchanged audio.
+- Reproduction source: [scripts/render_bm0003_open_motion_60fps.py](../scripts/render_bm0003_open_motion_60fps.py). This approved pilot is an iterative bridge: new art evaluated at 60fps but V6 title/caption/progress pixels inherited from the original 30fps cut. The approval is of the visual result and direction, not an assertion that the general renderer is complete. Do not reproduce this inherited-frame limitation in future clean productions.
+- **Visual/creative review: passed by owner.** Separate phone/device QA and explicit publication authorization are not recorded. BM-0003 remains In Progress, private, not Published. Do not automatically upload. Next: pre-publication QA and source-backed title/description/thumbnail package, then request explicit publishing approval; generalize native-60fps audio-to-video rendering for subsequent stories.
+
+---
+
+## Historical development and verification checkpoints
+
 ## BM-0003 Revision 5 — 60fps review delivered (24 November 2026)
 
 - Owner approved V4's open-canvas format; V5 removes redundant labels, fixes the ascending contract-value range, separates India/Tamil Nadu label timings and positions finale labels outside their connections. Quantitative values count up with eased monotonic animation. Dates and model names remain identifiers. Essential fact qualifiers retained.
 - Main-chat renderer `scripts/render_bm0003_open_motion_60fps.py` evaluates story art at each 60fps timestamp with subpixel drawing. Existing V6 chrome/title/caption/progress pixels are inherited from the original 30fps base; this is an explicit pilot limitation, not a complete native-60fps Remotion rebuild. Future production should render all layers at 60fps from verified audio/alignment assets.
 - **Actual private output:** `BM-0003-v5-60fps.mp4` — 1080×1920, H.264/AAC, 60fps, 2490 frames, 41.5s, 6,330,450 bytes. SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`. Decoded all 2490 frames at 270×480 for MD5 checks: zero identical adjacent frames. Four counter monotonicity/final-value checks passed. Representative still contact sheet inspected. Audio ADTS SHA-256 `a5a7966dfee87cf5f5482206ee10af254c270cc7a7600b3c0b2c3800e7632aa0` exactly matches V4. No audio changes.
 - MP4 saved privately in ChatGPT Library `/BharatMode/` (library file ID `libfile_e0c9f9e7889c819188faa7916f611d99`). Direct MP4 delivery rather than a redundant HTML download. V4 embedded video HTML valid, but owner's in-chat preview cannot play it; exact preview failure unconfirmed. No claim that client can play a given MP4 inline until owner tests.
-- **Next:** owner visual/playback review of V5, phone QA and publication sign-off. Nothing published. Work remains audio-only.
+- **Historical review checkpoint:** V5 was delivered; owner approval recorded above on 24 November. Phone QA and publication authorization remain outstanding.
 
-# Bharat Mode — Open-canvas visual motion direction
 
 ## Approved open-canvas format and production refinements — 24 November 2026
 

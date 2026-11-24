@@ -1,9 +1,14 @@
+# Production guide
+
+> **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
+
+**Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**
+
 > **Owner approval / refinements (24 Nov 2026):** V4 open-canvas format approved. Revision 5 requested: true 60fps story animation, quantitative count-ups, minimal meaningful labels, ascending value range and non-overlapping map/network labels. Direct MP4 preferred because embedded-video HTML does not play in owner's chat preview. [Permanent rules](OPEN_MOTION_DIRECTION.md). V5 validation/review pending; do not publish.
 
 > **Latest visual direction (24 Nov 2026):** BM-0003 V4 open-canvas motion review rendered here, replacing static boxed heroes with independently animated graphics and moving backgrounds. Original voice/music unchanged; owner review pending. [Details and permanent visual rules](OPEN_MOTION_DIRECTION.md).
 
 > **Approved geographic storytelling:** Natural Earth 1:10m map data + Remotion (no paid mapping subscription), see [Map Direction](MAP_DIRECTION.md). The current BM-0003 V3 video was actually composed here from the prior private cut using OpenCV/FFmpeg; the Remotion map component is prepared for future from-audio rendering. Work scope stays AUDIO ONLY.
-# Production guide
 
 **For a new session, read [PROJECT_STATUS.md](PROJECT_STATUS.md) first.** **OWNER MANDATE:** [PRODUCTION_RESPONSIBILITIES.md](PRODUCTION_RESPONSIBILITIES.md) enforces Work Mode for **AUDIO ONLY** (Qwen WAV, audio QC, alignments); all visual production and MP4 renders happen in this main ChatGPT chat. Previous video rendering in Work was a scope error. Before any story work, check the [permanent Content Log](../content/CONTENT_LOG.md) and [Content Pipeline](CONTENT_PIPELINE.md); existing story drafts have matching `story.contentId` references. It is the canonical resume point; [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md) contains the locked V6 visual rules. Do not assume the legacy `BharatShort` renderer fully implements the approved motion/voice system.
 
@@ -27,7 +32,7 @@ Rendered file: `out/param-rudra.mp4` — **ignored by Git**. Do **not** publish 
 
 Owner selected MUSIC-06 as the sound identity **and Option B as the reference music/voice balance** on 23 November 2026. `config/music.json.approvedMix` is authoritative: Qwen narrator **88/100**, music between spoken phrases **55/100**, music underneath voice **32/100**, envelope attack **24ms**, release **280ms**. These are **relative linear mixer fader values**, not ear-perceived percentages. **Do not use the original Option A settings (40/16) in future mixes**.
 
-`scripts/preview_signature_mix.py` now takes the approved gains from that config; it produces a *technical reference preview*, not the full story audio. During actual BM-0003 production, mix these stems at the approved baseline, listen for bass/frequency masking, check peak and mobile speech intelligibility and adjust **only if technical QA reveals a problem**, documenting the adjustment. Full-story Qwen narration, acoustic word alignment and V6 MP4 still pending. Present each next audio check as a self-contained HTML playback page.
+`scripts/preview_signature_mix.py` now takes the approved gains from that config; it produces a *technical reference preview*, not the full story audio. During actual BM-0003 production, mix these stems at the approved baseline, listen for bass/frequency masking, check peak and mobile speech intelligibility and adjust **only if technical QA reveals a problem**, documenting the adjustment. BM-0003 full-story Qwen narration, acoustic alignment and approved V5 MP4 have been completed. Present each next audio check as a self-contained HTML playback page.
 
 ## Music volume control for owner review — 23 November 2026
 
@@ -135,9 +140,11 @@ Copy a JSON file in `stories/`; set slug, date, claim stage, source URL, source 
 ```bash
 npx remotion render src/index.jsx BharatShort out/your-story.mp4 --props=stories/your-story.json --codec=h264
 ```
-All videos are vertical 1080×1920 at 30fps; runtime is computed from scene durations.
+All new production videos are vertical 1080×1920 at native 60fps minimum; runtime is computed from verified narration and actual scene timing. Historical demos and legacy renderer may still be 30fps and are not the approved export standard.
 
 ## Before YouTube upload
+
+Creative approval of BM-0003 Revision 5 is recorded. Check device playback, rights and factual qualifiers; deliver direct downloadable MP4 and source-backed upload package. Obtain explicit owner permission to publish; creative approval alone is not upload authorization.
 - Primary source and date checked again, facts and nuance reviewed.
 - Visuals do not misrepresent a prototype as a deployed product.
 - Copyright, license and source attribution checked for every asset.

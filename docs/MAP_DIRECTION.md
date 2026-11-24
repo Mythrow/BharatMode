@@ -1,3 +1,9 @@
+# Bharat Mode — Approved Maps and Camera Motion
+
+> **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
+
+**Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**
+
 > **Latest visual direction (24 Nov 2026):** BM-0003 V4 open-canvas motion review rendered here, replacing static boxed heroes with independently animated graphics and moving backgrounds. Original voice/music unchanged; owner review pending. [Details and permanent visual rules](OPEN_MOTION_DIRECTION.md).
 
 ### Revision 3 review delivery recovered — 24 November 2026
@@ -7,8 +13,6 @@
 - Audio codec-stream SHA-256 `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b` matches the original/V2/V3 record. Qwen voice and MUSIC-06 Option B unchanged.
 - **Both actual review files now saved privately in ChatGPT Library /BharatMode/**: the rebuilt MP4 and self-contained `BM-0003-naturalearth-v3-review.html` with embedded video and six scene controls. Verified embedded bytes equal the rebuilt MP4. Delivered in chat. Neither file is committed to Git.
 - **Next: owner visual review, then phone QA.** Do not reopen audio or map-tool approval. No publishing.
-
-# Bharat Mode — Approved Maps and Camera Motion
 
 **Approved by owner: 23 November 2026.** Use **Natural Earth** geographic data plus the approved **Remotion/V6** template for accurate, repeatable map animations. No paid Google Earth Studio, Cesium terrain provider, GEOlayers or subscriber map tiles are necessary for this BM-0003 country/state/city explanation.
 
@@ -39,4 +43,4 @@ The map is a **story graphic/hero** beneath the locked V6 title and center-word-
 
 Work Mode: **only Qwen audio + spoken transcript QA + word-timing alignment**. Main ChatGPT conversation: **all graphics, map animation, music placement, editing and MP4 rendering**. Source: [Production Responsibilities](PRODUCTION_RESPONSIBILITIES.md).
 
-**Status:** map/tool choice APPROVED; V3 actual video generated here for owner review. **Not yet approved for publication**, and genuine Remotion end-to-end production from Work-supplied audio remains a follow-up.
+**Status:** map/tool choice APPROVED; final Revision 5 with integrated Natural Earth map and non-overlapping geographic label reveals accepted by owner on 24 November 2026. Earlier V3 is historical. **Not yet approved for publication**, and genuine Remotion end-to-end production from Work-supplied audio remains a follow-up.

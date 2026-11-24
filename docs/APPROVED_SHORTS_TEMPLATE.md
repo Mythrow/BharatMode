@@ -4,7 +4,7 @@
 
 This is the official **visual and motion-language baseline** for Bharat Mode Shorts, not a completed or published video. It replaces V1–V5 proposals and the V6 *review* status. Subsequent changes to the approved look should be explicitly reviewed. Script structure, evidence type and the number of chapters must remain flexible.
 
-**Owner refinement (24 Nov 2026):** [Open-canvas visual motion direction](OPEN_MOTION_DIRECTION.md) governs minimal labels, count-ups, collision-free layout and true 60fps motion. V6 chrome/design remains approved.
+**Final production direction APPROVED (24 November 2026):** The owner reviewed and accepted the actual BM-0003 Revision 5 video. The [approved open-canvas motion direction](OPEN_MOTION_DIRECTION.md) is mandatory alongside locked V6 chrome. Episode Revision 5 is not the old template V5. This is the creative reference for future videos; separate publication approval remains required.
 
 ## Approved visual rules
 
@@ -15,9 +15,9 @@ This is the official **visual and motion-language baseline** for Bharat Mode Sho
 | Colors | Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, Deep Charcoal `#0B1018` |
 | Type | Sora ExtraBold headings; Manrope for reading/captions, normal-weight topic pill |
 | Scene families | Ivory editorial, deep-charcoal cinematic, selective saffron-feature scenes, with restrained abstract accents |
-| Opening and within-scene motion | Directional entrances for kicker, **whole headline block even while typewriting**, hero panels and diagrams |
+| Opening and within-scene motion | Directional entrances/exits for kicker, **whole headline block even while typewriting**, and independent story-specific visual elements; continuous eased camera and environment movement |
 | Title | Character-by-character typewriter without a cursor |
-| Hero | Elevated closer to title (V6 layout: y≈777 on 1920-high frame) |
+| Hero | Open-canvas, integrated into scene; elevated near title, no enclosing evidence cards or bordered hero boxes |
 | Scene changes | **0.34-second clean dissolve**, with slight **12 px outgoing / 18 px incoming** lateral drift; no streak or aggressive wipe |
 | Captions | A **single-line**, screen-centered short group of words; compact very translucent rectangular backing only behind the visible phrase, not a full-width band |
 | Caption animation | Each word pops from 60% → briefly 112% → 100%, with ~0.20-second fade/scale motion. Normal words stay full-color; **only current spoken word** receives a temporary contrasting highlight. No underline. Old phrase group disappears when new group begins |
@@ -25,6 +25,10 @@ This is the official **visual and motion-language baseline** for Bharat Mode Sho
 | Dark/saffron-scene caption ink | Warm Ivory `#FFF7EB`; active word light saffron `#FFBE91` |
 | Topic | Contrasting single-topic pill such as SCIENCE; regular/medium weight, near the top-right |
 | Chapter indicator | Segmented progress bar derived from **actual story beats**, unlabeled and always visible |
+| Statistics | Eased count-up to verified value; dates/model names are identifiers; collision-free labels and correct range direction |
+| Background | Contextual moving depth, paths, perspective or particles; no mere static color change |
+| Geography / identity | Natural Earth boundaries and verified locations; relevant organization names and rights-cleared marks |
+| Delivery | Plain direct MP4 download link always; no dependency on HTML/Play/Open preview |
 | Lower metadata | No persistent sources, dates or numbered footer. Full citations appear in video description; essential *as-of* qualifiers must remain in narration/graphics where needed |
 
 ## Final progress-bar alignment
@@ -64,4 +68,4 @@ The owner specifically asked to center the lower chapter indicator:
 
 ## History
 
-V1–V5 artifacts and prototypes remain in Git for reference only. The approved baseline is V6 **with centered chapter bars**, per this file and [MOTION_V6.md](MOTION_V6.md).
+Old template V1–V5 artifacts and earlier BM-0003 episode cuts remain historical. The approved baseline is V6 with centered chapter bars plus the owner-approved **BM-0003 Revision 5** open-canvas treatment; [OPEN_MOTION_DIRECTION.md](OPEN_MOTION_DIRECTION.md) records the final approval and reference.

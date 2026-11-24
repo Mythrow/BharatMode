@@ -1,7 +1,12 @@
+# Bharat Mode — Responsibility Boundary: AUDIO ONLY in Work, VIDEO HERE
+
+> **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
+
+**Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**
+
 > **Latest visual direction (24 Nov 2026):** BM-0003 V4 open-canvas motion review rendered here, replacing static boxed heroes with independently animated graphics and moving backgrounds. Original voice/music unchanged; owner review pending. [Details and permanent visual rules](OPEN_MOTION_DIRECTION.md).
 
 > **Approved map pipeline:** Natural Earth 1:10m country/state/city geographic data + reusable Remotion map component, with actual in-chat video renders (OpenCV/FFmpeg acceptable for iterative bridges). [MAP_DIRECTION.md](MAP_DIRECTION.md). Work must not generate map animations or MP4s.
-# Bharat Mode — Responsibility Boundary: AUDIO ONLY in Work, VIDEO HERE
 
 **Owner instruction (23 November 2026):** Work Mode must **only generate and validate narration/audio assets**. All image sourcing/graphics, motion, editing, music placement, composition, video encoding and MP4 rendering must be performed **in the main ChatGPT production conversation**. Never delegate video production to Work, even when a runbook or old issue says otherwise. This owner instruction overrides earlier broad production handoffs.
 
@@ -18,7 +23,7 @@
 - Read the content registry, fact ledger, script, locked V6 layout and approved music configuration. Use licensed imagery and original dynamic visualizations; graphical illustration must be unmistakably illustrative rather than impersonating the real site or completed infrastructure.
 - Retrieve Work's **audio-only** outputs/alignments. Render the V6 frame and actual timed captions **here** with a capable local CPU/container/browser renderer, or equivalent in-conversation tools. Music follows approved MUSIC-06 Option B: narrator **88/100**, score **55/100 between words** and **32/100 under narration**.
 - Compose all animations, story diagrams, original/sourced footage, scene changes and final 1080×1920 H.264/AAC MP4 in the current chat's execution environment. Verify visual quality using extracted frame contact sheets and review on mobile before publication.
-- Deliver the actual MP4 and an optional self-contained **browser-playable HTML review page** directly in the main conversation. Do not require the owner to install editing software. Do not publish automatically.
+- Deliver the actual MP4 with a plain direct download link in the main conversation; optional verified inline playback cannot replace the download. Do not require the owner to install editing software. Do not publish automatically.
 - Keep editable rendering source in Git; generated private narration, soundtrack, licensed-only media and MP4 binaries remain **outside public Git**.
 
 ## BM-0003 visual revision after owner review (23 Nov)
@@ -45,4 +50,4 @@ Uses Python, OpenCV, NumPy, Pillow and FFmpeg. `--check` writes six stills + a v
 
 ## Approval gates
 
-**Narrator identity:** approved. **MUSIC-06 + Option B:** approved. **V6 visual template:** approved. **BM-0003 visual revision 2:** awaiting user review. **Public upload:** not approved. Do not mark BM-0003 Published.
+**Narrator identity:** approved. **MUSIC-06 + Option B:** approved. **V6 visual template:** approved. **BM-0003 Revision 5:** owner-approved creative result, 24 November 2026. Device QA remains separate. **Public upload:** not approved. Do not mark BM-0003 Published.
