@@ -1,5 +1,19 @@
 # Bharat Mode — Open-canvas visual motion direction
 
+## Approved open-canvas format and production refinements — 24 November 2026
+
+The owner approved the V4 open-canvas visual format as significantly better. The following are permanent requirements, superseding earlier 30fps production-export defaults; V6 branding, title treatment, captions, chapter indicators, soundtrack and narration identity are otherwise unchanged.
+
+- **Native 60fps minimum animation/export target:** calculate positions, easing, entrances, exits, camera moves, background motion, counters and dissolves using continuous seconds at 60 samples per second. Do not just duplicate 30fps frames or export an unchanged 30fps animation at 60fps. Use anti-aliasing/subpixel positioning to reduce stepping. Future clean production must render the V6 title/caption/chapter layers at the same 60fps cadence from the real alignment JSON. Historical pilot repair may inherit 30fps chrome only if explicitly disclosed; all newly animated story graphics must be evaluated at 60fps.
+- **Minimal meaningful text:** remove technical/filler labels ("Illustrative server infrastructure", "Chennai city marker", etc.). Retain essential evidence qualifiers (planned capacity versus operating count, undisclosed exact contract value, verified geography) and clear schematic disclosure in review notes/description; do not present an invented facility as actual footage.
+- **Every quantitative hero statistic counts up** with smooth easing and correctly formatted final values; dates, model identifiers and names are not counters. Do not imply an actual measured change when animating a fixed range or planned capacity.
+- **Visual correctness and collision QA:** ₹2,500–5,000 crore range has the lower endpoint bottom-left and upper endpoint top-right (range, not a time-series trend); labels must not touch lines/nodes, headings, captions or other labels. India/Tamil Nadu labels use disjoint reveal intervals. Finale labels sit beyond their nodes; no overlap with connecting lines. Inspect representative stills at entrances, holds and transitions before export.
+- **Delivery:** owner reports the self-contained video HTML cannot play inside ChatGPT's preview and requires download. V4's HTML was inspected: 28,162,761 bytes including a valid matching 21,120,132-byte H.264/AAC MP4 in a base64 data URI. Exact client-side preview error is not accessible; size/embedded-media restrictions are plausible, not confirmed. Do not present a downloadable HTML page as a working in-chat video player. Prefer a directly accessible MP4 in chat/private Library; HTML only when verified useful. Audio reviews still prefer inline playback when supported. No public uploads merely to enable previews.
+- Work is narration and acoustic alignment **only**. Main chat owns all video edits and export.
+
+BM-0003 revision 5 implements these changes in the local 60fps motion bridge. Rendered-file validation and user review must be recorded separately; do not mark published.
+
+
 ## BM-0003 Revision 4 — open-canvas motion graphics (24 November 2026)
 
 **Owner direction:** Main elements must have their own directional entrances, exits and within-scene motion. Do not put the main visuals inside rectangular evidence cards or bordered boxes. Integrate them into the video canvas itself. A background must be more than a static color change: use subject-driven moving depth, subtle animated paths, perspective, particles or other meaningful environment motion. Keep the approved V6 title, exact branding, compact phrase-caption treatment, centered progress and clean dissolves; no change to the approved audio. This is a story-art requirement, not a change to the frozen V6 chrome.

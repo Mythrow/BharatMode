@@ -1,3 +1,5 @@
+> **Owner approval / refinements (24 Nov 2026):** V4 open-canvas format approved. Revision 5 requested: true 60fps story animation, quantitative count-ups, minimal meaningful labels, ascending value range and non-overlapping map/network labels. Direct MP4 preferred because embedded-video HTML does not play in owner's chat preview. [Permanent rules](OPEN_MOTION_DIRECTION.md). V5 validation/review pending; do not publish.
+
 > **Latest visual direction (24 Nov 2026):** BM-0003 V4 open-canvas motion review rendered here, replacing static boxed heroes with independently animated graphics and moving backgrounds. Original voice/music unchanged; owner review pending. [Details and permanent visual rules](OPEN_MOTION_DIRECTION.md).
 
 > **Approved geographic storytelling:** Natural Earth 1:10m map data + Remotion (no paid mapping subscription), see [Map Direction](MAP_DIRECTION.md). The current BM-0003 V3 video was actually composed here from the prior private cut using OpenCV/FFmpeg; the Remotion map component is prepared for future from-audio rendering. Work scope stays AUDIO ONLY.

@@ -4,11 +4,13 @@
 
 This is the official **visual and motion-language baseline** for Bharat Mode Shorts, not a completed or published video. It replaces V1–V5 proposals and the V6 *review* status. Subsequent changes to the approved look should be explicitly reviewed. Script structure, evidence type and the number of chapters must remain flexible.
 
+**Owner refinement (24 Nov 2026):** [Open-canvas visual motion direction](OPEN_MOTION_DIRECTION.md) governs minimal labels, count-ups, collision-free layout and true 60fps motion. V6 chrome/design remains approved.
+
 ## Approved visual rules
 
 | Element | Final approved behavior |
 | --- | --- |
-| Format | 1080 × 1920, 9:16, 30 fps |
+| Format | 1080 × 1920, 9:16, **60 fps minimum** (owner update 24 Nov 2026); animate at actual output timestamps |
 | Branding | Exact owner-approved `public/brand/bharat-mode-avatar.svg` / badge SVG; do not redraw |
 | Colors | Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, Deep Charcoal `#0B1018` |
 | Type | Sora ExtraBold headings; Manrope for reading/captions, normal-weight topic pill |

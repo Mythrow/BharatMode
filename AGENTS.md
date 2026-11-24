@@ -1,3 +1,5 @@
+**OWNER UPDATE — 24 Nov 2026:** V4 open-canvas format approved; native-time **60fps minimum**; numeric count-up animations; no redundant technical labels; collision-free text/graphics; no HTML downloads presented as playable inline previews. See [approved open motion direction](docs/OPEN_MOTION_DIRECTION.md). No video in Work.
+
 > **NEW OWNER APPROVAL — MAPS:** Use Natural Earth public-domain **1:10m** India POV Admin-0 + state Admin-1 polygons and verified Chennai populated-place coordinates. Cinematic map/camera animations belong in MAIN CHAT video production, using V6 Remotion component and optional OpenCV/FFmpeg for iteration, **never in Work**. Full spec [docs/MAP_DIRECTION.md](docs/MAP_DIRECTION.md). BM-0003 V3 rendered in main conversation with actual map, brand identifiers, camera motion and identical narration/music. V3 awaiting owner review.
 # Bharat Mode — Assistant / Coding Agent Instructions
 
