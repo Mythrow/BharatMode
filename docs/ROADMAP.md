@@ -1,5 +1,8 @@
 # Bharat Mode — Launch milestones
 
+> **Release preparation — 24 November 2026:** [BM-0003 release package](../publishing/BM-0003-release.md) now contains proposed title, description, thumbnail, settings and independently repeated technical/source QA. Actual approved MP4 SHA matched; 60fps / 2490 frames / 41.5s; full decode passed; −18.6 LUFS and −2.3 dBTP measured. Thumbnail extracted at 25.90s and saved privately. No video changes or upload. **Next:** owner review of metadata/thumbnail, device playback and remaining individual asset rights checks, then separate upload authorization. BM-0003 remains In Progress. Work audio-only.
+
+
 > **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
 
 **Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**
