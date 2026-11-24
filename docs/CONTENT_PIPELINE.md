@@ -1,5 +1,17 @@
 # Bharat Mode — Permanent Content Registry & Editorial Workflow
 
+## Mandatory owner review sequence — 24 November 2026
+
+For every new Short, including existing queued candidates, follow this exact order in the main production chat:
+
+1. **Actual news/story content first.** Present the original development in plain language, event and source dates, primary-source links, verified facts and figures, why it matters, and material caveats. Distinguish announced, ordered, under development, deployed and completed. Do not start with narration or a visual concept. Obtain owner story approval before proceeding.
+2. **Narration script second.** Present the complete proposed spoken script, broken into scenes, with estimated duration and factual qualifiers. Obtain owner script approval before advancing.
+3. **Visual storyboard third.** Present an actual visual scene-by-scene preview (in-chat HTML/visual panels preferred), showing intended 9:16 composition, theme, on-screen title, hero graphics, motion and transitions, corresponding narration and approximate timing. Text-only planning is not a substitute for a visual preview when supported. Use approved V6 and 24px centered captions. Obtain owner storyboard approval before generating production narration or rendering.
+4. **Draft render fourth.** Only after these approvals, use Work Mode for approved free Qwen3-TTS narration and real word alignment, then render the actual reviewable MP4 in the main chat with approved music, native 1080×1920 at 60fps, fresh aligned captions and quality checks. Deliver direct MP4 access and identify it as a draft. Revise based on owner feedback; do not publish.
+
+After draft approval, complete final QA, thumbnail and publishing dashboard, then obtain explicit publication authorization. Record the actual publication URL/date and refresh the content calendar. Record review gates and revisions in existing story research/production notes under the permanent BM ID; do not create a duplicate registry or infer approvals. Do not combine or skip the four owner-facing stages unless the owner explicitly requests it for that episode. Previously published episodes are not reopened. Native-renderer implementation may be developed internally but must not replace the story-first owner-facing sequence. Existing approved branding, V6, audio-only Work boundary, no-new-paid-compute/voice policy, and post-launch QA requirements remain unchanged.
+
+
 > **Owner update — 24 November 2026:** Caption backing corner radius is **24px** (supersedes 32px); all no-shadow/no-blur, native resolution and direct-alignment requirements remain. The owner requests a refreshed HTML content calendar whenever asked; see [CONTENT_CALENDAR.md](CONTENT_CALENDAR.md). Calendar reflects real publication history, current production, future ideas and explicit schedules only. BM-0003 appears as owner-confirmed published with URL/date pending; no fictitious release dates.
 
 

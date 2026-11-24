@@ -1,5 +1,8 @@
 # Bharat Mode
 
+> **MANDATORY — owner workflow, 24 November 2026:** Every new Short starts with the actual verified news/story content and original sources → owner review → complete narration script → owner review → visual scene-by-scene storyboard preview → owner review → actual draft MP4 render for feedback. Do not skip or combine these stages unless explicitly requested by the owner. Final QA, publishing dashboard, publication authorization and calendar reconciliation follow draft approval. Work remains audio-only; V6 and 24px caption corrections remain approved. The next owner-facing action is the news/story itself, not renderer implementation. See [mandatory owner review sequence](docs/CONTENT_PIPELINE.md#mandatory-owner-review-sequence--24-november-2026).
+
+
 **Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
 
 > **MUSIC-06:** Owner selected their private techno-thriller file and confirmed **paid ElevenLabs Music** generation. Ordinary commercial YouTube-video sync is permitted without paid-tier attribution under current [Music Terms](https://elevenlabs.io/music-terms). Selected track remains private; first 20s Qwen reference mix test passed, but real story narration/full video QA is unfinished. [Music direction](docs/MUSIC_DIRECTION.md) · [config](config/music.json).

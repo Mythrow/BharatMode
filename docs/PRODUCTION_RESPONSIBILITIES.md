@@ -1,5 +1,8 @@
 # Bharat Mode — Responsibility Boundary: AUDIO ONLY in Work, VIDEO HERE
 
+> **MANDATORY — owner workflow, 24 November 2026:** Every new Short starts with the actual verified news/story content and original sources → owner review → complete narration script → owner review → visual scene-by-scene storyboard preview → owner review → actual draft MP4 render for feedback. Do not skip or combine these stages unless explicitly requested by the owner. Final QA, publishing dashboard, publication authorization and calendar reconciliation follow draft approval. Work remains audio-only; V6 and 24px caption corrections remain approved. The next owner-facing action is the news/story itself, not renderer implementation. See [mandatory owner review sequence](CONTENT_PIPELINE.md#mandatory-owner-review-sequence--24-november-2026).
+
+
 > **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
 
 **Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**

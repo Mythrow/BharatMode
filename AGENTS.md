@@ -1,5 +1,8 @@
 # Bharat Mode — Assistant / Coding Agent Instructions
 
+> **MANDATORY — owner workflow, 24 November 2026:** Every new Short starts with the actual verified news/story content and original sources → owner review → complete narration script → owner review → visual scene-by-scene storyboard preview → owner review → actual draft MP4 render for feedback. Do not skip or combine these stages unless explicitly requested by the owner. Final QA, publishing dashboard, publication authorization and calendar reconciliation follow draft approval. Work remains audio-only; V6 and 24px caption corrections remain approved. The next owner-facing action is the news/story itself, not renderer implementation. See [mandatory owner review sequence](docs/CONTENT_PIPELINE.md#mandatory-owner-review-sequence--24-november-2026).
+
+
 > **Owner update — 24 November 2026:** Caption backing corner radius is **24px** (supersedes 32px); all no-shadow/no-blur, native resolution and direct-alignment requirements remain. The owner requests a refreshed HTML content calendar whenever asked; see [CONTENT_CALENDAR.md](docs/CONTENT_CALENDAR.md). Calendar reflects real publication history, current production, future ideas and explicit schedules only. BM-0003 appears as owner-confirmed published with URL/date pending; no fictitious release dates.
 
 
