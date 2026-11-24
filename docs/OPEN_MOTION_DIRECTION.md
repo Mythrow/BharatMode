@@ -1,5 +1,8 @@
 # Bharat Mode — Approved open-canvas visual motion direction
 
+> **Approved thumbnail and filenames (24 Nov 2026):** [THUMBNAIL_AND_EXPORT_DIRECTION.md](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines custom story-summary thumbnails and canonical `BM-####-<slug>.mp4` filenames. BM-0003 final MP4 now saved as `BM-0003-lt-chennai-ai-cluster-order.mp4` (byte-identical approved V5) and a custom matching PNG cover prepared for review. Old single-frame thumbnail superseded as default. No upload; remaining device/rights and publication gates unchanged.
+
+
 ## Owner-approved production direction — 24 November 2026
 
 **APPROVED:** The owner reviewed the actual BM-0003 Revision 5 video and confirmed satisfaction with the result ("Yes this looks good im happy with the result now"). The **locked V6 visual system plus the BM-0003 Revision 5 open-canvas motion treatment** is now the reference for future Bharat Mode Shorts. "Revision 5" refers to the episode cut, not the older V5 template prototype. Earlier boxed-hero cuts and 30fps-only production defaults are superseded. Do not reopen approved creative, map, narrator or music decisions without an owner request.

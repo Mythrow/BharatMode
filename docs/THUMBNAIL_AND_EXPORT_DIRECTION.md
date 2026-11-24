@@ -1,0 +1,27 @@
+# Bharat Mode — Approved thumbnail direction and delivery filenames
+
+**Owner approved, 24 November 2026.** Final thumbnails are purpose-built editorial composites, not a randomly selected still or a single scene statistic. This approval establishes the direction; individual new cover artwork still needs review before publication.
+
+## Thumbnail design rules
+
+- Communicate what happened, who is involved, and why it matters at a glance. Use a strong concise headline naming the event or principal organization; select one dominant verified fact and, when useful, one supporting fact. Use numbers with essential context (planned vs operating, range vs exact value).
+- Include relevant verified company/organization logos or original marks and names, not invented brand graphics. Maintain role distinctions, e.g. contracting entity vs technology manufacturer; use plain text for unverified marks. Record provenance, respect rights and avoid endorsement implications.
+- Compose several relevant story elements into one deliberate, visually coherent cover (maps, infrastructure, people or scientific diagrams as appropriate). Use approved Bharat Mode brand kit, exact badge/avatar, open canvas, strong typographic hierarchy and generous spacing. Do not require the same composition, map, statistics or number of logos for every story.
+- Native 1080×1920 vertical cover. Keep main headline, principal subject and key statistic within sensible crop-safe areas; inspect mobile-scale legibility, collisions, contrast and platform cropping. No filler text, unverified sensational claims, or AI-generated artwork passed off as evidence.
+- Use a custom thumbnail file wherever the account's Shorts upload UI supports it. Verify actual platform/account capability at upload; if frame selection is the only option, agree on a suitable fallback with the owner. Do not silently re-encode or insert a cover into an approved MP4. Still frame at 25.90s remains historical fallback for BM-0003, not the approved default.
+
+## Canonical deliverable naming
+
+Use the **full four-digit permanent registry ID** and stable lowercase kebab-case video/story slug (not a mutable YouTube headline). For final approved exports:
+- Video: `BM-####-<slug>.mp4` (no version/final suffix on the canonical final).
+- Thumbnail: `BM-####-<slug>-thumbnail.png`.
+- Optional text/source package: `BM-####-<slug>-description.txt`, `BM-####-<slug>-sources.md`.
+- Iterations, only while reviewing: `BM-####-<slug>-review-vN.mp4`; keep history distinct from final. Never change a content ID or create a new registry entry merely to rename a file. Once approved, copy/rename without re-encoding when media bytes are unchanged; verify SHA-256. Always provide a plain direct download link and private Library copy; no generated media or private voice/music in public Git.
+
+## BM-0003 application
+
+- Final video: `BM-0003-lt-chennai-ai-cluster-order.mp4`, 6,330,450 bytes, SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`. Byte-identical copy of approved Revision 5 (41.5s, 1080×1920, 60fps). Library ID `libfile_f757a41b695c819193c94c5889d51b11`. Old V5 reference is retained.
+- Custom cover: `BM-0003-lt-chennai-ai-cluster-order-thumbnail.png` (1080×1920 RGB, 205,953 bytes, SHA-256 `a4a29a25bdd230b2bfc1fded35fb66a8e3c83933777f764ca476747037dec937`, private Library ID `libfile_21430dbe1a30819183ea6980fa04d587`). Main headline **L&T’s new AI order**; ₹2,500–5,000 crore order-value range; earlier 10,000 planned GPUs; Chennai locator/Natural Earth geometry and schematic GPU array; L&T and NVIDIA marks, plain-text Vyoma.AI/LTN Compute; exact rasterized BM mark cropped from approved video. The locally available Inter Display/Inter font fallback is used in this draft cover; approved Sora/Manrope remains the general brand standard. Artwork visually checked at 540×960; actual account crop remains to be checked.
+- Reproduction source: [scripts/create_bm0003_thumbnail.py](../scripts/create_bm0003_thumbnail.py), inputs: approved private V5 MP4, verified Natural Earth geometry and private logo PNGs from V3 provenance ([MAP_DIRECTION.md](MAP_DIRECTION.md)). Outputs new custom cover and checksum-identical final file. No image generation claims or paid service. Existing `src/thumbnail.jsx` is legacy; future general thumbnail renderer must implement this story-specific composite standard.
+
+**Status:** direction and filename convention approved; new individual thumbnail prepared for review. No publication authorization or upload. Device/rights and platform checks remain open.

@@ -1,5 +1,8 @@
 # Production guide
 
+> **Approved thumbnail and filenames (24 Nov 2026):** [THUMBNAIL_AND_EXPORT_DIRECTION.md](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines custom story-summary thumbnails and canonical `BM-####-<slug>.mp4` filenames. BM-0003 final MP4 now saved as `BM-0003-lt-chennai-ai-cluster-order.mp4` (byte-identical approved V5) and a custom matching PNG cover prepared for review. Old single-frame thumbnail superseded as default. No upload; remaining device/rights and publication gates unchanged.
+
+
 > **CURRENT — 24 November 2026:** Owner approved the actual BM-0003 Revision 5 video and the open-canvas 60fps direction. **V6 + approved episode Revision 5** is the reference; [visual rules](OPEN_MOTION_DIRECTION.md) and [template](APPROVED_SHORTS_TEMPLATE.md) are authoritative. Creative review complete; phone QA and explicit publication approval remain separate. Always deliver a direct downloadable MP4. Work stays audio-only. No new render or audio regeneration needed for this approval.
 
 **Historical checkpoints below record what was true at the time; earlier pending review statements are superseded by this approval.**

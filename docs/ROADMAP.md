@@ -1,5 +1,8 @@
 # Bharat Mode — Launch milestones
 
+> **Approved thumbnail and filenames (24 Nov 2026):** [THUMBNAIL_AND_EXPORT_DIRECTION.md](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines custom story-summary thumbnails and canonical `BM-####-<slug>.mp4` filenames. BM-0003 final MP4 now saved as `BM-0003-lt-chennai-ai-cluster-order.mp4` (byte-identical approved V5) and a custom matching PNG cover prepared for review. Old single-frame thumbnail superseded as default. No upload; remaining device/rights and publication gates unchanged.
+
+
 > **Release preparation — 24 November 2026:** [BM-0003 release package](../publishing/BM-0003-release.md) now contains proposed title, description, thumbnail, settings and independently repeated technical/source QA. Actual approved MP4 SHA matched; 60fps / 2490 frames / 41.5s; full decode passed; −18.6 LUFS and −2.3 dBTP measured. Thumbnail extracted at 25.90s and saved privately. No video changes or upload. **Next:** owner review of metadata/thumbnail, device playback and remaining individual asset rights checks, then separate upload authorization. BM-0003 remains In Progress. Work audio-only.
 
 

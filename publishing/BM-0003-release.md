@@ -27,11 +27,12 @@ An original Bharat Mode explainer featuring illustrative motion graphics, Natura
 
 #BharatMode #India #ArtificialIntelligence #Chennai #NVIDIA #Shorts
 
-## Thumbnail and video
+## Thumbnail and video — updated owner-approved direction
 
-- Approved MP4: private Library /BharatMode/BM-0003-v5-60fps.mp4, library ID libfile_e0c9f9e7889c819188faa7916f611d99; SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`. Direct download in chat, not HTML wrapper.
-- Recommended thumbnail: **an actual unchanged frame from the approved MP4 at 25.90 seconds, zero-based frame 1554**. Shows the 10,000 **PLANNED GPUs** statistic, branded ivory GPU-grid scene. Extracted full resolution 1080×1920 PNG, private Library /BharatMode/BM-0003-thumbnail.png, library ID libfile_c50e11f3cea081918409fbb61a849f25; SHA-256 `f33a314c1479419a9f6a741f0b6069cffed54f8b71c49e5e6d3044c5359eb5fd`. No video modification and no separate fictitious scene.
-- [Current YouTube Help: custom Shorts thumbnail](https://support.google.com/youtube/answer/72431?hl=en) describes direct 9:16 image upload on desktop Studio for verified accounts. If account UI lacks it, [mobile YouTube app frame selection](https://support.google.com/youtube/answer/10343433?hl=en-UM) at ~25.9s produces the same frame.
+- **Canonical final video:** `BM-0003-lt-chennai-ai-cluster-order.mp4`, private Library /BharatMode/, ID `libfile_f757a41b695c819193c94c5889d51b11`. Byte-identical to approved Revision 5; SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`. No re-encode or audio/visual change.
+- **Custom thumbnail candidate:** `BM-0003-lt-chennai-ai-cluster-order-thumbnail.png`, private Library ID `libfile_21430dbe1a30819183ea6980fa04d587`; SHA-256 `a4a29a25bdd230b2bfc1fded35fb66a8e3c83933777f764ca476747037dec937`. 1080×1920. Headline L&T’s new AI order; ₹2,500–5,000 crore range; 10,000 planned GPUs; map/Chennai, NVIDIA B300 schematic, L&T/NVIDIA marks, Vyoma.AI/LTN Compute names. Actual custom composite produced and inspected. Individual artwork awaits review.
+- Previous 25.90-second still is historical fallback only, not the default. Check real Shorts custom-thumbnail capability for account before upload; agree on fallback if only frame selection is available. No silent modification to approved video.
+- [Approved thumbnail and naming rules](../docs/THUMBNAIL_AND_EXPORT_DIRECTION.md); [reproduction code](../scripts/create_bm0003_thumbnail.py).
 
 ## Suggested upload settings
 

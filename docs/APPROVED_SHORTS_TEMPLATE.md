@@ -1,5 +1,8 @@
 # Bharat Mode — Approved Shorts Visual Template
 
+> **Approved thumbnail and filenames (24 Nov 2026):** [THUMBNAIL_AND_EXPORT_DIRECTION.md](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines custom story-summary thumbnails and canonical `BM-####-<slug>.mp4` filenames. BM-0003 final MP4 now saved as `BM-0003-lt-chennai-ai-cluster-order.mp4` (byte-identical approved V5) and a custom matching PNG cover prepared for review. Old single-frame thumbnail superseded as default. No upload; remaining device/rights and publication gates unchanged.
+
+
 **APPROVED by the owner: 23 November 2026** (final design adjustment: center chapter progress bar).
 
 This is the official **visual and motion-language baseline** for Bharat Mode Shorts, not a completed or published video. It replaces V1–V5 proposals and the V6 *review* status. Subsequent changes to the approved look should be explicitly reviewed. Script structure, evidence type and the number of chapters must remain flexible.

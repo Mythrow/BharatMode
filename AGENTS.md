@@ -2,6 +2,8 @@
 
 **Start by reading [docs/PROJECT_STATUS.md](docs/PROJECT_STATUS.md).**
 
+**Owner-approved thumbnail/export standard:** [THUMBNAIL_AND_EXPORT_DIRECTION.md](docs/THUMBNAIL_AND_EXPORT_DIRECTION.md). Custom thumbnails summarize event, relevant entities/logos and key story facts, not default frame grabs. Canonical final filename uses full four-digit registry ID and stable slug: `BM-####-<slug>.mp4`; thumbnail matching `-thumbnail.png`. Direct download always; byte-verified rename/copy when approved media unchanged. No publication without explicit approval.
+
 **FINAL OWNER APPROVAL (24 November 2026):** BM-0003 Revision 5 actual video accepted. [OPEN_MOTION_DIRECTION.md](docs/OPEN_MOTION_DIRECTION.md) + locked V6 are the canonical creative standard. Native 60fps minimum for all new layers, open-canvas story-specific visuals, independent motion and meaningful backgrounds, minimal text, count-ups, collision QA, Natural Earth maps and verified identities. **Always provide a plain direct downloadable MP4 link**; preview buttons/HTML do not replace it. Work remains audio-only. Creative approval is not permission to publish.
 
 **OWNER VISUAL DIRECTION:** Do not recreate the old static evidence cards or request approval again for the accepted reference. Preserve the V6 frame and compact captions.
