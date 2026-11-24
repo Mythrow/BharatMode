@@ -10,9 +10,9 @@ let passed=0;
 function fixture(){
   const d=fs.mkdtempSync(path.join(os.tmpdir(),'bm-content-registry-'));
   for(const p of ['scripts/content-registry.mjs','content/registry.json','content/CONTENT_LOG.md',
-                  'content/research/BM-0001.md','content/research/BM-0002.md',
-                  'content/research/BM-0003.md','content/research/BM-0004.md',
-                  'publishing/queue.json','stories/param-rudra.json','stories/icmr-tech-transfer.json']){
+                  'content/research/ID-001.md','content/research/ID-002.md',
+                  'content/research/ID-003.md','content/research/ID-004.md',
+                  'publishing/queue.json','stories/param-rudra.json','stories/icmr-tech-transfer.json','stories/lt-chennai-ai-cluster-order.json']){
     const out=path.join(d,p);fs.mkdirSync(path.dirname(out),{recursive:true});fs.copyFileSync(path.join(SOURCE,p),out);
   }
   return d;
@@ -31,13 +31,13 @@ test('baseline has four permanent content identities, exact log and stage counts
   const r=run(d,'check');good(r);assert.match(r.stdout,/4 IDs \| idea 2 \| in_progress 2 \| published 0/);
 });
 test('list and search span both Idea and In Progress',d=>{
-  const r=run(d,'find','Vyoma');good(r);assert.match(r.stdout,/BM-0003/);
-  const l=run(d,'list','--stage','idea');good(l);assert.match(l.stdout,/BM-0002/);assert.doesNotMatch(l.stdout,/BM-0001/);
+  const r=run(d,'find','Vyoma');good(r);assert.match(r.stdout,/ID-003/);
+  const l=run(d,'list','--stage','idea');good(l);assert.match(l.stdout,/ID-002/);assert.doesNotMatch(l.stdout,/ID-001/);
 });
 test('reject duplicated event key and avoid reserving an ID',d=>{
   const r=add(d,'--story-key','lt-chennai-ai-b300-additional-order-2026-11-23');bad(r,/duplicate event\/story identity/);
   assert.equal(JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'),'utf8')).nextSequence,5);
-  assert.equal(fs.existsSync(path.join(d,'content/research/BM-0005.md')),false);
+  assert.equal(fs.existsSync(path.join(d,'content/research/ID-005.md')),false);
 });
 test('reject primary-source URL duplicate even with a distinct event key',d=>{
   const r=add(d,'--primary-source','https://nsearchives.nseindia.com/corporate/PAM_23112026093338_PressRelease23112026.pdf?utm_source=x');bad(r,/source URL re-used/);
@@ -50,33 +50,33 @@ test('reject repeated topic with no cross-linked, distinct development',d=>{
 });
 test('allow distinct later update in same topic only with cross-link and explanation',d=>{
   const r=add(d,'--title','A separate 2027 L&T GPU deployment milestone','--topic-key','lt-chennai-ai-infrastructure',
-    '--related','BM-0003','--distinguishing-update','New 2027 operational milestone with a separate original source and date.');good(r);
+    '--related','ID-003','--distinguishing-update','New 2027 operational milestone with a separate original source and date.');good(r);
   good(run(d,'check'));
   const x=JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'),'utf8'));
-  assert.equal(x.items.at(-1).id,'BM-0005');assert.equal(x.nextSequence,6);
+  assert.equal(x.items.at(-1).id,'ID-005');assert.equal(x.items.at(-1).productionCode,null);assert.equal(x.nextSequence,6);
 });
 test('cannot skip Idea and publish an idea directly',d=>{
-  bad(run(d,'move','BM-0002','published','--note','No skip','--published-at','2026-11-23',
+  bad(run(d,'move','ID-002','published','--note','No skip','--published-at','2026-11-23',
     '--youtube-url','https://www.youtube.com/shorts/abcdefghijk','--approved-by-owner'),/Must move Idea/);
 });
 test('moving to In Progress requires a reason and creates stage history',d=>{
-  bad(run(d,'move','BM-0002','in_progress'),/explicit --note/);
-  good(run(d,'move','BM-0002','in_progress','--note','Selected for script development'));
+  bad(run(d,'move','ID-002','in_progress'),/explicit --note/);
+  good(run(d,'move','ID-002','in_progress','--note','Selected for script development'));
   good(run(d,'check'));
   const x=JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'),'utf8'));
-  assert.equal(x.items[1].stage,'in_progress');assert.equal(x.items[1].stageHistory.length,2);
+  assert.equal(x.items[1].stage,'in_progress');assert.equal(x.items[1].productionCode,'BM-002');good(run(d,'move','ID-004','in_progress','--note','Next selected'));assert.equal(JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'),'utf8')).items[3].productionCode,'BM-004');assert.equal(x.items[1].stageHistory.length,2);
 });
 test('publishing requires owner sign-off, video URL, date and a reason',d=>{
-  bad(run(d,'move','BM-0003','published','--note','Published','--published-at','2026-11-23',
+  bad(run(d,'move','ID-003','published','--note','Published','--published-at','2026-11-23',
     '--youtube-url','https://www.youtube.com/watch?v=abcdefghijk'),/approved-by-owner/);
-  bad(run(d,'move','BM-0003','published','--note','Published','--published-at','2026-11-23',
+  bad(run(d,'move','ID-003','published','--note','Published','--published-at','2026-11-23',
     '--youtube-url','https://example.com/short','--approved-by-owner'),/YouTube/);
-  good(run(d,'move','BM-0003','published','--note','Final upload and editorial rights QA approved',
+  good(run(d,'move','ID-003','published','--note','Final upload and editorial rights QA approved',
     '--published-at','2026-11-23','--youtube-url','https://www.youtube.com/shorts/abcdefghijk','--approved-by-owner'));
   good(run(d,'check'));
   const x=JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'),'utf8'));
   assert.equal(x.items[2].stage,'published');assert.equal(x.items[2].youtubeUrl,'https://www.youtube.com/shorts/abcdefghijk');
-  bad(run(d,'move','BM-0003','in_progress','--note','Bad revert'),/Must move Idea/);
+  bad(run(d,'move','ID-003','in_progress','--note','Bad revert'),/Must move Idea/);
 });
 test('fail when generated dashboard edited without sync',d=>{
   fs.appendFileSync(path.join(d,'content/CONTENT_LOG.md'),'\nManual stale edit\n');
@@ -84,7 +84,7 @@ test('fail when generated dashboard edited without sync',d=>{
   good(run(d,'sync'));good(run(d,'check'));
 });
 test('reject a missing research sheet',d=>{
-  fs.unlinkSync(path.join(d,'content/research/BM-0004.md'));
+  fs.unlinkSync(path.join(d,'content/research/ID-004.md'));
   bad(run(d,'check'),/missing research file/);
 });
 test('reject unregistered, duplicate or published slugs in queue',d=>{

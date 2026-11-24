@@ -14,7 +14,10 @@ const QUEUE_PATH = path.join(ROOT, 'publishing/queue.json');
 const STAGES = ['idea','in_progress','published'];
 const LABELS = {idea:'Idea',in_progress:'In Progress',published:'Published'};
 const PRIORITIES = ['high','medium','low'];
-const ID_RE = /^BM-(\d{4,})$/;
+const ID_RE = /^ID-(\d{3,})$/;
+const PRODUCTION_RE=/^BM-(\d{3,})$/;
+function nextProductionCode(r){const used=new Set(r.items.map(x=>x.productionCode));let n=1;while(used.has(`BM-${String(n).padStart(3,'0')}`))n++;return `BM-${String(n).padStart(3,'0')}`;}
+function matchId(x,id){return [x.id,x.productionCode,x.legacyId].filter(Boolean).some(y=>y.toLowerCase()===String(id).toLowerCase());}
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const EVENT_DATE = /^\d{4}-\d{2}(?:-\d{2})?$/;
 const STOP = new Set('the an a and of to for with from into by is are was were new in india indian how why its our on more another an as gets get at this that has have about using added announces announced expands expansion research major project first facility'.split(' '));
@@ -63,16 +66,17 @@ function expectedResearchPath(id){return `content/research/${id}.md`;}
 function validate(registry,{files=true,queue=true}={}){
   const errors=[];
   const err=msg=>errors.push(msg);
-  if(registry.schemaVersion!==1)err('schemaVersion must be 1');
+  if(registry.schemaVersion!==2)err('schemaVersion must be 2');
   if(!Array.isArray(registry.items))return ['registry.items must be an array'];
   if(!Number.isInteger(registry.nextSequence)||registry.nextSequence<1)err('nextSequence must be a positive integer');
   if(!daysAreValid(registry.updatedAt))err('registry.updatedAt must be a valid YYYY-MM-DD date');
   const ids=new Map(),slugs=new Map(),storyKeys=new Map(),sources=new Map(),youtubeIds=new Map();
-  let maxNum=0;
+  let maxNum=0;const productionCodes=new Set();
   for(const it of registry.items){
     const name=it?.id||'(no ID)';
     if(!ID_RE.test(name)){err(`${name}: invalid permanent ID`);continue;}
     maxNum=Math.max(maxNum,Number(name.match(ID_RE)[1]));
+    if(it.stage==='idea'){if(it.productionCode!==null)err(`${name}: unselected idea must not have a production code`);}else{if(!PRODUCTION_RE.test(it.productionCode||''))err(`${name}: selected content requires production code`);else if(productionCodes.has(it.productionCode))err(`${name}: duplicate production code ${it.productionCode}`);else productionCodes.add(it.productionCode);}
     if(ids.has(name))err(`Duplicate content ID ${name}`); ids.set(name,it);
     if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(it.slug||''))err(`${name}: invalid slug`);
     if(slugs.has(it.slug))err(`${name}: duplicate slug ${it.slug} (${slugs.get(it.slug)})`);slugs.set(it.slug,name);
@@ -100,7 +104,7 @@ function validate(registry,{files=true,queue=true}={}){
       if(it.storyPath!==null){
         const story=path.join(ROOT,it.storyPath||'');
         if(!it.storyPath?.startsWith('stories/')||!fs.existsSync(story))err(`${name}: missing story draft ${it.storyPath}`);
-        else try{{const draft=readJSON(story).story; if(draft?.slug!==it.slug)err(`${name}: storyPath slug does not match registry slug`); if(draft?.contentId!==name)err(`${name}: storyPath contentId must match permanent registry ID`)}}catch{err(`${name}: invalid story JSON`)}
+        else try{{const draft=readJSON(story).story; if(draft?.slug!==it.slug)err(`${name}: storyPath slug does not match registry slug`); if(draft?.contentId!==name&&draft?.contentId!==it.legacyId)err(`${name}: storyPath contentId must match permanent registry ID`)}}catch{err(`${name}: invalid story JSON`)}
       }
     }
     if(!Array.isArray(it.relatedIds))err(`${name}: relatedIds array required`);
@@ -147,7 +151,7 @@ function validate(registry,{files=true,queue=true}={}){
       try {
         const story=readJSON(path.join(ROOT,'stories',fname)).story;
         if(!story?.slug || !story?.contentId)err(`stories/${fname}: story must include slug + permanent contentId`);
-        else if(!registry.items.some(it=>it.slug===story.slug && it.id===story.contentId && it.storyPath===`stories/${fname}`))err(`stories/${fname}: missing or mismatched content register entry`);
+        else if(!registry.items.some(it=>it.slug===story.slug && [it.id,it.legacyId].includes(story.contentId) && it.storyPath===`stories/${fname}`))err(`stories/${fname}: missing or mismatched content register entry`);
       }catch{err(`stories/${fname}: invalid story JSON`)}
     }
   }
@@ -157,7 +161,7 @@ function validate(registry,{files=true,queue=true}={}){
       if(seen.has(slug))err(`Publishing queue repeats ${slug}`);seen.add(slug);
       const item=registry.items.find(x=>x.slug===slug);
       if(!item)err(`Publishing queue item '${slug}' not registered`);
-      else if(item.stage==='published')err(`Publishing queue still includes published item ${item.id}`);
+      else if(item.stage==='published'||item.ownerConfirmedPublic===true)err(`Publishing queue still includes published item ${item.id}`);
     }
   }
   return errors;
@@ -185,16 +189,16 @@ function renderLog(registry){
     const rows=sortEntries(registry.items.filter(x=>x.stage===stage));
     lines.push(`## ${LABELS[stage]} (${rows.length})`,'');
     if(!rows.length){lines.push('_No content in this stage._','');continue}
-    lines.push('| Content ID | Title | Event / as-of | Priority | Research | Story draft | Publication |','|---|---|---|---|---|---|---|');
+    lines.push('| Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |','|---|---|---|---|---|---|---|---|');
     for(const x of rows){
       const story=x.storyPath?`[Draft](../${x.storyPath})`:'—';
-      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:'—';
-      lines.push(`| **${x.id}** | ${markdownCell(x.title)} | ${displayDate(x.eventDate)} | ${x.priority} | [Research](research/${x.id}.md) | ${story} | ${published} |`);
+      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.ownerConfirmedPublic?'Owner-confirmed published; URL/date pending':'—';
+      lines.push(`| **${x.id}** | ${x.productionCode||'—'} | ${markdownCell(x.title)} | ${displayDate(x.eventDate)} | ${x.priority} | [Research](research/${x.id}.md) | ${story} | ${published} |`);
     }
     lines.push('');
   }
   lines.push('## Dedupe and stage rules','',
-    '- Every candidate gets one **never-reused** `BM-####` ID and its own fact-checked research sheet. IDs persist across all stages.',
+    '- Every candidate gets one **never-reused** `ID-###` idea identity and its own fact-checked research sheet. Assign the lowest unused `BM-###` only on selection; preserve both codes permanently.',
     '- A primary event is identified by `storyKey`; source URLs, slug, ID, near-identical titles and the complete registry are checked for duplicates.',
     '- A later distinct event in the **same topic** requires a new `storyKey`, links in `relatedIds`, and `distinguishingUpdate` explaining why it deserves another video.',
     '- **Idea → In Progress → Published** is one-way. A published entry must include the actual YouTube video URL, date and explicit owner publication sign-off.',
@@ -222,9 +226,9 @@ function add(args){
   if(!daysAreValid(f['event-date'],true))die('Invalid --event-date');
   if(!daysAreValid(f['source-date']))die('Invalid --source-date');
   const source=f['primary-source'];if(!canonicalURL(source))die('Invalid primary source URL');
-  const id=`BM-${String(r.nextSequence).padStart(4,'0')}`;
-  const related=(f.related||'').split(',').map(s=>s.trim()).filter(Boolean);
-  const item={id,slug:f.slug,title:f.title,stage:'idea',priority:f.priority||'medium',category:f.category||'general',storyKey:f['story-key'],topicKey:f['topic-key'],aliases:(f.aliases||f.title).split(',').map(x=>x.trim()).filter(Boolean),eventDate:f['event-date'],sourceDate:f['source-date']||todayIST(),discoveredAt:todayIST(),updatedAt:todayIST(),sourceUrls:[source],researchPath:expectedResearchPath(id),storyPath:null,relatedIds:related,distinguishingUpdate:f['distinguishing-update']||null,publishedAt:null,youtubeUrl:null,publishApprovedByOwner:false,stageHistory:[{at:todayIST(),from:null,to:'idea',note:f.note||'New candidate added after source and overlap review.'}]};
+  const id=`ID-${String(r.nextSequence).padStart(3,'0')}`;
+  const related=(f.related||'').split(',').map(s=>s.trim()).filter(Boolean).map(id=>r.items.find(x=>matchId(x,id))?.id||id);
+  const item={id,productionCode:null,slug:f.slug,title:f.title,stage:'idea',priority:f.priority||'medium',category:f.category||'general',storyKey:f['story-key'],topicKey:f['topic-key'],aliases:(f.aliases||f.title).split(',').map(x=>x.trim()).filter(Boolean),eventDate:f['event-date'],sourceDate:f['source-date']||todayIST(),discoveredAt:todayIST(),updatedAt:todayIST(),sourceUrls:[source],researchPath:expectedResearchPath(id),storyPath:null,relatedIds:related,distinguishingUpdate:f['distinguishing-update']||null,publishedAt:null,youtubeUrl:null,publishApprovedByOwner:false,stageHistory:[{at:todayIST(),from:null,to:'idea',note:f.note||'New candidate added after source and overlap review.'}]};
   const candidate={...r,items:[...r.items,item],nextSequence:r.nextSequence+1};
   // Validate metadata without the new research file; no partial writes for dupes.
   const errs=validate(candidate,{files:false});if(errs.length)die('Cannot add candidate:\n- '+errs.join('\n- '));
@@ -236,9 +240,9 @@ function add(args){
 function move(args){
   const {flags:f,pos}=parseArgs(args);
   const [id,target]=pos;
-  if(!id||!STAGES.includes(target))die('Usage: move BM-0003 in_progress [--note ...] OR move BM-0003 published --youtube-url URL --published-at YYYY-MM-DD --approved-by-owner --note ...');
+  if(!id||!STAGES.includes(target))die('Usage: move ID-003 in_progress [--note ...] OR move ID-003 published --youtube-url URL --published-at YYYY-MM-DD --approved-by-owner --note ...');
   const r=read();ensureHealthy(r);
-  const item=r.items.find(x=>x.id===id);if(!item)die('Unknown ID '+id);
+  const item=r.items.find(x=>matchId(x,id));if(!item)die('Unknown ID '+id);
   const prev=item.stage;
   if(STAGES.indexOf(target)!==STAGES.indexOf(prev)+1)die(`Cannot transition ${id}: ${prev} -> ${target}. Must move Idea → In Progress → Published.`);
   if(!f.note?.trim())die('Stage transitions need an explicit --note');
@@ -248,6 +252,7 @@ function move(args){
     if(!videoId(f['youtube-url']))die('Publishing requires an actual YouTube watch/shorts URL');
     item.youtubeUrl=f['youtube-url'];item.publishedAt=f['published-at'];item.publishApprovedByOwner=true;
   }
+  if(target==='in_progress'){item.productionCode=nextProductionCode(r);item.productionSelectedAt=todayIST();}
   item.stage=target;item.updatedAt=todayIST();item.stageHistory.push({at:todayIST(),from:prev,to:target,note:f.note});
   const e=validate(r);if(e.length)die('Cannot move:\n- '+e.join('\n- '));
   const file=path.join(ROOT,item.researchPath),old=fs.readFileSync(file,'utf8');
@@ -262,7 +267,7 @@ function move(args){
     }
   }
   persist(r);
-  console.log(`Moved ${id} ${prev} → ${target}`);
+  console.log(`Moved ${item.id} / ${item.productionCode} ${prev} → ${target}`);
 }
 function check(){
   const r=read(),errs=validate(r);
@@ -276,14 +281,14 @@ function check(){
 function find(query){
   const r=read();const q=String(query||'').trim();if(!q)die('Usage: find <phrase|ID>');
   const arr=r.items.map(it=>{
-    const corpus=[it.title,it.slug,it.id,it.storyKey,it.topicKey,...it.aliases].join(' ');
-    const score=it.id.toLowerCase()===q.toLowerCase()?10:Math.max(overlap(q,corpus),overlap(q,it.title),[it.title,it.slug,it.storyKey,it.topicKey,...it.aliases].some(x=>String(x).toLowerCase().includes(q.toLowerCase()))?1:0);
+    const corpus=[it.title,it.slug,it.id,it.productionCode,it.legacyId,it.storyKey,it.topicKey,...it.aliases].join(' ');
+    const score=matchId(it,q)?10:Math.max(overlap(q,corpus),overlap(q,it.title),[it.title,it.slug,it.storyKey,it.topicKey,...it.aliases].some(x=>String(x).toLowerCase().includes(q.toLowerCase()))?1:0);
     return {...it,score};
   }).filter(x=>x.score>=.10).sort((a,b)=>b.score-a.score).slice(0,12);
-  for(const x of arr)console.log(`${x.id}\t${LABELS[x.stage]}\t${x.title}\t${x.researchPath}`);
+  for(const x of arr)console.log(`${x.id}\t${x.productionCode||'—'}\t${LABELS[x.stage]}\t${x.title}\t${x.researchPath}`);
   if(!arr.length)console.log('No strong matches; still examine topic aliases before accepting a story as new.');
 }
-function list(flag){const r=read();if(flag&&!STAGES.includes(flag))die('Unknown stage '+flag);for(const x of sortEntries(r.items.filter(it=>!flag||it.stage===flag)))console.log(`${x.id}\t${LABELS[x.stage]}\t${x.title}`);}
+function list(flag){const r=read();if(flag&&!STAGES.includes(flag))die('Unknown stage '+flag);for(const x of sortEntries(r.items.filter(it=>!flag||it.stage===flag)))console.log(`${x.id}\t${x.productionCode||'—'}\t${LABELS[x.stage]}\t${x.title}`);}
 function main(){
   const [cmd,...args]=process.argv.slice(2);
   if(cmd==='check')return check();
@@ -292,7 +297,7 @@ function main(){
   if(cmd==='move')return move(args);
   if(cmd==='find')return find(args.join(' '));
   if(cmd==='list')return list(parseArgs(args).flags.stage);
-  console.log('Usage: node scripts/content-registry.mjs <check|sync|list [--stage idea|in_progress|published]|find <words>|add --title ... --slug ... --story-key ... --topic-key ... --primary-source ... --event-date YYYY-MM-DD [--related BM-XXXX --distinguishing-update ...]|move BM-XXXX in_progress|published --note ...>');
+  console.log('Usage: node scripts/content-registry.mjs <check|sync|list [--stage idea|in_progress|published]|find <words>|add --title ... --slug ... --story-key ... --topic-key ... --primary-source ... --event-date YYYY-MM-DD [--related ID-XXX --distinguishing-update ...]|move ID-XXX in_progress|published --note ...>');
   if(cmd)process.exitCode=1;
 }
 try{main()}catch(e){console.error(e.message);process.exitCode=1}

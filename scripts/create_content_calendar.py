@@ -14,11 +14,11 @@ def load(root):
         p=read(path); reports[p['id']]=p.get('publication',{})
     rows=[]
     for x in registry['items']:
-        pub=reports.get(x['id'],{}); published=x['stage']=='published'; reported=pub.get('ownerConfirmedPublic') is True and not published
+        pub=reports.get(x.get('productionCode'),reports.get(x.get('legacyId'),reports.get(x['id'],{}))); published=x['stage']=='published'; reported=(pub.get('ownerConfirmedPublic') is True or x.get('ownerConfirmedPublic') is True) and not published
         # Schedule only when a real explicit date exists in registry or release metadata.
         scheduled=None if published or reported else x.get('scheduledAt') or pub.get('scheduledAt')
         status='published' if published else 'reported' if reported else 'active' if x['stage']=='in_progress' else 'idea'
-        rows.append({**{k:x.get(k) for k in ('id','slug','title','stage','priority','category','eventDate','discoveredAt','researchPath','storyPath','youtubeUrl','publishedAt')},'status':status,'reportDate':pub.get('reportedOn') if reported else None,'scheduledAt':scheduled,'queuePosition':queue.index(x['slug'])+1 if x['slug'] in queue and not (published or reported) else None})
+        rows.append({**{k:x.get(k) for k in ('id','productionCode','slug','title','stage','priority','category','eventDate','discoveredAt','researchPath','storyPath','youtubeUrl','publishedAt')},'status':status,'reportDate':(pub.get('reportedOn') or x.get('publicationReportedOn')) if reported else None,'scheduledAt':scheduled,'queuePosition':queue.index(x['slug'])+1 if x['slug'] in queue and not (published or reported) else None})
     return rows
 
 def daypart(s):
@@ -34,7 +34,7 @@ def make_page(rows, asof):
         for kind,key in [('published','publishedAt'),('reported','reportDate'),('scheduled','scheduledAt')]:
             if kind in ('published','reported') and r['status']!=kind: continue
             d=daypart(r[key]);
-            if d: event_map.setdefault(d,[]).append({'kind':kind,'id':r['id']})
+            if d: event_map.setdefault(d,[]).append({'kind':kind,'id':r.get('productionCode') or r['id']})
     labels={'published':'Published','reported':'Published · URL/date pending','active':'In progress','idea':'Idea'}
     cards=[]
     for section, title, desc, statuses in [('past','Publication history','Completed videos, including owner-confirmed publication awaiting reconciliation.',('published','reported')),('current','Current production','Selected stories being developed. Queue position does not establish a deadline.',('active',)),('future','Future stories','Candidates for editorial selection; no automatic publication.',('idea',))]:
@@ -47,7 +47,7 @@ def make_page(rows, asof):
             links=f'<a href="{REPO}{esc(r["researchPath"])}">Research</a>' if r['researchPath'] else ''
             if r['storyPath']: links+=f' <a href="{REPO}{esc(r["storyPath"])}">Storyboard</a>'
             if r['status']=='published' and r['youtubeUrl']: links+=f' <a href="{esc(r["youtubeUrl"])}">Watch Short</a>'
-            cards.append(f'<article class="story {r["status"]}"><div class="storyhead"><span class="id">{esc(r["id"])}</span><span class="status">{labels[r["status"]]}</span></div><h3>{esc(r["title"])}</h3><p class="muted">{esc(r["category"])} · {esc(r["priority"])} priority{esc(q) if q else ""}</p><p>{esc(pubtext)}</p><p class="muted">News event: {esc(r["eventDate"])} · Registered: {esc(r["discoveredAt"])}</p><div class="links">{links}</div></article>')
+            cards.append(f'<article class="story {r["status"]}"><div class="storyhead"><span class="id">{esc(r["id"])}{(" / "+esc(r["productionCode"])) if r.get("productionCode") else ""}</span><span class="status">{labels[r["status"]]}</span></div><h3>{esc(r["title"])}</h3><p class="muted">{esc(r["category"])} · {esc(r["priority"])} priority{esc(q) if q else ""}</p><p>{esc(pubtext)}</p><p class="muted">News event: {esc(r["eventDate"])} · Registered: {esc(r["discoveredAt"])}</p><div class="links">{links}</div></article>')
         cards.append('</section>')
     metrics=''.join(f'<div><strong>{n}</strong><span>{label}</span></div>' for n,label in [(counts['published']+counts['reported'],'Published / reported'),(counts['active'],'In production'),(counts['idea'],'Ideas'),(sum(bool(r['scheduledAt']) for r in rows),'Scheduled')])
     # Embed only non-sensitive calendar data. Escape script termination.

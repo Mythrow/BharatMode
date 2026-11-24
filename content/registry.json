@@ -1,10 +1,10 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-11-23",
+  "schemaVersion": 2,
+  "updatedAt": "2026-11-24",
   "nextSequence": 5,
   "items": [
     {
-      "id": "BM-0001",
+      "id": "ID-001",
       "slug": "param-rudra",
       "title": "PARAM Rudra: India’s supercomputing deployment",
       "stage": "in_progress",
@@ -20,11 +20,11 @@
       "eventDate": "2026-09",
       "sourceDate": "2026-10-04",
       "discoveredAt": "2026-11-23",
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "sourceUrls": [
         "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=160306&lang=1&reg=48"
       ],
-      "researchPath": "content/research/BM-0001.md",
+      "researchPath": "content/research/ID-001.md",
       "storyPath": "stories/param-rudra.json",
       "relatedIds": [],
       "distinguishingUpdate": null,
@@ -42,12 +42,15 @@
           "at": "2026-11-23",
           "from": "idea",
           "to": "in_progress",
-          "note": "Existing voice and V6 pipeline pilot; script drafted but still needs live fact reconfirmation."
+          "note": "Existing voice and V6 pipeline pilot; script drafted but still needs live fact reconfirmation. Owner selected for BM-001 on 24 Nov; story review precedes script approval."
         }
-      ]
+      ],
+      "legacyId": "BM-0001",
+      "productionCode": "BM-001",
+      "productionSelectedAt": "2026-11-24"
     },
     {
-      "id": "BM-0002",
+      "id": "ID-002",
       "slug": "icmr-tech-transfer",
       "title": "ICMR reaches 100 technology-transfer agreements",
       "stage": "idea",
@@ -67,7 +70,7 @@
       "sourceUrls": [
         "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2337773&lang=1&reg=1"
       ],
-      "researchPath": "content/research/BM-0002.md",
+      "researchPath": "content/research/ID-002.md",
       "storyPath": "stories/icmr-tech-transfer.json",
       "relatedIds": [],
       "distinguishingUpdate": null,
@@ -81,10 +84,12 @@
           "to": "idea",
           "note": "Imported existing Bharat Mode research or draft into permanent registry."
         }
-      ]
+      ],
+      "legacyId": "BM-0002",
+      "productionCode": null
     },
     {
-      "id": "BM-0003",
+      "id": "ID-003",
       "slug": "lt-chennai-ai-cluster-order",
       "title": "L&T expands Chennai AI infrastructure with new B300 order",
       "stage": "in_progress",
@@ -105,7 +110,7 @@
       "sourceUrls": [
         "https://nsearchives.nseindia.com/corporate/PAM_23112026093338_PressRelease23112026.pdf"
       ],
-      "researchPath": "content/research/BM-0003.md",
+      "researchPath": "content/research/ID-003.md",
       "storyPath": "stories/lt-chennai-ai-cluster-order.json",
       "relatedIds": [],
       "distinguishingUpdate": null,
@@ -125,10 +130,14 @@
           "to": "in_progress",
           "note": "Owner selected 23 Nov 2026 story for initial new-content trial; script and production still to do."
         }
-      ]
+      ],
+      "legacyId": "BM-0003",
+      "productionCode": "BM-003",
+      "ownerConfirmedPublic": true,
+      "publicationReportedOn": "2026-11-24"
     },
     {
-      "id": "BM-0004",
+      "id": "ID-004",
       "slug": "iitm-sleep-autism-facilities",
       "title": "IIT Madras inaugurates sleep and autism research facilities",
       "stage": "idea",
@@ -149,7 +158,7 @@
       "sourceUrls": [
         "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2340059&lang=1&reg=1"
       ],
-      "researchPath": "content/research/BM-0004.md",
+      "researchPath": "content/research/ID-004.md",
       "storyPath": null,
       "relatedIds": [],
       "distinguishingUpdate": null,
@@ -163,7 +172,9 @@
           "to": "idea",
           "note": "Imported existing Bharat Mode research or draft into permanent registry."
         }
-      ]
+      ],
+      "legacyId": "BM-0004",
+      "productionCode": null
     }
   ]
 }
