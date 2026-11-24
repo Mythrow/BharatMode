@@ -1,6 +1,9 @@
 # BM-0003 — Proposed release package (24 November 2026)
 
-**Status: prepared for owner review; not published.** Existing creative approval covers the V5 video, not publication. Content ID stays BM-0003 / In Progress. No video or audio changes were made.
+> **Owner approval / release bundle (24 November 2026):** The owner accepted the BM-0003 custom thumbnail style and agreed that programmatic thumbnail composition is the default. Generate precise layouts, typography, brand and map/verified logos with code; optionally incorporate rights-cleared generated imagery when appropriate. The accepted cover and V5 final MP4 were independently re-materialized and SHA-256 verified, and a seven-file release ZIP (video, thumbnail, title, description, sources, upload checklist, checksum manifest) was created and archive-tested. Private Library: `/BharatMode/BM-0003-lt-chennai-ai-cluster-order-release.zip`, ID `libfile_ac72d80e1a408191bd6ae782fa0f6231`, SHA-256 `40cec26e7643c4ed34f92d8d8ac7ce58ca31393c3a51c97f4e1eafdc3b4d7f3e`, 6,447,203 bytes. No video re-encode. Creative video/cover approval complete; proposed metadata, physical phone/platform crop check and rights evidence remain distinct from explicit upload authorization. BM-0003 is In Progress, not published. Next: complete release gates; no unnecessary creative revisions. Work remains audio-only.
+
+
+**Status: prepared for owner review; not published.** Creative approval covers the V5 video and custom thumbnail, not publication. Content ID stays BM-0003 / In Progress. No video or audio changes were made.
 
 ## Title
 India’s AI Infrastructure Is Growing | L&T’s ₹2,500–5,000 Crore Order
@@ -30,7 +33,7 @@ An original Bharat Mode explainer featuring illustrative motion graphics, Natura
 ## Thumbnail and video — updated owner-approved direction
 
 - **Canonical final video:** `BM-0003-lt-chennai-ai-cluster-order.mp4`, private Library /BharatMode/, ID `libfile_f757a41b695c819193c94c5889d51b11`. Byte-identical to approved Revision 5; SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`. No re-encode or audio/visual change.
-- **Custom thumbnail candidate:** `BM-0003-lt-chennai-ai-cluster-order-thumbnail.png`, private Library ID `libfile_21430dbe1a30819183ea6980fa04d587`; SHA-256 `a4a29a25bdd230b2bfc1fded35fb66a8e3c83933777f764ca476747037dec937`. 1080×1920. Headline L&T’s new AI order; ₹2,500–5,000 crore range; 10,000 planned GPUs; map/Chennai, NVIDIA B300 schematic, L&T/NVIDIA marks, Vyoma.AI/LTN Compute names. Actual custom composite produced and inspected. Individual artwork awaits review.
+- **Owner-accepted custom thumbnail:** `BM-0003-lt-chennai-ai-cluster-order-thumbnail.png`, private Library ID `libfile_21430dbe1a30819183ea6980fa04d587`; SHA-256 `a4a29a25bdd230b2bfc1fded35fb66a8e3c83933777f764ca476747037dec937`. 1080×1920. Headline L&T’s new AI order; ₹2,500–5,000 crore range; 10,000 planned GPUs; map/Chennai, NVIDIA B300 schematic, L&T/NVIDIA marks, Vyoma.AI/LTN Compute names. Actual custom composite produced and inspected. Owner accepted this thumbnail style and approved programmatic creation as the default.
 - Previous 25.90-second still is historical fallback only, not the default. Check real Shorts custom-thumbnail capability for account before upload; agree on fallback if only frame selection is available. No silent modification to approved video.
 - [Approved thumbnail and naming rules](../docs/THUMBNAIL_AND_EXPORT_DIRECTION.md); [reproduction code](../scripts/create_bm0003_thumbnail.py).
 
@@ -59,5 +62,5 @@ An original Bharat Mode explainer featuring illustrative motion graphics, Natura
 
 - Owner physical phone playback/Shorts-overlay check (not performed by assistant); confirm sound/legibility.
 - Confirm individual music-generation license evidence and final asset/map/mark rights as applicable.
-- Owner accepts metadata/thumbnail and explicitly authorizes upload; perform platform copyright checks and only publish with permission. No actual upload/URL yet.
+- Owner confirms proposed metadata and explicitly authorizes upload; perform platform copyright checks and only publish with permission. No actual upload/URL yet.
 - Subsequent production: generalize native-60fps all-layer audio-to-video rendering. Work remains narration/QA/alignment only.

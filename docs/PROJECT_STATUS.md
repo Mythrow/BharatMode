@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **Owner approval / release bundle (24 November 2026):** The owner accepted the BM-0003 custom thumbnail style and agreed that programmatic thumbnail composition is the default. Generate precise layouts, typography, brand and map/verified logos with code; optionally incorporate rights-cleared generated imagery when appropriate. The accepted cover and V5 final MP4 were independently re-materialized and SHA-256 verified, and a seven-file release ZIP (video, thumbnail, title, description, sources, upload checklist, checksum manifest) was created and archive-tested. Private Library: `/BharatMode/BM-0003-lt-chennai-ai-cluster-order-release.zip`, ID `libfile_ac72d80e1a408191bd6ae782fa0f6231`, SHA-256 `40cec26e7643c4ed34f92d8d8ac7ce58ca31393c3a51c97f4e1eafdc3b4d7f3e`, 6,447,203 bytes. No video re-encode. Creative video/cover approval complete; proposed metadata, physical phone/platform crop check and rights evidence remain distinct from explicit upload authorization. BM-0003 is In Progress, not published. Next: complete release gates; no unnecessary creative revisions. Work remains audio-only.
+
+
 > **Approved thumbnail and filenames (24 Nov 2026):** [THUMBNAIL_AND_EXPORT_DIRECTION.md](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines custom story-summary thumbnails and canonical `BM-####-<slug>.mp4` filenames. BM-0003 final MP4 now saved as `BM-0003-lt-chennai-ai-cluster-order.mp4` (byte-identical approved V5) and a custom matching PNG cover prepared for review. Old single-frame thumbnail superseded as default. No upload; remaining device/rights and publication gates unchanged.
 
 
@@ -197,7 +200,7 @@ Repository: https://github.com/Mythrow/BharatMode
 
 ## Exactly where to resume in the next chat
 
-**NEXT TASK — Review the prepared BM-0003 release package and complete remaining release gates.**
+**NEXT TASK — Complete remaining release gates for the accepted BM-0003 video and thumbnail.**
 
 The approved V5 video is already complete for creative review. Title, description, thumbnail and technical/source QA are prepared in `publishing/BM-0003-release.md`. Confirm device playback and individual rights evidence; obtain separate explicit publication approval before upload. Generalize the approved open-canvas treatment into a native-60fps all-layer video renderer starting from verified audio-only Work deliverables for future stories. PARAM Rudra remains a separate later pilot.
 
