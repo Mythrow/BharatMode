@@ -1,5 +1,8 @@
 # Bharat Mode — Approved thumbnail direction and delivery filenames
 
+> **Naming correction — 24 November 2026:** New canonical media names use selected production code `BM-###` plus lowercase slug, e.g. `BM-001-param-rudra.mp4` and `BM-001-param-rudra-thumbnail.png`. Idea IDs are separate `ID-###`. Older four-digit filenames are legacy and must be preserved unchanged. BM-001 video approved, custom thumbnail proposed.
+
+
 > **CURRENT — owner-approved chat-first publishing delivery (24 Nov 2026):** The standalone HTML file opens as source text in the ChatGPT attachment preview on the owner's client. Deliver the publishing dashboard directly in the chat as the primary interface: actual thumbnail preview; plain direct downloadable approved MP4 and PNG links; exact per-field copy controls for title, full description including hashtags, hashtags, tags, playlist, upload settings, and sources; interactive local checklist initialized from verified release state. Do not depend on HTML execution, video playback or embedded media download buttons. If preview/copy controls are unsupported, provide plain text and direct file links. Checklist interaction is local UI state, not proof of publication or a registry update. Keep self-contained HTML and ZIP as optional offline backups only; no external hosting or paid services needed. Reuse the per-story release-page JSON as canonical publishing metadata. BM-0003 remains creatively approved, metadata proposed, and unpublished pending owner authorization and final checks. Frozen V6 and audio-only Work scope unchanged.
 
 

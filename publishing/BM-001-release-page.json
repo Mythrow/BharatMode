@@ -1,0 +1,75 @@
+{
+  "id": "BM-001",
+  "ideaId": "ID-001",
+  "name": "PARAM Rudra",
+  "fields": {
+    "YouTube title": "PARAM Rudra: India Is Building Its Own Supercomputing Ecosystem",
+    "YouTube description (includes hashtags)": "India is building domestic expertise in supercomputing through the National Supercomputing Mission and C-DAC’s Rudra servers.\n\nAs of September 2026, the government reported 6,000 Rudra servers deployed and another 1,500 under manufacturing. Across the National Supercomputing Mission, 40 supercomputers had a combined capacity of 68 petaflops — roughly 74% above the 39 petaflops reported in December 2025.\n\nThese systems support research in weather forecasting, medicine, materials science and more. Domestic server design and manufacturing do not mean all processors are indigenous; the systems also use processors from international chipmakers.\n\nOfficial sources:\n4 October 2026 — India's Rising Supercomputing Ecosystem:\nhttps://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=160306&lang=1&reg=48\n\n3 December 2025 — Parliamentary response on indigenous supercomputers:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2198307&lang=1&reg=3\n\n9 January 2026 — PARAM Rudra inaugurated at IIT Bombay:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2212885&lang=2&reg=3\n\nOriginal Bharat Mode explainer with schematic motion graphics, synthetic narration and background music. Graphics are illustrations, not footage of actual facilities.\n\n#BharatMode #PARAMRudra #Supercomputing #IndianTechnology #India #Shorts",
+    "Hashtags": "#BharatMode #PARAMRudra #Supercomputing #IndianTechnology #India #Shorts",
+    "Tags": "Bharat Mode, PARAM Rudra, Rudra servers, C-DAC, CDAC, National Supercomputing Mission, NSM, Indian supercomputer, India supercomputing, Indian technology, Make in India, petaflops, scientific computing",
+    "Playlist": "Technology & Innovation",
+    "Category": "Science & Technology",
+    "Video language": "English",
+    "Title and description language": "English",
+    "Audience": "No, it is not made for kids",
+    "Altered or synthetic content disclosure": "Yes",
+    "License": "Standard YouTube License",
+    "Visibility": "Private (initial checks; owner authorization required)",
+    "Comments": "Enabled; Basic moderation",
+    "Sources and factual caveats": "Government-reported September 2026 snapshot. 6,000 deployed and 1,500 manufacturing were already reported in December 2025; do not frame as a new deployment. 39→68 PF, 40 systems and +74% are NSM-wide, not a single PARAM Rudra machine. Imported processors remain; no full semiconductor self-reliance claim. Original schematic graphics. Preserve music generation rights evidence privately. Research: https://github.com/Mythrow/BharatMode/blob/main/content/research/ID-001.md"
+  },
+  "media": {
+    "video": {
+      "filename": "BM-001-param-rudra.mp4",
+      "libraryId": "libfile_386541a0fff481918f942d8db6049f4d",
+      "sha256": "7f41404f088355854584740f0bb18170a4f866c5cb6fee4e651f946fe75114b2",
+      "ownerApproved": true,
+      "duration": 53.7
+    },
+    "thumbnail": {
+      "filename": "BM-001-param-rudra-thumbnail.png",
+      "libraryId": "libfile_a5bc67bb692481919b96f3cd90975295",
+      "sha256": "7a851736bb69e3c102633ee5c6e84356d8b65a067f19170c014194df02a020f1",
+      "ownerApproved": false
+    }
+  },
+  "checklist": [
+    {
+      "label": "Final video accepted by owner",
+      "done": true
+    },
+    {
+      "label": "Final MP4 and proposed PNG checksums verified",
+      "done": true
+    },
+    {
+      "label": "Title, description, sources and proposed settings prepared",
+      "done": true
+    },
+    {
+      "label": "Custom thumbnail and metadata accepted by owner",
+      "done": false
+    },
+    {
+      "label": "Confirm phone playback and account thumbnail capability",
+      "done": false
+    },
+    {
+      "label": "Confirm individual asset and music rights evidence",
+      "done": false
+    },
+    {
+      "label": "Owner-authorized upload and YouTube checks",
+      "done": false
+    },
+    {
+      "label": "Record actual public YouTube URL and date",
+      "done": false
+    }
+  ],
+  "publication": {
+    "ownerConfirmedPublic": false,
+    "youtubeUrl": null,
+    "publishedAt": null
+  }
+}
