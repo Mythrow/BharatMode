@@ -9,6 +9,7 @@ import React from 'react';
 import {AbsoluteFill,useCurrentFrame} from 'remotion';
 import {ApprovedShortsFrame} from './approved-shorts-template.jsx';
 import {BRAND as B} from './brand.js';
+import {captionSurfaceStyle,captionInkStyle} from './caption-style.js';
 import {DISPLAY_FONT,BODY_FONT} from './fonts.js';
 import {demoWordTimings,groupWordRanges,groupedVisibleWords,clamp01} from './motion-v4-timing.js';
 import {easeOut,DEMO_BEATS,currentBeatAt,scenePoseAt,headlineCharsAt} from './motion-v6-timing.js';
@@ -112,8 +113,6 @@ const CenteredCaptions=({timeSec,index,theme})=>{
   const words=WORDS[index],range=GROUPS[index][result.group];
   const first=words[range.start];
   const entered=clamp01((timeSec-first.start)/.12);
-  const bg=theme==='midnight'?'rgba(23,40,50,.30)':
-    theme==='ivory'?'rgba(11,16,24,.10)':'rgba(11,16,24,.18)';
   const ink=theme==='ivory'?B.graphite:B.ivory;
   const active=theme==='ivory'?B.saffronText:'#FFBE91';
   // Conservative fit estimate for a single-line phrase inside symmetric 140px margins.
@@ -123,13 +122,12 @@ const CenteredCaptions=({timeSec,index,theme})=>{
     height:175,display:'flex',justifyContent:'center',alignItems:'center',pointerEvents:'none'}}>
     <div style={{display:'inline-flex',alignItems:'center',justifyContent:'center',
       width:'max-content',maxWidth:'100%',minHeight:112,
-      padding:'18px 24px',borderRadius:12,background:bg,
-      boxShadow:'0 5px 20px #0000000C',backdropFilter:'blur(5px)',
+      padding:'18px 24px',...captionSurfaceStyle(theme),
       opacity:entered,gap:14,whiteSpace:'nowrap'}}>
       {result.words.map(w=><span key={w.start} style={{fontFamily:BODY_FONT,
         fontSize,fontWeight:700,lineHeight:1.25,whiteSpace:'nowrap',
         color:w.isActive?active:ink,opacity:w.opacity,
-        textShadow:theme==='ivory'?'none':'0 1px 5px #0B101878',
+        ...captionInkStyle,
         transform:'scale('+w.scale+')',transformOrigin:'center 65%'}}>{w.text}</span>)}
     </div>
   </div>;

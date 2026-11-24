@@ -1,5 +1,8 @@
 # Bharat Mode — Approved open-canvas visual motion direction
 
+> **LATEST — owner-confirmed publication and next-video refinements (24 November 2026):** Owner says BM-0003 is published and looks good; actual public URL and exact publication date still need to be supplied, so formal registry promotion awaits the real link (no invented ID). Do not re-render/reupload this episode or put it back into production. Owner explicitly approved the in-chat dashboard format for every final render. [Caption and native-resolution QA](POST_LAUNCH_VISUAL_QA.md) is mandatory for future videos: draw fresh captions from real alignment over new scenes, neutral translucent 32px rounded backing, no box/text shadow or backdrop blur; native 1080×1920 minimum for every layer at 60fps, higher-quality encode and real 100% pixel/phone QA. No legacy crop-copy bridge or 540×960 upscaling. V6 layout/motion, narrator, music, thumbnail and naming remain approved. Next: finish native all-layer production pipeline and test on the next distinct story. Historical unpublished/pending-review notes below are superseded by owner publication confirmation, subject to URL reconciliation.
+
+
 > **Approved thumbnail and filenames (24 Nov 2026):** [THUMBNAIL_AND_EXPORT_DIRECTION.md](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines custom story-summary thumbnails and canonical `BM-####-<slug>.mp4` filenames. BM-0003 final MP4 now saved as `BM-0003-lt-chennai-ai-cluster-order.mp4` (byte-identical approved V5) and a custom matching PNG cover prepared for review. Old single-frame thumbnail superseded as default. No upload; remaining device/rights and publication gates unchanged.
 
 

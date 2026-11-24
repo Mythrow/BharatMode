@@ -43,16 +43,23 @@
       "done": false
     },
     {
-      "label": "Obtain authorization for private upload",
-      "done": false
+      "label": "Owner reports already published; no further upload",
+      "done": true
     },
     {
       "label": "Check YouTube processing and copyright results",
       "done": false
     },
     {
-      "label": "Obtain public publication approval and record actual URL/date",
+      "label": "Owner publication confirmation received; obtain actual URL and date",
       "done": false
     }
-  ]
+  ],
+  "publication": {
+    "ownerConfirmedPublic": true,
+    "reportedOn": "2026-11-24",
+    "youtubeUrl": null,
+    "publishedAt": null,
+    "registryPromotionPending": "Actual YouTube URL and exact publication date required; no further upload."
+  }
 }
