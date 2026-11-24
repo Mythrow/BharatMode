@@ -1,5 +1,7 @@
 # Bharat Mode — Music & Sonic Identity
 
+> **Music continuity QA — 24 November 2026:** Check actual soundtrack-stem energy through the entire video, especially the last five seconds. Do not rely on equal audio/video durations: a master's built-in outro can be effectively silent before the file ends. When necessary, edit a beat-aligned passage from the same approved music with a smooth crossfade to sustain the bed until the intentional final fade. Retain approved ducking; verify peak, full decode, and exact visual-stream identity for audio-only revisions. BM-001 music-fixed review supersedes narrated-review. Owner approved previous visual/narration cut, requested music ending correction; corrected ending listening and publication approval remain pending.
+
 ## MIX APPROVAL — Option B (23 November 2026)
 
 The channel owner selected **MUSIC-06** and now also **explicitly APPROVED Option B** among the three real Qwen-narrator comparison mixes. Use the same mixer setting as a standard **reference balance** for upcoming Shorts:
