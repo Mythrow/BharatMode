@@ -1,5 +1,8 @@
 # Bharat Mode — Permanent Content Registry & Editorial Workflow
 
+> **Owner update — 24 November 2026:** Caption backing corner radius is **24px** (supersedes 32px); all no-shadow/no-blur, native resolution and direct-alignment requirements remain. The owner requests a refreshed HTML content calendar whenever asked; see [CONTENT_CALENDAR.md](CONTENT_CALENDAR.md). Calendar reflects real publication history, current production, future ideas and explicit schedules only. BM-0003 appears as owner-confirmed published with URL/date pending; no fictitious release dates.
+
+
 **Owner decision:** 23 November 2026. All topics considered for a Short are tracked **once**, by a permanent `BM-####` ID, across **Idea → In Progress → Published**. This repository is the single source of truth; a research document belongs to each ID.
 
 ## Start here

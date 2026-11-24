@@ -38,10 +38,10 @@ console.log('PASS: 13 assertions on validated real-alignment schema, V6 phrase b
 
 // Post-launch style regression: no shadow, blur or colored backing.
 import {CAPTION_RADIUS,captionSurfaceStyle,captionInkStyle} from '../src/caption-style.js';
-assert.equal(CAPTION_RADIUS,32);
+assert.equal(CAPTION_RADIUS,24);
 for(const theme of ['ivory','midnight','saffron']){
  const surface=captionSurfaceStyle(theme);
- assert.equal(surface.borderRadius,32);assert.equal(surface.boxShadow,'none');assert.equal(surface.backdropFilter,'none');assert.match(surface.background,/^rgba\(11,16,24,\.(10|30|18)\)$/);
+ assert.equal(surface.borderRadius,24);assert.equal(surface.boxShadow,'none');assert.equal(surface.backdropFilter,'none');assert.match(surface.background,/^rgba\(11,16,24,\.(10|30|18)\)$/);
 }
 assert.equal(captionInkStyle.textShadow,'none');
 console.log('PASS: post-launch caption style invariants');
