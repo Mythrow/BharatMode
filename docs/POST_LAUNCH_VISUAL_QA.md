@@ -1,5 +1,7 @@
 # Bharat Mode — Post-launch visual QA and corrections
 
+> **MANDATORY on-screen text rule — owner instruction, 24 November 2026:** Do not add source/reference/editorial meta labels in video frames, storyboards, title cards or hero graphics. Remove phrases such as “Illustrative server architecture,” “Government-reported snapshot,” “Mission-wide figures,” “Source: ...,” report citations, internal evidence labels and production notes. Keep references, provenance, explanatory context and asset-rights notes in the research record and YouTube description. Preserve material factual qualifiers directly in normal story content (e.g. date of measured data, ordered versus deployed, under manufacture, National Supercomputing Mission versus PARAM Rudra) whenever omitting them would mislead. Use clearly schematic artwork rather than simulated real facility footage; where an illustration or synthetic media disclosure is necessary to avoid misleading the audience, use appropriate disclosure, not a generic on-screen reference line. Apply this during storyboard generation and visual QA before rendering. No change to approved V6 chrome, captions or progress bars.
+
 24 November 2026 — owner reports BM-0003 published, looks good, with a small right-hand green caption artifact and occasional pixelated text. Owner requests rounder captions and no shadows. Apply to next and future videos, not to the already-published cut.
 
 ## Verified evidence
