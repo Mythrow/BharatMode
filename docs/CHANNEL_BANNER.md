@@ -1,5 +1,8 @@
 # Bharat Mode — Approved YouTube Channel Cover
 
+> **24 November crop correction:** Owner supplied YouTube crop screenshot showing the badge is too high/large for all devices; asked to lower badge and subtitle together. Two image-generated correction drafts were delivered (not exact original pixel transforms; 1672×941 each). Draft 1 was rejected as still too high. Draft 2 lowers the combined group; owner has not explicitly approved the resulting artwork or confirmed its actual Studio crop. Private Library: draft 1 `/BharatMode/brand/banner-safe-area-draft-1.png` ID `libfile_c6001779fbdc8191960b08d160e142c2`, SHA-256 `6cbedb56321ffac8d17518ece941c72bfa4e41275fe5f8122fca2e35097f83f6`; draft 2 `/BharatMode/brand/banner-safe-area-draft-2.png` ID `libfile_59ccbdd299608191b4f4eaa8aa59eb48`, SHA-256 `dce270930e6326784a375558720e1caaa1921e60f74788cbf48e36d4e20a60a8`. Do not overwrite original artwork or call either candidate final. Final goal: 2560×1440, essential logo/text within central approx. 1544×423 region, combined group centered with generous margin, exact approved mark, verify mobile/desktop/TV preview. If further correction needed, prefer precise original asset repositioning rather than regenerating logo. Owner's re-upload of source image was 2048×1152 but bytes differ from original canonical Git PNG; preserve Git original.
+
+
 **Status:** Owner-approved artwork, **both PNG files committed to the repository** on 22 November 2026. Exact Git blobs and SHA-256 checksums were validated against the local files.
 
 ## Canonical source (unchanged, uploaded by owner)

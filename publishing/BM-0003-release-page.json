@@ -1,0 +1,58 @@
+{
+  "id": "BM-0003",
+  "name": "L&T Chennai AI cluster order",
+  "fields": {
+    "YouTube title": "India’s AI Infrastructure Is Growing | L&T’s ₹2,500–5,000 Crore Order",
+    "YouTube description (includes hashtags)": "India is expanding the infrastructure behind advanced artificial intelligence.\n\nOn 23 November 2026, Larsen & Toubro announced a new multi-year engagement through Vyoma.AI and LTN Compute to deploy additional NVIDIA B300 GPUs in Chennai.\n\nL&T classified the engagement within its ₹2,500–5,000 crore order-value category. It builds on the previously announced plan for a 10,000-GPU AI cluster.\n\nThe announcements do not disclose the exact contract value, additional GPU count or confirmed total operating GPU count.\n\nSources:\n\nL&T announcement — 23 November 2026:\nhttps://www.larsentoubro.com/pressreleases/2026/2026-11-23-larsen-toubro-secures-large-order-for-deploying-ai-cluster\n\nOriginal AI Factory announcement — 13 August 2026:\nhttps://www.larsentoubro.com/pressreleases/2026/2026-08-13-larsen-toubro-secures-mega-order-as-part-of-a-strategic-partnership-with-together-ai-to-build-india-s-largest-nvidia-b300-ai-factory\n\nAn original Bharat Mode explainer featuring illustrative motion graphics, Natural Earth geographic data, AI-generated narration and background music. The infrastructure graphics are not documentary footage.\n\n#BharatMode #India #ArtificialIntelligence #Chennai #NVIDIA #Shorts",
+    "Hashtags": "#BharatMode #India #ArtificialIntelligence #Chennai #NVIDIA #Shorts",
+    "Tags": "Bharat Mode, India AI, L&T, Larsen and Toubro, Vyoma.AI, LTN Compute, Chennai AI factory, NVIDIA B300, AI infrastructure, GPU cluster, Indian technology",
+    "Playlist": "Technology & Innovation",
+    "Category": "Science & Technology",
+    "Video language": "English",
+    "Title and description language": "English",
+    "Audience": "No, it is not made for kids",
+    "Altered or synthetic content disclosure": "Yes",
+    "License": "Standard YouTube License",
+    "Visibility": "Private (initial checks; owner authorization required)",
+    "Comments": "Enabled; Basic moderation",
+    "Sources and factual caveats": "# BM-0003 — Sources and caveats\n\n- [23 November 2026 L&T announcement](https://www.larsentoubro.com/pressreleases/2026/2026-11-23-larsen-toubro-secures-large-order-for-deploying-ai-cluster)\n- [NSE-hosted company filing](https://nsearchives.nseindia.com/corporate/PAM_23112026093338_PressRelease23112026.pdf)\n- [13 August 2026 AI Factory announcement](https://www.larsentoubro.com/pressreleases/2026/2026-08-13-larsen-toubro-secures-mega-order-as-part-of-a-strategic-partnership-with-together-ai-to-build-india-s-largest-nvidia-b300-ai-factory)\n- [Natural Earth terms](https://www.naturalearthdata.com/about/terms-of-use/)\n- [Project research and claim ledger](https://github.com/Mythrow/BharatMode/blob/main/content/research/BM-0003.md)\n- [Map and logo provenance](https://github.com/Mythrow/BharatMode/blob/main/docs/MAP_DIRECTION.md)\n\nThe order is a company-defined value range, not an exact contract amount. 10,000 GPUs is the earlier announced plan, not a running count. The November customer is unnamed. Schematics are illustrative. Preserve music-license evidence privately; do not treat attribution as rights clearance."
+  },
+  "checklist": [
+    {
+      "label": "Video and custom thumbnail accepted by owner",
+      "done": true
+    },
+    {
+      "label": "Final MP4 and PNG checksums verified",
+      "done": true
+    },
+    {
+      "label": "Title, description, sources and proposed settings prepared",
+      "done": true
+    },
+    {
+      "label": "Check actual phone playback and Shorts overlays",
+      "done": false
+    },
+    {
+      "label": "Confirm individual asset and music-generation rights evidence",
+      "done": false
+    },
+    {
+      "label": "Confirm metadata and account thumbnail capability",
+      "done": false
+    },
+    {
+      "label": "Obtain authorization for private upload",
+      "done": false
+    },
+    {
+      "label": "Check YouTube processing and copyright results",
+      "done": false
+    },
+    {
+      "label": "Obtain public publication approval and record actual URL/date",
+      "done": false
+    }
+  ]
+}

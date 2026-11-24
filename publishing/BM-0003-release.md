@@ -1,5 +1,8 @@
 # BM-0003 — Proposed release package (24 November 2026)
 
+> **Primary delivery:** [HTML publishing page standard](../docs/PUBLISHING_PAGE.md). Self-contained offline page generated and saved privately as `BM-0003-lt-chennai-ai-cluster-order-publish.html` (Library ID `libfile_186985f055948191840880eb7130c845`). Metadata source: [BM-0003-release-page.json](BM-0003-release-page.json). Proposed playlist: Technology & Innovation. Existing MP4/PNG unchanged. ZIP archival only. No upload.
+
+
 > **Owner approval / release bundle (24 November 2026):** The owner accepted the BM-0003 custom thumbnail style and agreed that programmatic thumbnail composition is the default. Generate precise layouts, typography, brand and map/verified logos with code; optionally incorporate rights-cleared generated imagery when appropriate. The accepted cover and V5 final MP4 were independently re-materialized and SHA-256 verified, and a seven-file release ZIP (video, thumbnail, title, description, sources, upload checklist, checksum manifest) was created and archive-tested. Private Library: `/BharatMode/BM-0003-lt-chennai-ai-cluster-order-release.zip`, ID `libfile_ac72d80e1a408191bd6ae782fa0f6231`, SHA-256 `40cec26e7643c4ed34f92d8d8ac7ce58ca31393c3a51c97f4e1eafdc3b4d7f3e`, 6,447,203 bytes. No video re-encode. Creative video/cover approval complete; proposed metadata, physical phone/platform crop check and rights evidence remain distinct from explicit upload authorization. BM-0003 is In Progress, not published. Next: complete release gates; no unnecessary creative revisions. Work remains audio-only.
 
 

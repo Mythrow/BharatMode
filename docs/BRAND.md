@@ -1,5 +1,8 @@
 # Bharat Mode — Official Brand Kit v1
 
+> Channel description, ten created playlists and deferred channel growth configuration: [CHANNEL_SETUP.md](CHANNEL_SETUP.md). Banner crop corrections: [CHANNEL_BANNER.md](CHANNEL_BANNER.md). Approved palette and logo assets unchanged.
+
+
 **Status: APPROVED — 22 November 2026.** Palette approved by the owner. This document is the canonical source for brand identity and implementation; see `src/brand.js` for code tokens.
 
 ## Brand
