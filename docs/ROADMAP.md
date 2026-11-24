@@ -1,3 +1,5 @@
+> **Latest visual direction (24 Nov 2026):** BM-0003 V4 open-canvas motion review rendered here, replacing static boxed heroes with independently animated graphics and moving backgrounds. Original voice/music unchanged; owner review pending. [Details and permanent visual rules](OPEN_MOTION_DIRECTION.md).
+
 ### Revision 3 review delivery recovered — 24 November 2026
 
 - The previous V3 encoded file was unavailable, so the main chat **reproduced** the V3 map/identity/camera revision from checksum-verified V2 (SHA-256 `6e4018988a67254b3db2273309c69dea5830c40be992489e37176b3a81448290`), committed Natural Earth geometry and the V3 rendering logic, including the documented L&T/NVIDIA marks. No Work video task and no new narration.

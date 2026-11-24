@@ -2,6 +2,8 @@
 # Bharat Mode — Assistant / Coding Agent Instructions
 
 **Start by reading [docs/PROJECT_STATUS.md](docs/PROJECT_STATUS.md).**
+
+**OWNER VISUAL DIRECTION (24 Nov 2026):** Open-canvas, story-driven motion graphics. No enclosing evidence cards/bordered hero boxes. Independently animate each main visual's entrance, exit and within-scene movement; backgrounds need actual contextual motion, not merely color changes. Preserve frozen V6 chrome and caption backing. BM-0003 V4 is the latest review candidate, not approved for publication. See [open motion direction](docs/OPEN_MOTION_DIRECTION.md).
 **CRITICAL OWNER CONSTRAINT:** [Production Responsibilities](docs/PRODUCTION_RESPONSIBILITIES.md): **Work Mode is AUDIO-ONLY** (Qwen WAVs, offline transcript QA, true WhisperX word alignment). **This main chat creates/edits/renders ALL VIDEO** including imagery, V6, MUSIC-06 placement, subtitles and MP4. The earlier Work-mode rendering of BM-0003 was a scope mistake and its text-heavy result was rejected. Do not repeat it or tell Work to render/encode video.
 
 Then read [docs/ROADMAP.md](docs/ROADMAP.md) and [docs/APPROVED_SHORTS_TEMPLATE.md](docs/APPROVED_SHORTS_TEMPLATE.md) *before editing any visual or production sources*.

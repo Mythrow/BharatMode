@@ -1,3 +1,5 @@
+> **Latest visual direction (24 Nov 2026):** BM-0003 V4 open-canvas motion review rendered here, replacing static boxed heroes with independently animated graphics and moving backgrounds. Original voice/music unchanged; owner review pending. [Details and permanent visual rules](OPEN_MOTION_DIRECTION.md).
+
 > **Approved map pipeline:** Natural Earth 1:10m country/state/city geographic data + reusable Remotion map component, with actual in-chat video renders (OpenCV/FFmpeg acceptable for iterative bridges). [MAP_DIRECTION.md](MAP_DIRECTION.md). Work must not generate map animations or MP4s.
 # Bharat Mode — Responsibility Boundary: AUDIO ONLY in Work, VIDEO HERE
 
