@@ -1,3 +1,11 @@
+### Revision 3 review delivery recovered — 24 November 2026
+
+- The previous V3 encoded file was unavailable, so the main chat **reproduced** the V3 map/identity/camera revision from checksum-verified V2 (SHA-256 `6e4018988a67254b3db2273309c69dea5830c40be992489e37176b3a81448290`), committed Natural Earth geometry and the V3 rendering logic, including the documented L&T/NVIDIA marks. No Work video task and no new narration.
+- New private output: `BM-0003-naturalearth-v3-rebuilt.mp4`. SHA-256 `60048b3db32c6e239d7dbbd4e1c32c8329088d662f835a2ff92c8865076f93a4`; **this is a fresh encode, not byte-identical to the earlier V3 video**. H.264/AAC, 1080×1920, 30fps, 1245 frames, 41.5s. Full decode passed. Natural Earth Chennai point lies within the stored Tamil Nadu polygon; inspected representative map frames.
+- Audio codec-stream SHA-256 `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b` matches the original/V2/V3 record. Qwen voice and MUSIC-06 Option B unchanged.
+- **Both actual review files now saved privately in ChatGPT Library /BharatMode/**: the rebuilt MP4 and self-contained `BM-0003-naturalearth-v3-review.html` with embedded video and six scene controls. Verified embedded bytes equal the rebuilt MP4. Delivered in chat. Neither file is committed to Git.
+- **Next: owner visual review, then phone QA.** Do not reopen audio or map-tool approval. No publishing.
+
 # Bharat Mode — Approved Maps and Camera Motion
 
 **Approved by owner: 23 November 2026.** Use **Natural Earth** geographic data plus the approved **Remotion/V6** template for accurate, repeatable map animations. No paid Google Earth Studio, Cesium terrain provider, GEOlayers or subscriber map tiles are necessary for this BM-0003 country/state/city explanation.

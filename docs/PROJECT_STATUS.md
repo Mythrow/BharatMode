@@ -1,3 +1,11 @@
+### Revision 3 review delivery recovered — 24 November 2026
+
+- The previous V3 encoded file was unavailable, so the main chat **reproduced** the V3 map/identity/camera revision from checksum-verified V2 (SHA-256 `6e4018988a67254b3db2273309c69dea5830c40be992489e37176b3a81448290`), committed Natural Earth geometry and the V3 rendering logic, including the documented L&T/NVIDIA marks. No Work video task and no new narration.
+- New private output: `BM-0003-naturalearth-v3-rebuilt.mp4`. SHA-256 `60048b3db32c6e239d7dbbd4e1c32c8329088d662f835a2ff92c8865076f93a4`; **this is a fresh encode, not byte-identical to the earlier V3 video**. H.264/AAC, 1080×1920, 30fps, 1245 frames, 41.5s. Full decode passed. Natural Earth Chennai point lies within the stored Tamil Nadu polygon; inspected representative map frames.
+- Audio codec-stream SHA-256 `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b` matches the original/V2/V3 record. Qwen voice and MUSIC-06 Option B unchanged.
+- **Both actual review files now saved privately in ChatGPT Library /BharatMode/**: the rebuilt MP4 and self-contained `BM-0003-naturalearth-v3-review.html` with embedded video and six scene controls. Verified embedded bytes equal the rebuilt MP4. Delivered in chat. Neither file is committed to Git.
+- **Next: owner visual review, then phone QA.** Do not reopen audio or map-tool approval. No publishing.
+
 > **Latest (23 Nov 2026):** Natural Earth + Remotion maps **APPROVED**; BM-0003 **Revision 3** physically rendered *here*, not in Work. Verified 41.5s 1080×1920/30fps private MP4 with India POV → true Tamil Nadu polygon → Chennai city pin and L&T/Vyoma.AI/LTN Compute/NVIDIA identifiers. Same AAC stream checksum `f49909f808dd934d776df18cb481662d4888c1bee96ab23ba2bee2bc92991b9b` as V2, no narration/music changes. SHA new video `6aa5cb03e4448819dae65f04fa669fb1233c269a137d93d6bee1291f62224f9e`. [Map plan + sources](MAP_DIRECTION.md). Revision 3 remains private/unpublished and needs owner visual review and phone QA.
 # Bharat Mode — Project Status / New-Chat Handoff
 
