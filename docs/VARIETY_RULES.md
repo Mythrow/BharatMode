@@ -1,5 +1,7 @@
 # Bharat Mode — Variety and originality rules
 
+> **MANDATORY — distinct scene backgrounds, owner correction 24 November 2026:** Each narrative scene must have a visibly different story-specific background composition and contextual motion, not a common decorative base with a changed color, gradient, glow or repeated curve. Theme colors may repeat; the artwork, geometry, depth and movement must change to support the content. A continued beat inside the same scene may retain its environment for continuity. V6 locks the branding/chrome (logo, topic pill, typography, captions and centered chapter progress), not background artwork. Before storyboard delivery, assign a unique scene-level background design ID and show actual native-resolution frames; audit the contact sheet for repeated geometry, not just palette, and verify distinct scene background layers in editable source. Before draft delivery, inspect representative rendered frames and within-scene background motion at native 60fps. If this gate fails, correct the source and regenerate before review. Do not reintroduce the prototype V6 radial glow + ellipse as a universal background. Do not include editorial reference labels.
+
 The goal is **recognizable branding without interchangeable videos**. These are internal production heuristics, not YouTube-imposed limits.
 
 ## 1. What stays consistent
