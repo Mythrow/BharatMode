@@ -1,3 +1,11 @@
+## BM-0003 Revision 5 — 60fps review delivered (24 November 2026)
+
+- Owner approved V4's open-canvas format; V5 removes redundant labels, fixes the ascending contract-value range, separates India/Tamil Nadu label timings and positions finale labels outside their connections. Quantitative values count up with eased monotonic animation. Dates and model names remain identifiers. Essential fact qualifiers retained.
+- Main-chat renderer `scripts/render_bm0003_open_motion_60fps.py` evaluates story art at each 60fps timestamp with subpixel drawing. Existing V6 chrome/title/caption/progress pixels are inherited from the original 30fps base; this is an explicit pilot limitation, not a complete native-60fps Remotion rebuild. Future production should render all layers at 60fps from verified audio/alignment assets.
+- **Actual private output:** `BM-0003-v5-60fps.mp4` — 1080×1920, H.264/AAC, 60fps, 2490 frames, 41.5s, 6,330,450 bytes. SHA-256 `77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634`. Decoded all 2490 frames at 270×480 for MD5 checks: zero identical adjacent frames. Four counter monotonicity/final-value checks passed. Representative still contact sheet inspected. Audio ADTS SHA-256 `a5a7966dfee87cf5f5482206ee10af254c270cc7a7600b3c0b2c3800e7632aa0` exactly matches V4. No audio changes.
+- MP4 saved privately in ChatGPT Library `/BharatMode/` (library file ID `libfile_e0c9f9e7889c819188faa7916f611d99`). Direct MP4 delivery rather than a redundant HTML download. V4 embedded video HTML valid, but owner's in-chat preview cannot play it; exact preview failure unconfirmed. No claim that client can play a given MP4 inline until owner tests.
+- **Next:** owner visual/playback review of V5, phone QA and publication sign-off. Nothing published. Work remains audio-only.
+
 # Bharat Mode — Open-canvas visual motion direction
 
 ## Approved open-canvas format and production refinements — 24 November 2026
