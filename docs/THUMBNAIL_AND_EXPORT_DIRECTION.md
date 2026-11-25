@@ -1,5 +1,8 @@
 # Bharat Mode — Approved thumbnail direction and delivery filenames
 
+> **MANDATORY thumbnail-only rule — owner correction 25 November 2026:** Custom thumbnails must not include the chapter progress indicator, partial progress bars, orange progress-style lines or other playback progress UI. These belong exclusively to video frames. Compose thumbnails as standalone editorial covers from approved brand and story artwork, without narration captions or video-only interface elements. Inspect the entire thumbnail, especially the lower area, before delivering the PNG. Ordinary story-specific diagram lines and necessary data graphics remain permitted. Do not alter the approved video to make a thumbnail correction.
+
+
 > **Naming correction — 24 November 2026:** New canonical media names use selected production code `BM-###` plus lowercase slug, e.g. `BM-001-param-rudra.mp4` and `BM-001-param-rudra-thumbnail.png`. Idea IDs are separate `ID-###`. Older four-digit filenames are legacy and must be preserved unchanged. BM-001 video approved, custom thumbnail proposed.
 
 
