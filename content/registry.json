@@ -197,7 +197,7 @@
       "id": "ID-005",
       "slug": "galaxeye-bellatrix-30-satellite-propulsion",
       "title": "GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix",
-      "stage": "idea",
+      "stage": "in_progress",
       "priority": "high",
       "category": "space",
       "storyKey": "galaxeye-bellatrix-30-drishti-gen2-propulsion-contract-2026-11-24",
@@ -218,7 +218,15 @@
         "https://theprint.in/india/galaxeye-to-deploy-bellatrixs-indian-built-propulsion-systems-across-its-next-30-optosar-satellites/3107707/",
         "https://timesofindia.indiatimes.com/science/galaxeye-taps-bellatrix-to-power-30-satellites-in-private-space-deal/articleshow/136130808.cms",
         "https://bellatrix.aero/blog/hall-yes",
-        "https://bellatrix.aero/updates/hattrick-in-space"
+        "https://bellatrix.aero/updates/hattrick-in-space",
+        "https://www.isro.gov.in/ISRO_EN/POEM-3_Mission_achieves_Payload_objectives.html",
+        "https://bellatrix.aero/arka",
+        "https://inc42.com/buzz/galaxeye-awards-bellatrix-propulsion-contract-for-30-satellites/",
+        "https://www.galaxeye.space/mission-drishti-launch",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2314385&lang=1&reg=3",
+        "https://economictimes.indiatimes.com/tech/technology/comms-with-mission-drishti-optosar-satellite-lost-recovery-likelihood-low-galaxeye/articleshow/132234293.cms",
+        "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/",
+        "https://www.newindianexpress.com/cities/bengaluru/2026/Nov/25/bengaluru-space-tech-firms-ink-mou-to-supply-propulsion-systems"
       ],
       "researchPath": "content/research/ID-005.md",
       "storyPath": null,
@@ -227,15 +235,22 @@
       "publishedAt": null,
       "youtubeUrl": null,
       "publishApprovedByOwner": false,
-      "productionCode": null,
+      "productionCode": "BM-004",
       "stageHistory": [
         {
           "at": "2026-11-25",
           "from": null,
           "to": "idea",
           "note": "Fresh 24 November contract verified against Bellatrix company announcement and dated PTI and TOI reports; deduped against all four existing registry records. Proposed BM-004, awaiting owner selection."
+        },
+        {
+          "at": "2026-11-25",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Owner selected ID-005 as BM-004; Stage 01 detailed research and editorial angle pending approval."
         }
-      ]
+      ],
+      "productionSelectedAt": "2026-11-25"
     }
   ]
 }

@@ -1,5 +1,8 @@
 # Bharat Mode — Content calendar standard
 
+> **CURRENT — 25 November 2026:** ID-005 selected as BM-004 (GalaxEye/Bellatrix 30-satellite propulsion order), Stage 01 story review awaiting owner approval. 2 owner-reported published, 1 scheduled (BM-002, 26 Nov), 1 active (BM-004), 1 idea (ID-004). Next unused production BM-005, next idea ID-006. No change to BM-002 schedule.
+
+
 > **CURRENT — 25 November 2026:** BM-002 / ID-002 uploaded and scheduled for 26 November 2026, owner confirmed; exact time and URL not supplied. Not published and not active production. BM-001/BM-003 owner-reported published, exact dates/URLs pending. ID-005 GalaxEye/Bellatrix registered as high-priority queued idea; ID-004 remains idea. Counts: 2 published/reported, 1 scheduled, 0 active, 2 ideas. BM-004 next unused production code; ID-006 next idea. Scheduled is an explicit release substatus of in_progress, separate in calendar; do not auto-promote or re-upload.
 
 
