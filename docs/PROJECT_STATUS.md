@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-004 current V6 review:** Complete 3512-frame narrated preview verified; continuous opening satellite and orange trail, six moving final satellites; V5 missing 86 frames superseded. Await owner review, authentic logo assets and sensor-figure reuse clearance. See ID-005 research.
+
+
 > **BM-004 — Stage 03 V2 partial review:** Approved visual asset revision; accurate Natural Earth globe and revised rocket rendered from code. Real optical/SAR pair and authentic current company logos remain blocked by asset downloads. Do not advance to draft render until missing assets are resolved and storyboard accepted.
 
 
