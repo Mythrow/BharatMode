@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **CURRENT — 25 November 2026:** BM-002 / ID-002 uploaded and scheduled for 26 November 2026, owner confirmed; exact time and URL not supplied. Not published and not active production. BM-001/BM-003 owner-reported published, exact dates/URLs pending. ID-005 GalaxEye/Bellatrix registered as high-priority queued idea; ID-004 remains idea. Counts: 2 published/reported, 1 scheduled, 0 active, 2 ideas. BM-004 next unused production code; ID-006 next idea. Scheduled is an explicit release substatus of in_progress, separate in calendar; do not auto-promote or re-upload.
+
+
 > **MANDATORY thumbnail-only rule — owner correction 25 November 2026:** Custom thumbnails must not include the chapter progress indicator, partial progress bars, orange progress-style lines or other playback progress UI. These belong exclusively to video frames. Compose thumbnails as standalone editorial covers from approved brand and story artwork, without narration captions or video-only interface elements. Inspect the entire thumbnail, especially the lower area, before delivering the PNG. Ordinary story-specific diagram lines and necessary data graphics remain permitted. Do not alter the approved video to make a thumbnail correction.
 
 

@@ -161,7 +161,7 @@ function validate(registry,{files=true,queue=true}={}){
       if(seen.has(slug))err(`Publishing queue repeats ${slug}`);seen.add(slug);
       const item=registry.items.find(x=>x.slug===slug);
       if(!item)err(`Publishing queue item '${slug}' not registered`);
-      else if(item.stage==='published'||item.ownerConfirmedPublic===true)err(`Publishing queue still includes published item ${item.id}`);
+      else if(item.stage==='published'||item.ownerConfirmedPublic===true||item.scheduledAt)err(`Publishing queue still includes published item ${item.id}`);
     }
   }
   return errors;
@@ -192,7 +192,7 @@ function renderLog(registry){
     lines.push('| Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |','|---|---|---|---|---|---|---|---|');
     for(const x of rows){
       const story=x.storyPath?`[Draft](../${x.storyPath})`:'—';
-      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.ownerConfirmedPublic?'Owner-confirmed published; URL/date pending':'—';
+      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.ownerConfirmedPublic?'Owner-confirmed published; URL/date pending':x.scheduledAt?`Scheduled ${x.scheduledAt} (owner reported; time/link pending)`:'—';
       lines.push(`| **${x.id}** | ${x.productionCode||'—'} | ${markdownCell(x.title)} | ${displayDate(x.eventDate)} | ${x.priority} | [Research](research/${x.id}.md) | ${story} | ${published} |`);
     }
     lines.push('');
