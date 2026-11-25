@@ -1,5 +1,8 @@
 # Bharat Mode — Approved Shorts Visual Template
 
+> **Caption position refinement — owner instruction, 25 November 2026:** Lower the centered word-caption layer by 64px, matching the earlier progress-bar shift. Native 1080×1920: canonical caption outer top y1469 (previously 1405), height 175, centered x540, 140px side margins; BM-002 native compositor uses compact 112px backing at y1501 (previously 1437), baseline y1578 (previously 1514). Retain 24px radius, single-line phrase width, current-word pop/highlight, no shadows/blur and real acoustic timing. Progress stays at y1721. Check actual phone/Shorts overlays before publication. This supersedes the previous instruction to leave captions unmoved; do not reopen published episodes.
+
+
 > **Owner-approved progress bar refinement — 25 November 2026:** Lower the centered chapter progress indicator by 64 px on the native 1080×1920 canvas: top y=1721, height 13, bottom inset 186, left/right insets 84, total width 912. Keep rounded fills, segment spacing, actual chapter timing and fixed center unchanged; do not move captions or other branding. This supersedes y=1657 / bottom=250 for all new production, starting BM-002. Preserve already-published videos. Verify physical Shorts UI cropping on device before publication. Historical preview files retain their original design unless explicitly regenerated.
 
 

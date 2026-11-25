@@ -19,7 +19,7 @@ export function AlignedNarrationCaptions({alignment,timeSec,theme='ivory'}) {
   const length = visible.words.reduce((s,w)=>s+w.text.length,0);
   const size = Math.max(42,Math.min(57,Math.floor(730/(Math.max(1,length)*.59+visible.words.length*.25))));
   const entered = clamp((timeSec-visible.start)/.12);
-  return <div style={{position:'absolute',zIndex:60,top:1405,left:140,right:140,
+  return <div style={{position:'absolute',zIndex:60,top:1469,left:140,right:140,
     height:175,display:'flex',justifyContent:'center',alignItems:'center',pointerEvents:'none'}}>
     <div style={{display:'inline-flex',justifyContent:'center',alignItems:'center',
       width:'max-content',maxWidth:'100%',minHeight:112,
