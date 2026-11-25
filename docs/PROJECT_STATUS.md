@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-004 — Stage 03 V2 partial review:** Approved visual asset revision; accurate Natural Earth globe and revised rocket rendered from code. Real optical/SAR pair and authentic current company logos remain blocked by asset downloads. Do not advance to draft render until missing assets are resolved and storyboard accepted.
+
+
 > **BM-004 narration handoff — 25 November 2026:** Work Mode generated six mono PCM16 WAVs at 24 kHz with Qwen3-TTS 1.7B Base and the verified approved private synthetic reference. Total 55.313 seconds (138.8 words/minute). WhisperX 3.7.4 aligned all 128 words to the corresponding final WAV bytes. Final WAV and ZIP checksums were verified. The Scene 4 pronunciation cue recovered ISRO in both offline transcribers. Owner confirmed Scene 2’s GalaxEye pronunciation. After listening feedback on the earlier edit, Scene 5 was freshly generated using the separate-word cue Galax Eye’s and realigned. The new take awaits listening review. The private audio-only handoff is ready for owner review. V6 and the release schedule are unchanged.
 
 > **CURRENT — 25 November 2026:** ID-005 selected as BM-004 (GalaxEye/Bellatrix 30-satellite propulsion order), Stage 01 story review awaiting owner approval. 2 owner-reported published, 1 scheduled (BM-002, 26 Nov), 1 active (BM-004), 1 idea (ID-004). Next unused production BM-005, next idea ID-006. No change to BM-002 schedule.
