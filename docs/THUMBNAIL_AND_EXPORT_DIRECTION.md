@@ -1,5 +1,8 @@
 # Bharat Mode — Approved thumbnail direction and delivery filenames
 
+> **MANDATORY — public description editorial-only (owner instruction 25 November 2026):** Keep YouTube descriptions focused on the actual news, verified facts, significance, material factual qualifications, original source links and relevant hashtags. Do not append generic production-method or self-referential boilerplate about Bharat Mode explainers, schematic illustrations, synthetic narration, background music, or what generic artwork does not depict. Keep internal production notes and asset provenance in the research/QA records. Complete applicable altered/synthetic-content disclosures through the platform's designated settings; retain specific public disclosures or credits when legally/platform-required or necessary to avoid misleading viewers. Do not remove substantive factual caveats. Apply to future releases; do not silently edit previously published videos.
+
+
 > **MANDATORY thumbnail header alignment — owner correction 25 November 2026:** Treat the BM avatar, measured visible wordmark glyphs, and topic pill as a single horizontally arranged header with one shared vertical centerline. Derive the pill top from `round(logo_center_y - pill_height/2)` rather than copying the video's absolute pill y-coordinate into a thumbnail with a different avatar size. Keep 72px right inset, pill width/height, rounded shape and theme colors. Inspect the native rendered header as a whole; verify all three centers within 1px. BM-002 thumbnail: avatar center y153, pill x730/y120/w278/h65, geometric center y152.5. This supersedes prior absolute thumbnail pill y100. Do not change video template or approved media; edit programmatic thumbnail source only.
 
 
