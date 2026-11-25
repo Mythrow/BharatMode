@@ -1,5 +1,7 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-004 narration handoff — 25 November 2026:** Work Mode generated six mono PCM16 WAVs at 24 kHz with Qwen3-TTS 1.7B Base and the verified approved private synthetic reference. Total 55.233 seconds (139.0 words/minute). WhisperX 3.7.4 aligned all 128 words to the corresponding final WAV bytes. Final WAV and ZIP checksums were verified. The Scene 4 pronunciation cue recovered ISRO in both offline transcribers. GalaxEye’s preferred pronunciation and direct listening review remain pending. The private audio-only handoff is ready for owner review. V6 and the release schedule are unchanged.
+
 > **CURRENT — 25 November 2026:** ID-005 selected as BM-004 (GalaxEye/Bellatrix 30-satellite propulsion order), Stage 01 story review awaiting owner approval. 2 owner-reported published, 1 scheduled (BM-002, 26 Nov), 1 active (BM-004), 1 idea (ID-004). Next unused production BM-005, next idea ID-006. No change to BM-002 schedule.
 
 
