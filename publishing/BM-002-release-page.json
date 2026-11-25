@@ -1,0 +1,75 @@
+{
+  "id": "BM-002",
+  "ideaId": "ID-002",
+  "name": "ICMR — 100 Technology Transfers",
+  "fields": {
+    "YouTube title": "ICMR Reaches 100 Technology Transfers | India’s Medical Innovation",
+    "YouTube description (includes hashtags)": "India is bringing more of its medical research closer to real-world healthcare.\n\nAt the DHR–ICMR Health Research Excellence Summit in November 2026, the Indian Council of Medical Research announced 100 cumulative technology-transfer deals. At the summit, 20 licensing agreements covering eight medical technologies were exchanged with nine Indian companies.\n\nEarlier transfers under the Patent Mitra initiative included bacterial vaccine technologies, diagnostic tests for tuberculosis and mpox, and an experimental therapy for a precancerous cervical condition. Licensing is a step towards further development, testing and possible manufacturing; it does not establish clinical approval or commercial availability.\n\nOfficial sources:\n18 November 2026 — ICMR health research summit:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2337773&lang=1&reg=6\n\n25 May 2026 — ICMR public health technology transfers:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2264989&lang=1&reg=1\n\n21 July 2026 — ICMR biomedical technology licensing:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2286902&lang=1&reg=1\n\nPatent Mitra initiative:\nhttps://patentmitra.icmr.org.in/\n\nOriginal Bharat Mode explainer with schematic medical illustrations, synthetic narration and background music. The illustrations do not depict specific commercial products or clinical outcomes.\n\n#BharatMode #ICMR #MedicalResearch #IndianInnovation #Healthcare #Shorts",
+    "Hashtags": "#BharatMode #ICMR #MedicalResearch #IndianInnovation #Healthcare #Shorts",
+    "Tags": "Bharat Mode, ICMR, Indian Council of Medical Research, Patent Mitra, technology transfer, medical research India, healthcare innovation, Indian medical technology, biomedical research, Indian science, medical technology licensing, vaccines, diagnostics, Indian innovation",
+    "Playlist": "Healthcare & Medicine",
+    "Category": "Science & Technology",
+    "Video language": "English",
+    "Title and description language": "English",
+    "Audience": "No, it is not made for kids",
+    "Altered or synthetic content disclosure": "Yes",
+    "License": "Standard YouTube License",
+    "Visibility": "Private (initial checks; owner authorization required)",
+    "Comments": "Enabled; Basic moderation",
+    "Sources and factual caveats": "100 cumulative deals, not 100 unique products; 20 licensing agreements covered eight technologies and nine companies at November summit; earlier vaccine, diagnostic and experimental therapy examples are not confirmed members of November eight. Licensing is not regulatory clearance, clinical efficacy or market adoption. November PIB release available in indexed text; direct retrieval failed in research, corroborated by DD India and IBEF. See https://github.com/Mythrow/BharatMode/blob/main/content/research/ID-002.md"
+  },
+  "media": {
+    "video": {
+      "filename": "BM-002-icmr-tech-transfer.mp4",
+      "libraryId": "libfile_d5c44eb387c081919ccdf614bb921894",
+      "sha256": "8f5542ec85f6dd89aa11f9323720e34da8ba2b61e7edc3052fe1e47188a50835",
+      "ownerApproved": true,
+      "duration": 58.083333
+    },
+    "thumbnail": {
+      "filename": "BM-002-icmr-tech-transfer-thumbnail.png",
+      "libraryId": "libfile_6dea4c7effdc8191818a13e004c1d746",
+      "sha256": "b90ad139625d0ce3dfabccce84ab19c1b3cc706b9e5bbe616c87283023ed6063",
+      "ownerApproved": false
+    }
+  },
+  "checklist": [
+    {
+      "label": "Final video accepted by owner",
+      "done": true
+    },
+    {
+      "label": "Final MP4 and proposed PNG checksums verified",
+      "done": true
+    },
+    {
+      "label": "Title, description, sources and proposed settings prepared",
+      "done": true
+    },
+    {
+      "label": "Custom thumbnail and metadata accepted by owner",
+      "done": false
+    },
+    {
+      "label": "Confirm phone playback and account thumbnail capability",
+      "done": false
+    },
+    {
+      "label": "Confirm individual asset and music rights evidence",
+      "done": false
+    },
+    {
+      "label": "Owner-authorized upload and YouTube checks",
+      "done": false
+    },
+    {
+      "label": "Record actual public YouTube URL and date",
+      "done": false
+    }
+  ],
+  "publication": {
+    "ownerConfirmedPublic": false,
+    "youtubeUrl": null,
+    "publishedAt": null
+  }
+}
