@@ -55,7 +55,7 @@
       "id": "ID-002",
       "slug": "icmr-tech-transfer",
       "title": "ICMR reaches 100 technology-transfer agreements",
-      "stage": "idea",
+      "stage": "in_progress",
       "priority": "medium",
       "category": "health",
       "storyKey": "icmr-100-tech-transfer-deals-2026-11-summit",
@@ -68,9 +68,13 @@
       "eventDate": "2026-11-17",
       "sourceDate": "2026-11-18",
       "discoveredAt": "2026-11-23",
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-25",
       "sourceUrls": [
-        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2337773&lang=1&reg=1"
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2337773&lang=1&reg=1",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2337773&lang=1&reg=6",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2264989&lang=1&reg=1",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286902&lang=1&reg=1",
+        "https://mippp.icmr.org.in/initiatives/"
       ],
       "researchPath": "content/research/ID-002.md",
       "storyPath": "stories/icmr-tech-transfer.json",
@@ -85,10 +89,17 @@
           "from": null,
           "to": "idea",
           "note": "Imported existing Bharat Mode research or draft into permanent registry."
+        },
+        {
+          "at": "2026-11-25",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Owner selected ID-002 for BM-002; Stage 01 detailed news review; story treatment approval pending."
         }
       ],
       "legacyId": "BM-0002",
-      "productionCode": null
+      "productionCode": "BM-002",
+      "productionSelectedAt": "2026-11-25"
     },
     {
       "id": "ID-003",
