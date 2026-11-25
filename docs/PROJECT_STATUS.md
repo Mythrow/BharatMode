@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **CURRENT — BM-002 final render approved:** Owner explicitly approved the BM-002 narrated review as final on 25 November 2026. Canonical byte-identical file BM-002-icmr-tech-transfer.mp4, 5,752,051 bytes, SHA-256 8f5542ec85f6dd89aa11f9323720e34da8ba2b61e7edc3052fe1e47188a50835; private Library libfile_d5c44eb387c081919ccdf614bb921894. Reverified checksum and ffprobe: 1080×1920, 60fps, 3485 frames, video 58.083333s/AAC 58.083s. No re-encode or changes. Freeze exact approved render; no publication confirmed. Next release step thumbnail and publishing dashboard. Separate device/rights checks remain unrecorded.
+
+
 > **Caption position refinement — owner instruction, 25 November 2026:** Lower the centered word-caption layer by 64px, matching the earlier progress-bar shift. Native 1080×1920: canonical caption outer top y1469 (previously 1405), height 175, centered x540, 140px side margins; BM-002 native compositor uses compact 112px backing at y1501 (previously 1437), baseline y1578 (previously 1514). Retain 24px radius, single-line phrase width, current-word pop/highlight, no shadows/blur and real acoustic timing. Progress stays at y1721. Check actual phone/Shorts overlays before publication. This supersedes the previous instruction to leave captions unmoved; do not reopen published episodes.
 
 
