@@ -1,5 +1,8 @@
 # Motion V6 — Premium dissolve, restored chapter bar
 
+> **Owner-approved progress bar refinement — 25 November 2026:** Lower the centered chapter progress indicator by 64 px on the native 1080×1920 canvas: top y=1721, height 13, bottom inset 186, left/right insets 84, total width 912. Keep rounded fills, segment spacing, actual chapter timing and fixed center unchanged; do not move captions or other branding. This supersedes y=1657 / bottom=250 for all new production, starting BM-002. Preserve already-published videos. Verify physical Shorts UI cropping on device before publication. Historical preview files retain their original design unless explicitly regenerated.
+
+
 **Status: APPROVED VISUAL/MOTION TEMPLATE by owner, 23 November 2026.** The approved version includes a final symmetric chapter-bar alignment fix. Audio is not yet included and word timings remain illustrative. Canonical specification: [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md).
 
 ## What changed
