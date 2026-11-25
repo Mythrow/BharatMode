@@ -1,5 +1,8 @@
 # Bharat Mode — Post-launch visual QA and corrections
 
+> **MANDATORY — thumbnail brand lockup alignment and source-rendering (owner correction 25 November 2026):** Vertically center the visible BHARAT MODE wordmark glyph bounds against the circular BM avatar's vertical center; do not align the top edge or typographic baseline to the avatar. Calculate placement from measured font bounds in code and verify a native rendered header crop. Keep the exact avatar, horizontal spacing, approved upper-right topic pill and no-progress/no-caption rule. For layout, typography and alignment corrections, edit the actual programmatic source and regenerate the native 1080×1920 PNG; never substitute an AI-generated mockup or redraw the approved logo/cover. Preserve unrelated pixels, verify the changed region and update the private source, thumbnail checksum and release metadata. Optional generated subject imagery is not a substitute for source-controlled typography and branding. Keep approved MP4 bytes unchanged.
+
+
 > **MANDATORY thumbnail-only rule — owner correction 25 November 2026:** Custom thumbnails must not include the chapter progress indicator, partial progress bars, orange progress-style lines or other playback progress UI. These belong exclusively to video frames. Compose thumbnails as standalone editorial covers from approved brand and story artwork, without narration captions or video-only interface elements. Inspect the entire thumbnail, especially the lower area, before delivering the PNG. Ordinary story-specific diagram lines and necessary data graphics remain permitted. Do not alter the approved video to make a thumbnail correction.
 
 
