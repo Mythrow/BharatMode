@@ -1,5 +1,8 @@
 # Bharat Mode — Approved thumbnail direction and delivery filenames
 
+> **MANDATORY thumbnail topic pill — owner correction 25 November 2026:** Use the approved `src/approved-shorts-template.jsx` topic pill convention for custom thumbnails: upper-right within the top branding row (72px right inset on 1080px canvas), uppercase story topic (same as video, not the full playlist name), rounded pill shape, approved theme-dependent contrast (ivory on midnight with charcoal text; charcoal on light/saffron with ivory text), medium body font and letter spacing. Do not replace it with a subtitle under the logo. BM-002 uses the existing native video pill geometry x730/y100/w278/h65, radius33, HEALTHCARE, matching its renderer. Retain the separate no-progress-bar/no-caption thumbnail rule. Inspect the complete top branding row for overlaps and readability. Story-specific cover composition remains flexible.
+
+
 > **MANDATORY thumbnail-only rule — owner correction 25 November 2026:** Custom thumbnails must not include the chapter progress indicator, partial progress bars, orange progress-style lines or other playback progress UI. These belong exclusively to video frames. Compose thumbnails as standalone editorial covers from approved brand and story artwork, without narration captions or video-only interface elements. Inspect the entire thumbnail, especially the lower area, before delivering the PNG. Ordinary story-specific diagram lines and necessary data graphics remain permitted. Do not alter the approved video to make a thumbnail correction.
 
 
