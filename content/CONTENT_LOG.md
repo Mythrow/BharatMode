@@ -2,7 +2,7 @@
 
 **Canonical register:** [`registry.json`](registry.json) · **Story research:** [`research/`](research/) · **Workflow:** [`docs/CONTENT_PIPELINE.md`](../docs/CONTENT_PIPELINE.md)
 
-Updated: 2026-11-24 (IST) · Permanent IDs: 4 · **Never reassign or delete an ID.**
+Updated: 2026-11-25 (IST) · Permanent IDs: 4 · **Never reassign or delete an ID.**
 
 > This document is generated from `content/registry.json`. Use the registry command to add and move content; run `npm run content:check` before committing. An idea is not a published video.
 
@@ -18,7 +18,7 @@ Updated: 2026-11-24 (IST) · Permanent IDs: 4 · **Never reassign or delete an I
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
 | **ID-003** | BM-003 | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/ID-003.md) | [Draft](../stories/lt-chennai-ai-cluster-order.json) | Owner-confirmed published; URL/date pending |
-| **ID-001** | BM-001 | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/ID-001.md) | [Draft](../stories/param-rudra.json) | — |
+| **ID-001** | BM-001 | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/ID-001.md) | [Draft](../stories/param-rudra.json) | Owner-confirmed published; URL/date pending |
 
 ## Published (0)
 

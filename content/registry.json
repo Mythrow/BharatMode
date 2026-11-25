@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "nextSequence": 5,
   "items": [
     {
@@ -20,7 +20,7 @@
       "eventDate": "2026-09",
       "sourceDate": "2026-10-04",
       "discoveredAt": "2026-11-23",
-      "updatedAt": "2026-11-24",
+      "updatedAt": "2026-11-25",
       "sourceUrls": [
         "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=160306&lang=1&reg=48"
       ],
@@ -47,7 +47,9 @@
       ],
       "legacyId": "BM-0001",
       "productionCode": "BM-001",
-      "productionSelectedAt": "2026-11-24"
+      "productionSelectedAt": "2026-11-24",
+      "ownerConfirmedPublic": true,
+      "publicationReportedOn": "2026-11-25"
     },
     {
       "id": "ID-002",

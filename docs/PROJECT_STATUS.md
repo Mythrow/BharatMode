@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **CURRENT — 25 November 2026:** Owner confirmed BM-001 PARAM Rudra published on 25 November 2026 (report date only; actual publication date and public YouTube URL not supplied). Removed from active editorial queue; do not re-upload or reopen. Both BM-001 and BM-003 are owner-confirmed published, 0 active productions, 2 ideas, 0 scheduled; formal published transition awaits real URLs and publication dates. BM-002 remains next available production code; ID-005 next idea. No inference of thumbnail/metadata/rights checks.
+
+
 > **CURRENT — BM-001 final render owner-approved 24 November 2026:** Owner approved music-fixed MP4 as final. Canonical exact-byte copy `BM-001-param-rudra.mp4`, private Library libfile_386541a0fff481918f942d8db6049f4d, SHA-256 `7f41404f088355854584740f0bb18170a4f866c5cb6fee4e651f946fe75114b2`. No rerender. Proposed custom cover and chat-first publishing dashboard prepared; thumbnail/metadata, phone/account capability, rights and explicit publication gates remain. See `publishing/BM-001-release-page.json` and `content/research/ID-001.md`. Registry remains in_progress until actual public URL/date. BM-002 next available production code.
 
 

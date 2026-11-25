@@ -59,17 +59,23 @@
       "done": false
     },
     {
-      "label": "Owner-authorized upload and YouTube checks",
-      "done": false
+      "label": "Owner reports published; no further upload",
+      "done": true
     },
     {
       "label": "Record actual public YouTube URL and date",
       "done": false
+    },
+    {
+      "label": "YouTube processing/copyright results independently confirmed",
+      "done": false
     }
   ],
   "publication": {
-    "ownerConfirmedPublic": false,
+    "ownerConfirmedPublic": true,
     "youtubeUrl": null,
-    "publishedAt": null
+    "publishedAt": null,
+    "reportedOn": "2026-11-25",
+    "registryPromotionPending": "Actual YouTube URL and exact publication date required; no further upload."
   }
 }
