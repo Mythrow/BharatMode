@@ -1,5 +1,8 @@
 # Bharat Mode — Official Brand Kit v1
 
+> **MANDATORY — scene-level mixed themes (owner approved 26 November 2026):** Plan themes by narrative purpose, not just dominant upload color. Aim approximately 50% Warm Ivory, 30% Deep Charcoal, 20% Classic Saffron across scenes over multiple videos; these are editorial targets, not rigid quotas. Include at least one full saffron feature scene per video where visually appropriate; document a reason if omitted. Prefer saffron for major announcements, landmark figures or a strong closing reveal; ivory for facts, comparisons and instructional diagrams; charcoal for cinematic machinery, space, technology and contrast-rich environments. Technical mechanisms can use ivory or charcoal. Vary sequence with story and avoid forced predictable alternation. All scenes still need unique contextual backgrounds and meaningful motion; changing only color is insufficient. Check actual rendered contrast of all text, labels, captions and progress tracks. Saffron uses dark readable editorial ink, ivory progress fill and sufficiently dark neutral caption backing when needed for ivory/peach caption legibility. This supersedes the old 65/25/10 upload-dominant mix. Do not re-render previously approved releases solely for rotation.
+
+
 > Channel description, ten created playlists and deferred channel growth configuration: [CHANNEL_SETUP.md](CHANNEL_SETUP.md). Banner crop corrections: [CHANNEL_BANNER.md](CHANNEL_BANNER.md). Approved palette and logo assets unchanged.
 
 
@@ -35,12 +38,12 @@ Only the five above are official primaries. Derived supporting tones may be used
 8. All examples require a real-phone export review; contrast numbers are computed against color tokens, not guaranteed against photographic backgrounds.
 
 ## Mixed-theme system
-Targets for a sufficiently large run of uploads:
-- **65% Ivory editorial:** warm, clean explainers with saffron key figures.
-- **25% Deep Charcoal cinematic:** achievements where drama and contrast help clarity.
-- **10% Saffron feature:** short, distinctive landmark stories or big reveals.
+Targets across scenes over multiple videos:
+- **50% Ivory editorial:** clear factual and explanatory scenes.
+- **30% Deep Charcoal cinematic:** technology and cinematic environments.
+- **20% Saffron feature:** key announcements and major reveals.
 
-Targets guide a rotation; they are not a rigid publishing quota. Story form, imagery, hook and narrative must vary independently from color. See [Variety Rules](VARIETY_RULES.md).
+Targets guide rotation, not a rigid quota; include at least one saffron feature per video where appropriate. Story form, imagery, hook and narrative must vary independently from color. See [Variety Rules](VARIETY_RULES.md).
 
 ## Typography
 - **Sora**: confirmed display font for headlines, title cards, brand wordmark and large stats. The custom italic BM icon uses vector paths, not generic typed Sora glyphs.

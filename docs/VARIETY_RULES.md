@@ -1,5 +1,8 @@
 # Bharat Mode — Variety and originality rules
 
+> **MANDATORY — scene-level mixed themes (owner approved 26 November 2026):** Plan themes by narrative purpose, not just dominant upload color. Aim approximately 50% Warm Ivory, 30% Deep Charcoal, 20% Classic Saffron across scenes over multiple videos; these are editorial targets, not rigid quotas. Include at least one full saffron feature scene per video where visually appropriate; document a reason if omitted. Prefer saffron for major announcements, landmark figures or a strong closing reveal; ivory for facts, comparisons and instructional diagrams; charcoal for cinematic machinery, space, technology and contrast-rich environments. Technical mechanisms can use ivory or charcoal. Vary sequence with story and avoid forced predictable alternation. All scenes still need unique contextual backgrounds and meaningful motion; changing only color is insufficient. Check actual rendered contrast of all text, labels, captions and progress tracks. Saffron uses dark readable editorial ink, ivory progress fill and sufficiently dark neutral caption backing when needed for ivory/peach caption legibility. This supersedes the old 65/25/10 upload-dominant mix. Do not re-render previously approved releases solely for rotation.
+
+
 > **MANDATORY — distinct scene backgrounds, owner correction 24 November 2026:** Each narrative scene must have a visibly different story-specific background composition and contextual motion, not a common decorative base with a changed color, gradient, glow or repeated curve. Theme colors may repeat; the artwork, geometry, depth and movement must change to support the content. A continued beat inside the same scene may retain its environment for continuity. V6 locks the branding/chrome (logo, topic pill, typography, captions and centered chapter progress), not background artwork. Before storyboard delivery, assign a unique scene-level background design ID and show actual native-resolution frames; audit the contact sheet for repeated geometry, not just palette, and verify distinct scene background layers in editable source. Before draft delivery, inspect representative rendered frames and within-scene background motion at native 60fps. If this gate fails, correct the source and regenerate before review. Do not reintroduce the prototype V6 radial glow + ellipse as a universal background. Do not include editorial reference labels.
 
 The goal is **recognizable branding without interchangeable videos**. These are internal production heuristics, not YouTube-imposed limits.
@@ -14,7 +17,7 @@ The goal is **recognizable branding without interchangeable videos**. These are 
 
 | Dimension | Our rule | Examples |
 |---|---|---|
-| Dominant background | Aim 65% ivory / 25% dark / 10% saffron over a long enough batch; no rigid alternation | Ivory explainer, midnight milestone |
+| Dominant background | Aim 50% ivory / 30% dark / 20% saffron across scenes; include saffron where appropriate, no rigid alternation | Ivory explainer, midnight milestone |
 | Visual family | **No same visualFamily on consecutive uploads** | data-led, explainer, field-report, people-first, timeline |
 | Hook | No hook type three times in a 7-video window | question, unexpected number, contrast, person, mystery |
 | Topic | Flag four of the same topic in 7 uploads | research / health / agriculture / communities |
