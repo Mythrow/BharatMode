@@ -53,13 +53,13 @@
     "render:production": "node scripts/render-production.mjs",
     "production:test": "node scripts/test-production-contract.mjs",
     "voice:legacy:openai": "node scripts/tts-openai.mjs",
-    "check": "node scripts/content-registry.mjs check && node scripts/test-content-registry.mjs && node scripts/validate-stories.mjs && node scripts/test-natural-earth.mjs && python3 -m unittest discover -s scripts -p 'test_*.py' && node scripts/check-brand.mjs && node scripts/check-logo-assets.mjs && node scripts/test-chapters.mjs && node scripts/test-motion-v2-timing.mjs && node scripts/test-motion-v3-timing.mjs && node scripts/test-motion-v4-timing.mjs && node scripts/test-motion-v5-timing.mjs && node scripts/test-motion-v6-timing.mjs && node scripts/test-approved-template.mjs && node scripts/check-channel-cover.mjs && node scripts/test-aligned-caption-timing.mjs && node scripts/test-production-contract.mjs && node scripts/check-release-records.mjs && node scripts/check-production-manifests.mjs && node scripts/check-analytics.mjs && node scripts/check-variety.mjs"
+    "check": "node scripts/content-registry.mjs check && node scripts/test-content-registry.mjs && node scripts/validate-stories.mjs && node scripts/test-natural-earth.mjs && python3 -m unittest discover -s scripts -p 'test_*.py' && node scripts/check-brand.mjs && node scripts/check-logo-assets.mjs && node scripts/test-chapters.mjs && node scripts/test-motion-v2-timing.mjs && node scripts/test-motion-v3-timing.mjs && node scripts/test-motion-v4-timing.mjs && node scripts/test-motion-v5-timing.mjs && node scripts/test-motion-v6-timing.mjs && node scripts/test-approved-template.mjs && node scripts/check-channel-cover.mjs && node scripts/test-aligned-caption-timing.mjs && node scripts/test-production-contract.mjs && node scripts/check-release-records.mjs && node scripts/check-production-manifests.mjs && node scripts/check-analytics.mjs && node scripts/check-variety.mjs && node scripts/check-private-assets.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",
     "@remotion/google-fonts": "4.0.545",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "remotion": "4.0.545"
   }
 }

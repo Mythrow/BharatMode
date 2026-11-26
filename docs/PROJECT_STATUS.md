@@ -13,3 +13,5 @@
 **Technical backlog:** [roadmap](ROADMAP.md) and [issue #5](https://github.com/Mythrow/BharatMode/issues/5). No generic renderer is certified until real-audio native render, decoded motion/phone QA and owner review. Existing private source/review assets: [recovery standard](PRODUCTION_REPRODUCIBILITY.md).
 
 **New-chat reading order:** this page → registry/log → relevant research → content pipeline → approved template/production guide as needed. Historical checkpoint details: [archive](archive/README.md). This summary is not a second status ledger; when stale regenerate it from current evidence.
+
+**Audit branch:** PR #6 remains unmerged: the repository-backed JavaScript contract tests passed in an isolated harness; GitHub Actions still reports failure with unavailable logs/empty steps. Do not call CI green or the production renderer certified. See [audit record](AUDIT_2026-11-27.md).

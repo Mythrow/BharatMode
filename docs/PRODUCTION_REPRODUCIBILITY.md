@@ -18,3 +18,7 @@ For every new Short, create a versioned structured story brief under stories/ an
 - BM-005: ID-006 research records V7 editable source, exact media, QA and unchanged audio payload.
 
 Legacy structured briefs exist for BM-001–003; BM-004/005 have private source and research pointers but no structured story JSON in Git. Do not reconstruct or mark fully reproducible without recovering actual source/approved scripts and verifying bundle integrity. Never edit the existing rendered videos. The recovery index is evidence of recorded locations, not proof of access.
+
+## Automated gate
+
+`node scripts/check-production-manifests.mjs` checks each manifest and requires a completed record at `production/BM-###.json` before any new production enters a release stage. BM-001–005 are explicitly grandfathered only for historical missing manifests; this does not certify their recovery. Per-scene `narration`, `alignment`, `cueMap`, each asset, `source.privateBundle`, `qa.technicalReport`, and `output` require a private Library ID, filename and SHA-256. Assets also require provenance and rights evidence. Owner approvals must retain their real evidence; a file inventory is not approval. Tracked media/path lint guards obvious private files but cannot prove absence of all secrets or licensing restrictions.

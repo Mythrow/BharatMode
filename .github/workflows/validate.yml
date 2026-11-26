@@ -39,3 +39,4 @@ jobs:
       - run: node scripts/check-production-manifests.mjs
       - run: node scripts/check-analytics.mjs
       - run: node scripts/check-variety.mjs
+      - run: node scripts/check-private-assets.mjs

@@ -122,6 +122,7 @@ function validate(registry,{files=true,queue=true}={}){
       if(prev!==it.stage)err(`${name}: stage differs from stageHistory`);
     }
     if(it.stage==='published_owner_reported' && (it.ownerConfirmedPublic!==true || !daysAreValid(it.publicationReportedOn)))err(`${name}: dated owner publication report required`);
+    if(it.scheduleTime!=null&&(!/^([01]\d|2[0-3]):[0-5]\d$/.test(it.scheduleTime)||it.scheduleTimezone!=='Asia/Kolkata'))err(`${name}: invalid schedule time/timezone`);
     if(it.stage==='scheduled' && (it.uploadConfirmedByOwner!==true || !daysAreValid(it.scheduledAt) || !daysAreValid(it.scheduledReportedOn)))err(`${name}: dated owner upload and schedule report required`);
     if(it.stage==='uploaded' && (it.uploadConfirmedByOwner!==true || !daysAreValid(it.uploadedAt)))err(`${name}: dated owner upload report required`);
     if(it.ownerConfirmedPublic===true && !['published_owner_reported','published'].includes(it.stage))err(`${name}: owner publication report conflicts with stage`);
@@ -168,7 +169,7 @@ function validate(registry,{files=true,queue=true}={}){
       if(seen.has(slug))err(`Publishing queue repeats ${slug}`);seen.add(slug);
       const item=registry.items.find(x=>x.slug===slug);
       if(!item)err(`Publishing queue item '${slug}' not registered`);
-      else if(!['idea','in_progress'].includes(item.stage))err(`Publishing queue still includes published item ${item.id}`);
+      else if(!['idea','in_progress'].includes(item.stage))err(`Publishing queue still includes released/uploaded item ${item.id}`);
     }
   }
   return errors;
@@ -319,7 +320,7 @@ function main(){
   if(cmd==='move')return move(args);
   if(cmd==='find')return find(args.join(' '));
   if(cmd==='list')return list(parseArgs(args).flags.stage);
-  console.log('Usage: node scripts/content-registry.mjs <check|sync|list [--stage idea|in_progress|published]|find <words>|add --title ... --slug ... --story-key ... --topic-key ... --primary-source ... --event-date YYYY-MM-DD [--related ID-XXX --distinguishing-update ...]|move ID-XXX in_progress|published --note ...>');
+  console.log('Usage: node scripts/content-registry.mjs <check|sync|list [--stage idea|in_progress|uploaded|scheduled|published_owner_reported|published]|find <words>|add --title ... --slug ... --story-key ... --topic-key ... --primary-source ... --event-date YYYY-MM-DD [--related ID-XXX --distinguishing-update ...]|move ID-XXX <stage> --note ... (see docs/CONTENT_PIPELINE.md)>');
   if(cmd)process.exitCode=1;
 }
 try{main()}catch(e){console.error(e.message);process.exitCode=1}

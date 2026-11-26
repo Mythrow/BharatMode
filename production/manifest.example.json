@@ -13,8 +13,34 @@
       "sha256": null
     }
   },
-  "scenes": [],
-  "assets": [],
+  "scenes": [
+    {
+      "narration": {
+        "filename": null,
+        "libraryId": null,
+        "sha256": null
+      },
+      "alignment": {
+        "filename": null,
+        "libraryId": null,
+        "sha256": null
+      },
+      "cueMap": {
+        "filename": null,
+        "libraryId": null,
+        "sha256": null
+      }
+    }
+  ],
+  "assets": [
+    {
+      "filename": null,
+      "libraryId": null,
+      "sha256": null,
+      "provenance": null,
+      "rightsEvidence": null
+    }
+  ],
   "render": {
     "width": 1080,
     "height": 1920,
@@ -27,12 +53,17 @@
     "silentHoldSeconds": 1
   },
   "qa": {
-    "technicalReport": null,
+    "technicalReport": {
+      "filename": null,
+      "libraryId": null,
+      "sha256": null
+    },
     "ownerApprovals": [],
     "rightsEvidence": []
   },
   "output": {
-    "sha256": null,
-    "libraryId": null
+    "filename": null,
+    "libraryId": null,
+    "sha256": null
   }
 }

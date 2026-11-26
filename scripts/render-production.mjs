@@ -33,6 +33,11 @@ try{
  if(probe.width!==1080||probe.height!==1920||probe.r_frame_rate!=='60/1'||Number(probe.nb_read_frames)!==plan.durationInFrames)fail('Decoded output geometry/frame count mismatch');
  const pts=JSON.parse(run('ffprobe',['-v','error','-select_streams','v:0','-show_frames','-show_entries','frame=best_effort_timestamp_time','-of','json',out])).frames;
  if(pts.length!==plan.durationInFrames||pts.some((f,i)=>i>0&&Math.abs(Number(f.best_effort_timestamp_time)-Number(pts[i-1].best_effort_timestamp_time)-1/60)>.00001))fail('Output frame timestamps not consecutive');
+ const audio=JSON.parse(run('ffprobe',['-v','error','-select_streams','a:0','-show_entries','stream=duration','-of','json',out])).streams[0];
+ if(!audio||!Number.isFinite(Number(audio.duration))||Math.abs(Number(audio.duration)-plan.durationInFrames/60)>.05)fail('Encoded audio duration differs from planned video');
  run('ffmpeg',['-v','error','-xerror','-i',out,'-f','null','-']);
+ const hashes=run('ffmpeg',['-v','error','-i',out,'-map','0:v:0','-f','framemd5','-']).split('\n').filter(l=>l&&!l.startsWith('#')).map(l=>l.split(',').at(-1).trim());
+ if(hashes.length!==plan.durationInFrames)fail('Decoded frame hash count mismatch');
+ if(hashes.some((h,i)=>i>0&&i<plan.audibleFrames&&h===hashes[i-1]))fail('Unexpected identical decoded frame before final hold');
  console.log(JSON.stringify({status:'technical_candidate_human_QA_required',frames:plan.durationInFrames,sha256:hash(out),pending:['decoded-frame motion and collision review','audio mix and fade listening','phone QA','owner creative and publication gates']},null,2));
 }catch(e){console.error(e.message);process.exitCode=1}

@@ -1,10 +1,12 @@
 /**
- * Optional natural TTS generation. Uses a configurable speech model; verify
+ * Historical paid TTS experiment; prohibited for routine Bharat Mode production. Uses a configurable speech model; verify
  * the provider's supported model IDs, pricing and usage terms at render time.
  * Generated voice files are not committed.
  */
 import fs from 'node:fs';
 import path from 'node:path';
+throw new Error('Historical paid OpenAI TTS is disabled for Bharat Mode production. Use approved private Qwen3-TTS Base workflow. Any change requires explicit owner approval.');
+// Retained implementation for historical reference only.
 const input = process.argv[2] || 'stories/param-rudra.json';
 const story = JSON.parse(fs.readFileSync(input,'utf8')).story;
 const key=process.env.OPENAI_API_KEY;

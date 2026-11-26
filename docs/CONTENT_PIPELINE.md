@@ -49,3 +49,5 @@ npm run check
 ```
 
 For a release transition reconcile the matching release-page JSON in the same commit and preserve all QA flags. Calendar reflects registry only; see [calendar](CONTENT_CALENDAR.md). Collect comparable analytics; see [analytics](ANALYTICS_TRACKING.md). Historical migration decisions: [archive](archive/README.md).
+
+For verified publication, mirror `publishApprovedByOwner` and `publicationVerification` into release-page publication metadata (preserve any earlier owner report separately). New release stages require the completed private-source manifest; historical BM-001–005 are recovery backlog only. A scheduled release is never auto-promoted.
