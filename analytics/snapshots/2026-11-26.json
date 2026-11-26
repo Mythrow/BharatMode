@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-11-26",
+  "source": "Owner-provided YouTube Studio screenshots; manual transcription",
+  "window": "Since published, except explicitly labelled realtime and channel overview figures",
+  "channel": {
+    "publishedShorts": 3,
+    "totalSubscribers": 3,
+    "views48h": 265,
+    "views28d": 126,
+    "watchHours28d": 0.3,
+    "netSubscribers28d": 2,
+    "reportingPeriodEndDisplayed": "2026-11-24",
+    "realtimeViewsByCode": {
+      "BM-003": 220,
+      "BM-001": 29,
+      "BM-002": 16
+    }
+  },
+  "videos": [
+    {
+      "code": "BM-003",
+      "ideaId": "ID-003",
+      "title": "L&T — AI Infrastructure",
+      "durationSeconds": 41.5,
+      "studioGraphStart": "2026-11-24 11:17",
+      "studioGraphEnd": "2026-11-26 11:15",
+      "ageMinutesApprox": 2878,
+      "views": 227,
+      "engagedViews": 63,
+      "views48h": 220,
+      "watchHoursDisplayed": 0.4,
+      "averageViewSecondsDisplayed": 20,
+      "averagePercentageViewedEstimated": 48.2,
+      "stayedToWatchPct": 36.6,
+      "swipedAwayPct": 63.4,
+      "likes": 4,
+      "shares": 2,
+      "netSubscribers": 0,
+      "uniqueViewersDisplayed": 25,
+      "uniqueViewerDataStatus": "Reporting window/cutoff differs from views",
+      "retentionGraphAvailable": false,
+      "trafficPct": {
+        "Shorts feed": 51.1,
+        "YouTube search": 44.1,
+        "Channel pages": 4,
+        "External": 0.9
+      },
+      "traffic48hCounts": {
+        "Shorts feed": 113,
+        "YouTube search": 99,
+        "Other": 8
+      },
+      "deviceWatchTimePct": {
+        "Mobile phone": 71.2,
+        "TV": 15.2,
+        "Computer": 12.8,
+        "Tablet": 0.8
+      },
+      "indiaViewsPct": 75.9,
+      "subtitleViewsPct": {
+        "No subtitles/CC": 96.6,
+        "English": 3.4
+      },
+      "searchTermsDisplayed": {
+        "larsen and toubro share latest news": 6.2,
+        "larsen and toubro": 3.1,
+        "l&t": 1.6,
+        "l&t ki": 1.6,
+        "l&t share latest news": 1.6
+      }
+    },
+    {
+      "code": "BM-001",
+      "ideaId": "ID-001",
+      "title": "PARAM Rudra — Supercomputing",
+      "durationSeconds": 53.7,
+      "studioGraphStart": "2026-11-25 10:09",
+      "studioGraphEnd": "2026-11-26 11:19",
+      "ageMinutesApprox": 1510,
+      "views": 29,
+      "engagedViews": 16,
+      "views48h": 29,
+      "watchHoursDisplayed": 0.1,
+      "averageViewSecondsDisplayed": 26,
+      "averagePercentageViewedEstimated": 48.4,
+      "stayedToWatchPct": 76.2,
+      "swipedAwayPct": 23.8,
+      "likes": 3,
+      "shares": 0,
+      "netSubscribers": 1,
+      "uniqueViewersDisplayed": 4,
+      "uniqueViewerDataStatus": "Partially processed; do not use for repeat-view ratios",
+      "retentionGraphAvailable": false,
+      "trafficPct": {
+        "YouTube search": 51.7,
+        "Shorts feed": 20.7,
+        "Browse features": 13.8,
+        "Channel pages": 10.3,
+        "Other": 3.5
+      },
+      "traffic48hCounts": {
+        "YouTube search": 15,
+        "Shorts feed": 6,
+        "Other": 8
+      },
+      "deviceWatchTimePct": {
+        "Mobile phone": 61.6,
+        "Computer": 38.4
+      },
+      "indiaViewsPct": null,
+      "subtitleViewsPct": {
+        "No subtitles/CC": 90,
+        "English": 10
+      }
+    },
+    {
+      "code": "BM-002",
+      "ideaId": "ID-002",
+      "title": "ICMR — Technology Transfers",
+      "durationSeconds": 58.083333,
+      "studioGraphStart": "2026-11-26 09:00",
+      "studioGraphEnd": "2026-11-26 11:20",
+      "ageMinutesApprox": 140,
+      "views": 16,
+      "engagedViews": 5,
+      "views60min": 7,
+      "watchHoursDisplayed": 0.1,
+      "averageViewSecondsDisplayed": 75,
+      "averagePercentageViewedEstimated": 129.1,
+      "stayedToWatchPct": 57.1,
+      "swipedAwayPct": 42.9,
+      "likes": 3,
+      "shares": 0,
+      "netSubscribers": 0,
+      "uniqueViewersDisplayed": 0,
+      "uniqueViewerDataStatus": "Not processed; chart ends before release; zero is not a real audience count",
+      "retentionGraphAvailable": false,
+      "trafficPct": {
+        "YouTube search": 43.8,
+        "Channel pages": 25,
+        "Browse features": 12.5,
+        "Notifications": 12.5,
+        "Other": 6.2
+      },
+      "traffic60minCounts": {
+        "Channel pages": 4,
+        "Browse features": 2,
+        "Other": 1
+      },
+      "deviceWatchTimePct": {
+        "Computer": 61.5,
+        "Mobile phone": 38.4
+      },
+      "indiaViewsPct": null,
+      "subtitleViewsPct": null
+    }
+  ],
+  "notes": [
+    "Studio displayed graph timestamps, timezone not independently verified; not exact publication times for formal registry.",
+    "The 272 views and 84 engaged views are sums of individual since-published snapshots, not comparable to the 265 realtime channel views or lagged 126 views.",
+    "Average percentage viewed estimates use rounded displayed average view duration divided by canonical runtime, not actual exported APV. Over 100% consistent with repeat viewing, not evidence of specific loop behavior.",
+    "Stayed-to-watch percentage is a separate Shorts feed metric; do not divide engaged views by total views to recreate it. Traffic percentages rounded; omitted categories are not assumed zero.",
+    "Audience retention graphs not yet available; no inference of specific drop-off time. No official universal benchmarks or causal conclusions from three uneven-age small samples."
+  ]
+}

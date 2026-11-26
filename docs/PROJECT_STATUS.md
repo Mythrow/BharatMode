@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **Analytics baseline — 26 November 2026:** First three published Shorts' Studio data captured in [analytics snapshot](../analytics/snapshots/2026-11-26.json); [performance tracking standard](ANALYTICS_TRACKING.md) records comparable-age collection and dashboard rules. 272 summed since-published views, 84 engaged views, channel 3 subscribers. Different ages/reporting cutoffs and small samples; no major format changes. Next collect BM-004 24h data and first three 7-day metrics/retention curves when available. No change to publication status.
+
+
 > **CURRENT — 26 November 2026:** Owner confirms BM-002 / ID-002 is now public on 26 November. Keep owner-reported published status until actual YouTube URL and formal date reconciliation; do not reopen production. BM-004 remains scheduled for 27 November. Counts: 3 owner-reported published, 1 scheduled, 0 active, 1 unused idea (ID-004). Owner usually schedules around 10:00 AM IST; record as preferred approximate release time, not a confirmed exact time for any individual video. Next BM-005 / new idea ID-006. Home tab remains deferred until meaningful catalog (review around 10 published Shorts). Begin collecting comparable first-24-hour and first-7-day Shorts analytics; no major format changes based on three videos alone.
 
 
