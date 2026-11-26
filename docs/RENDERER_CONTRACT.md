@@ -11,3 +11,5 @@ npm run render:production -- private/BM-XXX-props.json out/BM-XXX-slug.mp4
 ```
 
 The renderer composes the approved shared frame, captions with measured word timestamps, themed story-specific layer motion, eased typewriter/anticipatory cues, quiet dissolve, exact scene audio frame offsets and final hold. It does not yet replace custom story-specific illustration engineering, music-mix authoring, thumbnail generation, or decoded-frame/phone QA. Unit tests are not native render validation. No prior episode may be rendered again. Before certification: run real active story, verify exact decoded timing/frame count, continuous motion/collision/font contrast, music/audio quality, phone playback and owner review. Current generic thumbnail is explicitly legacy.
+
+The actual approved MUSIC-06 source must be in the asset manifest at `production.musicPath` with the canonical digest, not merely a claimed hash. The preflight checks the file bytes. Mix construction and listening QA remain production responsibilities.

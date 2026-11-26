@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "exampleOnly": true,
+  "productionCode": null,
+  "windowHours": 24,
+  "source": null,
+  "actualPublishedAt": null,
+  "windowStart": null,
+  "windowEnd": null,
+  "capturedAt": null,
+  "metrics": {
+    "views": null,
+    "engagedViews": null,
+    "watchTimeHours": null,
+    "averageViewDurationSeconds": null,
+    "averagePercentageViewed": null,
+    "viewedVsSwipedAwayPercent": null,
+    "likes": null,
+    "comments": null,
+    "shares": null,
+    "subscribersGained": null
+  },
+  "notes": "Use actual Studio first-24h or first-7d window; null means unavailable, never zero."
+}

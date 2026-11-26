@@ -25,6 +25,7 @@ export function validateProduction({story,production}={}){
   require(Array.isArray(production.assets),'Asset manifest required');
   const assets=new Map();
   for(const a of production.assets){require(pathOK(a.path)&&digest(a.sha256)&&typeof a.provenance==='string'&&a.provenance.trim()&&typeof a.rights==='string'&&a.rights.trim(),'Asset path, hash, provenance and rights record required');require(!assets.has(a.path),'Duplicate asset path');assets.set(a.path,a);}
+  require(pathOK(production.musicPath)&&assets.get(production.musicPath)?.sha256===MUSIC_SHA,'Actual approved MUSIC-06 source asset required');
   const bg=new Set();const layers=new Set();let cursor=0;
   const scenes=production.scenes.map((p,i)=>{
     const s=story.scenes[i],alignment=p.alignment;

@@ -1,10 +1,10 @@
 # Bharat Mode — Qwen narration to approved V6 captions
 
-**Status (23 November 2026):** alignment ingestion/validation and screen-centered V6 caption component are implemented and covered by pure-code tests. **No real acoustic word-alignment run or finished V6 video has been completed yet.** This file describes the agreed engineering contract, not a completed voice-synced render.
+**Current status:** approved Qwen Base reference and real acoustic alignment have been used in episode production. Verify fresh inputs per story; the reusable native renderer remains an engineering candidate until real-input render QA passes.
 
 ## Inputs and safety checks
 
-1. Synthesize the final narration WAV using our original synthetic Qwen voice reference. The exact narrator identity consistency is still pending the `scripts/qwen_base_voice_test.py` run on appropriate Work Mode compute.
+1. Synthesize the final narration WAV using our original synthetic Qwen voice reference. Use the owner-approved Base reference and pinned model; verify SHA and listening QA each time.
 2. Use **the final audio** and the exact approved spoken transcript, not a draft or a manually estimated timing file. Run the open-source WhisperX alignment engine on permitted compute. It needs its own downloaded aligner weights (and may require a separate compatible Python environment from Qwen3-TTS).
 3. `scripts/align_qwen_words.py` obtains acoustic word starts and ends from the waveform and writes a JSON file with the final WAV's SHA-256, measured duration and strict word matches. If the aligner misses a word, returns no timestamp, overlaps words, invents a different word or yields out-of-audio positions, the script **fails** instead of manufacturing timestamps.
 4. A passing alignment **does not prove that the voice actually pronounced the right words**; forced alignment is conditioned on the supplied transcript. Complete a listening/ASR pronunciation review separately, especially `PARAM Rudra`, before publication.
@@ -21,7 +21,7 @@ python scripts/align_qwen_words.py \
   --device cpu
 ```
 
-**No output is committed to public GitHub**. Generated WAVs, aligned timestamps and videos stay in ignored `out/` or private storage. Copy the exact approved new-line narration from the actual Base generation manifest for consistency. A Qwen Base sample has not yet been generated.
+**No output is committed to public GitHub**. Generated WAVs, aligned timestamps and videos stay in ignored `out/` or private storage. Copy the exact approved new-line narration from the actual Base generation manifest for consistency.
 
 Integration API for the approved frame once a genuine alignment is generated:
 
@@ -39,9 +39,9 @@ import {AlignedNarrationCaptions} from './aligned-captions.jsx';
 </ApprovedShortsFrame>
 ```
 
-The example above is an integration contract, **not** a statement that the general `src/short.jsx` renderer has been migrated. That renderer is still legacy. For a full multi-scene Short, use one verified alignment per generated audio segment or a complete final soundtrack with correct global timestamp offsets; do not silently reuse timestamps from a different recording.
+The `BharatShort` composition now uses the native production contract; `src/short.jsx` is legacy. See [renderer contract](RENDERER_CONTRACT.md). For a full multi-scene Short, use one verified alignment per generated audio segment or a complete final soundtrack with correct global timestamp offsets; do not silently reuse timestamps from a different recording.
 
-## Test status
+## Historical test evidence (23 November; not the current audit CI result)
 
 - `python -m unittest discover -s scripts -p 'test_align_qwen_words.py'`: 8 pure-code passing cases, including exact match and rejection paths.
 - `node scripts/test-aligned-caption-timing.mjs`: passing phrase segmentation/timing validation checks.

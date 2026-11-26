@@ -63,5 +63,19 @@
     "registryPromotionPending": "Independent verification, real YouTube URL and publication date pending; no further upload."
   },
   "ideaId": "ID-003",
-  "productionCode": "BM-003"
+  "productionCode": "BM-003",
+  "media": {
+    "video": {
+      "filename": "BM-0003-lt-chennai-ai-cluster-order.mp4",
+      "libraryId": "libfile_f757a41b695c819193c94c5889d51b11",
+      "sha256": "77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634",
+      "ownerApproved": true
+    },
+    "thumbnail": {
+      "filename": "BM-0003-lt-chennai-ai-cluster-order-thumbnail.png",
+      "libraryId": "libfile_21430dbe1a30819183ea6980fa04d587",
+      "sha256": "a4a29a25bdd230b2bfc1fded35fb66a8e3c83933777f764ca476747037dec937",
+      "ownerApproved": true
+    }
+  }
 }

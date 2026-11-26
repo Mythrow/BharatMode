@@ -35,3 +35,7 @@ jobs:
 
       - run: node scripts/test-aligned-caption-timing.mjs
       - run: node scripts/test-production-contract.mjs
+      - run: node scripts/check-release-records.mjs
+      - run: node scripts/check-production-manifests.mjs
+      - run: node scripts/check-analytics.mjs
+      - run: node scripts/check-variety.mjs
