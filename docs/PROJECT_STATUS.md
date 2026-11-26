@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-005 — V3 opening revision:** Owner-approved simpler opening label integrated in actual source and complete 3428-frame narrated MP4. Audio unchanged; verified full decode and identical decoded frames from frame 857 onward. V3 HTML and source saved privately; await final approval. See ID-006 research.
+
+
 > **BM-005 — V2 narrated mixed-theme review, 26 November 2026:** Owner requested approved theme rotation and narrated preview. Exact narration and approved MUSIC-06 integrated; complete native 3428-frame 57.133s preview verified and saved privately, with self-contained HTML. Await owner review, no final approval or publication. Scene-level 50/30/20 target and saffron feature rule approved; see ID-006 research for source IDs and QA.
 
 
