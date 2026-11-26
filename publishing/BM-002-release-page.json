@@ -14,7 +14,7 @@
     "Audience": "No, it is not made for kids",
     "Altered or synthetic content disclosure": "Yes",
     "License": "Standard YouTube License",
-    "Visibility": "Published — owner confirmed 26 November 2026; public URL and exact publication time pending",
+    "Visibility": "Published — owner reported 2026-11-26; actual URL/date pending",
     "Comments": "Enabled; Basic moderation",
     "Sources and factual caveats": "100 cumulative deals, not 100 unique products; 20 licensing agreements covered eight technologies and nine companies at November summit; earlier vaccine, diagnostic and experimental therapy examples are not confirmed members of November eight. Licensing is not regulatory clearance, clinical efficacy or market adoption. November PIB release available in indexed text; direct retrieval failed in research, corroborated by DD India and IBEF. See https://github.com/Mythrow/BharatMode/blob/main/content/research/ID-002.md"
   },
@@ -81,6 +81,8 @@
     "scheduleTime": null,
     "scheduledReportedOn": "2026-11-25",
     "reportedOn": "2026-11-26",
-    "publicationReportedOn": "2026-11-26"
-  }
+    "publicationReportedOn": "2026-11-26",
+    "registryPromotionPending": "Independent verification, real YouTube URL and publication date pending; no further upload."
+  },
+  "productionCode": "BM-002"
 }

@@ -11,8 +11,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REGISTRY_PATH = path.join(ROOT, 'content/registry.json');
 const LOG_PATH = path.join(ROOT, 'content/CONTENT_LOG.md');
 const QUEUE_PATH = path.join(ROOT, 'publishing/queue.json');
-const STAGES = ['idea','in_progress','published'];
-const LABELS = {idea:'Idea',in_progress:'In Progress',published:'Published'};
+const STAGES = ['idea','in_progress','uploaded','scheduled','published_owner_reported','published'];
+const LABELS = {"idea":"Idea","in_progress":"In Progress","uploaded":"Uploaded (owner reported)","scheduled":"Scheduled (owner reported)","published_owner_reported":"Published (owner reported)","published":"Published (verified)"};
+const allowed = (from,to) => from===null ? to==='idea' : from==='idea' ? to==='in_progress' : from==='in_progress' ? ['uploaded','scheduled','published_owner_reported','published'].includes(to) : from==='uploaded' ? ['scheduled','published_owner_reported','published'].includes(to) : from==='scheduled' ? ['published_owner_reported','published'].includes(to) : from==='published_owner_reported' && to==='published';
 const PRIORITIES = ['high','medium','low'];
 const ID_RE = /^ID-(\d{3,})$/;
 const PRODUCTION_RE=/^BM-(\d{3,})$/;
@@ -81,7 +82,7 @@ function validate(registry,{files=true,queue=true}={}){
     if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(it.slug||''))err(`${name}: invalid slug`);
     if(slugs.has(it.slug))err(`${name}: duplicate slug ${it.slug} (${slugs.get(it.slug)})`);slugs.set(it.slug,name);
     if(!it.title?.trim())err(`${name}: title required`);
-    if(!STAGES.includes(it.stage))err(`${name}: stage must be idea, in_progress, or published`);
+    if(!STAGES.includes(it.stage))err(`${name}: invalid stage`);
     if(!PRIORITIES.includes(it.priority))err(`${name}: invalid priority`);
     if(!it.category?.trim())err(`${name}: category required`);
     for(const field of ['storyKey','topicKey'])if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(it[field]||''))err(`${name}: invalid ${field}`);
@@ -114,13 +115,19 @@ function validate(registry,{files=true,queue=true}={}){
       for(const x of it.stageHistory){
         if(!daysAreValid(x.at))err(`${name}: invalid stageHistory date`);
         if(x.from!==prev)err(`${name}: invalid stage history transition from ${x.from} (expected ${prev})`);
-        if(!STAGES.includes(x.to)||!(prev===null&&x.to==='idea'||prev==='idea'&&x.to==='in_progress'||prev==='in_progress'&&x.to==='published'))err(`${name}: invalid ${prev}->${x.to} transition`);
+        if(!STAGES.includes(x.to)||!allowed(prev,x.to))err(`${name}: invalid ${prev}->${x.to} transition`);
         if(!x.note?.trim())err(`${name}: missing history reason`);
         prev=x.to;
       }
       if(prev!==it.stage)err(`${name}: stage differs from stageHistory`);
     }
+    if(it.stage==='published_owner_reported' && (it.ownerConfirmedPublic!==true || !daysAreValid(it.publicationReportedOn)))err(`${name}: dated owner publication report required`);
+    if(it.stage==='scheduled' && (it.uploadConfirmedByOwner!==true || !daysAreValid(it.scheduledAt) || !daysAreValid(it.scheduledReportedOn)))err(`${name}: dated owner upload and schedule report required`);
+    if(it.stage==='uploaded' && (it.uploadConfirmedByOwner!==true || !daysAreValid(it.uploadedAt)))err(`${name}: dated owner upload report required`);
+    if(it.ownerConfirmedPublic===true && !['published_owner_reported','published'].includes(it.stage))err(`${name}: owner publication report conflicts with stage`);
+    if(it.scheduledAt && !['scheduled','published_owner_reported','published'].includes(it.stage))err(`${name}: schedule conflicts with stage`);
     if(it.stage==='published'){
+      if(!it.publicationVerification?.evidence?.trim() || !daysAreValid(it.publicationVerification?.verifiedOn))err(`${name}: independent publication verification evidence and date required`);
       if(!daysAreValid(it.publishedAt))err(`${name}: publishedAt required in published stage`);
       const id=videoId(it.youtubeUrl);
       if(!id)err(`${name}: valid public YouTube watch/video link required in published stage`);
@@ -161,7 +168,7 @@ function validate(registry,{files=true,queue=true}={}){
       if(seen.has(slug))err(`Publishing queue repeats ${slug}`);seen.add(slug);
       const item=registry.items.find(x=>x.slug===slug);
       if(!item)err(`Publishing queue item '${slug}' not registered`);
-      else if(item.stage==='published'||item.ownerConfirmedPublic===true||item.scheduledAt)err(`Publishing queue still includes published item ${item.id}`);
+      else if(!['idea','in_progress'].includes(item.stage))err(`Publishing queue still includes published item ${item.id}`);
     }
   }
   return errors;
@@ -192,7 +199,7 @@ function renderLog(registry){
     lines.push('| Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |','|---|---|---|---|---|---|---|---|');
     for(const x of rows){
       const story=x.storyPath?`[Draft](../${x.storyPath})`:'—';
-      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.ownerConfirmedPublic?'Owner-confirmed published; URL/date pending':x.scheduledAt?`Scheduled ${x.scheduledAt}${x.scheduleTime?' '+x.scheduleTime+' IST':''} (owner reported; ${x.scheduleTime?'link pending':'time/link pending'})`:'—';
+      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.stage==='published_owner_reported'?`Owner-confirmed published; reported ${x.publicationReportedOn}; URL/date pending`:x.stage==='scheduled'?`Scheduled ${x.scheduledAt}${x.scheduleTime?' '+x.scheduleTime+' IST':''} (owner reported; ${x.scheduleTime?'link pending':'time/link pending'})`:x.stage==='uploaded'?`Uploaded ${x.uploadedAt} (owner reported)`:'—';
       lines.push(`| **${x.id}** | ${x.productionCode||'—'} | ${markdownCell(x.title)} | ${displayDate(x.eventDate)} | ${x.priority} | [Research](research/${x.id}.md) | ${story} | ${published} |`);
     }
     lines.push('');
@@ -201,8 +208,8 @@ function renderLog(registry){
     '- Every candidate gets one **never-reused** `ID-###` idea identity and its own fact-checked research sheet. Assign the lowest unused `BM-###` only on selection; preserve both codes permanently.',
     '- A primary event is identified by `storyKey`; source URLs, slug, ID, near-identical titles and the complete registry are checked for duplicates.',
     '- A later distinct event in the **same topic** requires a new `storyKey`, links in `relatedIds`, and `distinguishingUpdate` explaining why it deserves another video.',
-    '- **Idea → In Progress → Published** is one-way. A published entry must include the actual YouTube video URL, date and explicit owner publication sign-off.',
-    '- The `publishing/queue.json` is an editorial planning order, **not a second content identity system**. It may not contain published or unregistered slugs.',
+    '- **Idea → In Progress → Uploaded / Scheduled / Published (owner reported) → Published (verified)**. No automatic promotion. Verified publication requires actual YouTube URL/date, explicit owner sign-off and independent verification evidence.',
+    '- The `publishing/queue.json` is an editorial planning order, **not a second content identity system**. It may contain only ideas or active productions.',
     '- Automated checks catch exact/obvious overlap, not all semantic paraphrases. A human must check the research sheets and older coverage before approving a new event.',
     '', 'See [content workflow](../docs/CONTENT_PIPELINE.md) for usage.','');
   return lines.join('\n');
@@ -244,22 +251,37 @@ function move(args){
   const r=read();ensureHealthy(r);
   const item=r.items.find(x=>matchId(x,id));if(!item)die('Unknown ID '+id);
   const prev=item.stage;
-  if(STAGES.indexOf(target)!==STAGES.indexOf(prev)+1)die(`Cannot transition ${id}: ${prev} -> ${target}. Must move Idea → In Progress → Published.`);
+  if(!allowed(prev,target))die(`Cannot transition ${id}: ${prev} -> ${target}. Must move Idea → In Progress before release; release stages cannot move backward.`);
   if(!f.note?.trim())die('Stage transitions need an explicit --note');
+  if(['uploaded','scheduled','published_owner_reported'].includes(target)){
+    if(!f['reported-on'] || !daysAreValid(f['reported-on']))die('A dated owner report is required (--reported-on)');
+    if(target==='uploaded'||target==='scheduled'){
+      if(!daysAreValid(f['uploaded-at']||item.uploadedAt))die('Owner-reported upload date required');
+      item.uploadConfirmedByOwner=true;item.uploadedAt=f['uploaded-at']||item.uploadedAt;
+    }
+    if(target==='scheduled'){
+      if(!daysAreValid(f['scheduled-at']))die('Explicit owner-reported schedule date required');
+      item.scheduledAt=f['scheduled-at'];item.scheduledReportedOn=f['reported-on'];
+      if(f['schedule-time']){if(!/^([01]\d|2[0-3]):[0-5]\d$/.test(f['schedule-time']))die('Invalid IST schedule time');item.scheduleTime=f['schedule-time'];item.scheduleTimezone='Asia/Kolkata';}
+    }
+    if(target==='published_owner_reported'){item.ownerConfirmedPublic=true;item.publicationReportedOn=f['reported-on'];}
+  }
   if(target==='published'){
     if(!f['approved-by-owner'])die('Publishing requires explicit --approved-by-owner');
     if(!daysAreValid(f['published-at']))die('Publishing requires a valid --published-at date');
     if(!videoId(f['youtube-url']))die('Publishing requires an actual YouTube watch/shorts URL');
+    if(!f['verification-evidence']?.trim() || !daysAreValid(f['verified-on']))die('Independent verification evidence and date required');
+    item.publicationVerification={evidence:f['verification-evidence'],verifiedOn:f['verified-on']};
     item.youtubeUrl=f['youtube-url'];item.publishedAt=f['published-at'];item.publishApprovedByOwner=true;
   }
   if(target==='in_progress'){item.productionCode=nextProductionCode(r);item.productionSelectedAt=todayIST();}
   item.stage=target;item.updatedAt=todayIST();item.stageHistory.push({at:todayIST(),from:prev,to:target,note:f.note});
-  const e=validate(r);if(e.length)die('Cannot move:\n- '+e.join('\n- '));
+  const e=validate(r,{queue:false});if(e.length)die('Cannot move:\n- '+e.join('\n- '));
   const file=path.join(ROOT,item.researchPath),old=fs.readFileSync(file,'utf8');
-  if(!/^\*\*Stage:\*\*.*$/m.test(old))die(`${id} research missing Stage line`);
-  const newDoc=old.replace(/^\*\*Stage:\*\*.*$/m,`**Stage:** ${LABELS[target]}  `)+`\n## Stage transition — ${todayIST()}\n\n${prev} → ${target}: ${f.note}\n`;
+  if(!/^(\*\*Stage:\*\*|Stage:).*$/m.test(old))die(`${id} research missing Stage line`);
+  const newDoc=old.replace(/^(\*\*Stage:\*\*|Stage:).*$/m,`**Stage:** ${LABELS[target]}  `)+`\n## Stage transition — ${todayIST()}\n\n${prev} → ${target}: ${f.note}\n`;
   atomicWrite(file,newDoc);
-  if(target==='published'&&fs.existsSync(QUEUE_PATH)){
+  if(!['idea','in_progress'].includes(target)&&fs.existsSync(QUEUE_PATH)){
     const queue=readJSON(QUEUE_PATH);
     if(queue.slugs?.includes(item.slug)){
       queue.slugs=queue.slugs.filter(x=>x!==item.slug);
@@ -276,7 +298,7 @@ function check(){
   }else errs.push('Missing content/CONTENT_LOG.md; run npm run content:sync');
   if(errs.length)die('Content registry failed:\n- '+errs.join('\n- '));
   const count=s=>r.items.filter(x=>x.stage===s).length;
-  console.log(`Content registry OK — ${r.items.length} IDs | idea ${count('idea')} | in_progress ${count('in_progress')} | published ${count('published')}.`);
+  console.log(`Content registry OK — ${r.items.length} IDs | ${STAGES.map(stage=>`${stage} ${count(stage)}`).join(' | ')}.`);
 }
 function find(query){
   const r=read();const q=String(query||'').trim();if(!q)die('Usage: find <phrase|ID>');
