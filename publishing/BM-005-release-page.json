@@ -14,7 +14,7 @@
     "Audience": "No, it is not made for kids",
     "Altered or synthetic content disclosure": "Yes (conservative proposed setting)",
     "License": "Standard YouTube License",
-    "Visibility": "Private initially; proposed schedule 28 November 2026 around 10 AM IST, subject to owner review and checks",
+    "Visibility": "Scheduled for 28 November 2026 at 10:00 AM IST (owner confirmed)",
     "Comments": "Enabled; Basic moderation",
     "Sources and factual caveats": "₹11,000 crore total approved outlay includes testing facility support; ₹21,000 crore expected investment, not realized. Approximate 45% import dependence, not machine unit share. Maximum 13% on qualifying incremental equipment sales. Original schematic machinery, no specific manufacturers or beneficiaries claimed."
   },
@@ -58,7 +58,7 @@
     },
     {
       "label": "Owner confirms upload and schedule",
-      "done": false
+      "done": true
     },
     {
       "label": "Record public URL and publication date",
@@ -69,9 +69,13 @@
     "ownerConfirmedPublic": false,
     "youtubeUrl": null,
     "publishedAt": null,
-    "uploadConfirmedByOwner": false,
-    "scheduledAt": null,
+    "uploadConfirmedByOwner": true,
+    "scheduledAt": "2026-11-28",
     "proposedReleaseDate": "2026-11-28",
-    "proposedTimeIST": "10:00"
+    "proposedTimeIST": "10:00",
+    "uploadedAt": "2026-11-26",
+    "scheduleTime": "10:00",
+    "scheduleTimezone": "Asia/Kolkata",
+    "scheduledReportedOn": "2026-11-26"
   }
 }

@@ -18,7 +18,7 @@ def load(root):
         # Schedule only when a real explicit date exists in registry or release metadata.
         scheduled=None if published or reported else x.get('scheduledAt') or pub.get('scheduledAt')
         status='published' if published else 'reported' if reported else 'scheduled' if scheduled else 'active' if x['stage']=='in_progress' else 'idea'
-        rows.append({**{k:x.get(k) for k in ('id','productionCode','slug','title','stage','priority','category','eventDate','discoveredAt','researchPath','storyPath','youtubeUrl','publishedAt')},'status':status,'reportDate':(pub.get('reportedOn') or x.get('publicationReportedOn')) if reported else None,'scheduledAt':scheduled,'queuePosition':queue.index(x['slug'])+1 if x['slug'] in queue and not (published or reported or scheduled) else None})
+        rows.append({**{k:x.get(k) for k in ('id','productionCode','slug','title','stage','priority','category','eventDate','discoveredAt','researchPath','storyPath','youtubeUrl','publishedAt')},'status':status,'reportDate':(pub.get('reportedOn') or x.get('publicationReportedOn')) if reported else None,'scheduledAt':scheduled,'scheduleTime':(x.get('scheduleTime') or pub.get('scheduleTime')) if scheduled else None,'queuePosition':queue.index(x['slug'])+1 if x['slug'] in queue and not (published or reported or scheduled) else None})
     return rows
 
 def daypart(s):
@@ -42,7 +42,7 @@ def make_page(rows, asof):
         cards.append(f'<section id="{section}"><h2>{title} <small>{len(selected)}</small></h2><p class="muted">{desc}</p>')
         if not selected: cards.append('<p class="empty">No stories in this stage.</p>')
         for r in selected:
-            pubtext= ('Publication date: '+str(r['publishedAt'])) if r['status']=='published' else ('Owner report: '+str(r['reportDate'])+' · actual upload date and link pending') if r['status']=='reported' else ('Scheduled: '+str(r['scheduledAt']) if r['scheduledAt'] else 'Release date: Not set')
+            pubtext= ('Publication date: '+str(r['publishedAt'])) if r['status']=='published' else ('Owner report: '+str(r['reportDate'])+' · actual upload date and link pending') if r['status']=='reported' else ('Scheduled: '+str(r['scheduledAt'])+(' · '+r['scheduleTime']+' IST' if r.get('scheduleTime') else '') if r['scheduledAt'] else 'Release date: Not set')
             q=f" · Queue #{r['queuePosition']}" if r['queuePosition'] else (' · Not queued' if r['status']=='idea' else '')
             links=f'<a href="{REPO}{esc(r["researchPath"])}">Research</a>' if r['researchPath'] else ''
             if r['storyPath']: links+=f' <a href="{REPO}{esc(r["storyPath"])}">Storyboard</a>'

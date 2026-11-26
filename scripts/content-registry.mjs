@@ -192,7 +192,7 @@ function renderLog(registry){
     lines.push('| Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |','|---|---|---|---|---|---|---|---|');
     for(const x of rows){
       const story=x.storyPath?`[Draft](../${x.storyPath})`:'—';
-      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.ownerConfirmedPublic?'Owner-confirmed published; URL/date pending':x.scheduledAt?`Scheduled ${x.scheduledAt} (owner reported; time/link pending)`:'—';
+      const published=x.stage==='published'?`[Watch](${x.youtubeUrl}) · ${x.publishedAt}`:x.ownerConfirmedPublic?'Owner-confirmed published; URL/date pending':x.scheduledAt?`Scheduled ${x.scheduledAt}${x.scheduleTime?' '+x.scheduleTime+' IST':''} (owner reported; ${x.scheduleTime?'link pending':'time/link pending'})`:'—';
       lines.push(`| **${x.id}** | ${x.productionCode||'—'} | ${markdownCell(x.title)} | ${displayDate(x.eventDate)} | ${x.priority} | [Research](research/${x.id}.md) | ${story} | ${published} |`);
     }
     lines.push('');

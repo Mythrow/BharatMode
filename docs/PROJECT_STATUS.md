@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **CURRENT — 26 November 2026:** Owner confirms BM-005 / ID-006 uploaded and scheduled for Saturday, 28 November 2026 at 10:00 AM IST. Removed from active editorial queue. BM-004 remains scheduled for 27 November (exact time not supplied). Counts: 3 owner-confirmed published, 2 scheduled, 0 active productions, 3 unused ideas (ID-004, ID-007, ID-008). Next production BM-006, next new idea ID-009. Do not promote scheduled videos automatically. Separate V7/thumbnail approval, uploaded file identity, music rights, device and platform checks, and public URL remain unverified.
+
+
 > **BM-005 V7 — 26 November 2026:** Owner accepted V6 subject to charcoal opening; V7 rendered with exact V6 audio and unchanged encoded tail, verified complete decode and timestamps. Custom thumbnail and publishing dashboard prepared; exact revised video/thumbnail review pending. Proposed 28 Nov around 10 AM IST, not scheduled. Keep in progress. See ID-006 research and publishing/BM-005-release-page.json.
 
 

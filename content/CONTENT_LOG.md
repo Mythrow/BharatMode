@@ -18,7 +18,7 @@ Updated: 2026-11-26 (IST) · Permanent IDs: 8 · **Never reassign or delete an I
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
-| **ID-006** | BM-005 | India approves ₹11,000 crore construction equipment manufacturing scheme | 2026-11-25 | high | [Research](research/ID-006.md) | — | — |
+| **ID-006** | BM-005 | India approves ₹11,000 crore construction equipment manufacturing scheme | 2026-11-25 | high | [Research](research/ID-006.md) | — | Scheduled 2026-11-28 10:00 IST (owner reported; link pending) |
 | **ID-005** | BM-004 | GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix | 2026-11-24 | high | [Research](research/ID-005.md) | — | Scheduled 2026-11-27 (owner reported; time/link pending) |
 | **ID-003** | BM-003 | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/ID-003.md) | [Draft](../stories/lt-chennai-ai-cluster-order.json) | Owner-confirmed published; URL/date pending |
 | **ID-001** | BM-001 | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/ID-001.md) | [Draft](../stories/param-rudra.json) | Owner-confirmed published; URL/date pending |

@@ -312,7 +312,13 @@
         }
       ],
       "productionSelectedAt": "2026-11-26",
-      "releaseStatus": "upload_preparation"
+      "releaseStatus": "scheduled",
+      "scheduledAt": "2026-11-28",
+      "scheduleTime": "10:00",
+      "scheduleTimezone": "Asia/Kolkata",
+      "uploadedAt": "2026-11-26",
+      "uploadConfirmedByOwner": true,
+      "ownerConfirmedPublic": false
     },
     {
       "id": "ID-007",
