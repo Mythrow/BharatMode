@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-005 — V4 timing/ending review:** Slower text, actual word-cued visual reveals, musical resolution and one-second intentional silent final hold implemented in complete 3512-frame narrated preview (58.533s). V4 HTML, MP4 and source saved privately; await owner review. Permanent rule commit b9c91066e973f0a12158d10b7d16d83d9509170c. See ID-006 research.
+
+
 > **BM-005 — V3 opening revision:** Owner-approved simpler opening label integrated in actual source and complete 3428-frame narrated MP4. Audio unchanged; verified full decode and identical decoded frames from frame 857 onward. V3 HTML and source saved privately; await final approval. See ID-006 research.
 
 
