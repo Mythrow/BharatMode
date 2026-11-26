@@ -1,5 +1,7 @@
 # Bharat Mode — Qwen3-TTS Voice Direction
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 **Engine chosen by owner:** 23 November 2026.  
 **Status:** Qwen3-TTS is approved as the narrator engine AND the owner has approved the permanent synthetic narrator after A/B listening on 23 November 2026. Proper-name pronunciation, full-story throughput and V6 voice integration remain to verify.
 

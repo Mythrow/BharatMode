@@ -1,5 +1,7 @@
 # Bharat Mode — Shorts design system, Stage 1: Frame architecture
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 **Status: FRAME ARCHITECTURE AND V6 VISUAL/MOTION TEMPLATE APPROVED by owner (23 November 2026).** The canonical baseline is [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md); older V1–V5 prototype feedback in this file is historical. Brand colors, Sora display / Manrope SemiBold reading, and the owner-approved badge/avatar are locked. The layout rules below are an initial design proposal until three 9:16 frames are reviewed on real phones. No change to final logo artwork is authorized.
 
 ## What comes first

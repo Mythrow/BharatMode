@@ -1,5 +1,7 @@
 # Bharat Mode — Channel setup and growth plan
 
+> **Audit precedence (27 Nov 2026):** Channel setup reference; dated content and release statements are historical. Home tab remains deferred until sufficient content. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 > **Analytics baseline — 26 November 2026:** First three published Shorts' Studio data captured in [analytics snapshot](../analytics/snapshots/2026-11-26.json); [performance tracking standard](ANALYTICS_TRACKING.md) records comparable-age collection and dashboard rules. 272 summed since-published views, 84 engaged views, channel 3 subscribers. Different ages/reporting cutoffs and small samples; no major format changes. Next collect BM-004 24h data and first three 7-day metrics/retention curves when available. No change to publication status.
 
 

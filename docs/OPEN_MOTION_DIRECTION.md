@@ -1,5 +1,7 @@
 # Bharat Mode — Approved open-canvas visual motion direction
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 > **MANDATORY — immediate headline, anticipatory visual cues and clear labels (owner instruction, 26 November 2026):** Begin the scene kicker and main topic headline animation at scene start, not at spoken phrase onset; second headline line may stagger slightly (about 0.18s). Maintain the slightly slower editorial typewriter (roughly 18–20 characters/sec). Start supporting graphics, counters, and related labels approximately 0.35 seconds before the relevant actual acoustic cue, clamped to scene start; adjust by beat as needed so the subject becomes recognizable when spoken, without premature disclosure of later facts. Captions remain exactly word-aligned. Store original and adjusted cue maps; avoid applying the lead twice. Reserve separate text and illustration areas, check full label bounds plus moving artwork extents during entrances and settled frames, and leave visible clearance rather than allowing text/art or headline/callout collisions. Prefer technically credible detailed illustrations over cartoon-like geometry. Retain musical resolution and the one-second silent final hold. This refines the prior narration-led cue rule.
 
 

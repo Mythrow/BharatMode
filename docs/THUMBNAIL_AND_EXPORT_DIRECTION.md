@@ -1,5 +1,7 @@
 # Bharat Mode — Approved thumbnail direction and delivery filenames
 
+> **Audit precedence (27 Nov 2026):** Current specialized delivery/layout standard; later requirements in the approved template, content pipeline and production guide take precedence. Dated checkpoints are historical. Use BM-### production codes for new filenames; legacy BM-#### is historical only. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 > **MANDATORY — public description editorial-only (owner instruction 25 November 2026):** Keep YouTube descriptions focused on the actual news, verified facts, significance, material factual qualifications, original source links and relevant hashtags. Do not append generic production-method or self-referential boilerplate about Bharat Mode explainers, schematic illustrations, synthetic narration, background music, or what generic artwork does not depict. Keep internal production notes and asset provenance in the research/QA records. Complete applicable altered/synthetic-content disclosures through the platform's designated settings; retain specific public disclosures or credits when legally/platform-required or necessary to avoid misleading viewers. Do not remove substantive factual caveats. Apply to future releases; do not silently edit previously published videos.
 
 

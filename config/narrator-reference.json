@@ -16,7 +16,7 @@
   },
   "sha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
   "ownerFinalApproval": true,
-  "pronunciationCheck": "PARAM sounded like 'Parum' to the offline transcriber; requires audible review and possibly rerecording",
+  "pronunciationCheck": "Historical audition ASR caveat for PARAM; story-specific pronunciation checks remain mandatory.",
   "privacy": "The reference WAV is deliberately not committed. Retrieve the original 7.6s audition privately from the user's ChatGPT Library/Work artifact; verify SHA before use.",
   "technicalStatus": "Private original WAV hash verified; Qwen Base new-line 8.8s speech validated (22/22 ASR words, 0.724 embedding cosine); owner approved audible consistency",
   "ownerApprovedOn": "2026-11-23",

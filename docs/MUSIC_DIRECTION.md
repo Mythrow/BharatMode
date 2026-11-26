@@ -1,5 +1,7 @@
 # Bharat Mode — Music & Sonic Identity
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 > **Music continuity QA — 24 November 2026:** Check actual soundtrack-stem energy through the entire video, especially the last five seconds. Do not rely on equal audio/video durations: a master's built-in outro can be effectively silent before the file ends. When necessary, edit a beat-aligned passage from the same approved music with a smooth crossfade to sustain the bed until the intentional final fade. Retain approved ducking; verify peak, full decode, and exact visual-stream identity for audio-only revisions. BM-001 music-fixed review supersedes narrated-review. Owner approved previous visual/narration cut, requested music ending correction; corrected ending listening and publication approval remain pending.
 
 ## MIX APPROVAL — Option B (23 November 2026)

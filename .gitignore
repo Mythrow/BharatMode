@@ -22,3 +22,23 @@ private/voice/
 reference-audio/
 tmp/
 coverage/
+
+# Private production inputs/outputs and licensed review packages
+private/
+public/production-private/
+public/voice/
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.zip
+*.7z
+*.tar.gz
+__pycache__/
+*.pyc
+# Existing tracked original demo audio only (never MUSIC-06 or narration)
+!public/music/ambient.wav
+!public/sfx/metric-rise.wav
+!public/sfx/mode-on.wav

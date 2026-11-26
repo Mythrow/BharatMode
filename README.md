@@ -1,131 +1,35 @@
 # Bharat Mode
 
-> **LATEST — dual numbering, owner decision 24 Nov 2026:** All ideas receive a permanent sequential `ID-###` first. Assign a separate `BM-###` production code only on owner selection, using the lowest unused positive number; never recycle an assigned number. Keep a single registry record with both codes, use idea ID for research and production code for new video deliverables. ID-001 / BM-001 PARAM Rudra is selected, at Stage 01 story review. ID-002 ICMR and ID-004 IIT Madras are unselected ideas. ID-003 / BM-003 L&T is owner-confirmed published, URL/date pending; preserve historical BM-0003 files and references without re-rendering. BM-002 is next, then skip BM-003 to BM-004; ID-005 is next idea. Earlier BM-#### identifiers below are legacy references, not new allocations. The story → script → visual storyboard → draft render approval order remains mandatory. `content/registry.json` schema v2 is authoritative; `id` is idea identity, `productionCode` is null until selected, and `legacyId` is read-only historical alias. Use `npm run content:move -- ID-005 in_progress --note "Owner selected story"` for a real selected ID; the allocator assigns its code automatically. No automatic publication.
+**Big Ideas. Real Progress.** Research-led, faceless YouTube Shorts about verified Indian achievements, inventions and measurable progress.
 
+## Start here
 
-> **MANDATORY — owner workflow, 24 November 2026:** Every new Short starts with the actual verified news/story content and original sources → owner review → complete narration script → owner review → visual scene-by-scene storyboard preview → owner review → actual draft MP4 render for feedback. Do not skip or combine these stages unless explicitly requested by the owner. Final QA, publishing dashboard, publication authorization and calendar reconciliation follow draft approval. Work remains audio-only; V6 and 24px caption corrections remain approved. The next owner-facing action is the news/story itself, not renderer implementation. See [mandatory owner review sequence](docs/CONTENT_PIPELINE.md#mandatory-owner-review-sequence--24-november-2026).
+| Information | Authoritative source |
+|---|---|
+| Next action and blockers | [Current project status](docs/PROJECT_STATUS.md) |
+| Permanent content IDs and release stages | [Registry](content/registry.json); generated [content log](content/CONTENT_LOG.md) |
+| Editorial approval and dedupe workflow | [Content pipeline](docs/CONTENT_PIPELINE.md) |
+| Brand and approved visual rules | [Brand](docs/BRAND.md), [approved template](docs/APPROVED_SHORTS_TEMPLATE.md) |
+| Production and private asset recovery | [Production guide](docs/PRODUCTION.md), [recovery standard](docs/PRODUCTION_REPRODUCIBILITY.md) |
+| Audio configuration | [Voice](config/voice.json), [narrator reference](config/narrator-reference.json), [music](config/music.json) |
+| Publishing fields and release-specific QA | [Publishing](docs/PUBLISHING_PAGE.md), per-release JSON in [publishing/](publishing/) |
+| Calendar and analytics | [Calendar](docs/CONTENT_CALENDAR.md), [analytics](docs/ANALYTICS_TRACKING.md) |
+| Engineering backlog | [Roadmap](docs/ROADMAP.md) |
+| Historical decisions and visual studies | [Archive index](docs/archive/README.md) |
 
+Agents must read [AGENTS.md](AGENTS.md). No automatic publication.
 
-**Big Ideas. Real Progress.** — A research-led, faceless YouTube Shorts brand uncovering India's inventions, breakthroughs, people, and measurable progress.
+## Maintenance
 
-> **MUSIC-06:** Owner selected their private techno-thriller file and confirmed **paid ElevenLabs Music** generation. Ordinary commercial YouTube-video sync is permitted without paid-tier attribution under current [Music Terms](https://elevenlabs.io/music-terms). Selected track remains private; first 20s Qwen reference mix test passed, but real story narration/full video QA is unfinished. [Music direction](docs/MUSIC_DIRECTION.md) · [config](config/music.json).
+Node 22 and Python 3.12 recommended. Run `npm run content:check`, `npm run content:test`, `npm run validate` and the complete `npm run check` suite (see validation workflow). Remotion dependencies are needed for video work, not the dependency-free ledger checks. Historical motion studies and sample render commands are previews only, not release output. Do not regenerate existing Shorts.
 
-> **CONTENT BOARD:** [Bharat Mode Content Log](content/CONTENT_LOG.md) — every idea, active Short and published video has one permanent `BM-####` ID and its own [research sheet](content/research/). New candidates must pass the [dedupe + stage workflow](docs/CONTENT_PIPELINE.md) before scripting. Current selected daily story: **BM-0003**, L&T Chennai AI infrastructure, **In Progress** (draft [six-scene script](stories/lt-chennai-ai-cluster-order.json), [production runbook](docs/WORK_MODE_BM0003_RUNBOOK.md), not voiced or published).
+## Layout
 
-> **START HERE / RESUME IN A NEW CHAT:** [Current Project Status](docs/PROJECT_STATUS.md) → [Roadmap](docs/ROADMAP.md) → [Approved Shorts Template](docs/APPROVED_SHORTS_TEMPLATE.md). Read the current-status page before implementing anything; it states the latest approvals, next task and blockers. A new chat must explicitly open the files rather than assume GitHub content was loaded. Coding agents should also read [AGENTS.md](AGENTS.md).
+- `content/` permanent registry, generated log and research evidence; `stories/` structured story briefs.
+- `src/` editable renderer and visual studies; `scripts/` validators and generation/QA utilities.
+- `public/brand/` protected approved SVGs and banner; `public/music/` and `public/sfx/` historical original demo assets, not the approved soundtrack.
+- `config/` approved audio settings; `publishing/` release records; `analytics/` dated snapshots.
+- `previews/html/` historical browser demos, no private licensed content.
+- `docs/` current standards, archive index and historical visual references.
 
-> Status: production starter / pre-launch. The five official colors are approved: Classic Saffron `#E8752E`, Warm Ivory `#FFF7EB`, Ocean Teal `#117A7A`, Graphite Navy `#283039`, and Deep Charcoal `#0B1018`. Sora and Manrope SemiBold typography confirmed; the owner's final badge and avatar SVGs are approved. Video render QA is still outstanding. This repo stores code, story briefs, research standards, brand guidelines and process docs. It **tracks original background music and sound effects**, but does **not** store rendered videos or generated narration.
-
-
-## Current approved Shorts visual template — 23 November 2026
-
-**Approved:** V6 quiet dissolve, directional typewriter, high-positioned hero, centered one-line grouped word-follow captions and **centered segmented chapter progress** (84px left / 84px right at 1080px). Authoritative [approved template spec](docs/APPROVED_SHORTS_TEMPLATE.md), reusable [Remotion frame](src/approved-shorts-template.jsx), [motion example](src/motion-v6.jsx) and browser [HTML example](previews/html/bharat-mode-motion-v6-mixed.html). The three HTML variants and the generic Remotion V6 scene example are in Git. Run `npm run template:check` in CI to protect alignment. **This is visual design approval, not final video publication approval:** the existing `BharatShort` story renderer is legacy and needs full V6 integration and real audio-synced captions. Rendering and phone QA are pending. There is no need for the channel owner to run code locally.
-
-## Quick start
-
-Install Node.js 20+ and npm. From the repository root:
-
-```bash
-npm install
-npm run validate
-npm run brand:check
-npm run logo:check
-npm run variety:check
-npm run studio
-npm run render:sample
-```
-
-- `studio`: open the Remotion editor.
-- `render:sample`: create `out/param-rudra.mp4` (1080 × 1920, 30 fps).
-- `render:icmr`: render a second sample.
-- `thumbnail:sample`: generate a 9:16 still for eligible Shorts thumbnails or social preview.
-- `variety:check`: inspect planned publishing order for repetitive layouts, hooks, titles and topics.
-- Samples start without voice (`hasVoice: false`) so they can render after music generation. **Do not publish a silent demo.**
-- **Narration policy:** the owner approved an original, consistent **Qwen3-TTS 1.7B Base** narrator in Work Mode, using a private synthetic reference; no subscriptions, expiring credits or metered TTS APIs. The old `npm run voice` path calls **legacy paid OpenAI TTS and is NOT authorized for production**. Follow [VOICE_DIRECTION.md](docs/VOICE_DIRECTION.md) and [PRODUCTION.md](docs/PRODUCTION.md) for the unfinished full-story integration.
-- Original audio masters are checked in under `public/music/` and `public/sfx/`; run `npm run audio:generate` only when intentionally regenerating these files and review the changes before committing.
-- Generated narration in `public/voice/` and rendered videos in `out/` are ignored. Keep licensed third-party assets externally and track license details in story metadata.
-- Never commit API keys, .env files, confidential material, third-party footage without repository redistribution rights, rendered MP4s, or generated voice.
-
-## Repo layout
-
-| Location | Purpose |
-| --- | --- |
-| `src/` | Remotion components, style treatments, font loader and thumbnail composition |
-| `content/CONTENT_LOG.md` + `content/registry.json` | Permanent three-stage content board with IDs, duplicate checks and publication history |
-| `content/research/` | One research sheet for every content ID, including dated primary sources, caveats and production notes |
-| `docs/CONTENT_PIPELINE.md` | Content intake, duplicate prevention, stage transitions and agent workflow |
-| `stories/` | Story briefs with permanent `story.contentId`, scenes, narration, source links and claim stages |
-| `publishing/queue.json` | Planned sequence to check for repetitive creative patterns (not publication history) |
-| `scripts/` | Validation, reproducible original music/SFX generation, and optional TTS generation |
-| `docs/EDITORIAL.md` | Sourcing, fact checks, ethics and verification checklist |
-| `docs/CHANNEL_BLUEPRINT.md` | Positioning, content pillars, cadence and production plan |
-| `docs/PRODUCTION.md` | Reproducible rendering, audio, QA and upload checklist |
-| `docs/BRAND.md` | Approved five-color brand kit and typography |
-| `docs/LOGO_DIRECTION.md` | FINAL approved owner SVG badge/avatar, exact color values and checksum policy |
-| `docs/CHANNEL_BANNER.md` | Owner-approved YouTube cover metadata, Git installation and safe area review |
-| `public/brand/` | Approved SVG badge/avatar plus original & 2560×1440 channel banner PNGs |
-| `src/brand-assets.jsx` | Reusable Remotion components rendering the approved SVG artwork |
-| `docs/TYPOGRAPHY_VISUAL_SYSTEM.md` | Proposed mobile type scales and scene visual grammar (awaiting approval) |
-| `docs/SHORTS_DESIGN_SYSTEM.md` | Approved frame architecture |
-| `docs/STYLE_PROOFS.md` | Three candidate layout designs for phone review and Remotion still commands |
-| `docs/MOTION_SYSTEM.md` | V1 proposed motion rules, flexible chapter timing, captions, transitions and audio behavior |
-| `src/motion-system.jsx` | Reusable topic pill, chapter progress and motion primitives |
-| `src/motion-preview.jsx` | 14-second Remotion motion study, not ready for publishing |
-| `docs/MEDIA_RIGHTS_PIPELINE.md` | Image rights, public-figure photographs, trademarks and asset handling |
-| `media/manifest.json` | Approved real-image / third-party-logo licensing registry (currently empty) |
-| `docs/ROADMAP.md` | Launch milestones and acceptance criteria |
-| `docs/VARIETY_RULES.md` | Rotation rules for visual layouts, thumbnails, titles and storytelling |
-| `docs/SAMPLE_YOUTUBE_DESCRIPTION.md` | Publishing copy reference |
-| `.github/workflows/validate.yml` | Lightweight story validation CI |
-
-## Audio policy
-
-| Tracked in Git | Ignored and regenerated |
-| --- | --- |
-| `public/music/ambient.wav` | `public/voice/**` |
-| `public/sfx/*.wav` | `out/**`, renders and `*.mp4`, `*.mov`, `*.webm` |
-| Audio generation and attribution documentation | Temporary media caches |
-
-Sound design: understated ambient bed; subtle metric cue; a short **Mode: ON** stinger. Audio masters may be replaced by later original or properly licensed masters, with rights documented.
-
-## Canonical creative direction
-
-Bharat Mode is a **phrase / mindset**, not a literal category. A remarkable thing is being built, invented, improved or discovered? *Bharat Mode: ON.* Use the logo/signature as a subtle closing device, never at the expense of the opening hook.
-
-**Editorial promise:** evidence-first optimism. Research ≠ launch, licensed ≠ approved, planned ≠ completed. Every claim must identify its stage, data's as-of date, original source, and any major caveat.
-
-## Status and limitations
-
-This repository is a working starter. There is no automated discovery, upload service, production-ready natural voice pipeline or rendered MP4 in this repo. Validate stories and run Remotion in an environment with npm access before publishing. Recheck source facts before each upload, including older example stories.
-
-No trademark or YouTube handle availability is verified by this repo. Confirm independently.
-
-## Logo sources of truth
-The only current, approved logo files are [`public/brand/bharat-mode-badge.svg`](public/brand/bharat-mode-badge.svg) and [`public/brand/bharat-mode-avatar.svg`](public/brand/bharat-mode-avatar.svg), supplied and approved by the owner. Historical experimental logo sketches have been removed from the current repository tree. Remotion uses these exact SVGs in scene branding and thumbnails. The SVG colors are slightly different from the scene UI palette; **do not recolor these final artwork files**.
-
-## Channel banner status
-The owner-approved [original channel cover](public/brand/BM_Youtube_Cover.png) is now in Git **byte-for-byte unchanged** at **2048×1152**. An optional [2560×1440 YouTube export](public/brand/BM_Youtube_Cover_2560x1440.png) is also committed. Both versions are protected by `npm run cover:check`. See [docs/CHANNEL_BANNER.md](docs/CHANNEL_BANNER.md) for exact source checksums and the pending YouTube mobile crop review.
-
-## Design proofs
-Three editable 1080×1920 Remotion stills are registered: `BharatProofIvory`, `BharatProofDark` and `BharatProofSaffron`. Run `npm run styleproof:ivory`, `npm run styleproof:dark`, `npm run styleproof:saffron`. These are review candidates; see [docs/STYLE_PROOFS.md](docs/STYLE_PROOFS.md) for content source, caveats and QA steps. Generated PNG files stay out of Git under `out/`.
-
-## Motion study (draft for approval)
-`npm run motion:preview` creates the animated 14-second `BharatMotionPreview` study in ignored `out/`. It uses true editable Remotion elements, the owner-approved avatar SVG, Sora and Manrope, contrasting topic-only pills, and per-story chapter timing. The sample captions are **not voice-synchronized**; never publish the preview. See [docs/MOTION_SYSTEM.md](docs/MOTION_SYSTEM.md).
-
-## Browser-based motion review
-You can review three interactive HTML motion alternatives without installing tools: [Quiet Editorial](previews/html/bharat-mode-a-quiet-editorial.html), [Cinematic Data](previews/html/bharat-mode-b-cinematic-data.html) and [Saffron Process](previews/html/bharat-mode-c-saffron-process.html). Each is standalone, with the exact approved avatar embedded, play/pause and scrubbing. See [review documentation](docs/MOTION_OPTIONS.md). These are browser concepts, not publishable Shorts; no narration/video files are committed.
-
-## Latest motion study — V2 (awaiting final review)
-The owner prefers Saffron Process directional movement, typewriter headlines and one-line karaoke word-follow captions. Compare the [mixed-theme HTML browser demo](previews/html/bharat-mode-typewriter-karaoke.html), [ivory demo](previews/html/bharat-mode-typewriter-karaoke-ivory.html), and [charcoal demo](previews/html/bharat-mode-typewriter-karaoke-dark.html). No local code required for these HTML previews. V2 Remotion source: `src/motion-v2.jsx`; new default render command: `npm run motion:preview` (legacy V1 remains `npm run motion:preview:v1`). Full production voice timing requires word alignment to actual audio; prototype timings are simulated. Details: [V2 specifications](docs/TYPEWRITER_KARAOKE_V2.md).
-
-## Current Shorts motion preview V3 (awaiting visual approval)
-The latest [motion V3 specification](docs/CAPTION_MOTION_V3.md) responds to feedback: no typewriter cursor, preserved directional animations, a semi-transparent dark rectangular one-line caption backing, 60px Manrope word pop (60% → 112% → 100% in 0.2s) with only the currently spoken word highlighted, and a Manrope Medium topic pill. Open [mixed](previews/html/bharat-mode-motion-v3-mixed.html), [ivory](previews/html/bharat-mode-motion-v3-ivory.html), or [dark](previews/html/bharat-mode-motion-v3-dark.html) HTML demos without installing code. Remotion composition `BharatMotionPreviewV3` is registered; `npm run motion:preview` now targets V3, while older studies are retained at V2 and V1 scripts. `npm run motion:html:v3` reproduces the HTML previews from the exact approved avatar SVG. **Word timing is illustrative until real generated/recorded narration is aligned.**
-
-## Caption Motion V4 — current review
-The latest owner feedback replaces the full-width caption band with a **lightly translucent, content-sized box**. Spoken words arrive with the existing 200ms pop/highlight; **older phrase groups disappear when the next phrase starts**. Headlines remain cursorless typewriter and all directional evidence motion is preserved. The [interactive mixed HTML preview](previews/html/bharat-mode-grouped-captions-v4-mixed.html), [ivory](previews/html/bharat-mode-grouped-captions-v4-ivory.html) and [dark](previews/html/bharat-mode-grouped-captions-v4-dark.html) run directly in a browser. Remotion source is `src/motion-v4.jsx`, specification [docs/CAPTION_MOTION_V4.md](docs/CAPTION_MOTION_V4.md). `npm run motion:preview` now targets V4; older variants remain available. **The demo's word timing is estimated; actual narration alignment is still required.**
-
-## Motion V5 — current review
-Following V4 feedback, the latest [V5 motion specification](docs/MOTION_V5.md) adds directional sliding to kicker and **whole headline text block while it types**, raises the hero panel by 143px, retains staggered racks and flow-line animation, introduces 0.64s overlapping slide + diagonal wipe scene transitions, and anchors compact grouped captions to the **screen center** so they never slide along with scenes. Open [mixed](previews/html/bharat-mode-motion-v5-mixed.html), [ivory](previews/html/bharat-mode-motion-v5-ivory.html) or [charcoal](previews/html/bharat-mode-motion-v5-dark.html) browser previews; no code installation required. `npm run motion:preview` now targets `BharatMotionPreviewV5`; V4 remains accessible via `npm run motion:preview:v4`. Production voice alignment and full MP4 render QA are still pending.
-
-## Motion V6 — approved visual baseline (historical review notes below)
-The V6 motion study replaces the V5 streak/large sliding scene transition with a **subtle 0.34-second dissolve and only 12–18px drift**, retaining the animated directional entrances for headlines, supporting text, hero panels and schematic racks. It repairs the progress bar (a V5 HTML CSS variable scope error) by defining its track/fill colors on the shared frame and keeping it visible above scene layers. Grouped captions remain centered with existing colors: ivory scenes graphite `#283039` with deep-saffron active word `#A63F17`, unchanged from V4/V5; charcoal and saffron scenes use ivory text. Direct [mixed](previews/html/bharat-mode-motion-v6-mixed.html), [ivory](previews/html/bharat-mode-motion-v6-ivory.html) and [dark](previews/html/bharat-mode-motion-v6-dark.html) HTML previews are browser-playable; no installation is needed. Source and QA notes: [MOTION_V6.md](docs/MOTION_V6.md). `npm run motion:preview` now targets V6; the older V5 study remains under `motion:preview:v5`. The HTML uses demo-only narration timing, and full Remotion/audio QA is still pending.
+Private narration, soundtrack, licensed-only media, keys, render outputs and private review HTML do not belong in public Git.
