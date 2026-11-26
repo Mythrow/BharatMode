@@ -1,5 +1,8 @@
 # Bharat Mode — Content calendar standard
 
+> **BM-006 shortlist — 26 November 2026:** Freshness-first scan produced ID-009 Chariot AI (recommended; launch reported 25 Nov, PIB 26 Nov), ID-010 dairy production and infrastructure (26 Nov), ID-011 ACME battery commissioning (25 Nov, filing coverage 26 Nov), ID-012 zinc-air EV prototype (17–21 Nov summit, company disclosure 26 Nov). All remain ideas; no BM-006 assigned. Existing ID-004/007/008 remain available. 3 owner-confirmed published, 2 scheduled, 0 active, 7 ideas. Next unused idea ID-013. Proposed BM-006 release 29 Nov around 10 AM IST only; no schedule change. Stage 01 deeper verification follows selection.
+
+
 > **CURRENT — 26 November 2026:** Owner confirms BM-005 / ID-006 uploaded and scheduled for Saturday, 28 November 2026 at 10:00 AM IST. Removed from active editorial queue. BM-004 remains scheduled for 27 November (exact time not supplied). Counts: 3 owner-confirmed published, 2 scheduled, 0 active productions, 3 unused ideas (ID-004, ID-007, ID-008). Next production BM-006, next new idea ID-009. Do not promote scheduled videos automatically. Separate V7/thumbnail approval, uploaded file identity, music rights, device and platform checks, and public URL remain unverified.
 
 

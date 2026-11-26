@@ -2,17 +2,21 @@
 
 **Canonical register:** [`registry.json`](registry.json) · **Story research:** [`research/`](research/) · **Workflow:** [`docs/CONTENT_PIPELINE.md`](../docs/CONTENT_PIPELINE.md)
 
-Updated: 2026-11-26 (IST) · Permanent IDs: 8 · **Never reassign or delete an ID.**
+Updated: 2026-11-26 (IST) · Permanent IDs: 12 · **Never reassign or delete an ID.**
 
 > This document is generated from `content/registry.json`. Use the registry command to add and move content; run `npm run content:check` before committing. An idea is not a published video.
 
-## Idea (3)
+## Idea (7)
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
+| **ID-010** | — | India reports 253.81 million tonnes of milk and dedicates new dairy infrastructure | 2026-11-26 | high | [Research](research/ID-010.md) | — | — |
 | **ID-007** | — | L&T wins 300 MW / 900 MWh battery storage order in Gujarat | 2026-11-25 | high | [Research](research/ID-007.md) | — | — |
+| **ID-009** | — | Chariot-1 launches domestically trained language and speech foundation models | 2026-11-25 | high | [Research](research/ID-009.md) | — | — |
+| **ID-011** | — | ACME commissions 255.12 MWh of battery discharge capacity in Rajasthan | 2026-11-25 | high | [Research](research/ID-011.md) | — | — |
 | **ID-008** | — | IIT Kanpur and Rolls-Royce launch aircraft cabin noise research | 2026-11-25 | medium | [Research](research/ID-008.md) | — | — |
 | **ID-004** | — | IIT Madras inaugurates sleep and autism research facilities | 2026-11-22 | medium | [Research](research/ID-004.md) | — | — |
+| **ID-012** | — | Hindustan Zinc and IIT Madras demonstrate zinc-air range extender in electric three-wheeler | 2026-11 | medium | [Research](research/ID-012.md) | — | — |
 
 ## In Progress (5)
 
