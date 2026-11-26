@@ -6,13 +6,12 @@
   "scripts": {
     "studio": "remotion studio src/index.jsx",
     "validate": "node scripts/validate-stories.mjs",
-    "voice": "node scripts/tts-openai.mjs",
-    "render:sample": "remotion render src/index.jsx BharatShort out/param-rudra.mp4 --props=stories/param-rudra.json --codec=h264",
-    "render:icmr": "remotion render src/index.jsx BharatShort out/icmr-tech-transfer.mp4 --props=stories/icmr-tech-transfer.json --codec=h264",
+    "render:sample": "remotion render src/index.jsx BharatShortLegacy out/param-rudra.mp4 --props=stories/param-rudra.json --codec=h264",
+    "render:icmr": "remotion render src/index.jsx BharatShortLegacy out/icmr-tech-transfer.mp4 --props=stories/icmr-tech-transfer.json --codec=h264",
     "audio:generate": "node scripts/make-audio.mjs",
     "variety:check": "node scripts/check-variety.mjs",
-    "thumbnail:sample": "remotion still src/index.jsx BharatThumbnail out/param-rudra-thumb.png --props=stories/param-rudra.json",
-    "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnail out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json",
+    "thumbnail:sample": "remotion still src/index.jsx BharatThumbnailLegacy out/param-rudra-thumb.png --props=stories/param-rudra.json",
+    "thumbnail:icmr": "remotion still src/index.jsx BharatThumbnailLegacy out/icmr-tech-transfer-thumb.png --props=stories/icmr-tech-transfer.json",
     "brand:check": "node scripts/check-brand.mjs",
     "logo:check": "node scripts/check-logo-assets.mjs",
     "cover:check": "node scripts/check-channel-cover.mjs",
@@ -50,7 +49,11 @@
     "music:mix:demo": "python scripts/preview_signature_mix.py --music out/private/techno-thriller-final.mp3 --voice out/private/bharat-mode-qwen-voice-audition.wav --out out/music-mix",
     "voice:bm0003:plan": "python scripts/produce_story_audio.py --story stories/lt-chennai-ai-cluster-order.json",
     "voice:bm0003:test": "python -m unittest discover -s scripts -p test_bm0003_production.py",
-    "map:check": "node scripts/test-natural-earth.mjs"
+    "map:check": "node scripts/test-natural-earth.mjs",
+    "render:production": "node scripts/render-production.mjs",
+    "production:test": "node scripts/test-production-contract.mjs",
+    "voice:legacy:openai": "node scripts/tts-openai.mjs",
+    "check": "node scripts/content-registry.mjs check && node scripts/test-content-registry.mjs && node scripts/validate-stories.mjs && node scripts/test-natural-earth.mjs && python3 -m unittest discover -s scripts -p 'test_*.py' && node scripts/check-brand.mjs && node scripts/check-logo-assets.mjs && node scripts/test-chapters.mjs && node scripts/test-motion-v2-timing.mjs && node scripts/test-motion-v3-timing.mjs && node scripts/test-motion-v4-timing.mjs && node scripts/test-motion-v5-timing.mjs && node scripts/test-motion-v6-timing.mjs && node scripts/test-approved-template.mjs && node scripts/check-channel-cover.mjs && node scripts/test-aligned-caption-timing.mjs && node scripts/test-production-contract.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

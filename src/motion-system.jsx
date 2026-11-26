@@ -50,7 +50,7 @@ export const ChapterProgress=({
   const frame=useCurrentFrame();
   const time=timeSec==null?frame/30:timeSec;
   const onSaffron=themeName==='saffron';
-  const activeColor=onSaffron?B.charcoal:B.primary;
+  const activeColor=onSaffron?B.ivory:B.primary;
   const track=themeName==='midnight'?'#3B464F':onSaffron?'rgba(11,16,24,0.24)':'#D9D4CF';
   if (!chapters.length) return null;
   return <div aria-label="Story chapter progress" style={{

@@ -17,14 +17,14 @@ export function AlignedNarrationCaptions({alignment,timeSec,theme='ivory'}) {
   const ink = theme==='ivory'?B.graphite:B.ivory;
   const highlight = theme==='ivory'?B.saffronText:'#FFBE91';
   const length = visible.words.reduce((s,w)=>s+w.text.length,0);
-  const size = Math.max(42,Math.min(57,Math.floor(730/(Math.max(1,length)*.59+visible.words.length*.25))));
+  const size = Math.max(30,Math.min(57,Math.floor(730/(Math.max(1,length)*.68+visible.words.length*.25))));
   const entered = clamp((timeSec-visible.start)/.12);
   return <div style={{position:'absolute',zIndex:60,top:1469,left:140,right:140,
     height:175,display:'flex',justifyContent:'center',alignItems:'center',pointerEvents:'none'}}>
     <div style={{display:'inline-flex',justifyContent:'center',alignItems:'center',
-      width:'max-content',maxWidth:'100%',minHeight:112,
+      width:'max-content',maxWidth:'100%',minHeight:112,boxSizing:'border-box',
       padding:'18px 24px',...captionSurfaceStyle(theme),
-      opacity:entered,gap:14,whiteSpace:'nowrap'}}>
+      opacity:entered,gap:10,whiteSpace:'nowrap'}}>
       {visible.visibleWords.map((w,i)=>{
         // Owner-approved 0.2s word pop: 60% → 112% → 100%, never shifts caption box.
         const x=clamp(w.ageSeconds/.20);

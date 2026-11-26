@@ -1,6 +1,8 @@
 import React from 'react';
 import {Composition, Still} from 'remotion';
-import {BharatShort} from './short.jsx';
+import {BharatShort as BharatShortLegacy} from './short.jsx';
+import {BharatShort} from './production-short.jsx';
+import {validateProduction,FPS as PRODUCTION_FPS} from './production-contract.js';
 import {BharatThumbnail} from './thumbnail.jsx';
 import {BharatMotionPreview} from './motion-preview.jsx';
 import {BharatMotionPreviewV2} from './motion-v2.jsx';
@@ -29,8 +31,8 @@ export const Root = () => <>
   <Still id="BharatProofDark" component={BharatProofDark} width={1080} height={1920} />
   <Still id="BharatProofSaffron" component={BharatProofSaffron} width={1080} height={1920} />
   <Composition
-    id="BharatShort"
-    component={BharatShort}
+    id="BharatShortLegacy"
+    component={BharatShortLegacy}
     fps={FPS}
     width={1080}
     height={1920}
@@ -42,8 +44,9 @@ export const Root = () => <>
       ))
     })}
   />
+  <Composition id="BharatShort" component={BharatShort} fps={PRODUCTION_FPS} width={1080} height={1920} durationInFrames={60} defaultProps={{}} calculateMetadata={({props})=>props.production?{durationInFrames:validateProduction(props).durationInFrames}:{durationInFrames:60}}/>
   <Still
-    id="BharatThumbnail"
+    id="BharatThumbnailLegacy"
     component={BharatThumbnail}
     width={1080}
     height={1920}
