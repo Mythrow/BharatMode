@@ -1,5 +1,8 @@
 # Bharat Mode — Launch milestones
 
+> **BM-005 — Stage 02, 26 November 2026:** Owner approved ID-006 story and editorial direction; six-scene narration V1 presented for review. Exact draft in [ID-006 research](../content/research/ID-006.md). Await explicit script approval before storyboard and audio handoff. No schedule or publication change.
+
+
 > **CURRENT — 26 November 2026:** ID-006 selected as BM-005 (₹11,000 crore CIE manufacturing scheme, Cabinet approval 25 Nov). Stage 01 detailed research complete for owner review; script not approved or generated. 3 owner-reported published, 1 scheduled (BM-004, 27 Nov), 1 active (BM-005), 3 ideas (ID-004, ID-007, ID-008). Next unused production BM-006, next permanent idea ID-009. Proposed next release 28 Nov, not a schedule. No other release changes.
 
 
