@@ -1,0 +1,78 @@
+{
+  "id": "BM-004",
+  "ideaId": "ID-005",
+  "name": "GalaxEye & Bellatrix — India's Satellite Propulsion Industry",
+  "fields": {
+    "YouTube title": "India’s Private Space Industry: Propulsion for 30 Satellites",
+    "YouTube description (includes hashtags)": "Indian space companies GalaxEye and Bellatrix Aerospace are building a domestic supply chain for satellite technology.\n\nOn 24 November 2026, GalaxEye awarded Bellatrix Aerospace a multi-year contract to supply ARKA electric propulsion systems for 30 planned Drishti Gen-II Earth observation satellites. Electric propulsion uses electrical energy to accelerate charged particles, enabling efficient in-space manoeuvres.\n\nIn January 2024, ISRO confirmed the completion of an ARKA 200 propulsion experiment aboard its POEM-3 orbital platform. GalaxEye's planned satellites combine optical and synthetic aperture radar imaging to provide complementary observations, including radar imaging at night and through clouds.\n\nThe order covers future satellites, not a constellation already in operation. The contract value has not been disclosed.\n\nSources:\n24 November 2026 — PTI report on the propulsion contract:\nhttps://theprint.in/india/galaxeye-to-deploy-bellatrixs-indian-built-propulsion-systems-across-its-next-30-optosar-satellites/3107707/\n\nBellatrix Aerospace — ARKA propulsion:\nhttps://bellatrix.aero/arka\n\nISRO — POEM-3 mission objectives achieved:\nhttps://www.isro.gov.in/ISRO_EN/POEM-3_Mission_achieves_Payload_objectives.html\n\nOptical and radar image credit: Hatfield Consultants, using Copernicus Sentinel-2 and Sentinel-1 data, Orinoquía, Colombia; cropped from Dean (2020), Earth Observation and the Global Environment Facility, Technical Guide, Figures 1–2:\nhttps://cdn.unenvironment.org/stapgef/public/2021-04/Earth%20Observation%20and%20the%20GEF%20Technical%20Guide_web.pdf\n\n#BharatMode #GalaxEye #BellatrixAerospace #IndianSpace #SpaceTechnology #Shorts",
+    "Hashtags": "#BharatMode #GalaxEye #BellatrixAerospace #IndianSpace #SpaceTechnology #Shorts",
+    "Tags": "Bharat Mode, GalaxEye, Bellatrix Aerospace, ARKA propulsion, Indian space industry, Indian space startups, electric propulsion, Hall effect thruster, satellite propulsion, Earth observation, OptoSAR, Drishti Gen II, ISRO, POEM 3, Sentinel 1, Sentinel 2, Indian innovation, space technology",
+    "Playlist": "Space & Exploration",
+    "Category": "Science & Technology",
+    "Video language": "English",
+    "Title and description language": "English",
+    "Audience": "No, it is not made for kids",
+    "Altered or synthetic content disclosure": "Yes (conservative proposed setting)",
+    "License": "Standard YouTube License",
+    "Visibility": "Private until outstanding rights and final video checks are resolved",
+    "Comments": "Enabled; Basic moderation",
+    "Sources and factual caveats": "30 planned satellites, not launched; undisclosed contract value; ARKA 200 experiment does not establish contract variant. Image crops are representative Sentinel observations, not GalaxEye data. Source PDF figure-specific reuse rights not established; credit is not permission. Official company logo assets unavailable; text-only identifiers retained."
+  },
+  "media": {
+    "video": {
+      "filename": "BM-004-galaxeye-bellatrix.mp4",
+      "libraryId": "libfile_609f8b012ab48191a7e396cf8dee693d",
+      "sha256": "d7c3e7626c923151a3c0ad2929fa920b3bd1a8f31b1cd8284a66369e79339418",
+      "ownerApproved": false,
+      "duration": 58.533333,
+      "frames": 3512
+    },
+    "thumbnail": {
+      "filename": "BM-004-galaxeye-bellatrix-thumbnail.png",
+      "libraryId": "libfile_239dcf7964b88191a4b62476147490ac",
+      "sha256": "f9279dcb84f276dc4d81c746f97c90732c137cb6983340f60e96dff61a657c1c",
+      "ownerApproved": true
+    }
+  },
+  "checklist": [
+    {
+      "label": "Owner approves thumbnail",
+      "done": true
+    },
+    {
+      "label": "Exact V6 MP4 and PNG checksums and native dimensions verified",
+      "done": true
+    },
+    {
+      "label": "Title, description, sources and proposed settings prepared",
+      "done": true
+    },
+    {
+      "label": "Final V6 video explicitly accepted by owner",
+      "done": false
+    },
+    {
+      "label": "Confirm figure-specific reuse rights and music license evidence",
+      "done": false
+    },
+    {
+      "label": "Confirm phone playback and YouTube checks",
+      "done": false
+    },
+    {
+      "label": "Owner confirms upload/schedule",
+      "done": false
+    },
+    {
+      "label": "Record public YouTube URL and actual date",
+      "done": false
+    }
+  ],
+  "publication": {
+    "ownerConfirmedPublic": false,
+    "youtubeUrl": null,
+    "publishedAt": null,
+    "uploadConfirmedByOwner": false,
+    "scheduledAt": null
+  }
+}

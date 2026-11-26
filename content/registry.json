@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-26",
   "nextSequence": 6,
   "items": [
     {
@@ -212,7 +212,7 @@
       "eventDate": "2026-11-24",
       "sourceDate": "2026-11-24",
       "discoveredAt": "2026-11-25",
-      "updatedAt": "2026-11-25",
+      "updatedAt": "2026-11-26",
       "sourceUrls": [
         "https://in.linkedin.com/company/bellatrix-aerospace",
         "https://theprint.in/india/galaxeye-to-deploy-bellatrixs-indian-built-propulsion-systems-across-its-next-30-optosar-satellites/3107707/",
@@ -250,7 +250,8 @@
           "note": "Owner selected ID-005 as BM-004; Stage 01 detailed research and editorial angle pending approval."
         }
       ],
-      "productionSelectedAt": "2026-11-25"
+      "productionSelectedAt": "2026-11-25",
+      "releaseStatus": "upload_preparation_pending_clearance"
     }
   ]
 }
