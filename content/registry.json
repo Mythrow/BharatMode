@@ -251,7 +251,11 @@
         }
       ],
       "productionSelectedAt": "2026-11-25",
-      "releaseStatus": "upload_preparation_pending_clearance"
+      "releaseStatus": "scheduled",
+      "scheduledAt": "2026-11-27",
+      "uploadedAt": "2026-11-26",
+      "uploadConfirmedByOwner": true,
+      "ownerConfirmedPublic": false
     }
   ]
 }

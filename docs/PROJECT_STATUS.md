@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **CURRENT — 26 November 2026:** Owner reports BM-004 / ID-005 uploaded on 26 November and scheduled for Friday, 27 November 2026 (IST; exact time and URL not supplied). Remove from active editorial production and queue. BM-002 remains scheduled for 26 November until owner confirms public status. Totals: 2 owner-reported published, 2 scheduled, 0 active productions, 1 unselected idea (ID-004). Next unused production code BM-005, next permanent idea ID-006. Do not auto-promote scheduled releases. Figure reuse rights and music evidence, separate final V6 acceptance and device/YouTube checks remain unverified; upload report is not proof of those checks.
+
+
 > **BM-004 — 26 November 2026:** Thumbnail explicitly approved; canonical byte-identical V6 release candidate and approved PNG saved privately. Publishing dashboard prepared. Explicit final video acceptance and figure reuse clearance pending; no upload/publication confirmed. Keep in progress. BM-002 remains scheduled owner-reported, not automatically marked published.
 
 
