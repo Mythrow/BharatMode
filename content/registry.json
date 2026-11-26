@@ -68,7 +68,7 @@
       "eventDate": "2026-11-17",
       "sourceDate": "2026-11-18",
       "discoveredAt": "2026-11-23",
-      "updatedAt": "2026-11-25",
+      "updatedAt": "2026-11-26",
       "sourceUrls": [
         "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2337773&lang=1&reg=1",
         "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2337773&lang=1&reg=6",
@@ -103,7 +103,9 @@
       "scheduledAt": "2026-11-26",
       "uploadedAt": "2026-11-25",
       "uploadConfirmedByOwner": true,
-      "ownerConfirmedPublic": false
+      "ownerConfirmedPublic": true,
+      "publicationReportedOn": "2026-11-26",
+      "releaseStatus": "published_owner_reported"
     },
     {
       "id": "ID-003",

@@ -19,7 +19,7 @@ Updated: 2026-11-26 (IST) · Permanent IDs: 5 · **Never reassign or delete an I
 | **ID-005** | BM-004 | GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix | 2026-11-24 | high | [Research](research/ID-005.md) | — | Scheduled 2026-11-27 (owner reported; time/link pending) |
 | **ID-003** | BM-003 | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/ID-003.md) | [Draft](../stories/lt-chennai-ai-cluster-order.json) | Owner-confirmed published; URL/date pending |
 | **ID-001** | BM-001 | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/ID-001.md) | [Draft](../stories/param-rudra.json) | Owner-confirmed published; URL/date pending |
-| **ID-002** | BM-002 | ICMR reaches 100 technology-transfer agreements | 2026-11-17 | medium | [Research](research/ID-002.md) | [Draft](../stories/icmr-tech-transfer.json) | Scheduled 2026-11-26 (owner reported; time/link pending) |
+| **ID-002** | BM-002 | ICMR reaches 100 technology-transfer agreements | 2026-11-17 | medium | [Research](research/ID-002.md) | [Draft](../stories/icmr-tech-transfer.json) | Owner-confirmed published; URL/date pending |
 
 ## Published (0)
 

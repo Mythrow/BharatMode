@@ -1,5 +1,8 @@
 # Bharat Mode — Content calendar standard
 
+> **CURRENT — 26 November 2026:** Owner confirms BM-002 / ID-002 is now public on 26 November. Keep owner-reported published status until actual YouTube URL and formal date reconciliation; do not reopen production. BM-004 remains scheduled for 27 November. Counts: 3 owner-reported published, 1 scheduled, 0 active, 1 unused idea (ID-004). Owner usually schedules around 10:00 AM IST; record as preferred approximate release time, not a confirmed exact time for any individual video. Next BM-005 / new idea ID-006. Home tab remains deferred until meaningful catalog (review around 10 published Shorts). Begin collecting comparable first-24-hour and first-7-day Shorts analytics; no major format changes based on three videos alone.
+
+
 > **CURRENT — 26 November 2026:** Owner reports BM-004 / ID-005 uploaded on 26 November and scheduled for Friday, 27 November 2026 (IST; exact time and URL not supplied). Remove from active editorial production and queue. BM-002 remains scheduled for 26 November until owner confirms public status. Totals: 2 owner-reported published, 2 scheduled, 0 active productions, 1 unselected idea (ID-004). Next unused production code BM-005, next permanent idea ID-006. Do not auto-promote scheduled releases. Figure reuse rights and music evidence, separate final V6 acceptance and device/YouTube checks remain unverified; upload report is not proof of those checks.
 
 
