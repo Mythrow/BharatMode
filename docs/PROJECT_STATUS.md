@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-005 — Stage 03, 26 November 2026:** Owner approved narration V1; 19 actual native source-rendered storyboard frames, self-contained gallery and private editable source prepared. Exact script and voice handoff requirements in [ID-006 research](../content/research/ID-006.md). Await visual approval. Provisional timing and schematic equipment; no new video/audio render or publication change.
+
+
 > **BM-005 — Stage 02, 26 November 2026:** Owner approved ID-006 story and editorial direction; six-scene narration V1 presented for review. Exact draft in [ID-006 research](../content/research/ID-006.md). Await explicit script approval before storyboard and audio handoff. No schedule or publication change.
 
 
