@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-005 V6 — 26 November:** corrected component label spacing and 0.35s anticipatory supporting visual cues. Complete 3512-frame narrated preview and embedded HTML saved privately; audio unchanged from V5. Await owner review. No final approval or schedule change.
+
+
 > **BM-005 — V4 timing/ending review:** Slower text, actual word-cued visual reveals, musical resolution and one-second intentional silent final hold implemented in complete 3512-frame narrated preview (58.533s). V4 HTML, MP4 and source saved privately; await owner review. Permanent rule commit b9c91066e973f0a12158d10b7d16d83d9509170c. See ID-006 research.
 
 
