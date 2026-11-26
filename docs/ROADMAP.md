@@ -1,5 +1,8 @@
 # Bharat Mode — Launch milestones
 
+> **BM-005 — V2 narrated mixed-theme review, 26 November 2026:** Owner requested approved theme rotation and narrated preview. Exact narration and approved MUSIC-06 integrated; complete native 3428-frame 57.133s preview verified and saved privately, with self-contained HTML. Await owner review, no final approval or publication. Scene-level 50/30/20 target and saffron feature rule approved; see ID-006 research for source IDs and QA.
+
+
 > **BM-005 — Stage 03, 26 November 2026:** Owner approved narration V1; 19 actual native source-rendered storyboard frames, self-contained gallery and private editable source prepared. Exact script and voice handoff requirements in [ID-006 research](../content/research/ID-006.md). Await visual approval. Provisional timing and schematic equipment; no new video/audio render or publication change.
 
 
