@@ -1,0 +1,77 @@
+{
+  "id": "BM-005",
+  "ideaId": "ID-006",
+  "name": "India Wants to Build the Machines That Build India",
+  "fields": {
+    "YouTube title": "India’s ₹11,000 Crore Push to Build Construction Equipment",
+    "YouTube description (includes hashtags)": "India wants to manufacture more of the machines that build its infrastructure.\n\nOn 25 November 2026, the Union Cabinet approved a ₹11,000 crore scheme to strengthen India's construction and infrastructure equipment manufacturing ecosystem. It targets advanced machinery such as tunnel boring machines, excavators, off-highway trucks and cranes, as well as critical components including engines, transmissions and hydraulic systems.\n\nIndia is the world's third-largest construction equipment market, with estimated import dependence of around 45%. Under the new scheme, eligible equipment manufacturers can receive incentives of up to 13% on qualifying incremental sales. The programme also supports a planned domestic testing facility.\n\nThe government expects ₹21,000 crore in investment. These are approved scheme provisions and projected outcomes, not investment or production already achieved.\n\nSources:\nUnion Cabinet — 25 November 2026:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2341171&lang=1&reg=3\n\nMinistry of Heavy Industries — Scheme details:\nhttps://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2341185&lang=1&reg=1\n\nCabinet briefing — equipment categories, incentives and projected outcomes:\nhttps://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/nov/doc_10580_20261125_16131201.pdf\n\n#BharatMode #MakeInIndia #Manufacturing #ConstructionEquipment #IndianInfrastructure #Shorts",
+    "Hashtags": "#BharatMode #MakeInIndia #Manufacturing #ConstructionEquipment #IndianInfrastructure #Shorts",
+    "Tags": "Bharat Mode, India manufacturing, Make in India, construction equipment, infrastructure equipment, tunnel boring machine, TBM, excavators, port cranes, heavy machinery, Indian infrastructure, Ministry of Heavy Industries, CIE manufacturing scheme, sales linked incentives, domestic manufacturing, engineering, Indian economy",
+    "Playlist": "Business & Manufacturing",
+    "Category": "Science & Technology",
+    "Video language": "English",
+    "Title and description language": "English",
+    "Audience": "No, it is not made for kids",
+    "Altered or synthetic content disclosure": "Yes (conservative proposed setting)",
+    "License": "Standard YouTube License",
+    "Visibility": "Private initially; proposed schedule 28 November 2026 around 10 AM IST, subject to owner review and checks",
+    "Comments": "Enabled; Basic moderation",
+    "Sources and factual caveats": "₹11,000 crore total approved outlay includes testing facility support; ₹21,000 crore expected investment, not realized. Approximate 45% import dependence, not machine unit share. Maximum 13% on qualifying incremental equipment sales. Original schematic machinery, no specific manufacturers or beneficiaries claimed."
+  },
+  "media": {
+    "video": {
+      "filename": "BM-005-construction-equipment.mp4",
+      "libraryId": "libfile_ebe9672c3db08191aa68a8b492b43a29",
+      "sha256": "7f065b12275a6c0b25e0d4b1209a0fba5a7b4e5f7f6b1400395a9f2c2d773252",
+      "ownerApproved": false,
+      "approvalNote": "Owner accepted V6 subject to charcoal opening; exact V7 review pending",
+      "duration": 58.533333,
+      "frames": 3512
+    },
+    "thumbnail": {
+      "filename": "BM-005-construction-equipment-thumbnail.png",
+      "libraryId": "libfile_39634da7384c81918cde47de3a1f6b99",
+      "sha256": "30372707e2dffef463fe21217105b94187d9d78973e6c8b0d5e54bf3b47341a4",
+      "ownerApproved": false
+    }
+  },
+  "checklist": [
+    {
+      "label": "Owner accepts V6 with charcoal opening revision",
+      "done": true
+    },
+    {
+      "label": "V7 complete frame count, timestamp, audio payload and decoding verified",
+      "done": true
+    },
+    {
+      "label": "Thumbnail and publishing metadata prepared",
+      "done": true
+    },
+    {
+      "label": "Review exact V7 and approve thumbnail",
+      "done": false
+    },
+    {
+      "label": "Verify phone playback, music license evidence and YouTube copyright checks",
+      "done": false
+    },
+    {
+      "label": "Owner confirms upload and schedule",
+      "done": false
+    },
+    {
+      "label": "Record public URL and publication date",
+      "done": false
+    }
+  ],
+  "publication": {
+    "ownerConfirmedPublic": false,
+    "youtubeUrl": null,
+    "publishedAt": null,
+    "uploadConfirmedByOwner": false,
+    "scheduledAt": null,
+    "proposedReleaseDate": "2026-11-28",
+    "proposedTimeIST": "10:00"
+  }
+}

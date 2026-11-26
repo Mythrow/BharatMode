@@ -1,5 +1,8 @@
 # Bharat Mode — Official Brand Kit v1
 
+> **Owner clarification — 26 November 2026:** Mixed-theme proportions are flexible editorial targets, not quotas. Do not force a saffron background where the subject or contrast is better served by charcoal or ivory. BM-005 uses charcoal for its machinery opening at owner direction; reserve the full saffron feature for a suitable beat in the next video if appropriate. Saffron accents remain part of the brand.
+
+
 > **MANDATORY — scene-level mixed themes (owner approved 26 November 2026):** Plan themes by narrative purpose, not just dominant upload color. Aim approximately 50% Warm Ivory, 30% Deep Charcoal, 20% Classic Saffron across scenes over multiple videos; these are editorial targets, not rigid quotas. Include at least one full saffron feature scene per video where visually appropriate; document a reason if omitted. Prefer saffron for major announcements, landmark figures or a strong closing reveal; ivory for facts, comparisons and instructional diagrams; charcoal for cinematic machinery, space, technology and contrast-rich environments. Technical mechanisms can use ivory or charcoal. Vary sequence with story and avoid forced predictable alternation. All scenes still need unique contextual backgrounds and meaningful motion; changing only color is insufficient. Check actual rendered contrast of all text, labels, captions and progress tracks. Saffron uses dark readable editorial ink, ivory progress fill and sufficiently dark neutral caption backing when needed for ivory/peach caption legibility. This supersedes the old 65/25/10 upload-dominant mix. Do not re-render previously approved releases solely for rotation.
 
 

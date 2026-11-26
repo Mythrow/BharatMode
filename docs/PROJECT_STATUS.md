@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **BM-005 V7 — 26 November 2026:** Owner accepted V6 subject to charcoal opening; V7 rendered with exact V6 audio and unchanged encoded tail, verified complete decode and timestamps. Custom thumbnail and publishing dashboard prepared; exact revised video/thumbnail review pending. Proposed 28 Nov around 10 AM IST, not scheduled. Keep in progress. See ID-006 research and publishing/BM-005-release-page.json.
+
+
 > **BM-005 V6 — 26 November:** corrected component label spacing and 0.35s anticipatory supporting visual cues. Complete 3512-frame narrated preview and embedded HTML saved privately; audio unchanged from V5. Await owner review. No final approval or schedule change.
 
 

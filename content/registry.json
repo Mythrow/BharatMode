@@ -311,7 +311,8 @@
           "note": "Owner selected ID-006 as BM-005; Stage 01 detailed news and editorial review."
         }
       ],
-      "productionSelectedAt": "2026-11-26"
+      "productionSelectedAt": "2026-11-26",
+      "releaseStatus": "upload_preparation"
     },
     {
       "id": "ID-007",
