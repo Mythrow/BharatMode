@@ -1,5 +1,8 @@
 # Bharat Mode — Project Status / New-Chat Handoff
 
+> **CURRENT — 26 November 2026:** 3 owner-confirmed published, 1 scheduled (BM-004 27 Nov), 0 active, 4 ideas (ID-004, ID-006–008). Freshness-first scan today identified strongest original announcements on 25 Nov. Recommend ID-006 for BM-005; ID-007 and ID-008 backups. No selection yet; proposed 28 Nov release is not scheduled. Next permanent ID-009. Daily 11 AM Story Pick prompt updated without changing schedule.
+
+
 > **Analytics baseline — 26 November 2026:** First three published Shorts' Studio data captured in [analytics snapshot](../analytics/snapshots/2026-11-26.json); [performance tracking standard](ANALYTICS_TRACKING.md) records comparable-age collection and dashboard rules. 272 summed since-published views, 84 engaged views, channel 3 subscribers. Different ages/reporting cutoffs and small samples; no major format changes. Next collect BM-004 24h data and first three 7-day metrics/retention curves when available. No change to publication status.
 
 

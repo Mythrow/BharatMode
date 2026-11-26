@@ -2,14 +2,17 @@
 
 **Canonical register:** [`registry.json`](registry.json) · **Story research:** [`research/`](research/) · **Workflow:** [`docs/CONTENT_PIPELINE.md`](../docs/CONTENT_PIPELINE.md)
 
-Updated: 2026-11-26 (IST) · Permanent IDs: 5 · **Never reassign or delete an ID.**
+Updated: 2026-11-26 (IST) · Permanent IDs: 8 · **Never reassign or delete an ID.**
 
 > This document is generated from `content/registry.json`. Use the registry command to add and move content; run `npm run content:check` before committing. An idea is not a published video.
 
-## Idea (1)
+## Idea (4)
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
+| **ID-006** | — | India approves ₹11,000 crore construction equipment manufacturing scheme | 2026-11-25 | high | [Research](research/ID-006.md) | — | — |
+| **ID-007** | — | L&T wins 300 MW / 900 MWh battery storage order in Gujarat | 2026-11-25 | high | [Research](research/ID-007.md) | — | — |
+| **ID-008** | — | IIT Kanpur and Rolls-Royce launch aircraft cabin noise research | 2026-11-25 | medium | [Research](research/ID-008.md) | — | — |
 | **ID-004** | — | IIT Madras inaugurates sleep and autism research facilities | 2026-11-22 | medium | [Research](research/ID-004.md) | — | — |
 
 ## In Progress (4)
