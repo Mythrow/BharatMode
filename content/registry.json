@@ -263,7 +263,7 @@
       "id": "ID-006",
       "slug": "construction-equipment-manufacturing-scheme",
       "title": "India approves ₹11,000 crore construction equipment manufacturing scheme",
-      "stage": "idea",
+      "stage": "in_progress",
       "priority": "high",
       "category": "manufacturing",
       "storyKey": "construction-equipment-manufacturing-scheme-2026-11-25",
@@ -281,7 +281,13 @@
       "sourceUrls": [
         "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341171&lang=1&reg=3",
         "https://newsonair.gov.in/cabinet-approves-%E2%82%B911000-crore-scheme-to-boost-construction-equipment-manufacturing/",
-        "https://www.reuters.com/business/retail-consumer/india-approves-12-billion-incentive-plan-critical-building-equipment-2026-11-25/"
+        "https://www.reuters.com/business/retail-consumer/india-approves-12-billion-incentive-plan-critical-building-equipment-2026-11-25/",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341185&lang=1&reg=3",
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2341185&lang=1&reg=1",
+        "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/nov/doc_10580_20261125_16131201.pdf",
+        "https://www.moneycontrol.com/news/economy/policy/cabinet-clears-rs-11-000-crore-scheme-to-boost-construction-equipment-manufacturing-offers-up-to-13-sales-incentives-14088872.html/amp",
+        "https://www.business-standard.com/industry/news/cabinet-approves-11-000-cr-scheme-for-construction-equipment-manufacturing-126112500797_1.html",
+        "https://www.moneycontrol.com/news/economy/policy/cabinet-clears-rs-11-000-crore-scheme-to-boost-construction-equipment-manufacturing-offers-up-to-13-sales-incentives-14088872.html"
       ],
       "researchPath": "content/research/ID-006.md",
       "storyPath": null,
@@ -290,15 +296,22 @@
       "publishedAt": null,
       "youtubeUrl": null,
       "publishApprovedByOwner": false,
-      "productionCode": null,
+      "productionCode": "BM-005",
       "stageHistory": [
         {
           "at": "2026-11-26",
           "from": null,
           "to": "idea",
           "note": "Freshness-first search 26 Nov, widened to 25 Nov after screening today’s coverage; verified indexed primary and corroborating coverage; no duplicate event in registry; awaiting owner selection."
+        },
+        {
+          "at": "2026-11-26",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Owner selected ID-006 as BM-005; Stage 01 detailed news and editorial review."
         }
-      ]
+      ],
+      "productionSelectedAt": "2026-11-26"
     },
     {
       "id": "ID-007",

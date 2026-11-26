@@ -6,19 +6,19 @@ Updated: 2026-11-26 (IST) · Permanent IDs: 8 · **Never reassign or delete an I
 
 > This document is generated from `content/registry.json`. Use the registry command to add and move content; run `npm run content:check` before committing. An idea is not a published video.
 
-## Idea (4)
+## Idea (3)
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
-| **ID-006** | — | India approves ₹11,000 crore construction equipment manufacturing scheme | 2026-11-25 | high | [Research](research/ID-006.md) | — | — |
 | **ID-007** | — | L&T wins 300 MW / 900 MWh battery storage order in Gujarat | 2026-11-25 | high | [Research](research/ID-007.md) | — | — |
 | **ID-008** | — | IIT Kanpur and Rolls-Royce launch aircraft cabin noise research | 2026-11-25 | medium | [Research](research/ID-008.md) | — | — |
 | **ID-004** | — | IIT Madras inaugurates sleep and autism research facilities | 2026-11-22 | medium | [Research](research/ID-004.md) | — | — |
 
-## In Progress (4)
+## In Progress (5)
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
+| **ID-006** | BM-005 | India approves ₹11,000 crore construction equipment manufacturing scheme | 2026-11-25 | high | [Research](research/ID-006.md) | — | — |
 | **ID-005** | BM-004 | GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix | 2026-11-24 | high | [Research](research/ID-005.md) | — | Scheduled 2026-11-27 (owner reported; time/link pending) |
 | **ID-003** | BM-003 | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/ID-003.md) | [Draft](../stories/lt-chennai-ai-cluster-order.json) | Owner-confirmed published; URL/date pending |
 | **ID-001** | BM-001 | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/ID-001.md) | [Draft](../stories/param-rudra.json) | Owner-confirmed published; URL/date pending |

@@ -1,5 +1,8 @@
 # Bharat Mode — Launch milestones
 
+> **CURRENT — 26 November 2026:** ID-006 selected as BM-005 (₹11,000 crore CIE manufacturing scheme, Cabinet approval 25 Nov). Stage 01 detailed research complete for owner review; script not approved or generated. 3 owner-reported published, 1 scheduled (BM-004, 27 Nov), 1 active (BM-005), 3 ideas (ID-004, ID-007, ID-008). Next unused production BM-006, next permanent idea ID-009. Proposed next release 28 Nov, not a schedule. No other release changes.
+
+
 > **Analytics baseline — 26 November 2026:** First three published Shorts' Studio data captured in [analytics snapshot](../analytics/snapshots/2026-11-26.json); [performance tracking standard](ANALYTICS_TRACKING.md) records comparable-age collection and dashboard rules. 272 summed since-published views, 84 engaged views, channel 3 subscribers. Different ages/reporting cutoffs and small samples; no major format changes. Next collect BM-004 24h data and first three 7-day metrics/retention curves when available. No change to publication status.
 
 
