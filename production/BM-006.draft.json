@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "v8_creatively_approved_upload_draft_release_held",
+  "status": "v9_factual_correction_exported_upload_draft_not_release_eligible",
   "ideaId": "ID-009",
   "productionCode": "BM-006",
   "storyPath": "stories/chariot-one-indigenous-ai-models.json",
@@ -183,9 +183,14 @@
         "gate": "V8 creative review",
         "date": "2026-11-27",
         "evidence": "Owner: okay now it looks good. ... You can proceed to prepare the final upload draft"
+      },
+      {
+        "gate": "V9 factual correction authorized",
+        "date": "2026-11-27",
+        "evidence": "Owner: okay make the change in the final upload draft; so make the change and provide the final upload draft."
       }
     ],
-    "technicalReport": "Historical V2 evidence and current V8 review recorded; not a final eligible manifest.",
+    "technicalReport": "V9 corrected upload draft evidence recorded; not a final release-eligible manifest.",
     "storyboardChecks": [
       "Local source ZIP integrity and safe archive paths passed",
       "Source members compared to local files",
@@ -195,13 +200,12 @@
     ],
     "rightsEvidence": [],
     "pending": [
-      "Resolve IndicShift script enumeration and obtain approval of corrected video",
+      "Owner review of corrected V9 video and proposed thumbnail",
       "Independent pronunciation listening review",
       "Music licensing evidence and font fallback/rights verification",
       "Phone playback and YouTube copyright/overlay checks",
-      "Thumbnail approval",
-      "Full repository validation and release manifest",
-      "Explicit publication authorization"
+      "Full repository validation and final production manifest",
+      "Explicit upload/publication authorization"
     ]
   },
   "output": null,
@@ -254,6 +258,56 @@
       "Thumbnail approval",
       "Full repository validation and release manifest",
       "Explicit publication authorization"
+    ]
+  },
+  "reviewV9": {
+    "date": "2026-11-27",
+    "video": {
+      "filename": "BM-006-chariot-one-indigenous-ai-models.mp4",
+      "libraryId": "libfile_38957ffab1a48191b6fc018aece5bf1b",
+      "sha256": "c8895994ef32ddf288218c570f0a6c3b56624fe7357c4510b9c3ca586aa72905",
+      "ownerApproved": false,
+      "approvalNote": "Owner authorized the specified factual correction and requested actual corrected upload draft. Exact V9 playback approval pending.",
+      "duration": 53.566667,
+      "frames": 3214,
+      "revision": "V9"
+    },
+    "thumbnail": {
+      "filename": "BM-006-chariot-one-indigenous-ai-models-thumbnail.png",
+      "libraryId": "libfile_b88050ecef1881919d3c9f6e09f6b639",
+      "sha256": "a05dbefd12eaad52cf49c97a78685f3962701219ec444c33d7db1ebb8135e4eb",
+      "ownerApproved": false
+    },
+    "source": {
+      "filename": "BM-006-V9-upload-source.zip",
+      "libraryId": "libfile_09a78bb43e8081919794bebb175fec4b",
+      "sha256": "42b765613a094b9ba00df80ab690ad3c497ed61835dbf16de80c32d82360892d"
+    },
+    "sourcePath": "production/source/BM-006/preview-v9/",
+    "sceneSeconds": [
+      9.2,
+      8.4,
+      9.92,
+      7.52,
+      8.48,
+      8.24
+    ],
+    "narrationSeconds": 51.76,
+    "audioStreamSHA256": "0ee18b840e7bb631ffa97c7da7deea81737804b058d991a68a81bcdffd5169de",
+    "finding": "PIB reports 12 Indian scripts; released Indic Shift README names ten scripts sharing letter symbols. V9 retains the attributed twelve-script count and shows ten documented examples, not an exhaustive list: Devanagari, Bengali-Assamese, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Meetei Mayek. Ol Chiki and Warang Citi removed. Full launch-to-released-implementation enumeration not established; no inference of two additional members.",
+    "checks": [
+      "Eight source tests passed",
+      "Full decoded 3214 frames at native 1080x1920 60 FPS, consecutive PTS, duration 53.566667s, AAC stream identical to V8",
+      "Decoded sample frames show all ten examples, final group held and paths clear",
+      "V8 retained unchanged; unmodified scene designs re-encoded in assembly; thumbnail unchanged"
+    ],
+    "pending": [
+      "Owner review of corrected V9 video and proposed thumbnail",
+      "Independent pronunciation listening review",
+      "Music licensing evidence and font fallback/rights verification",
+      "Phone playback and YouTube copyright/overlay checks",
+      "Full repository validation and final production manifest",
+      "Explicit upload/publication authorization"
     ]
   }
 }
