@@ -1,0 +1,105 @@
+{
+  "id": "BM-006",
+  "ideaId": "ID-009",
+  "productionCode": "BM-006",
+  "name": "India Is Building AI That Understands Its Languages",
+  "releaseReadiness": "held_pending_fact_check_and_QA",
+  "fields": {
+    "YouTube title": "India Is Building AI That Understands Its Languages",
+    "YouTube description (includes hashtags)": "Chariot Artificial Intelligence has unveiled Chariot-1, a family of language and speech models trained from scratch in India.\n\nIts largest language model has 10.7 billion parameters, with around 4 billion active per token. The company’s IndicShift technique aims to make Indian-language text processing more efficient, with a reported reduction in token counts of up to 60% in its launch evaluation. Nested Training develops three model sizes through a single training run.\n\nSupported by the IndiaAI Mission, the suite also includes multilingual speech technology supporting English and at least ten Indian languages. The reported token reduction is a best-case evaluation result, not a universal improvement or an independent benchmark.\n\nSources:\nMeitY / PIB — 26 November 2026:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2341725&lang=1&reg=48\n\nChariot-1:\nhttps://chariot.in/chariot-one/\n\nIndicShift tokenizer documentation:\nhttps://github.com/Chariot-AI/indic-shift\n\n#BharatMode #IndianAI #IndiaAI #ArtificialIntelligence #Chariot1 #Shorts",
+    "Hashtags": "#BharatMode #IndianAI #IndiaAI #ArtificialIntelligence #Chariot1 #Shorts",
+    "Tags": "Bharat Mode, India, Chariot-1, Chariot Artificial Intelligence, IndiaAI Mission, Indian AI, homegrown AI, foundation models, large language model, IndicShift, Indian languages, multilingual AI, mixture of experts, nested training, text to speech, Indian technology, AI innovation",
+    "Playlist": "Technology & Innovation",
+    "Category": "Science & Technology",
+    "Video language": "English",
+    "Title and description language": "English",
+    "Audience": "No, it is not made for kids",
+    "Altered or synthetic content disclosure": "Yes (conservative proposed setting; confirm applicability in Studio)",
+    "License": "Standard YouTube License",
+    "Visibility": "Private draft only; proposed 29 November 2026, 10:00 AM IST, not scheduled; release hold applies",
+    "Comments": "Enabled; Basic moderation",
+    "Sources and factual caveats": "10.7B total / around 4B active per token. Up to 60% reported best-case token reduction, not universal. English plus at least ten Indian languages for TTS. No independent benchmark or open-weight LLM claim. V8 names Ol Chiki and Warang Citi in the 12-script shared-letter diagram without evidence establishing them as members of that mechanism. Official launch reports 12 scripts; developer README names ten and SPEC section 4.2 explicitly says Ol Chiki letters/signs pass through, only digits share symbols. Reconcile showcase/released implementation or show verified examples with explicit scope; obtain approval of corrected video. Do not publish V8."
+  },
+  "media": {
+    "video": {
+      "filename": "BM-006-chariot-one-indigenous-ai-models.mp4",
+      "libraryId": "libfile_2fe0d66ba630819191171e327db44895",
+      "sha256": "d1119bcbc035fe2f784181f093155b2bef6d15be0766223938e598cb1a8b007b",
+      "ownerApproved": true,
+      "approvalNote": "27 Nov 2026: owner said V8 looks good and authorized preparation of upload draft; creative approval only, not publication or factual correction approval.",
+      "duration": 53.566667,
+      "frames": 3214
+    },
+    "thumbnail": {
+      "filename": "BM-006-chariot-one-indigenous-ai-models-thumbnail.png",
+      "libraryId": "libfile_b88050ecef1881919d3c9f6e09f6b639",
+      "sha256": "a05dbefd12eaad52cf49c97a78685f3962701219ec444c33d7db1ebb8135e4eb",
+      "ownerApproved": false
+    }
+  },
+  "source": {
+    "filename": "BM-006-V8-upload-review-source.zip",
+    "libraryId": "libfile_1b7510cd66e88191b3476bb8872485d4",
+    "sha256": "a29f4ef5a0207fd54880abed02a5ad05847306c23d589ee3274c7b12d8102295"
+  },
+  "checklist": [
+    {
+      "label": "V8 creative approval",
+      "done": true
+    },
+    {
+      "label": "Exact approved video preserved; 3214 decoded frames and consecutive PTS; seven targeted regression tests passed",
+      "done": true
+    },
+    {
+      "label": "Thumbnail and upload fields prepared",
+      "done": true
+    },
+    {
+      "label": "Resolve IndicShift script enumeration and obtain approval of corrected video",
+      "done": false
+    },
+    {
+      "label": "Independent pronunciation listening review",
+      "done": false
+    },
+    {
+      "label": "Music licensing evidence and font fallback/rights verification",
+      "done": false
+    },
+    {
+      "label": "Phone playback and YouTube copyright/overlay checks",
+      "done": false
+    },
+    {
+      "label": "Thumbnail approval",
+      "done": false
+    },
+    {
+      "label": "Full repository validation and release manifest",
+      "done": false
+    },
+    {
+      "label": "Explicit publication authorization",
+      "done": false
+    },
+    {
+      "label": "Owner confirms upload and schedule",
+      "done": false
+    },
+    {
+      "label": "Record public URL and publication date",
+      "done": false
+    }
+  ],
+  "publication": {
+    "ownerConfirmedPublic": false,
+    "youtubeUrl": null,
+    "publishedAt": null,
+    "uploadConfirmedByOwner": false,
+    "scheduledAt": null,
+    "proposedReleaseDate": "2026-11-29",
+    "proposedTimeIST": "10:00",
+    "publishApprovedByOwner": false
+  }
+}

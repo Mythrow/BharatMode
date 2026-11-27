@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "storyboard_review_draft_not_release_eligible",
+  "status": "v8_creatively_approved_upload_draft_release_held",
   "ideaId": "ID-009",
   "productionCode": "BM-006",
   "storyPath": "stories/chariot-one-indigenous-ai-models.json",
@@ -178,9 +178,14 @@
         "gate": "script",
         "date": "2026-11-27",
         "evidence": "Owner approved script with company-name correction"
+      },
+      {
+        "gate": "V8 creative review",
+        "date": "2026-11-27",
+        "evidence": "Owner: okay now it looks good. ... You can proceed to prepare the final upload draft"
       }
     ],
-    "technicalReport": null,
+    "technicalReport": "Historical V2 evidence and current V8 review recorded; not a final eligible manifest.",
     "storyboardChecks": [
       "Local source ZIP integrity and safe archive paths passed",
       "Source members compared to local files",
@@ -190,16 +195,65 @@
     ],
     "rightsEvidence": [],
     "pending": [
-      "owner storyboard approval",
-      "audio generation and pronunciation QA",
-      "fresh alignment and explicit cue maps",
-      "real native 60fps render and full technical QA",
-      "music license evidence",
-      "phone/browser playback",
-      "final render/thumbnail approval",
-      "repository full validation",
-      "Review storyboard's illustrative-pronunciation label, unused legacy helper functions, font availability and production-specific source before animated render"
+      "Resolve IndicShift script enumeration and obtain approval of corrected video",
+      "Independent pronunciation listening review",
+      "Music licensing evidence and font fallback/rights verification",
+      "Phone playback and YouTube copyright/overlay checks",
+      "Thumbnail approval",
+      "Full repository validation and release manifest",
+      "Explicit publication authorization"
     ]
   },
-  "output": null
+  "output": null,
+  "reviewV8": {
+    "date": "2026-11-27",
+    "video": {
+      "filename": "BM-006-chariot-one-indigenous-ai-models.mp4",
+      "libraryId": "libfile_2fe0d66ba630819191171e327db44895",
+      "sha256": "d1119bcbc035fe2f784181f093155b2bef6d15be0766223938e598cb1a8b007b",
+      "ownerApproved": true,
+      "approvalNote": "27 Nov 2026: owner said V8 looks good and authorized preparation of upload draft; creative approval only, not publication or factual correction approval.",
+      "duration": 53.566667,
+      "frames": 3214
+    },
+    "thumbnail": {
+      "filename": "BM-006-chariot-one-indigenous-ai-models-thumbnail.png",
+      "libraryId": "libfile_b88050ecef1881919d3c9f6e09f6b639",
+      "sha256": "a05dbefd12eaad52cf49c97a78685f3962701219ec444c33d7db1ebb8135e4eb",
+      "ownerApproved": false
+    },
+    "source": {
+      "filename": "BM-006-V8-upload-review-source.zip",
+      "libraryId": "libfile_1b7510cd66e88191b3476bb8872485d4",
+      "sha256": "a29f4ef5a0207fd54880abed02a5ad05847306c23d589ee3274c7b12d8102295"
+    },
+    "sourceCommit": "3a5a451a82e37a84356825a282fbee9f49414657",
+    "sourcePath": "production/source/BM-006/preview-v8/",
+    "narrationSeconds": 51.76,
+    "sceneSeconds": [
+      9.2,
+      8.4,
+      9.92,
+      7.52,
+      8.48,
+      8.24
+    ],
+    "audioStreamSHA256": "0ee18b840e7bb631ffa97c7da7deea81737804b058d991a68a81bcdffd5169de",
+    "checks": [
+      "Native 1080x1920 60fps, exact 3214 frames, full decode in V8 assembly, consecutive PTS verified in this review",
+      "Seven targeted regression tests rerun and passed",
+      "Canonical MP4 copied without re-encode",
+      "Thumbnail header centers verified, native 1080x1920, no captions/progress"
+    ],
+    "blocker": "V8 names Ol Chiki and Warang Citi in the 12-script shared-letter diagram without evidence establishing them as members of that mechanism. Official launch reports 12 scripts; developer README names ten and SPEC section 4.2 explicitly says Ol Chiki letters/signs pass through, only digits share symbols. Reconcile showcase/released implementation or show verified examples with explicit scope; obtain approval of corrected video. Do not publish V8.",
+    "pending": [
+      "Resolve IndicShift script enumeration and obtain approval of corrected video",
+      "Independent pronunciation listening review",
+      "Music licensing evidence and font fallback/rights verification",
+      "Phone playback and YouTube copyright/overlay checks",
+      "Thumbnail approval",
+      "Full repository validation and release manifest",
+      "Explicit publication authorization"
+    ]
+  }
 }
