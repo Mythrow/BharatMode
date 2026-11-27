@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "nextSequence": 13,
   "items": [
     {
@@ -454,12 +454,22 @@
         "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341725&lang=1&reg=48",
         "https://www.tribuneindia.com/news/business/ai-regulation-papers-in-final-stages-to-be-released-shortly-meity-secretary-at-chariot-1-launch/amp",
         "https://ddindia.co.in/2026/11/indiaai-mission-supported-chariot-1-foundation-models-launched-to-boost-indigenous-ai-capabilities/",
-        "https://chariot.in/news/introducing-chariot-1-tts-multilingual/"
+        "https://chariot.in/news/introducing-chariot-1-tts-multilingual/",
+        "https://chariot.in/chariot-one/",
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2341725&lang=1&reg=1",
+        "https://enterpriseai.economictimes.indiatimes.com/news/industry/meity-secy-krishnan-launches-chariot-1-foundation-models-to-advance-indias-sovereign-ai-capabilities/136162402",
+        "https://chariot.in/news/introducing-chariot-1-asr-realtime/",
+        "https://chariot.in/text-to-speech/",
+        "https://chariot.in/",
+        "https://huggingface.co/models?other=indic",
+        "https://huggingface.co/chariot-ai/indic-shift-262k",
+        "https://thegenaimagazine.com/chariot-1-ai-indicshift-tokenizer-training-speech-guide",
+        "https://www.business-standard.com/technology/artificial-intelligence/sarvam-hosting-china-ai-models-doesn-t-violate-india-ai-mission-meity-secy-126112501187_1.html"
       ],
-      "stage": "idea",
+      "stage": "in_progress",
       "storyKey": "chariot-one-indigenous-ai-models-2026-11-25",
       "discoveredAt": "2026-11-26",
-      "updatedAt": "2026-11-26",
+      "updatedAt": "2026-11-27",
       "researchPath": "content/research/ID-009.md",
       "storyPath": null,
       "relatedIds": [],
@@ -467,15 +477,22 @@
       "publishedAt": null,
       "youtubeUrl": null,
       "publishApprovedByOwner": false,
-      "productionCode": null,
+      "productionCode": "BM-006",
       "stageHistory": [
         {
           "at": "2026-11-26",
           "from": null,
           "to": "idea",
           "note": "Freshness-first scan of 26 Nov news, checked event dates and existing registry; proposed for BM-006, owner selection pending."
+        },
+        {
+          "at": "2026-11-27",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Owner selected ID-009 for BM-006; Stage 01 detailed research for editorial approval."
         }
-      ]
+      ],
+      "productionSelectedAt": "2026-11-27"
     },
     {
       "id": "ID-010",

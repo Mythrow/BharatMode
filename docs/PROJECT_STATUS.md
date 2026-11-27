@@ -1,12 +1,12 @@
 # Bharat Mode — current handoff
 
-**Snapshot: 26 November 2026 owner records; audit 27 November.** Release truth is [registry.json](../content/registry.json), not this dated summary. Refresh it on every new chat. [Generated content log](../content/CONTENT_LOG.md) lists all IDs.
+**Snapshot: 27 November 2026; latest owner release reports 26 November.** Release truth is [registry.json](../content/registry.json), not this dated summary. Refresh it on every new chat. [Generated content log](../content/CONTENT_LOG.md) lists all IDs.
 
 - BM-001 PARAM Rudra, BM-002 ICMR and BM-003 L&T: owner-confirmed public; actual URLs and verified publication dates pending. Do not reopen.
 - BM-004 GalaxEye/Bellatrix: owner-confirmed upload and 27 Nov schedule, time unknown; figure-specific reuse clearance, exact final video approval, music evidence and phone/platform checks outstanding.
 - BM-005 construction equipment: owner-confirmed upload and 28 Nov 10 AM IST schedule; exact V7/thumbnail acceptance, music evidence and phone/platform checks outstanding. Do not equate schedule with publication.
-- No active production. Seven ideas remain. Next free production code BM-006; next idea ID-013. See current editorial [queue](../publishing/queue.json). The proposed Chariot AI story is a candidate, not approved.
-- **Next owner-facing step:** on request, select/review a verified news story using freshness-first research; only then allocate its production code and present the actual sources/story for approval. Never skip to script/render. Independently reconcile publication evidence when available, especially before marking a scheduled video public.
+- BM-006 / ID-009 Chariot-1 selected 27 November; Stage 01 detailed research ready for owner editorial approval. One active production, six ideas remain. Next free production code BM-007; next idea ID-013. See [research](../content/research/ID-009.md) and [queue](../publishing/queue.json). Proposed 29 Nov 10 AM IST, not scheduled.
+- **Next owner-facing step:** obtain explicit BM-006 story and angle approval before Stage 02 script. Never skip to script/render. Independently reconcile publication evidence when available, especially before marking a scheduled video public.
 - Approved brand, V6 + later refinements, Qwen original narrator and MUSIC-06 B stay unchanged. Home tab deferred until roughly ten published Shorts.
 - First analytics snapshot is unequal-age and provisional. Collect comparable 24h/7d Studio data when provided; no sweeping creative changes.
 
