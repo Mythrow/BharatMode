@@ -1,0 +1,8 @@
+[
+  "Chariot Artificial Intelligence, an Indian AI company, has unveiled Chariot One, a family of language and speech models trained from scratch in India.",
+  "Its largest language model contains nearly eleven billion parameters, but selectively activates around four billion for each token it processes.",
+  "Its IndicShift technology represents characters from twelve Indian scripts using a shared alphabet, reportedly reducing the number of tokens needed by up to sixty percent.",
+  "Another innovation, called Nested Training, allows three differently sized models to be developed through a single training run.",
+  "Chariot's speech model also supports English and at least ten Indian languages, interpreting numbers, abbreviations and measurements in context.",
+  "Supported by the IndiaAI Mission, Chariot is helping build AI technology designed around India's own linguistic diversity."
+]

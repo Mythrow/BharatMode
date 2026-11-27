@@ -1,0 +1,132 @@
+{
+  "id": "ID-009",
+  "productionCode": "BM-006",
+  "script": [
+    "Chariot Artificial Intelligence, an Indian AI company, has unveiled Chariot One, a family of language and speech models trained from scratch in India.",
+    "Its largest language model contains nearly eleven billion parameters, but selectively activates around four billion for each token it processes.",
+    "Its IndicShift technology represents characters from twelve Indian scripts using a shared alphabet, reportedly reducing the number of tokens needed by up to sixty percent.",
+    "Another innovation, called Nested Training, allows three differently sized models to be developed through a single training run.",
+    "Chariot's speech model also supports English and at least ten Indian languages, interpreting numbers, abbreviations and measurements in context.",
+    "Supported by the IndiaAI Mission, Chariot is helping build AI technology designed around India's own linguistic diversity."
+  ],
+  "bounds": [
+    0,
+    10,
+    19,
+    30,
+    38,
+    47,
+    55
+  ],
+  "frames": [
+    {
+      "time": 2,
+      "scene": 1,
+      "title": "Chariot-1 Homegrown AI",
+      "file": "BM-006-02s.png"
+    },
+    {
+      "time": 5,
+      "scene": 1,
+      "title": "Chariot-1 Homegrown AI",
+      "file": "BM-006-05s.png"
+    },
+    {
+      "time": 9,
+      "scene": 1,
+      "title": "Chariot-1 Homegrown AI",
+      "file": "BM-006-09s.png"
+    },
+    {
+      "time": 12,
+      "scene": 2,
+      "title": "Selective activation",
+      "file": "BM-006-12s.png"
+    },
+    {
+      "time": 15,
+      "scene": 2,
+      "title": "Selective activation",
+      "file": "BM-006-15s.png"
+    },
+    {
+      "time": 18,
+      "scene": 2,
+      "title": "Selective activation",
+      "file": "BM-006-18s.png"
+    },
+    {
+      "time": 21,
+      "scene": 3,
+      "title": "Many scripts. Shared symbols.",
+      "file": "BM-006-21s.png"
+    },
+    {
+      "time": 25,
+      "scene": 3,
+      "title": "Many scripts. Shared symbols.",
+      "file": "BM-006-25s.png"
+    },
+    {
+      "time": 29,
+      "scene": 3,
+      "title": "Many scripts. Shared symbols.",
+      "file": "BM-006-29s.png"
+    },
+    {
+      "time": 32,
+      "scene": 4,
+      "title": "Three models. One training run.",
+      "file": "BM-006-32s.png"
+    },
+    {
+      "time": 35,
+      "scene": 4,
+      "title": "Three models. One training run.",
+      "file": "BM-006-35s.png"
+    },
+    {
+      "time": 37,
+      "scene": 4,
+      "title": "Three models. One training run.",
+      "file": "BM-006-37s.png"
+    },
+    {
+      "time": 40,
+      "scene": 5,
+      "title": "From text to natural speech.",
+      "file": "BM-006-40s.png"
+    },
+    {
+      "time": 43,
+      "scene": 5,
+      "title": "From text to natural speech.",
+      "file": "BM-006-43s.png"
+    },
+    {
+      "time": 46,
+      "scene": 5,
+      "title": "From text to natural speech.",
+      "file": "BM-006-46s.png"
+    },
+    {
+      "time": 49,
+      "scene": 6,
+      "title": "AI for a multilingual India.",
+      "file": "BM-006-49s.png"
+    },
+    {
+      "time": 52,
+      "scene": 6,
+      "title": "AI for a multilingual India.",
+      "file": "BM-006-52s.png"
+    },
+    {
+      "time": 54,
+      "scene": 6,
+      "title": "AI for a multilingual India.",
+      "file": "BM-006-54s.png"
+    }
+  ],
+  "timing": "provisional"
+}

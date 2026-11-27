@@ -7,7 +7,14 @@
   "scriptRevision": "V2-company-name",
   "source": {
     "repositoryPaths": [
-      "stories/chariot-one-indigenous-ai-models.json"
+      "stories/chariot-one-indigenous-ai-models.json",
+      "production/source/BM-006/storyboard-v1/render_storyboard.py",
+      "production/source/BM-006/storyboard-v1/raster_base.py",
+      "production/source/BM-006/storyboard-v1/make_gallery.py",
+      "production/source/BM-006/storyboard-v1/script.json",
+      "production/source/BM-006/storyboard-v1/storyboard.json",
+      "production/source/BM-006/storyboard-v1/README.md",
+      "production/source/BM-006/storyboard-v1/avatar.svg"
     ],
     "privateBundle": {
       "filename": "BM-006-storyboard-source.zip",
@@ -20,7 +27,16 @@
       "make_gallery.py": "e7c8f1a50e2386d6143150aedb3baf8b746ff8f65643276c47ee2c6adcce7f69",
       "avatar.svg": "0a608f57cb93033a36bce5bd2a7a45bc15bfc3dd26d58478fbf7134d981f818a"
     },
-    "repositorySourcePending": true
+    "repositorySourcePending": false,
+    "gitBlobHashes": {
+      "production/source/BM-006/storyboard-v1/render_storyboard.py": "70f1f286f41f580842ec3516de3a09f6a177035c",
+      "production/source/BM-006/storyboard-v1/raster_base.py": "cb501dec5b156e560608be4e46af282a8909e4f6",
+      "production/source/BM-006/storyboard-v1/make_gallery.py": "c5b425578d66ff6ad5c3a1e136ce5a09d352a84d",
+      "production/source/BM-006/storyboard-v1/script.json": "cc5fdbd69955f2e3d08a2fe0691bd1aff06e772f",
+      "production/source/BM-006/storyboard-v1/storyboard.json": "860b9d113f5e82649a4cb2f317df3e64bd3152fc",
+      "production/source/BM-006/storyboard-v1/README.md": "78055dba8e93b008c4ba3b3478ce739e07cd8e01",
+      "production/source/BM-006/storyboard-v1/avatar.svg": "70f6f62c122b2c98045f5f2a98f5081c0c9ea822"
+    }
   },
   "storyboard": {
     "gallery": {
@@ -62,7 +78,14 @@
       47,
       55
     ],
-    "approved": false
+    "approved": false,
+    "environment": {
+      "python": "3.13.5",
+      "opencv": "4.13.0",
+      "numpy": "2.3.5",
+      "pillow": "12.3.0",
+      "notes": "Storyboard environment only; production environment pending"
+    }
   },
   "scenes": [
     {
@@ -162,19 +185,20 @@
       "Local source ZIP integrity and safe archive paths passed",
       "Source members compared to local files",
       "Exact script matched storyboard metadata (122 words)",
-      "18 native 1080x1920 PNG dimensions verified"
+      "18 native 1080x1920 PNG dimensions verified",
+      "Seven original editable source files committed with exact Git blob hashes verified; avatar matched canonical repository asset"
     ],
     "rightsEvidence": [],
     "pending": [
       "owner storyboard approval",
       "audio generation and pronunciation QA",
       "fresh alignment and explicit cue maps",
-      "commit exact non-sensitive editable source",
       "real native 60fps render and full technical QA",
       "music license evidence",
       "phone/browser playback",
       "final render/thumbnail approval",
-      "repository full validation"
+      "repository full validation",
+      "Review storyboard's illustrative-pronunciation label, unused legacy helper functions, font availability and production-specific source before animated render"
     ]
   },
   "output": null
