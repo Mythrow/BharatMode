@@ -21,7 +21,7 @@ Updated: 2026-11-27 (IST) · Permanent IDs: 12 · **Never reassign or delete an 
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
-| **ID-009** | BM-006 | Chariot-1 launches domestically trained language and speech foundation models | 2026-11-25 | high | [Research](research/ID-009.md) | — | — |
+| **ID-009** | BM-006 | Chariot-1 launches domestically trained language and speech foundation models | 2026-11-25 | high | [Research](research/ID-009.md) | [Draft](../stories/chariot-one-indigenous-ai-models.json) | — |
 
 ## Uploaded (owner reported) (0)
 

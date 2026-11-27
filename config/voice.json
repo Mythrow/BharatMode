@@ -43,5 +43,8 @@
     "ownerAudioComparison": "similar and consistent",
     "asrWords": "22/22"
   },
-  "pronunciationStatus": "historical PARAM Rudra audition ASR caveat; verify pronunciation per story"
+  "pronunciationStatus": "Mandatory correct Indian pronunciation; story-specific listening and ASR QA required, historical PARAM audition caveat retained",
+  "requireIndianPronunciation": true,
+  "pronunciationPolicy": "Clear international English using the exact approved narrator identity; an Indian accent is not mandatory, but correct Indian pronunciation is mandatory for Indian names, places, institutions, languages, culturally specific words and terms. Verify story-specific pronunciations with authoritative or native-speaker evidence where available; listen separately from ASR and forced alignment. Keep pronunciation-only synthesis input changes separate from canonical approved script/captions, and regenerate audio hashes and actual alignment after any audio change. Do not change narrator identity to obtain an accent.",
+  "pronunciationPolicyApprovedOn": "2026-11-27"
 }

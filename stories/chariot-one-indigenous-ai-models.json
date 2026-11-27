@@ -1,0 +1,140 @@
+{
+  "story": {
+    "slug": "chariot-one-indigenous-ai-models",
+    "title": "India Is Building AI That Understands Its Languages",
+    "category": "technology",
+    "contentId": "ID-009",
+    "productionCode": "BM-006",
+    "scriptRevision": "V2-company-name",
+    "scriptApproved": true,
+    "storyboardRevision": "V1",
+    "storyboardApproved": false,
+    "sourceShort": "MeitY / PIB",
+    "sourceContext": "25 November showcase; official announcement 26 November; developer-reported results",
+    "sourceUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2341725&lang=1&reg=48",
+    "sourcePublished": "2026-11-26",
+    "eventDate": "2026-11-25",
+    "claimStage": "unveiled; reported evaluation, no independent model benchmark",
+    "hasVoice": false,
+    "timingStatus": "provisional",
+    "scenes": [
+      {
+        "kind": "hook",
+        "kicker": "TRAINED FROM SCRATCH IN INDIA",
+        "headline": "Chariot-1\nHomegrown AI",
+        "duration": 10,
+        "theme": "midnight",
+        "backgroundId": "silicon-network",
+        "visual": "silicon-network",
+        "narration": "Chariot Artificial Intelligence, an Indian AI company, has unveiled Chariot One, a family of language and speech models trained from scratch in India."
+      },
+      {
+        "kind": "metric",
+        "kicker": "MIXTURE OF EXPERTS",
+        "headline": "Selective\nactivation",
+        "duration": 9,
+        "theme": "ivory",
+        "backgroundId": "routing-grid",
+        "visual": "routing-grid",
+        "narration": "Its largest language model contains nearly eleven billion parameters, but selectively activates around four billion for each token it processes.",
+        "number": 10.7,
+        "metricLabel": "B total parameters"
+      },
+      {
+        "kind": "comparison",
+        "kicker": "INDICSHIFT",
+        "headline": "Many scripts.\nShared symbols.",
+        "duration": 11,
+        "theme": "saffron",
+        "backgroundId": "script-matrix",
+        "visual": "script-matrix",
+        "narration": "Its IndicShift technology represents characters from twelve Indian scripts using a shared alphabet, reportedly reducing the number of tokens needed by up to sixty percent.",
+        "leftLabel": "Normalized baseline",
+        "leftText": "100",
+        "rightLabel": "Reported best case",
+        "rightText": "40",
+        "note": "Normalized reported maximum reduction, not actual measured tokenization"
+      },
+      {
+        "kind": "metric",
+        "kicker": "NESTED TRAINING",
+        "headline": "Three models.\nOne training run.",
+        "duration": 8,
+        "theme": "ivory",
+        "backgroundId": "nested-contours",
+        "visual": "nested-contours",
+        "narration": "Another innovation, called Nested Training, allows three differently sized models to be developed through a single training run.",
+        "number": 3,
+        "metricLabel": "model sizes"
+      },
+      {
+        "kind": "uses",
+        "kicker": "MULTILINGUAL SPEECH",
+        "headline": "From text\nto natural speech.",
+        "duration": 9,
+        "theme": "midnight",
+        "backgroundId": "audio-spectrum",
+        "visual": "audio-spectrum",
+        "narration": "Chariot's speech model also supports English and at least ten Indian languages, interpreting numbers, abbreviations and measurements in context.",
+        "items": [
+          "English",
+          "At least ten Indian languages",
+          "Context-aware pronunciation"
+        ]
+      },
+      {
+        "kind": "close",
+        "kicker": "INDIAAI MISSION",
+        "headline": "AI for a\nmultilingual India.",
+        "duration": 8,
+        "theme": "ivory",
+        "backgroundId": "connected-services",
+        "visual": "connected-services",
+        "narration": "Supported by the IndiaAI Mission, Chariot is helping build AI technology designed around India's own linguistic diversity."
+      }
+    ],
+    "youtubeTitle": "India Is Building AI That Understands Its Languages",
+    "topic": "science",
+    "topicPill": "ARTIFICIAL INTELLIGENCE",
+    "playlist": "Technology & Innovation",
+    "visualTheme": "ivory",
+    "visualFamily": "explainer",
+    "hookType": "explainer",
+    "thumbnailStyle": "diagram",
+    "thumbnailText": "India's Homegrown AI",
+    "thumbnailStatus": "proposed metadata only; no thumbnail approved",
+    "narrativeAngle": "how-it-works",
+    "chapters": [
+      {
+        "id": "silicon-network",
+        "title": "Chariot-1 Homegrown AI",
+        "sceneStartIndex": 0
+      },
+      {
+        "id": "routing-grid",
+        "title": "Selective activation",
+        "sceneStartIndex": 1
+      },
+      {
+        "id": "script-matrix",
+        "title": "Many scripts. Shared symbols.",
+        "sceneStartIndex": 2
+      },
+      {
+        "id": "nested-contours",
+        "title": "Three models. One training run.",
+        "sceneStartIndex": 3
+      },
+      {
+        "id": "audio-spectrum",
+        "title": "From text to natural speech.",
+        "sceneStartIndex": 4
+      },
+      {
+        "id": "connected-services",
+        "title": "AI for a multilingual India.",
+        "sceneStartIndex": 5
+      }
+    ]
+  }
+}

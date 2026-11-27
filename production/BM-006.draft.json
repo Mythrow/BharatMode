@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "status": "storyboard_review_draft_not_release_eligible",
+  "ideaId": "ID-009",
+  "productionCode": "BM-006",
+  "storyPath": "stories/chariot-one-indigenous-ai-models.json",
+  "scriptRevision": "V2-company-name",
+  "source": {
+    "repositoryPaths": [
+      "stories/chariot-one-indigenous-ai-models.json"
+    ],
+    "privateBundle": {
+      "filename": "BM-006-storyboard-source.zip",
+      "libraryId": "libfile_a750919431d0819182acc9b41d884c59",
+      "sha256": "801c4fe8874bc12bf1dd0cc9db6db946a568a70bdb161e363a40ed43b75e7609"
+    },
+    "sourceFiles": {
+      "render_storyboard.py": "0a96eb4ca606c30e4c32489dd0b25e26648ee4d77bec658645119a6433e39540",
+      "raster_base.py": "1a6b48ec6273170790557958458e3c7951a81bde6f96328b8a5e45b09a7754ec",
+      "make_gallery.py": "e7c8f1a50e2386d6143150aedb3baf8b746ff8f65643276c47ee2c6adcce7f69",
+      "avatar.svg": "0a608f57cb93033a36bce5bd2a7a45bc15bfc3dd26d58478fbf7134d981f818a"
+    },
+    "repositorySourcePending": true
+  },
+  "storyboard": {
+    "gallery": {
+      "filename": "BM-006-storyboard-gallery.html",
+      "libraryId": "libfile_8fad5eec91e08191bd67dad8ea266488",
+      "sha256": "737ab297c807c7b4baca535b480ab842a68a9a77e97e1fcd83e38c6e88c143ca"
+    },
+    "contact": {
+      "filename": "BM-006-storyboard-contact.png",
+      "libraryId": "libfile_668b67d36e808191a30fa61ecf5b5912",
+      "sha256": "d1dc7610bd8ccf039f7f93bf68511bb6591e33a5f060b7999260a7f5da797f6b"
+    },
+    "sampleSeconds": [
+      2,
+      5,
+      9,
+      12,
+      15,
+      18,
+      21,
+      25,
+      29,
+      32,
+      35,
+      37,
+      40,
+      43,
+      46,
+      49,
+      52,
+      54
+    ],
+    "provisionalBounds": [
+      0,
+      10,
+      19,
+      30,
+      38,
+      47,
+      55
+    ],
+    "approved": false
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "theme": "midnight",
+      "backgroundId": "silicon-network",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 2,
+      "theme": "ivory",
+      "backgroundId": "routing-grid",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 3,
+      "theme": "saffron",
+      "backgroundId": "script-matrix",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 4,
+      "theme": "ivory",
+      "backgroundId": "nested-contours",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 5,
+      "theme": "midnight",
+      "backgroundId": "audio-spectrum",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 6,
+      "theme": "ivory",
+      "backgroundId": "connected-services",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    }
+  ],
+  "assets": [
+    {
+      "filename": "avatar.svg",
+      "sha256": "0a608f57cb93033a36bce5bd2a7a45bc15bfc3dd26d58478fbf7134d981f818a",
+      "provenance": "Existing approved owner avatar included in private source; compare with exact repository SVG before final render",
+      "rightsEvidence": "Owner-created approved brand artwork; no third-party logo used",
+      "bundleMember": "avatar.svg"
+    },
+    {
+      "filename": "render_storyboard.py",
+      "sha256": "0a96eb4ca606c30e4c32489dd0b25e26648ee4d77bec658645119a6433e39540",
+      "provenance": "Original source-coded conceptual diagrams, no actual Chariot device or test output",
+      "rightsEvidence": "Original project illustration; font license/provenance checks outstanding",
+      "bundleMember": "render_storyboard.py"
+    }
+  ],
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "frameCount": null,
+    "command": null,
+    "fonts": [
+      "Inter fallback",
+      "Noto Indic fallback"
+    ],
+    "toolVersions": {},
+    "musicResolveSeconds": 0.8,
+    "silentHoldSeconds": 1
+  },
+  "qa": {
+    "ownerApprovals": [
+      {
+        "gate": "story",
+        "date": "2026-11-27",
+        "evidence": "Owner explicitly approved story and storytelling direction"
+      },
+      {
+        "gate": "script",
+        "date": "2026-11-27",
+        "evidence": "Owner approved script with company-name correction"
+      }
+    ],
+    "technicalReport": null,
+    "storyboardChecks": [
+      "Local source ZIP integrity and safe archive paths passed",
+      "Source members compared to local files",
+      "Exact script matched storyboard metadata (122 words)",
+      "18 native 1080x1920 PNG dimensions verified"
+    ],
+    "rightsEvidence": [],
+    "pending": [
+      "owner storyboard approval",
+      "audio generation and pronunciation QA",
+      "fresh alignment and explicit cue maps",
+      "commit exact non-sensitive editable source",
+      "real native 60fps render and full technical QA",
+      "music license evidence",
+      "phone/browser playback",
+      "final render/thumbnail approval",
+      "repository full validation"
+    ]
+  },
+  "output": null
+}

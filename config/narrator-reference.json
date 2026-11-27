@@ -16,7 +16,7 @@
   },
   "sha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
   "ownerFinalApproval": true,
-  "pronunciationCheck": "Historical audition ASR caveat for PARAM; story-specific pronunciation checks remain mandatory.",
+  "pronunciationCheck": "Historical PARAM audition ASR caveat. Clear international English using the exact approved narrator identity; an Indian accent is not mandatory, but correct Indian pronunciation is mandatory for Indian names, places, institutions, languages, culturally specific words and terms. Verify story-specific pronunciations with authoritative or native-speaker evidence where available; listen separately from ASR and forced alignment. Keep pronunciation-only synthesis input changes separate from canonical approved script/captions, and regenerate audio hashes and actual alignment after any audio change. Do not change narrator identity to obtain an accent.",
   "privacy": "The reference WAV is deliberately not committed. Retrieve the original 7.6s audition privately from the user's ChatGPT Library/Work artifact; verify SHA before use.",
   "technicalStatus": "Private original WAV hash verified; Qwen Base new-line 8.8s speech validated (22/22 ASR words, 0.724 embedding cosine); owner approved audible consistency",
   "ownerApprovedOn": "2026-11-23",

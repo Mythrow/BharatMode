@@ -2,6 +2,8 @@
 
 For every new Short, create a versioned structured story brief under stories/ and a per-story production manifest under production/ using [the example](../production/manifest.example.json). Record permanent ID and production code, approved script revision, per-scene measured WAV/alignment, original/adjusted cue map, source-rendered storyboard, unique backgrounds and editable visual source, all assets/provenance/rights/hashes, native render config (tool versions, fonts, encoder flags, fps, resolution, frame counts and silent hold), output hashes, and gate evidence. Commit non-sensitive source/metadata only. Private-only sources containing media must be packaged privately with a checksum and recoverable reference; never include audio, licensed media or MP4 in public Git.
 
+Use `production/BM-###.draft.json` during story/storyboard/audio preparation to register real evidence and explicitly pending fields. The canonical `production/BM-###.json` is created only when all required final manifest evidence exists; never bypass or weaken the release validator. The draft is not release evidence.
+
 ## Recovery in a new chat
 
 1. Read latest registry and matching research/release records. Locate private source bundle/asset by Library ID or exact filename/path recorded in manifest. Use authorized Library/file lookup; do not assume a prior sandbox path exists.
