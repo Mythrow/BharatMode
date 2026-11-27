@@ -17,11 +17,9 @@ Updated: 2026-11-27 (IST) · Permanent IDs: 12 · **Never reassign or delete an 
 | **ID-004** | — | IIT Madras inaugurates sleep and autism research facilities | 2026-11-22 | medium | [Research](research/ID-004.md) | — | — |
 | **ID-012** | — | Hindustan Zinc and IIT Madras demonstrate zinc-air range extender in electric three-wheeler | 2026-11 | medium | [Research](research/ID-012.md) | — | — |
 
-## In Progress (1)
+## In Progress (0)
 
-| Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
-|---|---|---|---|---|---|---|---|
-| **ID-009** | BM-006 | Chariot-1 launches domestically trained language and speech foundation models | 2026-11-25 | high | [Research](research/ID-009.md) | [Draft](../stories/chariot-one-indigenous-ai-models.json) | — |
+_No content in this stage._
 
 ## Uploaded (owner reported) (0)
 
@@ -32,12 +30,13 @@ _No content in this stage._
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
 | **ID-006** | BM-005 | India approves ₹11,000 crore construction equipment manufacturing scheme | 2026-11-25 | high | [Research](research/ID-006.md) | — | Scheduled 2026-11-28 10:00 IST (owner reported; link pending) |
-| **ID-005** | BM-004 | GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix | 2026-11-24 | high | [Research](research/ID-005.md) | — | Scheduled 2026-11-27 (owner reported; time/link pending) |
+| **ID-009** | BM-006 | Chariot-1 launches domestically trained language and speech foundation models | 2026-11-25 | high | [Research](research/ID-009.md) | [Draft](../stories/chariot-one-indigenous-ai-models.json) | Scheduled 2026-11-29 10:00 IST (owner reported; link pending) |
 
-## Published (owner reported) (3)
+## Published (owner reported) (4)
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
+| **ID-005** | BM-004 | GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix | 2026-11-24 | high | [Research](research/ID-005.md) | — | Owner-confirmed published; reported 2026-11-27; URL/date pending |
 | **ID-003** | BM-003 | L&T expands Chennai AI infrastructure with new B300 order | 2026-11-23 | high | [Research](research/ID-003.md) | [Draft](../stories/lt-chennai-ai-cluster-order.json) | Owner-confirmed published; reported 2026-11-24; URL/date pending |
 | **ID-001** | BM-001 | PARAM Rudra: India’s supercomputing deployment | 2026-09 | high | [Research](research/ID-001.md) | [Draft](../stories/param-rudra.json) | Owner-confirmed published; reported 2026-11-25; URL/date pending |
 | **ID-002** | BM-002 | ICMR reaches 100 technology-transfer agreements | 2026-11-17 | medium | [Research](research/ID-002.md) | [Draft](../stories/icmr-tech-transfer.json) | Owner-confirmed published; reported 2026-11-26; URL/date pending |

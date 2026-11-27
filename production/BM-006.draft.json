@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "v9_factual_correction_exported_upload_draft_not_release_eligible",
+  "status": "v9_upload_and_schedule_owner_reported_manifest_incomplete",
   "ideaId": "ID-009",
   "productionCode": "BM-006",
   "storyPath": "stories/chariot-one-indigenous-ai-models.json",
@@ -309,5 +309,14 @@
       "Full repository validation and final production manifest",
       "Explicit upload/publication authorization"
     ]
+  },
+  "ownerReleaseReport": {
+    "reportedOn": "2026-11-27",
+    "uploadedAt": "2026-11-27",
+    "scheduledAt": "2026-11-29",
+    "scheduleTime": "10:00",
+    "scheduleTimezone": "Asia/Kolkata",
+    "evidence": "Owner: okay video uploaded and scheduled for 29th 10am",
+    "note": "Actual owner-reported schedule recorded. Separate exact-media, listening, rights, device and completed-manifest evidence remains unverified; no independent YouTube verification."
   }
 }

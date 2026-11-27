@@ -14,7 +14,7 @@
     "Audience": "No, it is not made for kids",
     "Altered or synthetic content disclosure": "Yes (conservative proposed setting)",
     "License": "Standard YouTube License",
-    "Visibility": "Scheduled for 27 November 2026 (owner reported; exact time not supplied)",
+    "Visibility": "Published — owner confirmed live on 27 November 2026; public URL and independently verified date pending",
     "Comments": "Enabled; Basic moderation",
     "Sources and factual caveats": "30 planned satellites, not launched; undisclosed contract value; ARKA 200 experiment does not establish contract variant. Image crops are representative Sentinel observations, not GalaxEye data. Source PDF figure-specific reuse rights not established; credit is not permission. Official company logo assets unavailable; text-only identifiers retained."
   },
@@ -69,14 +69,15 @@
     }
   ],
   "publication": {
-    "ownerConfirmedPublic": false,
+    "ownerConfirmedPublic": true,
     "youtubeUrl": null,
     "publishedAt": null,
     "uploadConfirmedByOwner": true,
     "scheduledAt": "2026-11-27",
     "uploadedAt": "2026-11-26",
     "scheduleTime": null,
-    "scheduledReportedOn": "2026-11-26"
+    "scheduledReportedOn": "2026-11-26",
+    "publicationReportedOn": "2026-11-27"
   },
   "productionCode": "BM-004"
 }

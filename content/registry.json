@@ -218,7 +218,7 @@
       "id": "ID-005",
       "slug": "galaxeye-bellatrix-30-satellite-propulsion",
       "title": "GalaxEye orders Indian-built propulsion for 30 satellites from Bellatrix",
-      "stage": "scheduled",
+      "stage": "published_owner_reported",
       "priority": "high",
       "category": "space",
       "storyKey": "galaxeye-bellatrix-30-drishti-gen2-propulsion-contract-2026-11-24",
@@ -233,7 +233,7 @@
       "eventDate": "2026-11-24",
       "sourceDate": "2026-11-24",
       "discoveredAt": "2026-11-25",
-      "updatedAt": "2026-11-26",
+      "updatedAt": "2026-11-27",
       "sourceUrls": [
         "https://in.linkedin.com/company/bellatrix-aerospace",
         "https://theprint.in/india/galaxeye-to-deploy-bellatrixs-indian-built-propulsion-systems-across-its-next-30-optosar-satellites/3107707/",
@@ -275,15 +275,22 @@
           "from": "in_progress",
           "to": "scheduled",
           "note": "Owner report recorded in publishing/BM-004-release-page.json; no inference of independent verification, creative approval or rights QA."
+        },
+        {
+          "at": "2026-11-27",
+          "from": "scheduled",
+          "to": "published_owner_reported",
+          "note": "Owner confirmed today's BM-004 video went live on 27 November 2026; actual public URL and independently verified publication date remain pending."
         }
       ],
       "productionSelectedAt": "2026-11-25",
       "scheduledAt": "2026-11-27",
       "uploadedAt": "2026-11-26",
       "uploadConfirmedByOwner": true,
-      "ownerConfirmedPublic": false,
+      "ownerConfirmedPublic": true,
       "scheduleTime": null,
-      "scheduledReportedOn": "2026-11-26"
+      "scheduledReportedOn": "2026-11-26",
+      "publicationReportedOn": "2026-11-27"
     },
     {
       "id": "ID-006",
@@ -466,7 +473,7 @@
         "https://thegenaimagazine.com/chariot-1-ai-indicshift-tokenizer-training-speech-guide",
         "https://www.business-standard.com/technology/artificial-intelligence/sarvam-hosting-china-ai-models-doesn-t-violate-india-ai-mission-meity-secy-126112501187_1.html"
       ],
-      "stage": "in_progress",
+      "stage": "scheduled",
       "storyKey": "chariot-one-indigenous-ai-models-2026-11-25",
       "discoveredAt": "2026-11-26",
       "updatedAt": "2026-11-27",
@@ -490,9 +497,21 @@
           "from": "idea",
           "to": "in_progress",
           "note": "Owner selected ID-009 for BM-006; Stage 01 detailed research for editorial approval."
+        },
+        {
+          "at": "2026-11-27",
+          "from": "in_progress",
+          "to": "scheduled",
+          "note": "Owner confirmed BM-006 uploaded on 27 November and scheduled for 29 November 2026 at 10:00 AM IST. Record actual owner-reported state without inferring separate media/rights QA or manifest completion."
         }
       ],
-      "productionSelectedAt": "2026-11-27"
+      "productionSelectedAt": "2026-11-27",
+      "uploadConfirmedByOwner": true,
+      "uploadedAt": "2026-11-27",
+      "scheduledAt": "2026-11-29",
+      "scheduledReportedOn": "2026-11-27",
+      "scheduleTime": "10:00",
+      "scheduleTimezone": "Asia/Kolkata"
     },
     {
       "id": "ID-010",
