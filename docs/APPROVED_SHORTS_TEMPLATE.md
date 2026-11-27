@@ -1,6 +1,6 @@
 # Approved Shorts visual system — current standard
 
-Owner approved V6 on 23 Nov and BM-003 Revision 5 open-canvas direction on 24 Nov. Later owner instructions through 26 Nov take precedence. This page is the current visual authority; [brand](BRAND.md) defines protected artwork/colors/fonts; [thumbnail/export](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines covers. All pre-V6 studies and old episode revisions remain historical, not current defaults.
+Owner approved V6 on 23 Nov and BM-003 Revision 5 open-canvas direction on 24 Nov. Later owner instructions through 27 Nov take precedence. This page is the current visual authority; [brand](BRAND.md) defines protected artwork/colors/fonts; [thumbnail/export](THUMBNAIL_AND_EXPORT_DIRECTION.md) defines covers. All pre-V6 studies and old episode revisions remain historical, not current defaults.
 
 ## Fixed chrome and captions
 
@@ -12,6 +12,8 @@ Owner approved V6 on 23 Nov and BM-003 Revision 5 open-canvas direction on 24 No
 - Use actual final acoustic times and cue map; no fixed template scene durations or synthetic word timing in production. Final complete branded composition, no unrelated end card or spoken tagline.
 
 ## Current owner-approved motion and visual refinements
+
+**MANDATORY — descriptive labels, graphic consistency and complete enumerations (owner feedback, BM-006, 27 November 2026):** Place descriptive text and component labels beside, above or below artwork, in dedicated clear space. Do not overlap or superimpose descriptive text on visual objects, connectors or other artwork unless it intentionally belongs within that graphic (for example a readable UI field or a labeled diagram surface) and remains fully legible throughout the animation. Check complete glyph bounds and graphic extents, including pins, shadows, strokes, connector paths and entrance offsets; inspect actual intermediate and settled decoded frames and fix collisions at source. Reuse coherent visual assets and preserve their proportions, detail and styling across scenes when they represent the same concept; resize proportionally rather than stretching a chip or other object. Distinct shapes are acceptable when a genuinely different role or verified design warrants them. If a scene explicitly represents a numbered set of scripts, languages or other items, verify the actual members against authoritative evidence and animate/show all of them legibly when requested; never confuse scripts with languages or invent missing members. Use a layout or sequential reveal that gives each item sufficient reading time and space, without crowding or connector/text overlap.
 
 **MANDATORY — immediate animated opening hero (owner feedback, BM-006, 27 November 2026):** Scene 1 must establish its core subject in the opening frame, without waiting for a spoken cue. Begin the primary graphic's directional entrance at t=0 with a visible initial state, smoothly increasing opacity and settling into position over about 0.48s. Do not simply display the finished static object, delay its entrance, or leave the main visual area empty. Headlines retain their immediate typewriter animation; secondary evidence, labels and later facts retain acoustic-cue timing. Record this opening exception in the adjusted cue map and check decoded opening frames at 0, 0.1, 0.2 and 0.5s.
 
