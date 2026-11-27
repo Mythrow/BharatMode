@@ -1,0 +1,1 @@
+V4 overlay on preview-v2 source: replace render_storyboard.py and preview.py with these revisions. Opening processor starts visible at 22% opacity and +48px Y offset, settles at t=0.48s. Other scenes and acoustic timing remain unchanged. Reuse the remaining V2 video segments and exact audio stream for review; do not treat this as final release approval.
