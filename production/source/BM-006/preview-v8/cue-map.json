@@ -1,0 +1,237 @@
+{
+  "original": [
+    {
+      "company": 0,
+      "processor": 9,
+      "suite": 14,
+      "node0": 14,
+      "node1": 14,
+      "node2": 14,
+      "node3": 14
+    },
+    {
+      "total": 6,
+      "total-label": 8,
+      "active": 13,
+      "active-label": 16,
+      "input": 16,
+      "input-t": 16,
+      "router": 10,
+      "router-label": 10,
+      "output": 17,
+      "expert0": 10,
+      "expert1": 10,
+      "expert2": 10,
+      "expert3": 10,
+      "expert4": 10,
+      "expert5": 10
+    },
+    {
+      "scripts": 6,
+      "shared": 11,
+      "shared-label": 11,
+      "comparison": 14,
+      "bar0": 18,
+      "bar1": 21,
+      "claim": 21,
+      "script0": 6,
+      "script1": 6,
+      "script2": 6,
+      "script3": 6,
+      "script-label0": 7,
+      "script-label1": 7,
+      "script-label2": 7,
+      "script-label3": 7
+    },
+    {
+      "training": 3,
+      "run": 3,
+      "three": 6,
+      "size0": 6,
+      "size1": 6,
+      "size2": 6,
+      "size-label0": 8,
+      "size-label1": 8,
+      "size-label2": 8
+    },
+    {
+      "langs": 5,
+      "text-surface": 13,
+      "written": 13,
+      "waveform": 13,
+      "spoken1": 13,
+      "spoken2": 14
+    },
+    {
+      "core": 5,
+      "core-label": 8,
+      "potential": 11,
+      "app0": 10,
+      "app1": 10,
+      "app2": 10,
+      "app-label0": 11,
+      "app-label1": 11,
+      "app-label2": 11
+    }
+  ],
+  "acoustic_seconds": [
+    {
+      "company": 0.422,
+      "processor": 4.741,
+      "suite": 6.468,
+      "node0": 6.468,
+      "node1": 6.568,
+      "node2": 6.668,
+      "node3": 6.768
+    },
+    {
+      "total": 2.633,
+      "total-label": 3.436,
+      "active": 6.049,
+      "active-label": 6.913,
+      "input": 6.913,
+      "input-t": 6.913,
+      "router": 4.542,
+      "router-label": 4.542,
+      "output": 7.154,
+      "expert0": 4.542,
+      "expert1": 4.6419999999999995,
+      "expert2": 4.742,
+      "expert3": 4.842,
+      "expert4": 4.942,
+      "expert5": 5.042
+    },
+    {
+      "scripts": 3.253,
+      "shared": 5.221,
+      "shared-label": 5.221,
+      "comparison": 7.069,
+      "bar0": 8.073,
+      "bar1": 9.016,
+      "claim": 9.016,
+      "script0": 3.253,
+      "script1": 3.353,
+      "script2": 3.4530000000000003,
+      "script3": 3.553,
+      "script-label0": 3.735,
+      "script-label1": 3.835,
+      "script-label2": 3.935,
+      "script-label3": 4.035
+    },
+    {
+      "training": 2.272,
+      "run": 2.272,
+      "three": 3.74,
+      "size0": 3.74,
+      "size1": 3.8400000000000003,
+      "size2": 3.9400000000000004,
+      "size-label0": 4.645,
+      "size-label1": 4.744999999999999,
+      "size-label2": 4.845
+    },
+    {
+      "langs": 2.753,
+      "text-surface": 5.827,
+      "written": 5.827,
+      "waveform": 5.827,
+      "spoken1": 5.827,
+      "spoken2": 6.37
+    },
+    {
+      "core": 3.155,
+      "core-label": 4.14,
+      "potential": 5.728,
+      "app0": 4.823,
+      "app1": 4.923,
+      "app2": 5.023000000000001,
+      "app-label0": 5.728,
+      "app-label1": 5.827999999999999,
+      "app-label2": 5.928
+    }
+  ],
+  "lead_seconds": 0.35,
+  "adjusted": [
+    {
+      "company": 0.07200000000000001,
+      "processor": 0.0,
+      "suite": 6.118,
+      "node0": 6.118,
+      "node1": 6.218,
+      "node2": 6.3180000000000005,
+      "node3": 6.418
+    },
+    {
+      "total": 2.283,
+      "total-label": 3.086,
+      "active": 5.699000000000001,
+      "active-label": 6.563000000000001,
+      "input": 6.563000000000001,
+      "input-t": 6.563000000000001,
+      "router": 4.192,
+      "router-label": 4.192,
+      "output": 6.804,
+      "expert0": 4.192,
+      "expert1": 4.292,
+      "expert2": 4.392,
+      "expert3": 4.492,
+      "expert4": 4.5920000000000005,
+      "expert5": 4.692
+    },
+    {
+      "scripts": 2.903,
+      "shared": 4.871,
+      "shared-label": 4.871,
+      "comparison": 6.719,
+      "bar0": 7.723000000000001,
+      "bar1": 8.666,
+      "claim": 8.666,
+      "script0": 2.903,
+      "script1": 3.003,
+      "script2": 3.103,
+      "script3": 3.203,
+      "script-label0": 3.385,
+      "script-label1": 3.485,
+      "script-label2": 3.585,
+      "script-label3": 3.685
+    },
+    {
+      "training": 1.9219999999999997,
+      "run": 1.9219999999999997,
+      "three": 3.39,
+      "size0": 3.39,
+      "size1": 3.49,
+      "size2": 3.5900000000000003,
+      "size-label0": 4.295,
+      "size-label1": 4.395,
+      "size-label2": 4.495
+    },
+    {
+      "langs": 2.403,
+      "text-surface": 5.477,
+      "written": 5.477,
+      "waveform": 5.477,
+      "spoken1": 5.477,
+      "spoken2": 6.0200000000000005
+    },
+    {
+      "core": 2.8049999999999997,
+      "core-label": 3.7899999999999996,
+      "potential": 5.378,
+      "app0": 4.473000000000001,
+      "app1": 4.573,
+      "app2": 4.673000000000001,
+      "app-label0": 5.378,
+      "app-label1": 5.478,
+      "app-label2": 5.578
+    }
+  ],
+  "opening_override": {
+    "scene": 1,
+    "element": "processor",
+    "start_seconds": 0.0,
+    "duration_seconds": 0.48,
+    "initial_opacity": 0.22,
+    "initial_y_offset_px": 48,
+    "easing": "cubic ease-out"
+  }
+}
