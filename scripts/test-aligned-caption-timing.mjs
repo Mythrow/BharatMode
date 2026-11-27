@@ -24,6 +24,7 @@ assert.deepEqual(visibleAlignedCaption(groups,.12).visibleWords.map(w=>w.text),[
 assert.equal(visibleAlignedCaption(groups,1.28).visibleWords.at(-1).isActive,true);
 assert.equal(visibleAlignedCaption(groups,1.8).visibleWords.length,1);
 assert.equal(visibleAlignedCaption(groups,3.7),null,'old group must disappear');
+assert.equal(visibleAlignedCaption(groups,1.5).visibleWords.at(-1).isActive,false,'no active word in speech gap');
 const long={...alignment,qa:{...alignment.qa,alignedWords:5},words:[
   {text:'Amazingly',start:.1,end:.3},{text:'complex',start:.31,end:.6},
   {text:'computer',start:.7,end:1.1},{text:'systems',start:1.11,end:1.6},
@@ -41,7 +42,7 @@ import {CAPTION_RADIUS,captionSurfaceStyle,captionInkStyle} from '../src/caption
 assert.equal(CAPTION_RADIUS,24);
 for(const theme of ['ivory','midnight','saffron']){
  const surface=captionSurfaceStyle(theme);
- assert.equal(surface.borderRadius,24);assert.equal(surface.boxShadow,'none');assert.equal(surface.backdropFilter,'none');assert.match(surface.background,/^rgba\(11,16,24,\.(10|30|18)\)$/);
+ assert.equal(surface.borderRadius,24);assert.equal(surface.boxShadow,'none');assert.equal(surface.backdropFilter,'none');assert.match(surface.background,/^rgba\(11,16,24,\.(10|30|72)\)$/);
 }
 assert.equal(captionInkStyle.textShadow,'none');
 console.log('PASS: post-launch caption style invariants');

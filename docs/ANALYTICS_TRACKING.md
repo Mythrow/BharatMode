@@ -12,3 +12,7 @@ First baseline: [26 November 2026](../analytics/snapshots/2026-11-26.json). Sour
 ## First observations (provisional)
 
 L&T leads reach (227 views, 63 engaged) and has two shares; PARAM has higher stayed-to-watch (76.2%, only 29 total views), and one attributed subscriber; ICMR has 75s displayed average viewing time on a 58.08s video, based on five engaged views only. Search contributes 44.1%, 51.7%, and 43.8% respectively. All have insufficient retention graph data. These are distinct-age snapshots, not fair first-day rankings. No evidence yet to justify a topic or theme change. Next: collect the same metrics for BM-004 after approximately 24 hours, refresh early videos at seven days, and capture retention curves once available.
+
+## Comparable-window records
+
+Use [analytics/windows](../analytics/windows/README.md) and the [template](../analytics/window-template.json); `npm run check` validates window identity, time boundaries, source and missing metrics. As of the audit there are no verified exact first-24h/168h exports. Retain the unequal-age baseline separately; do not convert it into a first-window record.

@@ -4,8 +4,7 @@
  * Use this with story-specific motion and evidence as children, plus a caption
  * component built from timestamps of the actual narration recording.
  * Never replace the official badge/avatar SVG with a generated approximation.
- * The current BharatShort production pipeline is legacy and has not yet been
- * migrated to full word-aligned captions and V6 scene transitions.
+ * BharatShort production composition consumes validated actual alignment and story-specific layers.
  */
 import React from 'react';
 import {AbsoluteFill} from 'remotion';

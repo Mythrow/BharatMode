@@ -1,5 +1,5 @@
 {
-  "status": "narrator_approved_full_story_production_pending",
+  "status": "approved_narrator_in_production_story_specific_QA_required",
   "approvedOn": "2026-11-23",
   "engine": "qwen3-tts",
   "engineExecution": "self-hosted_unmetered_model_inference",
@@ -18,8 +18,8 @@
   "requiresPerGenerationCredits": false,
   "requiresAvailableCompute": true,
   "remoteComputeAvailability": "one_off_Work_Mode_CPU_VoiceDesign_and_Base_verified_recurring_access_pending",
-  "synthesizerStatus": "Base_audition_executed_and_owner_approved_full_story_integration_pending",
-  "wordAlignmentStatus": "alignment_code_implemented_actual_acoustic_inference_pending",
+  "synthesizerStatus": "Base used in recorded episode production; recurring compute and each story QA required",
+  "wordAlignmentStatus": "actual acoustic alignment used in recorded episodes; require fresh hash-verified alignment per story",
   "publicationRightsStatus": "model_license_verified_check_all_dependencies_and_publication_rights",
   "previousPreferences": {
     "brian": "liked professional delivery; vidIQ credit usage rejected for production",
@@ -28,7 +28,7 @@
   "referenceManifest": "config/narrator-reference.json",
   "referenceAudioSha256": "0e7f4d17e9d16f3ddb5ded7dbde68a6b774af19cb04a479debedb8811355f94c",
   "referenceAuditionDurationSeconds": 7.6,
-  "publicationVoiceReview": "narrator_identity_approved_story_specific_pronunciation_ASR_mix_QA_pending",
+  "publicationVoiceReview": "per_story_QA_required_not_global_publication_approval",
   "ownerNarratorApproval": {
     "status": "approved",
     "date": "2026-11-23",
@@ -43,5 +43,5 @@
     "ownerAudioComparison": "similar and consistent",
     "asrWords": "22/22"
   },
-  "pronunciationStatus": "PARAM_Rudra_manual_review_required_ASR_transcribed_Parum"
+  "pronunciationStatus": "historical PARAM Rudra audition ASR caveat; verify pronunciation per story"
 }

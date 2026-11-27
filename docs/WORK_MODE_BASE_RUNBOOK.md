@@ -1,5 +1,7 @@
 # Work Mode: Qwen3-TTS Base narrator-consistency test
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 **Stage:** successful Work Mode Base audition; owner-approved consistent narrator. Last updated: 23 November 2026. Kept for reproduction; next active milestone is full-story narration and acoustic alignment.
 
 ## Goal

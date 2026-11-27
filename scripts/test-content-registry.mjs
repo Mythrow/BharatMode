@@ -15,7 +15,12 @@ function fixture(){
                   'publishing/queue.json','stories/param-rudra.json','stories/icmr-tech-transfer.json','stories/lt-chennai-ai-cluster-order.json']){
     const out=path.join(d,p);fs.mkdirSync(path.dirname(out),{recursive:true});fs.copyFileSync(path.join(SOURCE,p),out);
   }
-  return d;
+  const f=path.join(d,'content/registry.json'),r=JSON.parse(fs.readFileSync(f,'utf8'));
+  r.items=r.items.slice(0,4);r.nextSequence=5;
+  for(const x of r.items){for(const k of ['ownerConfirmedPublic','publicationReportedOn','releaseStatus','scheduledAt','scheduleTime','scheduleTimezone','scheduledReportedOn','uploadedAt','uploadConfirmedByOwner','publicationVerification'])delete x[k];x.stageHistory=x.stageHistory.filter(h=>['idea','in_progress'].includes(h.to));x.stage=x.stageHistory.at(-1).to;}
+  const icmr=r.items[1];icmr.stage='idea';icmr.productionCode=null;icmr.stageHistory=icmr.stageHistory.slice(0,1);delete icmr.productionSelectedAt;
+  fs.writeFileSync(f,JSON.stringify(r));fs.writeFileSync(path.join(d,'publishing/queue.json'),JSON.stringify({slugs:[]}));
+  good(run(d,'sync'));return d;
 }
 function run(d,...args){return spawnSync(process.execPath,['scripts/content-registry.mjs',...args],{cwd:d,encoding:'utf8'});}
 function test(name,fn){
@@ -28,7 +33,7 @@ const add=(d,...extra)=>run(d,'add','--title','L&T new Chennai GPU order','--slu
   '--primary-source','https://example.org/release-unique-2027','--event-date','2027-01-03','--source-date','2027-01-03',...extra);
 
 test('baseline has four permanent content identities, exact log and stage counts',d=>{
-  const r=run(d,'check');good(r);assert.match(r.stdout,/4 IDs \| idea 2 \| in_progress 2 \| published 0/);
+  const r=run(d,'check');good(r);assert.match(r.stdout,/4 IDs \| idea 2 \| in_progress 2 \| uploaded 0 \| scheduled 0 \| published_owner_reported 0 \| published 0/);
 });
 test('list and search span both Idea and In Progress',d=>{
   const r=run(d,'find','Vyoma');good(r);assert.match(r.stdout,/ID-003/);
@@ -72,7 +77,7 @@ test('publishing requires owner sign-off, video URL, date and a reason',d=>{
   bad(run(d,'move','ID-003','published','--note','Published','--published-at','2026-11-23',
     '--youtube-url','https://example.com/short','--approved-by-owner'),/YouTube/);
   good(run(d,'move','ID-003','published','--note','Final upload and editorial rights QA approved',
-    '--published-at','2026-11-23','--youtube-url','https://www.youtube.com/shorts/abcdefghijk','--approved-by-owner'));
+    '--published-at','2026-11-23','--youtube-url','https://www.youtube.com/shorts/abcdefghijk','--approved-by-owner','--verification-evidence','Synthetic fixture observation','--verified-on','2026-11-23'));
   good(run(d,'check'));
   const x=JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'),'utf8'));
   assert.equal(x.items[2].stage,'published');assert.equal(x.items[2].youtubeUrl,'https://www.youtube.com/shorts/abcdefghijk');
@@ -96,5 +101,14 @@ test('reject tampered ID or stage history',d=>{
   const f=path.join(d,'content/registry.json'),r=JSON.parse(fs.readFileSync(f,'utf8'));
   r.items[0].stage='published';fs.writeFileSync(f,JSON.stringify(r));
   bad(run(d,'check'),/stage differs from stageHistory|publishedAt/);
+});
+test('owner reports are separate from verified publication; queued release removed',d=>{
+  const q=path.join(d,'publishing/queue.json');fs.writeFileSync(q,JSON.stringify({slugs:['lt-chennai-ai-cluster-order']}));
+  good(run(d,'move','ID-003','scheduled','--note','Owner scheduled','--reported-on','2026-11-24','--uploaded-at','2026-11-24','--scheduled-at','2026-11-25'));
+  good(run(d,'check'));assert.deepEqual(JSON.parse(fs.readFileSync(q)).slugs,[]);
+  good(run(d,'move','ID-003','published_owner_reported','--note','Owner reports public','--reported-on','2026-11-25'));
+  const x=JSON.parse(fs.readFileSync(path.join(d,'content/registry.json'))).items[2];assert.equal(x.youtubeUrl,null);assert.equal(x.publishedAt,null);assert.equal(x.stage,'published_owner_reported');
+  bad(run(d,'move','ID-003','published','--note','No evidence','--published-at','2026-11-25','--youtube-url','https://www.youtube.com/shorts/abcdefghijk','--approved-by-owner'),/verification evidence/);
+  good(run(d,'check'));
 });
 console.log(`Content registry tests passed: ${passed}`);

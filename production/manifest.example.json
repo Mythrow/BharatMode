@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "exampleOnly": true,
+  "ideaId": "ID-XXX",
+  "productionCode": "BM-XXX",
+  "storyPath": "stories/example.json",
+  "scriptRevision": null,
+  "source": {
+    "repositoryPaths": [],
+    "privateBundle": {
+      "libraryId": null,
+      "filename": null,
+      "sha256": null
+    }
+  },
+  "scenes": [
+    {
+      "narration": {
+        "filename": null,
+        "libraryId": null,
+        "sha256": null
+      },
+      "alignment": {
+        "filename": null,
+        "libraryId": null,
+        "sha256": null
+      },
+      "cueMap": {
+        "filename": null,
+        "libraryId": null,
+        "sha256": null
+      }
+    }
+  ],
+  "assets": [
+    {
+      "filename": null,
+      "libraryId": null,
+      "sha256": null,
+      "provenance": null,
+      "rightsEvidence": null
+    }
+  ],
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "toolVersions": {},
+    "fonts": [],
+    "command": null,
+    "frameCount": null,
+    "musicResolveSeconds": 0.8,
+    "silentHoldSeconds": 1
+  },
+  "qa": {
+    "technicalReport": {
+      "filename": null,
+      "libraryId": null,
+      "sha256": null
+    },
+    "ownerApprovals": [],
+    "rightsEvidence": []
+  },
+  "output": {
+    "filename": null,
+    "libraryId": null,
+    "sha256": null
+  }
+}

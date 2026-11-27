@@ -5,7 +5,7 @@
  */
 export const SHORTS_WIDTH=1080;
 export const SHORTS_HEIGHT=1920;
-export const SHORTS_FPS=30;
+export const SHORTS_FPS=60;
 /** Symmetric chapter-bar inset: (1080-2*84)=912px total width; x-center 540px. */
 export const APPROVED_PROGRESS_GUTTER=84;
 export const APPROVED_PROGRESS_BOTTOM=186;

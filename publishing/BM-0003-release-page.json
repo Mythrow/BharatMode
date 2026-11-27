@@ -13,7 +13,7 @@
     "Audience": "No, it is not made for kids",
     "Altered or synthetic content disclosure": "Yes",
     "License": "Standard YouTube License",
-    "Visibility": "Private (initial checks; owner authorization required)",
+    "Visibility": "Published — owner reported 2026-11-24; actual URL/date pending",
     "Comments": "Enabled; Basic moderation",
     "Sources and factual caveats": "# BM-0003 — Sources and caveats\n\n- [23 November 2026 L&T announcement](https://www.larsentoubro.com/pressreleases/2026/2026-11-23-larsen-toubro-secures-large-order-for-deploying-ai-cluster)\n- [NSE-hosted company filing](https://nsearchives.nseindia.com/corporate/PAM_23112026093338_PressRelease23112026.pdf)\n- [13 August 2026 AI Factory announcement](https://www.larsentoubro.com/pressreleases/2026/2026-08-13-larsen-toubro-secures-mega-order-as-part-of-a-strategic-partnership-with-together-ai-to-build-india-s-largest-nvidia-b300-ai-factory)\n- [Natural Earth terms](https://www.naturalearthdata.com/about/terms-of-use/)\n- [Project research and claim ledger](https://github.com/Mythrow/BharatMode/blob/main/content/research/BM-0003.md)\n- [Map and logo provenance](https://github.com/Mythrow/BharatMode/blob/main/docs/MAP_DIRECTION.md)\n\nThe order is a company-defined value range, not an exact contract amount. 10,000 GPUs is the earlier announced plan, not a running count. The November customer is unnamed. Schematics are illustrative. Preserve music-license evidence privately; do not treat attribution as rights clearance."
   },
@@ -60,6 +60,22 @@
     "reportedOn": "2026-11-24",
     "youtubeUrl": null,
     "publishedAt": null,
-    "registryPromotionPending": "Actual YouTube URL and exact publication date required; no further upload."
+    "registryPromotionPending": "Independent verification, real YouTube URL and publication date pending; no further upload."
+  },
+  "ideaId": "ID-003",
+  "productionCode": "BM-003",
+  "media": {
+    "video": {
+      "filename": "BM-0003-lt-chennai-ai-cluster-order.mp4",
+      "libraryId": "libfile_f757a41b695c819193c94c5889d51b11",
+      "sha256": "77367478e2a761661ece4068e400a589a4b2e75739dec2497eb60185e2fee634",
+      "ownerApproved": true
+    },
+    "thumbnail": {
+      "filename": "BM-0003-lt-chennai-ai-cluster-order-thumbnail.png",
+      "libraryId": "libfile_21430dbe1a30819183ea6980fa04d587",
+      "sha256": "a4a29a25bdd230b2bfc1fded35fb66a8e3c83933777f764ca476747037dec937",
+      "ownerApproved": true
+    }
   }
 }

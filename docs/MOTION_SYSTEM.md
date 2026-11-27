@@ -1,5 +1,7 @@
 # Bharat Mode — Shorts Motion System v1
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 **Status: V1 HISTORICAL DRAFT (superseded).** The currently **approved visual/motion baseline** is [APPROVED_SHORTS_TEMPLATE.md](APPROVED_SHORTS_TEMPLATE.md). This file retains the design exploration history and should not override final V6 decisions. Our logo, channel color identity and video font pairing are already approved.
 
 ## First principle: chapters follow the story

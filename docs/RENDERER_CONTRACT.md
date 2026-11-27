@@ -1,0 +1,15 @@
+# Reusable production renderer (engineering candidate)
+
+`BharatShort` is the native 60fps production composition; `BharatShortLegacy`, `BharatThumbnailLegacy` and V1–V6 preview compositions are historical. Do not use legacy samples for releases. Main production conversation creates per-story source art. Work supplies audio/WhisperX only.
+
+The production contract expects the committed `story` object plus private `production` props: schemaVersion 1, dimensions 1080×1920, fps 60, productionCode, approved scriptRevision, MUSIC-06 SHA, mixPreset B, explicit musicResolveSeconds, master {path,sha256,frameCount}, assets {path,sha256,provenance,rights}, and one scene record for each approved spoken scene. Each scene has wavPath, exact measured WhisperX alignment, theme, backgroundId, independent background/artwork arrays and cues {id,wordIndex,originalSec,adjustedSec}. Artwork layer IDs unique; each layer references a cue. Native SVG geometry includes path, bar, line, counter, text, image, circle, rect and analytic orbit; each has [x,y,w,h] bounds, explicit colors, optional duration and continuous motion {dx,dy,period}. Images must be registered assets. Author appropriate scene-specific art, not stock cards. Explicit saffron exception if needed. See test fixture for schema shape only, never production evidence.
+
+Main conversation creates pre-mixed approved music/narrator master with actual WAVs padded to exact frame boundaries, natural music resolution and one second of zero PCM tail. Put authorized recovered private inputs in ignored public/production-private/; do not commit them or private props. Preserve original and adjusted cues once. Verify asset rights separately; textual records are not proof of permission. The master and scene WAV hashes/durations are checked at render. The CLI refuses already released or scheduled stories and existing output paths.
+
+```sh
+npm run render:production -- private/BM-XXX-props.json out/BM-XXX-slug.mp4
+```
+
+The renderer composes the approved shared frame, captions with measured word timestamps, themed story-specific layer motion, eased typewriter/anticipatory cues, quiet dissolve, exact scene audio frame offsets and final hold. It does not yet replace custom story-specific illustration engineering, music-mix authoring, thumbnail generation, or decoded-frame/phone QA. Unit tests are not native render validation. No prior episode may be rendered again. Before certification: run real active story, verify exact decoded timing/frame count, continuous motion/collision/font contrast, music/audio quality, phone playback and owner review. Current generic thumbnail is explicitly legacy.
+
+The actual approved MUSIC-06 source must be in the asset manifest at `production.musicPath` with the canonical digest, not merely a claimed hash. The preflight checks the file bytes. Mix construction and listening QA remain production responsibilities.

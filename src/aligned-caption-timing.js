@@ -58,7 +58,7 @@ export function visibleAlignedCaption(groups, second) {
   if (index < 0) return null;
   const group = groups[index];
   const seen = group.words.filter(w => second >= w.start);
-  const active = seen.length ? group.words.indexOf(seen[seen.length-1]) : -1;
+  const active = group.words.findLastIndex(w=>second>=w.start&&second<w.end);
   return {...group, visibleWords:seen.map(w=>({...w,isActive:group.words.indexOf(w)===active,
     ageSeconds:Math.max(0,second-w.start)}))};
 }

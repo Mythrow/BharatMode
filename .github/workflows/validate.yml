@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   pull_request:
+permissions:
+  contents: read
 jobs:
   stories:
     runs-on: ubuntu-latest
@@ -11,11 +13,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - run: node scripts/content-registry.mjs check
       - run: node scripts/test-content-registry.mjs
       - run: node scripts/validate-stories.mjs
       - run: node scripts/test-natural-earth.mjs
-      - run: python3 -m unittest discover -s scripts -p test_bm0003_production.py
+      - run: python3 -m unittest discover -s scripts -p 'test_*.py'
       - run: node scripts/check-brand.mjs
 
       - run: node scripts/check-logo-assets.mjs
@@ -27,3 +32,11 @@ jobs:
       - run: node scripts/test-motion-v6-timing.mjs
       - run: node scripts/test-approved-template.mjs
       - run: node scripts/check-channel-cover.mjs
+
+      - run: node scripts/test-aligned-caption-timing.mjs
+      - run: node scripts/test-production-contract.mjs
+      - run: node scripts/check-release-records.mjs
+      - run: node scripts/check-production-manifests.mjs
+      - run: node scripts/check-analytics.mjs
+      - run: node scripts/check-variety.mjs
+      - run: node scripts/check-private-assets.mjs

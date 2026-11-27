@@ -1,5 +1,7 @@
 # Motion V6 — Premium dissolve, restored chapter bar
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 > **Caption position refinement — owner instruction, 25 November 2026:** Lower the centered word-caption layer by 64px, matching the earlier progress-bar shift. Native 1080×1920: canonical caption outer top y1469 (previously 1405), height 175, centered x540, 140px side margins; BM-002 native compositor uses compact 112px backing at y1501 (previously 1437), baseline y1578 (previously 1514). Retain 24px radius, single-line phrase width, current-word pop/highlight, no shadows/blur and real acoustic timing. Progress stays at y1721. Check actual phone/Shorts overlays before publication. This supersedes the previous instruction to leave captions unmoved; do not reopen published episodes.
 
 

@@ -1,5 +1,7 @@
 # Work Mode production handoff — BM-0003 (L&T Chennai AI infrastructure)
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 **UPDATED OWNER INSTRUCTION:** this document is now strictly an **AUDIO-ONLY WORK MODE HANDOFF**. The earlier Work video-rendering of BM-0003 was not authorized by the user's workflow. Work must NEVER render, modify, compose, encode, export or upload MP4/video, images, Remotion/V6 frames or graphics. Work is allowed to generate verified Qwen WAV narration, true word-timing JSON and offline transcription/integrity reports **only**. See [Production Responsibilities](PRODUCTION_RESPONSIBILITIES.md). All video assembly happens in the main ChatGPT conversation.
 
 **Past checkpoint:** 23 November 2026. Work previously rendered the original private V6 video, but the user judged it text-heavy. Main chat subsequently generated a CGI-animated revision without changing the audio. Future Work jobs must not create videos.

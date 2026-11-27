@@ -14,7 +14,7 @@
     "Audience": "No, it is not made for kids",
     "Altered or synthetic content disclosure": "Yes",
     "License": "Standard YouTube License",
-    "Visibility": "Private (initial checks; owner authorization required)",
+    "Visibility": "Published — owner reported 2026-11-25; actual URL/date pending",
     "Comments": "Enabled; Basic moderation",
     "Sources and factual caveats": "Government-reported September 2026 snapshot. 6,000 deployed and 1,500 manufacturing were already reported in December 2025; do not frame as a new deployment. 39→68 PF, 40 systems and +74% are NSM-wide, not a single PARAM Rudra machine. Imported processors remain; no full semiconductor self-reliance claim. Original schematic graphics. Preserve music generation rights evidence privately. Research: https://github.com/Mythrow/BharatMode/blob/main/content/research/ID-001.md"
   },
@@ -76,6 +76,7 @@
     "youtubeUrl": null,
     "publishedAt": null,
     "reportedOn": "2026-11-25",
-    "registryPromotionPending": "Actual YouTube URL and exact publication date required; no further upload."
-  }
+    "registryPromotionPending": "Independent verification, real YouTube URL and publication date pending; no further upload."
+  },
+  "productionCode": "BM-001"
 }

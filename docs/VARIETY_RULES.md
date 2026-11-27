@@ -1,5 +1,7 @@
 # Bharat Mode — Variety and originality rules
 
+> **Audit precedence (27 Nov 2026):** Historical reference and implementation evidence; use current APPROVED_SHORTS_TEMPLATE.md, PRODUCTION.md and configuration for all new production. Dated pending/completed statements are not current status. See [current status](PROJECT_STATUS.md) and [archive](archive/README.md).
+
 > **Owner clarification — 26 November 2026:** Mixed-theme proportions are flexible editorial targets, not quotas. Do not force a saffron background where the subject or contrast is better served by charcoal or ivory. BM-005 uses charcoal for its machinery opening at owner direction; reserve the full saffron feature for a suitable beat in the next video if appropriate. Saffron accents remain part of the brand.
 
 

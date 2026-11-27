@@ -11,7 +11,7 @@ import {
 } from '../src/approved-layout.js';
 assert.equal(SHORTS_WIDTH,1080);
 assert.equal(SHORTS_HEIGHT,1920);
-assert.equal(SHORTS_FPS,30);
+assert.equal(SHORTS_FPS,60);
 assert.equal(APPROVED_PROGRESS_GUTTER,84);
 const bounds=approvedProgressBounds();
 assert.deepEqual(bounds,{left:84,right:84,width:912,center:540});
@@ -34,5 +34,7 @@ assert.match(shared,/left=\{APPROVED_PROGRESS_GUTTER\}/);
 assert.match(shared,/right=\{APPROVED_PROGRESS_GUTTER\}/);
 const legacy=readFileSync('src/short.jsx','utf8');
 assert.match(legacy,/left=\{84\}\s*right=\{84\}/);
+const production=readFileSync('src/production-short.jsx','utf8');
+assert.match(production,/ApprovedShortsFrame/);assert.match(production,/AlignedNarrationCaptions/);
 console.log('APPROVED: 1080x1920 template, centered 84px / 84px chapter progress, total 912px.');
 console.log('Visual approval does not certify voice alignment or production render.');
