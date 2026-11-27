@@ -2,10 +2,10 @@
   "id": "BM-006",
   "ideaId": "ID-009",
   "productionCode": "BM-006",
-  "name": "India Is Building AI That Understands Its Languages",
+  "name": "Indian AI Firm Unveils Chariot-1",
   "releaseReadiness": "corrected_v9_upload_draft_pending_remaining_QA",
   "fields": {
-    "YouTube title": "India Is Building AI That Understands Its Languages",
+    "YouTube title": "Indian AI Firm Unveils Chariot-1",
     "YouTube description (includes hashtags)": "Chariot Artificial Intelligence has unveiled Chariot-1, a family of language and speech models trained from scratch in India.\n\nIts largest language model has 10.7 billion parameters, with around 4 billion active per token. The company’s IndicShift technique aims to make Indian-language text processing more efficient, with a reported reduction in token counts of up to 60% in its launch evaluation. The official launch announcement reports coverage of 12 Indian scripts; the released tokenizer documentation names ten scripts that share letter symbols. Nested Training develops three model sizes through a single training run.\n\nSupported by the IndiaAI Mission, the suite also includes multilingual speech technology supporting English and at least ten Indian languages. The reported token reduction is a best-case evaluation result, not a universal improvement or an independent benchmark.\n\nSources:\nMeitY / PIB — 26 November 2026:\nhttps://www.pib.gov.in/PressReleasePage.aspx?PRID=2341725&lang=1&reg=48\n\nChariot-1:\nhttps://chariot.in/chariot-one/\n\nIndicShift tokenizer documentation:\nhttps://github.com/Chariot-AI/indic-shift\n\n#BharatMode #IndianAI #IndiaAI #ArtificialIntelligence #Chariot1 #Shorts",
     "Hashtags": "#BharatMode #IndianAI #IndiaAI #ArtificialIntelligence #Chariot1 #Shorts",
     "Tags": "Bharat Mode, India, Chariot-1, Chariot Artificial Intelligence, IndiaAI Mission, Indian AI, homegrown AI, foundation models, large language model, IndicShift, Indian languages, multilingual AI, mixture of experts, nested training, text to speech, Indian technology, AI innovation",
