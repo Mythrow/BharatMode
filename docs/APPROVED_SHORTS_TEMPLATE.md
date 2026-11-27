@@ -13,6 +13,9 @@ Owner approved V6 on 23 Nov and BM-003 Revision 5 open-canvas direction on 24 No
 
 ## Current owner-approved motion and visual refinements
 
+**MANDATORY — immediate animated opening hero (owner feedback, BM-006, 27 November 2026):** Scene 1 must establish its core subject in the opening frame, without waiting for a spoken cue. Begin the primary graphic's directional entrance at t=0 with a visible initial state, smoothly increasing opacity and settling into position over about 0.48s. Do not simply display the finished static object, delay its entrance, or leave the main visual area empty. Headlines retain their immediate typewriter animation; secondary evidence, labels and later facts retain acoustic-cue timing. Record this opening exception in the adjusted cue map and check decoded opening frames at 0, 0.1, 0.2 and 0.5s.
+
+
 **MANDATORY — viewer-facing text only and graphic clearance (owner feedback, 27 November 2026, BM-006):** Do not render source references, research notes, QA annotations, internal helper labels, placeholder labels, or meta text such as “Illustrative pronunciation” in story frames, captions, or final video. Keep such information exclusively in private review/QA records and source metadata; retain genuine editorial qualifiers (e.g. “reported”, “potential applications”) when needed for factual accuracy. This applies to every storyboard and animated production, not just the offending scene. Inspect all actual frame states, including partial typewriter text, and use source-level validation of visible labels. Reserve clearance below complete illustrations including pins, shadows, strokes and animated offsets; ensure model-size labels, central diagram labels and lower application labels never crowd their associated graphics. Verify settled and transitional frames before presenting a revision.
 
 
