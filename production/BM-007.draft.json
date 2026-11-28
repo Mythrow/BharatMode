@@ -928,5 +928,12 @@
     "decodedContactLibraryId": "libfile_6c48703da840819196461894b0eff10c",
     "approved": false,
     "sourcePath": "production/source/BM-007/music-preview-v5/"
+  },
+  "audioHandoff": {
+    "path": "production/BM-007-audio-handoff.md",
+    "status": "prepared_owner_requested",
+    "scriptRevision": "V2-full-load-plain-language",
+    "musicPreviewApproval": "not_explicitly_confirmed",
+    "date": "2026-11-28"
   }
 }
