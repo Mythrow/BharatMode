@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "storyboard_v5_map_callout_review_pending_owner",
+  "status": "music_preview_v5_review_pending_owner",
   "ideaId": "ID-013",
   "productionCode": "BM-007",
   "storyPath": "stories/vindhyagiri-project-17a-delivery.json",
@@ -17,7 +17,11 @@
       "production/source/BM-007/storyboard-v5/make_gallery.py",
       "production/source/BM-007/storyboard-v5/test_camera.py",
       "production/source/BM-007/storyboard-v5/storyboard.json",
-      "production/source/BM-007/storyboard-v5/qa.json"
+      "production/source/BM-007/storyboard-v5/qa.json",
+      "production/source/BM-007/music-preview-v5/README.md",
+      "production/source/BM-007/music-preview-v5/assemble_preview.sh",
+      "production/source/BM-007/music-preview-v5/finish_preview.py",
+      "production/source/BM-007/music-preview-v5/preview-qa.json"
     ],
     "privateBundle": {
       "filename": "BM-007-storyboard-source-v5.zip",
@@ -28,7 +32,7 @@
   },
   "storyboard": {
     "revision": "V5",
-    "approved": false,
+    "approved": true,
     "provisionalBounds": [
       0,
       8,
@@ -212,7 +216,8 @@
       "decodedSampleCount": 6,
       "decodedContactLibraryId": "libfile_5c5bc680e3f481918dbe8bd78d9a4169",
       "otherScenes": "V4 unchanged"
-    }
+    },
+    "approvalEvidence": "Owner accepted map correction and requested music preview."
   },
   "scenes": [
     {
@@ -840,5 +845,88 @@
       },
       "ownerFeedback": "V4 map text still overlaps land outline; move callouts into open space using leader lines."
     }
-  ]
+  ],
+  "musicPreview": {
+    "preview": "BM-007-V5-music-preview.mp4",
+    "sha256": "fc85f22df567e56349c13d228c64f6191ab9fc494f0e8bdf49f0619a06c3b51c",
+    "scene_frames": [
+      480,
+      720,
+      420,
+      660,
+      540,
+      480,
+      60
+    ],
+    "music_sha256": "adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9",
+    "music_gain": 0.55,
+    "fade_in": 0.18,
+    "fade_out_start": 54.15,
+    "fade_out_duration": 0.837,
+    "music_only": true,
+    "provisional_scene_bounds": [
+      0,
+      8,
+      20,
+      27,
+      38,
+      47,
+      55
+    ],
+    "hold_frames": 60,
+    "source_reuse": {
+      "scene2": "V4 approved camera review",
+      "scene3": "V5 map review",
+      "scene6": "V3 unchanged fleet review"
+    },
+    "segments": [
+      {
+        "filename": "bm007_music_preview/segments/s1.mp4",
+        "frames": 480,
+        "sha256": "35389637663c73191f561bbb730126841529f09d7865238d7a8a875be339edf9"
+      },
+      {
+        "filename": "bm007_v4/scene2.mp4",
+        "frames": 720,
+        "sha256": "31c1e13383d16975d535a7ad496ada77a8b1963e137a88ac55b88dc5efe4dc5d"
+      },
+      {
+        "filename": "BM-007-V5-map-motion-review.mp4",
+        "frames": 420,
+        "sha256": "591b18d07e5de870926f24674d878433e9a018465783d3f6d575eb09a42e7677"
+      },
+      {
+        "filename": "bm007_music_preview/segments/s4.mp4",
+        "frames": 660,
+        "sha256": "952fd3a8a278f309e52ac669d9a8dbcf14ca0cb12d88ca1e9415a38d6a356766"
+      },
+      {
+        "filename": "bm007_music_preview/segments/s5.mp4",
+        "frames": 540,
+        "sha256": "3c186194947a610dccb6fa63641339ab8c4d9a5a2416392b7a7477704619e814"
+      },
+      {
+        "filename": "bm007_v3/scene6.mp4",
+        "frames": 480,
+        "sha256": "b379390faf742043805acddc16353cd0ff90b1f68984965ba31be6500aeac8b5"
+      },
+      {
+        "filename": "bm007_music_preview/segments/hold.mp4",
+        "frames": 60,
+        "sha256": "330df7ba6cd78c3d639073f79dfdf9940c4c024904eaa1d28015602fc640f2fd"
+      }
+    ],
+    "decodedFrames": 3360,
+    "ptsStep": 256,
+    "videoSeconds": 56,
+    "audioSeconds": 56,
+    "tailPeak": 0,
+    "musicPeak": 0.4635081887245178,
+    "transitions": "V5 storyboard cuts retained; final quiet dissolve and acoustic word pop pending narrated render",
+    "actualNarration": false,
+    "libraryId": "libfile_90a959dee14481918eadfde73bf83be1",
+    "decodedContactLibraryId": "libfile_6c48703da840819196461894b0eff10c",
+    "approved": false,
+    "sourcePath": "production/source/BM-007/music-preview-v5/"
+  }
 }
