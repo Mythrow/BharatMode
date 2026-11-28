@@ -1,0 +1,16 @@
+{
+  "native_pngs": 29,
+  "provisional_svg_states": 3300,
+  "camera_regression_tests_passed": 5,
+  "map_states_tested": 420,
+  "minimum_map_callout_clearance_px": 16.5,
+  "scene3_decoded_frames": 420,
+  "scene3_duration_s": 7,
+  "native_size": [
+    1080,
+    1920
+  ],
+  "fps": 60,
+  "actual_audio": false,
+  "limitations": "Only scene 3 rerendered as silent motion review. Map source/rights pending; provisional captions."
+}

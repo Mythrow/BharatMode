@@ -1,0 +1,3 @@
+# BM-007 storyboard V5
+
+Scene 3 only revised from V4: label groups are in open space outside the real map polygon with city-to-label leader lines. Geographic coordinates, camera keyframes and approved script unchanged. Inverse scaling preserves text size; reserve full callout and ship icon bounds and fade before collision. Shapely polygon distance checks include coastline stroke. Test all 420 map frame states and 3300 provisional states. Source dependencies: Python, Pillow, CairoSVG, Shapely, librsvg, FFmpeg, Inter fallback. Map provenance unchanged: see map.json; upstream license verification pending. Run `python test_camera.py`, `python make_gallery.py`, `python render_motion.py 1200 1620 scene3.mp4`. No actual narration or final motion QA.

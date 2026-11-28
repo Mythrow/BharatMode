@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "storyboard_v4_camera_review_pending_owner",
+  "status": "storyboard_v5_map_callout_review_pending_owner",
   "ideaId": "ID-013",
   "productionCode": "BM-007",
   "storyPath": "stories/vindhyagiri-project-17a-delivery.json",
@@ -8,26 +8,26 @@
   "source": {
     "repositoryPaths": [
       "stories/vindhyagiri-project-17a-delivery.json",
-      "production/source/BM-007/storyboard-v4/README.md",
-      "production/source/BM-007/storyboard-v4/avatar.svg",
-      "production/source/BM-007/storyboard-v4/map.json",
-      "production/source/BM-007/storyboard-v4/script.json",
-      "production/source/BM-007/storyboard-v4/render_storyboard.py",
-      "production/source/BM-007/storyboard-v4/make_gallery.py",
-      "production/source/BM-007/storyboard-v4/render_motion.py",
-      "production/source/BM-007/storyboard-v4/test_camera.py",
-      "production/source/BM-007/storyboard-v4/storyboard.json",
-      "production/source/BM-007/storyboard-v4/qa.json"
+      "production/source/BM-007/storyboard-v5/README.md",
+      "production/source/BM-007/storyboard-v5/avatar.svg",
+      "production/source/BM-007/storyboard-v5/map.json",
+      "production/source/BM-007/storyboard-v5/script.json",
+      "production/source/BM-007/storyboard-v5/render_storyboard.py",
+      "production/source/BM-007/storyboard-v5/render_motion.py",
+      "production/source/BM-007/storyboard-v5/make_gallery.py",
+      "production/source/BM-007/storyboard-v5/test_camera.py",
+      "production/source/BM-007/storyboard-v5/storyboard.json",
+      "production/source/BM-007/storyboard-v5/qa.json"
     ],
     "privateBundle": {
-      "filename": "BM-007-storyboard-source-v4.zip",
-      "libraryId": "libfile_e4b7e7e92f888191b11c4446abc7c56d",
-      "sha256": "4a464e3ab99bb1659e358ce96d4c11efa9d02407c5ae2eec7ddf2244c004c9b3"
+      "filename": "BM-007-storyboard-source-v5.zip",
+      "libraryId": "libfile_4b3a61ae362c81918f021e54e391f23b",
+      "sha256": "c68feee853867d03d05a3de922662de21583a4d986443ced43473c7e78d94408"
     },
     "repositorySourcePending": false
   },
   "storyboard": {
-    "revision": "V4",
+    "revision": "V5",
     "approved": false,
     "provisionalBounds": [
       0,
@@ -186,34 +186,32 @@
       }
     ],
     "contact": {
-      "filename": "BM-007-storyboard-contact-v4.png",
-      "libraryId": "libfile_e1fcf437b4188191b682201f5553a243",
-      "sha256": "828303eb29cbd91d67bf921f699efa68ca4b4dc89e7b25ae29371e6a580bc56e"
+      "filename": "BM-007-storyboard-contact-v5.png",
+      "libraryId": "libfile_8b2e075259fc8191bfd44da4a7cad6b1",
+      "sha256": "9c5e4fbf72741b28076a8f7b8a7d974e4e4fc285fa2ce706911e92290cfb7480"
     },
     "gallery": {
-      "filename": "BM-007-storyboard-gallery-v4.html",
-      "libraryId": "libfile_2f0787ebbd508191b0acb449e0db96cf",
-      "sha256": "922e23dec433a67a4a7e9caf87c9908980fd3af12b29785c468ec60a39f7da8e"
+      "filename": "BM-007-storyboard-gallery-v5.html",
+      "libraryId": "libfile_c7062e97e70c819188089e9e12cd4979",
+      "sha256": "536a8da5fe5539283a7793223b4a7a5406e9c4c597bc58bdb83259181dd45534"
     },
     "motionReview": {
-      "filename": "BM-007-V4-camera-motion-review.mp4",
-      "libraryId": "libfile_b9ad869e310c819189e3859ae501c371",
-      "sha256": "46fcc3ac7f025ee888b92a870250c01de5b2bddc6c4e988efb69a565f2abaaa0",
+      "filename": "BM-007-V5-map-motion-review.mp4",
+      "libraryId": "libfile_e8dfd04811488191855ab96d470f8ffd",
+      "sha256": "591b18d07e5de870926f24674d878433e9a018465783d3f6d575eb09a42e7677",
       "width": 1080,
       "height": 1920,
       "fps": 60,
-      "frames": 1620,
-      "duration": 27,
+      "frames": 420,
+      "duration": 7,
       "scenes": [
-        2,
-        3,
-        6
+        3
       ],
       "audio": false,
       "fullDecode": true,
-      "decodedSampleCount": 16,
-      "decodedContactLibraryId": "libfile_c375c3cc45b081919447415223d2a3bd",
-      "scene6ReusedFromV3": true
+      "decodedSampleCount": 6,
+      "decodedContactLibraryId": "libfile_5c5bc680e3f481918dbe8bd78d9a4169",
+      "otherScenes": "V4 unchanged"
     }
   },
   "scenes": [
@@ -309,39 +307,20 @@
       }
     ],
     "storyboardChecks": {
-      "revision": "V4",
       "native_pngs": 29,
-      "dimensions": [
+      "provisional_svg_states": 3300,
+      "camera_regression_tests_passed": 5,
+      "map_states_tested": 420,
+      "minimum_map_callout_clearance_px": 16.5,
+      "scene3_decoded_frames": 420,
+      "scene3_duration_s": 7,
+      "native_size": [
         1080,
         1920
       ],
-      "svg_state_checks": 3300,
-      "camera_geometry_tests": 4,
-      "motion_review": {
-        "width": 1080,
-        "height": 1920,
-        "fps": 60,
-        "duration": 27,
-        "frames": 1620,
-        "full_decode": true,
-        "decoded_samples_inspected": 16,
-        "scenes": [
-          2,
-          3,
-          6
-        ],
-        "scene6_reused_from_V3": true
-      },
-      "checks": [
-        "left-to-right measurement pan monotonicity",
-        "map pins and labels share geographic transform, inverse scaling maintains text size",
-        "no map rectangle clip",
-        "city label screen bounds and final visibility",
-        "headline hidden during close-up",
-        "existing fleet bounds and ruler/text separation"
-      ],
+      "fps": 60,
       "actual_audio": false,
-      "limitations": "Provisional audio/captions; map rights and final production QA pending. Map source unchanged from V3."
+      "limitations": "Only scene 3 rerendered as silent motion review. Map source/rights pending; provisional captions."
     },
     "pending": [
       "Map upstream provenance/rights verification, compare to official map; owner V3 camera storyboard review",
@@ -669,6 +648,197 @@
         "decodedContactLibraryId": "libfile_e1178d31b9d0819185fd5b7ac6b7aa72"
       },
       "ownerFeedback": "V3 direction reversed, labels detached and rectangular map clipping rejected."
+    },
+    {
+      "revision": "V4",
+      "approved": false,
+      "provisionalBounds": [
+        0,
+        8,
+        20,
+        27,
+        38,
+        47,
+        55
+      ],
+      "samples": [
+        {
+          "time": 0,
+          "scene": 1,
+          "file": "01-s1-0.00.png"
+        },
+        {
+          "time": 0.5,
+          "scene": 1,
+          "file": "02-s1-0.50.png"
+        },
+        {
+          "time": 3.2,
+          "scene": 1,
+          "file": "03-s1-3.20.png"
+        },
+        {
+          "time": 7.7,
+          "scene": 1,
+          "file": "04-s1-7.70.png"
+        },
+        {
+          "time": 9.3,
+          "scene": 2,
+          "file": "05-s2-9.30.png"
+        },
+        {
+          "time": 10.95,
+          "scene": 2,
+          "file": "06-s2-10.95.png"
+        },
+        {
+          "time": 12.75,
+          "scene": 2,
+          "file": "07-s2-12.75.png"
+        },
+        {
+          "time": 14.55,
+          "scene": 2,
+          "file": "08-s2-14.55.png"
+        },
+        {
+          "time": 16.3,
+          "scene": 2,
+          "file": "09-s2-16.30.png"
+        },
+        {
+          "time": 17.4,
+          "scene": 2,
+          "file": "10-s2-17.40.png"
+        },
+        {
+          "time": 19.7,
+          "scene": 2,
+          "file": "11-s2-19.70.png"
+        },
+        {
+          "time": 20.5,
+          "scene": 3,
+          "file": "12-s3-20.50.png"
+        },
+        {
+          "time": 21.75,
+          "scene": 3,
+          "file": "13-s3-21.75.png"
+        },
+        {
+          "time": 22.65,
+          "scene": 3,
+          "file": "14-s3-22.65.png"
+        },
+        {
+          "time": 23.45,
+          "scene": 3,
+          "file": "15-s3-23.45.png"
+        },
+        {
+          "time": 24.25,
+          "scene": 3,
+          "file": "16-s3-24.25.png"
+        },
+        {
+          "time": 25.35,
+          "scene": 3,
+          "file": "17-s3-25.35.png"
+        },
+        {
+          "time": 26.75,
+          "scene": 3,
+          "file": "18-s3-26.75.png"
+        },
+        {
+          "time": 28.5,
+          "scene": 4,
+          "file": "19-s4-28.50.png"
+        },
+        {
+          "time": 33,
+          "scene": 4,
+          "file": "20-s4-33.00.png"
+        },
+        {
+          "time": 37.7,
+          "scene": 4,
+          "file": "21-s4-37.70.png"
+        },
+        {
+          "time": 39.5,
+          "scene": 5,
+          "file": "22-s5-39.50.png"
+        },
+        {
+          "time": 43,
+          "scene": 5,
+          "file": "23-s5-43.00.png"
+        },
+        {
+          "time": 46.7,
+          "scene": 5,
+          "file": "24-s5-46.70.png"
+        },
+        {
+          "time": 47.4,
+          "scene": 6,
+          "file": "25-s6-47.40.png"
+        },
+        {
+          "time": 49.8,
+          "scene": 6,
+          "file": "26-s6-49.80.png"
+        },
+        {
+          "time": 51.1,
+          "scene": 6,
+          "file": "27-s6-51.10.png"
+        },
+        {
+          "time": 52.55,
+          "scene": 6,
+          "file": "28-s6-52.55.png"
+        },
+        {
+          "time": 54.7,
+          "scene": 6,
+          "file": "29-s6-54.70.png"
+        }
+      ],
+      "contact": {
+        "filename": "BM-007-storyboard-contact-v4.png",
+        "libraryId": "libfile_e1fcf437b4188191b682201f5553a243",
+        "sha256": "828303eb29cbd91d67bf921f699efa68ca4b4dc89e7b25ae29371e6a580bc56e"
+      },
+      "gallery": {
+        "filename": "BM-007-storyboard-gallery-v4.html",
+        "libraryId": "libfile_2f0787ebbd508191b0acb449e0db96cf",
+        "sha256": "922e23dec433a67a4a7e9caf87c9908980fd3af12b29785c468ec60a39f7da8e"
+      },
+      "motionReview": {
+        "filename": "BM-007-V4-camera-motion-review.mp4",
+        "libraryId": "libfile_b9ad869e310c819189e3859ae501c371",
+        "sha256": "46fcc3ac7f025ee888b92a870250c01de5b2bddc6c4e988efb69a565f2abaaa0",
+        "width": 1080,
+        "height": 1920,
+        "fps": 60,
+        "frames": 1620,
+        "duration": 27,
+        "scenes": [
+          2,
+          3,
+          6
+        ],
+        "audio": false,
+        "fullDecode": true,
+        "decodedSampleCount": 16,
+        "decodedContactLibraryId": "libfile_c375c3cc45b081919447415223d2a3bd",
+        "scene6ReusedFromV3": true
+      },
+      "ownerFeedback": "V4 map text still overlaps land outline; move callouts into open space using leader lines."
     }
   ]
 }
