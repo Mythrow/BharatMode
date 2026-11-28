@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-27",
-  "nextSequence": 13,
+  "updatedAt": "2026-11-28",
+  "nextSequence": 17,
   "items": [
     {
       "id": "ID-001",
@@ -634,6 +634,174 @@
           "from": null,
           "to": "idea",
           "note": "Freshness-first scan of 26 Nov news, checked event dates and existing registry; proposed for BM-006, owner selection pending."
+        }
+      ]
+    },
+    {
+      "id": "ID-013",
+      "productionCode": null,
+      "slug": "vindhyagiri-project-17a-delivery",
+      "title": "Indian Navy receives final Project 17A frigate Vindhyagiri",
+      "stage": "idea",
+      "priority": "high",
+      "category": "defence",
+      "storyKey": "project-17a-final-frigate-delivery-2026-11-27",
+      "topicKey": "indian-naval-project-17a",
+      "aliases": [
+        "Vindhyagiri",
+        "Project 17A",
+        "P17A",
+        "Nilgiri class",
+        "GRSE"
+      ],
+      "eventDate": "2026-11-27",
+      "sourceDate": "2026-11-27",
+      "discoveredAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2342700&lang=2&reg=48",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342521&lang=1&reg=48",
+        "https://timesofindia.indiatimes.com/defence/news/navy-gets-delivery-of-vindhyagiri-from-grse-the-last-of-7-stealth-frigates-under-project-17a/amp_articleshow/136226185.cms",
+        "https://www.theweek.in/wire-updates/national/2026/11/27/project-17a-final-warship-of-nilgiri-class-frigates-vindhyagiri-delivered-to-navy.amp.html"
+      ],
+      "researchPath": "content/research/ID-013.md",
+      "storyPath": null,
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-28",
+          "from": null,
+          "to": "idea",
+          "note": "Freshness-first search 28 Nov; actual event 27 Nov, corroborated by two Ministry of Defence releases and dated reporting. All seven Project 17A frigates delivered; 75% indigenous content, 200+ MSMEs, construction time 84 months for first ship versus 68 for Vindhyagiri; reported programme value approximately ₹45,000 crore (secondary source, reconfirm before narration). Delivery is not commissioning. Recommended BM-007, not selected. Proposed title: Indian Navy Receives 7th P17A Frigate. Distinct from existing space and AI topics."
+        }
+      ]
+    },
+    {
+      "id": "ID-014",
+      "productionCode": null,
+      "slug": "goa-shipyard-jeanne-baret-hybrid-dredger",
+      "title": "Goa Shipyard launches hybrid dredger Jeanne Baret for Jan De Nul",
+      "stage": "idea",
+      "priority": "high",
+      "category": "manufacturing",
+      "storyKey": "jeanne-baret-dredger-launch-2026-11-27",
+      "topicKey": "indian-commercial-dredger-shipbuilding",
+      "aliases": [
+        "Goa Shipyard",
+        "GSL",
+        "Jeanne Baret",
+        "Jan De Nul",
+        "hybrid dredger"
+      ],
+      "eventDate": "2026-11-27",
+      "sourceDate": "2026-11-27",
+      "discoveredAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342858&lang=1&reg=1",
+        "https://www.jandenul.com/news/jan-de-nul-launches-dredging-vessel-tailor-made-small-harbours-and-marinas",
+        "https://www.dredgingtoday.com/2026/11/27/exclusive-jan-de-nul-launches-new-tshd-in-india",
+        "https://www.bairdmaritime.com/marine-projects/dredging/jeanne-baret-hybrid-hopper-dredger"
+      ],
+      "researchPath": "content/research/ID-014.md",
+      "storyPath": null,
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-28",
+          "from": null,
+          "to": "idea",
+          "note": "27 Nov launch in Goa, export commercial shipbuilding for Jan De Nul. First plug-in hybrid trailing suction hopper dredger for that customer, not established as India's or world's first. Customer indexed release states 2,000 cubic metre hopper. Launch is not delivery or entry into service; primary direct retrieval unavailable, indexed text and trade reporting corroborate. Confirm specs from accessible primary evidence before script; avoid conflicting hull/overall lengths. Proposed title: Goa Shipyard Launches Hybrid Dredger."
+        }
+      ]
+    },
+    {
+      "id": "ID-015",
+      "productionCode": null,
+      "slug": "csir-cdri-lucknow-bsl3-facility",
+      "title": "CSIR-CDRI inaugurates advanced infectious disease research facility in Lucknow",
+      "stage": "idea",
+      "priority": "medium",
+      "category": "health",
+      "storyKey": "csir-cdri-bsl3-facility-inauguration-2026-11-27",
+      "topicKey": "indian-infectious-disease-research-infrastructure",
+      "aliases": [
+        "CSIR CDRI",
+        "Central Drug Research Institute",
+        "Lucknow",
+        "BSL-3",
+        "ABSL-3"
+      ],
+      "eventDate": "2026-11-27",
+      "sourceDate": "2026-11-27",
+      "discoveredAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2342644&lang=1&reg=1"
+      ],
+      "researchPath": "content/research/ID-015.md",
+      "storyPath": null,
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-28",
+          "from": null,
+          "to": "idea",
+          "note": "Official Ministry of Science and Technology release confirms 27 Nov inauguration of high-containment research facility in Lucknow. Intended to strengthen infectious disease research including tuberculosis. Institute's historical 13 marketed drugs and 80+ licensed process technologies are not outputs of the new facility. New infrastructure, not new treatment or cure. Proposed title: CSIR Opens New Drug Research Lab."
+        }
+      ]
+    },
+    {
+      "id": "ID-016",
+      "productionCode": null,
+      "slug": "csir-crri-steel-slag-road-award",
+      "title": "CSIR-CRRI earns waste-to-worth award for steel slag roads and ECOFIX",
+      "stage": "idea",
+      "priority": "medium",
+      "category": "engineering",
+      "storyKey": "csir-crri-cii-4r-award-2026-11-26",
+      "topicKey": "steel-slag-road-recycling",
+      "aliases": [
+        "CSIR CRRI",
+        "Steel Slag Road",
+        "ECOFIX",
+        "CII 4R Awards"
+      ],
+      "eventDate": "2026-11-26",
+      "sourceDate": "2026-11-27",
+      "discoveredAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "sourceUrls": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342604&lang=1&reg=1",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2241754&lang=2&reg=48",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2204762&lang=1&reg=3",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2218500&lang=2&reg=3"
+      ],
+      "researchPath": "content/research/ID-016.md",
+      "storyPath": null,
+      "relatedIds": [],
+      "distinguishingUpdate": null,
+      "publishedAt": null,
+      "youtubeUrl": null,
+      "publishApprovedByOwner": false,
+      "stageHistory": [
+        {
+          "at": "2026-11-28",
+          "from": null,
+          "to": "idea",
+          "note": "Award presented 26 Nov and announced 27 Nov. CSIR-CRRI recognized for existing technologies converting steelmaking waste into road aggregates and pothole repair mix. Not a new invention or nationwide rollout; previous official releases establish earlier demonstrations and implementation. Relatable visual story with weaker freshness than actual delivery/launch. Proposed title: Steel Waste Becomes Roads and Repairs."
         }
       ]
     }
