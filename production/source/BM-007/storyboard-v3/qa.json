@@ -1,0 +1,22 @@
+{
+  "revision": "V3",
+  "native_pngs": 29,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "svg_state_checks": 3300,
+  "camera_geometry_tests": 3,
+  "camera_states_checked_at_60fps": 1620,
+  "checks": [
+    "unique SVG IDs",
+    "camera clip/text separation including headline exit",
+    "conservative full fleet bounds for every visible ship",
+    "camera endpoints",
+    "map pin projection and dataset provenance"
+  ],
+  "actual_audio": false,
+  "frame_rate_target": 60,
+  "script_words": 125,
+  "notes": "Storyboard frame sample review; review video of scenes 2,3,6 only. No final narration or final decoded-video QA. Browser interaction not independently tested. Map is source-derived, not SOI authenticated; rights verification pending."
+}

@@ -1,0 +1,221 @@
+{
+  "productionCode": "BM-007",
+  "revision": "V3",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "provisionalBounds": [
+    0,
+    8,
+    20,
+    27,
+    38,
+    47,
+    55
+  ],
+  "scenes": [
+    [
+      "midnight",
+      "PROJECT 17A",
+      [
+        "Seven warships.",
+        "All delivered."
+      ],
+      "ocean-horizon"
+    ],
+    [
+      "ivory",
+      "INDIAN NAVAL DESIGN",
+      [
+        "Built on",
+        "a massive scale."
+      ],
+      "naval-blueprint"
+    ],
+    [
+      "ivory",
+      "TWO INDIAN SHIPYARDS",
+      [
+        "Built across",
+        "two cities."
+      ],
+      "coastal-geography"
+    ],
+    [
+      "saffron",
+      "ENGINEERING EFFICIENCY",
+      [
+        "Building",
+        "warships faster."
+      ],
+      "shipyard-timeline"
+    ],
+    [
+      "ivory",
+      "DOMESTIC INDUSTRY",
+      [
+        "Powered by",
+        "Indian industry."
+      ],
+      "industrial-grid"
+    ],
+    [
+      "midnight",
+      "NAVAL SELF-RELIANCE",
+      [
+        "Designed here.",
+        "Built here."
+      ],
+      "formation-sea"
+    ]
+  ],
+  "samples": [
+    {
+      "time": 0,
+      "scene": 1,
+      "file": "01-s1-0.00.png"
+    },
+    {
+      "time": 0.5,
+      "scene": 1,
+      "file": "02-s1-0.50.png"
+    },
+    {
+      "time": 3.2,
+      "scene": 1,
+      "file": "03-s1-3.20.png"
+    },
+    {
+      "time": 7.7,
+      "scene": 1,
+      "file": "04-s1-7.70.png"
+    },
+    {
+      "time": 9.3,
+      "scene": 2,
+      "file": "05-s2-9.30.png"
+    },
+    {
+      "time": 10.95,
+      "scene": 2,
+      "file": "06-s2-10.95.png"
+    },
+    {
+      "time": 12.75,
+      "scene": 2,
+      "file": "07-s2-12.75.png"
+    },
+    {
+      "time": 14.55,
+      "scene": 2,
+      "file": "08-s2-14.55.png"
+    },
+    {
+      "time": 16.3,
+      "scene": 2,
+      "file": "09-s2-16.30.png"
+    },
+    {
+      "time": 17.4,
+      "scene": 2,
+      "file": "10-s2-17.40.png"
+    },
+    {
+      "time": 19.7,
+      "scene": 2,
+      "file": "11-s2-19.70.png"
+    },
+    {
+      "time": 20.5,
+      "scene": 3,
+      "file": "12-s3-20.50.png"
+    },
+    {
+      "time": 21.75,
+      "scene": 3,
+      "file": "13-s3-21.75.png"
+    },
+    {
+      "time": 22.65,
+      "scene": 3,
+      "file": "14-s3-22.65.png"
+    },
+    {
+      "time": 23.45,
+      "scene": 3,
+      "file": "15-s3-23.45.png"
+    },
+    {
+      "time": 24.25,
+      "scene": 3,
+      "file": "16-s3-24.25.png"
+    },
+    {
+      "time": 25.35,
+      "scene": 3,
+      "file": "17-s3-25.35.png"
+    },
+    {
+      "time": 26.75,
+      "scene": 3,
+      "file": "18-s3-26.75.png"
+    },
+    {
+      "time": 28.5,
+      "scene": 4,
+      "file": "19-s4-28.50.png"
+    },
+    {
+      "time": 33,
+      "scene": 4,
+      "file": "20-s4-33.00.png"
+    },
+    {
+      "time": 37.7,
+      "scene": 4,
+      "file": "21-s4-37.70.png"
+    },
+    {
+      "time": 39.5,
+      "scene": 5,
+      "file": "22-s5-39.50.png"
+    },
+    {
+      "time": 43,
+      "scene": 5,
+      "file": "23-s5-43.00.png"
+    },
+    {
+      "time": 46.7,
+      "scene": 5,
+      "file": "24-s5-46.70.png"
+    },
+    {
+      "time": 47.4,
+      "scene": 6,
+      "file": "25-s6-47.40.png"
+    },
+    {
+      "time": 49.8,
+      "scene": 6,
+      "file": "26-s6-49.80.png"
+    },
+    {
+      "time": 51.1,
+      "scene": 6,
+      "file": "27-s6-51.10.png"
+    },
+    {
+      "time": 52.55,
+      "scene": 6,
+      "file": "28-s6-52.55.png"
+    },
+    {
+      "time": 54.7,
+      "scene": 6,
+      "file": "29-s6-54.70.png"
+    }
+  ],
+  "audio": "not generated; provisional captions",
+  "fonts": "Inter fallback"
+}

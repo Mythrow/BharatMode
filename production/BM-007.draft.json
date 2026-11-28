@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "storyboard_review_draft_not_release_eligible",
+  "status": "storyboard_v3_camera_review_pending_owner",
   "ideaId": "ID-013",
   "productionCode": "BM-007",
   "storyPath": "stories/vindhyagiri-project-17a-delivery.json",
@@ -8,33 +8,36 @@
   "source": {
     "repositoryPaths": [
       "stories/vindhyagiri-project-17a-delivery.json",
-      "production/source/BM-007/storyboard-v1/README.md",
-      "production/source/BM-007/storyboard-v1/avatar.svg",
-      "production/source/BM-007/storyboard-v1/make_gallery.py",
-      "production/source/BM-007/storyboard-v1/map.json",
-      "production/source/BM-007/storyboard-v1/qa.json",
-      "production/source/BM-007/storyboard-v1/render_storyboard.py",
-      "production/source/BM-007/storyboard-v1/script.json",
-      "production/source/BM-007/storyboard-v1/storyboard.json"
+      "production/source/BM-007/storyboard-v3/README.md",
+      "production/source/BM-007/storyboard-v3/avatar.svg",
+      "production/source/BM-007/storyboard-v3/make_gallery.py",
+      "production/source/BM-007/storyboard-v3/map.json",
+      "production/source/BM-007/storyboard-v3/qa.json",
+      "production/source/BM-007/storyboard-v3/render_storyboard.py",
+      "production/source/BM-007/storyboard-v3/render_motion.py",
+      "production/source/BM-007/storyboard-v3/script.json",
+      "production/source/BM-007/storyboard-v3/storyboard.json",
+      "production/source/BM-007/storyboard-v3/test_camera.py"
     ],
     "privateBundle": {
-      "filename": "BM-007-storyboard-source.zip",
-      "libraryId": "libfile_1faf270881cc81918fcceb55d8d938d2",
-      "sha256": "56f3f7a52c3cc09d9129d0bbc236919cbaf598423381a767424629ef2992c2e9"
+      "filename": "BM-007-storyboard-source-v3.zip",
+      "libraryId": "libfile_2256e5ade6148191ade4cff516abe1b4",
+      "sha256": "4fc154b3b8826720f273f3de57d9981451cfa3c023d20e659793ad0c3796dbcf"
     },
     "repositorySourcePending": false
   },
   "storyboard": {
-    "gallery": {
-      "filename": "BM-007-storyboard-gallery.html",
-      "libraryId": "libfile_64abb70ab6c8819195c0781a14a4d069",
-      "sha256": "3ff4b85e88263f48f6f72bb51678d0d722a9d79f2875b065c6363cb2d85f3b57"
-    },
-    "contact": {
-      "filename": "BM-007-storyboard-contact.png",
-      "libraryId": "libfile_301d60a8b6648191b6abcce00bbef403",
-      "sha256": "b90025cffd7beb4c4011028468fb940a81f7b1caa2b4e2d12e2acdf2142427a4"
-    },
+    "revision": "V3",
+    "approved": false,
+    "provisionalBounds": [
+      0,
+      8,
+      20,
+      27,
+      38,
+      47,
+      55
+    ],
     "samples": [
       {
         "time": 0,
@@ -57,91 +60,160 @@
         "file": "04-s1-7.70.png"
       },
       {
-        "time": 9.5,
+        "time": 9.3,
         "scene": 2,
-        "file": "05-s2-9.50.png"
+        "file": "05-s2-9.30.png"
       },
       {
-        "time": 13,
+        "time": 10.95,
         "scene": 2,
-        "file": "06-s2-13.00.png"
+        "file": "06-s2-10.95.png"
+      },
+      {
+        "time": 12.75,
+        "scene": 2,
+        "file": "07-s2-12.75.png"
+      },
+      {
+        "time": 14.55,
+        "scene": 2,
+        "file": "08-s2-14.55.png"
+      },
+      {
+        "time": 16.3,
+        "scene": 2,
+        "file": "09-s2-16.30.png"
+      },
+      {
+        "time": 17.4,
+        "scene": 2,
+        "file": "10-s2-17.40.png"
       },
       {
         "time": 19.7,
         "scene": 2,
-        "file": "07-s2-19.70.png"
+        "file": "11-s2-19.70.png"
       },
       {
-        "time": 20.9,
+        "time": 20.5,
         "scene": 3,
-        "file": "08-s3-20.90.png"
+        "file": "12-s3-20.50.png"
       },
       {
-        "time": 24.3,
+        "time": 21.75,
         "scene": 3,
-        "file": "09-s3-24.30.png"
+        "file": "13-s3-21.75.png"
       },
       {
-        "time": 26.7,
+        "time": 22.65,
         "scene": 3,
-        "file": "10-s3-26.70.png"
+        "file": "14-s3-22.65.png"
+      },
+      {
+        "time": 23.45,
+        "scene": 3,
+        "file": "15-s3-23.45.png"
+      },
+      {
+        "time": 24.25,
+        "scene": 3,
+        "file": "16-s3-24.25.png"
+      },
+      {
+        "time": 25.35,
+        "scene": 3,
+        "file": "17-s3-25.35.png"
+      },
+      {
+        "time": 26.75,
+        "scene": 3,
+        "file": "18-s3-26.75.png"
       },
       {
         "time": 28.5,
         "scene": 4,
-        "file": "11-s4-28.50.png"
+        "file": "19-s4-28.50.png"
       },
       {
         "time": 33,
         "scene": 4,
-        "file": "12-s4-33.00.png"
+        "file": "20-s4-33.00.png"
       },
       {
         "time": 37.7,
         "scene": 4,
-        "file": "13-s4-37.70.png"
+        "file": "21-s4-37.70.png"
       },
       {
         "time": 39.5,
         "scene": 5,
-        "file": "14-s5-39.50.png"
+        "file": "22-s5-39.50.png"
       },
       {
         "time": 43,
         "scene": 5,
-        "file": "15-s5-43.00.png"
+        "file": "23-s5-43.00.png"
       },
       {
         "time": 46.7,
         "scene": 5,
-        "file": "16-s5-46.70.png"
+        "file": "24-s5-46.70.png"
       },
       {
-        "time": 48,
+        "time": 47.4,
         "scene": 6,
-        "file": "17-s6-48.00.png"
+        "file": "25-s6-47.40.png"
       },
       {
-        "time": 51,
+        "time": 49.8,
         "scene": 6,
-        "file": "18-s6-51.00.png"
+        "file": "26-s6-49.80.png"
+      },
+      {
+        "time": 51.1,
+        "scene": 6,
+        "file": "27-s6-51.10.png"
+      },
+      {
+        "time": 52.55,
+        "scene": 6,
+        "file": "28-s6-52.55.png"
       },
       {
         "time": 54.7,
         "scene": 6,
-        "file": "19-s6-54.70.png"
+        "file": "29-s6-54.70.png"
       }
     ],
-    "provisionalBounds": [
-      0,
-      8,
-      20,
-      27,
-      38,
-      47,
-      55
-    ],
-    "approved": false
+    "contact": {
+      "filename": "BM-007-storyboard-contact-v3.png",
+      "libraryId": "libfile_3528c78fac9c81918025e2f073f2e880",
+      "sha256": "5153a961842204b8c03cdd5c5ac85a63c0f999abecc63623642f2da77d60e5c0"
+    },
+    "gallery": {
+      "filename": "BM-007-storyboard-gallery-v3.html",
+      "libraryId": "libfile_721db8173af881919c964830d3578a06",
+      "sha256": "60c485e9fb78860a4fa80abcc83194e5d0bab3651d52d87a1aa20dc52593a074"
+    },
+    "motionReview": {
+      "filename": "BM-007-V3-camera-motion-review.mp4",
+      "libraryId": "libfile_629344b645c0819184a0c33a2d288e2f",
+      "sha256": "7d7cf7d1a0121fafb34f931962603f432b7203cfc08fdc32f1d1f3310a3417bb",
+      "width": 1080,
+      "height": 1920,
+      "fps": 60,
+      "frames": 1620,
+      "duration": 27,
+      "scenes": [
+        2,
+        3,
+        6
+      ],
+      "audio": false,
+      "fullDecode": true,
+      "decodedSampleCount": 15,
+      "decodedContactLibraryId": "libfile_e1178d31b9d0819185fd5b7ac6b7aa72"
+    }
   },
   "scenes": [
     {
@@ -201,8 +273,8 @@
     },
     {
       "filename": "map.json",
-      "provenance": "Natural Earth 1:110m generalized lowres country polygon and approximate city coordinates",
-      "rightsEvidence": "Natural Earth public-domain data; generalized boundary representation, not a territorial assertion"
+      "provenance": "geoBoundaries ADM0 India, via anjishnuHyperworks/india-basemap data/india-country-boundary.geojson, blob 5c212752d587bb2acb5cd7009d9bfef09f731571; CC BY 4.0 per repository README. Geographic data follows India's claimed extent; cartographic approximation, not authenticated Survey of India data. Projected and simplified from source geometry at 1.15 design pixels.",
+      "rightsEvidence": "Upstream README CC BY 4.0; general license ODbL notice inconsistent; confirm source attribution/licensing prior to publication. SOI authenticated vector not retrieved."
     },
     {
       "filename": "render_storyboard.py",
@@ -236,20 +308,29 @@
       }
     ],
     "storyboardChecks": {
-      "native_pngs": 19,
+      "revision": "V3",
+      "native_pngs": 29,
       "dimensions": [
         1080,
         1920
       ],
       "svg_state_checks": 3300,
-      "unique_ids": true,
-      "gallery_embedded_bytes_match": true,
+      "camera_geometry_tests": 3,
+      "camera_states_checked_at_60fps": 1620,
+      "checks": [
+        "unique SVG IDs",
+        "camera clip/text separation including headline exit",
+        "conservative full fleet bounds for every visible ship",
+        "camera endpoints",
+        "map pin projection and dataset provenance"
+      ],
       "actual_audio": false,
       "frame_rate_target": 60,
       "script_words": 125,
-      "notes": "Sample frames only; no video or decoded-frame motion QA. Browser interaction not independently tested."
+      "notes": "Storyboard frame sample review; review video of scenes 2,3,6 only. No final narration or final decoded-video QA. Browser interaction not independently tested. Map is source-derived, not SOI authenticated; rights verification pending."
     },
     "pending": [
+      "Map upstream provenance/rights verification, compare to official map; owner V3 camera storyboard review",
       "Owner storyboard approval",
       "Actual voice generation, pronunciation listening and acoustic alignment",
       "Real 60fps motion, dissolve, connector/text clearance and full decoded-frame QA",
@@ -258,5 +339,132 @@
       "Final video and thumbnail approval and publication authorization"
     ]
   },
-  "output": null
+  "output": null,
+  "storyboardHistory": [
+    {
+      "revision": "V1",
+      "gallery": {
+        "filename": "BM-007-storyboard-gallery.html",
+        "libraryId": "libfile_64abb70ab6c8819195c0781a14a4d069",
+        "sha256": "3ff4b85e88263f48f6f72bb51678d0d722a9d79f2875b065c6363cb2d85f3b57"
+      },
+      "contact": {
+        "filename": "BM-007-storyboard-contact.png",
+        "libraryId": "libfile_301d60a8b6648191b6abcce00bbef403",
+        "sha256": "b90025cffd7beb4c4011028468fb940a81f7b1caa2b4e2d12e2acdf2142427a4"
+      },
+      "samples": [
+        {
+          "time": 0,
+          "scene": 1,
+          "file": "01-s1-0.00.png"
+        },
+        {
+          "time": 0.5,
+          "scene": 1,
+          "file": "02-s1-0.50.png"
+        },
+        {
+          "time": 3.2,
+          "scene": 1,
+          "file": "03-s1-3.20.png"
+        },
+        {
+          "time": 7.7,
+          "scene": 1,
+          "file": "04-s1-7.70.png"
+        },
+        {
+          "time": 9.5,
+          "scene": 2,
+          "file": "05-s2-9.50.png"
+        },
+        {
+          "time": 13,
+          "scene": 2,
+          "file": "06-s2-13.00.png"
+        },
+        {
+          "time": 19.7,
+          "scene": 2,
+          "file": "07-s2-19.70.png"
+        },
+        {
+          "time": 20.9,
+          "scene": 3,
+          "file": "08-s3-20.90.png"
+        },
+        {
+          "time": 24.3,
+          "scene": 3,
+          "file": "09-s3-24.30.png"
+        },
+        {
+          "time": 26.7,
+          "scene": 3,
+          "file": "10-s3-26.70.png"
+        },
+        {
+          "time": 28.5,
+          "scene": 4,
+          "file": "11-s4-28.50.png"
+        },
+        {
+          "time": 33,
+          "scene": 4,
+          "file": "12-s4-33.00.png"
+        },
+        {
+          "time": 37.7,
+          "scene": 4,
+          "file": "13-s4-37.70.png"
+        },
+        {
+          "time": 39.5,
+          "scene": 5,
+          "file": "14-s5-39.50.png"
+        },
+        {
+          "time": 43,
+          "scene": 5,
+          "file": "15-s5-43.00.png"
+        },
+        {
+          "time": 46.7,
+          "scene": 5,
+          "file": "16-s5-46.70.png"
+        },
+        {
+          "time": 48,
+          "scene": 6,
+          "file": "17-s6-48.00.png"
+        },
+        {
+          "time": 51,
+          "scene": 6,
+          "file": "18-s6-51.00.png"
+        },
+        {
+          "time": 54.7,
+          "scene": 6,
+          "file": "19-s6-54.70.png"
+        }
+      ],
+      "provisionalBounds": [
+        0,
+        8,
+        20,
+        27,
+        38,
+        47,
+        55
+      ],
+      "approved": false
+    },
+    {
+      "revision": "V2",
+      "status": "rejected_owner_feedback",
+      "note": "Incorrect hand-drawn map, overlapping ruler/labels, extra blue polygon and closing text overlap."
+    }
+  ]
 }
