@@ -1,0 +1,35 @@
+{
+  "revision": "V4",
+  "native_pngs": 29,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "svg_state_checks": 3300,
+  "camera_geometry_tests": 4,
+  "motion_review": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "duration": 27,
+    "frames": 1620,
+    "full_decode": true,
+    "decoded_samples_inspected": 16,
+    "scenes": [
+      2,
+      3,
+      6
+    ],
+    "scene6_reused_from_V3": true
+  },
+  "checks": [
+    "left-to-right measurement pan monotonicity",
+    "map pins and labels share geographic transform, inverse scaling maintains text size",
+    "no map rectangle clip",
+    "city label screen bounds and final visibility",
+    "headline hidden during close-up",
+    "existing fleet bounds and ruler/text separation"
+  ],
+  "actual_audio": false,
+  "limitations": "Provisional audio/captions; map rights and final production QA pending. Map source unchanged from V3."
+}
