@@ -1,0 +1,40 @@
+{
+  "revision": "V7",
+  "filename": "BM-007-narrated-preview-V7.mp4",
+  "sha256": "eae4f9929dab519485e515f26917a97d57375e58415eb8afb41d09724d18e1f6",
+  "baseVideo": "BM-007-narrated-preview-V5.mp4",
+  "baseSha256": "53793131f2df39491b1fb60c5190fedc14e95b97011caf7563173307a2ff031c",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "decodedFrames": 2960,
+  "durationSeconds": 49.333333,
+  "maxPtsErrorSeconds": 3.34e-07,
+  "fullDecode": true,
+  "audioSha256": "6ed1c98f043b41155aa4b7d2b31da629e2832ef5c435b080055d17496031bdbf",
+  "audioIdenticalToV5": true,
+  "mapHoldFrames": 40,
+  "mapHoldSeconds": 0.6666666666666666,
+  "mapExitSeconds": 0.18,
+  "msmeUnits": 24,
+  "msmeStartLocalSeconds": 3.0,
+  "msmeEntrySeconds": 0.115,
+  "msmeIntervalSeconds": 0.125,
+  "minMapClearancePx": 16.549547579320627,
+  "sourceStatesChecked": 2960,
+  "mapStates": 365,
+  "regressionTestsPassed": 6,
+  "decodedSamplesInspected": 24,
+  "renderedRanges": [
+    [
+      990,
+      1480
+    ],
+    [
+      1980,
+      2470
+    ]
+  ],
+  "unchangedFramesCopied": 1980,
+  "qaPending": "Previous audio pronunciation/ASR, alignment, map/music/font rights, phone/Shorts overlay and release QA remain pending."
+}
