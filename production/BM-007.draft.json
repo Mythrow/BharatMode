@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "music_preview_v5_review_pending_owner",
+  "status": "narrated_preview_v1_review_pending_owner",
   "ideaId": "ID-013",
   "productionCode": "BM-007",
   "storyPath": "stories/vindhyagiri-project-17a-delivery.json",
@@ -21,7 +21,12 @@
       "production/source/BM-007/music-preview-v5/README.md",
       "production/source/BM-007/music-preview-v5/assemble_preview.sh",
       "production/source/BM-007/music-preview-v5/finish_preview.py",
-      "production/source/BM-007/music-preview-v5/preview-qa.json"
+      "production/source/BM-007/music-preview-v5/preview-qa.json",
+      "production/source/BM-007/narrated-v1/narrated.py",
+      "production/source/BM-007/narrated-v1/mix.py",
+      "production/source/BM-007/narrated-v1/mix-qa.json",
+      "production/source/BM-007/narrated-v1/narrated-qa.json",
+      "production/source/BM-007/narrated-v1/NARRATED-README.md"
     ],
     "privateBundle": {
       "filename": "BM-007-storyboard-source-v5.zip",
@@ -328,11 +333,9 @@
       "limitations": "Only scene 3 rerendered as silent motion review. Map source/rights pending; provisional captions."
     },
     "pending": [
-      "Map upstream provenance/rights verification, compare to official map; owner V3 camera storyboard review",
-      "Owner storyboard approval",
-      "Actual voice generation, pronunciation listening and acoustic alignment",
-      "Real 60fps motion, dissolve, connector/text clearance and full decoded-frame QA",
-      "Music license, fonts and device QA",
+      "Owner narrated-preview review and listening QA; Scene 3 replacement independent ASR and Scene 6 low-confidence word alignment review",
+      "Map upstream provenance/rights verification and official map comparison",
+      "Music and font rights; device/phone playback QA",
       "Final manifest and repository validation",
       "Final video and thumbnail approval and publication authorization"
     ]
@@ -931,9 +934,250 @@
   },
   "audioHandoff": {
     "path": "production/BM-007-audio-handoff.md",
-    "status": "prepared_owner_requested",
+    "status": "narration_received_verified_for_review",
     "scriptRevision": "V2-full-load-plain-language",
     "musicPreviewApproval": "not_explicitly_confirmed",
     "date": "2026-11-28"
+  },
+  "narration": {
+    "archive": "BM-007-narration-final.zip",
+    "libraryId": "libfile_9c20ecc0bde0819185c6d5b63a0b0f37",
+    "sha256": "757272b90dab3ddddb65479d023f4da9ee447bec097d5f4184873e9ff02e211d",
+    "actualDurationSeconds": 47.52,
+    "sceneDurations": [
+      7.92,
+      9.12,
+      6.08,
+      8.96,
+      8.48,
+      6.96
+    ],
+    "scriptRevision": "V2-full-load-plain-language",
+    "checksumsVerified": true,
+    "alignmentsBoundToAudio": true,
+    "qa": "Scene 03 replacement independent ASR pending; Scene 06 word a low-confidence alignment, pronunciation and narrator consistency listening pending. Kolkata pronunciation owner confirmed per supplied QA."
+  },
+  "narratedPreview": {
+    "version": "V1 narrated preview",
+    "videoSha256": "eb81f587d3dcdacc212582445fa07428f5f3d83ea6fe71a2d3965993ad601bba",
+    "narrationZipSha256": "757272b90dab3ddddb65479d023f4da9ee447bec097d5f4184873e9ff02e211d",
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "decodedFrames": 2960,
+    "durationSeconds": 49.333333333333336,
+    "maxPtsErrorSeconds": 3.34e-7,
+    "fullDecode": true,
+    "actualNarrationSeconds": 47.52,
+    "sceneDurations": [
+      7.92,
+      9.12,
+      6.08,
+      8.96,
+      8.48,
+      6.96
+    ],
+    "mapStatesTested": 365,
+    "minMapCalloutClearancePx": 17.10948,
+    "maxCaptionWidthPxIncludingPop": 765.306875,
+    "sampleFramesReviewed": 18,
+    "audioQA": "Scene 03 replacement independent ASR pending; Scene 06 word a low-confidence alignment, pronunciation and narrator consistency listening pending. Kolkata pronunciation owner confirmed per supplied QA.",
+    "rights": "map provenance/license, font and music rights pending",
+    "mix": {
+      "narration_seconds": 47.52,
+      "music_resolve_seconds": 0.8,
+      "silent_hold_seconds": 1.0133333333333334,
+      "planned_frames": 2960,
+      "mix_peak": 0.74408358335495,
+      "music_last_half_second_pre_fade_rms": 0.0938941165804863,
+      "music_sha256": "adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9"
+    },
+    "cueMap": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0.65,
+          1.56
+        ],
+        [
+          2.3,
+          3.85
+        ],
+        [
+          4.1,
+          4.55
+        ],
+        [
+          8,
+          7.92
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1.05,
+          2.3
+        ],
+        [
+          1.7,
+          2.85
+        ],
+        [
+          3,
+          3.59
+        ],
+        [
+          6.6,
+          5.2
+        ],
+        [
+          7.6,
+          5.55
+        ],
+        [
+          8.2,
+          5.85
+        ],
+        [
+          8.85,
+          6.18
+        ],
+        [
+          12,
+          9.12
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0.65,
+          0.65
+        ],
+        [
+          1.12,
+          1.32
+        ],
+        [
+          1.65,
+          1.9
+        ],
+        [
+          2.75,
+          3.12
+        ],
+        [
+          3.9,
+          3.9
+        ],
+        [
+          4.2,
+          4.35
+        ],
+        [
+          5.5,
+          5.55
+        ],
+        [
+          6.55,
+          5.88
+        ],
+        [
+          7,
+          6.08
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0.4,
+          2.5
+        ],
+        [
+          4.3,
+          4.15
+        ],
+        [
+          5.6,
+          5.07
+        ],
+        [
+          8,
+          6.86
+        ],
+        [
+          11,
+          8.96
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0.4,
+          1.08
+        ],
+        [
+          4.7,
+          4.51
+        ],
+        [
+          9,
+          8.48
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0.55,
+          0.65
+        ],
+        [
+          2.4,
+          2.1
+        ],
+        [
+          3.4,
+          3.16
+        ],
+        [
+          5.15,
+          4.8
+        ],
+        [
+          5.5,
+          5.19
+        ],
+        [
+          8,
+          6.96
+        ]
+      ]
+    ],
+    "cueMapUnits": "pairs [provisional scene-local time, actual scene-local time]; actual phrase cues and choreography adjustments",
+    "scriptRevision": "V2 full-load plain language; unchanged",
+    "sourceBase": "storyboard-v5",
+    "ownerApproval": false,
+    "filename": "BM-007-narrated-preview-V1.mp4",
+    "libraryId": "libfile_5a9917ea26308191895165aa93f69540",
+    "decodedContactLibraryId": "libfile_f27490f456d48191905173e6748141d9",
+    "sourcePath": "production/source/BM-007/narrated-v1/",
+    "approved": false
   }
 }

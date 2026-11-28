@@ -1,0 +1,9 @@
+{
+  "narration_seconds": 47.52,
+  "music_resolve_seconds": 0.8,
+  "silent_hold_seconds": 1.0133333333333334,
+  "planned_frames": 2960,
+  "mix_peak": 0.74408358335495,
+  "music_last_half_second_pre_fade_rms": 0.0938941165804863,
+  "music_sha256": "adb6260d0dd451add9148e0d3ca1d225ab268c2f8fbe3e2010f10337a92755f9"
+}
