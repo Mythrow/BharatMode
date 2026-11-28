@@ -1,0 +1,31 @@
+{
+  "revision": "V5",
+  "filename": "BM-007-narrated-preview-V5.mp4",
+  "sha256": "53793131f2df39491b1fb60c5190fedc14e95b97011caf7563173307a2ff031c",
+  "baseAudioVideoSha256": "5c1c2d3216614d13424f4ef6b0b88aa295dd77577e0e3f2ba3391ed32fb3c36a",
+  "audioStreamSha256": "6069f6738e2efcfcecb37d8443d9d6931ecd1fe6cf7e75bcda20009f45c8ce5a",
+  "audioBitstreamUnchanged": true,
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "frames": 2960,
+  "durationSeconds": 49.333333333333336,
+  "maxPtsErrorSeconds": 3.3333333604446125e-07,
+  "sourceFrameStatesChecked": 2960,
+  "transitionStatesChecked": 136,
+  "transitionBoundaries": [
+    7.92,
+    17.04,
+    23.12,
+    32.08,
+    40.56
+  ],
+  "mapStatesChecked": 365,
+  "minMapCalloutClearancePx": 17.10948,
+  "minCaptionNominalGapPx": 20,
+  "maxCaptionBackingWidthPx": 782.49455,
+  "targetedTestsPassed": 4,
+  "decodedSampleCount": 40,
+  "fullDecode": true,
+  "limitations": "All scenes rendered again from reconstructed V2 choreography and recovered V3 industrial/fleet source; original AAC copied. Source geometry checks use measured Inter glyph bounds, not exhaustive manual pixel review. Phone, rights, earlier audio QA pending."
+}
