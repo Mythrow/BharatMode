@@ -1,0 +1,22 @@
+{
+  "revision": "V3",
+  "baseVideoSha256": "c4be7f18d27507f89912b19d18e35e75b034af156058f631997edf266dc019b8",
+  "sha256": "5c1c2d3216614d13424f4ef6b0b88aa295dd77577e0e3f2ba3391ed32fb3c36a",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "frames": 2960,
+  "durationSeconds": 49.333333333333336,
+  "unchangedPrefixFrames": 1920,
+  "sourcePatchStartFrame": 1920,
+  "fullDecode": true,
+  "continuousPTS": true,
+  "audioStreamSha256": "6069f6738e2efcfcecb37d8443d9d6931ecd1fe6cf7e75bcda20009f45c8ce5a",
+  "audioBitstreamUnchanged": true,
+  "fleetStatesChecked": 419,
+  "maximumConcurrentAdditionalShipEntrances": 1,
+  "minimumConservativeShipSeparationPx": 34.0,
+  "targetedTestsPassed": 2,
+  "decodedSamplesInspected": 12,
+  "limitations": "V2 first 1920 frames copied, final 1040 frames rendered from patch source. Exact V2 baseline required for reproduction. Original audio unchanged; prior audio QA, map rights, phone overlay safety and owner approval pending. Tests check conservative geometry, not every decoded pixel."
+}
