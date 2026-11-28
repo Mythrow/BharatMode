@@ -24,7 +24,7 @@ Updated: 2026-11-28 (IST) · Permanent IDs: 16 · **Never reassign or delete an 
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
-| **ID-013** | BM-007 | Indian Navy receives final Project 17A frigate Vindhyagiri | 2026-11-27 | high | [Research](research/ID-013.md) | — | — |
+| **ID-013** | BM-007 | Indian Navy receives final Project 17A frigate Vindhyagiri | 2026-11-27 | high | [Research](research/ID-013.md) | [Draft](../stories/vindhyagiri-project-17a-delivery.json) | — |
 
 ## Uploaded (owner reported) (0)
 

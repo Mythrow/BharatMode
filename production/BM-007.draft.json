@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "status": "storyboard_review_draft_not_release_eligible",
+  "ideaId": "ID-013",
+  "productionCode": "BM-007",
+  "storyPath": "stories/vindhyagiri-project-17a-delivery.json",
+  "scriptRevision": "V2-full-load-plain-language",
+  "source": {
+    "repositoryPaths": [
+      "stories/vindhyagiri-project-17a-delivery.json",
+      "production/source/BM-007/storyboard-v1/README.md",
+      "production/source/BM-007/storyboard-v1/avatar.svg",
+      "production/source/BM-007/storyboard-v1/make_gallery.py",
+      "production/source/BM-007/storyboard-v1/map.json",
+      "production/source/BM-007/storyboard-v1/qa.json",
+      "production/source/BM-007/storyboard-v1/render_storyboard.py",
+      "production/source/BM-007/storyboard-v1/script.json",
+      "production/source/BM-007/storyboard-v1/storyboard.json"
+    ],
+    "privateBundle": {
+      "filename": "BM-007-storyboard-source.zip",
+      "libraryId": "libfile_1faf270881cc81918fcceb55d8d938d2",
+      "sha256": "56f3f7a52c3cc09d9129d0bbc236919cbaf598423381a767424629ef2992c2e9"
+    },
+    "repositorySourcePending": false
+  },
+  "storyboard": {
+    "gallery": {
+      "filename": "BM-007-storyboard-gallery.html",
+      "libraryId": "libfile_64abb70ab6c8819195c0781a14a4d069",
+      "sha256": "3ff4b85e88263f48f6f72bb51678d0d722a9d79f2875b065c6363cb2d85f3b57"
+    },
+    "contact": {
+      "filename": "BM-007-storyboard-contact.png",
+      "libraryId": "libfile_301d60a8b6648191b6abcce00bbef403",
+      "sha256": "b90025cffd7beb4c4011028468fb940a81f7b1caa2b4e2d12e2acdf2142427a4"
+    },
+    "samples": [
+      {
+        "time": 0,
+        "scene": 1,
+        "file": "01-s1-0.00.png"
+      },
+      {
+        "time": 0.5,
+        "scene": 1,
+        "file": "02-s1-0.50.png"
+      },
+      {
+        "time": 3.2,
+        "scene": 1,
+        "file": "03-s1-3.20.png"
+      },
+      {
+        "time": 7.7,
+        "scene": 1,
+        "file": "04-s1-7.70.png"
+      },
+      {
+        "time": 9.5,
+        "scene": 2,
+        "file": "05-s2-9.50.png"
+      },
+      {
+        "time": 13,
+        "scene": 2,
+        "file": "06-s2-13.00.png"
+      },
+      {
+        "time": 19.7,
+        "scene": 2,
+        "file": "07-s2-19.70.png"
+      },
+      {
+        "time": 20.9,
+        "scene": 3,
+        "file": "08-s3-20.90.png"
+      },
+      {
+        "time": 24.3,
+        "scene": 3,
+        "file": "09-s3-24.30.png"
+      },
+      {
+        "time": 26.7,
+        "scene": 3,
+        "file": "10-s3-26.70.png"
+      },
+      {
+        "time": 28.5,
+        "scene": 4,
+        "file": "11-s4-28.50.png"
+      },
+      {
+        "time": 33,
+        "scene": 4,
+        "file": "12-s4-33.00.png"
+      },
+      {
+        "time": 37.7,
+        "scene": 4,
+        "file": "13-s4-37.70.png"
+      },
+      {
+        "time": 39.5,
+        "scene": 5,
+        "file": "14-s5-39.50.png"
+      },
+      {
+        "time": 43,
+        "scene": 5,
+        "file": "15-s5-43.00.png"
+      },
+      {
+        "time": 46.7,
+        "scene": 5,
+        "file": "16-s5-46.70.png"
+      },
+      {
+        "time": 48,
+        "scene": 6,
+        "file": "17-s6-48.00.png"
+      },
+      {
+        "time": 51,
+        "scene": 6,
+        "file": "18-s6-51.00.png"
+      },
+      {
+        "time": 54.7,
+        "scene": 6,
+        "file": "19-s6-54.70.png"
+      }
+    ],
+    "provisionalBounds": [
+      0,
+      8,
+      20,
+      27,
+      38,
+      47,
+      55
+    ],
+    "approved": false
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "theme": "midnight",
+      "backgroundId": "ocean-horizon",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 2,
+      "theme": "ivory",
+      "backgroundId": "naval-blueprint",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 3,
+      "theme": "ivory",
+      "backgroundId": "coastal-geography",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 4,
+      "theme": "saffron",
+      "backgroundId": "shipyard-timeline",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 5,
+      "theme": "ivory",
+      "backgroundId": "industrial-grid",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    },
+    {
+      "scene": 6,
+      "theme": "midnight",
+      "backgroundId": "formation-sea",
+      "narration": null,
+      "alignment": null,
+      "cueMap": null
+    }
+  ],
+  "assets": [
+    {
+      "filename": "avatar.svg",
+      "provenance": "Exact prior approved BM-006 V9 avatar verified byte-identical in transfer",
+      "rightsEvidence": "Owner-created project brand artwork"
+    },
+    {
+      "filename": "map.json",
+      "provenance": "Natural Earth 1:110m generalized lowres country polygon and approximate city coordinates",
+      "rightsEvidence": "Natural Earth public-domain data; generalized boundary representation, not a territorial assertion"
+    },
+    {
+      "filename": "render_storyboard.py",
+      "provenance": "Original conceptual source-coded frigate profiles; not an engineering drawing or authentic photograph",
+      "rightsEvidence": "Original project graphics; font fallback provenance/rights review pending"
+    }
+  ],
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "frameCount": null,
+    "command": null,
+    "fonts": [
+      "Inter fallback"
+    ],
+    "musicResolveSeconds": 0.8,
+    "silentHoldSeconds": 1
+  },
+  "qa": {
+    "ownerApprovals": [
+      {
+        "gate": "story",
+        "date": "2026-11-28",
+        "evidence": "Owner approved story treatment and revised accessible title"
+      },
+      {
+        "gate": "script",
+        "date": "2026-11-28",
+        "evidence": "Owner approved Scene 2 full-load plain language version and requested visual storyboard"
+      }
+    ],
+    "storyboardChecks": {
+      "native_pngs": 19,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "svg_state_checks": 3300,
+      "unique_ids": true,
+      "gallery_embedded_bytes_match": true,
+      "actual_audio": false,
+      "frame_rate_target": 60,
+      "script_words": 125,
+      "notes": "Sample frames only; no video or decoded-frame motion QA. Browser interaction not independently tested."
+    },
+    "pending": [
+      "Owner storyboard approval",
+      "Actual voice generation, pronunciation listening and acoustic alignment",
+      "Real 60fps motion, dissolve, connector/text clearance and full decoded-frame QA",
+      "Music license, fonts and device QA",
+      "Final manifest and repository validation",
+      "Final video and thumbnail approval and publication authorization"
+    ]
+  },
+  "output": null
+}

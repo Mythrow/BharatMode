@@ -665,10 +665,12 @@
         "https://www.theweek.in/wire-updates/national/2026/11/27/project-17a-final-warship-of-nilgiri-class-frigates-vindhyagiri-delivered-to-navy.amp.html",
         "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342521&lang=2&reg=48",
         "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257237&lang=1&reg=3",
-        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283989&lang=2&reg=48"
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283989&lang=2&reg=48",
+        "https://grse.in/frigate/index",
+        "https://www.janes.com/defence-intelligence-insights/defence-news/sea/india-launches-sixth-project-17a-frigate"
       ],
       "researchPath": "content/research/ID-013.md",
-      "storyPath": null,
+      "storyPath": "stories/vindhyagiri-project-17a-delivery.json",
       "relatedIds": [],
       "distinguishingUpdate": null,
       "publishedAt": null,

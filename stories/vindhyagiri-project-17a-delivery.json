@@ -1,0 +1,138 @@
+{
+  "story": {
+    "slug": "vindhyagiri-project-17a-delivery",
+    "title": "Indian Navy Gets 7th Homegrown Stealth Warship",
+    "category": "defence",
+    "contentId": "ID-013",
+    "productionCode": "BM-007",
+    "scriptRevision": "V2-full-load-plain-language",
+    "scriptApproved": true,
+    "storyboardRevision": "V1",
+    "storyboardApproved": false,
+    "sourceShort": "Ministry of Defence / PIB",
+    "sourceContext": "27 November 2026 official delivery announcement and GRSE design deep displacement, corroborated by Janes full-load displacement",
+    "sourceUrl": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2342700&lang=2&reg=48",
+    "sourcePublished": "2026-11-27",
+    "eventDate": "2026-11-27",
+    "claimStage": "seven frigates delivered; final delivery not commissioning",
+    "hasVoice": false,
+    "timingStatus": "provisional",
+    "scenes": [
+      {
+        "kind": "hook",
+        "kicker": "PROJECT 17A",
+        "headline": "Seven warships.\nAll delivered.",
+        "duration": 8,
+        "theme": "midnight",
+        "backgroundId": "ocean-horizon",
+        "visual": "ocean-horizon",
+        "narration": "The Indian Navy has received Vindhyagiri, completing the delivery of all seven homegrown stealth frigates under Project Seventeen A."
+      },
+      {
+        "kind": "metric",
+        "kicker": "INDIAN NAVAL DESIGN",
+        "headline": "Built on\na massive scale.",
+        "duration": 12,
+        "theme": "ivory",
+        "backgroundId": "naval-blueprint",
+        "visual": "naval-blueprint",
+        "narration": "Designed by the Indian Navy, these advanced stealth warships are a hundred and forty-nine metres long and weigh nearly six thousand seven hundred tonnes when fully loaded.",
+        "number": 149,
+        "metricLabel": "metres long"
+      },
+      {
+        "kind": "uses",
+        "kicker": "TWO INDIAN SHIPYARDS",
+        "headline": "Built across\ntwo cities.",
+        "duration": 7,
+        "theme": "ivory",
+        "backgroundId": "coastal-geography",
+        "visual": "coastal-geography",
+        "narration": "Four were built at Mazagon Dock in Mumbai, and three at Garden Reach Shipbuilders in Kolkata.",
+        "items": [
+          "Mazagon Dock, Mumbai — 4",
+          "Garden Reach, Kolkata — 3"
+        ]
+      },
+      {
+        "kind": "comparison",
+        "kicker": "ENGINEERING EFFICIENCY",
+        "headline": "Building\nwarships faster.",
+        "duration": 11,
+        "theme": "saffron",
+        "backgroundId": "shipyard-timeline",
+        "visual": "shipyard-timeline",
+        "narration": "All seven were delivered over a span of about twenty-three months. The final ship took sixty-eight months to build, sixteen months less than the first.",
+        "leftLabel": "First frigate",
+        "leftText": "84 months",
+        "rightLabel": "Final frigate",
+        "rightText": "68 months"
+      },
+      {
+        "kind": "impact",
+        "kicker": "DOMESTIC INDUSTRY",
+        "headline": "Powered by\nIndian industry.",
+        "duration": 9,
+        "theme": "ivory",
+        "backgroundId": "industrial-grid",
+        "visual": "industrial-grid",
+        "narration": "The programme achieved seventy-five percent indigenous content, involving more than two hundred micro, small and medium enterprises across India.",
+        "number": 75,
+        "metricLabel": "percent indigenous content"
+      },
+      {
+        "kind": "close",
+        "kicker": "NAVAL SELF-RELIANCE",
+        "headline": "Designed here.\nBuilt here.",
+        "duration": 8,
+        "theme": "midnight",
+        "backgroundId": "formation-sea",
+        "visual": "formation-sea",
+        "narration": "From design to construction, the programme marks a major milestone in India's ability to build advanced warships at home."
+      }
+    ],
+    "youtubeTitle": "Indian Navy Gets 7th Homegrown Stealth Warship",
+    "topic": "industry",
+    "topicPill": "DEFENCE",
+    "playlist": "Defence & Aerospace",
+    "visualTheme": "midnight",
+    "visualFamily": "explainer",
+    "hookType": "unexpected-number",
+    "thumbnailStyle": "diagram",
+    "thumbnailText": "Seven Homegrown Stealth Warships",
+    "thumbnailStatus": "proposed metadata only",
+    "narrativeAngle": "completed-domestic-engineering-programme",
+    "chapters": [
+      {
+        "id": "ocean-horizon",
+        "title": "Seven warships. All delivered.",
+        "sceneStartIndex": 0
+      },
+      {
+        "id": "naval-blueprint",
+        "title": "Built on a massive scale.",
+        "sceneStartIndex": 1
+      },
+      {
+        "id": "coastal-geography",
+        "title": "Built across two cities.",
+        "sceneStartIndex": 2
+      },
+      {
+        "id": "shipyard-timeline",
+        "title": "Building warships faster.",
+        "sceneStartIndex": 3
+      },
+      {
+        "id": "industrial-grid",
+        "title": "Powered by Indian industry.",
+        "sceneStartIndex": 4
+      },
+      {
+        "id": "formation-sea",
+        "title": "Designed here. Built here.",
+        "sceneStartIndex": 5
+      }
+    ]
+  }
+}

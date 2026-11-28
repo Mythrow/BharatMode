@@ -1,0 +1,14 @@
+{
+  "native_pngs": 19,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "svg_state_checks": 3300,
+  "unique_ids": true,
+  "gallery_embedded_bytes_match": true,
+  "actual_audio": false,
+  "frame_rate_target": 60,
+  "script_words": 125,
+  "notes": "Sample frames only; no video or decoded-frame motion QA. Browser interaction not independently tested."
+}
