@@ -639,10 +639,10 @@
     },
     {
       "id": "ID-013",
-      "productionCode": null,
+      "productionCode": "BM-007",
       "slug": "vindhyagiri-project-17a-delivery",
       "title": "Indian Navy receives final Project 17A frigate Vindhyagiri",
-      "stage": "idea",
+      "stage": "in_progress",
       "priority": "high",
       "category": "defence",
       "storyKey": "project-17a-final-frigate-delivery-2026-11-27",
@@ -662,7 +662,10 @@
         "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2342700&lang=2&reg=48",
         "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342521&lang=1&reg=48",
         "https://timesofindia.indiatimes.com/defence/news/navy-gets-delivery-of-vindhyagiri-from-grse-the-last-of-7-stealth-frigates-under-project-17a/amp_articleshow/136226185.cms",
-        "https://www.theweek.in/wire-updates/national/2026/11/27/project-17a-final-warship-of-nilgiri-class-frigates-vindhyagiri-delivered-to-navy.amp.html"
+        "https://www.theweek.in/wire-updates/national/2026/11/27/project-17a-final-warship-of-nilgiri-class-frigates-vindhyagiri-delivered-to-navy.amp.html",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2342521&lang=2&reg=48",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257237&lang=1&reg=3",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283989&lang=2&reg=48"
       ],
       "researchPath": "content/research/ID-013.md",
       "storyPath": null,
@@ -677,8 +680,15 @@
           "from": null,
           "to": "idea",
           "note": "Freshness-first search 28 Nov; actual event 27 Nov, corroborated by two Ministry of Defence releases and dated reporting. All seven Project 17A frigates delivered; 75% indigenous content, 200+ MSMEs, construction time 84 months for first ship versus 68 for Vindhyagiri; reported programme value approximately ₹45,000 crore (secondary source, reconfirm before narration). Delivery is not commissioning. Recommended BM-007, not selected. Proposed title: Indian Navy Receives 7th P17A Frigate. Distinct from existing space and AI topics."
+        },
+        {
+          "at": "2026-11-28",
+          "from": "idea",
+          "to": "in_progress",
+          "note": "Owner selected first proposal on 28 November and requested a clearer, more exciting title understandable without knowing Project 17A. Proposed YouTube title: Indian Navy Gets 7th Homegrown Stealth Warship. Proceed to detailed story review; narration approval pending."
         }
-      ]
+      ],
+      "productionSelectedAt": "2026-11-28"
     },
     {
       "id": "ID-014",

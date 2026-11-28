@@ -6,11 +6,10 @@ Updated: 2026-11-28 (IST) · Permanent IDs: 16 · **Never reassign or delete an 
 
 > This document is generated from `content/registry.json`. Use the registry command to add and move content; run `npm run content:check` before committing. An idea is not a published video.
 
-## Idea (10)
+## Idea (9)
 
 | Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
 |---|---|---|---|---|---|---|---|
-| **ID-013** | — | Indian Navy receives final Project 17A frigate Vindhyagiri | 2026-11-27 | high | [Research](research/ID-013.md) | — | — |
 | **ID-014** | — | Goa Shipyard launches hybrid dredger Jeanne Baret for Jan De Nul | 2026-11-27 | high | [Research](research/ID-014.md) | — | — |
 | **ID-010** | — | India reports 253.81 million tonnes of milk and dedicates new dairy infrastructure | 2026-11-26 | high | [Research](research/ID-010.md) | — | — |
 | **ID-007** | — | L&T wins 300 MW / 900 MWh battery storage order in Gujarat | 2026-11-25 | high | [Research](research/ID-007.md) | — | — |
@@ -21,9 +20,11 @@ Updated: 2026-11-28 (IST) · Permanent IDs: 16 · **Never reassign or delete an 
 | **ID-004** | — | IIT Madras inaugurates sleep and autism research facilities | 2026-11-22 | medium | [Research](research/ID-004.md) | — | — |
 | **ID-012** | — | Hindustan Zinc and IIT Madras demonstrate zinc-air range extender in electric three-wheeler | 2026-11 | medium | [Research](research/ID-012.md) | — | — |
 
-## In Progress (0)
+## In Progress (1)
 
-_No content in this stage._
+| Idea ID | Production | Title | Event / as-of | Priority | Research | Story draft | Publication |
+|---|---|---|---|---|---|---|---|
+| **ID-013** | BM-007 | Indian Navy receives final Project 17A frigate Vindhyagiri | 2026-11-27 | high | [Research](research/ID-013.md) | — | — |
 
 ## Uploaded (owner reported) (0)
 
